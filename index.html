@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMIA MAURYCEGO - Oficjalna Strona Klanu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --primary-hover: #d97706;
+            --dark-bg: #0f1115;
+            --card-bg: #181b22;
+            --card-border: #2a2e39;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-glow: rgba(245, 158, 11, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .clan-title {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* HEADER & NAV */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 17, 21, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--card-border);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo i {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .discord-btn-nav {
+            background-color: #5865F2;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .discord-btn-nav:hover {
+            background-color: #4752C4;
+            transform: translateY(-2px);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+            background: radial-gradient(circle at center, rgba(245, 158, 11, 0.08) 0%, rgba(15, 17, 21, 1) 70%);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+            text-shadow: 0 0 25px var(--accent-glow);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--card-border);
+            color: var(--text-main);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 6rem 10% 4rem 10%;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            letter-spacing: 1px;
+        }
+
+        .section-title span {
+            color: var(--primary);
+        }
+
+        /* STATS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .stat-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .stat-card h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Cinzel', serif;
+        }
+
+        .stat-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* RULES & REQUIREMENTS */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary);
+        }
+
+        .card ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-muted);
+        }
+
+        .card ul li i {
+            color: var(--primary);
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #090a0d;
+            padding: 3rem 10%;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer p span {
+            color: var(--primary);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-shield-halved"></i> ARMIA MAURYCEGO
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Start</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#rules">Zasady</a></li>
+                <li><a href="#requirements">Wymagania</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.gg/twoj-link" target="_blank" class="discord-btn-nav">
+            <i class="fa-brands fa-discord"></i> Discord
+        </a>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h1>Klan <span>ARMIA MAURYCEGO</span></h1>
+        <p>Zgrana ekipa, regularne wojny, maksymalne nagrody z igrzysk i dominacja w Stolicy Klanu. Dołącz do nas i walcz o zwycięstwo!</p>
+        <div class="hero-buttons">
+            <a href="https://discord.gg/twoj-link" target="_blank" class="btn btn-primary"><i class="fa-brands fa-discord"></i> Dołącz na Discorda</a>
+            <a href="#rules" class="btn btn-outline">Sprawdź Zasady</a>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div style="padding: 0 10%;">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Aktywni</h3>
+                <p>Ciągłe Wojny i Liga</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-chess-rook"></i>
+                <h3>Stolica</h3>
+                <p>Wysoki Poziom Rajdów</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h3>Pomoc</h3>
+                <p>Szybkie Donacje Wojska</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- RULES & REQUIREMENTS -->
+    <section id="rules">
+        <h2 class="section-title">Zasady i <span>Wymagania</span></h2>
+        <div class="grid-2">
+            
+            <div class="card">
+                <h3><i class="fa-solid fa-gavel"></i> Główne Zasady</h3>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Obowiązkowe ataki:</strong> Jeśli bierzesz udział w Wojnie lub CWL, wykorzystaj wszystkie swoje próby.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Kultura i szacunek:</strong> Dbamy o dobrą atmosferę na czacie i Discordzie. Zero toksyczności.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Weekend Rajdowy:</strong> Aktywność w Stolicy Klanu jest obowiązkowa dla każdego członka.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Igrzyska Klanowe:</strong> Wymagamy wyrobienia minimalnego progu punktowego.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-user-shield"></i> Czego Oczekujemy</h3>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> Aktywnego rozwoju wioski (brak martwych "rushy").</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Chęci współpracy i słuchania wskazówek starszyzny.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Obecności na naszym serwerze Discord w celu koordynacji działań.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Zaangażywania w życie klanu i wzajemnego wsparcia.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" style="text-align: center; max-width: 800px; margin: 0 auto; border: none;">
+        <h2 class="section-title">O Naszym <span>Klanie</span></h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">
+            ARMIA MAURYCEGO to coś więcej niż zwykły klan. To społeczność graczy, którzy cenią dobrą organizację, jasne zasady i wspólny progres. Dzięki zautomatyzowanemu serwerowi Discord i zgranej ekipie zawsze wiemy, co robić na wojnach i rajdach. Chcesz stać się częścią naszej armii? Wskakuj na pokład!
+        </p>
+        <a href="https://discord.gg/twoj-link" target="_blank" class="btn btn-primary"><i class="fa-brands fa-discord"></i> Wejdź na Discorda</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 <span>ARMIA MAURYCEGO</span>. Wszelkie prawa zastrzeżone. Stworzone dla najlepszej ekipy Clash of Clans.</p>
+    </footer>
+
+</body>
+</html>
