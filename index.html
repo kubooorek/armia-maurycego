@@ -51,7 +51,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 30px;
+            padding: 20px 30px;
             flex-wrap: wrap;
             gap: 15px;
         }
@@ -83,7 +83,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 15px;
+            gap: 20px;
             flex-wrap: wrap;
             align-items: center;
         }
@@ -91,149 +91,27 @@
         nav a {
             color: var(--text-muted);
             text-decoration: none;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
             transition: color 0.2s;
         }
 
         nav a:hover {
-            color: var(--gold);
+            color: #fff;
         }
 
         .nav-discord {
-            background-color: #5865F2;
-            color: #fff !important;
-            padding: 6px 14px;
-            border-radius: 4px;
+            background-color: #f39c12;
+            color: #000 !important;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-weight: 700;
             transition: background 0.2s;
         }
 
         .nav-discord:hover {
-            background-color: #4752C4;
-        }
-
-        /* HERO SECTION (NOWY DESIGN) */
-        .hero {
-            background: linear-gradient(135deg, rgba(7,9,14,0.9), rgba(23,32,42,0.8));
-            padding: 70px 20px 80px 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-custom-box {
-            max-width: 850px;
-            margin: 0 auto;
-            text-align: left;
-            background: rgba(22, 27, 38, 0.6);
-            border: 1px solid var(--border);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-        }
-
-        .hero-custom-tag {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .hero-custom-box h2 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 3.2rem;
-            font-weight: 900;
-            color: #fff;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .hero-custom-box h2 span {
-            color: var(--gold);
-        }
-
-        .hero-custom-desc {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn-hero-primary {
-            background-color: var(--gold);
-            color: #000;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .btn-hero-primary:hover {
             background-color: #d68910;
-            transform: translateY(-2px);
-        }
-
-        .btn-hero-secondary {
-            background-color: var(--dark);
-            color: #fff;
-            border: 1px solid var(--border);
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: background 0.2s, border-color 0.2s;
-        }
-
-        .btn-hero-secondary:hover {
-            background-color: #1f2738;
-            border-color: var(--text-muted);
-        }
-
-        .clan-tag-display {
-            margin-top: 30px;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        .clan-tag-display span {
-            color: var(--gold);
-            font-weight: 700;
-        }
-
-        .copy-btn {
-            background: var(--gold);
-            color: #000;
-            border: none;
-            padding: 3px 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 700;
-            font-size: 0.75rem;
-            margin-left: 8px;
         }
 
         /* CONTAINER */
@@ -254,7 +132,146 @@
             padding-bottom: 15px;
         }
 
-        /* GRID SYSTEM */
+        /* HERO SECTION (NOWY WYGLĄD) */
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 60px 20px;
+            display: grid;
+            grid-template-columns: 1.3fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        @media(max-width: 900px) {
+            .hero { grid-template-columns: 1fr; }
+        }
+
+        .hero-tag {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3.8rem;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero-desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-hero-primary {
+            background-color: var(--gold);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn-hero-primary:hover { background-color: #d68910; }
+
+        .btn-hero-secondary {
+            background-color: var(--card-bg);
+            color: #fff;
+            border: 1px solid var(--border);
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn-hero-secondary:hover { background-color: #1f2738; }
+
+        .hero-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .hero-card-badge {
+            display: inline-block;
+            background: rgba(46, 204, 113, 0.15);
+            color: var(--green);
+            border: 1px solid var(--green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .hero-card-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .stat-box {
+            background: var(--darker);
+            border: 1px solid var(--border);
+            padding: 12px 8px;
+            border-radius: 8px;
+        }
+
+        .stat-box strong {
+            display: block;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: var(--gold);
+        }
+
+        .stat-box span {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* GRID & CARDS */
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -297,30 +314,9 @@
             font-size: 0.95rem;
         }
 
-        .card ul {
-            padding-left: 20px;
-        }
+        .card ul { padding-left: 20px; }
 
-        /* WAR CENTER */
-        .war-box-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-        @media(max-width: 768px) {
-            .war-box-grid { grid-template-columns: 1fr; }
-            .hero-custom-box h2 { font-size: 2.5rem; }
-        }
-
-        .war-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 0.9rem;
-        }
-
-        /* TABLES & HISTORY */
+        /* TABLES */
         .table-responsive {
             width: 100%;
             overflow-x: auto;
@@ -351,15 +347,12 @@
             letter-spacing: 1px;
         }
 
-        tr:hover {
-            background-color: rgba(255,255,255,0.02);
-        }
+        tr:hover { background-color: rgba(255,255,255,0.02); }
 
         .badge-win { color: var(--green); border: 1px solid var(--green); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
         .badge-draw { color: var(--yellow); border: 1px solid var(--yellow); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
         .badge-loss { color: var(--red); border: 1px solid var(--red); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
 
-        /* SEARCH BAR FOR PLAYERS */
         .search-input {
             width: 100%;
             background: var(--darker);
@@ -373,7 +366,6 @@
         }
         .search-input:focus { border-color: var(--gold); }
 
-        /* GALLERY CARDS */
         .gallery-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -388,7 +380,6 @@
             border: 1px solid var(--border);
         }
 
-        /* FOOTER */
         footer {
             background-color: var(--darker);
             text-align: center;
@@ -411,64 +402,77 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#dolacz">Dołącz</a></li>
+                    <li><a href="#kim-jestesmy">Klan</a></li>
+                    <li><a href="#zasady">Zasady</a></li>
+                    <li><a href="#gracze">Skład</a></li>
                     <li><a href="#wojny">Wojny</a></li>
-                    <li><a href="#historia">Historia Wojen</a></li>
-                    <li><a href="#slawa">Sława</a></li>
-                    <li><a href="#strategie">Strategie</a></li>
-                    <li><a href="#priorytety">Priorytety</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#kalendarz">Kalendarz</a></li>
-                    <li><a href="#gracze">Gracze</a></li>
-                    <li><a href="https://discord.gg" target="_blank" class="nav-discord">Discord</a></li>
+                    <li><a href="#slawa">Sława klanu</a></li>
+                    <li><a href="#kalkulator-th">Kalkulator TH</a></li>
+                    <li><a href="https://discord.gg" target="_blank" class="nav-discord">Dołącz na Discord</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION (NOWY DESIGN ZE SCREENA) -->
     <section class="hero">
-        <div class="hero-custom-box">
-            <div class="hero-custom-tag">CLASH OF CLANS - POLSKA SPOŁECZNOŚĆ</div>
-            <h2>Budujemy klan.<br><span>Gramy razem.</span></h2>
-            <p class="hero-custom-desc">Armia Maurycego to początkujący klan, który rozwija się od podstaw. Szukamy aktywnych graczy, którzy chcą wspólnie ulepszać wioski, pomagać sobie i walczyć o zwycięstwa.</p>
-            
+        <div>
+            <div class="hero-tag">CLASH OF CLANS · POLSKA SPOŁECZNOŚĆ</div>
+            <h1>Budujemy klan.<br><span>Gramy razem.</span></h1>
+            <p class="hero-desc">Armia Maurycego to początkujący klan, który rozwija się od podstaw. Szukamy aktywnych graczy, którzy chcą wspólnie ulepszać wioski, pomagać sobie i walczyć o zwycięstwa.</p>
             <div class="hero-buttons">
                 <a href="#dolacz" class="btn-hero-primary">⚔️ Dołącz do nas</a>
                 <a href="#zasady" class="btn-hero-secondary">Poznaj zasady ↓</a>
             </div>
         </div>
-
-        <div class="clan-tag-display">
-            Tag klanu <span id="clantag">#2GQO8RGRL</span>
-            <button class="copy-btn" onclick="navigator.clipboard.writeText('#2GQO8RGRL'); alert('Skopiowano tag klanu!');">Kopiuj</button>
+        <div class="hero-card">
+            <div class="hero-card-badge">🟢 REKRUTACJA OTWARTA</div>
+            <h3>Armia Maurycego</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted);">40/50 miejsc zajętych · 10 wolnych miejsc.</p>
+            <div class="hero-card-stats">
+                <div class="stat-box"><strong>40/50</strong><span>Miejsca</span></div>
+                <div class="stat-box"><strong>TH 3–15</strong><span>Kalkulator</span></div>
+                <div class="stat-box"><strong>Fair play</strong><span>Zasady</span></div>
+            </div>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; text-align:center;">Tag klanu: <strong>#2GQO8RGRL</strong></p>
         </div>
     </section>
 
-    <!-- JAK DOŁĄCZYĆ -->
-    <section id="dolacz" class="container">
-        <h2 class="section-title">Jak dołączyć</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 30px;">Klan jest otwarty dla wszystkich, od TH3. Zajmie Ci to kilka minut.</p>
-        <div class="grid-4">
+    <!-- KIM JESTESMY -->
+    <section id="kim-jestesmy" class="container">
+        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Kim jesteśmy</h2>
+        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Mały klan, duże ambicje</h3>
+        <p style="color:var(--text-muted); margin-bottom:30px;">Nie musisz być wymakowanym graczem. Liczą się aktywność, kultura i chęć nauki.</p>
+        <div class="grid-3">
             <div class="card">
-                <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">1</div>
-                <h3>Wejdź na Discorda</h3>
-                <p>Dołącz do serwera klanowego. Tam ustalamy wojny i składy.</p>
+                <h3>💛 Wspieramy się</h3>
+                <p>Donacje, porady i pomoc w rozwijaniu wiosek. Każdy dokłada swoją cegiełkę.</p>
             </div>
             <div class="card">
-                <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">2</div>
-                <h3>Dołącz w grze</h3>
-                <p>Wyszukaj tag <code>#2GQO8RGRL</code> w grze. Klan jest otwarty.</p>
+                <h3>⚔️ Gramy wojny</h3>
+                <p>Wojny klanowe są ważne — jeśli oznaczasz dostępność, wykonuj oba ataki.</p>
             </div>
             <div class="card">
-                <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">3</div>
-                <h3>Zweryfikuj konto</h3>
-                <p>Wpisz komendę:<br><code>/link create player_tag: #TAG</code></p>
+                <h3>🏰 Rozwijamy klan</h3>
+                <p>Gry klanowe, Rajdy na Stolicę Klanu i wspólne cele pomagają nam rosnąć.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR RATUSZA (TH) -->
+    <section id="kalkulator-th" class="container">
+        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Interaktywny widget</h2>
+        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Kalkulator Ratusza (TH)</h3>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Twój poziom TH</h3>
+                <p style="font-size: 2.2rem; font-family:'Orbitron'; color:var(--gold); margin:15px 0;">TH 3–15</p>
+                <p>Wybierz poziom Ratusza w grze i dopasuj swoje armie do obecnego rozwoju bazy. Przyjmujemy graczy od poziomu TH3!</p>
             </div>
             <div class="card">
-                <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">4</div>
-                <h3>Przeczytaj zasady</h3>
-                <p>Zajrzyj na kanał regulaminu. Pamiętaj o 2 atakach w wojnie.</p>
+                <h3>Status rekrutacji</h3>
+                <p style="color:var(--green); font-weight:700; margin-bottom:10px;">🟢 REKRUTACJA: OTWARTA</p>
+                <p>Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
             </div>
         </div>
     </section>
@@ -476,33 +480,16 @@
     <!-- CENTRUM WOJEN -->
     <section id="wojny" class="container" style="background-color: rgba(7,9,14,0.6); max-width: 100%; padding-left: 5%; padding-right: 5%; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
         <div style="max-width: 1200px; margin: 0 auto; padding-top: 30px; padding-bottom: 30px;">
-            <h2 class="section-title">Centrum Wojen</h2>
-            
-            <div class="war-box-grid">
+            <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">War Hub</h2>
+            <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Centrum Wojen</h3>
+            <div class="war-box-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:25px;">
                 <div class="card">
-                    <h3>Start Wojny Klanowej</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 20px;">Termin kolejnej wojny ustala lider i ogłasza go na Discordzie.</p>
-                    
-                    <h3 style="margin-top: 30px;">Raid Weekend</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 15px;">Do rajdów pozostało:</p>
-                    <div style="display: flex; gap: 10px; justify-content: center; text-align: center; margin-bottom: 15px;">
-                        <div style="background:var(--dark); padding:10px 15px; border-radius:6px; border:1px solid var(--border); font-family:'Orbitron'; font-weight:700;"><span style="color:var(--gold); display:block; font-size:1.2rem;">01</span> DNI</div>
-                        <div style="background:var(--dark); padding:10px 15px; border-radius:6px; border:1px solid var(--border); font-family:'Orbitron'; font-weight:700;"><span style="color:var(--gold); display:block; font-size:1.2rem;">08</span> GODZ.</div>
-                        <div style="background:var(--dark); padding:10px 15px; border-radius:6px; border:1px solid var(--border); font-family:'Orbitron'; font-weight:700;"><span style="color:var(--gold); display:block; font-size:1.2rem;">27</span> MIN.</div>
-                        <div style="background:var(--dark); padding:10px 15px; border-radius:6px; border:1px solid var(--border); font-family:'Orbitron'; font-weight:700;"><span style="color:var(--gold); display:block; font-size:1.2rem;">01</span> SEK.</div>
-                    </div>
+                    <h3>⚔️ Start Wojny Klanowej</h3>
+                    <p style="color: var(--text-muted);">Wojny gramy bez przerwy! Zgłaszaj swoją dostępność na Discordzie.</p>
                 </div>
-
                 <div class="card">
-                    <h3>Ostatnie Wojny</h3>
-                    <div class="war-row"><span>ARMIA MAURYCEGO vs Grim Reapers</span> <strong style="color:var(--green)">60 - 44</strong></div>
-                    <div class="war-row"><span>ARMIA MAURYCEGO vs Glader's Clan</span> <strong style="color:var(--green)">60 - 59</strong></div>
-                    <div class="war-row"><span>ARMIA MAURYCEGO vs Enmo !!</span> <strong style="color:var(--yellow)">59 - 59</strong></div>
-
-                    <div style="margin-top: 35px; text-align: center; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 8px; border: 1px solid var(--border);">
-                        <span style="font-family:'Orbitron'; font-size: 0.75rem; color: var(--text-muted); letter-spacing: 1px; display:block; margin-bottom:5px;">PASSA ZWYCIĘSTW</span>
-                        <strong style="font-family:'Orbitron'; font-size: 1.8rem; color: var(--gold); display:block; margin-bottom: 5px;">9 WYGRANYCH</strong>
-                    </div>
+                    <h3>🏰 Raid Weekend</h3>
+                    <p style="color: var(--text-muted);">Rajdy startują w każdy piątek o 8:00 rano. Bierz udział i zdobywaj medale rajdowe!</p>
                 </div>
             </div>
         </div>
@@ -534,37 +521,16 @@
 
     <!-- SŁAWA KLANOWA -->
     <section id="slawa" class="container">
-        <h2 class="section-title">Sława Klanowa & Rekordy</h2>
-        <div class="grid-3">
-            <div class="card" style="text-align: center;">
-                <span style="font-family:'Orbitron'; font-size: 0.75rem; color: var(--text-muted);">NAJDŁUŻSZA PASSA</span>
-                <strong style="font-family:'Orbitron'; font-size: 1.8rem; color: var(--gold); display:block; margin: 10px 0;">9 ZWYCIĘSTW</strong>
+        <h2 class="section-title">Sława klanowa & Rekordy</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>🏆 MVP Miesiąca</h3>
+                <p>Wybór lidera za zasługi w wojnach CWL, donacje i aktywność klanową.</p>
             </div>
-            <div class="card" style="text-align: center;">
-                <span style="font-family:'Orbitron'; font-size: 0.75rem; color: var(--text-muted);">REKORD DONACJI</span>
-                <strong style="font-family:'Orbitron'; font-size: 1.8rem; color: var(--gold); display:block; margin: 10px 0;">7643 PKT</strong>
-                <span style="font-size: 0.8rem; color: var(--text-muted);">KUBOOOREK</span>
+            <div class="card">
+                <h3>🎁 TOP 3 Donatorów Miesiąca</h3>
+                <p><strong>01. KUBOOOREK</strong> — 7643 pkt[cite: 25]<br><strong>02. Albaroon.2</strong> — 3893 pkt[cite: 25]<br><strong>03. VipeR</strong> — 2344 pkt[cite: 25]</p>
             </div>
-            <div class="card" style="text-align: center;">
-                <span style="font-family:'Orbitron'; font-size: 0.75rem; color: var(--text-muted);">POZIOM KLANU</span>
-                <strong style="font-family:'Orbitron'; font-size: 1.8rem; color: var(--green); display:block; margin: 10px 0;">LEVEL 3</strong>
-            </div>
-        </div>
-    </section>
-
-    <!-- STRATEGIE I KALKULATOR -->
-    <section id="strategie" class="container">
-        <h2 class="section-title">Strategie Ataku</h2>
-        <div class="card" style="text-align: center;">
-            <p>Wybierz swój Ratusz i sprawdź polecane strategie wojskowe.</p>
-        </div>
-    </section>
-
-    <!-- PRIORYTETY ROZWOJU -->
-    <section id="priorytety" class="container">
-        <h2 class="section-title">Priorytety Rozwoju</h2>
-        <div class="card">
-            <p>1. Laboratorium i bohaterowie.<br>2. Zasoby i magazyny.<br>3. Kluczowe obrony.</p>
         </div>
     </section>
 
@@ -583,19 +549,9 @@
         </div>
     </section>
 
-    <!-- KALENDARZ KLANU -->
-    <section id="kalendarz" class="container">
-        <h2 class="section-title">Kalendarz Klanu</h2>
-        <div class="grid-3">
-            <div class="card"><h3>Igrzyska Klanowe</h3><p>22-28 dzień miesiąca.</p></div>
-            <div class="card"><h3>Liga Wojen Klanowych</h3><p>Początek miesiąca.</p></div>
-            <div class="card"><h3>Raid Weekend</h3><p>Piątek - Poniedziałek.</p></div>
-        </div>
-    </section>
-
     <!-- SKŁAD KLANU I LISTA GRACZY -->
     <section id="gracze" class="container">
-        <h2 class="section-title">Skład i Lista Graczy</h2>
+        <h2 class="section-title">Skład i Lista Graczy (40 osób)</h2>
         <input type="text" id="playerSearch" class="search-input" placeholder="Wyszukaj gracza (np. Baku, VipeR, Kajak)..." onkeyup="filterTable()">
 
         <div class="table-responsive" style="max-height: 450px; overflow-y: auto;">
@@ -657,30 +613,23 @@
 
     <!-- ZASADY KLANU -->
     <section id="zasady" class="container">
-        <h2 class="section-title">Zasady Klanu</h2>
-        <div class="grid-3">
+        <h2 class="section-title">Regulamin klanu</h2>
+        <div class="grid-2">
             <div class="card">
-                <h3>Wymagania</h3>
+                <h3>Regulamin: Armia Maurycego</h3>
                 <ul>
-                    <li>TH3+</li>
-                    <li>Aktywność w grze</li>
-                    <li>Udział w wojnach</li>
+                    <li><strong>Kultura i atmosfera:</strong> Szanujemy się na czacie i Discordzie. Zero toksyczności.</li>
+                    <li><strong>Donacje wojsk:</strong> Pomagajmy sobie i staraj się zachować równe proporcje.</li>
+                    <li><strong>Wojny klanów:</strong> Wojny gramy bez przerwy! Obowiązkowo wykonuj oba ataki.</li>
+                    <li><strong>Gry klanowe i rajdy:</strong> Wymagane minimum 1000 punktów w CG.</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>Wojny</h3>
-                <ul>
-                    <li>2 ataki w CW obowiązkowe</li>
-                    <li>Brak ataków bez info = kick</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Co oferujemy</h3>
-                <ul>
-                    <li>Wojny non-stop</li>
-                    <li>Bogate donacje</li>
-                    <li>Świetną atmosferę na Discordzie</li>
-                </ul>
+                <h3>Ogólne zasady i hierarchia</h3>
+                <p>Rangi w klanie oznaczają odpowiedzialność i zaufanie.</p>
+                <p style="margin-top: 15px;">👑 <strong>Wódz:</strong> VipeR</p>
+                <p>⭐ <strong>Współliderzy:</strong> KUBOOOREK, Albaroon.2</p>
+                <p>🛡️ <strong>Starszyzna:</strong> Kajak, Belaska, tak</p>
             </div>
         </div>
     </section>
