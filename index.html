@@ -70,21 +70,44 @@
             white-space: nowrap;
         }
 
-        /* --- ORYGINALNE LOGO / IKONA (KWARADRAT Z M) --- */
-        .clan-logo-box {
+        /* --- MINI HERB W MENU --- */
+        .nav-coc-shield {
             width: 32px;
-            height: 32px;
-            background: #000;
-            border: 2px solid var(--gold);
-            border-radius: 6px;
+            height: 38px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .nav-shield-top {
+            width: 18px;
+            height: 15px;
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
+            border: 1px solid #ffe153;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'Orbitron';
+            font-size: 0.55rem;
             font-weight: 900;
-            color: var(--gold);
-            font-size: 1.1rem;
-            box-shadow: 0 0 10px rgba(255, 183, 3, 0.3);
+            color: #000;
+            z-index: 2;
+            margin-bottom: -4px;
+        }
+        .nav-shield-body {
+            width: 28px;
+            height: 30px;
+            background: #0d121b;
+            border: 2px solid #b8860b;
+            border-radius: 2px 2px 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron';
+            font-size: 0.75rem;
+            font-weight: 900;
+            color: #ffeb3b;
         }
 
         .nav-links {
@@ -230,28 +253,62 @@
             cursor: pointer;
         }
 
-        /* --- DUŻY ELEMENT LOGO W SEKCJI HERO --- */
-        .hero-logo-box {
+        /* --- DUŻY HERB KLANU W SEKCJI HERO --- */
+        .hero-coc-shield {
             position: absolute;
             right: 8%;
-            top: 25%;
-            width: 85px;
-            height: 85px;
-            background: #000;
-            border: 3px solid var(--gold);
-            border-radius: 12px;
+            top: 15%;
+            width: 105px;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            filter: drop-shadow(0 0 12px rgba(255, 183, 3, 0.4));
+        }
+
+        .coc-shield-top {
+            width: 48px;
+            height: 42px;
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #8b6508 100%);
+            border: 2px solid #ffe153;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Orbitron';
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.25rem;
             font-weight: 900;
-            color: var(--gold);
-            font-size: 3rem;
-            box-shadow: 0 0 20px rgba(255, 183, 3, 0.4);
+            color: #000;
+            z-index: 2;
+            margin-bottom: -10px;
+        }
+
+        .coc-shield-body {
+            width: 85px;
+            height: 95px;
+            background: linear-gradient(180deg, #1b2430 0%, #0d121b 100%);
+            border: 3px solid #b8860b;
+            border-radius: 4px 4px 35px 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        .coc-shield-flame {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #ffeb3b;
+            text-shadow: 0 0 8px #ff9800, 0 0 15px #f44336;
+            letter-spacing: -3px;
+            margin-top: 5px;
         }
 
         @media(max-width: 900px) {
-            .hero-logo-box { display: none; }
+            .hero-coc-shield { display: none; }
             .hero h1 { font-size: 2.5rem; }
         }
 
@@ -449,6 +506,23 @@
             background: rgba(255,255,255,0.02);
         }
 
+        .player-search-input {
+            width: 100%;
+            padding: 10px 15px;
+            background: #060a10;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 4px;
+            color: #fff;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .player-search-input:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
         .tag-badge-win {
             background: rgba(46, 213, 115, 0.15);
             border: 1px solid var(--win-green);
@@ -569,7 +643,10 @@
 
     <nav>
         <a href="#" class="nav-logo">
-            <div class="clan-logo-box">M</div>
+            <div class="nav-coc-shield">
+                <div class="nav-shield-top">3</div>
+                <div class="nav-shield-body">M</div>
+            </div>
             ARMIA MAURYCEGO
         </a>
         <div class="nav-links">
@@ -579,8 +656,8 @@
             <a href="#hall">Sława</a>
             <a href="#news">Aktualności</a>
             <a href="#calendar">Kalendarz</a>
-            <a href="#calculator">Kalkulator TH</a>
-            <a href="#tactics">Strategie</a>
+            <a href="#structure">Skład</a>
+            <a href="#players-list">Gracze</a>
         </div>
         <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-discord-nav">DISCORD</a>
     </nav>
@@ -589,7 +666,12 @@
         
         <!-- HERO -->
         <section class="hero">
-            <div class="hero-logo-box">M</div>
+            <div class="hero-coc-shield">
+                <div class="coc-shield-top">3</div>
+                <div class="coc-shield-body">
+                    <div class="coc-shield-flame">M</div>
+                </div>
+            </div>
 
             <h1>ARMIA<br>MAURYCEGO</h1>
             <p class="hero-subtitle">Oficjalny portal klanu Clash of Clans</p>
@@ -871,20 +953,20 @@
 
             <div class="grid-3">
                 <div class="card-dark">
-                    <h3 style="color:var(--gold);">WÓDZ KLANU</h3>
+                    <h3 style="color:var(--gold);">LEADER</h3>
                     <ul style="list-style:none; font-weight:700;">
-                        <li>• VipeR (Główny Dowódca)</li>
+                        <li>• VipeR (Clan Master)</li>
                     </ul>
                 </div>
                 <div class="card-dark">
-                    <h3 style="color:var(--gold);">WSPÓŁLIDERZY</h3>
+                    <h3 style="color:var(--gold);">CO-LEADERS</h3>
                     <ul style="list-style:none; font-weight:700;">
-                        <li>• KUBOOOREK (Zastępca Lidera)</li>
-                        <li>• Albaroon-2 (Zastępca Lidera)</li>
+                        <li>• KUBOOOREK (Deputy)</li>
+                        <li>• Albaroon-2 (Deputy)</li>
                     </ul>
                 </div>
                 <div class="card-dark">
-                    <h3 style="color:var(--gold);">STARSZYZNA</h3>
+                    <h3 style="color:var(--gold);">ELDERS</h3>
                     <ul style="list-style:none; font-weight:700;">
                         <li>• Kojak</li>
                         <li>• Belaska</li>
@@ -896,7 +978,7 @@
             <div class="section-header-block" style="margin-top:40px;">
                 <h2>SKŁAD KLANU</h2>
                 <div class="section-header-line"></div>
-                <p>Rozkład poziomów Ratusza w klanie. Dane wpisane ręcznie, stan na 28.10.2026.</p>
+                <p>Rozkład poziomów Ratusza w klanie. Statystyki poniżej liczą się automatycznie z tabeli graczy.</p>
             </div>
 
             <div class="grid-2">
@@ -916,32 +998,35 @@
                 </div>
 
                 <div class="card-dark">
-                    <h3>W SKRÓCIE</h3>
+                    <h3>W SKRÓCIE (AUTOMAT)</h3>
                     <div style="margin:20px 0;">
-                        <span style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--gold);">40</span>
+                        <span style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--gold);" id="auto-total-players">40</span>
                         <span style="font-weight:700; margin-left:10px;">graczy w tabeli</span>
                     </div>
                     <div style="margin:20px 0;">
-                        <span style="font-family:'Orbitron'; font-size:1.8rem; font-weight:900; color:var(--gold);">TH15</span>
+                        <span style="font-family:'Orbitron'; font-size:1.8rem; font-weight:900; color:var(--gold);" id="auto-max-th">TH15</span>
                         <span style="font-weight:700; margin-left:10px;">najwyższy Ratusz</span>
                     </div>
                     <div style="margin:20px 0;">
-                        <span style="font-family:'Orbitron'; font-size:1.8rem; font-weight:900; color:var(--gold);">TH7</span>
-                        <span style="font-weight:700; margin-left:10px;">najwięcej graczy (11)</span>
+                        <span style="font-family:'Orbitron'; font-size:1.8rem; font-weight:900; color:var(--gold);" id="auto-top-th">TH7</span>
+                        <span style="font-weight:700; margin-left:10px;">najwięcej graczy</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- LISTA GRACZY -->
+        <!-- LISTA GRACZY Z WYSZUKIWARKĄ -->
         <section id="players-list" style="margin-top:40px;">
             <div class="section-header-block">
                 <h2>LISTA GRACZY</h2>
                 <div class="section-header-line"></div>
+                <p>Wpisz nick gracza poniżej, aby szybko go znaleźć w tabeli:</p>
             </div>
 
+            <input type="text" id="playerSearch" class="player-search-input" placeholder="Wyszukaj gracza (np. Baku, VipeR, Kojak)..." onkeyup="filterPlayers()">
+
             <div class="table-responsive" style="max-height: 480px; overflow-y: auto;">
-                <table class="coc-table">
+                <table class="coc-table" id="playersTable">
                     <thead>
                         <tr>
                             <th>GRACZ</th>
@@ -952,259 +1037,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>KUBOOOREK</td><td><strong>Współlider</strong></td><td>TH15</td><td>7643</td><td>3077</td></tr>
-                        <tr><td>Baku</td><td>Członek</td><td>TH15</td><td>740</td><td>80</td></tr>
-                        <tr><td>Albaroon-2</td><td><strong>Współlider</strong></td><td>TH12</td><td>3893</td><td>2554</td></tr>
-                        <tr><td>oggsgdjdjbd</td><td>Członek</td><td>TH12</td><td>70</td><td>72</td></tr>
-                        <tr><td>MrDefPL</td><td>Członek</td><td>TH12</td><td>127</td><td>180</td></tr>
-                        <tr><td>MAQOS</td><td>Członek</td><td>TH12</td><td>301</td><td>0</td></tr>
-                        <tr><td>VipeR</td><td><strong>Wódz</strong></td><td>TH11</td><td>2344</td><td>3067</td></tr>
-                        <tr><td>tak</td><td>Starszy</td><td>TH9</td><td>0</td><td>182</td></tr>
-                        <tr><td>Brann</td><td>Członek</td><td>TH9</td><td>15</td><td>82</td></tr>
-                        <tr><td>Cwell123</td><td>Członek</td><td>TH10</td><td>44</td><td>0</td></tr>
-                        <tr><td>monte</td><td>Członek</td><td>TH10</td><td>20</td><td>83</td></tr>
-                        <tr><td>Belaska</td><td>Starszy</td><td>TH9</td><td>316</td><td>1437</td></tr>
-                        <tr><td>Kojak</td><td>Starszy</td><td>TH9</td><td>359</td><td>2053</td></tr>
-                        <tr><td>Barnes</td><td>Członek</td><td>TH8</td><td>0</td><td>104</td></tr>
-                        <tr><td>KuN</td><td>Członek</td><td>TH8</td><td>169</td><td>434</td></tr>
-                        <tr><td>Mimbosz</td><td>Członek</td><td>TH9</td><td>14</td><td>317</td></tr>
-                        <tr><td>wiktor</td><td>Członek</td><td>TH8</td><td>0</td><td>178</td></tr>
-                        <tr><td>vvd</td><td>Członek</td><td>TH9</td><td>228</td><td>400</td></tr>
-                        <tr><td>SZAR3</td><td>Członek</td><td>TH8</td><td>69</td><td>290</td></tr>
-                        <tr><td>filip</td><td>Członek</td><td>TH8</td><td>0</td><td>0</td></tr>
-                        <tr><td>zuzia</td><td>Członek</td><td>TH9</td><td>12</td><td>0</td></tr>
-                        <tr><td>MY name billa</td><td>Członek</td><td>TH7</td><td>0</td><td>0</td></tr>
-                        <tr><td>SHA☆ZAM!</td><td>Członek</td><td>TH7</td><td>162</td><td>120</td></tr>
-                        <tr><td>GoldBelt</td><td>Członek</td><td>TH7</td><td>12</td><td>285</td></tr>
-                        <tr><td>Riczard</td><td>Członek</td><td>TH7</td><td>180</td><td>445</td></tr>
-                        <tr><td>Martini</td><td>Członek</td><td>TH7</td><td>0</td><td>0</td></tr>
-                        <tr><td>Rico</td><td>Członek</td><td>TH7</td><td>30</td><td>545</td></tr>
-                        <tr><td>Darui</td><td>Członek</td><td>TH7</td><td>72</td><td>0</td></tr>
-                        <tr><td>threeten</td><td>Członek</td><td>TH7</td><td>40</td><td>245</td></tr>
-                        <tr><td>Andrzej</td><td>Członek</td><td>TH7</td><td>0</td><td>100</td></tr>
-                        <tr><td>Marsyllia</td><td>Członek</td><td>TH7</td><td>1</td><td>30</td></tr>
-                        <tr><td>BoT6790</td><td>Członek</td><td>TH7</td><td>0</td><td>20</td></tr>
-                        <tr><td>samurai024</td><td>Członek</td><td>TH3–6</td><td>0</td><td>0</td></tr>
-                        <tr><td>Fox</td><td>Członek</td><td>TH3–6</td><td>0</td><td>45</td></tr>
-                        <tr><td>kwiatek</td><td>Członek</td><td>TH3–6</td><td>0</td><td>0</td></tr>
-                        <tr><td>Filox74</td><td>Członek</td><td>TH3–6</td><td>0</td><td>0</td></tr>
-                        <tr><td>erykos</td><td>Członek</td><td>TH3–6</td><td>50</td><td>150</td></tr>
-                        <tr><td>TwarógPółtłusty</td><td>Członek</td><td>TH3–6</td><td>41</td><td>174</td></tr>
-                        <tr><td>szoks</td><td>Członek</td><td>TH3–6</td><td>1</td><td>0</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- ZASADY KLANU -->
-        <section id="rules" style="margin-top:40px;">
-            <div class="section-header-block">
-                <h2>ZASADY KLANU</h2>
-                <div class="section-header-line"></div>
-                <p>Jesteśmy młodym klanem lvl 3. Szukamy aktywnych graczy do wojen, Stolicy Klanu i wspólnego rozwoju. Nie musisz być pro, liczy się aktywność i chęć gry!</p>
-            </div>
-
-            <div class="grid-3">
-                <div class="card-dark" style="border-top:3px solid var(--win-green);">
-                    <h3>WYMAGANIA</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>TH3+</li>
-                        <li>Minimum 1000 punktów w Igrzyskach Klanowych (CG)</li>
-                        <li>Aktywność w grze</li>
-                        <li>Udział w wojnach, jeśli jesteś w składzie</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark" style="border-top:3px solid var(--coral-red);">
-                    <h3>WOJNY</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>2 ataki w CW obowiązkowe</li>
-                        <li>Nie możesz zaatakować? Napisz wcześniej do lidera</li>
-                        <li>Brak ataków bez informacji = możliwy kick</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark" style="border-top:3px solid var(--gold);">
-                    <h3>STOLICA</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>Minimum 1000 punktów w Igrzyskach Klanowych (CG) na start</li>
-                        <li>Używaj ataków w Raid Weekendzie, jeśli możesz</li>
-                        <li>Regularny wkład w Igrzyska Klanowe (CG)</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark">
-                    <h3>AKTYWNOŚĆ</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>Tydzień nieaktywności = kick</li>
-                        <li>Przerwa? Daj znać w czasie</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark">
-                    <h3>DONACJE</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>Pomagaj innym, jeśli możesz</li>
-                        <li>Nie dawaj żołnierzy, o które nikt nie prosi</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark" style="border-top:3px solid var(--coral-red);">
-                    <h3>ZAKAZY</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>Obrażanie i toksyczność</li>
-                        <li>Reklamowanie innych klanów</li>
-                        <li>Świadome psucie wojen</li>
-                        <li>Wejście tylko po bonusy</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark">
-                    <h3>RANGI</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>Member: nowy gracz</li>
-                        <li>Elder: aktywność i dobre ataki</li>
-                        <li>Co-leader: zaufane osoby pomagające w klanie</li>
-                    </ul>
-                </div>
-
-                <div class="card-dark" style="border-top:3px solid var(--coc-blue);">
-                    <h3>CO OFERUJEMY</h3>
-                    <ul style="font-size:0.85rem; color:var(--text-muted); padding-left:15px; line-height:1.6;">
-                        <li>Wojny i CWL organizowane non-stop</li>
-                        <li>Bogate donacje wojska i pomoc nowym</li>
-                        <li>Przejrzyste awanse na Starszyznę za aktywność</li>
-                        <li>Świetną atmosferę i zgrany Discord</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div style="text-align:center; margin-top:30px;">
-                <p style="font-weight:700; margin-bottom:15px;">Dołącz, rozwijaj się z nami i pomóż zbudować mocny klan!</p>
-                <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-red">DOŁĄCZ DO DISCORDA</a>
-            </div>
-        </section>
-
-        <!-- NAJCZĘSTSZE PYTANIA (FAQ) -->
-        <section id="faq" style="margin-top:50px;">
-            <div class="section-header-block">
-                <h2>NAJCZĘSTSZE PYTANIA</h2>
-                <div class="section-header-line"></div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-q">▼ Jak zweryfikować się na Discordzie?</div>
-                <div class="faq-a">Wpisz na kanale weryfikacji komendę <code>/link create player_tag: #TWÓJ_TAG</code>. Bot ClashPerk nada Ci rangę, zmieni nick i odblokuje resztę serwera.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-q">▼ Czy przyjmujecie graczy z niskim Ratuszem?</div>
-                <div class="faq-a">Tak, rekrutujemy od TH3. Każdy gracz jest u nas mile widziany.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-q">▼ Ile ataków muszę wykonać w wojnie?</div>
-                <div class="faq-a">Dwa. Jeśli nie możesz zaatakować, napisz wcześniej do lidera. Brak ataków bez informacji oznacza możliwy kick.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-q">▼ Ile punktów w Igrzyskach Klanowych (CG) muszę mieć?</div>
-                <div class="faq-a">Minimum 1000 punktów na start, a potem regularny wkład w każde Igrzyska.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-q">▼ Co jeśli muszę zrobić przerwę?</div>
-                <div class="faq-a">Daj znać w czasie. Tydzień nieaktywności bez informacji kończy się kickiem.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-q">▼ Jak zostać starszym?</div>
-                <div class="faq-a">Elderem zostają aktywni gracze z dobrymi atakami.</div>
-            </div>
-
-            <div class="faq-item" style="border:1px solid var(--gold);">
-                <div class="faq-q">▼ Czy muszę być na Discordzie?</div>
-                <div class="faq-a">Discord jest dla członków klanu i tam zapadają ustalenia dotyczące wojen, więc zdecydowanie warto.</div>
-            </div>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2026 <strong>ARMIA MAURYCEGO</strong> (#2GQO8RGRL). Wszelkie prawa zastrzeżone.</p>
-        <p style="margin-top:5px;">Dołącz do naszego <a href="https://discord.gg/7SquD7SF3" target="_blank">Discorda</a> lub <a href="https://link.clashofclans.com/pl?action=OpenClanProfile&tag=2GQO8RGRL">otwórz klan w grze</a></p>
-    </footer>
-
-    <script>
-        function updateClashTimers() {
-            const now = new Date();
-            
-            // 1. Raid Weekend (od piątku 8:00 czasu polskiego / 7:00 UTC do poniedziałku)
-            let nextFriday = new Date(now);
-            nextFriday.setUTCHours(7, 0, 0, 0);
-            let day = now.getUTCDay();
-            let diffDays = (5 - day + 7) % 7;
-            if (diffDays === 0 && now.getUTCHours() >= 7) diffDays = 7;
-            nextFriday.setUTCDate(now.getUTCDate() + diffDays);
-            
-            let diffRw = Math.floor((nextFriday - now) / 1000);
-            let rwD = Math.floor(diffRw / (3600 * 24));
-            let rwH = Math.floor((diffRw % (3600 * 24)) / 3600);
-            let rwM = Math.floor((diffRw % 3600) / 60);
-            let rwS = diffRw % 60;
-
-            document.getElementById('rw-d').innerText = String(rwD).padStart(2, '0');
-            document.getElementById('rw-h').innerText = String(rwH).padStart(2, '0');
-            document.getElementById('rw-m').innerText = String(rwM).padStart(2, '0');
-            document.getElementById('rw-s').innerText = String(rwS).padStart(2, '0');
-
-            // 2. CWL (Start 1-go dnia każdego miesiąca)
-            let nextCWL = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 1, 8, 0, 0));
-            if (now.getUTCDate() === 1) {
-                document.getElementById('cwl-status').innerText = "TRWAJĄ";
-            } else {
-                let diffCwlDays = Math.ceil((nextCWL - now) / (1000 * 3600 * 24));
-                document.getElementById('cwl-status').innerText = `ZA ${diffCwlDays} DNI`;
-            }
-
-            // 3. Clan Games (22 - 28 dzień miesiąca)
-            let dom = now.getUTCDate();
-            if (dom >= 22 && dom <= 28) {
-                document.getElementById('cg-status').innerText = "TRWAJĄ";
-            } else {
-                let targetCG = new Date(now);
-                if (dom > 28) {
-                    targetCG = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 22, 8, 0, 0));
-                } else {
-                    targetCG = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 22, 8, 0, 0));
-                }
-                let diffCgDays = Math.ceil((targetCG - now) / (1000 * 3600 * 24));
-                document.getElementById('cg-status').innerText = `ZA ${diffCgDays} DNI`;
-            }
-
-            // 4. Koniec Sezonu (Ostatni poniedziałek miesiąca)
-            let lastDay = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 0));
-            let lastMonday = new Date(lastDay);
-            while (lastMonday.getUTCDay() !== 1) {
-                lastMonday.setUTCDate(lastMonday.getUTCDate() - 1);
-            }
-            lastMonday.setUTCHours(8, 0, 0, 0);
-
-            if (now > lastMonday) {
-                lastDay = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 2, 0));
-                lastMonday = new Date(lastDay);
-                while (lastMonday.getUTCDay() !== 1) {
-                    lastMonday.setUTCDate(lastMonday.getUTCDate() - 1);
-                }
-                lastMonday.setUTCHours(8, 0, 0, 0);
-            }
-
-            let diffSeasonDays = Math.ceil((lastMonday - now) / (1000 * 3600 * 24));
-            document.getElementById('season-status').innerText = `ZA ${diffSeasonDays} DNI`;
-        }
-
-        setInterval(updateClashTimers, 1000);
-        updateClashTimers();
-    </script>
-</body>
-</html>
+                        <tr><td>KUBOOOREK</td><td><strong>Co-Leader</strong></td><td>TH15</td><td>7643</td><td>3077</td></tr>
+                        <tr><td>Baku</td><td>Member</td><td>TH15</td><td>740</td><td>80</td></tr>
+                        <tr><td>Albaroon-2</td><td><strong>Co-Leader</strong></td><td>TH12</td><td>3893</td><td>2554</td></tr>
+                        <tr><td>oggsgdjdjbd</td><td>Member</td><td>TH12</td><td>70</td><td>72</td></tr>
+                        <tr><td>MrDefPL</td><td>Member</td><td>TH12</td><td>127</td><td>180</td></tr>
+                        <tr><td>MAQOS</td><td>Member</td><td>TH12</td><td>301</td><td>0</td></tr>
+                        <tr><td>VipeR</td><td><strong>Leader</strong></td><td>TH11</td>
