@@ -137,39 +137,60 @@
             padding: 40px 0 60px;
         }
 
-        .clan-shield {
-            width: 110px;
-            height: 130px;
+        /* WŁASNY HERB KLANOWY ZE ZDJĘCIA */
+        .clan-shield-container {
+            position: relative;
+            width: 130px;
+            height: 150px;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #111 0%, #222 100%);
-            border: 3px solid var(--gold);
-            clip-path: polygon(50% 0%, 100% 15%, 100% 75%, 50% 100%, 0% 75%, 0% 15%);
+            display: flex;
+            justify-content: center;
+        }
+
+        .clan-shield-badge-top {
+            position: absolute;
+            top: 0;
+            width: 55px;
+            height: 48px;
+            background: linear-gradient(135deg, #4a3810 0%, #1f1705 100%);
+            border: 2px solid var(--gold);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 1.4rem;
+            color: #fff;
+            z-index: 2;
+            box-shadow: 0 0 12px rgba(255, 183, 3, 0.5);
+        }
+
+        .clan-shield-main {
+            position: absolute;
+            bottom: 0;
+            width: 110px;
+            height: 120px;
+            background: linear-gradient(135deg, #111 0%, #1a1a24 100%);
+            border: 3px solid #b3903f;
+            border-top: 4px solid var(--gold);
+            clip-path: polygon(50% 100%, 0% 75%, 0% 15%, 50% 0%, 100% 15%, 100% 75%);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            position: relative;
-            box-shadow: 0 0 30px rgba(255, 183, 3, 0.3);
+            justify-content: flex-end;
+            padding-bottom: 12px;
+            box-shadow: 0 0 25px rgba(255, 183, 3, 0.3);
         }
 
-        .clan-shield-m {
+        .clan-flame-logo {
             font-family: 'Orbitron', sans-serif;
-            font-size: 2.8rem;
             font-weight: 900;
-            color: var(--gold);
-            text-shadow: 0 0 15px var(--gold-glow);
-        }
-
-        .clan-level-badge {
-            position: absolute;
-            bottom: 10px;
-            background: var(--gold);
-            color: #000;
-            font-weight: 900;
-            font-size: 0.75rem;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ff6600, 0 0 20px #ff3300;
+            letter-spacing: -2px;
+            margin-bottom: 5px;
         }
 
         .hero h1 {
@@ -492,7 +513,7 @@
             border-radius: 4px;
         }
 
-        /* --- KALKULATOR RATUSZA (STYL ZE ZDJĘCIA) --- */
+        /* --- KALKULATOR RATUSZA --- */
         .rekrutacja-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -785,23 +806,25 @@
         
         <!-- HERO -->
         <section class="hero">
-            <div class="clan-shield">
-                <div class="clan-shield-m">M</div>
-                <div class="clan-level-badge">LVL 3</div>
+            <div class="clan-shield-container">
+                <div class="clan-shield-badge-top">3</div>
+                <div class="clan-shield-main">
+                    <div class="clan-flame-logo">MM</div>
+                </div>
             </div>
             <h1>ARMIA <span>MAURYCEGO</span></h1>
-            <p class="hero-subtitle">Oficjalny Portal Klanowy Clash of Clans (#2GQO8RGRL)[cite: 16]</p>
+            <p class="hero-subtitle">Oficjalny Portal Klanowy Clash of Clans (#2GQO8RGRL)</p>
             
             <div class="status-bar">
                 <div class="status-item">
                     <div class="status-dot"></div>
-                    REKRUTACJA: OTWARTA (OD TH3)[cite: 16]
+                    REKRUTACJA: OTWARTA (OD TH3)
                 </div>
                 <div class="status-item" style="color: var(--gold);">
-                    ⚔️ WOJNY I CWL: NON-STOP[cite: 16]
+                    ⚔️ WOJNY I CWL: NON-STOP
                 </div>
                 <div class="status-item">
-                    👥 STAN: 48 / 50
+                    👥 STAN: 40 / 50
                 </div>
             </div>
 
@@ -816,64 +839,64 @@
             <div class="section-title">
                 <div class="section-tag">WAR HUB</div>
                 <h2>Centrum wojen</h2>
-                <p>Moduł do prezentowania wojen i wyników. Clash Bot już zbiera podsumowania na Discordzie, ale strona nie jest z nim jeszcze automatycznie połączona.[cite: 26]</p>
+                <p>Moduł do prezentowania wojen i wyników. Clash Bot już zbiera podsumowania na Discordzie, ale strona nie jest z nim jeszcze automatycznie połączona.</p>
             </div>
 
             <div class="war-hub-grid">
                 <div class="war-card">
                     <div>
                         <div class="war-card-header">
-                            <span>⚔️ Start wojny klanowej</span>[cite: 26]
+                            <span>⚔️ Start wojny klanowej</span>
                         </div>
                         <div class="war-card-sub">
-                            Według podanego harmonogramu wojna startuje za:[cite: 26]
+                            Według podanego harmonogramu wojna startuje za:
                         </div>
                         <div class="timer-boxes-row">
                             <div class="timer-box-item">
                                 <div class="timer-box-num" id="w-hours">07</div>
-                                <div class="timer-box-lbl">GODZ.[cite: 26]</div>
+                                <div class="timer-box-lbl">GODZ.</div>
                             </div>
                             <div class="timer-box-item">
                                 <div class="timer-box-num" id="w-minutes">45</div>
-                                <div class="timer-box-lbl">MIN.[cite: 26]</div>
+                                <div class="timer-box-lbl">MIN.</div>
                             </div>
                             <div class="timer-box-item">
                                 <div class="timer-box-num" id="w-seconds">38</div>
-                                <div class="timer-box-lbl">SEK.[cite: 26]</div>
+                                <div class="timer-box-lbl">SEK.</div>
                             </div>
                         </div>
                         <p class="war-note">
-                            Odliczanie zaczyna się od wartości wpisanej przy otwarciu strony; nie synchronizuje się z Clash Botem.[cite: 26]
+                            Odliczanie zaczyna się od wartości wpisanej przy otwarciu strony; nie synchronizuje się z Clash Botem.
                         </p>
                     </div>
 
                     <div style="margin-top: 25px;">
                         <div class="war-card-header">
-                            <span>🏰 Raid Weekend</span>[cite: 26]
+                            <span>🏰 Raid Weekend</span>
                         </div>
                         <div class="war-card-sub">
-                            Do rajdów pozostało:[cite: 26]
+                            Do rajdów pozostało:
                         </div>
                         <div class="timer-boxes-row">
                             <div class="timer-box-item">
                                 <div class="timer-box-num">01</div>
-                                <div class="timer-box-lbl">DNI[cite: 26]</div>
+                                <div class="timer-box-lbl">DNI</div>
                             </div>
                             <div class="timer-box-item">
                                 <div class="timer-box-num">10</div>
-                                <div class="timer-box-lbl">GODZ.[cite: 26]</div>
+                                <div class="timer-box-lbl">GODZ.</div>
                             </div>
                             <div class="timer-box-item">
                                 <div class="timer-box-num">44</div>
-                                <div class="timer-box-lbl">MIN.[cite: 26]</div>
+                                <div class="timer-box-lbl">MIN.</div>
                             </div>
                             <div class="timer-box-item">
                                 <div class="timer-box-num">38</div>
-                                <div class="timer-box-lbl">SEK.[cite: 26]</div>
+                                <div class="timer-box-lbl">SEK.</div>
                             </div>
                         </div>
                         <p class="war-note">
-                            Odliczanie startuje od 1 dnia, 10 godzin i 48 minut od otwarcia strony. Wartość można podmienić po aktualizacji Discorda.[cite: 26]
+                            Odliczanie startuje od 1 dnia, 10 godzin i 48 minut od otwarcia strony. Wartość można podmienić po aktualizacji Discorda.
                         </p>
                     </div>
                 </div>
@@ -881,35 +904,35 @@
                 <div class="war-card">
                     <div>
                         <div class="war-card-header">
-                            <span>🏆 Ostatnie wojny</span>[cite: 26]
+                            <span>🏆 Ostatnie wojny</span>
                         </div>
                         <div class="war-card-sub">
-                            Wyniki poniżej są prosto z naszej historii meczów w grze:[cite: 9, 26]
+                            Wyniki poniżej są prosto z naszej historii meczów w grze:
                         </div>
 
                         <div class="match-row">
-                            <span class="match-teams">ARMIA MAURYCEGO vs Grim Reapers</span>[cite: 9]
-                            <span class="match-score" style="color: var(--win-green);">45 – 41 🏆</span>[cite: 9, 26]
+                            <span class="match-teams">ARMIA MAURYCEGO vs Grim Reapers</span>
+                            <span class="match-score" style="color: var(--win-green);">45 – 41 🏆</span>
                         </div>
 
                         <div class="match-row">
-                            <span class="match-teams">ARMIA MAURYCEGO vs Glader's Clan</span>[cite: 9]
-                            <span class="match-score" style="color: var(--win-green);">60 – 59 🏆</span>[cite: 9]
+                            <span class="match-teams">ARMIA MAURYCEGO vs Glader's Clan</span>
+                            <span class="match-score" style="color: var(--win-green);">60 – 59 🏆</span>
                         </div>
 
                         <div class="match-row">
-                            <span class="match-teams">ARMIA MAURYCEGO vs EnMa !!</span>[cite: 9]
-                            <span class="match-score" style="color: var(--win-green);">59 – 59 🏆</span>[cite: 9]
+                            <span class="match-teams">ARMIA MAURYCEGO vs EnMa !!</span>
+                            <span class="match-score" style="color: var(--win-green);">59 – 59 🏆</span>
                         </div>
                     </div>
 
                     <div style="margin-top: 20px; text-align: center; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color);">
                         <div class="war-card-header" style="justify-content: center;">
-                            <span>🔥 PASMO ZWYCIĘSTW (WIN STREAK)</span>[cite: 21]
+                            <span>🔥 PASMO ZWYCIĘSTW (WIN STREAK)</span>
                         </div>
                         <div class="streak-highlight">9 WYGRANYCH</div>
                         <p style="font-size: 0.85rem; color: var(--text-muted);">
-                            Ostatni mecz: ARMIA MAURYCEGO 45 - 41 Grim Reapers[cite: 9, 21]
+                            Ostatni mecz: ARMIA MAURYCEGO 45 - 41 Grim Reapers
                         </p>
                     </div>
                 </div>
@@ -921,31 +944,31 @@
             <div class="section-title">
                 <div class="section-tag">HALL OF FAME</div>
                 <h2>Sława klanowa</h2>
-                <p>Clash Bot na Discordzie podsumowuje wojny, rajdy, Gry Klanowe, donacje i rangi. Strona może pokazywać te wyniki po ich ręcznym przeniesieniu albo po przygotowaniu integracji z dostępnym API.[cite: 22]</p>
+                <p>Clash Bot na Discordzie podsumowuje wojny, rajdy, Gry Klanowe, donacje i rangi. Strona może pokazywać te wyniki po ich ręcznym przeniesieniu albo po przygotowaniu integracji z dostępnym API.</p>
             </div>
 
             <div class="hall-grid">
                 <div class="hall-mvp-card">
                     <div class="hall-mvp-badge">🏆</div>
-                    <div class="hall-mvp-subtitle">MVP MIESIĄCA</div>[cite: 22]
-                    <div class="hall-mvp-title">Wybór lidera</div>[cite: 22]
+                    <div class="hall-mvp-subtitle">MVP MIESIĄCA</div>
+                    <div class="hall-mvp-title">Wybór lidera</div>
                     <p class="hall-mvp-desc">
-                        Gracz miesiąca będzie wyróżniany za gwiazdki w CWL, pomoc klanowi i aktywność. Zwycięzca zostanie dodany po podsumowaniu miesiąca.[cite: 22]
+                        Gracz miesiąca będzie wyróżniany za gwiazdki w CWL, pomoc klanowi i aktywność. Zwycięzca zostanie dodany po podsumowaniu miesiąca.
                     </p>
                 </div>
 
                 <div class="glass-card">
                     <h3 style="font-family: 'Orbitron'; font-size: 1.25rem; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
-                        <span>🎁</span> TOP 3 Donatorów miesiąca[cite: 22]
+                        <span>🎁</span> TOP 3 Donatorów miesiąca
                     </h3>
 
                     <div class="donor-row">
                         <div class="donor-info">
                             <div class="donor-rank-name">
                                 <span class="donor-rank-num">01</span>
-                                <span class="donor-player-name">KUBOOOREK</span>[cite: 22]
+                                <span class="donor-player-name">KUBOOOREK</span>
                             </div>
-                            <span class="donor-count">7 643</span>[cite: 22]
+                            <span class="donor-count">7 643</span>
                         </div>
                         <div class="donor-progress-bg">
                             <div class="donor-progress-bar" style="width: 100%;"></div>
@@ -956,9 +979,9 @@
                         <div class="donor-info">
                             <div class="donor-rank-name">
                                 <span class="donor-rank-num">02</span>
-                                <span class="donor-player-name">Albaroon.2</span>[cite: 22]
+                                <span class="donor-player-name">Albaroon.2</span>
                             </div>
-                            <span class="donor-count">3 893</span>[cite: 22]
+                            <span class="donor-count">3 893</span>
                         </div>
                         <div class="donor-progress-bg">
                             <div class="donor-progress-bar" style="width: 51%;"></div>
@@ -969,9 +992,9 @@
                         <div class="donor-info">
                             <div class="donor-rank-name">
                                 <span class="donor-rank-num">03</span>
-                                <span class="donor-player-name">VipeR</span>[cite: 22]
+                                <span class="donor-player-name">VipeR</span>
                             </div>
-                            <span class="donor-count">2 344</span>[cite: 22]
+                            <span class="donor-count">2 344</span>
                         </div>
                         <div class="donor-progress-bg">
                             <div class="donor-progress-bar" style="width: 31%;"></div>
@@ -979,74 +1002,72 @@
                     </div>
 
                     <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 20px;">
-                        Początkowe wartości podane przez lidera. Docelowo można je aktualizować danymi z podsumowań Clash Bota.[cite: 22]
+                        Początkowe wartości podane przez lidera. Docelowo można je aktualizować danymi z podsumowań Clash Bota.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- KALKULATOR RATUSZA (DOKŁADNIE WEDŁUG ZDJĘCIA) -->
+        <!-- KALKULATOR RATUSZA -->
         <section id="calculator">
             <div class="section-title">
-                <div class="section-tag">INTERAKTYWNY WIDGET</div>[cite: 27]
-                <h2>Kalkulator Ratusza (TH)</h2>[cite: 27]
-                <p>Wybierz poziom Ratusza, aby zobaczyć orientacyjne wymagania i wskazówki. To pomoc dla rekrutacji, nie automatyczna decyzja lidera.[cite: 27]</p>
+                <div class="section-tag">INTERAKTYWNY WIDGET</div>
+                <h2>Kalkulator Ratusza (TH)</h2>
+                <p>Wybierz poziom Ratusza, aby zobaczyć orientacyjne wymagania i wskazówki. To pomoc dla rekrutacji, nie automatyczna decyzja lidera.</p>
             </div>
 
             <div class="rekrutacja-grid">
-                <!-- LEWA KOLUMNA: KALKULATOR TH -->
                 <div class="calc-box">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-weight: 700; font-size: 1.1rem; color: #f8fafc;">Twój poziom TH</span>[cite: 27]
-                        <span style="font-size: 0.8rem; background: rgba(255,255,255,0.06); color: #94a3b8; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); font-family: 'Rajdhani'; font-weight: 600;">TH 3–17</span>[cite: 27]
+                        <span style="font-weight: 700; font-size: 1.1rem; color: #f8fafc;">Twój poziom TH</span>
+                        <span style="font-size: 0.8rem; background: rgba(255,255,255,0.06); color: #94a3b8; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); font-family: 'Rajdhani'; font-weight: 600;">TH 3–17</span>
                     </div>
 
-                    <div class="th-big-title" id="thValueDisplay">TH 15</div>[cite: 27]
+                    <div class="th-big-title" id="thValueDisplay">TH 15</div>
 
-                    <input type="range" min="3" max="17" value="15" class="custom-slider" id="thRange">[cite: 27]
+                    <input type="range" min="3" max="17" value="15" class="custom-slider" id="thRange">
                     <div class="slider-labels">
-                        <span>TH3</span>[cite: 27]
-                        <span>TH10</span>[cite: 27]
-                        <span>TH17</span>[cite: 27]
+                        <span>TH3</span>
+                        <span>TH10</span>
+                        <span>TH17</span>
                     </div>
 
                     <div id="calcDynamicInfo">
                         <div class="info-card-dark">
-                            <h5 id="thMainTitle">CWL: mocny kandydat do głównego składu</h5>[cite: 27]
-                            <p id="thMainDesc">TH15–17 może być dużym atutem, ale skład zależy od poziomu rozwoju, umiejętności i planu lidera.</p>[cite: 27]
+                            <h5 id="thMainTitle">CWL: mocny kandydat do głównego składu</h5>
+                            <p id="thMainDesc">TH15–17 może być dużym atutem, ale skład zależy od poziomu rozwoju, umiejętności i planu lidera.</p>
                         </div>
                         <div class="info-card-dark">
-                            <h5 id="thSubTitle">Minimalny kierunek rozwoju wojska</h5>[cite: 27]
-                            <p id="thSubDesc">Skup się na pełnym rozwoju wybranych armii, zaklęć, bohaterów oraz wyposażenia bohaterów.</p>[cite: 27]
+                            <h5 id="thSubTitle">Minimalny kierunek rozwoju wojska</h5>
+                            <p id="thSubDesc">Skup się na pełnym rozwoju wybranych armii, zaklęć, bohaterów oraz wyposażenia bohaterów.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- PRAWA KOLUMNA: REKRUTACJA -->
                 <div class="calc-box">
-                    <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 700; color: #f8fafc; margin-bottom: 6px;">Sprawdź status rekrutacji</h3>[cite: 27]
+                    <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 700; color: #f8fafc; margin-bottom: 6px;">Sprawdź status rekrutacji</h3>
                     <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.4;">
-                        Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.[cite: 27]
+                        Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.
                     </p>
 
                     <div style="font-weight: 700; margin-bottom: 8px; font-family: 'Rajdhani', sans-serif; font-size: 1.15rem; color: #f8fafc;" id="membersCountText">
-                        Liczba członków: 48/50[cite: 27]
+                        Liczba członków: 40/50
                     </div>
 
-                    <input type="range" min="1" max="50" value="48" class="custom-slider" id="membersSlider">[cite: 27]
+                    <input type="range" min="1" max="50" value="40" class="custom-slider" id="membersSlider">
 
                     <div class="recruitment-card">
                         <div class="recruitment-header">
-                            <span class="dot-green"></span>[cite: 27]
-                            <span id="recStatusTitle">REKRUTACJA: OTWARTA</span>[cite: 27]
+                            <span class="dot-green"></span>
+                            <span id="recStatusTitle">REKRUTACJA: OTWARTA</span>
                         </div>
                         <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.4;" id="recStatusDesc">
-                            Zajęte miejsca: <span id="mOccupied">48</span>/50. Można przyjąć jeszcze <span id="mFree">2</span> graczy.[cite: 27]
+                            Zajęte miejsca: <span id="mOccupied">40</span>/50. Można przyjąć jeszcze <span id="mFree">10</span> graczy.
                         </p>
                     </div>
 
                     <p style="font-size: 0.8rem; color: #64748b; margin-top: 20px; line-height: 1.4;">
-                        Status liczy się lokalnie na stronie. Aktualna liczba 40/50 została wpisana ręcznie i nie synchronizuje się automatycznie z grą ani Clash Botem.[cite: 27]
+                        Status liczy się lokalnie na stronie. Aktualna liczba została wpisana ręcznie i nie synchronizuje się automatycznie z grą ani Clash Botem.
                     </p>
                 </div>
             </div>
@@ -1055,136 +1076,135 @@
         <!-- STRATEGIE I PORADNIKI -->
         <section id="tactics">
             <div class="section-title">
-                <div class="section-tag">ROZWIJAJ UMIEJĘTNOŚCI</div>[cite: 18]
-                <h2>Układanie składu i strategie</h2>[cite: 18]
-                <p>Wybierz poziom Ratusza w kalkulatorze i dobierz armię, którą masz już dobrze ulepszoną.[cite: 18]</p>
+                <div class="section-tag">ROZWIJAJ UMIEJĘTNOŚCI</div>
+                <h2>Układanie składu i strategie</h2>
+                <p>Wybierz poziom Ratusza w kalkulatorze i dobierz armię, którą masz już dobrze ulepszoną.</p>
             </div>
 
             <div class="all-th-banner">
                 <div>
                     <h3 style="font-family: 'Orbitron'; font-size: 1.2rem; display: flex; align-items: center; gap: 8px;">
-                        <span>🎬</span> Jeden poradnik na wszystkie TH[cite: 23]
+                        <span>🎬</span> Jeden poradnik na wszystkie TH
                     </h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">
-                        Film obejmuje strategie od niskich poziomów Ratusza aż po TH17.[cite: 23]
+                        Film obejmuje strategie od niskich poziomów Ratusza aż po TH17.
                     </p>
                 </div>
                 <a href="https://www.youtube.com/results?search_query=clash+of+clans+all+th+attack+strategies" target="_blank" class="btn-banner">
-                    Obejrzyj poradnik TH3–TH17[cite: 23]
+                    Obejrzyj poradnik TH3–TH17
                 </a>
             </div>
 
             <div class="th-cards-grid">
-                <!-- TH3 do TH17 -->
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH3</h3>[cite: 23]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 3. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 23]</p>
+                        <h3>🏰 TH3</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 3. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th3+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH3</a>[cite: 23]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th3+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH3</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH4</h3>[cite: 23]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 4. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 23]</p>
+                        <h3>🏰 TH4</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 4. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th4+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH4</a>[cite: 23]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th4+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH4</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH5</h3>[cite: 23]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 5. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 23]</p>
+                        <h3>🏰 TH5</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 5. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th5+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH5</a>[cite: 23]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th5+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH5</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH6</h3>[cite: 23]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 6. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 23]</p>
+                        <h3>🏰 TH6</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 6. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th6+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH6</a>[cite: 23]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th6+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH6</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH7</h3>[cite: 23]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 7. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 23]</p>
+                        <h3>🏰 TH7</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 7. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th7+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH7</a>[cite: 23]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th7+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH7</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH8</h3>[cite: 23]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 8. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 23]</p>
+                        <h3>🏰 TH8</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 8. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th8+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH8</a>[cite: 23]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th8+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH8</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH9</h3>[cite: 24]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 9. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 24]</p>
+                        <h3>🏰 TH9</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 9. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th9+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH9</a>[cite: 24]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th9+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH9</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH10</h3>[cite: 24]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 10. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 24]</p>
+                        <h3>🏰 TH10</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 10. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th10+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH10</a>[cite: 24]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th10+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH10</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH11</h3>[cite: 24]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 11. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 24]</p>
+                        <h3>🏰 TH11</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 11. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th11+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH11</a>[cite: 24]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th11+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH11</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH12</h3>[cite: 24]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 12. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 24]</p>
+                        <h3>🏰 TH12</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 12. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th12+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH12</a>[cite: 24]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th12+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH12</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH13</h3>[cite: 24]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 13. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 24]</p>
+                        <h3>🏰 TH13</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 13. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th13+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH13</a>[cite: 24]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th13+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH13</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH14</h3>[cite: 24]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 14. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 24]</p>
+                        <h3>🏰 TH14</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 14. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th14+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH14</a>[cite: 24]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th14+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH14</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH15</h3>[cite: 25]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 15. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 25]</p>
+                        <h3>🏰 TH15</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 15. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th15+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH15</a>[cite: 25]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th15+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH15</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH16</h3>[cite: 25]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 16. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 25]</p>
+                        <h3>🏰 TH16</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 16. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th16+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH16</a>[cite: 25]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th16+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH16</a>
                 </div>
                 <div class="th-guide-card">
                     <div>
-                        <h3>🏰 TH17</h3>[cite: 25]
-                        <p>Poradniki ataków i przykładowe armie dla Ratusza 17. Dobierz skład do ulepszeń, które masz w swojej wiosce.[cite: 25]</p>
+                        <h3>🏰 TH17</h3>
+                        <p>Poradniki ataków i przykładowe armie dla Ratusza 17. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p>
                     </div>
-                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th17+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH17</a>[cite: 25]
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th17+attack+strategy" target="_blank" class="btn-th-link">Poradniki TH17</a>
                 </div>
             </div>
 
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 25px; text-align: center;">
-                Podpowiedź: na niskich TH naucz się prowadzić olbrzymów z łuczniczkami/czarodziejami, a później dobieraj armię do obrony przeciwnika. Jedna armia nie będzie najlepsza na każdą bazę.[cite: 25]
+                Podpowiedź: na niskich TH naucz się prowadzić olbrzymów z łuczniczkami/czarodziejami, a później dobieraj armię do obrony przeciwnika. Jedna armia nie będzie najlepsza na każdą bazę.
             </p>
         </section>
 
@@ -1238,7 +1258,7 @@
                         <span class="rule-icon">✖</span> Brak "Rushowania" baz (rozwijaj mądrze).
                     </div>
                     <div class="rule-item">
-                        <span class="rule-icon">⚔</span> Rekrutacja od TH3 (przyjmujemy każdego gracza!)[cite: 16]
+                        <span class="rule-icon">⚔</span> Rekrutacja od TH3 (przyjmujemy każdego gracza!).
                     </div>
                     <div class="rule-item">
                         <span class="rule-icon">⚔</span> Obowiązkowe 2 ataki w Wojnach Klanów.
@@ -1251,7 +1271,7 @@
                 <div>
                     <h3 style="color: #10b981; font-family: 'Orbitron'; margin-bottom: 15px;">🟢 CO OFERUJEMY:</h3>
                     <div class="rule-item">
-                        <span class="rule-icon">✔</span> Wojny i CWL organizowane non-stop[cite: 16]
+                        <span class="rule-icon">✔</span> Wojny i CWL organizowane non-stop.
                     </div>
                     <div class="rule-item">
                         <span class="rule-icon">🎁</span> Bogate donacje wojska i pomoc nowym.
@@ -1265,7 +1285,7 @@
                 </div>
 
                 <div class="alert-kick">
-                    🚨 ŻELAZNA ZASADA: 7 DNI NIEAKTYWNOŚCI BEZ USPRAWIEDLIWIENIA = KICK Z KLANU![cite: 16] 🚨
+                    🚨 ŻELAZNA ZASADA: 7 DNI NIEAKTYWNOŚCI BEZ USPRAWIEDLIWIENIA = KICK Z KLANU! 🚨
                 </div>
             </div>
         </section>
@@ -1273,7 +1293,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 <strong>ARMIA MAURYCEGO</strong> (#2GQO8RGRL)[cite: 16]. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 <strong>ARMIA MAURYCEGO</strong> (#2GQO8RGRL). Wszelkie prawa zastrzeżone.</p>
         <p style="font-size: 0.85rem; margin-top: 5px;">Dołącz do naszego <a href="https://discord.gg/7SquD7SF3" target="_blank">Discorda</a></p>
     </footer>
 
@@ -1338,7 +1358,7 @@
             document.getElementById('w-seconds').innerText = wS < 10 ? '0' + wS : wS;
         }, 1000);
 
-        // Skrypt kalkulatora TH z tekstami według TH
+        // Skrypt kalkulatora TH
         const thRange = document.getElementById('thRange');
         const thValueDisplay = document.getElementById('thValueDisplay');
         const thMainTitle = document.getElementById('thMainTitle');
