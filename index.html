@@ -83,7 +83,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 20px;
+            gap: 18px;
             flex-wrap: wrap;
             align-items: center;
         }
@@ -114,7 +114,7 @@
             background-color: #d68910;
         }
 
-        /* CONTAINER */
+        /* CONTAINER & TITLES */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -132,7 +132,7 @@
             padding-bottom: 15px;
         }
 
-        /* HERO SECTION (NOWY WYGLĄD) */
+        /* HERO SECTION */
         .hero {
             max-width: 1200px;
             margin: 0 auto;
@@ -271,27 +271,10 @@
             color: var(--text-muted);
         }
 
-        /* GRID & CARDS */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .grid-4 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
+        /* GRIDS & CARDS */
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px; }
 
         .card {
             background-color: var(--card-bg);
@@ -316,6 +299,22 @@
 
         .card ul { padding-left: 20px; }
 
+        /* SLIDER KALKULATORA TH */
+        .th-slider {
+            width: 100%;
+            margin: 20px 0;
+            accent-color: var(--gold);
+            cursor: pointer;
+        }
+
+        .th-scale {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: 'Orbitron', sans-serif;
+        }
+
         /* TABLES */
         .table-responsive {
             width: 100%;
@@ -326,27 +325,9 @@
             margin-bottom: 40px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 0.9rem;
-        }
-
-        th, td {
-            padding: 14px 18px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        th {
-            background-color: var(--darker);
-            font-family: 'Orbitron', sans-serif;
-            color: var(--gold);
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-        }
-
+        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
+        th, td { padding: 14px 18px; border-bottom: 1px solid var(--border); }
+        th { background-color: var(--darker); font-family: 'Orbitron', sans-serif; color: var(--gold); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
         tr:hover { background-color: rgba(255,255,255,0.02); }
 
         .badge-win { color: var(--green); border: 1px solid var(--green); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
@@ -406,15 +387,17 @@
                     <li><a href="#zasady">Zasady</a></li>
                     <li><a href="#gracze">Skład</a></li>
                     <li><a href="#wojny">Wojny</a></li>
-                    <li><a href="#slawa">Sława klanu</a></li>
+                    <li><a href="#slawa">Sława klanowa</a></li>
                     <li><a href="#kalkulator-th">Kalkulator TH</a></li>
+                    <li><a href="#priorytety">Priorytety</a></li>
+                    <li><a href="#kalendarz">Kalendarz</a></li>
                     <li><a href="https://discord.gg" target="_blank" class="nav-discord">Dołącz na Discord</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO SECTION (NOWY DESIGN ZE SCREENA) -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div>
             <div class="hero-tag">CLASH OF CLANS · POLSKA SPOŁECZNOŚĆ</div>
@@ -431,7 +414,7 @@
             <p style="font-size:0.85rem; color:var(--text-muted);">40/50 miejsc zajętych · 10 wolnych miejsc.</p>
             <div class="hero-card-stats">
                 <div class="stat-box"><strong>40/50</strong><span>Miejsca</span></div>
-                <div class="stat-box"><strong>TH 3–15</strong><span>Kalkulator</span></div>
+                <div class="stat-box"><strong>TH 3–17</strong><span>Kalkulator</span></div>
                 <div class="stat-box"><strong>Fair play</strong><span>Zasady</span></div>
             </div>
             <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; text-align:center;">Tag klanu: <strong>#2GQO8RGRL</strong></p>
@@ -459,20 +442,38 @@
         </div>
     </section>
 
-    <!-- KALKULATOR RATUSZA (TH) -->
+    <!-- KALKULATOR RATUSZA (TH) Z INTERAKTYWNYM SUVAKIEM -->
     <section id="kalkulator-th" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Interaktywny widget</h2>
         <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Kalkulator Ratusza (TH)</h3>
         <div class="grid-2">
             <div class="card">
-                <h3>Twój poziom TH</h3>
-                <p style="font-size: 2.2rem; font-family:'Orbitron'; color:var(--gold); margin:15px 0;">TH 3–15</p>
-                <p>Wybierz poziom Ratusza w grze i dopasuj swoje armie do obecnego rozwoju bazy. Przyjmujemy graczy od poziomu TH3!</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Twój poziom TH</h3>
+                    <span style="font-size: 0.8rem; color: var(--text-muted); background: var(--darker); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border);">TH 3–17</span>
+                </div>
+                <p id="thDisplay" style="font-size: 2.2rem; font-family:'Orbitron'; color:var(--gold); margin:10px 0;">TH 10</p>
+                <input type="range" id="thSlider" min="3" max="17" value="10" class="th-slider" oninput="updateThCalculator(this.value)">
+                <div class="th-scale">
+                    <span>TH3</span>
+                    <span>TH10</span>
+                    <span>TH17</span>
+                </div>
+                <div id="thAdvice" style="margin-top: 20px;">
+                    <!-- Dynamiczna treść podsuwana przez JS -->
+                </div>
             </div>
             <div class="card">
-                <h3>Status rekrutacji</h3>
-                <p style="color:var(--green); font-weight:700; margin-bottom:10px;">🟢 REKRUTACJA: OTWARTA</p>
-                <p>Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
+                <h3>Sprawdź status rekrutacji</h3>
+                <p style="color:var(--text-muted); margin-bottom: 15px;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
+                <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;">Liczba członków: 40/50</p>
+                <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
+                    <div style="background: var(--gold); width: 80%; height: 100%;"></div>
+                </div>
+                <div style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
+                    <p style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
+                    <p style="font-size: 0.85rem;">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -537,21 +538,45 @@
     <!-- GALERIA KLANOWA -->
     <section id="galeria" class="container">
         <h2 class="section-title">Galeria Klanowa</h2>
-        <div class="grid-2">
+        <div class="grid-3">
             <div class="gallery-card">
-                <h3>Idealne 100% w CW - Grim Reapers</h3>
-                <img src="image_10034b.png" alt="Armia Maurycego vs Grim Reapers">
+                <h3>Zwycięskie CWL</h3>
+                <p style="color:var(--text-muted); font-size:0.85rem;">Brak zdjęć CWL</p>
             </div>
             <div class="gallery-card">
-                <h3>Idealne 100% w CW - Glader's Clan</h3>
+                <h3>Idealne 100% w CW</h3>
+                <img src="image_10034b.png" alt="Armia Maurycego vs Grim Reapers" style="margin-bottom:8px;">
                 <img src="image_0f2aa5.png" alt="Armia Maurycego vs Glader's Clan">
+            </div>
+            <div class="gallery-card">
+                <h3>Ekipa na Discordzie</h3>
+                <p style="color:var(--text-muted); font-size:0.85rem;">Brak zdjęć Discord</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUKTURA I KADRA -->
+    <section class="container">
+        <h2 class="section-title">Struktura i Kadra</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Leader</h3>
+                <p>👑 VipeR (Leader)</p>
+            </div>
+            <div class="card">
+                <h3>Co-Leaders</h3>
+                <p>⭐ KUBOOOREK (Co-Leader)<br>⭐ Albaroon-2 (Co-Leader)</p>
+            </div>
+            <div class="card">
+                <h3>Elders</h3>
+                <p>🛡️ Kajak<br>🛡️ Belaska<br>🛡️ tak</p>
             </div>
         </div>
     </section>
 
     <!-- SKŁAD KLANU I LISTA GRACZY -->
     <section id="gracze" class="container">
-        <h2 class="section-title">Skład i Lista Graczy (40 osób)</h2>
+        <h2 class="section-title">Skład i Lista Graczy</h2>
         <input type="text" id="playerSearch" class="search-input" placeholder="Wyszukaj gracza (np. Baku, VipeR, Kajak)..." onkeyup="filterTable()">
 
         <div class="table-responsive" style="max-height: 450px; overflow-y: auto;">
@@ -611,25 +636,120 @@
         </div>
     </section>
 
+    <!-- PRIORYTETY ROZWOJU -->
+    <section id="priorytety" class="container">
+        <h2 class="section-title">Priorytety Rozwoju (Budowniczy i Lab)</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>1. Offensive First</h3>
+                <p>Zawsze w pierwszej kolejności ulepszaj Laboratorium, Clan Castle, Spell Factory oraz Heroes. Siła ataku to klucz do wygrywania wojen.</p>
+            </div>
+            <div class="card">
+                <h3>2. Zasoby i Gospodarka</h3>
+                <p>Kolejny krok to Kopalnie, Eliksir, Wiertła Mrocznego Eliksiru oraz magazyny, aby zawsze mieć pełne skarbce na kolejne ulepszenia.</p>
+            </div>
+            <div class="card">
+                <h3>3. Obrona Kluczowa</h3>
+                <p>Na końcu buduj obronę: najpierw Eagle Artillery, Inferno Towers, X-Bow oraz Air Defense. Staraj się maxować bazę przed awansem na kolejne TH.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KALENDARZ KLANU -->
+    <section id="kalendarz" class="container">
+        <h2 class="section-title">Kalendarz Klanu</h2>
+        <div class="grid-4">
+            <div class="card">
+                <h3>Igrzyska Klanowe</h3>
+                <p style="color:var(--green); font-weight:700;">TRWAJĄ</p>
+                <p style="font-size:0.85rem; margin-top:8px;">Od 22. do 28. dnia miesiąca. Minimum 1000 punktów (CG).</p>
+            </div>
+            <div class="card">
+                <h3>Liga Wojen Klanowych</h3>
+                <p style="color:var(--red); font-weight:700;">ZA 4 DNI</p>
+                <p style="font-size:0.85rem; margin-top:8px;">Start na początku każdego miesiąca, całość trwa około tygodnia.</p>
+            </div>
+            <div class="card">
+                <h3>Raid Weekend</h3>
+                <p style="color:var(--gold); font-weight:700;">PT – PN</p>
+                <p style="font-size:0.85rem; margin-top:8px;">Co tydzień od piątku 8:00 czasu polskiego. Używaj ataków, jeśli możesz.</p>
+            </div>
+            <div class="card">
+                <h3>Koniec Sezonu</h3>
+                <p style="color:var(--gold); font-weight:700;">ZA 33 DNI</p>
+                <p style="font-size:0.85rem; margin-top:8px;">Ostatni poniedziałek miesiąca. Zbierz nagrody z ligi.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ZASADY KLANU -->
     <section id="zasady" class="container">
-        <h2 class="section-title">Regulamin klanu</h2>
-        <div class="grid-2">
+        <h2 class="section-title">Zasady Klanu</h2>
+        <div class="grid-3">
             <div class="card">
-                <h3>Regulamin: Armia Maurycego</h3>
+                <h3>Wymagania</h3>
                 <ul>
-                    <li><strong>Kultura i atmosfera:</strong> Szanujemy się na czacie i Discordzie. Zero toksyczności.</li>
-                    <li><strong>Donacje wojsk:</strong> Pomagajmy sobie i staraj się zachować równe proporcje.</li>
-                    <li><strong>Wojny klanów:</strong> Wojny gramy bez przerwy! Obowiązkowo wykonuj oba ataki.</li>
-                    <li><strong>Gry klanowe i rajdy:</strong> Wymagane minimum 1000 punktów w CG.</li>
+                    <li>TH3+</li>
+                    <li>Minimum 1000 punktów w Igrzyskach Klanowych (CG)</li>
+                    <li>Aktywność w grze</li>
+                    <li>Udział w wojnach, jeśli jesteś w składzie</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>Ogólne zasady i hierarchia</h3>
-                <p>Rangi w klanie oznaczają odpowiedzialność i zaufanie.</p>
-                <p style="margin-top: 15px;">👑 <strong>Wódz:</strong> VipeR</p>
-                <p>⭐ <strong>Współliderzy:</strong> KUBOOOREK, Albaroon.2</p>
-                <p>🛡️ <strong>Starszyzna:</strong> Kajak, Belaska, tak</p>
+                <h3>Wojny</h3>
+                <ul>
+                    <li>2 ataki w CW obowiązkowe</li>
+                    <li>Nie możesz zaatakować? Napisz wcześniej do lidera</li>
+                    <li>Brak ataków bez informacji = możliwy kick</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Stolica</h3>
+                <ul>
+                    <li>Minimum 1000 punktów w Igrzyskach Klanowych (CG) na start</li>
+                    <li>Używaj ataków w Raid Weekend, jeśli możesz</li>
+                    <li>Regularny wkład w Igrzyska Klanowe (CG)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Aktywność</h3>
+                <ul>
+                    <li>Tydzień nieaktywności – kick</li>
+                    <li>Przerwa? Daj znać w czasie</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Donacje</h3>
+                <ul>
+                    <li>Pomagaj innym, jeśli możesz</li>
+                    <li>Nie dawaj żołnierzy, o które nikt nie prosi</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Zakazy</h3>
+                <ul>
+                    <li>Obrażanie i toksyczność</li>
+                    <li>Reklamowanie innych klanów</li>
+                    <li>Świadome psucie wojen</li>
+                    <li>Wejście tylko po bonusy</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Rangi</h3>
+                <ul>
+                    <li>Member: nowy gracz</li>
+                    <li>Elder: aktywność i dobre ataki</li>
+                    <li>Co-Leader: zaufane osoby pomagające w klanie</li>
+                </ul>
+            </div>
+            <div class="card" style="grid-column: span 2;">
+                <h3>Co oferujemy</h3>
+                <ul>
+                    <li>Wojny i CWL organizowane non-stop</li>
+                    <li>Bogate donacje wojska i pomoc nowym</li>
+                    <li>Przejrzyste awanse na Starszynę za aktywność</li>
+                    <li>Świetną atmosferę i zgrany Discord</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -659,6 +779,39 @@
                 }
             }
         }
+
+        function updateThCalculator(val) {
+            document.getElementById('thDisplay').innerText = 'TH ' + val;
+            const adviceBox = document.getElementById('thAdvice');
+            
+            let cwlText = "";
+            let armyText = "";
+
+            if (val <= 7) {
+                cwlText = "Przy TH3–TH7 traktuj CWL przede wszystkim jako okazję do nauki i zdobywania doświadczenia. Udział zależy od planu lidera.";
+                armyText = "TH3–TH7: rozwijaj olbrzymów i łuczniczki, a później czarodzieje i smoki. Ulepszaj obozy, koszary i laboratorium.";
+            } else if (val <= 11) {
+                cwlText = "Solidny poziom do regularnych występów w składzie wojennym i CWL. Zadbaj o maxowanie bohaterów!";
+                armyText = `TH${val}: skup się na silnych armiach farmingowych oraz kluczowych czarach i machina oblężniczych.`;
+            } else {
+                cwlText = "Wysoki poziom ratusza. Twoje ataki mają kluczowe znaczenie dla wyniku całego klanu w CWL i wojnach!";
+                armyText = `TH${val}: pełny max kluczowych budynków obronnych oraz maksymalny poziom najważniejszych wojsk i zwierzaków.`;
+            }
+
+            adviceBox.innerHTML = `
+                <div style="background: var(--darker); border: 1px solid var(--border); padding: 12px; border-radius: 6px; margin-bottom: 10px;">
+                    <strong style="color: var(--gold); display: block; margin-bottom: 4px; font-size: 0.85rem; font-family: 'Orbitron';">CWL: skład rozwojowy</strong>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">${cwlText}</p>
+                </div>
+                <div style="background: var(--darker); border: 1px solid var(--border); padding: 12px; border-radius: 6px;">
+                    <strong style="color: var(--gold); display: block; margin-bottom: 4px; font-size: 0.85rem; font-family: 'Orbitron';">Minimalny kierunek rozwoju wojska</strong>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">${armyText}</p>
+                </div>
+            `;
+        }
+
+        // Inicjalizacja domyślna dla TH10
+        updateThCalculator(10);
     </script>
 </body>
 </html>
