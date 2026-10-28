@@ -70,44 +70,21 @@
             white-space: nowrap;
         }
 
-        /* --- MINI HERB W MENU --- */
-        .nav-coc-shield {
+        /* --- ORYGINALNE LOGO / IKONA (KWARADRAT Z M) --- */
+        .clan-logo-box {
             width: 32px;
-            height: 38px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-        .nav-shield-top {
-            width: 18px;
-            height: 15px;
-            background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
-            border: 1px solid #ffe153;
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            height: 32px;
+            background: #000;
+            border: 2px solid var(--gold);
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'Orbitron';
-            font-size: 0.55rem;
             font-weight: 900;
-            color: #000;
-            z-index: 2;
-            margin-bottom: -4px;
-        }
-        .nav-shield-body {
-            width: 28px;
-            height: 30px;
-            background: #0d121b;
-            border: 2px solid #b8860b;
-            border-radius: 2px 2px 10px 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Orbitron';
-            font-size: 0.75rem;
-            font-weight: 900;
-            color: #ffeb3b;
+            color: var(--gold);
+            font-size: 1.1rem;
+            box-shadow: 0 0 10px rgba(255, 183, 3, 0.3);
         }
 
         .nav-links {
@@ -253,62 +230,28 @@
             cursor: pointer;
         }
 
-        /* --- DUŻY HERB KLANU W SEKCJI HERO --- */
-        .hero-coc-shield {
+        /* --- DUŻY ELEMENT LOGO W SEKCJI HERO --- */
+        .hero-logo-box {
             position: absolute;
             right: 8%;
-            top: 15%;
-            width: 105px;
-            height: 130px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            filter: drop-shadow(0 0 12px rgba(255, 183, 3, 0.4));
-        }
-
-        .coc-shield-top {
-            width: 48px;
-            height: 42px;
-            background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #8b6508 100%);
-            border: 2px solid #ffe153;
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 900;
-            color: #000;
-            z-index: 2;
-            margin-bottom: -10px;
-        }
-
-        .coc-shield-body {
+            top: 25%;
             width: 85px;
-            height: 95px;
-            background: linear-gradient(180deg, #1b2430 0%, #0d121b 100%);
-            border: 3px solid #b8860b;
-            border-radius: 4px 4px 35px 35px;
+            height: 85px;
+            background: #000;
+            border: 3px solid var(--gold);
+            border-radius: 12px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            position: relative;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
-        }
-
-        .coc-shield-flame {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.2rem;
+            font-family: 'Orbitron';
             font-weight: 900;
-            color: #ffeb3b;
-            text-shadow: 0 0 8px #ff9800, 0 0 15px #f44336;
-            letter-spacing: -3px;
-            margin-top: 5px;
+            color: var(--gold);
+            font-size: 3rem;
+            box-shadow: 0 0 20px rgba(255, 183, 3, 0.4);
         }
 
         @media(max-width: 900px) {
-            .hero-coc-shield { display: none; }
+            .hero-logo-box { display: none; }
             .hero h1 { font-size: 2.5rem; }
         }
 
@@ -626,10 +569,7 @@
 
     <nav>
         <a href="#" class="nav-logo">
-            <div class="nav-coc-shield">
-                <div class="nav-shield-top">3</div>
-                <div class="nav-shield-body">M</div>
-            </div>
+            <div class="clan-logo-box">M</div>
             ARMIA MAURYCEGO
         </a>
         <div class="nav-links">
@@ -649,12 +589,7 @@
         
         <!-- HERO -->
         <section class="hero">
-            <div class="hero-coc-shield">
-                <div class="coc-shield-top">3</div>
-                <div class="coc-shield-body">
-                    <div class="coc-shield-flame">M</div>
-                </div>
-            </div>
+            <div class="hero-logo-box">M</div>
 
             <h1>ARMIA<br>MAURYCEGO</h1>
             <p class="hero-subtitle">Oficjalny portal klanu Clash of Clans</p>
@@ -736,7 +671,7 @@
                         <div class="timer-item"><div class="timer-val" id="rw-m">46</div><div class="timer-lbl">MIN.</div></div>
                         <div class="timer-item"><div class="timer-val" id="rw-s">45</div><div class="timer-lbl">SEK.</div></div>
                     </div>
-                    <p style="font-size:0.8rem; color:var(--text-muted);">Rajdy startują w piątek o 8:00 czasu polskiego (7:00 UTC) i trwają do poniedziałku.</p>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">Rajdy startują w piątek o 8:00 czasu polskiego i trwają do poniedziałku.</p>
                 </div>
 
                 <div class="card-dark">
@@ -1206,7 +1141,7 @@
             
             // 1. Raid Weekend (od piątku 8:00 czasu polskiego / 7:00 UTC do poniedziałku)
             let nextFriday = new Date(now);
-            nextFriday.setUTCHours(7, 0, 0, 0); // 7:00 UTC = 8:00 w Polsce (zimowy)
+            nextFriday.setUTCHours(7, 0, 0, 0);
             let day = now.getUTCDay();
             let diffDays = (5 - day + 7) % 7;
             if (diffDays === 0 && now.getUTCHours() >= 7) diffDays = 7;
