@@ -70,16 +70,44 @@
             white-space: nowrap;
         }
 
-        .nav-logo-icon {
-            width: 30px;
-            height: 30px;
-            background: #000;
-            border: 2px solid var(--gold);
-            border-radius: 6px;
+        /* --- MINI HERB W MENU --- */
+        .nav-coc-shield {
+            width: 32px;
+            height: 38px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .nav-shield-top {
+            width: 18px;
+            height: 15px;
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
+            border: 1px solid #ffe153;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
+            font-family: 'Orbitron';
+            font-size: 0.55rem;
+            font-weight: 900;
+            color: #000;
+            z-index: 2;
+            margin-bottom: -4px;
+        }
+        .nav-shield-body {
+            width: 28px;
+            height: 30px;
+            background: #0d121b;
+            border: 2px solid #b8860b;
+            border-radius: 2px 2px 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron';
+            font-size: 0.75rem;
+            font-weight: 900;
+            color: #ffeb3b;
         }
 
         .nav-links {
@@ -225,24 +253,62 @@
             cursor: pointer;
         }
 
-        .hero-shield-badge {
+        /* --- DUŻY HERB KLANU W SEKCJI HERO --- */
+        .hero-coc-shield {
             position: absolute;
-            right: 10%;
-            top: 20%;
-            width: 90px;
-            height: 100px;
-            background: linear-gradient(135deg, #1a1a24 0%, #0a0a0c 100%);
-            border: 3px solid var(--gold);
+            right: 8%;
+            top: 15%;
+            width: 105px;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            filter: drop-shadow(0 0 12px rgba(255, 183, 3, 0.4));
+        }
+
+        .coc-shield-top {
+            width: 48px;
+            height: 42px;
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #8b6508 100%);
+            border: 2px solid #ffe153;
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: #000;
+            z-index: 2;
+            margin-bottom: -10px;
+        }
+
+        .coc-shield-body {
+            width: 85px;
+            height: 95px;
+            background: linear-gradient(180deg, #1b2430 0%, #0d121b 100%);
+            border: 3px solid #b8860b;
+            border-radius: 4px 4px 35px 35px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 15px rgba(255,183,3,0.3);
+            position: relative;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        .coc-shield-flame {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #ffeb3b;
+            text-shadow: 0 0 8px #ff9800, 0 0 15px #f44336;
+            letter-spacing: -3px;
+            margin-top: 5px;
         }
 
         @media(max-width: 900px) {
-            .hero-shield-badge { display: none; }
+            .hero-coc-shield { display: none; }
             .hero h1 { font-size: 2.5rem; }
         }
 
@@ -560,7 +626,10 @@
 
     <nav>
         <a href="#" class="nav-logo">
-            <div class="nav-logo-icon">M</div>
+            <div class="nav-coc-shield">
+                <div class="nav-shield-top">3</div>
+                <div class="nav-shield-body">M</div>
+            </div>
             ARMIA MAURYCEGO
         </a>
         <div class="nav-links">
@@ -580,9 +649,11 @@
         
         <!-- HERO -->
         <section class="hero">
-            <div class="hero-shield-badge">
-                <span style="font-family:'Orbitron'; font-size:1.6rem; font-weight:900; color:#fff;">3</span>
-                <span style="font-family:'Orbitron'; font-size:1rem; font-weight:900; color:var(--gold);">M</span>
+            <div class="hero-coc-shield">
+                <div class="coc-shield-top">3</div>
+                <div class="coc-shield-body">
+                    <div class="coc-shield-flame">M</div>
+                </div>
             </div>
 
             <h1>ARMIA<br>MAURYCEGO</h1>
@@ -665,7 +736,7 @@
                         <div class="timer-item"><div class="timer-val" id="rw-m">46</div><div class="timer-lbl">MIN.</div></div>
                         <div class="timer-item"><div class="timer-val" id="rw-s">45</div><div class="timer-lbl">SEK.</div></div>
                     </div>
-                    <p style="font-size:0.8rem; color:var(--text-muted);">Rajdy startują w piątek o 7:00 UTC i trwają do poniedziałku.</p>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">Rajdy startują w piątek o 8:00 czasu polskiego (7:00 UTC) i trwają do poniedziałku.</p>
                 </div>
 
                 <div class="card-dark">
@@ -820,7 +891,7 @@
             </div>
         </section>
 
-        <!-- KALENDARZ KLANU (DYNANICZNY CZAS AUTOMATYCZNY) -->
+        <!-- KALENDARZ KLANU -->
         <section id="calendar">
             <div class="section-header-block">
                 <h2>KALENDARZ KLANU</h2>
@@ -844,7 +915,7 @@
                 <div class="card-dark">
                     <h3>RAID WEEKEND</h3>
                     <div style="font-family:'Orbitron'; font-size:1.5rem; font-weight:900; color:var(--gold); margin:8px 0;">PT – PN</div>
-                    <p>Co tydzień od piątku 7:00 UTC. Używaj ataków, jeśli możesz.</p>
+                    <p>Co tydzień od piątku 8:00 czasu polskiego. Używaj ataków, jeśli możesz.</p>
                 </div>
 
                 <div class="card-dark">
@@ -927,7 +998,7 @@
             </div>
         </section>
 
-        <!-- LISTA GRACZY (40 OSÓB ZE SKRINÓW) -->
+        <!-- LISTA GRACZY -->
         <section id="players-list" style="margin-top:40px;">
             <div class="section-header-block">
                 <h2>LISTA GRACZY</h2>
@@ -990,7 +1061,7 @@
             </div>
         </section>
 
-        <!-- ZASADY KLANU (8 KAFELKÓW) -->
+        <!-- ZASADY KLANU -->
         <section id="rules" style="margin-top:40px;">
             <div class="section-header-block">
                 <h2>ZASADY KLANU</h2>
@@ -1133,9 +1204,9 @@
         function updateClashTimers() {
             const now = new Date();
             
-            // 1. Raid Weekend (od piątku 07:00 UTC do poniedziałku)
+            // 1. Raid Weekend (od piątku 8:00 czasu polskiego / 7:00 UTC do poniedziałku)
             let nextFriday = new Date(now);
-            nextFriday.setUTCHours(7, 0, 0, 0);
+            nextFriday.setUTCHours(7, 0, 0, 0); // 7:00 UTC = 8:00 w Polsce (zimowy)
             let day = now.getUTCDay();
             let diffDays = (5 - day + 7) % 7;
             if (diffDays === 0 && now.getUTCHours() >= 7) diffDays = 7;
