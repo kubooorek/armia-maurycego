@@ -10,15 +10,19 @@
     <style>
         :root {
             --bg-dark: #0a0a0c;
-            --bg-card: rgba(18, 18, 24, 0.85);
+            --bg-card: rgba(18, 18, 24, 0.9);
             --gold: #ffb703;
             --gold-glow: #fb8500;
             --silver: #cbd5e1;
             --bronze: #cd7f32;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
-            --border-color: rgba(255, 183, 3, 0.2);
+            --border-color: rgba(255, 183, 3, 0.25);
             --discord-color: #5865F2;
+            --win-green: rgba(34, 197, 94, 0.15);
+            --win-border: #22c55e;
+            --loss-red: rgba(239, 68, 68, 0.15);
+            --loss-border: #ef4444;
         }
 
         * {
@@ -36,7 +40,6 @@
             line-height: 1.5;
         }
 
-        /* Canvas z cząsteczkami */
         #particles-canvas {
             position: fixed;
             top: 0;
@@ -47,7 +50,6 @@
             z-index: 0;
         }
 
-        /* Nawigacja */
         nav {
             position: fixed;
             top: 0;
@@ -98,7 +100,7 @@
             color: var(--text-main);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
 
@@ -124,7 +126,6 @@
             box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
         }
 
-        /* Główny kontener */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -133,7 +134,6 @@
             z-index: 1;
         }
 
-        /* Sekcja HERO */
         .hero {
             text-align: center;
             padding: 40px 0 60px;
@@ -176,7 +176,7 @@
 
         .hero h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
+            font-size: 3.2rem;
             font-weight: 900;
             letter-spacing: 2px;
             color: var(--text-main);
@@ -186,7 +186,7 @@
 
         .hero h1 span {
             color: var(--gold);
-            text-shadow: 0 0 20px rgba(255, 183, 3, 0.4);
+            text-shadow: 0 0 20px rgba(255, 183, 3, 0.5);
         }
 
         .hero-subtitle {
@@ -230,9 +230,9 @@
             background: linear-gradient(135deg, var(--gold) 0%, var(--gold-glow) 100%);
             color: #000;
             font-family: 'Orbitron', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 900;
-            padding: 16px 36px;
+            padding: 16px 38px;
             border-radius: 8px;
             text-decoration: none;
             box-shadow: 0 0 25px rgba(255, 183, 3, 0.4);
@@ -241,29 +241,38 @@
 
         .btn-cta-discord:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 35px rgba(255, 183, 3, 0.6);
+            box-shadow: 0 0 35px rgba(255, 183, 3, 0.7);
         }
 
-        /* Tytuły Sekcji */
         .section-title {
-            text-align: center;
-            margin: 60px 0 35px;
+            text-align: left;
+            margin: 60px 0 25px;
+        }
+
+        .section-title .section-tag {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            color: var(--gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .section-title h2 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
-            color: var(--gold);
+            font-size: 2.2rem;
+            color: var(--text-main);
             text-transform: uppercase;
             letter-spacing: 1px;
+            margin-top: 4px;
         }
 
         .section-title p {
             color: var(--text-muted);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            margin-top: 6px;
+            max-width: 800px;
         }
 
-        /* Karty Glassmorphism */
         .glass-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -273,134 +282,202 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         }
 
-        /* Licznik Wojenny */
-        .war-hub {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        @media(max-width: 768px) {
-            .war-hub { grid-template-columns: 1fr; }
-        }
-
-        .timer-display {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .timer-unit {
-            background: rgba(0,0,0,0.5);
-            border: 1px solid var(--gold);
-            padding: 12px 18px;
-            border-radius: 8px;
-            text-align: center;
-            min-width: 70px;
-        }
-
-        .timer-unit .num {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        .timer-unit .label {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-
-        .streak-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .streak-number {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #10b981;
-            text-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
-        }
-
-        /* Top Donatorzy */
-        .podium-grid {
+        /* Timery */
+        .timers-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            align-items: flex-end;
+            margin-bottom: 30px;
         }
 
-        @media(max-width: 850px) {
-            .podium-grid { grid-template-columns: 1fr; }
+        @media(max-width: 900px) {
+            .timers-grid { grid-template-columns: 1fr; }
         }
 
-        .podium-card {
+        .timer-box {
             text-align: center;
-            position: relative;
-            transition: transform 0.3s;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
         }
 
-        .podium-card.rank-1 {
-            order: 2;
-            border-color: var(--gold);
-            box-shadow: 0 0 25px rgba(255, 183, 3, 0.2);
-            transform: scale(1.05);
+        .timer-box h4 {
+            font-family: 'Orbitron';
+            color: var(--gold);
+            font-size: 1rem;
+            margin-bottom: 12px;
         }
 
-        .podium-card.rank-2 { order: 1; border-color: var(--silver); }
-        .podium-card.rank-3 { order: 3; border-color: var(--bronze); }
-
-        @media(max-width: 850px) {
-            .podium-card.rank-1 { order: 1; transform: none; }
-            .podium-card.rank-2 { order: 2; }
-            .podium-card.rank-3 { order: 3; }
+        .timer-digits {
+            font-family: 'Orbitron';
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-main);
         }
 
-        .badge-mvp {
-            background: var(--gold);
-            color: #000;
-            font-family: 'Orbitron', sans-serif;
+        .timer-sub {
             font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Historia Wojen */
+        .war-history-header {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(0,0,0,0.6);
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-family: 'Orbitron';
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .war-log-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .war-log-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: 1px solid;
+            transition: transform 0.2s;
+        }
+
+        .war-log-item.win {
+            background: var(--win-green);
+            border-color: var(--win-border);
+        }
+
+        .war-clan-name {
+            font-family: 'Orbitron';
             font-weight: 900;
+            font-size: 1.1rem;
+        }
+
+        .war-vs {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            background: rgba(0,0,0,0.4);
             padding: 4px 10px;
             border-radius: 4px;
-            display: inline-block;
+        }
+
+        /* Sekcja Sława Klanowa / Hall of Fame */
+        .hall-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 20px;
+        }
+
+        @media(max-width: 850px) {
+            .hall-grid { grid-template-columns: 1fr; }
+        }
+
+        .hall-mvp-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hall-mvp-badge {
+            font-size: 2.2rem;
             margin-bottom: 10px;
         }
 
-        .donor-name {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 5px;
+        .hall-mvp-subtitle {
+            font-family: 'Orbitron';
+            font-size: 0.85rem;
+            color: var(--gold);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
 
-        .donor-role {
-            font-size: 0.9rem;
+        .hall-mvp-title {
+            font-family: 'Orbitron';
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin: 5px 0 15px;
+        }
+
+        .hall-mvp-desc {
             color: var(--text-muted);
-            margin-bottom: 15px;
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
-        .donor-stat {
-            background: rgba(0,0,0,0.4);
-            padding: 8px;
-            border-radius: 6px;
-            margin-bottom: 6px;
+        .donor-row {
+            margin-bottom: 22px;
+        }
+
+        .donor-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .donor-info {
             display: flex;
             justify-content: space-between;
-            font-weight: 600;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .donor-rank-name {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .donor-rank-num {
+            font-family: 'Orbitron';
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--gold);
+        }
+
+        .donor-player-name {
+            font-family: 'Orbitron';
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .donor-count {
+            font-family: 'Orbitron';
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .donor-progress-bg {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .donor-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #eab308 0%, #f97316 100%);
+            border-radius: 4px;
         }
 
         /* Kalkulator TH */
         .calculator-box {
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
@@ -411,29 +488,84 @@
 
         .th-slider {
             width: 100%;
-            height: 8px;
+            height: 10px;
             border-radius: 5px;
             background: #222;
             outline: none;
             accent-color: var(--gold);
+            cursor: pointer;
         }
 
         .th-display {
             font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: var(--gold);
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .calc-result {
-            padding: 15px;
+            padding: 18px;
             border-radius: 8px;
-            background: rgba(0,0,0,0.4);
+            background: rgba(0,0,0,0.5);
             border-left: 4px solid var(--gold);
             text-align: left;
+            font-size: 1.05rem;
         }
 
-        /* Kadra */
+        /* Strategie i Układanie Składu */
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .strategy-grid { grid-template-columns: 1fr; }
+        }
+
+        .strategy-card {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .strategy-card h3 {
+            font-family: 'Orbitron';
+            color: var(--gold);
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .strategy-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-guide {
+            background: rgba(255, 183, 3, 0.1);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Orbitron';
+            font-size: 0.85rem;
+            transition: background 0.3s;
+        }
+
+        .btn-guide:hover {
+            background: var(--gold);
+            color: #000;
+        }
+
+        /* Kadra i Zasady */
         .hierarchy-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -465,7 +597,6 @@
             gap: 8px;
         }
 
-        /* Wymagania i Oferta */
         .rules-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -501,7 +632,6 @@
             margin-top: 10px;
         }
 
-        /* Footer */
         footer {
             border-top: 1px solid var(--border-color);
             padding: 30px 0;
@@ -520,16 +650,16 @@
 
     <canvas id="particles-canvas"></canvas>
 
-    <!-- Nawigacja -->
     <nav>
         <a href="#" class="nav-logo">
             <div class="nav-logo-icon">M</div>
             ARMIA MAURYCEGO
         </a>
         <div class="nav-links">
-            <a href="#war-hub">Wojny</a>
-            <a href="#donators">Top Donatorzy</a>
+            <a href="#war-hub">Centrum Wojen</a>
+            <a href="#hall">Sława klanowa</a>
             <a href="#calculator">Kalkulator TH</a>
+            <a href="#tactics">Taktyki</a>
             <a href="#kadra">Kadra</a>
             <a href="#rules">Zasady</a>
         </div>
@@ -540,22 +670,21 @@
 
     <div class="container">
         
-        <!-- Hero Section -->
         <section class="hero">
             <div class="clan-shield">
                 <div class="clan-shield-m">M</div>
                 <div class="clan-level-badge">LVL 3</div>
             </div>
             <h1>ARMIA <span>MAURYCEGO</span></h1>
-            <p class="hero-subtitle">Oficjalny Portal Klanowy Clash of Clans</p>
+            <p class="hero-subtitle">Oficjalny Portal Klanowy Clash of Clans (#2GQO8RGRL)[cite: 16]</p>
             
             <div class="status-bar">
                 <div class="status-item">
                     <div class="status-dot"></div>
-                    REKRUTACJA: OTWARTA
+                    REKRUTACJA: OTWARTA (OD TH7)[cite: 16]
                 </div>
                 <div class="status-item" style="color: var(--gold);">
-                    ⚔️ CW / CWL: WAR READY
+                    ⚔️ WOJNY I CWL: NON-STOP[cite: 16]
                 </div>
                 <div class="status-item">
                     👥 STAN: 48 / 50
@@ -568,89 +697,219 @@
             </a>
         </section>
 
-        <!-- Centrum Wojen -->
+        <!-- Centrum Wojen & Timery -->
         <section id="war-hub">
             <div class="section-title">
-                <h2>Centrum Wojen</h2>
-                <p>Status nadchodzących bitew i pasmo zwycięstw</p>
+                <div class="section-tag">WAR HUB</div>
+                <h2>Centrum wojen</h2>
+                <p>Moduł do prezentowania wojen i wyników. Clash Bot już zbiera podsumowania na Discordzie.[cite: 18]</p>
             </div>
 
-            <div class="war-hub">
-                <div class="glass-card">
-                    <h3 style="text-align: center; font-family: 'Orbitron'; color: var(--gold);">⏱️ ODLICTANIE DO WOJNY</h3>
-                    <div class="timer-display">
-                        <div class="timer-unit">
-                            <div class="num" id="hours">08</div>
-                            <div class="label">Godzin</div>
+            <div class="timers-grid">
+                <div class="glass-card timer-box">
+                    <h4>⏱️ NASTĘPNE CW (DZIEŃ PRZYGOTOWANIA)</h4>
+                    <div class="timer-digits" id="war-timer">07g 48m 15s</div>
+                    <div class="timer-sub">Dzień przygotowania[cite: 10]</div>
+                </div>
+
+                <div class="glass-card timer-box">
+                    <h4>🏰 WEEKEND NAJAZDÓW (RAID)</h4>
+                    <div class="timer-digits" id="raid-timer">1d 10g 48m</div>
+                    <div class="timer-sub">Weekend najazdów zacznie się za[cite: 14]</div>
+                </div>
+
+                <div class="glass-card timer-box">
+                    <h4>⭐ ODLICZANIE DO CWL</h4>
+                    <div class="timer-digits" id="cwl-timer">3 dni 00g</div>
+                    <div class="timer-sub">Start 1 listopada 2026 09:00[cite: 14]</div>
+                </div>
+            </div>
+
+            <!-- Historia Wojen -->
+            <div class="glass-card">
+                <div class="war-history-header">
+                    <span>STATYSTYKI WOJEN</span>
+                    <span>ZWYCIĘSTWA: 11 | PORAŻKI: 1 | REMISY: 2 | OGÓŁEM: 14[cite: 9]</span>
+                </div>
+
+                <div class="war-log-list">
+                    <div class="war-log-item win">
+                        <div>
+                            <span class="war-clan-name">ARMIA MAURYCEGO</span>
+                            <span class="war-vs">20 vs 20</span>[cite: 9]
+                            <span class="war-clan-name" style="margin-left: 10px;">Grim Reapers</span>[cite: 9]
                         </div>
-                        <div class="timer-unit">
-                            <div class="num" id="minutes">42</div>
-                            <div class="label">Minut</div>
+                        <div style="font-family: 'Orbitron'; font-weight: 700; color: #22c55e;">
+                            60 – 44 (100% vs 80.15%) ⭐[cite: 9]
                         </div>
-                        <div class="timer-unit">
-                            <div class="num" id="seconds">15</div>
-                            <div class="label">Sekund</div>
+                    </div>
+
+                    <div class="war-log-item win">
+                        <div>
+                            <span class="war-clan-name">ARMIA MAURYCEGO</span>
+                            <span class="war-vs">20 vs 20</span>[cite: 9]
+                            <span class="war-clan-name" style="margin-left: 10px;">Glader's Clan</span>[cite: 9]
+                        </div>
+                        <div style="font-family: 'Orbitron'; font-weight: 700; color: #22c55e;">
+                            60 – 59 (100% vs 98.90%) ⭐[cite: 9]
+                        </div>
+                    </div>
+
+                    <div class="war-log-item win">
+                        <div>
+                            <span class="war-clan-name">ARMIA MAURYCEGO</span>
+                            <span class="war-vs">20 vs 20</span>[cite: 9]
+                            <span class="war-clan-name" style="margin-left: 10px;">EnMa !!</span>[cite: 9]
+                        </div>
+                        <div style="font-family: 'Orbitron'; font-weight: 700; color: #22c55e;">
+                            59 – 59 (99.10% vs 98.65%) ⭐[cite: 9]
+                        </div>
+                    </div>
+
+                    <div class="war-log-item win">
+                        <div>
+                            <span class="war-clan-name">ARMIA MAURYCEGO</span>
+                            <span class="war-vs">15 vs 15</span>[cite: 9]
+                            <span class="war-clan-name" style="margin-left: 10px;">BATCAVERNA</span>[cite: 9]
+                        </div>
+                        <div style="font-family: 'Orbitron'; font-weight: 700; color: #22c55e;">
+                            44 – 43 (99.40% vs 98.40%) ⭐[cite: 9]
                         </div>
                     </div>
                 </div>
-
-                <div class="glass-card streak-box">
-                    <h3 style="font-family: 'Orbitron'; margin-bottom: 10px;">🔥 PASMO ZWYCIĘSTW (WIN STREAK)</h3>
-                    <div class="streak-number">5 WYGRANYCH</div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">Ostatni mecz: ARMIA MAURYCEGO 45 - 41 WROGA DRUŻYNA</p>
-                </div>
             </div>
         </section>
 
-        <!-- Top Donatorzy -->
-        <section id="donators">
+        <!-- Sława Klanowa / Hall of Fame -->
+        <section id="hall">
             <div class="section-title">
-                <h2>Top Donatorzy Miesiąca</h2>
-                <p>Królowie wsparcia wojskowego w naszym klanie</p>
+                <div class="section-tag">HALL OF FAME</div>
+                <h2>Sława klanowa</h2>
+                <p>Clash Bot na Discordzie podsumowuje wojny, rajdy, Gry Klanowe, donacje i rangi.[cite: 19]</p>
             </div>
 
-            <div class="podium-grid">
-                <!-- Srebro (#2) -->
-                <div class="glass-card podium-card rank-2">
-                    <div class="donor-name">Albaroon.2</div>
-                    <div class="donor-role">Współlider (Co-Leader)</div>
-                    <div class="donor-stat"><span>Przekazane:</span> <span style="color: #10b981;">3 893</span></div>
-                    <div class="donor-stat"><span>Otrzymane:</span> <span>2 554</span></div>
+            <div class="hall-grid">
+                <!-- Lewa kolumna: MVP Miesiąca -->
+                <div class="hall-mvp-card">
+                    <div class="hall-mvp-badge">🏆</div>
+                    <div class="hall-mvp-subtitle">MVP MIESIĄCA</div>
+                    <div class="hall-mvp-title">Wybór lidera</div>
+                    <p class="hall-mvp-desc">
+                        Gracz miesiąca będzie wyróżniany za gwiazdki w CWL, pomoc klanowi i aktywność. Zwycięzca zostanie dodany po podsumowaniu miesiąca.[cite: 19]
+                    </p>
                 </div>
 
-                <!-- Złoto (#1 MVP) -->
-                <div class="glass-card podium-card rank-1">
-                    <div class="badge-mvp">⭐ MVP MIESIĄCA</div>
-                    <div class="donor-name" style="color: var(--gold);">KUBOOOREK</div>
-                    <div class="donor-role">Współlider (Co-Leader)</div>
-                    <div class="donor-stat"><span>Przekazane:</span> <span style="color: #10b981; font-weight: 800;">7 643</span></div>
-                    <div class="donor-stat"><span>Otrzymane:</span> <span>3 077</span></div>
-                </div>
+                <!-- Prawa kolumna: Top 3 Donatorów -->
+                <div class="glass-card">
+                    <h3 style="font-family: 'Orbitron'; font-size: 1.25rem; margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                        <span>🎁</span> TOP 3 Donatorów miesiąca[cite: 19]
+                    </h3>
 
-                <!-- Brąz (#3) -->
-                <div class="glass-card podium-card rank-3">
-                    <div class="donor-name">VipeR</div>
-                    <div class="donor-role">Wódz Klanu (Leader)</div>
-                    <div class="donor-stat"><span>Przekazane:</span> <span style="color: #10b981;">2 344</span></div>
-                    <div class="donor-stat"><span>Otrzymane:</span> <span>3 067</span></div>
+                    <!-- Donator #1 -->
+                    <div class="donor-row">
+                        <div class="donor-info">
+                            <div class="donor-rank-name">
+                                <span class="donor-rank-num">01</span>
+                                <span class="donor-player-name">KUBOOOREK</span>[cite: 19]
+                            </div>
+                            <span class="donor-count">7 643</span>[cite: 19]
+                        </div>
+                        <div class="donor-progress-bg">
+                            <div class="donor-progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Donator #2 -->
+                    <div class="donor-row">
+                        <div class="donor-info">
+                            <div class="donor-rank-name">
+                                <span class="donor-rank-num">02</span>
+                                <span class="donor-player-name">Albaroon.2</span>[cite: 19]
+                            </div>
+                            <span class="donor-count">3 893</span>[cite: 19]
+                        </div>
+                        <div class="donor-progress-bg">
+                            <div class="donor-progress-bar" style="width: 51%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Donator #3 -->
+                    <div class="donor-row">
+                        <div class="donor-info">
+                            <div class="donor-rank-name">
+                                <span class="donor-rank-num">03</span>
+                                <span class="donor-player-name">VipeR</span>[cite: 19]
+                            </div>
+                            <span class="donor-count">2 344</span>[cite: 19]
+                        </div>
+                        <div class="donor-progress-bg">
+                            <div class="donor-progress-bar" style="width: 31%;"></div>
+                        </div>
+                    </div>
+
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 20px;">
+                        Początkowe wartości podane przez lidera. Docelowo można je aktualizować danymi z podsumowań Clash Bota.[cite: 19]
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Kalkulator TH -->
+        <!-- Kalkulator TH pod Klan -->
         <section id="calculator">
             <div class="section-title">
-                <h2>Interaktywny Kalkulator TH</h2>
-                <p>Sprawdź swoje szanse na udział w Woknach Klanów i CWL</p>
+                <div class="section-tag">REKRUTACJA</div>
+                <h2>Kalkulator Ratusza (TH)</h2>
+                <p>Wybierz poziom Ratusza, aby zobaczyć orientacyjne wymagania i wskazówki.[cite: 15]</p>
             </div>
 
             <div class="glass-card calculator-box">
-                <div class="th-display" id="thValueDisplay">Town Hall 12</div>
+                <div class="th-display" id="thValueDisplay">TH 9</div>[cite: 15]
                 <div class="th-slider-container">
-                    <input type="range" min="9" max="17" value="12" class="th-slider" id="thRange">
+                    <input type="range" min="7" max="17" value="9" class="th-slider" id="thRange">
                 </div>
                 <div class="calc-result" id="calcResult">
-                    ✅ <strong>Kwalifikujesz się do wojen!</strong> Wykonuj 2 obowiązkowe ataki w CW oraz zdobywaj minimum 1000 pkt w Igrzyskach Klanów.
+                    ✅ <strong>CWL: kandydat do składu rozwojowego.</strong> Dobry etap na naukę ataków i zdobywanie doświadczenia. Miejsce w głównym składzie zależy od przeciwników i decyzji lidera.[cite: 15]
+                </div>
+            </div>
+        </section>
+
+        <!-- Układanie Składu i Strategie -->
+        <section id="tactics">
+            <div class="section-title">
+                <div class="section-tag">ROZWIJAJ UMIEJĘTNOŚCI</div>
+                <h2>Układanie składu i strategie</h2>
+                <p>Wybierz poziom Ratusza w kalkulatorze i dobierz armię, którą masz już dobrze ulepszoną.[cite: 18]</p>
+            </div>
+
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <div>
+                        <h3>🌱 Dla początkujących</h3>[cite: 18]
+                        <p>Ćwicz bezpieczne ataki, sprawdzaj zasięg obrony i najpierw ulepszaj jedną główną armię.[cite: 18]</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="https://www.youtube.com/results?search_query=clash+of+clans+th9+attack+strategy" target="_blank" class="btn-guide">Poradniki TH9</a>[cite: 18]
+                        <a href="https://www.youtube.com/results?search_query=clash+of+clans+th10+attack+strategy" target="_blank" class="btn-guide">Poradniki TH10</a>[cite: 18]
+                    </div>
+                </div>
+
+                <div class="strategy-card">
+                    <div>
+                        <h3>🔥 Dla średniozaawansowanych</h3>[cite: 18]
+                        <p>Dobieraj armię do układu bazy, zaplanuj wejście i zachowaj zaklęcia na kluczową część ataku.[cite: 18]</p>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=clash+of+clans+th12+attack+strategy" target="_blank" class="btn-guide">Poradniki TH11–13</a>[cite: 18]
+                </div>
+
+                <div class="strategy-card">
+                    <div>
+                        <h3>👑 CWL i Rajdy</h3>[cite: 18]
+                        <p>W CWL atakuj zgodnie z ustaleniami lidera. W rajdach skupiaj ataki tak, aby pomagały całej ekipie.[cite: 18]</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <a href="https://www.youtube.com/results?search_query=clash+of+clans+cwl+strategy" target="_blank" class="btn-guide">Poradniki CWL</a>[cite: 18]
+                        <a href="https://www.youtube.com/results?search_query=clash+of+clans+raid+weekend+strategy" target="_blank" class="btn-guide">Poradniki rajdów</a>[cite: 18]
+                    </div>
                 </div>
             </div>
         </section>
@@ -658,23 +917,24 @@
         <!-- Kadra -->
         <section id="kadra">
             <div class="section-title">
+                <div class="section-tag">ZARZĄD</div>
                 <h2>Struktura i Kadra Klanu</h2>
-                <p>Liderzy i dowództwo dbające o rozwój klanu</p>
+                <p>Liderzy i dowództwo dbające o porządek i strategię w grze</p>
             </div>
 
             <div class="hierarchy-grid">
                 <div class="glass-card">
                     <div class="role-title">👑 WÓDZ KLANU</div>
                     <ul class="member-list">
-                        <li><span style="color: var(--gold);">•</span> VipeR</li>
+                        <li><span style="color: var(--gold);">•</span> VipeR (Główny Dowódca)</li>
                     </ul>
                 </div>
 
                 <div class="glass-card">
                     <div class="role-title">🛡️ WSPÓŁLIDERZY</div>
                     <ul class="member-list">
-                        <li><span style="color: var(--gold);">•</span> KUBOOOREK</li>
-                        <li><span style="color: var(--gold);">•</span> Albaroon.2</li>
+                        <li><span style="color: var(--gold);">•</span> KUBOOOREK (Zastępca Lidera)</li>
+                        <li><span style="color: var(--gold);">•</span> Albaroon.2 (Zastępca Lidera)</li>
                     </ul>
                 </div>
 
@@ -692,60 +952,58 @@
         <!-- Zasady -->
         <section id="rules">
             <div class="section-title">
-                <h2>Wymagania i Oferta</h2>
-                <p>Zasady panujące w ARMII MAURYCEGO</p>
+                <div class="section-tag">REGULAMIN</div>
+                <h2>Wymagania i Zasady Klanu</h2>
+                <p>Co musisz spełniać, aby do nas dołączyć?</p>
             </div>
 
             <div class="glass-card rules-grid">
                 <div>
-                    <h3 style="color: #ef4444; font-family: 'Orbitron'; margin-bottom: 15px;">🔴 CZEGO OCZEKUJEMY:</h3>
+                    <h3 style="color: #ef4444; font-family: 'Orbitron'; margin-bottom: 15px;">🔴 WYMAGANIA KLANOWE:</h3>
                     <div class="rule-item">
-                        <span class="rule-icon">✖</span> Brak "Rushowania" baz (przemyślany rozwój).
+                        <span class="rule-icon">✖</span> Brak "Rushowania" baz (rozwijaj mądrze).
+                    </div>
+                    <div class="rule-item">
+                        <span class="rule-icon">⚔</span> Minimum TH7 (przyjmujemy od poziomu 7 w górę)[cite: 16].
                     </div>
                     <div class="rule-item">
                         <span class="rule-icon">⚔</span> Obowiązkowe 2 ataki w Wojnach Klanów.
                     </div>
                     <div class="rule-item">
-                        <span class="rule-icon">🎯</span> Minimum 1000 punktów w Igrzyskach Klanów (CG).
-                    </div>
-                    <div class="rule-item">
-                        <span class="rule-icon">🏰</span> Obowiązkowy udział w Raid Weekendach.
+                        <span class="rule-icon">🎯</span> Minimum 1000 punktów w Igrzyskach Klanów.
                     </div>
                 </div>
 
                 <div>
                     <h3 style="color: #10b981; font-family: 'Orbitron'; margin-bottom: 15px;">🟢 CO OFERUJEMY:</h3>
                     <div class="rule-item">
-                        <span class="rule-icon">✔</span> Wojny klanów i CWL organizowane non-stop.
+                        <span class="rule-icon">✔</span> Wojny i CWL organizowane non-stop[cite: 16].
                     </div>
                     <div class="rule-item">
-                        <span class="rule-icon">🎁</span> Szybkie i bogate wsparcie wojskiem.
+                        <span class="rule-icon">🎁</span> Bogate donacje wojska i pomoc nowym.
                     </div>
                     <div class="rule-item">
-                        <span class="rule-icon">⭐</span> Przejrzysty system awansów za aktywność.
+                        <span class="rule-icon">⭐</span> Przejrzyste awanse na Starszyznę za aktywność.
                     </div>
                     <div class="rule-item">
-                        <span class="rule-icon">🔥</span> Zgraną i pomocną atmosferę na Discordzie.
+                        <span class="rule-icon">🔥</span> Świetną atmosferę i zgrany Discord.
                     </div>
                 </div>
 
                 <div class="alert-kick">
-                    🚨 ŻELAZNA ZASADA: 7 DNI NIEAKTYWNOŚCI BEZ USPRAWIEDLIWIENIA = KICK Z KLANU! 🚨
+                    🚨 ŻELAZNA ZASADA: 7 DNI NIEAKTYWNOŚCI BEZ USPRAWIEDLIWIENIA = KICK Z KLANU![cite: 16] 🚨
                 </div>
             </div>
         </section>
 
     </div>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 <strong>ARMIA MAURYCEGO</strong>. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 <strong>ARMIA MAURYCEGO</strong> (#2GQO8RGRL)[cite: 16]. Wszelkie prawa zastrzeżone.</p>
         <p style="font-size: 0.85rem; margin-top: 5px;">Dołącz do naszego <a href="https://discord.gg/7SquD7SF3" target="_blank">Discorda</a></p>
     </footer>
 
-    <!-- Skrypty JS -->
     <script>
-        // Animacja cząsteczek w tle
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
 
@@ -788,43 +1046,24 @@
         }
         animateParticles();
 
-        // Licznik Wojenny
-        let hours = 8, minutes = 42, seconds = 15;
-        setInterval(() => {
-            if(seconds > 0) {
-                seconds--;
-            } else {
-                seconds = 59;
-                if(minutes > 0) {
-                    minutes--;
-                } else {
-                    minutes = 59;
-                    if(hours > 0) hours--;
-                }
-            }
-            document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
-            document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
-            document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
-        }, 1000);
-
-        // Interaktywny Kalkulator TH
+        // Kalkulator TH
         const thRange = document.getElementById('thRange');
         const thValueDisplay = document.getElementById('thValueDisplay');
         const calcResult = document.getElementById('calcResult');
 
         thRange.addEventListener('input', (e) => {
             const val = e.target.value;
-            thValueDisplay.innerText = `Town Hall ${val}`;
+            thValueDisplay.innerText = `TH ${val}`;
 
             if(val >= 12) {
-                calcResult.innerHTML = `✅ <strong>Kwalifikujesz się do wojen i CWL!</strong> Wykonuj 2 ataki w CW oraz zdobywaj min. 1000 pkt w Igrzyskach Klanów.`;
+                calcResult.innerHTML = `✅ <strong>CWL: pewny kandydat do głównego składu!</strong> Masz gwarantowane miejsce w najsilniejszym składzie ligowym. Pamiętaj o atakach!`;
                 calcResult.style.borderLeftColor = '#10b981';
-            } else if(val >= 10) {
-                calcResult.innerHTML = `🟡 <strong>Kwalifikujesz się do zwykłych wojen!</strong> Na CWL dołączasz zależnie od wolnych miejsc w składzie.`;
+            } else if(val >= 9) {
+                calcResult.innerHTML = `⚔️ <strong>CWL: kandydat do składu rozwojowego.</strong> Dobry etap na naukę ataków i zdobywanie doświadczenia. Miejsce w głównym składzie zależy od przeciwników i decyzji lidera.`;
                 calcResult.style.borderLeftColor = '#ffb703';
             } else {
-                calcResult.innerHTML = `🔴 <strong>Wymagany dalszy rozwój bazy.</strong> Dołącz na Discorda, aby uzyskać pomoc w szybkim ulepszaniu TH!`;
-                calcResult.style.borderLeftColor = '#ef4444';
+                calcResult.innerHTML = `🛡️ <strong>Szybki rozwój i donacje!</strong> Na TH${val} chętnie przyjmujemy do klanu – dajemy pełne wsparcie wojskiem, żebyś szybko wszedł na wyższy poziom Ratusza!`;
+                calcResult.style.borderLeftColor = '#3b82f6';
             }
         });
     </script>
