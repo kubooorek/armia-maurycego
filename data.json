@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T17:17:39.491Z",
+  "updated": "2026-10-29T17:29:02.348Z",
   "clanLevel": 3,
   "memberCount": 41,
   "cwlLeague": "Unranked",
@@ -25,6 +25,7 @@
     "members": [
       {
         "name": "KUBOOOREK",
+        "tag": "#VP9PLGLV",
         "pos": 1,
         "th": 15,
         "attacks": [
@@ -37,6 +38,7 @@
       },
       {
         "name": "Albaroon.2",
+        "tag": "#GYUJR2URJ",
         "pos": 2,
         "th": 12,
         "attacks": [
@@ -54,12 +56,14 @@
       },
       {
         "name": "MAQOS",
+        "tag": "#LJYR92002",
         "pos": 3,
         "th": 12,
         "attacks": []
       },
       {
         "name": "oggsgdjdjbd",
+        "tag": "#Q9CU9P908",
         "pos": 4,
         "th": 12,
         "attacks": [
@@ -77,6 +81,7 @@
       },
       {
         "name": "VipeR",
+        "tag": "#22R8PLCU8",
         "pos": 5,
         "th": 11,
         "attacks": [
@@ -94,6 +99,7 @@
       },
       {
         "name": "Cwel123",
+        "tag": "#RPR0L809R",
         "pos": 6,
         "th": 10,
         "attacks": [
@@ -106,6 +112,7 @@
       },
       {
         "name": "tak",
+        "tag": "#Y02PYY922",
         "pos": 7,
         "th": 9,
         "attacks": [
@@ -118,12 +125,14 @@
       },
       {
         "name": "Kojak",
+        "tag": "#G8VGC2VRL",
         "pos": 8,
         "th": 9,
         "attacks": []
       },
       {
         "name": "Brann",
+        "tag": "#LC8VRR9R2",
         "pos": 9,
         "th": 9,
         "attacks": [
@@ -136,6 +145,7 @@
       },
       {
         "name": "Belaska",
+        "tag": "#GU0R2J8R0",
         "pos": 10,
         "th": 9,
         "attacks": [
@@ -153,6 +163,7 @@
       },
       {
         "name": "Barnes",
+        "tag": "#LQVRCRUYR",
         "pos": 11,
         "th": 8,
         "attacks": [
@@ -165,6 +176,7 @@
       },
       {
         "name": "vvd",
+        "tag": "#GQULCR98R",
         "pos": 12,
         "th": 9,
         "attacks": [
@@ -177,6 +189,7 @@
       },
       {
         "name": "wiktor",
+        "tag": "#QGPC2228Q",
         "pos": 13,
         "th": 8,
         "attacks": [
@@ -194,6 +207,7 @@
       },
       {
         "name": "KuN",
+        "tag": "#YLLQL2VUP",
         "pos": 14,
         "th": 8,
         "attacks": [
@@ -206,6 +220,7 @@
       },
       {
         "name": "Mimbosz",
+        "tag": "#RY0QPVCCY",
         "pos": 15,
         "th": 9,
         "attacks": [
@@ -223,12 +238,14 @@
       },
       {
         "name": "SZAR3",
+        "tag": "#RYLR2C92V",
         "pos": 16,
         "th": 7,
         "attacks": []
       },
       {
         "name": "Riczard",
+        "tag": "#R2PCVYQG2",
         "pos": 17,
         "th": 7,
         "attacks": [
@@ -241,6 +258,7 @@
       },
       {
         "name": "GoldBelt",
+        "tag": "#R9QQPG9JP",
         "pos": 18,
         "th": 7,
         "attacks": [
@@ -258,6 +276,7 @@
       },
       {
         "name": "Marsyllia",
+        "tag": "#R0VJLRGQ0",
         "pos": 19,
         "th": 7,
         "attacks": [
@@ -275,13 +294,377 @@
       },
       {
         "name": "samurai024",
+        "tag": "#RYUV9V9RC",
         "pos": 20,
         "th": 5,
         "attacks": []
       }
     ]
   },
-  "visits": 3,
+  "visits": 4,
+  "discord": {
+    "name": "ARMIA MAURYCEGO",
+    "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
+    "online": 4,
+    "members": 11
+  },
+  "raids": [
+    {
+      "state": "ended",
+      "start": "20261023T070000.000Z",
+      "end": "20261026T070000.000Z",
+      "loot": 98358,
+      "raids": 10,
+      "attacks": 90,
+      "districts": 32,
+      "medals": 77,
+      "members": [
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8199
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7493
+        },
+        {
+          "name": "threeten",
+          "tag": "#R8RVQVPCC",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7318
+        },
+        {
+          "name": "wiktor",
+          "tag": "#QGPC2228Q",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6912
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6728
+        },
+        {
+          "name": "Riczard",
+          "tag": "#R2PCVYQG2",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6645
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6644
+        },
+        {
+          "name": "Toster290",
+          "tag": "#GJJ90QGVQ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6594
+        },
+        {
+          "name": "SZAR3",
+          "tag": "#RYLR2C92V",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6354
+        },
+        {
+          "name": "KuN",
+          "tag": "#YLLQL2VUP",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6347
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6101
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5995
+        },
+        {
+          "name": "filip",
+          "tag": "#R90YJUQCQ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5938
+        },
+        {
+          "name": "Darui",
+          "tag": "#LUQJC2JGY",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5774
+        },
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5316
+        }
+      ]
+    },
+    {
+      "state": "ended",
+      "start": "20261016T070000.000Z",
+      "end": "20261019T070000.000Z",
+      "loot": 56374,
+      "raids": 8,
+      "attacks": 66,
+      "districts": 18,
+      "medals": 45,
+      "members": []
+    }
+  ],
+  "events": [],
+  "warArchive": [
+    {
+      "start": "20261029T040002.000Z",
+      "end": "20261030T040002.000Z",
+      "enemy": "старше 18",
+      "size": 20,
+      "perMember": 2,
+      "state": "inWar",
+      "us": 57,
+      "them": 50,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 85
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 90
+            }
+          ]
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 99
+            }
+          ]
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 99
+            }
+          ]
+        },
+        {
+          "name": "wiktor",
+          "tag": "#QGPC2228Q",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 1,
+              "pct": 68
+            }
+          ]
+        },
+        {
+          "name": "KuN",
+          "tag": "#YLLQL2VUP",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Mimbosz",
+          "tag": "#RY0QPVCCY",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "SZAR3",
+          "tag": "#RYLR2C92V",
+          "attacks": []
+        },
+        {
+          "name": "Riczard",
+          "tag": "#R2PCVYQG2",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "GoldBelt",
+          "tag": "#R9QQPG9JP",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "Marsyllia",
+          "tag": "#R0VJLRGQ0",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "samurai024",
+          "tag": "#RYUV9V9RC",
+          "attacks": []
+        }
+      ]
+    }
+  ],
   "members": [
     {
       "name": "KUBOOOREK",
@@ -290,7 +673,50 @@
       "th": 15,
       "given": 7669,
       "received": 3077,
-      "trophies": 447
+      "trophies": 447,
+      "profile": {
+        "level": 204,
+        "trophies": 447,
+        "best": 5066,
+        "league": "P.E.K.K.A League 23",
+        "warStars": 1238,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 1598219,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 90,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 90,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 65,
+            "max": 85
+          },
+          {
+            "name": "Royal Champion",
+            "level": 40,
+            "max": 55
+          },
+          {
+            "name": "Minion Prince",
+            "level": 67,
+            "max": 95
+          },
+          {
+            "name": "Dragon Duke",
+            "level": 10,
+            "max": 25
+          }
+        ]
+      }
     },
     {
       "name": "Baku",
@@ -299,7 +725,45 @@
       "th": 15,
       "given": 800,
       "received": 80,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 151,
+        "trophies": 0,
+        "best": 3270,
+        "league": "Witch League 17",
+        "warStars": 1207,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 448497,
+        "warPref": "out",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 41,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 54,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 29,
+            "max": 85
+          },
+          {
+            "name": "Royal Champion",
+            "level": 21,
+            "max": 55
+          },
+          {
+            "name": "Minion Prince",
+            "level": 44,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Albaroon.2",
@@ -308,7 +772,40 @@
       "th": 12,
       "given": 3932,
       "received": 2554,
-      "trophies": 391
+      "trophies": 391,
+      "profile": {
+        "level": 108,
+        "trophies": 391,
+        "best": 2839,
+        "league": "Valkyrie League 13",
+        "warStars": 84,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 657124,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 56,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 55,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 21,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 40,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "oggsgdjdjbd",
@@ -317,7 +814,40 @@
       "th": 12,
       "given": 98,
       "received": 72,
-      "trophies": 276
+      "trophies": 276,
+      "profile": {
+        "level": 99,
+        "trophies": 276,
+        "best": 1032,
+        "league": "Wizard League 10",
+        "warStars": 53,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 95655,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 34,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 17,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 9,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 3,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "MrDefPL",
@@ -326,7 +856,40 @@
       "th": 12,
       "given": 127,
       "received": 180,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 146,
+        "trophies": 0,
+        "best": 2938,
+        "league": "Archer League 9",
+        "warStars": 504,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 84211,
+        "warPref": "out",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 53,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 49,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 20,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 23,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "MAQOS",
@@ -335,7 +898,40 @@
       "th": 12,
       "given": 301,
       "received": 0,
-      "trophies": 396
+      "trophies": 396,
+      "profile": {
+        "level": 119,
+        "trophies": 396,
+        "best": 2224,
+        "league": "Archer League 8",
+        "warStars": 112,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 394851,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 20,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 30,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "VipeR",
@@ -344,7 +940,40 @@
       "th": 11,
       "given": 2379,
       "received": 3078,
-      "trophies": 362
+      "trophies": 362,
+      "profile": {
+        "level": 104,
+        "trophies": 362,
+        "best": 2156,
+        "league": "Archer League 8",
+        "warStars": 223,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 49473,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 38,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 38,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 7,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 20,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "tak",
@@ -353,7 +982,35 @@
       "th": 9,
       "given": 0,
       "received": 212,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 134,
+        "trophies": 0,
+        "best": 3631,
+        "league": "Archer League 8",
+        "warStars": 3158,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 451025,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 30,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 30,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Brann",
@@ -362,7 +1019,35 @@
       "th": 9,
       "given": 15,
       "received": 112,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 102,
+        "trophies": 0,
+        "best": 2730,
+        "league": "Archer League 7",
+        "warStars": 2051,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 200722,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 30,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 30,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Cwel123",
@@ -371,7 +1056,35 @@
       "th": 10,
       "given": 44,
       "received": 0,
-      "trophies": 269
+      "trophies": 269,
+      "profile": {
+        "level": 73,
+        "trophies": 269,
+        "best": 400,
+        "league": "Barbarian League 6",
+        "warStars": 24,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 56321,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 14,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 14,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Toster290",
@@ -380,7 +1093,40 @@
       "th": 11,
       "given": 160,
       "received": 264,
-      "trophies": 162
+      "trophies": 162,
+      "profile": {
+        "level": 59,
+        "trophies": 162,
+        "best": 327,
+        "league": "Barbarian League 6",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 33906,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 4,
+            "max": 95
+          },
+          {
+            "name": "Grand Warden",
+            "level": 1,
+            "max": 85
+          }
+        ]
+      }
     },
     {
       "name": "monte",
@@ -389,7 +1135,35 @@
       "th": 10,
       "given": 20,
       "received": 83,
-      "trophies": 348
+      "trophies": 348,
+      "profile": {
+        "level": 71,
+        "trophies": 348,
+        "best": 348,
+        "league": "Barbarian League 5",
+        "warStars": 40,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 28873,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 15,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Belaska",
@@ -397,8 +1171,36 @@
       "role": "admin",
       "th": 9,
       "given": 322,
-      "received": 1437,
-      "trophies": 221
+      "received": 1438,
+      "trophies": 221,
+      "profile": {
+        "level": 53,
+        "trophies": 221,
+        "best": 622,
+        "league": "Barbarian League 5",
+        "warStars": 62,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 35685,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 19,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 13,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 2,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Kojak",
@@ -407,7 +1209,35 @@
       "th": 9,
       "given": 359,
       "received": 2084,
-      "trophies": 77
+      "trophies": 77,
+      "profile": {
+        "level": 57,
+        "trophies": 77,
+        "best": 696,
+        "league": "Barbarian League 5",
+        "warStars": 30,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 27485,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 21,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 19,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "Barnes",
@@ -416,7 +1246,30 @@
       "th": 8,
       "given": 0,
       "received": 130,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 87,
+        "trophies": 0,
+        "best": 2650,
+        "league": "Barbarian League 5",
+        "warStars": 2445,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 226266,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "KuN",
@@ -425,7 +1278,30 @@
       "th": 8,
       "given": 169,
       "received": 434,
-      "trophies": 104
+      "trophies": 104,
+      "profile": {
+        "level": 41,
+        "trophies": 104,
+        "best": 348,
+        "league": "Barbarian League 4",
+        "warStars": 36,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 32665,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 11,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Mimbosz",
@@ -434,7 +1310,35 @@
       "th": 9,
       "given": 14,
       "received": 317,
-      "trophies": 240
+      "trophies": 240,
+      "profile": {
+        "level": 36,
+        "trophies": 240,
+        "best": 252,
+        "league": "Skeleton League 3",
+        "warStars": 29,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 3150,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 14,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 16,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      }
     },
     {
       "name": "wiktor",
@@ -443,7 +1347,30 @@
       "th": 8,
       "given": 0,
       "received": 256,
-      "trophies": 100
+      "trophies": 100,
+      "profile": {
+        "level": 52,
+        "trophies": 100,
+        "best": 787,
+        "league": "Skeleton League 3",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 8212,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 16,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "vvd",
@@ -452,7 +1379,30 @@
       "th": 9,
       "given": 288,
       "received": 452,
-      "trophies": 299
+      "trophies": 299,
+      "profile": {
+        "level": 46,
+        "trophies": 299,
+        "best": 308,
+        "league": "Skeleton League 2",
+        "warStars": 12,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16270,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "SZAR3",
@@ -461,7 +1411,25 @@
       "th": 7,
       "given": 69,
       "received": 290,
-      "trophies": 181
+      "trophies": 181,
+      "profile": {
+        "level": 40,
+        "trophies": 181,
+        "best": 390,
+        "league": "Skeleton League 2",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 14253,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "filip",
@@ -470,7 +1438,30 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 174
+      "trophies": 174,
+      "profile": {
+        "level": 37,
+        "trophies": 174,
+        "best": 193,
+        "league": "Skeleton League 2",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 13078,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "zuzia",
@@ -479,7 +1470,30 @@
       "th": 9,
       "given": 27,
       "received": 0,
-      "trophies": 85
+      "trophies": 85,
+      "profile": {
+        "level": 36,
+        "trophies": 85,
+        "best": 149,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "my name billa",
@@ -488,16 +1502,62 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 39,
+        "trophies": 0,
+        "best": 296,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 100,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 3,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "SHA☆ZAM!",
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 8,
-      "given": 280,
+      "given": 281,
       "received": 246,
-      "trophies": 349
+      "trophies": 349,
+      "profile": {
+        "level": 40,
+        "trophies": 349,
+        "best": 349,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6550,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "GoldBelt",
@@ -506,7 +1566,25 @@
       "th": 7,
       "given": 12,
       "received": 285,
-      "trophies": 309
+      "trophies": 309,
+      "profile": {
+        "level": 33,
+        "trophies": 309,
+        "best": 309,
+        "league": "Skeleton League 1",
+        "warStars": 17,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6580,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Riczard",
@@ -515,7 +1593,25 @@
       "th": 7,
       "given": 180,
       "received": 445,
-      "trophies": 281
+      "trophies": 281,
+      "profile": {
+        "level": 32,
+        "trophies": 281,
+        "best": 260,
+        "league": "Skeleton League 1",
+        "warStars": 18,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 25892,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "erykos",
@@ -524,7 +1620,25 @@
       "th": 7,
       "given": 50,
       "received": 170,
-      "trophies": 260
+      "trophies": 260,
+      "profile": {
+        "level": 31,
+        "trophies": 260,
+        "best": 260,
+        "league": "Skeleton League 1",
+        "warStars": 5,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 700,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Martini",
@@ -533,7 +1647,25 @@
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 257
+      "trophies": 257,
+      "profile": {
+        "level": 31,
+        "trophies": 257,
+        "best": 257,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 100,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 3,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Rico",
@@ -542,7 +1674,25 @@
       "th": 7,
       "given": 30,
       "received": 545,
-      "trophies": 255
+      "trophies": 255,
+      "profile": {
+        "level": 31,
+        "trophies": 255,
+        "best": 255,
+        "league": "Skeleton League 1",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 4870,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Darui",
@@ -551,7 +1701,25 @@
       "th": 7,
       "given": 123,
       "received": 0,
-      "trophies": 242
+      "trophies": 242,
+      "profile": {
+        "level": 38,
+        "trophies": 242,
+        "best": 242,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 10055,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Marsyllia",
@@ -560,7 +1728,25 @@
       "th": 7,
       "given": 1,
       "received": 65,
-      "trophies": 188
+      "trophies": 188,
+      "profile": {
+        "level": 25,
+        "trophies": 188,
+        "best": 188,
+        "league": "Skeleton League 1",
+        "warStars": 8,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 3,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Andrzej",
@@ -569,7 +1755,25 @@
       "th": 8,
       "given": 0,
       "received": 100,
-      "trophies": 73
+      "trophies": 73,
+      "profile": {
+        "level": 33,
+        "trophies": 73,
+        "best": 73,
+        "league": "Skeleton League 1",
+        "warStars": 3,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 250,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 3,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "threeten",
@@ -578,7 +1782,25 @@
       "th": 7,
       "given": 40,
       "received": 245,
-      "trophies": 40
+      "trophies": 40,
+      "profile": {
+        "level": 29,
+        "trophies": 40,
+        "best": 40,
+        "league": "Skeleton League 1",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 24711,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "BoT6790",
@@ -587,7 +1809,25 @@
       "th": 7,
       "given": 0,
       "received": 20,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 22,
+        "trophies": 0,
+        "best": 42,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 2510,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "szoks",
@@ -596,7 +1836,25 @@
       "th": 5,
       "given": 1,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 13,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "TwarógPółtlusty",
@@ -605,7 +1863,25 @@
       "th": 5,
       "given": 41,
       "received": 174,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 19,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "samurai024",
@@ -614,7 +1890,25 @@
       "th": 5,
       "given": 0,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 18,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "Filox74",
@@ -623,7 +1917,19 @@
       "th": 3,
       "given": 0,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 7,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": []
+      }
     },
     {
       "name": "kwiatek",
@@ -632,7 +1938,25 @@
       "th": 6,
       "given": 0,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 21,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      }
     },
     {
       "name": "KungFuPanda",
@@ -641,7 +1965,19 @@
       "th": 3,
       "given": 0,
       "received": 10,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 8,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": []
+      }
     },
     {
       "name": "Fox",
@@ -650,7 +1986,25 @@
       "th": 4,
       "given": 0,
       "received": 45,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 13,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      }
     }
   ],
   "wars": [
