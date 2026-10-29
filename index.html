@@ -79,12 +79,13 @@
         .section-title {
             font-family: 'Orbitron', sans-serif;
             font-size: 2rem;
-            text-align: center;
-            margin-bottom: 40px;
+            text-align: left;
+            margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 15px;
+            border: none;
+            padding-bottom: 0;
+            color: #fff;
         }
         .hero {
             max-width: 1200px;
@@ -174,13 +175,34 @@
             transition: all 0.2s;
         }
         .th-btn:hover, .th-btn.active { background-color: var(--gold); color: #000; border-color: var(--gold); }
-        .table-responsive { width: 100%; overflow-y: auto; overflow-x: auto; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 40px; max-height: 350px; }
+        .table-responsive { width: 100%; overflow-y: auto; overflow-x: auto; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 20px; max-height: 400px; }
         table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
         th, td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
         th { background-color: var(--darker); font-family: 'Orbitron'; color: var(--gold); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; position: sticky; top: 0; z-index: 10; }
-        .badge-win { color: var(--green); border: 1px solid var(--green); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
         .search-input { width: 100%; background: var(--darker); border: 1px solid var(--border); padding: 12px 18px; color: #fff; border-radius: 8px; font-size: 0.95rem; margin-bottom: 20px; outline: none; }
         
+        /* STYLE DLA WYKRESÓW SKŁADU KLANU */
+        .clan-breakdown-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        @media(max-width: 900px) { .clan-breakdown-grid { grid-template-columns: 1fr; } }
+        
+        .th-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            font-family: 'Orbitron';
+        }
+        .th-bar-label { width: 50px; color: var(--text); font-weight: 700; font-size: 0.85rem; }
+        .th-bar-track { flex-grow: 1; background: var(--darker); height: 12px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+        .th-bar-fill { height: 100%; background: var(--gold); border-radius: 6px; }
+        .th-bar-count { width: 30px; text-align: right; color: var(--text-muted); font-weight: 700; font-size: 0.85rem; }
+
         /* STYLE DLA ROZWIJANEGO FAQ */
         .faq-item {
             background-color: var(--card-bg);
@@ -259,6 +281,7 @@
                     <li><a href="#dolacz">Dołącz</a></li>
                     <li><a href="#kalkulator-th">Rekrutacja</a></li>
                     <li><a href="#strategie">Strategie</a></li>
+                    <li><a href="#poradniki-th">Układanie Składu</a></li>
                     <li><a href="#wojny">Wojny</a></li>
                     <li><a href="#slawa">Sława</a></li>
                     <li><a href="#galeria">Galeria</a></li>
@@ -311,7 +334,7 @@
 
     <!-- JAK DOŁĄCZYĆ -->
     <section id="dolacz" class="container">
-        <h2 class="section-title">Jak dołączyć</h2>
+        <h2 class="section-title" style="margin-bottom: 25px;">Jak dołączyć</h2>
         <div class="grid-4">
             <div class="card"><div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">1</div><h3>Wejdź na Discorda</h3><p>Dołącz do serwera klanowego.</p></div>
             <div class="card"><div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">2</div><h3>Dołącz w grze</h3><p>Wyszukaj tag <code>#2GQO8RGRL</code>.</p></div>
@@ -351,6 +374,38 @@
         </div>
     </section>
 
+    <!-- UKŁADANIE SKŁADU I STRATEGIE -->
+    <section id="poradniki-th" class="container">
+        <h2 class="section-title" style="margin-bottom: 10px;">Układanie Składu i Strategie</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">Wybierz poziom Ratusza i dobierz armię, którą masz już dobrze ulepszoną, oraz sprawdź polecane bazy.</p>
+        
+        <div class="card" style="margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; border-left: 4px solid var(--primary);">
+            <div>
+                <h3 style="color: #fff; margin-bottom: 5px;">Jeden poradnik na wszystkie TH</h3>
+                <p style="margin: 0; font-size: 0.9rem;">Filmy ze strategiami i bazami od TH3 do TH17.</p>
+            </div>
+            <a href="https://www.youtube.com/results?search_query=clash+of+clans+strategies+th3+to+th17" target="_blank" class="btn-game" style="text-decoration: none; padding: 10px 20px;">Obejrzyj poradniki</a>
+        </div>
+
+        <div class="grid-4">
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH3</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 3. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th3+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH3</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH4</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 4. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th4+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH4</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH5</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 5. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th5+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH5</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH6</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 6. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th6+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH6</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH7</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 7. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th7+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH7</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH8</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 8. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th8+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH8</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH9</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 9. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th9+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH9</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH10</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 10. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th10+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH10</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH11</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 11. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th11+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH11</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH12</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 12. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th12+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH12</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH13</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 13. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th13+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH13</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH14</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 14. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th14+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH14</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH15</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 15. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th15+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH15</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH16</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 16. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th16+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH16</a></div>
+            <div class="card"><h3 style="color: #fff; margin-bottom: 10px;">TH17</h3><p style="font-size: 0.85rem; margin-bottom: 20px;">Poradniki ataków i przykładowe armie dla Ratusza 17. Dobierz skład do ulepszeń, które masz w swojej wiosce.</p><a href="https://www.youtube.com/results?search_query=clash+of+clans+th17+attack+strategy+base" target="_blank" class="th-btn" style="display: block; text-align: center; text-decoration: none;">PORADNIKI TH17</a></div>
+        </div>
+    </section>
+
     <!-- CENTRUM WOJEN -->
     <section id="wojny" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">WAR HUB</h2>
@@ -386,8 +441,8 @@
 
     <!-- STRATEGIE ATAKU -->
     <section id="strategie" class="container">
-        <h2 class="section-title">Strategie Ataku (TH3 – TH18)</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">Kliknij swój poziom Ratusza, aby rozwinąć najlepsze meta strategie armii do wojen:</p>
+        <h2 class="section-title" style="margin-bottom: 10px;">Strategie Ataku (TH3 – TH18)</h2>
+        <p style="color: var(--text-muted); margin-bottom: 25px;">Kliknij swój poziom Ratusza, aby rozwinąć najlepsze meta strategie armii do wojen:</p>
         <div class="th-buttons-grid">
             <button class="th-btn" onclick="selectStrategy('18', this)">TH18</button>
             <button class="th-btn" onclick="selectStrategy('17', this)">TH17</button>
@@ -412,14 +467,14 @@
 
     <!-- HISTORIA WOJEN TABELA -->
     <section class="container" style="padding-top: 0;">
-        <h2 class="section-title">Historia Wojen</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Historia Wojen</h2>
         <div class="table-responsive">
             <table>
                 <thead><tr><th>Data</th><th>Przeciwnik</th><th>Skład</th><th>Gwiazdki</th><th>Zniszczenie</th><th>Wynik</th></tr></thead>
                 <tbody>
-                    <tr><td>27.10</td><td>Grim Reapers</td><td>20 vs 20</td><td>60 - 44</td><td>100,00% - 80,15%</td><td><span class="badge-win">Wygrana</span></td></tr>
-                    <tr><td>25.10</td><td>Glader's Clan</td><td>20 vs 20</td><td>60 - 59</td><td>100,00% - 98,90%</td><td><span class="badge-win">Wygrana</span></td></tr>
-                    <tr><td>23.10</td><td>Enmo !!</td><td>20 vs 20</td><td>59 - 59</td><td>99,10% - 98,66%</td><td><span class="badge-win">Wygrana</span></td></tr>
+                    <tr><td>27.10</td><td>Grim Reapers</td><td>20 vs 20</td><td>60 - 44</td><td>100,00% - 80,15%</td><td><span style="color: var(--green); font-family:'Orbitron'; font-weight:700;">Wygrana</span></td></tr>
+                    <tr><td>25.10</td><td>Glader's Clan</td><td>20 vs 20</td><td>60 - 59</td><td>100,00% - 98,90%</td><td><span style="color: var(--green); font-family:'Orbitron'; font-weight:700;">Wygrana</span></td></tr>
+                    <tr><td>23.10</td><td>Enmo !!</td><td>20 vs 20</td><td>59 - 59</td><td>99,10% - 98,66%</td><td><span style="color: var(--green); font-family:'Orbitron'; font-weight:700;">Wygrana</span></td></tr>
                 </tbody>
             </table>
         </div>
@@ -427,7 +482,7 @@
 
     <!-- SŁAWA KLANOWA & REKORDY -->
     <section id="slawa" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Sława Klanowa & Rekordy</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Sława Klanowa & Rekordy</h2>
         <div class="grid-2">
             <div class="card">
                 <h3>🏆 MVP Miesiąca</h3>
@@ -442,7 +497,7 @@
 
     <!-- GALERIA KLANOWA -->
     <section id="galeria" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Galeria Klanowa</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Galeria Klanowa</h2>
         <div class="grid-3">
             <div class="card" style="text-align: center;">
                 <h3 style="font-size:1.1rem; color:#fff;">Zwycięskie CWL</h3>
@@ -464,26 +519,17 @@
 
     <!-- STRUKTURA I KADRA -->
     <section id="struktura" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Struktura i Kadra</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Struktura i Kadra</h2>
         <div class="grid-3">
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Leader</h3>
-                <p>👑 VipeR (Leader)</p>
-            </div>
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Co-Leaders</h3>
-                <p>⭐ KUBOOOREK (Co-Leader)<br>⭐ Albaroon.2 (Co-Leader)</p>
-            </div>
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Elders</h3>
-                <p>💧 Kajak<br>💧 Belaska<br>💧 tak</p>
-            </div>
+            <div class="card"><h3 style="font-size:1.1rem;">Leader</h3><p>👑 VipeR (Leader)</p></div>
+            <div class="card"><h3 style="font-size:1.1rem;">Co-Leaders</h3><p>⭐ KUBOOOREK (Co-Leader)<br>⭐ Albaroon.2 (Co-Leader)</p></div>
+            <div class="card"><h3 style="font-size:1.1rem;">Elders</h3><p>💧 Kajak<br>💧 Belaska<br>💧 tak</p></div>
         </div>
     </section>
 
     <!-- CZAS I PRIORYTETY ROZWOJU -->
     <section id="priorytety" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Czas i Priorytety Rozwoju</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Czas i Priorytety Rozwoju</h2>
         <div class="grid-2" style="margin-bottom: 20px;">
             <div class="card">
                 <h3>1. Offensive First</h3>
@@ -520,55 +566,25 @@
 
     <!-- NAJCZĘSTSZE PYTANIA (FAQ Z ROZWIJANYMI ODPOWIEDZIAMI) -->
     <section id="faq" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Najczęstsze Pytania</h2>
-        
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Jak zweryfikować się na Discordzie?</div>
-            <div class="faq-answer">Wpisz na kanale weryfikacji komendę <code>/link create player_tag: #TWÓJ_TAG</code>. Bot ClashPerk nada Ci rangę, zmieni nick i odblokuje resztę serwera.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Czy przyjmujecie graczy z niskim Ratuszem?</div>
-            <div class="faq-answer">Tak, rekrutujemy od TH3. Każdy gracz jest u nas mile widziany.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Ile ataków muszę wykonać w wojnie?</div>
-            <div class="faq-answer">Dwa. Jeśli nie możesz zaatakować, napisz wcześniej do lidera. Brak ataków bez informacji oznacza możliwy kick.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Ile punktów w Igrzyskach Klanowych (CG) muszę mieć?</div>
-            <div class="faq-answer">Minimum 1000 punktów na start, a potem regularny wkład w każde Igrzyska.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Co jeśli muszę zrobić przerwę?</div>
-            <div class="faq-answer">Daj znać w czacie. Tydzień nieaktywności bez informacji kończy się kickiem.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Jak zostać starszym?</div>
-            <div class="faq-answer">Elderem zostają aktywni gracze z dobrymi atakami.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Czy muszę być na Discordzie?</div>
-            <div class="faq-answer">Discord jest dla członków klanu i tam zapadają ustalenia dotyczące wojen, więc zdecydowanie warto.</div>
-        </div>
+        <h2 class="section-title" style="margin-bottom: 20px;">Najczęstsze Pytania</h2>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Jak zweryfikować się na Discordzie?</div><div class="faq-answer">Wpisz na kanale weryfikacji komendę <code>/link create player_tag: #TWÓJ_TAG</code>. Bot ClashPerk nada Ci rangę, zmieni nick i odblokuje resztę serwera.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Czy przyjmujecie graczy z niskim Ratuszem?</div><div class="faq-answer">Tak, rekrutujemy od TH3. Każdy gracz jest u nas mile widziany.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Ile ataków muszę wykonać w wojnie?</div><div class="faq-answer">Dwa. Jeśli nie możesz zaatakować, napisz wcześniej do lidera. Brak ataków bez informacji oznacza możliwy kick.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Ile punktów w Igrzyskach Klanowych (CG) muszę mieć?</div><div class="faq-answer">Minimum 1000 punktów na start, a potem regularny wkład w każde Igrzyska.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Co jeśli muszę zrobić przerwę?</div><div class="faq-answer">Daj znać w czacie. Tydzień nieaktywności bez informacji kończy się kickiem.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Jak zostać starszym?</div><div class="faq-answer">Elderem zostają aktywni gracze z dobrymi atakami.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Czy muszę być na Discordzie?</div><div class="faq-answer">Discord jest dla członków klanu i tam zapadają ustalenia dotyczące wojen, więc zdecydowanie warto.</div></div>
     </section>
 
     <!-- AKTYWNY WIDGET DISCORDA -->
     <section class="container" style="padding-top: 0;">
-        <h2 class="section-title">Społeczność & Discord</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Społeczność & Discord</h2>
         <div class="card" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 30px;">
             <h3 style="margin-bottom: 10px;">💬 Oficjalny Serwer Discord</h3>
             <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Dołącz do nas na czacie głosowym i tekstowym, aby zgarnąć porady i koordynować ataki wojenne!</p>
-            
             <div style="display: flex; justify-content: center; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
                 <iframe src="https://discord.com/widget?id=7SquD7SF3&theme=dark" width="100%" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
-            
             <div style="margin-top: 20px;">
                 <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-discord-outline" style="background: #5865F2; border: none; color: #fff;">Dołącz do serwera Discord</a>
             </div>
@@ -577,158 +593,104 @@
 
     <!-- KALENDARZ KLANU -->
     <section id="kalendarz" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Kalendarz Klanu</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">Kalendarz Klanu</h2>
         <div class="grid-4">
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Clan Games</h3>
-                <p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">ZA 24 DNI</p>
-                <p style="font-size:0.85rem;">Od 22. do 28. dnia miesiąca. Minimum 1000 punktów (CG).</p>
-            </div>
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Liga Wojen Klanowych</h3>
-                <p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">ZA 3 DNI</p>
-                <p style="font-size:0.85rem;">Start na początku każdego miesiąca, całość trwa około tygodnia.</p>
-            </div>
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Raid Weekend</h3>
-                <p style="color:var(--gold); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">PT – PN</p>
-                <p style="font-size:0.85rem;">Co tydzień od piątku 8:00 czasu polskiego. Używaj ataków, jeśli możesz.</p>
-            </div>
-            <div class="card">
-                <h3 style="font-size:1.1rem;">Koniec Sezonu</h3>
-                <p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">1 LISTOPADA</p>
-                <p style="font-size:0.85rem;">1 listopada 2026 r. o 09:00 czasu polskiego. Automatyczny transfer zasobów do skarbca.</p>
-            </div>
+            <div class="card"><h3 style="font-size:1.1rem;">Clan Games</h3><p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">ZA 24 DNI</p><p style="font-size:0.85rem;">Od 22. do 28. dnia miesiąca. Minimum 1000 punktów (CG).</p></div>
+            <div class="card"><h3 style="font-size:1.1rem;">Liga Wojen Klanowych</h3><p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">ZA 3 DNI</p><p style="font-size:0.85rem;">Start na początku każdego miesiąca, całość trwa około tygodnia.</p></div>
+            <div class="card"><h3 style="font-size:1.1rem;">Raid Weekend</h3><p style="color:var(--gold); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">PT – PN</p><p style="font-size:0.85rem;">Co tydzień od piątku 8:00 czasu polskiego. Używaj ataków, jeśli możesz.</p></div>
+            <div class="card"><h3 style="font-size:1.1rem;">Koniec Sezonu</h3><p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">1 LISTOPADA</p><p style="font-size:0.85rem;">1 listopada 2026 r. o 09:00 czasu polskiego. Automatyczny transfer zasobów do skarbca.</p></div>
         </div>
     </section>
 
     <!-- ZASADY KLANU I OFERTA -->
     <section id="zasady" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Zasady Klanu & Oferta</h2>
-        
+        <h2 class="section-title" style="margin-bottom: 20px;">Zasady Klanu & Oferta</h2>
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center;">
             <h3 style="font-family: 'Orbitron'; color: var(--gold); margin-bottom: 10px; font-size: 1.3rem;">⭐ WYMAGANIA I OFERTA KLANU: ARMIA MAURYCEGO ⭐</h3>
             <p style="color: var(--text-muted); max-width: 900px; margin: 0 auto; font-size: 1rem;">Tworzymy klan od podstaw i budujemy zgraną ekipę! Na tym etapie drzwiczki są otwarte dla każdego, kto chce grać, rozwijać się i budować coś razem z nami. Nie musisz być pro — najważniejsza jest aktywność, chęć nauki i dobra atmosfera.</p>
         </div>
-
         <div class="grid-2">
-            <!-- WYMAGANIA / CZEGO OCZEKUJEMY -->
             <div class="card" style="border-top: 4px solid var(--primary);">
-                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
-                    <span>📋</span> CZEGO OCZEKUJEMY (WYMAGANIA)
-                </h3>
+                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;"><span>📋</span> CZEGO OCZEKUJEMY (WYMAGANIA)</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
-                        <span style="color: var(--gold);">•</span> <div><strong>Brak „rushowania”</strong> — szukamy wiosek rozwiniętych rozsądnie, z odpowiednim poziomem obrony i wojska do swojego TH.</div>
-                    </li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
-                        <span style="color: var(--gold);">•</span> <div><strong>Aktywność w grze</strong> — graj regularnie, rozwijaj wioskę i bądź z nami na czacie.</div>
-                    </li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
-                        <span style="color: var(--gold);">•</span> <div><strong>Wojny Klanów</strong> — masz zielony status? Obowiązkowo atakujesz 2 razy na wojnie. Jeśli nie możesz, daj znać wcześniej liderowi.</div>
-                    </li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
-                        <span style="color: var(--gold);">•</span> <div><strong>Gry Klanowe i Rajdy</strong> — pomagaj klanowi, bierz udział w weekendowych rajdach oraz grach klanowych. Minimum to 1000 punktów.</div>
-                    </li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
-                        <span style="color: var(--gold);">•</span> <div><strong>Wzajemna pomoc</strong> — oddawaj wojsko innym, kiedy tylko możesz.</div>
-                    </li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
-                        <span style="color: var(--gold);">•</span> <div><strong>Kultura</strong> — szacunek na czacie, zero toksyczności, obrażania i reklamowania innych klanów. (Wejście tylko po bonusy = kick).</div>
-                    </li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Brak „rushowania”</strong> — szukamy wiosek rozwiniętych rozsądnie, z odpowiednim poziomem obrony i wojska do swojego TH.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Aktywność w grze</strong> — graj regularnie, rozwijaj wioskę i bądź z nami na czacie.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Wojny Klanów</strong> — masz zielony status? Obowiązkowo atakujesz 2 razy na wojnie. Jeśli nie możesz, daj znać wcześniej liderowi.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Gry Klanowe i Rajdy</strong> — pomagaj klanowi, bierz udział w weekendowych rajdach oraz grach klanowych. Minimum to 1000 punktów.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Wzajemna pomoc</strong> — oddawaj wojsko innym, kiedy tylko możesz.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Kultura</strong> — szacunek na czacie, zero toksyczności, obrażania i reklamowania innych klanów. (Wejście tylko po bonusy = kick).</div></li>
                 </ul>
             </div>
-
-            <!-- CO OFERUJEMY -->
             <div class="card" style="border-top: 4px solid var(--green);">
-                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
-                    <span>🎁</span> CO OFERUJEMY
-                </h3>
+                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;"><span>🎁</span> CO OFERUJEMY</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
-                        <span style="color: var(--green);">•</span> <div><strong>Wojny Klanów bez przerwy</strong> — szybki przyrost expa, zasobów i doświadczenia w atakach.</div>
-                    </li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
-                        <span style="color: var(--green);">•</span> <div><strong>Miejsce dla każdego</strong> — nie patrzymy tylko na poziom TH, każdy może się rozwinąć z nami.</div>
-                    </li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
-                        <span style="color: var(--green);">•</span> <div><strong>Wsparcie i donacje</strong> — pomożemy wojskiem na farmę i na wojnę.</div>
-                    </li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
-                        <span style="color: var(--green);">•</span> <div><strong>Pomoc dla początkujących</strong> — podpowiemy, jak rozwijać wioskę i atakować.</div>
-                    </li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
-                        <span style="color: var(--green);">•</span> <div><strong>Szybki awans</strong> — ranga Elder za aktywność, donacje i zaangażowanie.</div>
-                    </li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
-                        <span style="color: var(--green);">•</span> <div><strong>Super atmosferę</strong> — budujemy ten klan wspólnie od zera!</div>
-                    </li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Wojny Klanów bez przerwy</strong> — szybki przyrost expa, zasobów i doświadczenia w atakach.</div></li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Miejsce dla każdego</strong> — nie patrzymy tylko na poziom TH, każdy może się rozwinąć z nami.</div></li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Wsparcie i donacje</strong> — pomożemy wojskiem na farmę i na wojnę.</div></li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Pomoc dla początkujących</strong> — podpowiemy, jak rozwijać wioskę i atakować.</div></li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Szybki awans</strong> — ranga Elder za aktywność, donacje i zaangażowanie.</div></li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Super atmosferę</strong> — budujemy ten klan wspólnie od zera!</div></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- SKŁAD I TABELA (PEŁNA LISTA 40 OSÓB) -->
+    <!-- SEKCJA SKŁADU KLANU (WIZUALIZACJA RATUSZY) -->
     <section id="gracze" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Skład i Lista Graczy (40 osób)</h2>
+        <h2 class="section-title" style="margin-bottom: 5px;">SKŁAD KLANU</h2>
+        <p style="color: var(--text-muted); margin-bottom: 25px; font-size: 0.95rem;">Rozkład poziomów Ratusza w klanie. Dane wpisane ręcznie, stan na 28.10.2026.</p>
+        
+        <div class="clan-breakdown-grid">
+            <div class="card">
+                <h3 style="font-size: 1.05rem; margin-bottom: 20px; color: #fff;">POZIOMY RATUSZA</h3>
+                <div id="thBarsContainer">
+                    <!-- Generowane dynamicznie przez JS -->
+                </div>
+            </div>
+            <div class="card" style="display: flex; flex-direction: column; justify-content: center;">
+                <h3 style="font-size: 1.05rem; margin-bottom: 20px; color: #fff;">W SKRÓCIE</h3>
+                <div style="display: flex; flex-direction: column; gap: 15px; font-size: 1rem;">
+                    <div><strong style="font-family:'Orbitron'; color: var(--gold); font-size: 1.5rem; margin-right: 10px;">40</strong> graczy w tabeli</div>
+                    <div><strong style="font-family:'Orbitron'; color: var(--gold); font-size: 1.5rem; margin-right: 10px;">TH15</strong> najwyższy Ratusz</div>
+                    <div><strong style="font-family:'Orbitron'; color: var(--gold); font-size: 1.5rem; margin-right: 10px;">TH7</strong> najwięcej graczy (11)</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 15px;">
+            <h3 class="section-title" style="margin: 0; font-size: 1.5rem;">LISTA GRACZY</h3>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 0.85rem; color: var(--text-muted); font-family: 'Orbitron';">Sortuj:</span>
+                <select id="sortSelect" onchange="sortPlayersTable()" style="background: var(--darker); border: 1px solid var(--border); color: #fff; padding: 8px 14px; border-radius: 6px; font-family: 'Orbitron'; font-size: 0.8rem; outline: none; cursor: pointer;">
+                    <option value="game">jak w grze</option>
+                    <option value="name">nazwa (A-Z)</option>
+                    <option value="th-desc">TH (od najwyższego)</option>
+                    <option value="th-asc">TH (od najniższego)</option>
+                    <option value="sent-desc">Wysłane (od najwyższych)</option>
+                    <option value="recv-desc">Otrzymane (od najwyższych)</option>
+                </select>
+            </div>
+        </div>
+
         <input type="text" id="playerSearch" class="search-input" placeholder="Wyszukaj gracza (np. KUBOOOREK, SHAZAM, Filfox)..." onkeyup="filterPlayers()">
         
         <div class="table-responsive">
             <table>
                 <thead>
                     <tr>
-                        <th style="width: 60px;">#</th>
-                        <th>Gracz</th>
-                        <th>Ranga</th>
+                        <th>GRACZ</th>
+                        <th>RANGA</th>
                         <th>TH</th>
-                        <th>Wysłane</th>
-                        <th>Otrzymane</th>
+                        <th>WYSŁANE</th>
+                        <th>OTRZYMANE</th>
                     </tr>
                 </thead>
                 <tbody id="playerTableBody">
-                    <tr><td>1</td><td>KUBOOOREK</td><td>Co-Leader</td><td>TH15</td><td>7643</td><td>3077</td></tr>
-                    <tr><td>2</td><td>Baku</td><td>Member</td><td>TH15</td><td>740</td><td>80</td></tr>
-                    <tr><td>3</td><td>Albaroon.2</td><td>Co-Leader</td><td>TH12</td><td>3908</td><td>2554</td></tr>
-                    <tr><td>4</td><td>oggsgdjdbd</td><td>Member</td><td>TH12</td><td>70</td><td>72</td></tr>
-                    <tr><td>5</td><td>MrDefPL</td><td>Member</td><td>TH12</td><td>127</td><td>180</td></tr>
-                    <tr><td>6</td><td>MAQOS</td><td>Member</td><td>TH12</td><td>301</td><td>0</td></tr>
-                    <tr><td>7</td><td>VipeR</td><td>Leader</td><td>TH11</td><td>2344</td><td>3067</td></tr>
-                    <tr><td>8</td><td>Toster290</td><td>Member</td><td>TH11</td><td>140</td><td>264</td></tr>
-                    <tr><td>9</td><td>monte</td><td>Member</td><td>TH10</td><td>450</td><td>200</td></tr>
-                    <tr><td>10</td><td>Cwel123</td><td>Member</td><td>TH10</td><td>110</td><td>90</td></tr>
-                    <tr><td>11</td><td>Mimbosz</td><td>Member</td><td>TH9</td><td>200</td><td>110</td></tr>
-                    <tr><td>12</td><td>zuzia</td><td>Member</td><td>TH9</td><td>150</td><td>80</td></tr>
-                    <tr><td>13</td><td>Kojak</td><td>Elder</td><td>TH9</td><td>512</td><td>410</td></tr>
-                    <tr><td>14</td><td>Belaska</td><td>Elder</td><td>TH9</td><td>320</td><td>150</td></tr>
-                    <tr><td>15</td><td>Brann</td><td>Member</td><td>TH9</td><td>90</td><td>60</td></tr>
-                    <tr><td>16</td><td>tak</td><td>Elder</td><td>TH9</td><td>210</td><td>90</td></tr>
-                    <tr><td>17</td><td>vvd</td><td>Member</td><td>TH9</td><td>130</td><td>70</td></tr>
-                    <tr><td>18</td><td>my name billa</td><td>Member</td><td>TH8</td><td>180</td><td>90</td></tr>
-                    <tr><td>19</td><td>Barnes</td><td>Member</td><td>TH8</td><td>220</td><td>100</td></tr>
-                    <tr><td>20</td><td>KuN</td><td>Member</td><td>TH8</td><td>160</td><td>70</td></tr>
-                    <tr><td>21</td><td>wiktor</td><td>Member</td><td>TH8</td><td>110</td><td>50</td></tr>
-                    <tr><td>22</td><td>filip</td><td>Member</td><td>TH8</td><td>95</td><td>40</td></tr>
-                    <tr><td>23</td><td>erykos</td><td>Member</td><td>TH7</td><td>80</td><td>30</td></tr>
-                    <tr><td>24</td><td>kwiatek</td><td>Member</td><td>TH6</td><td>60</td><td>20</td></tr>
-                    <tr><td>25</td><td>BOT6790</td><td>Member</td><td>TH7</td><td>70</td><td>25</td></tr>
-                    <tr><td>26</td><td>Andrzej</td><td>Member</td><td>TH7</td><td>110</td><td>40</td></tr>
-                    <tr><td>27</td><td>threeten</td><td>Member</td><td>TH7</td><td>50</td><td>15</td></tr>
-                    <tr><td>28</td><td>Marsyllia</td><td>Member</td><td>TH7</td><td>90</td><td>35</td></tr>
-                    <tr><td>29</td><td>Darui</td><td>Member</td><td>TH7</td><td>120</td><td>50</td></tr>
-                    <tr><td>30</td><td>Rico</td><td>Member</td><td>TH7</td><td>40</td><td>10</td></tr>
-                    <tr><td>31</td><td>Martini</td><td>Member</td><td>TH7</td><td>85</td><td>30</td></tr>
-                    <tr><td>32</td><td>Riczard</td><td>Member</td><td>TH7</td><td>65</td><td>20</td></tr>
-                    <tr><td>33</td><td>GoldBelt</td><td>Member</td><td>TH7</td><td>100</td><td>45</td></tr>
-                    <tr><td>34</td><td>SHA⭐ZAM!</td><td>Member</td><td>TH7</td><td>140</td><td>60</td></tr>
-                    <tr><td>35</td><td>SZAR3</td><td>Member</td><td>TH7</td><td>75</td><td>25</td></tr>
-                    <tr><td>36</td><td>szoks</td><td>Member</td><td>TH5</td><td>30</td><td>10</td></tr>
-                    <tr><td>37</td><td>TwarógPółtlusty</td><td>Member</td><td>TH5</td><td>40</td><td>15</td></tr>
-                    <tr><td>38</td><td>samurai024</td><td>Member</td><td>TH5</td><td>20</td><td>5</td></tr>
-                    <tr><td>39</td><td>Fox</td><td>Member</td><td>TH4</td><td>10</td><td>0</td></tr>
-                    <tr><td>40</td><td>Filfox74</td><td>Member</td><td>TH3</td><td>5</td><td>0</td></tr>
+                    <!-- Wypełniane przez JS -->
                 </tbody>
             </table>
         </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); text-align: right;">Donacje oddziałów według statystyk w grze. Dane wpisane ręcznie, stan na 28.10.2026.</p>
     </section>
 
     <footer>
@@ -757,18 +719,130 @@
             item.classList.toggle('active');
         }
 
-        // ŻYWY TIMER DO RAID WEEKEND (Najbliższy piątek 8:00)
+        // BAZA DANYCH GRACZY (STRICT 1:1)
+        const playersData = [
+            { name: "KUBOOOREK", role: "Współlider", th: 15, sent: 7643, recv: 3077 },
+            { name: "Baku", role: "Członek", th: 15, sent: 740, recv: 80 },
+            { name: "Albaroon.2", role: "Współlider", th: 12, sent: 3893, recv: 2554 },
+            { name: "oggsgdjdbd", role: "Członek", th: 12, sent: 70, recv: 72 },
+            { name: "MrDefPL", role: "Członek", th: 12, sent: 127, recv: 180 },
+            { name: "MAQOS", role: "Członek", th: 12, sent: 301, recv: 0 },
+            { name: "VipeR", role: "Wódz", th: 11, sent: 2344, recv: 3067 },
+            { name: "tak", role: "Starszy", th: 9, sent: 0, recv: 182 },
+            { name: "Brann", role: "Członek", th: 9, sent: 15, recv: 82 },
+            { name: "Cwel123", role: "Członek", th: 10, sent: 44, recv: 0 },
+            { name: "Toster290", role: "Członek", th: 11, sent: 140, recv: 264 },
+            { name: "monte", role: "Członek", th: 10, sent: 450, recv: 200 },
+            { name: "Mimbosz", role: "Członek", th: 9, sent: 200, recv: 110 },
+            { name: "zuzia", role: "Członek", th: 9, sent: 150, recv: 80 },
+            { name: "Kojak", role: "Starszy", th: 9, sent: 512, recv: 410 },
+            { name: "Belaska", role: "Starszy", th: 9, sent: 320, recv: 150 },
+            { name: "vvd", role: "Członek", th: 9, sent: 130, recv: 70 },
+            { name: "my name billa", role: "Członek", th: 8, sent: 180, recv: 90 },
+            { name: "Barnes", role: "Członek", th: 8, sent: 220, recv: 100 },
+            { name: "KuN", role: "Członek", th: 8, sent: 160, recv: 70 },
+            { name: "wiktor", role: "Członek", th: 8, sent: 110, recv: 50 },
+            { name: "filip", role: "Członek", th: 8, sent: 95, recv: 40 },
+            { name: "erykos", role: "Członek", th: 7, sent: 80, recv: 30 },
+            { name: "kwiatek", role: "Członek", th: 6, sent: 60, recv: 20 },
+            { name: "BOT6790", role: "Członek", th: 7, sent: 70, recv: 25 },
+            { name: "Andrzej", role: "Członek", th: 7, sent: 110, recv: 40 },
+            { name: "threeten", role: "Członek", th: 7, sent: 50, recv: 15 },
+            { name: "Marsyllia", role: "Członek", th: 7, sent: 90, recv: 35 },
+            { name: "Darui", role: "Członek", th: 7, sent: 120, recv: 50 },
+            { name: "Rico", role: "Członek", th: 7, sent: 40, recv: 10 },
+            { name: "Martini", role: "Członek", th: 7, sent: 85, recv: 30 },
+            { name: "Riczard", role: "Członek", th: 7, sent: 65, recv: 20 },
+            { name: "GoldBelt", role: "Członek", th: 7, sent: 100, recv: 45 },
+            { name: "SHA⭐ZAM!", role: "Członek", th: 7, sent: 140, recv: 60 },
+            { name: "SZAR3", role: "Członek", th: 7, sent: 75, recv: 25 },
+            { name: "szoks", role: "Członek", th: 5, sent: 30, recv: 10 },
+            { name: "TwarógPółtlusty", role: "Członek", th: 5, sent: 40, recv: 15 },
+            { name: "samurai024", role: "Członek", th: 5, sent: 20, recv: 5 },
+            { name: "Fox", role: "Członek", th: 4, sent: 10, recv: 0 },
+            { name: "Filfox74", role: "Członek", th: 3, sent: 5, recv: 0 }
+        ];
+
+        // RENDEROWANIE WYKRESÓW RATUSZY
+        function renderThBars() {
+            const counts = {};
+            for(let i=3; i<=15; i++) counts[i] = 0;
+            playersData.forEach(p => {
+                if(counts[p.th] !== undefined) counts[p.th]++;
+                else counts[p.th] = 1;
+            });
+
+            const maxCount = Math.max(...Object.values(counts), 1);
+            let html = '';
+            for(let th = 15; th >= 3; th--) {
+                let cnt = counts[th] || 0;
+                let pct = (cnt / maxCount) * 100;
+                html += `
+                    <div class="th-bar-row">
+                        <div class="th-bar-label">TH${th}</div>
+                        <div class="th-bar-track">
+                            <div class="th-bar-fill" style="width: ${pct}%;"></div>
+                        </div>
+                        <div class="th-bar-count">${cnt}</div>
+                    </div>
+                `;
+            }
+            document.getElementById('thBarsContainer').innerHTML = html;
+        }
+
+        // RENDEROWANIE TABELI GRACZY
+        function renderPlayersTable(dataToRender) {
+            const tbody = document.getElementById('playerTableBody');
+            let html = '';
+            dataToRender.forEach(p => {
+                html += `
+                    <tr>
+                        <td><strong>${p.name}</strong></td>
+                        <td>${p.role}</td>
+                        <td>TH${p.th}</td>
+                        <td>${p.sent}</td>
+                        <td>${p.recv}</td>
+                    </tr>
+                `;
+            });
+            tbody.innerHTML = html;
+        }
+
+        function sortPlayersTable() {
+            const sortBy = document.getElementById('sortSelect').value;
+            let sorted = [...playersData];
+
+            if (sortBy === 'name') {
+                sorted.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (sortBy === 'th-desc') {
+                sorted.sort((a, b) => b.th - a.th);
+            } else if (sortBy === 'th-asc') {
+                sorted.sort((a, b) => a.th - b.th);
+            } else if (sortBy === 'sent-desc') {
+                sorted.sort((a, b) => b.sent - a.sent);
+            } else if (sortBy === 'recv-desc') {
+                sorted.sort((a, b) => b.recv - a.recv);
+            } else {
+                // 'game' -> oryginalna kolejność
+                sorted = [...playersData];
+            }
+
+            renderPlayersTable(sorted);
+        }
+
+        function filterPlayers() {
+            let input = document.getElementById('playerSearch').value.toLowerCase();
+            let filtered = playersData.filter(p => p.name.toLowerCase().includes(input));
+            renderPlayersTable(filtered);
+        }
+
+        // ŻYWY TIMER DO RAID WEEKEND
         function updateRaidTimer() {
             const now = new Date();
             let target = new Date();
-            
             target.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
             target.setHours(8, 0, 0, 0);
-
-            if (now.getTime() > target.getTime()) {
-                target.setDate(target.getDate() + 7);
-            }
-
+            if (now.getTime() > target.getTime()) target.setDate(target.getDate() + 7);
             const diff = target - now;
 
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -811,29 +885,35 @@
             document.getElementById('thDisplay').innerText = 'TH ' + val;
             const advice = document.getElementById('thAdvice');
             
-            let armyText = "Zbalansowany zestaw wojsk dla tego poziomu Ratusza.";
-            let tipText = "Pamiętaj o ulepszeniu najważniejszych budynków i bohaterów przed awansem.";
+            let title1, text1;
+            let title2 = "Kierunek rozwoju wojska";
+            let text2 = "Skup się na pełnym rozwoju wybranych armii, zaklęć, bohaterów oraz wyposażenia bohaterów.";
 
-            if (val >= 15) {
-                armyText = "Root Riders + Valkyries / Titan Smash";
-                tipText = "Skup się na niszczeniu kluczowych obron za pomocą Spellów i maszyn oblężniczych.";
-            } else if (val >= 12) {
-                armyText = "Electro Dragons + Balloons + Rage/Freeze";
-                tipText = "Klasyczne smoki z zamrożeniem wrogich wiatraków i inferno.";
-            } else if (val >= 9) {
-                armyText = "Queen Walk + LaLo (LavaLoon) lub Witch Slap";
-                tipText = "Kontroluj trasę Królowej i wspieraj armię czarami pośpiechu.";
+            let numVal = parseInt(val);
+            if (numVal >= 3 && numVal <= 5) {
+                title1 = "Zaczynasz przygodę";
+                text1 = "Nikt nie wymaga wiele. Graj regularnie, donatuj wojska i ucz się od starszych graczy.";
+            } else if (numVal >= 6 && numVal <= 9) {
+                title1 = "Dobry kandydat do wojen";
+                text1 = "Skup się na ulepszaniu armii i bohaterów. Wojny klanowe są dla Ciebie świetną nauką.";
+            } else if (numVal >= 10 && numVal <= 12) {
+                title1 = "CWL: solidny skład";
+                text1 = "Z tym poziomem możesz liczyć na stałe miejsce w CWL, jeśli masz rozwinięte wojska.";
             } else {
-                armyText = "Giant + Wizard + Archer / Mass Dragons";
-                tipText = "Trzymaj się prostych strategii masowych ataków na tym etapie.";
+                title1 = "CWL: mocny kandydat do głównego składu";
+                text1 = "TH13–17 może być dużym atutem, ale skład zależy od poziomu rozwoju, umiejętności i planu lidera.";
             }
 
             advice.innerHTML = `
-                <div style="background: var(--darker); padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
-                    <strong style="color: #fff; display: block; margin-bottom: 5px;">🔥 Polecana Meta Armia:</strong>
-                    <p style="font-size: 0.9rem; color: var(--gold); margin-bottom: 10px;">${armyText}</p>
-                    <strong style="color: #fff; display: block; margin-bottom: 5px;">💡 Wskazówka Ataku:</strong>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">${tipText}</p>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="background: var(--darker); padding: 15px; border-radius: 8px; border: 1px solid var(--border); border-left: 4px solid var(--primary);">
+                        <strong style="color: #fff; display: block; margin-bottom: 5px; font-size: 0.95rem;">${title1}</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">${text1}</p>
+                    </div>
+                    <div style="background: var(--darker); padding: 15px; border-radius: 8px; border: 1px solid var(--border); border-left: 4px solid var(--primary);">
+                        <strong style="color: #fff; display: block; margin-bottom: 5px; font-size: 0.95rem;">${title2}</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">${text2}</p>
+                    </div>
                 </div>
             `;
         }
@@ -872,15 +952,6 @@
             `;
         }
 
-        function filterPlayers() {
-            let input = document.getElementById('playerSearch').value.toLowerCase();
-            let rows = document.getElementById('playerTableBody').getElementsByTagName('tr');
-            for (let i = 0; i < rows.length; i++) {
-                let name = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
-                rows[i].style.display = name.includes(input) ? "" : "none";
-            }
-        }
-
         function unlockOfficer() {
             const pass = prompt("Podaj hasło dla Lidera / Co-Leadera:");
             if (pass === "oficer123") {
@@ -894,6 +965,9 @@
             }
         }
 
+        // Inicjalizacja
+        renderThBars();
+        renderPlayersTable(playersData);
         updateThCalculator(10);
         selectStrategy('17', document.querySelector('.th-btn'));
     </script>
