@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T17:29:02.348Z",
+  "updated": "2026-10-29T17:38:27.076Z",
   "clanLevel": 3,
   "memberCount": 41,
   "cwlLeague": "Unranked",
@@ -301,7 +301,8 @@
       }
     ]
   },
-  "visits": 4,
+  "cwl": null,
+  "visits": 5,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
