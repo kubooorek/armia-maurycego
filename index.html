@@ -1253,23 +1253,18 @@
                     </div>
                 </div>
 
-                 function unlockOfficer() {
-            const pass = prompt("Podaj hasło dla Lidera / Co-Leadera:");
-            if (pass === "oficer123") {
-                const slider = document.getElementById("memberSlider");
-                slider.removeAttribute("disabled");
-                document.getElementById("leaderBtn").innerText = "🔓 Panel Oficera";
-                document.getElementById("leaderBtn").style.color = "var(--green)";
-                alert("Suwak rekrutacji odblokowany!");
-            } else if (pass !== null) {
-                alert("Błędne hasło!");
-
-                
-        
-       
-            
-        
-    </script> <!-- Tutaj kończy się sekcja script -->
-</body>
-</html>
+                 <script>
+    function unlockOfficer() {
+        const pass = prompt("Podaj hasło dla Lidera / Co-Leadera:");
+        if (pass === "oficer123") {
+            const slider = document.getElementById("memberSlider");
+            slider.removeAttribute("disabled");
+            document.getElementById("leaderBtn").innerText = "🔓 Panel Oficera";
+            document.getElementById("leaderBtn").style.color = "var(--green)";
+            alert("Suwak rekrutacji odblokowany!");
+        } else if (pass !== null) {
+            alert("Błędne hasło!");
+        }
+    }
+</script>
            
