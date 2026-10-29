@@ -414,6 +414,11 @@
   tbody tr:last-child td{border-bottom:none}
   .rank{color:var(--muted);font-family:ui-monospace,monospace}
   .pname{font-weight:600}
+  .pbadge{display:inline-block;margin-left:5px;font-size:.82rem;line-height:1;vertical-align:middle;cursor:help;filter:saturate(.9)}
+  .pf-staz{margin:-2px 0 10px;font-size:.86rem;color:var(--muted)} .pf-staz b{color:var(--text,#e8e6e1)}
+  .pf-badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+  .pf-badges span{font-size:.76rem;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid rgba(232,180,74,.35);background:rgba(232,180,74,.08);color:var(--gold2)}
+  .congrats{margin-top:12px} .congrats-list{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem}
   .ptag{color:var(--muted);font-size:.78rem;font-family:ui-monospace,monospace}
   .role{font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;display:inline-block}
   .role.leader{background:rgba(232,180,74,.16);color:var(--gold2)}
@@ -730,6 +735,7 @@
       <div class="panel" id="challenge"></div>
       <div class="panel"><div class="fame-label">Galeria MVP</div><div class="mvp-gallery" id="mvpGallery"></div></div>
     </div>
+    <div class="panel congrats" id="congrats" hidden></div>
   </div>
 </section>
 
@@ -915,6 +921,7 @@
       <details><summary>Jak zdobyć awans na Starszego?</summary><div class="ans">Bądź aktywny, rób komplet ataków w wojnach, wykonuj normę w Grach Klanowych i przekazuj wojska. Awanse przyznaje zarząd klanu.</div></details>
       <details><summary>Czy uczestniczymy w Lidze Wojen Klanów (CWL)?</summary><div class="ans">Tak. Zapisy ogłaszamy na Discordzie na początku każdego miesiąca. Skład ustalamy tak, żeby każdy miał szansę zagrać.</div></details>
       <details><summary>Jak zainstalować stronę jako aplikację na telefonie?</summary><div class="ans"><b>Android (Chrome):</b> otwórz stronę → menu ⋮ → „Zainstaluj aplikację” albo „Dodaj do ekranu głównego”. <b>iPhone (Safari):</b> przycisk Udostępnij ⬆️ → „Do ekranu początkowego”. Na ekranie pojawi się ikona z herbem klanu, a strona otworzy się jak aplikacja.</div></details>
+      <details><summary>Co oznaczają odznaki przy nickach?</summary><div class="ans">Odznaki przyznaje automatycznie robot strony: 👑 Wojownik Tygodnia (zwycięzca poprzedniego wyzwania), 🎯 Snajper (same 3★ w ostatniej wojnie), 🛡️ Niezawodny (3 ostatnie wojny bez opuszczonego ataku), ⭐ Weteran wojen (100+ gwiazdek wojennych), 📦 Hojna dłoń (300+ oddanych wojsk w sezonie), 🏰 Budowniczy Stolicy (100 000+ złota dla Stolicy), 🎮 Mistrz Gier (1000+ pkt w Grach Klanowych), 🗓️ Miesiąc w Armii i 🏛️ Weteran klanu (30+ i 90+ dni w klanie). Najedź na ikonkę albo kliknij gracza, żeby zobaczyć szczegóły.</div></details>
       <details><summary>Jak połączyć konto z Discordem?</summary><div class="ans">Na serwerze wpisz komendę <code>/link create</code> i podaj swój tag gracza. Bot zweryfikuje konto, nada rangę i zmieni nick na ten z gry.</div></details>
     </div>
   </div>
@@ -1062,8 +1069,20 @@ const GOALS = [
   {label:"Liga Kryształowa w CWL", type:"cwlLeague", target:"Crystal League III"}
 ];
 
-// Wyzwanie tygodnia (od poniedziałku do niedzieli). metric: warStars | donations | capital
-const CHALLENGE = {title:"Najwięcej gwiazdek wojennych w tygodniu", metric:"warStars", prize:"ranga „⚔️ Wojownik Tygodnia” na Discordzie i pewne miejsce w składzie najbliższej wojny"};
+// Wyzwanie tygodnia (od poniedziałku do niedzieli). Konkurencja zmienia się co tydzień, po kolei z listy rotation.
+// Kolejność musi być taka sama jak ROTATION w scripts/update-data.mjs. metric: warStars | donations | capital
+const CHALLENGE = {
+  rotation:[
+    {metric:"warStars",  title:"Najwięcej gwiazdek wojennych w tygodniu", en:"Most war stars this week"},
+    {metric:"donations", title:"Najwięcej oddanych wojsk w tygodniu",     en:"Most troops donated this week"},
+    {metric:"capital",   title:"Najwięcej złota dla Stolicy w tygodniu",  en:"Most Capital Gold contributed this week"}
+  ],
+  start:"2026-10-26",   // poniedziałek, od którego liczy się rotacja
+  prize:"ranga „⚔️ Wojownik Tygodnia” na Discordzie i pewne miejsce w składzie najbliższej wojny"
+};
+
+// Odznaki przy nicku (progi można zmieniać)
+const BADGE_LIMITS = {warStars:100, donations:300, capital:100000, games:1000};
 
 /* ====== KONIEC DANYCH ====== */
 
@@ -1154,6 +1173,7 @@ const EN = {
 "Wyjeżdżam na kilka dni. Wyrzucicie mnie?":"I'm away for a few days. Will I be kicked?","Nie, jeśli uprzedzisz nas wcześniej na Discordzie. Usuwamy tylko graczy nieaktywnych przez tydzień bez żadnej informacji.":"Not if you let us know on Discord first. We only remove players inactive for a week without any notice.",
 "Jak zdobyć awans na Starszego?":"How do I get promoted to Elder?","Bądź aktywny, rób komplet ataków w wojnach, wykonuj normę w Grach Klanowych i przekazuj wojska. Awanse przyznaje zarząd klanu.":"Stay active, use all your war attacks, hit the Clan Games target and donate troops. Promotions are given by clan leadership.",
 "Czy uczestniczymy w Lidze Wojen Klanów (CWL)?":"Do we play Clan War Leagues (CWL)?","Tak. Zapisy ogłaszamy na Discordzie na początku każdego miesiąca. Skład ustalamy tak, żeby każdy miał szansę zagrać.":"Yes. Sign-ups are announced on Discord at the start of every month. We set the lineup so everyone gets a chance to play.",
+"Co oznaczają odznaki przy nickach?":"What do the badges next to names mean?","Odznaki przyznaje automatycznie robot strony: 👑 Wojownik Tygodnia (zwycięzca poprzedniego wyzwania), 🎯 Snajper (same 3★ w ostatniej wojnie), 🛡️ Niezawodny (3 ostatnie wojny bez opuszczonego ataku), ⭐ Weteran wojen (100+ gwiazdek wojennych), 📦 Hojna dłoń (300+ oddanych wojsk w sezonie), 🏰 Budowniczy Stolicy (100 000+ złota dla Stolicy), 🎮 Mistrz Gier (1000+ pkt w Grach Klanowych), 🗓️ Miesiąc w Armii i 🏛️ Weteran klanu (30+ i 90+ dni w klanie). Najedź na ikonkę albo kliknij gracza, żeby zobaczyć szczegóły.":"Badges are awarded automatically by the site bot: 👑 Warrior of the Week (last challenge winner), 🎯 Sniper (all 3★ in the last war), 🛡️ Reliable (no missed attacks in the last 3 wars), ⭐ War veteran (100+ war stars), 📦 Generous hand (300+ troops donated this season), 🏰 Capital builder (100,000+ Capital Gold), 🎮 Games master (1000+ Clan Games points), 🗓️ One month in the Army and 🏛️ Clan veteran (30+ and 90+ days in the clan). Hover an icon or click a player for details.",
 "Jak połączyć konto z Discordem?":"How do I link my account to Discord?","Na serwerze wpisz komendę":"On the server, type","i podaj swój tag gracza. Bot zweryfikuje konto, nada rangę i zmieni nick na ten z gry.":"and enter your player tag. The bot verifies the account, gives you a role and changes your nickname to your in-game name.",
 "Gotowy do walki?":"Ready for battle?","Dołącz do Armii Maurycego i rośnij razem z nami.":"Join Armia Maurycego and grow with us.",
 "Ta strona nie jest powiązana z Supercell, nie jest przez nią wspierana ani sponsorowana. Clash of Clans jest znakiem towarowym Supercell.":"This site is not affiliated with, endorsed, sponsored or specifically approved by Supercell. Clash of Clans is a trademark of Supercell.",
@@ -1237,7 +1257,7 @@ async function loadAuto(){
     const newNames = new Set((d.events||[]).filter(e=>e.type==="join" && new Date(e.t).getTime()>weekAgo).map(e=>e.name));
     const RM = {leader:"leader", coLeader:"co", admin:"elder", member:"member"};
     if (Array.isArray(d.members) && d.members.length){
-      MEMBERS = d.members.map(m=>({name:m.name, tag:m.tag, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, profile:m.profile||null, isNew:newNames.has(m.name)}));
+      MEMBERS = d.members.map(m=>({name:m.name, tag:m.tag, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, profile:m.profile||null, isNew:newNames.has(m.name), joined:(d.joined&&d.joined[m.tag])||null}));
     }
     if (Array.isArray(d.wars) && d.wars.length){
       WARS = d.wars.map(w=>({date:w.date, enemy:w.enemy, size:w.size, xp:w.xp||0, us:{stars:w.us.stars, pct:w.us.pct}, them:{stars:w.them.stars, pct:w.them.pct}}));
@@ -1254,6 +1274,29 @@ async function loadAuto(){
   }catch(e){}
 }
 loadAuto().finally(boot);
+
+/* ===== Odznaki i staż ===== */
+function stazDays(r){ return r.joined ? Math.floor((Date.now()-new Date(r.joined.d).getTime())/864e5) : null; }
+function badgesFor(r){
+  const en=LANG==="en", out=[], add=(i,pl,e)=>out.push({i,t:en?e:pl});
+  const pf=r.profile||{}, A=AUTO||{}, L=BADGE_LIMITS;
+  const lw=A.lastWeek&&A.lastWeek.winners&&A.lastWeek.winners[0];
+  if(lw && lw.tag===r.tag) add("👑","Wojownik Tygodnia — wygrał(a) poprzednie wyzwanie tygodnia","Warrior of the Week — won last week's challenge");
+  const ended=(A.warArchive||[]).filter(w=>w.state==="warEnded").sort((a,b)=>String(b.end).localeCompare(String(a.end)));
+  const mine=ended.map(w=>({w,me:(w.members||[]).find(x=>x.tag===r.tag)})).filter(x=>x.me);
+  if(ended[0]){ const me=(ended[0].members||[]).find(x=>x.tag===r.tag);
+    if(me && me.attacks.length>=ended[0].perMember && me.attacks.every(a=>a.stars===3)) add("🎯","Snajper — same 3★ w ostatniej wojnie","Sniper — all 3★ in the last war"); }
+  if(mine.length>=3 && mine.slice(0,3).every(x=>x.me.attacks.length>=x.w.perMember)) add("🛡️","Niezawodny — 3 ostatnie wojny bez opuszczonego ataku","Reliable — no missed attacks in the last 3 wars");
+  if((pf.warStars||0)>=L.warStars) add("⭐",`Weteran wojen — ${L.warStars}+ gwiazdek wojennych`,`War veteran — ${L.warStars}+ war stars`);
+  if((r.given||0)>=L.donations) add("📦",`Hojna dłoń — ${L.donations}+ oddanych wojsk w tym sezonie`,`Generous hand — ${L.donations}+ troops donated this season`);
+  if((pf.capital||0)>=L.capital) add("🏰",`Budowniczy Stolicy — ${fmt(L.capital)}+ złota dla Stolicy`,`Capital builder — ${fmt(L.capital)}+ Capital Gold contributed`);
+  const cg=A.clanGames&&A.clanGames.points&&A.clanGames.points[r.tag];
+  if(cg && cg.pts>=L.games) add("🎮",`Mistrz Gier — ${fmt(L.games)}+ pkt w Grach Klanowych`,`Games master — ${fmt(L.games)}+ points in Clan Games`);
+  const sd=stazDays(r);
+  if(sd!=null && sd>=90) add("🏛️","Weteran klanu — 90+ dni w Armii","Clan veteran — 90+ days in the Army");
+  else if(sd!=null && sd>=30) add("🗓️","Miesiąc w Armii — 30+ dni w klanie","One month in the Army — 30+ days in the clan");
+  return out;
+}
 
 function boot(){
 
@@ -1458,7 +1501,7 @@ function render(){
   $("#tbody").innerHTML = list.map((r,i)=>`
     <tr class="prow" data-name="${esc(r.name)}" title="Pokaż profil">
       <td class="rank">${i+1}</td>
-      <td><span class="pname">${esc(r.name)}</span>${r.isNew?'<span class="newb" title="Dołączył(a) w ciągu ostatnich 7 dni">Nowy</span>':''}</td>
+      <td><span class="pname">${esc(r.name)}</span>${badgesFor(r).map(b=>`<span class="pbadge" title="${esc(b.t)}">${b.i}</span>`).join("")}${r.isNew?'<span class="newb" title="Dołączył(a) w ciągu ostatnich 7 dni">Nowy</span>':''}</td>
       <td><span class="role ${r.role}">${ROLE[r.role][0]}</span></td>
       <td><div class="thbar"><span class="th">${r.th}</span><i><u style="width:${r.th/maxTH*100}%"></u></i></div></td>
       <td>${fmt(r.given)}</td>
@@ -1667,6 +1710,10 @@ $("#cwlTop").innerHTML = CWL.top.length
         ${cell("Otrzymane",fmt(r.received))}
         ${pf?cell("Stolica",fmt(pf.capital)):""}
       </div>
+      ${(()=>{const sd=stazDays(r); if(sd==null) return ""; const en=LANG==="en";
+        const since=new Date(r.joined.d).toLocaleDateString(LOC());
+        return `<p class="pf-staz">🗓️ ${en?"In the clan":"W klanie"}: <b>${r.joined.orig?(en?`since ${since} or earlier`:`od ${since} lub dłużej`):(en?`${sd} ${sd===1?"day":"days"} (since ${since})`:`${sd} ${sd===1?"dzień":"dni"} (od ${since})`)}</b></p>`;})()}
+      ${(()=>{const bs=badgesFor(r); return bs.length?`<div class="pf-badges">${bs.map(b=>`<span>${b.i} ${esc(b.t.split(" — ")[0])}</span>`).join("")}</div>`:"";})()}
       ${pf&&pf.heroes&&pf.heroes.length?`<div class="fame-label" style="margin-bottom:8px">Bohaterowie</div>${pf.heroes.map(h=>`<div class="hbar"><div class="hero-row"><b>${esc(h.name)}</b><span>${h.level} / ${h.max}</span></div><div class="dbar"><u style="width:${h.level/h.max*100}%"></u></div></div>`).join("")}`:""}
       ${pf?(pf.warPref?`<p class="updated">Wojny: ${pf.warPref==="in"?"✅ zapisany(a)":"❌ wypisany(a)"} · Wygrane ataki: ${fmt(pf.attackWins)} · Obrony: ${fmt(pf.defenseWins)}</p>`:""):`<p class="updated">Pełny profil (bohaterowie, gwiazdki wojenne) pojawi się po najbliższej automatycznej aktualizacji.</p>`}`;
     modal.hidden=false;
@@ -1735,8 +1782,19 @@ $("#cwlTop").innerHTML = CWL.top.length
 
 /* ===== Wyzwanie tygodnia ===== */
 (function(){
-  const box=$("#challenge"); const ch=CHALLENGE; if(!ch){box.hidden=true;return;}
+  const box=$("#challenge"); if(!CHALLENGE){box.hidden=true;return;}
   const wb=AUTO&&AUTO.weekBase;
+  const rot=CHALLENGE.rotation||[CHALLENGE];
+  const mon=new Date(); mon.setUTCHours(0,0,0,0); mon.setUTCDate(mon.getUTCDate()-((mon.getUTCDay()+6)%7));
+  const weekStr=wb?wb.week:mon.toISOString().slice(0,10);
+  const idx=w=>((Math.round((Date.parse(w)-Date.parse(CHALLENGE.start||"2026-10-26"))/6048e5)%rot.length)+rot.length)%rot.length;
+  const cur=rot.find(r=>wb&&r.metric===wb.metric)||rot[idx(weekStr)];
+  const next=rot[(rot.indexOf(cur)+1)%rot.length];
+  const ch={...cur, title:LANG==="en"&&cur.en?cur.en:cur.title, prize:CHALLENGE.prize};
+  const UN={warStars:"★",donations:LANG==="en"?"troops":"wojsk",capital:LANG==="en"?"Capital Gold":"złota Stolicy"};
+  const lw=AUTO&&AUTO.lastWeek&&AUTO.lastWeek.winners&&AUTO.lastWeek.winners[0];
+  const lwHtml=lw?`<p class="ch-meta" style="margin:10px 0 0">${LANG==="en"?"Last week's winner":"Zwycięzca poprzedniego tygodnia"}: 👑 <b style="color:var(--gold2)">${esc(lw.name)}</b> (+${fmt(lw.d)} ${UN[AUTO.lastWeek.metric]||""})</p>`:"";
+  const nextHtml=`<p class="ch-meta" style="margin:6px 0 0">${LANG==="en"?"Next week":"Za tydzień"}: ${esc(LANG==="en"&&next.en?next.en:next.title)}</p>`;
   const unit={warStars:"★",donations:"oddz.",capital:"złota stolicy"}[ch.metric]||"";
   const nowVal=m=>ch.metric==="donations"?m.given:ch.metric==="capital"?(m.profile&&m.profile.capital):(m.profile&&m.profile.warStars);
   const baseVal=b=>ch.metric==="donations"?b.given:ch.metric==="capital"?b.capital:b.warStars;
@@ -1752,7 +1810,19 @@ $("#cwlTop").innerHTML = CWL.top.length
       :`<div class="empty">Na razie nikt nie zdobył punktów w tym tygodniu — bądź pierwszy!</div>`;
   }
   box.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">Wyzwanie tygodnia</span><span class="chip">⏳ ${days} ${days===1?"dzień":"dni"}</span></div>
-    <b style="display:block;margin-bottom:4px">${esc(ch.title)}</b><p class="ch-meta">Nagroda: ${esc(ch.prize||"")}</p>${rowsHtml}`;
+    <b style="display:block;margin-bottom:4px">${esc(ch.title)}</b><p class="ch-meta">Nagroda: ${esc(ch.prize||"")}</p>${rowsHtml}${lwHtml}${rot.length>1?nextHtml:""}`;
+})();
+
+/* ===== Gratulacje za staż (30/90/180/365 dni, przez 7 dni od rocznicy) ===== */
+(function(){
+  const box=$("#congrats"); const en=LANG==="en";
+  const NAMES={30:en?"1 month":"miesiąc",90:en?"3 months":"3 miesiące",180:en?"half a year":"pół roku",365:en?"1 year":"rok"};
+  const list=[];
+  MEMBERS.forEach(m=>{ if(!m.joined||m.joined.orig) return; const sd=stazDays(m);
+    [365,180,90,30].some(t=>{ if(sd>=t&&sd<t+7){ list.push(`<span>🎉 <b>${esc(m.name)}</b> — ${NAMES[t]} ${en?"in the Army":"w Armii"}</span>`); return true;} return false; }); });
+  if(!list.length) return;
+  box.innerHTML=`<div class="fame-label" style="margin:0 0 6px">${en?"Anniversaries":"Rocznice w klanie"}</div><div class="congrats-list">${list.join("")}</div>`;
+  box.hidden=false;
 })();
 
 /* ===== Galeria MVP ===== */

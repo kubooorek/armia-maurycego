@@ -48,7 +48,8 @@ Kluczy i linków webhooków **nikomu nie wysyłamy**.
 |---|---|
 | `ANNOUNCE` | pasek ogłoszeń na górze strony (`null` = brak) |
 | `MVP` / `MVP_HISTORY` | MVP miesiąca i galeria poprzednich MVP |
-| `CHALLENGE` | wyzwanie tygodnia: tytuł, nagroda, rodzaj (`warStars` / `donations` / `capital`) |
+| `CHALLENGE` | wyzwanie tygodnia: lista konkurencji `rotation` (zmieniają się co tydzień, po kolei), nagroda. Kolejność musi zgadzać się z `ROTATION` w `scripts/update-data.mjs` |
+| `BADGE_LIMITS` | progi odznak przy nickach: gwiazdki wojenne, oddane wojska w sezonie, złoto Stolicy, punkty w Grach Klanowych |
 | `GOALS` | cele klanu (paski postępu) |
 | `BASES` | bazy tygodnia: `th`, link `war`, link `ranked` |
 | `CWL` | sezon CWL wpisywany ręcznie (gdy brak danych z robota) |
@@ -67,3 +68,9 @@ Po 1–2 minutach odśwież stronę przez **Ctrl+F5**.
 - **401 w historii cron-job.org:** wygasł lub jest błędny klucz GitHub.
 - **Robot kończy się błędem:** sprawdź sekret `COC_TOKEN` (klucz z IP `45.79.218.79`).
 - **Licznik odwiedzin pokazuje „TH3+”:** bloker reklam w przeglądarce — liczba i tak odświeża się co 15 min z `data.json`.
+
+## Odznaki i staż
+
+- **Odznaki** przy nickach liczy strona sama z danych robota (wojny, profile, Gry Klanowe, wyzwanie tygodnia). Lista i opis są w FAQ na stronie.
+- **Staż** robot zapisuje w `data.json` (pole `joined`) od momentu, gdy pierwszy raz zobaczy gracza w klanie. Gracze, którzy byli w klanie przed włączeniem tej funkcji, mają przy stażu dopisek „lub dłużej”. Odejście z klanu zeruje staż.
+- **Rocznice** (miesiąc, 3 miesiące, pół roku, rok) pokazują się w sekcji „Sława klanowa” przez 7 dni od rocznicy.

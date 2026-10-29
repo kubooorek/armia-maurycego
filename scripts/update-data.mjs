@@ -294,24 +294,50 @@ function weekKey(dt) {
 }
 const wk = weekKey(new Date());
 let weekBase = old?.weekBase;
-// Zwycięzcy kończącego się tygodnia (liczone przed wyzerowaniem) — do ogłoszenia na Discordzie
+// Konkurencja tygodnia zmienia się co tydzień: gwiazdki → oddane wojska → złoto Stolicy → …
+// (ta sama kolejność jest na stronie w CHALLENGE.rotation)
+const ROTATION = ["warStars", "donations", "capital"];
+const metricFor = week => ROTATION[(((Math.round((Date.parse(week) - Date.parse("2026-10-26")) / 6048e5)) % 3) + 3) % 3];
+const UNIT = { warStars: "★", donations: "oddanych wojsk", capital: "złota Stolicy" };
+const valOf = (m, metric) => metric === "donations" ? (m.given ?? 0) : metric === "capital" ? (m.profile?.capital ?? null) : (m.profile?.warStars ?? null);
+const baseOf = (b, metric) => metric === "donations" ? b.given : metric === "capital" ? b.capital : b.warStars;
+// Zwycięzcy kończącego się tygodnia (liczone przed wyzerowaniem)
 let weekWinners = null;
+let lastWeek = old?.lastWeek ?? null;
 if (weekBase && weekBase.week !== wk) {
+  const metric = weekBase.metric || metricFor(weekBase.week);
   weekWinners = members.map(m => {
     const b = weekBase.players[m.tag];
-    const d = (m.profile?.warStars != null && b?.warStars != null) ? m.profile.warStars - b.warStars : 0;
-    return { name: m.name, d };
+    const n = valOf(m, metric), o = b ? baseOf(b, metric) : null;
+    let d = (n != null && o != null) ? n - o : 0;
+    if (metric === "donations" && d < 0) d = n;          // reset sezonu w trakcie tygodnia
+    return { name: m.name, tag: m.tag, d };
   }).filter(x => x.d > 0).sort((a, b) => b.d - a.d).slice(0, 3);
+  lastWeek = { week: weekBase.week, metric, winners: weekWinners };
 }
 if (!weekBase || weekBase.week !== wk) {
-  weekBase = { week: wk, players: {} };
+  weekBase = { week: wk, metric: metricFor(wk), players: {} };
   for (const m of (old?.members || members)) {
     weekBase.players[m.tag] = { given: m.given ?? 0, warStars: m.profile?.warStars ?? null, capital: m.profile?.capital ?? null };
   }
 }
+if (!weekBase.metric) weekBase.metric = metricFor(weekBase.week);
 for (const m of members) {   // gracze, którzy dołączyli w trakcie tygodnia
   if (!weekBase.players[m.tag]) weekBase.players[m.tag] = { given: m.given ?? 0, warStars: m.profile?.warStars ?? null, capital: m.profile?.capital ?? null };
 }
+
+/* ---------- Staż w klanie (data dołączenia) ---------- */
+// orig: true = gracz był w klanie, zanim robot zaczął liczyć staż (prawdziwa data może być wcześniejsza)
+let joined = old?.joined && typeof old.joined === "object" ? old.joined : null;
+if (!joined) {
+  joined = {};
+  for (const m of members) {
+    const ev = events.filter(e => e.type === "join" && e.name === m.name).map(e => e.t).sort()[0];
+    joined[m.tag] = ev ? { d: ev } : { d: new Date().toISOString(), orig: true };
+  }
+}
+for (const m of members) if (!joined[m.tag]) joined[m.tag] = { d: new Date().toISOString() };
+joined = Object.fromEntries(Object.entries(joined).filter(([t]) => members.some(m => m.tag === t)));   // odejście = staż od nowa
 
 /* ---------- Aktywność graczy (wykrywanie nieaktywnych) ---------- */
 // Sygnatura z rzeczy, które zmieniają się tylko gdy gracz SAM coś robi (bez pucharów — te spadają też od obron)
@@ -394,8 +420,9 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
   // Wojownik Tygodnia (pierwsze uruchomienie po północy z niedzieli na poniedziałek)
   if (weekWinners && weekWinners.length) {
     const md = ["🥇", "🥈", "🥉"];
-    await post(`⚔️ **WOJOWNIK TYGODNIA: ${weekWinners[0].name}** (+${weekWinners[0].d} ★)! Gratulacje — ranga ⚔️ Wojownik Tygodnia leci do Ciebie! 🏆\n` +
-      weekWinners.map((w, i) => `${md[i]} ${w.name} — +${w.d} ★`).join("\n") + `\nNowe wyzwanie właśnie wystartowało — liczy się każda gwiazdka! ${SITE}`, WEBHOOK_INFO);
+    const u = UNIT[lastWeek.metric] || "";
+    await post(`⚔️ **WOJOWNIK TYGODNIA: ${weekWinners[0].name}** (+${weekWinners[0].d} ${u})! Gratulacje — ranga ⚔️ Wojownik Tygodnia leci do Ciebie! 🏆\n` +
+      weekWinners.map((w, i) => `${md[i]} ${w.name} — +${w.d} ${u}`).join("\n") + `\nNowe wyzwanie: **${({ warStars: "najwięcej gwiazdek wojennych", donations: "najwięcej oddanych wojsk", capital: "najwięcej złota dla Stolicy" })[weekBase.metric]}**! ${SITE}`, WEBHOOK_INFO);
   }
 
   // Podsumowanie Gier Klanowych
@@ -456,6 +483,8 @@ const data = {
   warArchive,
   history,
   weekBase,
+  lastWeek,
+  joined,
   activity,
   clanGames,
   monthBase,
