@@ -1,9 +1,10 @@
 {
-  "updated": "2026-10-29T17:38:27.076Z",
+  "updated": "2026-10-29T17:57:01.194Z",
   "clanLevel": 3,
   "memberCount": 41,
   "cwlLeague": "Unranked",
   "warWinStreak": 9,
+  "warWins": 11,
   "currentWar": {
     "state": "inWar",
     "size": 20,
@@ -302,11 +303,11 @@
     ]
   },
   "cwl": null,
-  "visits": 5,
+  "visits": 7,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 11
   },
   "raids": [
@@ -666,6 +667,227 @@
       ]
     }
   ],
+  "history": [
+    {
+      "d": "2026-10-29",
+      "members": 41,
+      "avgTh": 8.3,
+      "level": 3,
+      "wins": 11,
+      "points": 16200
+    }
+  ],
+  "weekBase": {
+    "week": "2026-10-26",
+    "players": {
+      "#VP9PLGLV": {
+        "given": 7669,
+        "warStars": 1238,
+        "capital": 1598219
+      },
+      "#LUGR0YQY0": {
+        "given": 800,
+        "warStars": 1207,
+        "capital": 448497
+      },
+      "#GYUJR2URJ": {
+        "given": 3932,
+        "warStars": 84,
+        "capital": 657124
+      },
+      "#Q9CU9P908": {
+        "given": 98,
+        "warStars": 53,
+        "capital": 95655
+      },
+      "#8UCPRGC8": {
+        "given": 127,
+        "warStars": 504,
+        "capital": 84211
+      },
+      "#LJYR92002": {
+        "given": 301,
+        "warStars": 112,
+        "capital": 394851
+      },
+      "#22R8PLCU8": {
+        "given": 2379,
+        "warStars": 223,
+        "capital": 49473
+      },
+      "#Y02PYY922": {
+        "given": 0,
+        "warStars": 3158,
+        "capital": 451025
+      },
+      "#LC8VRR9R2": {
+        "given": 15,
+        "warStars": 2051,
+        "capital": 200722
+      },
+      "#RPR0L809R": {
+        "given": 44,
+        "warStars": 24,
+        "capital": 56321
+      },
+      "#GJJ90QGVQ": {
+        "given": 160,
+        "warStars": 7,
+        "capital": 33906
+      },
+      "#QYJUV90JY": {
+        "given": 20,
+        "warStars": 40,
+        "capital": 28873
+      },
+      "#GU0R2J8R0": {
+        "given": 322,
+        "warStars": 62,
+        "capital": 35685
+      },
+      "#G8VGC2VRL": {
+        "given": 359,
+        "warStars": 30,
+        "capital": 27485
+      },
+      "#LQVRCRUYR": {
+        "given": 0,
+        "warStars": 2445,
+        "capital": 226266
+      },
+      "#YLLQL2VUP": {
+        "given": 169,
+        "warStars": 36,
+        "capital": 32665
+      },
+      "#RY0QPVCCY": {
+        "given": 14,
+        "warStars": 29,
+        "capital": 3150
+      },
+      "#QGPC2228Q": {
+        "given": 0,
+        "warStars": 14,
+        "capital": 8212
+      },
+      "#GQULCR98R": {
+        "given": 288,
+        "warStars": 12,
+        "capital": 16270
+      },
+      "#RYLR2C92V": {
+        "given": 69,
+        "warStars": 4,
+        "capital": 14253
+      },
+      "#R90YJUQCQ": {
+        "given": 0,
+        "warStars": 4,
+        "capital": 13078
+      },
+      "#R8V9U9VLJ": {
+        "given": 27,
+        "warStars": 0,
+        "capital": 0
+      },
+      "#GQ2QUJRGU": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 100
+      },
+      "#GVGRVCQJR": {
+        "given": 281,
+        "warStars": 0,
+        "capital": 6550
+      },
+      "#R9QQPG9JP": {
+        "given": 12,
+        "warStars": 17,
+        "capital": 6580
+      },
+      "#R2PCVYQG2": {
+        "given": 180,
+        "warStars": 18,
+        "capital": 25892
+      },
+      "#R9GPGL0QJ": {
+        "given": 50,
+        "warStars": 5,
+        "capital": 700
+      },
+      "#GVG02VV98": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 100
+      },
+      "#R92C0U8UU": {
+        "given": 30,
+        "warStars": 15,
+        "capital": 4870
+      },
+      "#LUQJC2JGY": {
+        "given": 123,
+        "warStars": 0,
+        "capital": 10055
+      },
+      "#R0VJLRGQ0": {
+        "given": 1,
+        "warStars": 8,
+        "capital": 400
+      },
+      "#R0VLRL292": {
+        "given": 0,
+        "warStars": 3,
+        "capital": 250
+      },
+      "#R8RVQVPCC": {
+        "given": 40,
+        "warStars": 15,
+        "capital": 24711
+      },
+      "#GVRY000P2": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 2510
+      },
+      "#GGU0RJYR9": {
+        "given": 1,
+        "warStars": 0,
+        "capital": 0
+      },
+      "#R9GUJ0ULV": {
+        "given": 41,
+        "warStars": 0,
+        "capital": 0
+      },
+      "#RYUV9V9RC": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
+      },
+      "#RYGL9UUR2": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
+      },
+      "#RY9GPJ822": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 400
+      },
+      "#RY9VL2GQV": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
+      },
+      "#R2CPURPY9": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
+      }
+    }
+  },
+  "notified": {},
   "members": [
     {
       "name": "KUBOOOREK",
@@ -724,7 +946,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 800,
+      "given": 801,
       "received": 80,
       "trophies": 0,
       "profile": {
@@ -1172,7 +1394,7 @@
       "role": "admin",
       "th": 9,
       "given": 322,
-      "received": 1438,
+      "received": 1500,
       "trophies": 221,
       "profile": {
         "level": 53,
@@ -1533,8 +1755,8 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 8,
-      "given": 281,
-      "received": 246,
+      "given": 343,
+      "received": 247,
       "trophies": 349,
       "profile": {
         "level": 40,
