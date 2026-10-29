@@ -649,23 +649,26 @@
 
             <!-- PRAWA STRONA: SPRAWDŹ STATUS REKRUTACJI -->
             <div class="card">
-                <h3>Sprawdź status rekrutacji</h3>
-                <p style="color:var(--text-muted); margin-bottom: 15px; font-size: 0.9rem;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
-                
-                <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;" id="memberCountText">Liczba członków: 40/50</p>
-                
-                <!-- SUWAK Z CZARNYM KWADRACIKIEM -->
-                <input type="range" id="memberSlider" min="0" max="50" value="40" class="custom-slider" oninput="updateRecruitment(this.value)">
-                
-                <div id="recruitmentBox" style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
-                    <p id="recruitmentStatusTitle" style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
-                    <p id="recruitmentStatusDesc" style="font-size: 0.85rem; color: var(--text-muted);">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
-                </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3>Sprawdź status rekrutacji</h3>
+        <button onclick="unlockOfficer()" id="leaderBtn" style="background:transparent; border:1px solid var(--border); color:var(--text-muted); font-size:0.7rem; padding:3px 8px; border-radius:4px; cursor:pointer;" title="Kliknij, aby odblokować edycję">🔒 Oficer</button>
+    </div>
+    <p style="color:var(--text-muted); margin-bottom: 15px; font-size: 0.9rem;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
+    
+    <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;" id="memberCountText">Liczba członków: 40/50</p>
+    
+    <!-- ZABLOKOWANY DOMYŚLNIE SUWAK -->
+    <input type="range" id="memberSlider" min="0" max="50" value="40" class="custom-slider" disabled oninput="updateRecruitment(this.value)">
+    
+    <div id="recruitmentBox" style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
+        <p id="recruitmentStatusTitle" style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
+        <p id="recruitmentStatusDesc" style="font-size: 0.85rem; color: var(--text-muted);">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
+    </div>
 
-                <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; line-height:1.4;">
-                    Status liczy się lokalnie na stronie. Aktualna liczba 40/50 została wpisana ręcznie i nie synchronizuje się automatycznie z grą ani Clash Botem.
-                </p>
-            </div>
+    <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; line-height:1.4;">
+        Status liczy się lokalnie na stronie. Aktualna liczba 40/50 została wpisana ręcznie i nie synchronizuje się automatycznie z grą ani Clash Botem.
+    </p>
+</div>
         </div>
     </section>
 
@@ -1249,8 +1252,22 @@
                         <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">${data.tip}</p>
                     </div>
                 </div>
-            `;
-        }
-    </script>
+
+                <script>
+        
+        function unlockOfficer() {
+            const pass = prompt("Podaj hasło dla Lidera / Co-Leadera:");
+            if (pass === "oficer123") {
+                const slider = document.getElementById("memberSlider");
+                slider.removeAttribute("disabled");
+                document.getElementById("leaderBtn").innerText = "🔓 Panel Oficera";
+                document.getElementById("leaderBtn").style.color = "var(--green)";
+                alert("Suwak rekrutacji odblokowany!");
+            } else if (pass !== null) {
+                alert("Błędne hasło!");
+            
+        
+    </script> <!-- Tutaj kończy się sekcja script -->
 </body>
 </html>
+           
