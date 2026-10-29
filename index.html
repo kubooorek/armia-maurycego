@@ -181,7 +181,6 @@
         th { background-color: var(--darker); font-family: 'Orbitron'; color: var(--gold); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; position: sticky; top: 0; z-index: 10; }
         .search-input { width: 100%; background: var(--darker); border: 1px solid var(--border); padding: 12px 18px; color: #fff; border-radius: 8px; font-size: 0.95rem; margin-bottom: 20px; outline: none; }
         
-        /* STYLE DLA WYKRESÓW SKŁADU KLANU */
         .clan-breakdown-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -203,7 +202,6 @@
         .th-bar-fill { height: 100%; background: var(--gold); border-radius: 6px; }
         .th-bar-count { width: 30px; text-align: right; color: var(--text-muted); font-weight: 700; font-size: 0.85rem; }
 
-        /* STYLE DLA ROZWIJANEGO FAQ */
         .faq-item {
             background-color: var(--card-bg);
             border: 1px solid var(--border);
@@ -251,7 +249,16 @@
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; justify-content: center; align-items: center; padding: 20px; }
         .modal-content { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; max-width: 450px; width: 100%; text-align: center; }
         .modal-content h3 { font-family: 'Orbitron'; color: var(--gold); margin-bottom: 15px; }
-        footer { background-color: var(--darker); text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); font-family: 'Orbitron'; }
+        
+        .supercell-disclaimer {
+            text-align: center;
+            padding: 25px 20px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            background-color: var(--dark);
+        }
+        footer { background-color: var(--darker); text-align: center; padding: 25px; color: var(--text-muted); font-size: 0.8rem; font-family: 'Orbitron'; }
     </style>
 </head>
 <body>
@@ -635,7 +642,7 @@
         </div>
     </section>
 
-    <!-- SEKCJA SKŁADU KLANU (WIZUALIZACJA RATUSZY) -->
+    <!-- SEKCJA SKŁADU KLANU -->
     <section id="gracze" class="container" style="padding-top: 0;">
         <h2 class="section-title" style="margin-bottom: 5px;">SKŁAD KLANU</h2>
         <p style="color: var(--text-muted); margin-bottom: 25px; font-size: 0.95rem;">Rozkład poziomów Ratusza w klanie. Dane wpisane ręcznie, stan na 28.10.2026.</p>
@@ -643,9 +650,7 @@
         <div class="clan-breakdown-grid">
             <div class="card">
                 <h3 style="font-size: 1.05rem; margin-bottom: 20px; color: #fff;">POZIOMY RATUSZA</h3>
-                <div id="thBarsContainer">
-                    <!-- Generowane dynamicznie przez JS -->
-                </div>
+                <div id="thBarsContainer"></div>
             </div>
             <div class="card" style="display: flex; flex-direction: column; justify-content: center;">
                 <h3 style="font-size: 1.05rem; margin-bottom: 20px; color: #fff;">W SKRÓCIE</h3>
@@ -663,11 +668,8 @@
                 <span style="font-size: 0.85rem; color: var(--text-muted); font-family: 'Orbitron';">Sortuj:</span>
                 <select id="sortSelect" onchange="sortPlayersTable()" style="background: var(--darker); border: 1px solid var(--border); color: #fff; padding: 8px 14px; border-radius: 6px; font-family: 'Orbitron'; font-size: 0.8rem; outline: none; cursor: pointer;">
                     <option value="game">jak w grze</option>
-                    <option value="name">nazwa (A-Z)</option>
-                    <option value="th-desc">TH (od najwyższego)</option>
-                    <option value="th-asc">TH (od najniższego)</option>
-                    <option value="sent-desc">Wysłane (od najwyższych)</option>
-                    <option value="recv-desc">Otrzymane (od najwyższych)</option>
+                    <option value="donations">najwięcej donacji</option>
+                    <option value="th">najwyższy TH</option>
                 </select>
             </div>
         </div>
@@ -685,13 +687,16 @@
                         <th>OTRZYMANE</th>
                     </tr>
                 </thead>
-                <tbody id="playerTableBody">
-                    <!-- Wypełniane przez JS -->
-                </tbody>
+                <tbody id="playerTableBody"></tbody>
             </table>
         </div>
         <p style="font-size: 0.8rem; color: var(--text-muted); text-align: right;">Donacje oddziałów według statystyk w grze. Dane wpisane ręcznie, stan na 28.10.2026.</p>
     </section>
+
+    <!-- OFICJALNY KOMUNIKAT SUPERCELL -->
+    <div class="supercell-disclaimer">
+        Strona fanowska, niepowiązana z Supercell. Clash of Clans jest znakiem towarowym Supercell[cite: 16].
+    </div>
 
     <footer>
         <p>© 2026 Armia Maurycego (#2GQO8RGRL). Wszelkie prawa zastrzeżone.</p>
@@ -713,13 +718,11 @@
             }
         }
 
-        // OBSŁUGA ROZWIJANEGO FAQ
         function toggleFaq(element) {
             const item = element.parentElement;
             item.classList.toggle('active');
         }
 
-        // BAZA DANYCH GRACZY (STRICT 1:1)
         const playersData = [
             { name: "KUBOOOREK", role: "Współlider", th: 15, sent: 7643, recv: 3077 },
             { name: "Baku", role: "Członek", th: 15, sent: 740, recv: 80 },
@@ -733,16 +736,16 @@
             { name: "Cwel123", role: "Członek", th: 10, sent: 44, recv: 0 },
             { name: "Toster290", role: "Członek", th: 11, sent: 140, recv: 264 },
             { name: "monte", role: "Członek", th: 10, sent: 450, recv: 200 },
-            { name: "Mimbosz", role: "Członek", th: 9, sent: 200, recv: 110 },
-            { name: "zuzia", role: "Członek", th: 9, sent: 150, recv: 80 },
+            { name: "Mimbosz", role: "Członek", th: 9, sent: 14, recv: 317 },
+            { name: "zuzia", role: "Członek", th: 9, sent: 12, recv: 0 },
             { name: "Kojak", role: "Starszy", th: 9, sent: 512, recv: 410 },
             { name: "Belaska", role: "Starszy", th: 9, sent: 320, recv: 150 },
-            { name: "vvd", role: "Członek", th: 9, sent: 130, recv: 70 },
-            { name: "my name billa", role: "Członek", th: 8, sent: 180, recv: 90 },
+            { name: "vvd", role: "Członek", th: 9, sent: 228, recv: 400 },
+            { name: "MY name billa", role: "Członek", th: 7, sent: 0, recv: 0 },
             { name: "Barnes", role: "Członek", th: 8, sent: 220, recv: 100 },
             { name: "KuN", role: "Członek", th: 8, sent: 160, recv: 70 },
-            { name: "wiktor", role: "Członek", th: 8, sent: 110, recv: 50 },
-            { name: "filip", role: "Członek", th: 8, sent: 95, recv: 40 },
+            { name: "wiktor", role: "Członek", th: 8, sent: 0, recv: 178 },
+            { name: "filip", role: "Członek", th: 8, sent: 0, recv: 0 },
             { name: "erykos", role: "Członek", th: 7, sent: 80, recv: 30 },
             { name: "kwiatek", role: "Członek", th: 6, sent: 60, recv: 20 },
             { name: "BOT6790", role: "Członek", th: 7, sent: 70, recv: 25 },
@@ -751,11 +754,11 @@
             { name: "Marsyllia", role: "Członek", th: 7, sent: 90, recv: 35 },
             { name: "Darui", role: "Członek", th: 7, sent: 120, recv: 50 },
             { name: "Rico", role: "Członek", th: 7, sent: 40, recv: 10 },
-            { name: "Martini", role: "Członek", th: 7, sent: 85, recv: 30 },
-            { name: "Riczard", role: "Członek", th: 7, sent: 65, recv: 20 },
-            { name: "GoldBelt", role: "Członek", th: 7, sent: 100, recv: 45 },
-            { name: "SHA⭐ZAM!", role: "Członek", th: 7, sent: 140, recv: 60 },
-            { name: "SZAR3", role: "Członek", th: 7, sent: 75, recv: 25 },
+            { name: "Martini", role: "Członek", th: 7, sent: 0, recv: 0 },
+            { name: "Riczard", role: "Członek", th: 7, sent: 180, recv: 445 },
+            { name: "GoldBelt", role: "Członek", th: 7, sent: 12, recv: 285 },
+            { name: "SHA⭐ZAM!", role: "Członek", th: 7, sent: 162, recv: 120 },
+            { name: "SZAR3", role: "Członek", th: 8, sent: 69, recv: 290 },
             { name: "szoks", role: "Członek", th: 5, sent: 30, recv: 10 },
             { name: "TwarógPółtlusty", role: "Członek", th: 5, sent: 40, recv: 15 },
             { name: "samurai024", role: "Członek", th: 5, sent: 20, recv: 5 },
@@ -763,7 +766,6 @@
             { name: "Filfox74", role: "Członek", th: 3, sent: 5, recv: 0 }
         ];
 
-        // RENDEROWANIE WYKRESÓW RATUSZY
         function renderThBars() {
             const counts = {};
             for(let i=3; i<=15; i++) counts[i] = 0;
@@ -790,7 +792,6 @@
             document.getElementById('thBarsContainer').innerHTML = html;
         }
 
-        // RENDEROWANIE TABELI GRACZY
         function renderPlayersTable(dataToRender) {
             const tbody = document.getElementById('playerTableBody');
             let html = '';
@@ -812,18 +813,11 @@
             const sortBy = document.getElementById('sortSelect').value;
             let sorted = [...playersData];
 
-            if (sortBy === 'name') {
-                sorted.sort((a, b) => a.name.localeCompare(b.name));
-            } else if (sortBy === 'th-desc') {
-                sorted.sort((a, b) => b.th - a.th);
-            } else if (sortBy === 'th-asc') {
-                sorted.sort((a, b) => a.th - b.th);
-            } else if (sortBy === 'sent-desc') {
+            if (sortBy === 'donations') {
                 sorted.sort((a, b) => b.sent - a.sent);
-            } else if (sortBy === 'recv-desc') {
-                sorted.sort((a, b) => b.recv - a.recv);
+            } else if (sortBy === 'th') {
+                sorted.sort((a, b) => b.th - a.th);
             } else {
-                // 'game' -> oryginalna kolejność
                 sorted = [...playersData];
             }
 
@@ -836,7 +830,6 @@
             renderPlayersTable(filtered);
         }
 
-        // ŻYWY TIMER DO RAID WEEKEND
         function updateRaidTimer() {
             const now = new Date();
             let target = new Date();
@@ -965,7 +958,6 @@
             }
         }
 
-        // Inicjalizacja
         renderThBars();
         renderPlayersTable(playersData);
         updateThCalculator(10);
