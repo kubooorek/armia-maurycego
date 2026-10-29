@@ -156,7 +156,7 @@
         .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 25px; }
         .card h3 { font-family: 'Orbitron'; color: var(--gold); margin-bottom: 15px; font-size: 1.2rem; }
         .card p, .card li { color: var(--text-muted); margin-bottom: 8px; font-size: 0.95rem; }
-        .card ul { padding-left: 20px; }
+        .card ul { padding-left: 20px; list-style: disc; }
         .th-slider { width: 100%; margin: 20px 0; accent-color: var(--gold); cursor: pointer; }
         .custom-slider { -webkit-appearance: none; width: 100%; height: 12px; background: #d1d5db; border-radius: 6px; outline: none; margin: 20px 0; cursor: pointer; }
         .custom-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 18px; background: #22252a; border: 1px solid #000; border-radius: 3px; cursor: pointer; }
@@ -435,7 +435,7 @@
             <div class="card">
                 <h3 style="color:#fff; font-size:1.1rem; margin-bottom:15px;">Ostatnie Wojny</h3>
                 <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); font-size:0.9rem;"><span>ARMIA MAURYCEGO vs Grim Reapers</span><strong style="color:var(--green);">60 - 44</strong></div>
-                <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); font-size:0.9rem;"><span>ARMIA MAURYCEGO vs Blader's Clan</span><strong style="color:var(--green);">60 - 59</strong></div>
+                <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); font-size:0.9rem;"><span>ARMIA MAURYCEGO vs Glader's Clan</span><strong style="color:var(--green);">60 - 59</strong></div>
                 <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border); font-size:0.9rem; margin-bottom:20px;"><span>ARMIA MAURYCEGO vs Enmo !!</span><strong style="color:var(--green);">59 - 59</strong></div>
                 <div style="background:var(--darker); padding:15px; border-radius:8px; border:1px solid var(--border); text-align:center;">
                     <span style="font-size:0.75rem; color:var(--text-muted); letter-spacing:1px; font-family:'Orbitron';">PASSA ZWYCIĘSTW</span>
@@ -650,34 +650,82 @@
         </div>
     </section>
 
-    <!-- ZASADY KLANU I OFERTA -->
+    <!-- ZASADY KLANU I OFERTA (ZAKTUALIZOWANE WG SCREENA) -->
     <section id="zasady" class="container" style="padding-top: 0;">
-        <h2 class="section-title" style="margin-bottom: 20px;">Zasady Klanu & Oferta</h2>
-        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center;">
-            <h3 style="font-family: 'Orbitron'; color: var(--gold); margin-bottom: 10px; font-size: 1.3rem;">⭐ WYMAGANIA I OFERTA KLANU: ARMIA MAURYCEGO ⭐</h3>
-            <p style="color: var(--text-muted); max-width: 900px; margin: 0 auto; font-size: 1rem;">Tworzymy klan od podstaw i budujemy zgraną ekipę! Na tym etapie drzwiczki są otwarte dla każdego, kto chce grać, rozwijać się i budować coś razem z nami. Nie musisz być pro — najważniejsza jest aktywność, chęć nauki i dobra atmosfera.</p>
-        </div>
-        <div class="grid-2">
-            <div class="card" style="border-top: 4px solid var(--primary);">
-                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;"><span>📋</span> CZEGO OCZEKUJEMY (WYMAGANIA)</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Brak „rushowania”</strong> — szukamy wiosek rozwiniętych rozsądnie, z odpowiednim poziomem obrony i wojska do swojego TH.</div></li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Aktywność w grze</strong> — graj regularnie, rozwijaj wioskę i bądź z nami na czacie.</div></li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Wojny Klanów</strong> — masz zielony status? Obowiązkowo atakujesz 2 razy na wojnie. Jeśli nie możesz, daj znać wcześniej liderowi.</div></li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Gry Klanowe i Rajdy</strong> — pomagaj klanowi, bierz udział w weekendowych rajdach oraz grach klanowych. Minimum to 1000 punktów.</div></li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Wzajemna pomoc</strong> — oddawaj wojsko innym, kiedy tylko możesz.</div></li>
-                    <li style="margin-bottom: 12px; display: flex; gap: 10px;"><span style="color: var(--gold);">•</span> <div><strong>Kultura</strong> — szacunek na czacie, zero toksyczności, obrażania i reklamowania innych klanów. (Wejście tylko po bonusy = kick).</div></li>
+        <h2 class="section-title" style="margin-bottom: 5px;">Zasady Klanu</h2>
+        <p style="color: var(--text-muted); margin-bottom: 25px; font-size: 1rem;">Jesteśmy młodym klanem lvl 3. Szukamy aktywnych graczy do wojen, Stolicy Klanu i wspólnego rozwoju. Nie musisz być pro, liczy się aktywność i chęć gry![cite: 23]</p>
+        
+        <div class="grid-3">
+            <div class="card" style="border-top: 4px solid var(--green);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">WYMAGANIA</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">TH3+[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Minimum 1000 punktów w Igrzyskach Klanowych (CG)[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Aktywność w grze[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Udział w wojnach, jeśli jesteś w składzie[cite: 23]</li>
                 </ul>
             </div>
-            <div class="card" style="border-top: 4px solid var(--green);">
-                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;"><span>🎁</span> CO OFERUJEMY</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Wojny Klanów bez przerwy</strong> — szybki przyrost expa, zasobów i doświadczenia w atakach.</div></li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Miejsce dla każdego</strong> — nie patrzymy tylko na poziom TH, każdy może się rozwinąć z nami.</div></li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Wsparcie i donacje</strong> — pomożemy wojskiem na farmę i na wojnę.</div></li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Pomoc dla początkujących</strong> — podpowiemy, jak rozwijać wioskę i atakować.</div></li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Szybki awans</strong> — ranga Elder za aktywność, donacje i zaangażowanie.</div></li>
-                    <li style="margin-bottom: 14px; display: flex; gap: 10px;"><span style="color: var(--green);">•</span> <div><strong>Super atmosferę</strong> — budujemy ten klan wspólnie od zera!</div></li>
+
+            <div class="card" style="border-top: 4px solid var(--primary);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">WOJNY</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">2 ataki w CW obowiązkowe[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Nie możesz zaatakować? Napisz wcześniej do lidera[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Brak ataków bez informacji = możliwy kick[cite: 23]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--gold);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">STOLICA</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">Minimum 1000 punktów w Igrzyskach Klanowych (CG) na start[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Używaj ataków w Raid Weekendzie, jeśli możesz[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Regularny wkład w Igrzyska Klanowe (CG)[cite: 23]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--border);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">AKTYWNOŚĆ</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">Tydzień nieaktywności = kick[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Przerwa? Daj znać w czacie[cite: 23]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--gold);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">DONACJE</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">Pomagaj innym, jeśli możesz[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Nie dawaj żołnierzy, o które nikt nie prosi[cite: 23]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--primary);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">ZAKAZY</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">Obrażanie i toksyczność[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Reklamowanie innych klanów[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Świadome psucie wojen[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Wejście tylko po bonusy[cite: 23]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--border);">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">RANGI</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem;">
+                    <li style="margin-bottom: 8px;">Member: nowy gracz[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Elder: aktywność i dobre ataki[cite: 23]</li>
+                    <li style="margin-bottom: 8px;">Co-leader: zaufane osoby pomagające w klanie[cite: 23]</li>
+                </ul>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--green); grid-column: span 2;">
+                <h3 style="font-family:'Orbitron'; font-size:1.1rem; margin-bottom:15px; color:#fff;">CO OFERUJEMY</h3>
+                <ul style="padding-left: 18px; color: var(--text-muted); font-size: 0.95rem; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <li>Wojny i CWL organizowane non-stop[cite: 23]</li>
+                    <li>Bogate donacje wojska i pomoc nowym[cite: 23]</li>
+                    <li>Przejrzyste awanse na Starszynę za aktywność[cite: 23]</li>
+                    <li>Świetną atmosferę i zgrany Discord[cite: 23]</li>
                 </ul>
             </div>
         </div>
