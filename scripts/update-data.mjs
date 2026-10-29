@@ -294,6 +294,15 @@ function weekKey(dt) {
 }
 const wk = weekKey(new Date());
 let weekBase = old?.weekBase;
+// Zwycięzcy kończącego się tygodnia (liczone przed wyzerowaniem) — do ogłoszenia na Discordzie
+let weekWinners = null;
+if (weekBase && weekBase.week !== wk) {
+  weekWinners = members.map(m => {
+    const b = weekBase.players[m.tag];
+    const d = (m.profile?.warStars != null && b?.warStars != null) ? m.profile.warStars - b.warStars : 0;
+    return { name: m.name, d };
+  }).filter(x => x.d > 0).sort((a, b) => b.d - a.d).slice(0, 3);
+}
 if (!weekBase || weekBase.week !== wk) {
   weekBase = { week: wk, players: {} };
   for (const m of (old?.members || members)) {
@@ -322,7 +331,8 @@ const nowD = new Date();
 const cgStart = new Date(Date.UTC(nowD.getUTCFullYear(), nowD.getUTCMonth(), 22, 8));
 const cgEnd = new Date(Date.UTC(nowD.getUTCFullYear(), nowD.getUTCMonth(), 28, 8));
 const cgKey = cgStart.toISOString().slice(0, 7);
-let clanGames = old?.clanGames ?? null;
+let clanGames = old?.clanGames ? JSON.parse(JSON.stringify(old.clanGames)) : null;
+const prevCgState = old?.clanGames?.state ?? null;
 if (nowD >= cgStart && nowD < new Date(+cgEnd + 6 * 3600e3)) {        // trwa (z 6h zapasu na ostatnie punkty)
   if (!clanGames || clanGames.key !== cgKey) {
     clanGames = { key: cgKey, start: cgStart.toISOString(), end: cgEnd.toISOString(),
@@ -355,13 +365,14 @@ for (const m of members) {
 }
 
 /* ---------- Powiadomienia na Discordzie (webhook) ---------- */
-const WEBHOOK = process.env.DISCORD_WEBHOOK;
+const WEBHOOK = process.env.DISCORD_WEBHOOK;                         // kanał wojenny: przypomnienia, wyniki, Gry Klanowe
+const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // kanał ogólny: powitania, awanse, Wojownik Tygodnia
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
-async function post(content) {
-  if (!WEBHOOK) return;
+async function post(content, url = WEBHOOK) {
+  if (!url) return;
   try {
-    const r = await fetch(WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" },
+    const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: [] } }) });
     if (!r.ok) console.warn("Webhook:", r.status, await r.text());
     await new Promise(res => setTimeout(res, 1200));
@@ -370,14 +381,29 @@ async function post(content) {
 const parseT = t => t ? new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : null;
 const firstRun = !old;   // przy pierwszym uruchomieniu nic nie wysyłamy (brak historii)
 
-if (WEBHOOK && !firstRun) {
+if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
   // 1) Ruchy w klanie z tego uruchomienia
   const RN = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
   const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
   for (const e of freshEvents.reverse()) {
-    if (e.type === "join") await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️`);
-    if (e.type === "th") await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`);
-    if (e.type === "promote") await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`);
+    if (e.type === "join") await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️ Zajrzyj na kanał z regulaminem i połącz konto komendą \`/link create\`.`, WEBHOOK_INFO);
+    if (e.type === "th") await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_INFO);
+    if (e.type === "promote") await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`, WEBHOOK_INFO);
+  }
+
+  // Wojownik Tygodnia (pierwsze uruchomienie po północy z niedzieli na poniedziałek)
+  if (weekWinners && weekWinners.length) {
+    const md = ["🥇", "🥈", "🥉"];
+    await post(`⚔️ **WOJOWNIK TYGODNIA: ${weekWinners[0].name}** (+${weekWinners[0].d} ★)! Gratulacje — ranga ⚔️ Wojownik Tygodnia leci do Ciebie! 🏆\n` +
+      weekWinners.map((w, i) => `${md[i]} ${w.name} — +${w.d} ★`).join("\n") + `\nNowe wyzwanie właśnie wystartowało — liczy się każda gwiazdka! ${SITE}`, WEBHOOK_INFO);
+  }
+
+  // Podsumowanie Gier Klanowych
+  if (clanGames && clanGames.state === "ended" && prevCgState === "ongoing") {
+    const rows = Object.values(clanGames.points || {});
+    const low = rows.filter(r => r.pts < 1000).sort((a, b) => a.pts - b.pts);
+    await post(`🎯 **Gry Klanowe zakończone!** Normę 1000 pkt zrobiło **${rows.length - low.length}/${rows.length}** graczy. 💪` +
+      (low.length ? `\nPoniżej normy: ${low.map(r => `${r.name} (${r.pts})`).join(", ")}` : `\nWszyscy zrobili normę — brawo! 🔥`));
   }
 
   // 2) Wojny: start, przypomnienia, wynik (zwykła wojna lub runda CWL)

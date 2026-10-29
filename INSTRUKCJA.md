@@ -1,25 +1,69 @@
 # Strona klanu Armia Maurycego — instrukcja
 
-## 1. Wgranie strony
-Na github.com/kubooorek/armia-maurycego: **Add file → Upload files**, przeciągnij WSZYSTKIE pliki i foldery
-z tej paczki (index.html, og.png, icon.png, scripts, .github) → **Commit changes**.
+Strona: https://kubooorek.github.io/armia-maurycego/
 
-## 2. Automatyczna aktualizacja z gry (jednorazowa konfiguracja, ~5 minut)
-1. Wejdź na https://developer.clashofclans.com i zaloguj się (konto Supercell ID / e-mail).
-2. **My Account → Create New Key**. Nazwa: `strona-klanu`, opis dowolny.
-   W polu **Allowed IP addresses** wpisz: `45.79.218.79`  (serwer pośredniczący RoyaleAPI).
-3. Skopiuj wygenerowany **Token**.
-4. Na GitHubie w repozytorium: **Settings → Secrets and variables → Actions → New repository secret**.
-   Name: `COC_TOKEN`, Secret: wklej token → **Add secret**.
-5. **Actions → Aktualizacja danych klanu → Run workflow** (pierwsze uruchomienie ręcznie).
-   Po ok. minucie w repozytorium pojawi się plik `data.json`, a strona pokaże „Dane z gry, aktualizacja automatyczna”.
+## Jak to działa
+1. **cron-job.org** (zadanie „Robot klanu”) co 15 minut uruchamia robota na GitHubie.
+2. **Robot** (`scripts/update-data.mjs`, uruchamiany przez `.github/workflows/update-data.yml`) pobiera dane z API Clash of Clans
+   i zapisuje je do `data.json`: członkowie, profile, wojny, wojna na żywo, CWL, rajdy, ruchy w klanie,
+   Gry Klanowe, aktywność graczy, Discord i licznik odwiedzin.
+3. **Strona** (`index.html`) wczytuje `data.json` i sama się aktualizuje.
+4. Jeśli ustawiony jest webhook, robot pisze na **Discordzie** (przypomnienia, wyniki wojen, powitania, Wojownik Tygodnia).
 
-Od tej pory członkowie, ratusze, darowizny, role, historia wojen i liga CWL odświeżają się same co godzinę.
-Uwaga: darowizny w grze zerują się z nowym sezonem — tak samo będzie na stronie.
+## Pliki w repozytorium
+| Plik | Do czego |
+|---|---|
+| `index.html` | cała strona |
+| `data.json` | dane z gry — zapisuje je robot, **nie edytować ręcznie** |
+| `scripts/update-data.mjs` | robot |
+| `.github/workflows/update-data.yml` | uruchamianie robota na GitHubie |
+| `og.png`, `icon.png`, `icon-192.png`, `icon-512.png` | obrazek podglądu linku i ikony |
+| `manifest.webmanifest`, `sw.js` | aplikacja na telefon |
 
-## 3. Ręczne zmiany (w index.html, sekcja „DANE KLANU” na początku skryptu)
-- `ANNOUNCE` — pasek ogłoszeń na górze (null = brak)
-- `MVP` — gracz miesiąca
-- `CWL` — liga, miejsce, top gwiazdek po sezonie
-- `BASES` — bazy tygodnia (linki „Kopiuj bazę” z gry)
-- `MILESTONES_EXTRA` — dodatkowe kamienie milowe
+## Sekrety na GitHubie (Settings → Secrets and variables → Actions)
+| Nazwa | Co to | Skąd |
+|---|---|---|
+| `COC_TOKEN` | klucz API Clash of Clans | developer.clashofclans.com → My Account → klucz z IP `45.79.218.79` |
+| `DISCORD_WEBHOOK` | kanał wojenny: przypomnienia o atakach, wyniki wojen i CWL, podsumowanie Gier Klanowych | Discord → Edytuj kanał → Integracje → Webhooki |
+| `DISCORD_WEBHOOK_INFO` | (opcjonalnie) kanał ogólny: powitania, awanse, nowe TH, Wojownik Tygodnia. Bez niego wszystko idzie na kanał wojenny | jw. |
+
+Kluczy i linków webhooków **nikomu nie wysyłamy**.
+
+## Budzik cron-job.org (zadanie „Robot klanu”)
+- **URL:** `https://api.github.com/repos/kubooorek/armia-maurycego/actions/workflows/update-data.yml/dispatches`
+- **Harmonogram:** co 15 minut
+- **Metoda:** POST, **treść:** `{"ref":"main"}`
+- **Nagłówki:** `Accept: application/vnd.github+json`, `Authorization: Bearer <klucz GitHub>`, `Content-Type: application/json`
+- **Klucz GitHub** (Fine-grained token „budzik-strony”): tylko repozytorium `armia-maurycego`, uprawnienie **Actions: Read and write**.
+- Poprawny test zwraca **204**.
+
+## ⚠️ Terminy do zapamiętania
+- **28.10.2027** — wygasa klucz GitHub „budzik-strony”. Przed tą datą: github.com/settings/personal-access-tokens → nowy klucz
+  z tymi samymi ustawieniami → wklej go w nagłówku `Authorization` zadania na cron-job.org.
+- **Marzec 2028** — GitHub wyłącza wersję API `2022-11-28` używaną przez budzik (wtedy dopisać nagłówek
+  `X-GitHub-Api-Version` z nowszą wersją).
+
+## Ręczne zmiany w `index.html` (sekcja „DANE KLANU” na początku skryptu)
+| Ustawienie | Co zmienia |
+|---|---|
+| `ANNOUNCE` | pasek ogłoszeń na górze strony (`null` = brak) |
+| `MVP` / `MVP_HISTORY` | MVP miesiąca i galeria poprzednich MVP |
+| `CHALLENGE` | wyzwanie tygodnia: tytuł, nagroda, rodzaj (`warStars` / `donations` / `capital`) |
+| `GOALS` | cele klanu (paski postępu) |
+| `BASES` | bazy tygodnia: `th`, link `war`, link `ranked` |
+| `CWL` | sezon CWL wpisywany ręcznie (gdy brak danych z robota) |
+| `MILESTONES_EXTRA` | dodatkowe kamienie milowe |
+| `COUNTER` | licznik odwiedzin (workspace `armia-maurycego`, licznik `odwiedziny` na counterapi.dev) |
+
+Członków, wojen, ról i darowizn **nie trzeba** wpisywać — robi to robot.
+
+## Wgrywanie zmian
+GitHub → **Add file → Upload files** → przeciągnij pliki (nazwa musi być dokładnie `index.html`, bez „(1)”) → **Commit changes**.
+Po 1–2 minutach odśwież stronę przez **Ctrl+F5**.
+
+## Gdy coś nie działa
+- **Dane się nie odświeżają:** cron-job.org → Zadania cykliczne → „Robot klanu” → HISTORIA (ma być 204)
+  oraz GitHub → Actions (uruchomienia „Aktualizacja danych klanu”).
+- **401 w historii cron-job.org:** wygasł lub jest błędny klucz GitHub.
+- **Robot kończy się błędem:** sprawdź sekret `COC_TOKEN` (klucz z IP `45.79.218.79`).
+- **Licznik odwiedzin pokazuje „TH3+”:** bloker reklam w przeglądarce — liczba i tak odświeża się co 15 min z `data.json`.
