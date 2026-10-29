@@ -180,6 +180,52 @@
         th { background-color: var(--darker); font-family: 'Orbitron'; color: var(--gold); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; position: sticky; top: 0; z-index: 10; }
         .badge-win { color: var(--green); border: 1px solid var(--green); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
         .search-input { width: 100%; background: var(--darker); border: 1px solid var(--border); padding: 12px 18px; color: #fff; border-radius: 8px; font-size: 0.95rem; margin-bottom: 20px; outline: none; }
+        
+        /* STYLE DLA ROZWIJANEGO FAQ */
+        .faq-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+        .faq-item:hover { border-color: var(--gold); }
+        .faq-question {
+            padding: 18px 22px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            user-select: none;
+        }
+        .faq-question span {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+            color: var(--gold);
+        }
+        .faq-item.active .faq-question span {
+            transform: rotate(90deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 22px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            border-top: 1px solid transparent;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 15px 22px 20px 22px;
+            border-top-color: var(--border);
+        }
+
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; justify-content: center; align-items: center; padding: 20px; }
         .modal-content { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; max-width: 450px; width: 100%; text-align: center; }
         .modal-content h3 { font-family: 'Orbitron'; color: var(--gold); margin-bottom: 15px; }
@@ -218,6 +264,7 @@
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#struktura">Kadra</a></li>
                     <li><a href="#priorytety">Czas i Priorytety</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#kalendarz">Kalendarz</a></li>
                     <li><a href="#zasady">Zasady</a></li>
                     <li><a href="#gracze">Skład</a></li>
@@ -434,7 +481,7 @@
         </div>
     </section>
 
-    <!-- PRIORYTETY ROZWOJU ORAZ TABELA CZASU (NOWOŚĆ) -->
+    <!-- CZAS I PRIORYTETY ROZWOJU -->
     <section id="priorytety" class="container" style="padding-top: 0;">
         <h2 class="section-title">Czas i Priorytety Rozwoju</h2>
         <div class="grid-2" style="margin-bottom: 20px;">
@@ -448,7 +495,6 @@
             </div>
         </div>
 
-        <!-- TABELA CZASU ULEPSZEŃ -->
         <div class="card">
             <h3 style="text-align: center; margin-bottom: 20px;">⏱️ Tabela Średniego Czasu Awansów (High-End)</h3>
             <div class="table-responsive" style="max-height: 250px;">
@@ -462,8 +508,8 @@
                     </thead>
                     <tbody>
                         <tr><td><strong>Bohaterowie (Heroes)</strong></td><td>~7 do 8 dni / lvl</td><td>Priorytet #1 — nie idź na wyższy TH bez maxa</td></tr>
-                        <tr><td><strong>Laboratorium (Lab)</strong></td><td>Zależne od연구 (5–14 dni)</td><td>Musi pracować 24/7 bez przerw</td></tr>
-                        <tr><td><strong>Clan Castle</strong></td><td>Maksymalny czas dla TH</td><td>Natychmiast po awansie Ratusza (więcej wojska do obrony/ataku)</td></tr>
+                        <tr><td><strong>Laboratorium (Lab)</strong></td><td>Zależne od poziomu (5–14 dni)</td><td>Musi pracować 24/7 bez przerw</td></tr>
+                        <tr><td><strong>Clan Castle</strong></td><td>Maksymalny czas dla TH</td><td>Natychmiast po awansie Ratusza (więcej wojska)</td></tr>
                         <tr><td><strong>Spell Factory</strong></td><td>Zależne od poziomu czaru</td><td>Kluczowe pod nowe czary w wojnach</td></tr>
                         <tr><td><strong>Eagle Artillery / Inferno</strong></td><td>12 – 16 dni</td><td>Ulepszaj w drugiej kolejności (po wojsku)</td></tr>
                     </tbody>
@@ -472,14 +518,53 @@
         </div>
     </section>
 
-    <!-- AKTYWNY WIDGET DISCORDA (NOWOŚĆ) -->
+    <!-- NAJCZĘSTSZE PYTANIA (FAQ Z ROZWIJANYMI ODPOWIEDZIAMI) -->
+    <section id="faq" class="container" style="padding-top: 0;">
+        <h2 class="section-title">Najczęstsze Pytania</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Jak zweryfikować się na Discordzie?</div>
+            <div class="faq-answer">Wpisz na kanale weryfikacji komendę <code>/link create player_tag: #TWÓJ_TAG</code>. Bot ClashPerk nada Ci rangę, zmieni nick i odblokuje resztę serwera.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Czy przyjmujecie graczy z niskim Ratuszem?</div>
+            <div class="faq-answer">Tak, rekrutujemy od TH3. Każdy gracz jest u nas mile widziany.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Ile ataków muszę wykonać w wojnie?</div>
+            <div class="faq-answer">Dwa. Jeśli nie możesz zaatakować, napisz wcześniej do lidera. Brak ataków bez informacji oznacza możliwy kick.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Ile punktów w Igrzyskach Klanowych (CG) muszę mieć?</div>
+            <div class="faq-answer">Minimum 1000 punktów na start, a potem regularny wkład w każde Igrzyska.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Co jeśli muszę zrobić przerwę?</div>
+            <div class="faq-answer">Daj znać w czacie. Tydzień nieaktywności bez informacji kończy się kickiem.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Jak zostać starszym?</div>
+            <div class="faq-answer">Elderem zostają aktywni gracze z dobrymi atakami.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"><span>▼</span> Czy muszę być na Discordzie?</div>
+            <div class="faq-answer">Discord jest dla członków klanu i tam zapadają ustalenia dotyczące wojen, więc zdecydowanie warto.</div>
+        </div>
+    </section>
+
+    <!-- AKTYWNY WIDGET DISCORDA -->
     <section class="container" style="padding-top: 0;">
         <h2 class="section-title">Społeczność & Discord</h2>
         <div class="card" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 30px;">
             <h3 style="margin-bottom: 10px;">💬 Oficjalny Serwer Discord</h3>
             <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Dołącz do nas na czacie głosowym i tekstowym, aby zgarnąć porady i koordynować ataki wojenne!</p>
             
-            <!-- Osadzony oficjalny widget Discorda (zamień ID serwera na swoje w razie potrzeby) -->
             <div style="display: flex; justify-content: center; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
                 <iframe src="https://discord.com/widget?id=7SquD7SF3&theme=dark" width="100%" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
@@ -664,6 +749,12 @@
             if (event.target === modal) {
                 modal.style.display = 'none';
             }
+        }
+
+        // OBSŁUGA ROZWIJANEGO FAQ
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            item.classList.toggle('active');
         }
 
         // ŻYWY TIMER DO RAID WEEKEND (Najbliższy piątek 8:00)
