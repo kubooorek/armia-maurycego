@@ -340,11 +340,42 @@
 
         .card ul { padding-left: 20px; }
 
-        /* SLIDER KALKULATORA TH */
+        /* SUWAKI (TH SLIDER ORAZ REKRUTACJA Z CZARNYM KADREM) */
         .th-slider {
             width: 100%;
             margin: 20px 0;
             accent-color: var(--gold);
+            cursor: pointer;
+        }
+
+        .custom-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 12px;
+            background: #d1d5db;
+            border-radius: 6px;
+            outline: none;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .custom-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 18px;
+            background: #22252a;
+            border: 1px solid #000;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .custom-slider::-moz-range-thumb {
+            width: 22px;
+            height: 18px;
+            background: #22252a;
+            border: 1px solid #000;
+            border-radius: 3px;
             cursor: pointer;
         }
 
@@ -485,13 +516,14 @@
             </div>
         </div>
 
+        <!-- POPRAWIONA KARTA HERO CARD (SCREEN 5: TH 3-18) -->
         <div class="hero-card">
             <div class="hero-card-badge">🟢 REKRUTACJA OTWARTA</div>
             <h3>Armia Maurycego</h3>
             <p style="font-size:0.85rem; color:var(--text-muted);">40/50 miejsc zajętych · 10 wolnych miejsc.</p>
             <div class="hero-card-stats">
                 <div class="stat-box"><strong>40/50</strong><span>Miejsca</span></div>
-                <div class="stat-box"><strong>TH 3–17</strong><span>Kalkulator</span></div>
+                <div class="stat-box"><strong>TH 3–18</strong><span>Kalkulator</span></div>
                 <div class="stat-box"><strong>Fair play</strong><span>Zasady</span></div>
             </div>
             <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; text-align:center;">Tag klanu: <strong>#2GQO8RGRL</strong></p>
@@ -549,12 +581,12 @@
         </div>
     </section>
 
-    <!-- KALKULATOR RATUSZA (TH) ORAZ W PEŁNI PRZYWRÓCONY SUWAK REKRUTACJI -->
+    <!-- INTERAKTYWNY WIDGET: KALKULATOR TH ORAZ SPRAWDŹ STATUS REKRUTACJI -->
     <section id="kalkulator-th" class="container">
-        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Interaktywny widget</h2>
-        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Kalkulator Ratusza (TH)</h3>
+        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">INTERAKTYWNY WIDGET</h2>
+        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">KALKULATOR RATUSZA (TH)</h3>
         <div class="grid-2">
-            <!-- LEWA STRONA: KALKULATOR TH -->
+            <!-- LEWA STRONA: KALKULATOR TH (SCREEN 3) -->
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <h3>Twój poziom TH</h3>
@@ -568,31 +600,28 @@
                     <span>TH17</span>
                 </div>
                 <div id="thAdvice" style="margin-top: 20px;">
-                    <!-- Dynamiczna treść JS -->
+                    <!-- Treść generowana przez JS -->
                 </div>
             </div>
 
-            <!-- PRAWA STRONA: STATUS REKRUTACJI (Z SUWAKIEM DLA OFICERÓW) -->
+            <!-- PRAWA STRONA: SPRAWDŹ STATUS REKRUTACJI (SCREEN 1 & 2) -->
             <div class="card">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h3>Sprawdź status rekrutacji</h3>
-                    <button onclick="unlockOfficer()" id="leaderBtn" style="background:transparent; border:1px solid var(--border); color:var(--text-muted); font-size:0.7rem; padding:3px 8px; border-radius:4px; cursor:pointer;" title="Kliknij, aby odblokować edycję dla Lidera / Co-Leadera">🔒 Oficer</button>
-                </div>
+                <h3>Sprawdź status rekrutacji</h3>
                 <p style="color:var(--text-muted); margin-bottom: 15px; font-size: 0.9rem;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
                 
                 <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;" id="memberCountText">Liczba członków: 40/50</p>
                 
-                <!-- TUTAJ JEST PRZYWRÓCONY SUWAK REKRUTACJI -->
-                <input type="range" id="memberSlider" min="0" max="50" value="40" class="th-slider" disabled oninput="updateRecruitment(this.value)">
-                
-                <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
-                    <div id="progressBar" style="background: var(--gold); width: 80%; height: 100%;"></div>
-                </div>
+                <!-- AKTYWNY SUWAK Z CZARNYM KWADRACIKIEM DO PRZESUWANIA W PRAWO I LEWO -->
+                <input type="range" id="memberSlider" min="0" max="50" value="40" class="custom-slider" oninput="updateRecruitment(this.value)">
                 
                 <div id="recruitmentBox" style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
                     <p id="recruitmentStatusTitle" style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
                     <p id="recruitmentStatusDesc" style="font-size: 0.85rem; color: var(--text-muted);">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
                 </div>
+
+                <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; line-height:1.4;">
+                    Status liczy się lokalnie na stronie. Aktualna liczba 40/50 została wpisana ręcznie i nie synchronizuje się automatycznie z grą ani Clash Botem.
+                </p>
             </div>
         </div>
     </section>
@@ -713,7 +742,7 @@
         </div>
     </section>
 
-    <!-- SŁAWA KLANOWA -->
+    <!-- SŁAWA KLANOWA (SCREEN 4: TOP 3 DONATORÓW SEZONU) -->
     <section id="slawa" class="container">
         <h2 class="section-title">Sława klanowa & Rekordy</h2>
         <div class="grid-2">
@@ -722,7 +751,7 @@
                 <p>Wybór lidera za zasługi w wojnach CWL, donacje i aktywność klanową.</p>
             </div>
             <div class="card">
-                <h3>🎁 TOP 3 Donatorów Miesiąca</h3>
+                <h3>🎁 TOP 3 Donatorów Sezonu</h3>
                 <p><strong>01. KUBOOOREK</strong> — 7643 pkt<br><strong>02. Albaroon.2</strong> — 3893 pkt<br><strong>03. VipeR</strong> — 2344 pkt</p>
             </div>
         </div>
@@ -955,25 +984,9 @@
 
     <!-- SKRYPTY -->
     <script>
-        // --- Odblokowanie suwaka rekrutacji dla Lidera i Co-Leaderów ---
-        function unlockOfficer() {
-            const pass = prompt("Podaj hasło dla Lidera / Co-Leadera:");
-            if (pass === "oficer123") {
-                const slider = document.getElementById("memberSlider");
-                slider.removeAttribute("disabled");
-                document.getElementById("leaderBtn").innerText = "🔓 Panel Oficera";
-                document.getElementById("leaderBtn").style.color = "var(--green)";
-                alert("Suwak rekrutacji odblokowany dla kadry zarządzającej!");
-            } else if (pass !== null) {
-                alert("Błędne hasło!");
-            }
-        }
-
-        // --- Aktualizacja statusu rekrutacji suwakiem ---
+        // Dynamiczna zmiana suwaka rekrutacji (na żywo po przesunięciu)
         function updateRecruitment(val) {
             document.getElementById('memberCountText').innerText = `Liczba członków: ${val}/50`;
-            const percent = (val / 50) * 100;
-            document.getElementById('progressBar').style.width = percent + '%';
             
             const box = document.getElementById('recruitmentBox');
             const title = document.getElementById('recruitmentStatusTitle');
@@ -995,11 +1008,11 @@
             }
         }
 
-        // --- Odliczanie do rajdów oraz automatyzacja kalendarza ---
+        // Odliczanie do rajdów oraz automatyzacja kalendarza
         function updateAutomatedWidgets() {
             const now = new Date();
             
-            // Odliczanie do Raid Weekend (Piątek 8:00)
+            // Raid Weekend (Piątek 8:00)
             const resultDay = 5; 
             const resultHour = 8; 
             let targetRaid = new Date();
@@ -1030,7 +1043,7 @@
             const month = now.getMonth();
             const year = now.getFullYear();
 
-            // Clan Games (22 - 28) -> Zakończone w tym miesiącu
+            // Clan Games
             const cgEl = document.getElementById('cgStatus');
             if(cgEl) {
                 if (day >= 22 && day <= 28) {
@@ -1049,7 +1062,7 @@
                 }
             }
 
-            // CWL (1 - 7)
+            // CWL
             const cwlEl = document.getElementById('cwlStatus');
             if(cwlEl) {
                 if (day >= 1 && day <= 7) {
