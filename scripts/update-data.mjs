@@ -78,6 +78,16 @@ for (const m of members) {
     heroes: (p.heroes || []).filter(h => h.village === "home")
       .map(h => ({ name: h.name, level: h.level, max: h.maxLevel }))
   };
+  const A = Object.fromEntries((p.achievements || []).map(a => [a.name, a.value]));
+  m.ach = {
+    cg: A["Games Champion"] ?? null,        // suma punktów z Gier Klanowych
+    don: A["Friend in Need"] ?? null,       // suma przekazanych oddziałów (całe konto)
+    capLoot: A["Aggressive Capitalism"] ?? null, // złoto stolicy zdobyte w rajdach
+    gold: A["Gold Grab"] ?? null,           // złoto zrabowane w atakach
+    elixir: A["Elixir Escapade"] ?? null,
+    capContrib: A["Most Valuable Clanmate"] ?? null,
+    wins: p.attackWins ?? null
+  };
 }
 
 /* ---------- Dziennik wojen ---------- */
@@ -294,6 +304,56 @@ for (const m of members) {   // gracze, którzy dołączyli w trakcie tygodnia
   if (!weekBase.players[m.tag]) weekBase.players[m.tag] = { given: m.given ?? 0, warStars: m.profile?.warStars ?? null, capital: m.profile?.capital ?? null };
 }
 
+/* ---------- Aktywność graczy (wykrywanie nieaktywnych) ---------- */
+// Sygnatura z rzeczy, które zmieniają się tylko gdy gracz SAM coś robi (bez pucharów — te spadają też od obron)
+const nowIso = new Date().toISOString();
+let activity = old?.activity && typeof old.activity === "object" ? old.activity : {};
+for (const m of members) {
+  const a = m.ach || {};
+  const sig = [m.given, a.gold, a.elixir, a.cg, a.don, a.capLoot, a.capContrib, a.wins, m.profile?.warStars, m.profile?.level, m.th].join("|");
+  const prev = activity[m.tag];
+  if (!prev) activity[m.tag] = { sig, last: nowIso, since: nowIso };
+  else if (prev.sig !== sig) activity[m.tag] = { ...prev, sig, last: nowIso };
+}
+activity = Object.fromEntries(Object.entries(activity).filter(([t]) => members.some(m => m.tag === t)));
+
+/* ---------- Gry Klanowe (22.–28. dnia miesiąca, 08:00 UTC) ---------- */
+const nowD = new Date();
+const cgStart = new Date(Date.UTC(nowD.getUTCFullYear(), nowD.getUTCMonth(), 22, 8));
+const cgEnd = new Date(Date.UTC(nowD.getUTCFullYear(), nowD.getUTCMonth(), 28, 8));
+const cgKey = cgStart.toISOString().slice(0, 7);
+let clanGames = old?.clanGames ?? null;
+if (nowD >= cgStart && nowD < new Date(+cgEnd + 6 * 3600e3)) {        // trwa (z 6h zapasu na ostatnie punkty)
+  if (!clanGames || clanGames.key !== cgKey) {
+    clanGames = { key: cgKey, start: cgStart.toISOString(), end: cgEnd.toISOString(),
+      partial: nowD - cgStart > 3 * 3600e3, base: {}, points: {} };
+  }
+  for (const m of members) {
+    const v = m.ach?.cg; if (v == null) continue;
+    if (clanGames.base[m.tag] == null) clanGames.base[m.tag] = v;
+    clanGames.points[m.tag] = { name: m.name, pts: Math.max(0, v - clanGames.base[m.tag]) };
+  }
+  clanGames.state = nowD < cgEnd ? "ongoing" : "ended";
+} else if (clanGames && clanGames.state === "ongoing" && nowD >= cgEnd) {
+  clanGames.state = "ended";
+}
+
+/* ---------- Bilans miesiąca (kandydaci na MVP i do awansu) ---------- */
+const monthKey = nowIso.slice(0, 7);
+let monthBase = old?.monthBase;
+if (!monthBase || monthBase.month !== monthKey) {
+  monthBase = { month: monthKey, since: nowIso, players: {} };
+  for (const m of (old?.members?.length ? old.members : members)) {
+    monthBase.players[m.tag] = { warStars: m.profile?.warStars ?? null, don: m.ach?.don ?? null, cg: m.ach?.cg ?? null, capLoot: m.ach?.capLoot ?? null };
+  }
+}
+for (const m of members) {
+  const cur = { warStars: m.profile?.warStars ?? null, don: m.ach?.don ?? null, cg: m.ach?.cg ?? null, capLoot: m.ach?.capLoot ?? null };
+  const b = monthBase.players[m.tag];
+  if (!b) { monthBase.players[m.tag] = { ...cur, joined: nowIso }; continue; }
+  for (const k of Object.keys(cur)) if (b[k] == null && cur[k] != null) b[k] = cur[k];   // uzupełnij brakujące wartości startowe
+}
+
 /* ---------- Powiadomienia na Discordzie (webhook) ---------- */
 const WEBHOOK = process.env.DISCORD_WEBHOOK;
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
@@ -370,6 +430,9 @@ const data = {
   warArchive,
   history,
   weekBase,
+  activity,
+  clanGames,
+  monthBase,
   notified,
   members,
   wars

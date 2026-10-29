@@ -346,6 +346,19 @@
   .bw-close{display:none} .bases-wrap[open] .bw-close{display:inline} .bases-wrap[open] .bw-open{display:none}
   .bases-wrap .bases{padding:0 14px 14px}
   @media (max-width:520px){.bw-txt small{display:none}}
+  .admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 14px 14px}
+  .admin-grid .panel{background:var(--bg)}
+  .admin-grid .panel .mini-row{font-size:.84rem}
+  .cg-row{margin-bottom:8px}
+  .cg-row .goal-row{font-size:.82rem;margin-bottom:3px}
+  .cg-row .dbar{height:6px}
+  .cg-row.done .dbar u{background:linear-gradient(90deg,#2f8a55,var(--green))}
+  .cg-row.low .dbar u{background:linear-gradient(90deg,#a33a36,var(--red))}
+  .inact-days{font-weight:700}
+  .inact-days.d7{color:#ff8a80} .inact-days.d3{color:var(--gold2)}
+  .why{display:block;color:var(--muted);font-size:.72rem;margin-top:1px}
+  .admin-note{color:var(--muted);font-size:.74rem;margin-top:8px}
+  @media (max-width:900px){.admin-grid{grid-template-columns:1fr}}
   /* REQUIREMENTS */
   .reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
   .req{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
@@ -520,6 +533,7 @@
       <a href="#czlonkowie">Członkowie</a>
       <a href="#wojny">Wojny</a>
       <a href="#ranking">Ranking</a>
+      <a href="#zarzad">Zarząd</a>
       <a href="#kalkulator">Poradnik</a>
       <a href="#bazy">Bazy</a>
       <a href="#faq">FAQ</a>
@@ -767,6 +781,19 @@
         <tbody id="tbody"></tbody>
       </table>
     </div>
+  </div>
+</section>
+
+<section id="zarzad">
+  <div class="wrap">
+    <details class="bases-wrap" id="adminWrap">
+      <summary>
+        <span class="bw-ico">🛡️</span>
+        <span class="bw-txt"><b>Panel zarządu</b><small>Gry Klanowe · nieaktywni · kandydaci do awansu i na MVP — liczone automatycznie z gry</small></span>
+        <span class="bw-btn"><span class="bw-open">Pokaż panel</span><span class="bw-close">Zwiń</span> <i>▾</i></span>
+      </summary>
+      <div class="admin-grid" id="adminGrid"></div>
+    </details>
   </div>
 </section>
 
@@ -1106,7 +1133,7 @@ const EN = {
 "Hybryda (Górnicy + Hogi)":"Hybrid (Miners + Hogs)","Górnicy + Hogi, Królowa z Leczycielkami na bok bazy. Zaklęcia: Leczenie, Szał.":"Miners + Hog Riders, Queen Charge with Healers on one side. Spells: Healing, Rage.","Jak: Królowa czyści stronę bazy, potem hybryda idzie za nią. Leczenie na skupiska obrony.":"How: The Queen clears one side, then the hybrid follows her. Heal over defence clusters.",
 "Smoki elektryczne / Hybryda":"Electro Dragons / Hybrid","Elektrosmoki z Balonami lub Hybryda z Królową. Bohaterowie z dobrym wyposażeniem.":"Electro Dragons with Balloons or Hybrid with a Queen Charge. Heroes with good equipment.","Jak: Najpierw lejek (funnel) bohaterami, potem główna armia jedną linią.":"How: Build a funnel with heroes first, then send the main army in one line.",
 "Hybryda / Smoki + bohaterowie":"Hybrid / Dragons + heroes","Hybryda lub masowe smoki — kluczowi są bohaterowie z wyposażeniem epickim.":"Hybrid or mass Dragons — heroes with epic equipment are key.","Jak: Ćwicz ataki w okienku treningowym i pytaj na Discordzie — meta zmienia się z aktualizacjami.":"How: Practise in the training area and ask on Discord — the meta changes with updates.",
-"Obrona":"Defence","Bazy tygodnia":"Bases of the week","Sprawdzone układy wiosek dla każdego ratusza. Kliknij przycisk na telefonie z grą — baza otworzy się w Clash of Clans, wystarczy ją zapisać w edytorze.":"Proven village layouts for every Town Hall. Tap a button on the phone with the game — the base opens in Clash of Clans, just save it in the editor.","⚔️ Wojna":"⚔️ War","Bazy dla TH4–TH18":"Bases for TH4–TH18","⚔️ Wojna dla każdego ratusza · 🏆 Ranked od TH7":"⚔️ War for every Town Hall · 🏆 Ranked from TH7","Pokaż bazy":"Show bases","Zwiń":"Collapse","🏆 od TH7":"🏆 from TH7",
+"Obrona":"Defence","Bazy tygodnia":"Bases of the week","Sprawdzone układy wiosek dla każdego ratusza. Kliknij przycisk na telefonie z grą — baza otworzy się w Clash of Clans, wystarczy ją zapisać w edytorze.":"Proven village layouts for every Town Hall. Tap a button on the phone with the game — the base opens in Clash of Clans, just save it in the editor.","⚔️ Wojna":"⚔️ War","Panel zarządu":"Leadership panel","Pokaż panel":"Show panel","Zarząd":"Leaders","Zakończone":"Ended","✅ Zrobili normę":"✅ Reached target","❌ Poniżej 1000 pkt":"❌ Below 1,000 pts","Poniżej normy:":"Below target:","Bazy dla TH4–TH18":"Bases for TH4–TH18","⚔️ Wojna dla każdego ratusza · 🏆 Ranked od TH7":"⚔️ War for every Town Hall · 🏆 Ranked from TH7","Pokaż bazy":"Show bases","Zwiń":"Collapse","🏆 od TH7":"🏆 from TH7",
 "Pierwsze bazy tygodnia pojawią się wkrótce — zarząd wybiera sprawdzone układy dla każdego TH. Masz dobrą bazę? Wrzuć link na Discordzie.":"The first bases of the week are coming soon — leadership is picking proven layouts for every TH. Got a good base? Share the link on Discord.",
 "Kopiuj bazę":"Copy base","Wojna":"War","Farma":"Farming",
 "Zasady":"Rules","Regulamin klanu":"Clan rules","Pełne zasady w jednym miejscu. Dołączając do klanu, akceptujesz regulamin.":"All the rules in one place. By joining the clan you accept them.",
@@ -1747,6 +1774,70 @@ $("#cwlTop").innerHTML = CWL.top.length
     tip(ios?"<b>iPhone:</b> stuknij <b>Udostępnij</b> ⬆️ na dole Safari → <b>„Do ekranu początkowego”</b>."
            :"<b>Android:</b> menu przeglądarki ⋮ → <b>„Zainstaluj aplikację”</b> lub <b>„Dodaj do ekranu głównego”</b>. Na komputerze: ikona instalacji w pasku adresu.");
   });
+})();
+
+
+/* ===== Panel zarządu ===== */
+(function(){
+  const grid=$("#adminGrid"); if(!grid) return;
+  const AM=(AUTO&&AUTO.members)||[];
+  const roleOf=t=>{const m=MEMBERS.find(x=>x.tag===t);return m?m.role:"member";};
+  const dd=d=>new Date(d).toLocaleDateString(LOC(),{day:"numeric",month:"short"});
+  const panel=(title,chip,body)=>`<div class="panel"><div class="panel-head"><span class="fame-label" style="margin:0">${title}</span><span class="chip">${chip||""}</span></div>${body}</div>`;
+  if(!AM.length){ grid.innerHTML=`<div class="empty" style="grid-column:1/-1">Panel działa na danych z robota — pojawi się po najbliższej automatycznej aktualizacji.</div>`; return; }
+
+  // 1) Gry Klanowe
+  let cgHtml, cgChip="";
+  const cg=AUTO.clanGames;
+  const now=new Date(); let next=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),22,8)); if(now>next) next=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth()+1,22,8));
+  if(cg && cg.points){
+    const rows=Object.values(cg.points).sort((a,b)=>b.pts-a.pts);
+    const done=rows.filter(r=>r.pts>=1000), low=rows.filter(r=>r.pts<1000);
+    cgChip=cg.state==="ongoing"?"● Trwa":"Zakończone";
+    const bar=r=>`<div class="cg-row ${r.pts>=1000?"done":(cg.state==="ended"?"low":"")}"><div class="goal-row"><b>${esc(r.name)}</b><span>${fmt(r.pts)} / 1000</span></div><div class="dbar"><u style="width:${Math.min(100,r.pts/10)}%"></u></div></div>`;
+    cgHtml = cg.state==="ended"
+      ? `<div class="mini-row"><span>✅ Zrobili normę</span><b>${done.length}</b></div><div class="mini-row"><span>❌ Poniżej 1000 pkt</span><b>${low.length}</b></div>
+         ${low.length?`<div class="lw-left" style="margin-top:8px">Poniżej normy:</div><div class="lw-chips">${low.map(r=>`<span>${esc(r.name)}<b>${fmt(r.pts)}</b></span>`).join("")}</div>`:""}`
+      : `<div class="table-box" style="max-height:260px;border:none;background:none">${rows.map(bar).join("")}</div>`;
+    if(cg.partial) cgHtml+=`<p class="admin-note">Robot zaczął liczyć w trakcie Gier — wcześniejsze punkty mogą nie być wliczone.</p>`;
+  } else {
+    cgHtml=`<div class="empty">Najbliższe Gry Klanowe: <b>${dd(next)}</b>. Robot sam zapamięta stan na start i będzie liczył punkty każdego gracza do normy 1000.</div>`;
+  }
+
+  // 2) Nieaktywni
+  const act=AUTO.activity||{}; const since=Object.values(act).map(a=>a.since).sort()[0];
+  const trackedDays=since?(Date.now()-new Date(since))/864e5:0;
+  const inact=AM.map(m=>{const a=act[m.tag];return a?{name:m.name,days:Math.floor((Date.now()-new Date(a.last))/864e5),since:a.since}:null;})
+    .filter(x=>x&&x.days>=3).sort((a,b)=>b.days-a.days);
+  let inHtml;
+  if(trackedDays<3 && !inact.length) inHtml=`<div class="empty">Obserwacja aktywności od <b>${since?dd(since):"dziś"}</b>. Pierwsze wyniki po 3 dniach — tu pojawią się gracze, którzy nic nie robią (ataki, darowizny, Gry, rajdy).</div>`;
+  else if(!inact.length) inHtml=`<div class="empty">Wszyscy aktywni w ostatnich 3 dniach ✅</div>`;
+  else inHtml=inact.map(x=>`<div class="mini-row"><span>${esc(x.name)}</span><span class="inact-days ${x.days>=7?"d7":"d3"}">${x.days>=7?"⚠️ ":""}${x.days} dni</span></div>`).join("")+`<p class="admin-note">⚠️ 7+ dni = zasada usunięcia z klanu. Liczone od ${since?dd(since):""}.</p>`;
+
+  // 3) i 4) bilans miesiąca
+  const mb=AUTO.monthBase||{players:{}};
+  const missed={}; ((AUTO.warArchive)||[]).filter(w=>w.state==="warEnded").slice(0,5).forEach(w=>w.members.forEach(m=>{if(m.attacks.length<w.perMember) missed[m.tag]=(missed[m.tag]||0)+(w.perMember-m.attacks.length);}));
+  const scored=AM.map(m=>{const b=mb.players[m.tag]||{};const a=m.ach||{};
+    const d=k=>(a[k]!=null&&b[k]!=null)?Math.max(0,a[k]-b[k]):0;
+    const stars=(m.profile&&m.profile.warStars!=null&&b.warStars!=null)?Math.max(0,m.profile.warStars-b.warStars):0;
+    const don=d("don"), cgp=d("cg"), cap=d("capLoot");
+    const score=stars*10+don/10+cgp/50+cap/500;
+    const days=act[m.tag]?Math.floor((Date.now()-new Date(act[m.tag].last))/864e5):0;
+    return {tag:m.tag,name:m.name,role:roleOf(m.tag),stars,don,cgp,cap,score:Math.round(score),miss:missed[m.tag]||0,days};
+  }).sort((a,b)=>b.score-a.score);
+  const why=x=>[x.stars?`★ ${x.stars}`:"",x.don?`${fmt(x.don)} oddz.`:"",x.cgp?`${fmt(x.cgp)} pkt GK`:"",x.cap?`${fmt(x.cap)} złota stolicy`:""].filter(Boolean).join(" · ")||"brak punktów w tym miesiącu";
+  const md=i=>["🥇","🥈","🥉"][i]||`${i+1}.`;
+  const monthNote=`<p class="admin-note">Liczone od ${mb.since?dd(mb.since):"początku miesiąca"}: gwiazdki ×10, oddziały ÷10, pkt Gier ÷50, złoto stolicy ÷500.</p>`;
+  const mvp=scored.filter(x=>x.score>0).slice(0,3);
+  const mvpHtml=(mvp.length?mvp.map((x,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${esc(x.name)}<span class="why">${why(x)}</span></span><b>${fmt(x.score)} pkt</b></div>`).join(""):`<div class="empty">Brak danych z tego miesiąca — ranking zbuduje się sam.</div>`)+monthNote;
+  const promo=scored.filter(x=>x.role==="member"&&x.score>0&&!x.miss&&x.days<3).slice(0,3);
+  const promoHtml=(promo.length?promo.map((x,i)=>`<div class="mini-row"><span>⬆️ ${esc(x.name)}<span class="why">${why(x)} · bez opuszczonych ataków</span></span><b>${fmt(x.score)} pkt</b></div>`).join(""):`<div class="empty">Na razie brak kandydatów — pojawią się aktywni Członkowie bez opuszczonych ataków.</div>`)+`<p class="admin-note">Tylko ranga „Członek”, aktywni w ostatnich 3 dniach, bez opuszczonych ataków w 5 ostatnich wojnach.</p>`;
+
+  grid.innerHTML=
+    panel("🎯 Gry Klanowe — norma 1000 pkt",cgChip,cgHtml)+
+    panel("💤 Możliwie nieaktywni",inact.length?`${inact.length}`:"",inHtml)+
+    panel("⬆️ Kandydaci do awansu na Starszego","",promoHtml)+
+    panel("🏆 Kandydaci na MVP miesiąca","",mvpHtml);
 })();
 
 /* ===== Kamienie milowe ===== */
