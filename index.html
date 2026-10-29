@@ -35,6 +35,7 @@
             scroll-behavior: smooth;
         }
 
+        /* HEADER / NAVBAR */
         header {
             background-color: rgba(7, 9, 14, 0.95);
             backdrop-filter: blur(10px);
@@ -113,6 +114,7 @@
             background-color: #d68910;
         }
 
+        /* CONTAINER & TITLES */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -130,6 +132,7 @@
             padding-bottom: 15px;
         }
 
+        /* HERO SECTION */
         .hero {
             max-width: 1200px;
             margin: 0 auto;
@@ -311,6 +314,7 @@
             color: var(--text-muted);
         }
 
+        /* GRIDS & CARDS */
         .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
         .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px; }
@@ -338,6 +342,7 @@
 
         .card ul { padding-left: 20px; }
 
+        /* SUWAKI */
         .th-slider {
             width: 100%;
             margin: 20px 0;
@@ -367,15 +372,6 @@
             cursor: pointer;
         }
 
-        .custom-slider::-moz-range-thumb {
-            width: 22px;
-            height: 18px;
-            background: #22252a;
-            border: 1px solid #000;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
         .th-scale {
             display: flex;
             justify-content: space-between;
@@ -384,6 +380,7 @@
             font-family: 'Orbitron', sans-serif;
         }
 
+        /* STRATEGIE ATAKU */
         .th-buttons-grid {
             display: flex;
             flex-wrap: wrap;
@@ -410,6 +407,7 @@
             border-color: var(--gold);
         }
 
+        /* TABLES */
         .table-responsive {
             width: 100%;
             overflow-x: auto;
@@ -439,6 +437,7 @@
         }
         .search-input:focus { border-color: var(--gold); }
 
+        /* MODAL */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -477,23 +476,23 @@
 </head>
 <body>
 
-    <!-- MODAL KLANU -->
+    <!-- MODAL DO OTWIERANIA KLANU W GRZE -->
     <div id="clanModal" class="modal-overlay">
         <div class="modal-content">
             <h3>Otwórz Klan w grze</h3>
-            <p>Aby sprawdzić klan w Clash of Clans, wpisz tag <strong>#2GQO8RGRL</strong> w wyszukiwarce w grze lub sprawdź profil online:</p>
+            <p>Aby sprawdzić klan w Clash of Clans, wpisz tag <strong>#2GQO8RGRL</strong> w wyszukiwarce klanów w grze lub sprawdź profil online:</p>
             <div style="background: var(--darker); padding: 12px; border-radius: 6px; border: 1px solid var(--border); margin-bottom: 20px;">
                 <code style="color: var(--gold); font-size: 1.1rem; font-family:'Orbitron';">#2GQO8RGRL</code>
             </div>
             <div class="modal-buttons">
                 <button class="btn-game" style="padding: 10px 16px; font-size: 0.8rem;" onclick="copyClanTagModal()">Kopiuj Tag</button>
-                <a href="https://www.clashofstats.com/clans/armia-maurycego-2GQO8RGRL/summary" target="_blank" class="btn-discord-outline" style="padding: 10px 16px; font-size: 0.8rem;">Statystyki Online</a>
+                <a href="https://www.clashofstats.com/clans/armia-maurycego-2GQO8RGRL/summary" target="_blank" class="btn-discord-outline" style="padding: 10px 16px; font-size: 0.8rem;">Zobacz Statystyki Online</a>
                 <button class="btn-discord-outline" style="padding: 10px 16px; font-size: 0.8rem;" onclick="closeClanModal()">Zamknij</button>
             </div>
         </div>
     </div>
 
-    <!-- HEADER -->
+    <!-- HEADER / NAVBAR -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo-area">
@@ -574,7 +573,7 @@
             <div class="card">
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">1</div>
                 <h3 style="margin-bottom: 8px;">Wejdź na Discorda</h3>
-                <p style="margin-bottom: 15px;">Dołącz do serwera klanowego. Tam ustalamy wojny i składy.</p>
+                <p style="margin-bottom: 15px;">Dołącz do serwera klanowego. Tam ustalamy wojny i składy, a bot powita Cię instrukcją.</p>
                 <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-game" style="padding: 10px 16px; font-size: 0.8rem;">OTWÓRZ DISCORDA</a>
             </div>
             <div class="card">
@@ -586,17 +585,17 @@
             <div class="card">
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">3</div>
                 <h3 style="margin-bottom: 8px;">Zweryfikuj konto</h3>
-                <p>Na kanale weryfikacji wpisz komendę:<br><code>/link create player_tag: #TWÓJ_TAG</code></p>
+                <p>Na kanale weryfikacji wpisz komendę:<br><code>/link create player_tag: #TWÓJ_TAG</code><br><span style="font-size: 0.8rem; display:block; margin-top:5px;">Tag znajdziesz w grze (lewy górny róg profilu). Bot ClashPerk sam nada Ci rangę.</span></p>
             </div>
             <div class="card">
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">4</div>
                 <h3 style="margin-bottom: 8px;">Przeczytaj zasady</h3>
-                <p>Sprawdź najnowsze informacje na kanale ogłoszenia. Pamiętaj o 2 atakach w wojnie.</p>
+                <p>Zajrzyj na kanał regulamin-klanu i sprawdź najnowsze informacje na kanale ogłoszenia. Pamiętaj o 2 atakach w każdej wojnie.</p>
             </div>
         </div>
     </section>
 
-    <!-- KALKULATOR I REKRUTACJA -->
+    <!-- KALKULATOR TH ORAZ STATUS REKRUTACJI -->
     <section id="kalkulator-th" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">INTERAKTYWNY WIDGET</h2>
         <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">KALKULATOR RATUSZA (TH)</h3>
@@ -635,7 +634,7 @@
         </div>
     </section>
 
-    <!-- STRATEGIE -->
+    <!-- STRATEGIE ATAKU -->
     <section id="strategie" class="container">
         <h2 class="section-title">Strategie Ataku (TH3 – TH18)</h2>
         <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">Kliknij swój poziom Ratusza, aby rozwinąć najlepsze meta strategie armii do wojen:</p>
@@ -663,10 +662,34 @@
         </div>
     </section>
 
-    <!-- SKŁAD I TABELA -->
+    <!-- HISTORIA WOJEN -->
+    <section id="wojny" class="container">
+        <h2 class="section-title">Historia Wojen</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Przeciwnik</th>
+                        <th>Skład</th>
+                        <th>Gwiazdki</th>
+                        <th>Zniszczenie</th>
+                        <th>Wynik</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>27.10</td><td>Grim Reapers</td><td>20 vs 20</td><td>60 - 44</td><td>100,00% - 80,15%</td><td><span class="badge-win">Wygrana</span></td></tr>
+                    <tr><td>25.10</td><td>Glader's Clan</td><td>20 vs 20</td><td>60 - 59</td><td>100,00% - 98,90%</td><td><span class="badge-win">Wygrana</span></td></tr>
+                    <tr><td>23.10</td><td>Enmo !!</td><td>20 vs 20</td><td>59 - 59</td><td>99,10% - 98,66%</td><td><span class="badge-win">Wygrana</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- SKŁAD I TABELA (40 OSÓB) -->
     <section id="gracze" class="container">
-        <h2 class="section-title">Skład i Lista Graczy</h2>
-        <input type="text" id="playerSearch" class="search-input" placeholder="Wyszukaj gracza (np. Baku, ViPeR, Kajak)..." onkeyup="filterPlayers()">
+        <h2 class="section-title">Skład i Lista Graczy (40 osób)</h2>
+        <input type="text" id="playerSearch" class="search-input" placeholder="Wyszukaj gracza (np. KUBOOOREK, SHAZAM, Filfox)..." onkeyup="filterPlayers()">
         
         <div class="table-responsive">
             <table>
@@ -682,8 +705,43 @@
                 <tbody id="playerTableBody">
                     <tr><td>KUBOOOREK</td><td>Co-Leader</td><td>TH15</td><td>7643</td><td>3077</td></tr>
                     <tr><td>Baku</td><td>Member</td><td>TH15</td><td>740</td><td>80</td></tr>
-                    <tr><td>Albaroon-2</td><td>Co-Leader</td><td>TH12</td><td>3908</td><td>2554</td></tr>
-                    <tr><td>ViPeR</td><td>Leader</td><td>TH11</td><td>2344</td><td>3067</td></tr>
+                    <tr><td>Albaroon.2</td><td>Co-Leader</td><td>TH12</td><td>3908</td><td>2554</td></tr>
+                    <tr><td>MrDefPL</td><td>Member</td><td>TH12</td><td>127</td><td>180</td></tr>
+                    <tr><td>MAQOS</td><td>Member</td><td>TH12</td><td>301</td><td>0</td></tr>
+                    <tr><td>VipeR</td><td>Leader</td><td>TH11</td><td>2344</td><td>3067</td></tr>
+                    <tr><td>Toster290</td><td>Member</td><td>TH11</td><td>140</td><td>264</td></tr>
+                    <tr><td>monte</td><td>Member</td><td>TH10</td><td>450</td><td>200</td></tr>
+                    <tr><td>Cwel123</td><td>Member</td><td>TH10</td><td>110</td><td>90</td></tr>
+                    <tr><td>Mimbosz</td><td>Member</td><td>TH9</td><td>200</td><td>110</td></tr>
+                    <tr><td>zuzia</td><td>Member</td><td>TH9</td><td>150</td><td>80</td></tr>
+                    <tr><td>Kojak</td><td>Elder</td><td>TH9</td><td>512</td><td>410</td></tr>
+                    <tr><td>Belaska</td><td>Elder</td><td>TH9</td><td>320</td><td>150</td></tr>
+                    <tr><td>Brann</td><td>Member</td><td>TH9</td><td>90</td><td>60</td></tr>
+                    <tr><td>tak</td><td>Elder</td><td>TH9</td><td>210</td><td>90</td></tr>
+                    <tr><td>vvd</td><td>Member</td><td>TH9</td><td>130</td><td>70</td></tr>
+                    <tr><td>my name billa</td><td>Member</td><td>TH8</td><td>180</td><td>90</td></tr>
+                    <tr><td>Barnes</td><td>Member</td><td>TH8</td><td>220</td><td>100</td></tr>
+                    <tr><td>KuN</td><td>Member</td><td>TH8</td><td>160</td><td>70</td></tr>
+                    <tr><td>wiktor</td><td>Member</td><td>TH8</td><td>110</td><td>50</td></tr>
+                    <tr><td>filip</td><td>Member</td><td>TH8</td><td>95</td><td>40</td></tr>
+                    <tr><td>erykos</td><td>Member</td><td>TH7</td><td>80</td><td>30</td></tr>
+                    <tr><td>kwiatek</td><td>Member</td><td>TH6</td><td>60</td><td>20</td></tr>
+                    <tr><td>BOT6790</td><td>Member</td><td>TH7</td><td>70</td><td>25</td></tr>
+                    <tr><td>Andrzej</td><td>Member</td><td>TH7</td><td>110</td><td>40</td></tr>
+                    <tr><td>threeten</td><td>Member</td><td>TH7</td><td>50</td><td>15</td></tr>
+                    <tr><td>Marsyllia</td><td>Member</td><td>TH7</td><td>90</td><td>35</td></tr>
+                    <tr><td>Darui</td><td>Member</td><td>TH7</td><td>120</td><td>50</td></tr>
+                    <tr><td>Rico</td><td>Member</td><td>TH7</td><td>40</td><td>10</td></tr>
+                    <tr><td>Martini</td><td>Member</td><td>TH7</td><td>85</td><td>30</td></tr>
+                    <tr><td>Riczard</td><td>Member</td><td>TH7</td><td>65</td><td>20</td></tr>
+                    <tr><td>GoldBelt</td><td>Member</td><td>TH7</td><td>100</td><td>45</td></tr>
+                    <tr><td>SHA⭐ZAM!</td><td>Member</td><td>TH7</td><td>140</td><td>60</td></tr>
+                    <tr><td>SZAR3</td><td>Member</td><td>TH7</td><td>75</td><td>25</td></tr>
+                    <tr><td>szoks</td><td>Member</td><td>TH5</td><td>30</td><td>10</td></tr>
+                    <tr><td>TwarógPółtlusty</td><td>Member</td><td>TH5</td><td>40</td><td>15</td></tr>
+                    <tr><td>samurai024</td><td>Member</td><td>TH5</td><td>20</td><td>5</td></tr>
+                    <tr><td>Fox</td><td>Member</td><td>TH4</td><td>10</td><td>0</td></tr>
+                    <tr><td>Filfox74</td><td>Member</td><td>TH3</td><td>5</td><td>0</td></tr>
                 </tbody>
             </table>
         </div>
@@ -693,7 +751,7 @@
         <p>© 2026 Armia Maurycego (#2GQO8RGRL). Wszelkie prawa zastrzeżone.</p>
     </footer>
 
-    <!-- SKRYPTY -->
+    <!-- SKRYPTY JAVASCRIPT -->
     <script>
         function openClanModal() {
             document.getElementById('clanModal').style.display = 'flex';
