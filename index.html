@@ -198,6 +198,8 @@
             gap: 8px;
             box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
             transition: transform 0.2s, background 0.2s;
+            cursor: pointer;
+            border: none;
         }
 
         .btn-game:hover {
@@ -340,7 +342,7 @@
 
         .card ul { padding-left: 20px; }
 
-        /* SUWAKI (TH SLIDER ORAZ REKRUTACJA Z CZARNYM KADREM) */
+        /* SUWAKI */
         .th-slider {
             width: 100%;
             margin: 20px 0;
@@ -460,6 +462,31 @@
             border: 1px solid var(--border);
         }
 
+        /* MODAL (OKIENKO INFORMACYJNE DLA KLANU) */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+        .modal-content h3 { font-family: 'Orbitron'; color: var(--gold); margin-bottom: 15px; }
+        .modal-content p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
+        .modal-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
         footer {
             background-color: var(--darker);
             text-align: center;
@@ -473,6 +500,22 @@
     </style>
 </head>
 <body>
+
+    <!-- MODAL DO OTWIERANIA KLANU W GRZE / STATYSTYKACH -->
+    <div id="clanModal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Otwórz Klan w grze</h3>
+            <p>Aby sprawdzić klan w Clash of Clans, wpisz tag <strong>#2GQO8RGRL</strong> w wyszukiwarce klanów w grze lub sprawdź profil online:</p>
+            <div style="background: var(--darker); padding: 12px; border-radius: 6px; border: 1px solid var(--border); margin-bottom: 20px;">
+                <code style="color: var(--gold); font-size: 1.1rem; font-family:'Orbitron';">#2GQO8RGRL</code>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-game" style="padding: 10px 16px; font-size: 0.8rem;" onclick="copyClanTagModal()">Kopiuj Tag</button>
+                <a href="https://www.clashofstats.com/clans/armia-maurycego-2GQO8RGRL/summary" target="_blank" class="btn-discord-outline" style="padding: 10px 16px; font-size: 0.8rem;">Zobacz Statystyki Online</a>
+                <button class="btn-discord-outline" style="padding: 10px 16px; font-size: 0.8rem;" onclick="closeClanModal()">Zamknij</button>
+            </div>
+        </div>
+    </div>
 
     <!-- HEADER / NAVBAR -->
     <header>
@@ -506,7 +549,7 @@
             <p class="hero-desc">Armia Maurycego to początkujący klan, który rozwija się od podstaw. Szukamy aktywnych graczy, którzy chcą wspólnie ulepszać wioski, pomagać sobie i walczyć o zwycięstwa.</p>
             
             <div class="hero-buttons">
-                <a href="clashofclans://action=OpenClanProfile&tag=2GQO8RGRL" class="btn-game">OTWÓRZ KLAN W GRZE</a>
+                <button onclick="openClanModal()" class="btn-game">OTWÓRZ KLAN W GRZE</button>
                 <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-discord-outline">DOŁĄCZ DO DISCORDA</a>
             </div>
 
@@ -516,7 +559,7 @@
             </div>
         </div>
 
-        <!-- POPRAWIONA KARTA HERO CARD (SCREEN 5: TH 3-18) -->
+        <!-- POPRAWIONE TH 3-18 W HERO CARD -->
         <div class="hero-card">
             <div class="hero-card-badge">🟢 REKRUTACJA OTWARTA</div>
             <h3>Armia Maurycego</h3>
@@ -566,7 +609,7 @@
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">2</div>
                 <h3 style="margin-bottom: 8px;">Dołącz w grze</h3>
                 <p style="margin-bottom: 15px;">Wyszukaj tag <code>#2GQO8RGRL</code> lub użyj przycisku poniżej. Klan jest otwarty, więc nie czekasz na akceptację.</p>
-                <a href="clashofclans://action=OpenClanProfile&tag=2GQO8RGRL" class="btn-game" style="padding: 10px 16px; font-size: 0.8rem;">OTWÓRZ KLAN W GRZE</a>
+                <button onclick="openClanModal()" class="btn-game" style="padding: 10px 16px; font-size: 0.8rem; border:none; cursor:pointer;">OTWÓRZ KLAN W GRZE</button>
             </div>
             <div class="card">
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">3</div>
@@ -581,37 +624,37 @@
         </div>
     </section>
 
-    <!-- INTERAKTYWNY WIDGET: KALKULATOR TH ORAZ SPRAWDŹ STATUS REKRUTACJI -->
+    <!-- INTERAKTYWNY WIDGET: KALKULATOR TH ORAZ SPRAWDŹ STATUS REKRUTACJI (TH 3-18) -->
     <section id="kalkulator-th" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">INTERAKTYWNY WIDGET</h2>
         <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">KALKULATOR RATUSZA (TH)</h3>
         <div class="grid-2">
-            <!-- LEWA STRONA: KALKULATOR TH (SCREEN 3) -->
+            <!-- LEWA STRONA: KALKULATOR TH (ZAKTUALIZOWANY DO TH 3-18) -->
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <h3>Twój poziom TH</h3>
-                    <span style="font-size: 0.8rem; color: var(--text-muted); background: var(--darker); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border);">TH 3–17</span>
+                    <span style="font-size: 0.8rem; color: var(--text-muted); background: var(--darker); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border);">TH 3–18</span>
                 </div>
                 <p id="thDisplay" style="font-size: 2.2rem; font-family:'Orbitron'; color:var(--gold); margin:10px 0;">TH 10</p>
-                <input type="range" id="thSlider" min="3" max="17" value="10" class="th-slider" oninput="updateThCalculator(this.value)">
+                <input type="range" id="thSlider" min="3" max="18" value="10" class="th-slider" oninput="updateThCalculator(this.value)">
                 <div class="th-scale">
                     <span>TH3</span>
                     <span>TH10</span>
-                    <span>TH17</span>
+                    <span>TH18</span>
                 </div>
                 <div id="thAdvice" style="margin-top: 20px;">
                     <!-- Treść generowana przez JS -->
                 </div>
             </div>
 
-            <!-- PRAWA STRONA: SPRAWDŹ STATUS REKRUTACJI (SCREEN 1 & 2) -->
+            <!-- PRAWA STRONA: SPRAWDŹ STATUS REKRUTACJI -->
             <div class="card">
                 <h3>Sprawdź status rekrutacji</h3>
                 <p style="color:var(--text-muted); margin-bottom: 15px; font-size: 0.9rem;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
                 
                 <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;" id="memberCountText">Liczba członków: 40/50</p>
                 
-                <!-- AKTYWNY SUWAK Z CZARNYM KWADRACIKIEM DO PRZESUWANIA W PRAWO I LEWO -->
+                <!-- SUWAK Z CZARNYM KWADRACIKIEM -->
                 <input type="range" id="memberSlider" min="0" max="50" value="40" class="custom-slider" oninput="updateRecruitment(this.value)">
                 
                 <div id="recruitmentBox" style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
@@ -689,7 +732,7 @@
         </div>
     </section>
 
-    <!-- STRATEGIE ATAKU (TH3 – TH18 Z META STRATEGIAMI) -->
+    <!-- STRATEGIE ATAKU (TH3 – TH18) -->
     <section id="strategie" class="container">
         <h2 class="section-title">Strategie Ataku (TH3 – TH18)</h2>
         <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">Kliknij swój poziom Ratusza, aby rozwinąć najlepsze meta strategie armii do wojen:</p>
@@ -742,7 +785,7 @@
         </div>
     </section>
 
-    <!-- SŁAWA KLANOWA (SCREEN 4: TOP 3 DONATORÓW SEZONU) -->
+    <!-- SŁAWA KLANOWA -->
     <section id="slawa" class="container">
         <h2 class="section-title">Sława klanowa & Rekordy</h2>
         <div class="grid-2">
@@ -984,7 +1027,27 @@
 
     <!-- SKRYPTY -->
     <script>
-        // Dynamiczna zmiana suwaka rekrutacji (na żywo po przesunięciu)
+        // Obsługa modala klanu (zamiast niedziałającego linku bezpośredniego w grze)
+        function openClanModal() {
+            document.getElementById('clanModal').style.display = 'flex';
+        }
+        function closeClanModal() {
+            document.getElementById('clanModal').style.display = 'none';
+        }
+        function copyClanTagModal() {
+            navigator.clipboard.writeText('#2GQO8RGRL');
+            alert('Skopiowano tag klanu #2GQO8RGRL!');
+        }
+
+        // Zamknięcie modala po kliknięciu poza nim
+        window.onclick = function(event) {
+            const modal = document.getElementById('clanModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Dynamiczna zmiana suwaka rekrutacji
         function updateRecruitment(val) {
             document.getElementById('memberCountText').innerText = `Liczba członków: ${val}/50`;
             
@@ -1117,7 +1180,7 @@
             }
         }
 
-        // Kalkulator TH
+        // Kalkulator TH (do TH 18)
         function updateThCalculator(val) {
             document.getElementById('thDisplay').innerText = 'TH ' + val;
             const adviceBox = document.getElementById('thAdvice');
