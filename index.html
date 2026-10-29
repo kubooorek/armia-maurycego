@@ -317,6 +317,19 @@
   .install-tip{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);max-width:420px;width:calc(100% - 32px);background:var(--card2);border:1px solid var(--gold);border-radius:12px;padding:14px 16px;font-size:.86rem;z-index:150;box-shadow:0 10px 40px rgba(0,0,0,.5)}
   .install-tip button{float:right;background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;line-height:1}
   @media (max-width:520px){.charts{grid-template-columns:1fr}}
+  .bases-grid{display:grid!important;grid-template-columns:repeat(5,1fr);gap:10px}
+  .bcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+  .bcard:hover{border-color:rgba(232,180,74,.5);transform:translateY(-2px)}
+  .bcard-th{display:flex;align-items:center;gap:8px}
+  .bcard-th b{font-size:.95rem}
+  .bcard-btns{display:flex;gap:6px}
+  .bbtn{flex:1;text-align:center;font-size:.76rem;font-weight:700;padding:7px 4px;border-radius:8px;white-space:nowrap}
+  .bbtn.bwar{background:linear-gradient(180deg,var(--gold2),var(--gold) 55%,var(--goldDark));color:#2a1a02}
+  .bbtn.brk{background:rgba(91,141,239,.18);color:#a9c4ff;border:1px solid rgba(91,141,239,.4)}
+  .bbtn.bwar:hover,.bbtn.brk:hover{filter:brightness(1.1)}
+  .bbtn.none{background:var(--bg);color:var(--muted);border:1px dashed var(--line);font-weight:500}
+  @media (max-width:900px){.bases-grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:520px){.bases-grid{grid-template-columns:repeat(2,1fr)}}
   /* REQUIREMENTS */
   .reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
   .req{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
@@ -814,7 +827,7 @@
   <div class="wrap">
     <div class="eyebrow">Obrona</div>
     <h2 class="sec-title">Bazy tygodnia</h2>
-    <p class="sec-lead">Sprawdzone układy wiosek. „Kopiuj bazę” otwiera układ w grze — wystarczy go zapisać w edytorze.</p>
+    <p class="sec-lead">Sprawdzone układy wiosek dla każdego ratusza. Kliknij przycisk na telefonie z grą — baza otworzy się w Clash of Clans, wystarczy ją zapisać w edytorze.</p>
     <div class="th-dist" id="baseTabs"></div>
     <div class="bases" id="bases"></div>
   </div>
@@ -961,8 +974,24 @@ const MILESTONES_EXTRA = [
   {date:"2026-11-01", text:"Pierwszy sezon Ligi Wojen Klanów", future:true}
 ];
 
-// Dodaj bazę: {th:9, type:"Wojna", name:"Anty-3 gwiazdki", desc:"Krótki opis", link:"https://link.clashofclans.com/pl?action=OpenLayout&id=..."}
-const BASES = [];
+// Bazy: th = poziom ratusza, war = link do bazy na wojnę, ranked = link do bazy na rankedy (od TH7)
+const BASES = [
+  {th:4, war:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH4%3AWB%3AAAAANgAAAAKKlJ--STUP8pQwDE0gWWVm"},
+  {th:5, war:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH5%3AWB%3AAAAABAAAAAMinxb8AjBMU7OWP3mf8UvZ"},
+  {th:6, war:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH6%3AWB%3AAAAALAAAAAKg8E1wAd2HzK4Dgbg7qxwY"},
+  {th:7, war:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH7%3AWB%3AAAAAMgAAAAKRbNOA-tSikrLcsPZ51-Fl", ranked:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH7%3AHV%3AAAAAAQAAAAMgTae4qGk70S1lKaE3Xyce"},
+  {th:8, war:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH8%3AWB%3AAAAALAAAAAKguH9FMGcmEB1fj_7H8y3x", ranked:"https://link.clashofclans.com/en/?action=OpenLayout&id=TH8%3AHV%3AAAAALAAAAAKguHhvbKZ7MMha7M6v0T3q"},
+  {th:9, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH9%3AWB%3AAAAAFQAAAALJo6T9zuilEri-xZWuBtDL", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH9%3AWB%3AAAAASwAAAAIUG6f_xHSAQDJrMJa-2OLO"},
+  {th:10, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH10%3AWB%3AAAAAKwAAAAKhydr4H2d4WJui82BKg43f", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH10%3AWB%3AAAAAPAAAAAJhuo_3bQtMCgwzUiRyKW8-"},
+  {th:11, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH11%3AWB%3AAAAAEgAAAALgJC9iteNbVAMq6_cc4EpA", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH11%3AWB%3AAAAAEgAAAALdjbH8JdEMEqZfeGZoA9z3"},
+  {th:12, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH12%3AWB%3AAAAAEAAAAALeEwJZbw3jhChqMwr1Rys0", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH12%3AWB%3AAAAAEAAAAALeQkNsi9fL1OEAKMpDYuq_"},
+  {th:13, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH13%3AWB%3AAAAAQQAAAAJcJGRvC9H61YhimQA1QvzI", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH13%3AWB%3AAAAAKgAAAAKeN4Fq_lRvkQ3rNVvzWLge"},
+  {th:14, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH14%3AWB%3AAAAALgAAAAKhSOkZy3AXugUh-mChx9OI", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH14%3AWB%3AAAAALgAAAAKhSKraVyDxjlOsFcvrZnPp"},
+  {th:15, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AWB%3AAAAAVwAAAAH2KcFRSjk_o0huLVQ3HB4I", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH15%3AWB%3AAAAAVwAAAAH2KaBfbmdFVJSvSV_oWJLK"},
+  {th:16, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH16%3AWB%3AAAAAAAAAAAMoscoX6-JBH4c2uSZZcP63", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH16%3AWB%3AAAAAGwAAAAK-lV7jfoVaVqy_0CVOEAGZ"},
+  {th:17, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH17%3AWB%3AAAAANAAAAAKAAF1yHkHXqaODsGO070s8", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH17%3AWB%3AAAAAFAAAAALISwEQDmPC982zvQzZCbis"},
+  {th:18, war:"https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJbdyOTRZqjewaybg_nCXz0", ranked:"https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAALBsjlIkg5IdNKNSeadu5hT"},
+];
 
 // Ogłoszenie na górze strony (null = brak). link/linkText opcjonalne.
 const ANNOUNCE = {text:"Zapisy do pierwszego sezonu CWL trwają — start 1 listopada!", link:"https://discord.gg/7SquD7SF3", linkText:"Zapisz się na Discordzie"};
@@ -1054,7 +1083,7 @@ const EN = {
 "Hybryda (Górnicy + Hogi)":"Hybrid (Miners + Hogs)","Górnicy + Hogi, Królowa z Leczycielkami na bok bazy. Zaklęcia: Leczenie, Szał.":"Miners + Hog Riders, Queen Charge with Healers on one side. Spells: Healing, Rage.","Jak: Królowa czyści stronę bazy, potem hybryda idzie za nią. Leczenie na skupiska obrony.":"How: The Queen clears one side, then the hybrid follows her. Heal over defence clusters.",
 "Smoki elektryczne / Hybryda":"Electro Dragons / Hybrid","Elektrosmoki z Balonami lub Hybryda z Królową. Bohaterowie z dobrym wyposażeniem.":"Electro Dragons with Balloons or Hybrid with a Queen Charge. Heroes with good equipment.","Jak: Najpierw lejek (funnel) bohaterami, potem główna armia jedną linią.":"How: Build a funnel with heroes first, then send the main army in one line.",
 "Hybryda / Smoki + bohaterowie":"Hybrid / Dragons + heroes","Hybryda lub masowe smoki — kluczowi są bohaterowie z wyposażeniem epickim.":"Hybrid or mass Dragons — heroes with epic equipment are key.","Jak: Ćwicz ataki w okienku treningowym i pytaj na Discordzie — meta zmienia się z aktualizacjami.":"How: Practise in the training area and ask on Discord — the meta changes with updates.",
-"Obrona":"Defence","Bazy tygodnia":"Bases of the week","Sprawdzone układy wiosek. „Kopiuj bazę” otwiera układ w grze — wystarczy go zapisać w edytorze.":"Proven village layouts. \"Copy base\" opens the layout in game — just save it in the editor.",
+"Obrona":"Defence","Bazy tygodnia":"Bases of the week","Sprawdzone układy wiosek dla każdego ratusza. Kliknij przycisk na telefonie z grą — baza otworzy się w Clash of Clans, wystarczy ją zapisać w edytorze.":"Proven village layouts for every Town Hall. Tap a button on the phone with the game — the base opens in Clash of Clans, just save it in the editor.","⚔️ Wojna":"⚔️ War","🏆 od TH7":"🏆 from TH7",
 "Pierwsze bazy tygodnia pojawią się wkrótce — zarząd wybiera sprawdzone układy dla każdego TH. Masz dobrą bazę? Wrzuć link na Discordzie.":"The first bases of the week are coming soon — leadership is picking proven layouts for every TH. Got a good base? Share the link on Discord.",
 "Kopiuj bazę":"Copy base","Wojna":"War","Farma":"Farming",
 "Zasady":"Rules","Regulamin klanu":"Clan rules","Pełne zasady w jednym miejscu. Dołączając do klanu, akceptujesz regulamin.":"All the rules in one place. By joining the clan you accept them.",
@@ -1719,18 +1748,19 @@ $("#cwlTop").innerHTML = CWL.top.length
   const tabs=$("#baseTabs"), box=$("#bases");
   if (!BASES.length){
     tabs.style.display="none";
-    box.innerHTML = `<div class="empty" style="grid-column:1/-1">Pierwsze bazy tygodnia pojawią się wkrótce — zarząd wybiera sprawdzone układy dla każdego TH. Masz dobrą bazę? Wrzuć link na Discordzie.</div>`;
+    box.innerHTML = `<div class="empty" style="grid-column:1/-1">Pierwsze bazy tygodnia pojawią się wkrótce.</div>`;
     return;
   }
-  const ths=[...new Set(BASES.map(b=>b.th))].sort((a,b)=>b-a);
-  let cur=null;
-  const draw=()=>{box.innerHTML=BASES.filter(b=>cur===null||b.th===cur).sort((a,b)=>b.th-a.th).map(b=>`
-    <div class="base"><div class="base-top"><span class="th">${b.th}</span><span class="tag-type">${esc(b.type||"Wojna")}</span></div>
-    <h3>${esc(b.name)}</h3><p>${esc(b.desc||"")}</p>
-    <a class="btn btn-gold btn-sm" href="${b.link}">Kopiuj bazę</a></div>`).join("");};
-  tabs.innerHTML=`<button class="on" data-th="">Wszystkie</button>`+ths.map(t=>`<button data-th="${t}"><b>TH${t}</b></button>`).join("");
-  tabs.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;cur=b.dataset.th?Number(b.dataset.th):null;tabs.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw();});
-  draw();
+  tabs.style.display="none";
+  box.classList.add("bases-grid");
+  box.innerHTML = [...BASES].sort((a,b)=>a.th-b.th).map(b=>`
+    <div class="bcard" id="baza-th${b.th}">
+      <div class="bcard-th"><span class="th">${b.th}</span><b>TH${b.th}</b></div>
+      <div class="bcard-btns">
+        ${b.war?`<a class="bbtn bwar" href="${b.war}" title="Kopiuj bazę na wojnę">⚔️ Wojna</a>`:""}
+        ${b.ranked?`<a class="bbtn brk" href="${b.ranked}" title="Kopiuj bazę na rankedy">🏆 Ranked</a>`:`<span class="bbtn none" title="Rankedy od TH7">🏆 od TH7</span>`}
+      </div>
+    </div>`).join("");
 })();
 
 
