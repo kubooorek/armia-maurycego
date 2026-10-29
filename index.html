@@ -340,22 +340,6 @@
 
         .card ul { padding-left: 20px; }
 
-        /* SLIDER KALKULATORA TH */
-        .th-slider {
-            width: 100%;
-            margin: 20px 0;
-            accent-color: var(--gold);
-            cursor: pointer;
-        }
-
-        .th-scale {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-family: 'Orbitron', sans-serif;
-        }
-
         /* STRATEGIE ATAKU STYLES */
         .th-buttons-grid {
             display: flex;
@@ -458,10 +442,10 @@
                     <li><a href="#gracze">Skład</a></li>
                     <li><a href="#wojny">Wojny</a></li>
                     <li><a href="#slawa">Sława klanowa</a></li>
-                    <li><a href="#kalkulator-th">Kalkulator TH</a></li>
+                    <li><a href="#status-rekrutacji">Rekrutacja</a></li>
                     <li><a href="#priorytety">Priorytety</a></li>
                     <li><a href="#kalendarz">Kalendarz</a></li>
-                    <li><a href="https://discord.gg" target="_blank" class="nav-discord">Dołącz na Discord</a></li>
+                    <li><a href="https://discord.gg/7SquD7SF3" target="_blank" class="nav-discord">Dołącz na Discord</a></li>
                 </ul>
             </nav>
         </div>
@@ -476,7 +460,7 @@
             
             <div class="hero-buttons">
                 <a href="https://link.clashofclans.com/en?action=OpenClanProfile&tag=2GQO8RGRL" target="_blank" class="btn-game">OTWÓRZ KLAN W GRZE</a>
-                <a href="https://discord.gg" target="_blank" class="btn-discord-outline">DOŁĄCZ DO DISCORDA</a>
+                <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-discord-outline">DOŁĄCZ DO DISCORDA</a>
             </div>
 
             <div class="clan-tag-row">
@@ -491,7 +475,7 @@
             <p style="font-size:0.85rem; color:var(--text-muted);">40/50 miejsc zajętych · 10 wolnych miejsc.</p>
             <div class="hero-card-stats">
                 <div class="stat-box"><strong>40/50</strong><span>Miejsca</span></div>
-                <div class="stat-box"><strong>TH 3–17</strong><span>Kalkulator</span></div>
+                <div class="stat-box"><strong>TH 3–18</strong><span>Strategie</span></div>
                 <div class="stat-box"><strong>Fair play</strong><span>Zasady</span></div>
             </div>
             <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; text-align:center;">Tag klanu: <strong>#2GQO8RGRL</strong></p>
@@ -528,7 +512,7 @@
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">1</div>
                 <h3 style="margin-bottom: 8px;">Wejdź na Discorda</h3>
                 <p style="margin-bottom: 15px;">Dołącz do serwera klanowego. Tam ustalamy wojny i składy, a bot powita Cię instrukcją.</p>
-                <a href="https://discord.gg" target="_blank" class="btn-game" style="padding: 10px 16px; font-size: 0.8rem;">OTWÓRZ DISCORDA</a>
+                <a href="https://discord.gg/7SquD7SF3" target="_blank" class="btn-game" style="padding: 10px 16px; font-size: 0.8rem;">OTWÓRZ DISCORDA</a>
             </div>
             <div class="card">
                 <div style="font-family:'Orbitron'; font-size:2rem; font-weight:900; color:var(--primary); margin-bottom:10px;">2</div>
@@ -549,50 +533,30 @@
         </div>
     </section>
 
-    <!-- KALKULATOR RATUSZA (TH) Z SUVAKIEM -->
-    <section id="kalkulator-th" class="container">
-        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Interaktywny widget</h2>
-        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Kalkulator Ratusza (TH)</h3>
-        <div class="grid-2">
-            <div class="card">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h3>Twój poziom TH</h3>
-                    <span style="font-size: 0.8rem; color: var(--text-muted); background: var(--darker); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border);">TH 3–17</span>
-                </div>
-                <p id="thDisplay" style="font-size: 2.2rem; font-family:'Orbitron'; color:var(--gold); margin:10px 0;">TH 10</p>
-                <input type="range" id="thSlider" min="3" max="17" value="10" class="th-slider" oninput="updateThCalculator(this.value)">
-                <div class="th-scale">
-                    <span>TH3</span>
-                    <span>TH10</span>
-                    <span>TH17</span>
-                </div>
-                <div id="thAdvice" style="margin-top: 20px;">
-                    <!-- Dynamiczna treść JS -->
-                </div>
+    <!-- STATUS REKRUTACI (SZTYWNY 40/50 - TYLKO DLA WŁAŚCICIELA) -->
+    <section id="status-rekrutacji" class="container">
+        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Informacje</h2>
+        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Sprawdź status rekrutacji</h3>
+        <div class="card" style="max-width: 600px;">
+            <p style="color:var(--text-muted); margin-bottom: 15px;">Aktualny stan naboru w klanie Armia Maurycego.</p>
+            <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;">Liczba członków: 40/50</p>
+            <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
+                <div style="background: var(--gold); width: 80%; height: 100%;"></div>
             </div>
-            <div class="card">
-                <h3>Sprawdź status rekrutacji</h3>
-                <p style="color:var(--text-muted); margin-bottom: 15px;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
-                <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;">Liczba członków: 40/50</p>
-                <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
-                    <div style="background: var(--gold); width: 80%; height: 100%;"></div>
-                </div>
-                <div style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
-                    <p style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
-                    <p style="font-size: 0.85rem;">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
-                </div>
+            <div style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
+                <p style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
+                <p style="font-size: 0.85rem;">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
             </div>
         </div>
     </section>
 
-    <!-- CENTRUM WOJEN (WAR HUB) - ZAKTUALIZOWANE WG DRUGIEGO SCREENA I ODLICZANIEM -->
+    <!-- CENTRUM WOJEN (WAR HUB) -->
     <section id="wojny" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">War Hub</h2>
         <h3 class="section-title" style="text-align:left; border:none; margin-bottom:10px;">Centrum Wojen</h3>
         <p style="color:var(--text-muted); margin-bottom:30px;">Wojny i wyniki klanu. Podsumowania zbiera też Clash Bot na Discordzie.</p>
         
         <div class="grid-2">
-            <!-- Lewy kafelek: Start Wojny + Raid Weekend z odliczaniem -->
             <div class="card">
                 <h3 style="margin-bottom: 10px;">Start Wojny Klanowej</h3>
                 <p style="color: var(--text-muted); margin-bottom: 25px;">Termin kolejnej wojny ustala lider i ogłasza go na Discordzie.</p>
@@ -621,7 +585,6 @@
                 <p style="font-size: 0.8rem; color: var(--text-muted);">Rajdy startują w piątek o 8:00 czasu polskiego i trwają do poniedziałku.</p>
             </div>
 
-            <!-- Prawy kafelek: Ostatnie Wojny + Passa Zwycięstw -->
             <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
                     <h3 style="margin-bottom: 15px;">Ostatnie Wojny</h3>
@@ -650,10 +613,10 @@
         </div>
     </section>
 
-    <!-- STRATEGIE ATAKU (TH3 – TH18) -->
+    <!-- STRATEGIE ATAKU (TH3 – TH18 Z META STRATEGIAMI) -->
     <section id="strategie" class="container">
         <h2 class="section-title">Strategie Ataku (TH3 – TH18)</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">Kliknij swój poziom Ratusza, aby rozwinąć najlepsze strategie armii do wojen:</p>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">Kliknij swój poziom Ratusza, aby rozwinąć najlepsze meta strategie armii do wojen:</p>
         
         <div class="th-buttons-grid">
             <button class="th-btn" onclick="selectStrategy('18', this)">TH18</button>
@@ -675,7 +638,7 @@
 
         <div id="strategyBox" class="card" style="text-align: center; padding: 40px; border: 2px dashed var(--border);">
             <h3 style="color: var(--gold); margin-bottom: 10px;">WYBIERZ SWÓJ RATUSZ POWYŻEJ 👆</h3>
-            <p style="color: var(--text-muted);">Kliknij przycisk odpowiadający Twojemu poziomowi TH, aby rozwinąć polecane armie wojenne.</p>
+            <p style="color: var(--text-muted);">Kliknij przycisk odpowiadający Twojemu poziomowi TH, aby zobaczyć aktualną meta armię.</p>
         </div>
     </section>
 
@@ -843,13 +806,13 @@
         <h2 class="section-title">Kalendarz Klanu</h2>
         <div class="grid-4">
             <div class="card">
-                <h3>Igrzyska Klanowe</h3>
-                <p style="color:var(--green); font-weight:700;">TRWAJĄ</p>
+                <h3>Clan Games</h3>
+                <p id="cgStatus" style="font-weight:700;">Ładowanie...</p>
                 <p style="font-size:0.85rem; margin-top:8px;">Od 22. do 28. dnia miesiąca. Minimum 1000 punktów (CG).</p>
             </div>
             <div class="card">
                 <h3>Liga Wojen Klanowych</h3>
-                <p style="color:var(--red); font-weight:700;">ZA 4 DNI</p>
+                <p id="cwlStatus" style="font-weight:700;">Ładowanie...</p>
                 <p style="font-size:0.85rem; margin-top:8px;">Start na początku każdego miesiąca, całość trwa około tygodnia.</p>
             </div>
             <div class="card">
@@ -859,14 +822,14 @@
             </div>
             <div class="card">
                 <h3>Koniec Sezonu</h3>
-                <p style="color:var(--gold); font-weight:700;">ZA 33 DNI</p>
+                <p id="seasonStatus" style="color:var(--gold); font-weight:700;">Ładowanie...</p>
                 <p style="font-size:0.85rem; margin-top:8px;">Ostatni poniedziałek miesiąca. Zbierz nagrody z ligi.</p>
             </div>
         </div>
     </section>
 
     <!-- ZASADY KLANU -->
-    <section id="zapytania" class="container">
+    <section id="zasady" class="container">
         <h2 class="section-title">Zasady Klanu</h2>
         <div class="grid-3">
             <div class="card">
@@ -945,41 +908,89 @@
 
     <!-- SKRYPTY -->
     <script>
-        // Odliczanie do najbliższego piątku do godziny 8:00 rano
-        function updateRaidCountdown() {
+        // Odliczanie do rajdów oraz pełna automatyzacja kalendarza
+        function updateAutomatedWidgets() {
             const now = new Date();
-            const resultDay = 5; // Piątek
-            const resultHour = 8; // 8:00 rano
+            
+            // --- Odliczanie do Raid Weekend (Piątek 8:00) ---
+            const resultDay = 5; 
+            const resultHour = 8; 
+            let targetRaid = new Date();
+            targetRaid.setDate(now.getDate() + ((resultDay + 7 - now.getDay()) % 7));
+            targetRaid.setHours(resultHour, 0, 0, 0);
 
-            let target = new Date();
-            target.setDate(now.getDate() + ((resultDay + 7 - now.getDay()) % 7));
-            target.setHours(resultHour, 0, 0, 0);
-
-            // Jeśli dzisiaj jest piątek, ale już po 8:00, licz na kolejny tydzień
             if (now.getDay() === 5 && now.getHours() >= 8) {
-                target.setDate(target.getDate() + 7);
-            }
-            // Jeśli dzisiaj jest sobota, niedziela itp.
-            else if (now.getDay() > 5 || (now.getDay() === 5 && now.getHours() < 8)) {
-                // target jest już ustawiony na najbliższy piątek
+                targetRaid.setDate(targetRaid.getDate() + 7);
             }
 
-            const diff = target - now;
+            const diffRaid = targetRaid - now;
+            if (diffRaid > 0) {
+                const days = Math.floor(diffRaid / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diffRaid / (1000 * 60 * 60)) % 24);
+                const mins = Math.floor((diffRaid / 1000 / 60) % 60);
+                const secs = Math.floor((diffRaid / 1000) % 60);
 
-            if (diff > 0) {
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-                const mins = Math.floor((diff / 1000 / 60) % 60);
-                const secs = Math.floor((diff / 1000) % 60);
+                if(document.getElementById('countdownDays')) {
+                    document.getElementById('countdownDays').innerText = String(days).padStart(2, '0');
+                    document.getElementById('countdownHours').innerText = String(hours).padStart(2, '0');
+                    document.getElementById('countdownMins').innerText = String(mins).padStart(2, '0');
+                    document.getElementById('countdownSecs').innerText = String(secs).padStart(2, '0');
+                }
+            }
 
-                document.getElementById('countdownDays').innerText = String(days).padStart(2, '0');
-                document.getElementById('countdownHours').innerText = String(hours).padStart(2, '0');
-                document.getElementById('countdownMins').innerText = String(mins).padStart(2, '0');
-                document.getElementById('countdownSecs').innerText = String(secs).padStart(2, '0');
+            // --- Automatyzacja kalendarza ---
+            const day = now.getDate();
+            const month = now.getMonth();
+            const year = now.getFullYear();
+
+            // Clan Games (22 - 28)
+            const cgEl = document.getElementById('cgStatus');
+            if(cgEl) {
+                if (day >= 22 && day <= 28) {
+                    cgEl.style.color = 'var(--green)';
+                    cgEl.innerText = 'TRWAJĄ';
+                } else {
+                    let targetCG = new Date(year, month, 22);
+                    if (day > 28) targetCG = new Date(year, month + 1, 22);
+                    const daysLeft = Math.ceil((targetCG - now) / (1000 * 60 * 60 * 24));
+                    cgEl.style.color = 'var(--red)';
+                    cgEl.innerText = `ZA ${daysLeft} ${daysLeft === 1 ? 'DZIEŃ' : 'DNI'}`;
+                }
+            }
+
+            // CWL (1 - 7)
+            const cwlEl = document.getElementById('cwlStatus');
+            if(cwlEl) {
+                if (day >= 1 && day <= 7) {
+                    cwlEl.style.color = 'var(--green)';
+                    cwlEl.innerText = 'TRWAJĄ';
+                } else {
+                    let targetCWL = new Date(year, month + 1, 1);
+                    const daysLeft = Math.ceil((targetCWL - now) / (1000 * 60 * 60 * 24));
+                    cwlEl.style.color = 'var(--red)';
+                    cwlEl.innerText = `ZA ${daysLeft} ${daysLeft === 1 ? 'DZIEŃ' : 'DNI'}`;
+                }
+            }
+
+            // Koniec Sezonu
+            const seasonEl = document.getElementById('seasonStatus');
+            if(seasonEl) {
+                let lastDay = new Date(year, month + 1, 0);
+                while (lastDay.getDay() !== 1) { lastDay.setDate(lastDay.getDate() - 1); }
+                lastDay.setHours(8, 0, 0, 0);
+
+                let daysLeftSeason = Math.ceil((lastDay - now) / (1000 * 60 * 60 * 24));
+                if (daysLeftSeason < 0) {
+                    let nextMonthLast = new Date(year, month + 2, 0);
+                    while (nextMonthLast.getDay() !== 1) { nextMonthLast.setDate(nextMonthLast.getDate() - 1); }
+                    daysLeftSeason = Math.ceil((nextMonthLast - now) / (1000 * 60 * 60 * 24));
+                }
+                seasonEl.innerText = `ZA ${daysLeftSeason} ${daysLeftSeason === 1 ? 'DZIEŃ' : 'DNI'}`;
             }
         }
-        setInterval(updateRaidCountdown, 1000);
-        updateRaidCountdown();
+
+        setInterval(updateAutomatedWidgets, 1000);
+        updateAutomatedWidgets();
 
         // Wyszukiwarka graczy
         function filterTable() {
@@ -1001,54 +1012,42 @@
             }
         }
 
-        // Kalkulator TH
-        function updateThCalculator(val) {
-            document.getElementById('thDisplay').innerText = 'TH ' + val;
-            const adviceBox = document.getElementById('thAdvice');
-            let cwlText = "";
-            let armyText = "";
+        // Baza Meta Strategii dla każdego TH
+        const metaStrategies = {
+            '18': { army: "Root Riders + Valkyries + Overgrowth + Rage", tip: "Najnowsza meta wysokiego poziomu. Użyj Overgrowth na kluczowe skunksy/obronę, a Root Riderki utorują drogę." },
+            '17': { army: "Super Dragons + Balloon + Freeze + Invisibility", tip: "Klasyczny, potężny spam powietrzny wsparty maszynami i bohaterami wewnątrz bazy." },
+            '16': { army: "Root Rider Spam + Valkyries + Healing Tome", tip: "Niezmiennie potężna armia z Root Riderami niszczącymi mury i potężnym wsparciem wyleczeń." },
+            '15': { army: "Queen Charge + Root Riders / Miners & Hogs", tip: "Rozpocznij potężnym Charge Queen, a następnie wypuść hybrydę lub Root Riderki od drugiej strony." },
+            '14': { army: "Super Archers Blimp + Dragon Riders", tip: "Wysadź serce bazy za pomocą Super Archerów z balonu, a resztę wyczyść Smokami i Jeźdźcami." },
+            '13': { army: "Hybrid (Miners + Hogs) + Queen Charge", tip: "Jedna z najskuteczniejszych taktik na TH13. Oczyść jedną stronę Królową, a Hogs/Miners zniszcz resztę." },
+            '12': { army: "Electro Dragons + Balloons + Rage/Freeze", tip: "Klasyczne Edraki z balonami i zamrożeniami inferno – idealne pod pewne 2-3 gwiazdki." },
+            '11': { army: "Electro Dragons / Bowlers + Witches (Bat Wave)", tip: "Użyj wiedźm i bowlerów z Golemem lub potężnych Edraków z zamrożeniami na Single Inferno." },
+            '10': { army: "Bowler Witch (BoWitch) lub Lavaloon", tip: "BoWitch z tragarzami i trzęsieniem ziemi doskonale otwiera bazy TH10." },
+            '9': { army: "GoHo (Golem + Hog Riders) lub Lavaloon", tip: "Klasyk dla TH9: Golem tankuje środek, a Hog Riderzy czyszczą obronę." },
+            '8': { army: "Dragons + Lightning Spells", tip: "Zdejmij 2 przeciwogniowe wieże obronne za pomocą błyskawic, a resztę zniszcz spamem smoków." },
+            '7': { army: "Dragons + Rage Spells", tip: "Smoki z czarami wściekłości to pewniak na każdą bazę TH7 w wojnie." },
+            '6': { army: "Giant + Healer + Wizards", tip: "Giganci przyjmują obrażenia, Uzdrowicielka ich leczy, a czarodzieje czyszczą budynki." },
+            '5': {army: "Loons + Wizards + Giants", tip: "Użyj gigantów jako tarczy i doślij balony na obronę przeciwlotniczą."},
+            '3-4': { army: "Giants + Archers + Barbarians", tip: "Podstawowy skład: Barbarzyńcy i Łuczniczki do czyszczenia, Giganci jako tank." }
+        };
 
-            if (val <= 7) {
-                cwlText = "Przy TH3–TH7 traktuj CWL przede wszystkim jako okazję do nauki i zdobywania doświadczenia. Udział zależy od planu lidera.";
-                armyText = "TH3–TH7: rozwijaj olbrzymów i łuczniczki, a później czarodzieje i smoki. Ulepszaj obozy, koszary i laboratorium.";
-            } else if (val <= 11) {
-                cwlText = "Solidny poziom do regularnych występów w składzie wojennym i CWL. Zadbaj o maxowanie bohaterów!";
-                armyText = `TH${val}: skup się na silnych armiach farmingowych oraz kluczowych czarach i maszynach oblężniczych.`;
-            } else {
-                cwlText = "Wysoki poziom ratusza. Twoje ataki mają kluczowe znaczenie dla wyniku całego klanu w CWL i wojnach!";
-                armyText = `TH${val}: pełny max kluczowych budynków obronnych oraz maksymalny poziom najważniejszych wojsk i zwierzaków.`;
-            }
-
-            adviceBox.innerHTML = `
-                <div style="background: var(--darker); border: 1px solid var(--border); padding: 12px; border-radius: 6px; margin-bottom: 10px;">
-                    <strong style="color: var(--gold); display: block; margin-bottom: 4px; font-size: 0.85rem; font-family: 'Orbitron';">CWL: skład rozwojowy</strong>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">${cwlText}</p>
-                </div>
-                <div style="background: var(--darker); border: 1px solid var(--border); padding: 12px; border-radius: 6px;">
-                    <strong style="color: var(--gold); display: block; margin-bottom: 4px; font-size: 0.85rem; font-family: 'Orbitron';">Minimalny kierunek rozwoju wojska</strong>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">${armyText}</p>
-                </div>
-            `;
-        }
-        updateThCalculator(10);
-
-        // Strategie Ataku dla przycisków TH
         function selectStrategy(th, btn) {
             document.querySelectorAll('.th-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
+            const data = metaStrategies[th] || { army: "W przygotowaniu", tip: "Wybierz odpowiednie wsparcie z klanu." };
             const box = document.getElementById('strategyBox');
             box.style.border = '1px solid var(--border)';
             box.innerHTML = `
-                <h3 style="color: var(--gold); margin-bottom: 15px; font-family: 'Orbitron';">Strategie dla Ratusza TH ${th}</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; text-align: left; margin-top: 15px;">
-                    <div style="background: var(--darker); padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
-                        <strong style="color: #fff; display: block; margin-bottom: 5px;">🔥 Armia Główna (Wojenna)</strong>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Sprawdzone kompozycje wojsk i czarów dostosowane pod TH${th} do robienia 3 gwiazdek w CW.</p>
+                <h3 style="color: var(--gold); margin-bottom: 15px; font-family: 'Orbitron';">Meta Strategia dla Ratusza TH ${th}</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; text-align: left; margin-top: 15px;">
+                    <div style="background: var(--darker); padding: 18px; border-radius: 8px; border: 1px solid var(--border);">
+                        <strong style="color: #fff; display: block; margin-bottom: 8px; font-size: 0.95rem;">🔥 Polecana Meta Armia</strong>
+                        <p style="font-size: 0.9rem; color: var(--gold); margin: 0; font-weight: 700;">${data.army}</p>
                     </div>
-                    <div style="background: var(--darker); padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
-                        <strong style="color: #fff; display: block; margin-bottom: 5px;">⚡ Porada Taktyczna</strong>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Zwróć uwagę na kluczowe budynki obronne przeciwnika i wykorzystaj odpowiednią machinę oblężniczą z Klanu.</p>
+                    <div style="background: var(--darker); padding: 18px; border-radius: 8px; border: 1px solid var(--border);">
+                        <strong style="color: #fff; display: block; margin-bottom: 8px; font-size: 0.95rem;">⚡ Wskazówka Ataku</strong>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">${data.tip}</p>
                     </div>
                 </div>
             `;
