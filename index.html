@@ -139,6 +139,7 @@
   .donor-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
   .donor-row span{font-weight:600}
   .donor-row em{font-style:normal;font-family:Cinzel,serif;font-weight:800;color:var(--gold);margin-right:8px}
+  .donor-row em.medal{font-family:inherit;font-size:1.15rem;margin-right:6px}
   .donor-row b{font-family:ui-monospace,monospace}
   .dbar{height:7px;border-radius:5px;background:var(--bg);border:1px solid var(--line);overflow:hidden}
   .dbar u{display:block;height:100%;background:linear-gradient(90deg,var(--goldDark),var(--gold2))}
@@ -247,6 +248,45 @@
   .lw-chips span.all{border-color:rgba(79,180,119,.4);color:#7fd09f}
   .lw-foot{color:var(--muted);font-size:.72rem;margin-top:10px}
   @media (max-width:520px){.lw-score{grid-template-columns:1fr;text-align:center}.lw-side.r{text-align:center}}
+  .rank-table td,.rank-table th{padding:8px 12px}
+  .rank-table{min-width:620px}
+  .rank-table .medal{font-size:1.05rem}
+  .miss-box{margin-top:12px}
+  .stars-sm{color:var(--gold);letter-spacing:1px}
+  .raid-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+  .raid-stats div{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 10px}
+  .raid-stats small{display:block;color:var(--muted);font-size:.66rem;text-transform:uppercase;letter-spacing:.06em}
+  .raid-stats b{font-size:.95rem;color:var(--gold2)}
+  .events{list-style:none;display:flex;flex-direction:column}
+  .events li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:.85rem}
+  .events li:last-child{border-bottom:none}
+  .events .ei{flex:0 0 26px;height:26px;border-radius:7px;display:grid;place-items:center;background:var(--bg);border:1px solid var(--line);font-size:.8rem}
+  .events small{display:block;color:var(--muted);font-size:.72rem}
+  .events.collapsed li:nth-child(n+9){display:none}
+  .dc-live{display:flex;align-items:center;gap:12px;background:rgba(13,15,20,.55);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:16px;max-width:360px}
+  .dc-live img{width:40px;height:40px;border-radius:12px}
+  .dc-live b{display:block;font-size:.92rem}
+  .dc-live span{color:var(--muted);font-size:.8rem}
+  .dc-live .on{color:#3ba55d;font-weight:700}
+  .dc-live .on::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ba55d;margin-right:5px}
+  tr.prow{cursor:pointer}
+  tr.prow:hover .pname{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
+  .modal{position:fixed;inset:0;z-index:200;background:rgba(5,6,10,.72);backdrop-filter:blur(4px);display:grid;place-items:center;padding:16px}
+  .modal[hidden]{display:none}
+  .modal-card{position:relative;width:100%;max-width:440px;max-height:90vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:14px;padding:20px}
+  .modal-x{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer}
+  .modal-x:hover{color:var(--text)}
+  .pf-head{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+  .pf-head .th{min-width:44px;height:44px;font-size:1rem}
+  .pf-head h3{font-family:Inter,sans-serif;font-size:1.15rem}
+  .pf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+  .pf-grid div{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 10px}
+  .pf-grid small{display:block;color:var(--muted);font-size:.66rem;text-transform:uppercase;letter-spacing:.05em}
+  .pf-grid b{font-size:.95rem;color:var(--gold2)}
+  .hbar{margin-bottom:9px}
+  .hero-row{display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:4px}
+  .hero-row span{color:var(--muted)}
+  @media (max-width:520px){.raid-stats,.pf-grid{grid-template-columns:repeat(2,1fr)}}
   /* REQUIREMENTS */
   .reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
   .req{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
@@ -263,8 +303,10 @@
   .sel select{background:transparent;border:none;color:var(--text);font-family:inherit;font-size:.84rem;padding:8px 4px;cursor:pointer;outline:none}
   .sel select option{background:var(--card2)}
   .pos{color:var(--green);font-weight:600} .neg{color:var(--red);font-weight:600} .zero{color:var(--muted)}
-  thead th::after{content:" ⇅";opacity:.35;font-size:.9em}
-  thead th.sorted::after{content:""}
+  #czlonkowie thead th::after{content:" ⇅";opacity:.35;font-size:.9em}
+  #czlonkowie thead th.sorted::after{content:""}
+  .rank-table thead th{cursor:default}
+  .more-btn[hidden]{display:none}
   .toolbar{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap}
   .search{flex:1;max-width:280px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:8px 12px;color:var(--text);font-size:.92rem;font-family:inherit}
   .search:focus{outline:none;border-color:var(--gold)}
@@ -417,6 +459,7 @@
       <a href="#osiagniecia">CWL</a>
       <a href="#czlonkowie">Członkowie</a>
       <a href="#wojny">Wojny</a>
+      <a href="#ranking">Ranking</a>
       <a href="#kalkulator">Poradnik</a>
       <a href="#bazy">Bazy</a>
       <a href="#regulamin">Regulamin</a>
@@ -544,7 +587,7 @@
     <div class="fame">
       <div class="fame-card mvp" id="mvpCard"></div>
       <div class="fame-card">
-        <div class="fame-label">Top 3 donatorów</div>
+        <div class="fame-label">Top 3 donatorów sezonu</div>
         <div id="donors"></div>
       </div>
     </div>
@@ -619,6 +662,27 @@
     <div class="records" id="records"></div>
     <div class="wars" id="wars"></div>
     <button class="btn btn-ghost btn-sm more-btn" id="moreWars"></button>
+  </div>
+</section>
+
+<section id="ranking">
+  <div class="wrap">
+    <div class="eyebrow">Wojownicy</div>
+    <h2 class="sec-title">Ranking wojowników</h2>
+    <p class="sec-lead">Liczony automatycznie z zakończonych wojen klanowych: gwiazdki, zniszczenia i opuszczone ataki.</p>
+    <div id="rankBox"></div>
+  </div>
+</section>
+
+<section id="rajdy">
+  <div class="wrap">
+    <div class="eyebrow">Stolica i skład</div>
+    <h2 class="sec-title">Rajdy Stolicy i ruchy w klanie</h2>
+    <p class="sec-lead">Wyniki weekendu rajdowego i dziennik zmian w składzie — aktualizowane same z gry.</p>
+    <div class="duo">
+      <div class="panel" id="raidBox"></div>
+      <div class="panel"><div class="panel-head"><span class="fame-label" style="margin:0">Ruchy w klanie</span><span class="chip" id="evCount"></span></div><ul class="events" id="events"></ul><button class="btn btn-ghost btn-sm more-btn" id="moreEv" hidden></button></div>
+    </div>
   </div>
 </section>
 
@@ -723,6 +787,7 @@
         <div class="eyebrow" style="color:#9aa4ff">Społeczność</div>
         <h2 class="sec-title">Dołącz na Discorda</h2>
         <p style="color:var(--muted);margin-bottom:26px">Tu ustalamy strategie wojenne, ogłaszamy zapisy do CWL i po prostu gadamy. Nasz bot automatycznie połączy Twoje konto z grą, nada Ci rangę i ustawi nick z Clash of Clans.</p>
+        <div class="dc-live" id="dcLive" hidden></div>
         <a class="btn btn-discord" href="https://discord.gg/7SquD7SF3">Wejdź na serwer →</a>
       </div>
       <div class="steps">
@@ -770,6 +835,7 @@
 </footer>
 
 <div class="toast" id="toast"></div>
+<div class="modal" id="modal" hidden><div class="modal-card" role="dialog" aria-modal="true"><button class="modal-x" id="modalX" aria-label="Zamknij">×</button><div id="modalBody"></div></div></div>
 
 <script>
 /* ====== DANE KLANU — tu podmieniasz informacje ====== */
@@ -900,7 +966,7 @@ const EN = {
 "Kamienie milowe":"Milestones","teraz":"now","Klan osiąga 3. poziom":"Clan reaches level 3","Pierwszy sezon Ligi Wojen Klanów":"First Clan War League season",
 "Dowództwo":"Leadership","Struktura i kadra":"Clan leadership","Liderzy i dowództwo dbające o porządek i strategię w grze.":"The leaders keeping order and planning strategy.",
 "Wódz klanu":"Leader","Współliderzy":"Co-leaders","Starszyzna":"Elders","Wyróżnienia":"Awards","Sława klanowa":"Hall of fame","Najlepsi gracze klanu. Wyniki wpisuje lider po podsumowaniach z bota.":"Our best players. Results are entered by the leader after the bot's summaries.",
-"MVP miesiąca":"MVP of the month","Październik 2026":"October 2026","Top 3 donatorów":"Top 3 donors","Wybór lidera":"Leader's pick","Gracz miesiąca zostanie wyróżniony za gwiazdki w CWL, pomoc klanowi i aktywność.":"The player of the month will be recognised for CWL stars, helping the clan and activity.",
+"MVP miesiąca":"MVP of the month","Październik 2026":"October 2026","Top 3 donatorów sezonu":"Top 3 donors of the season","Wybór lidera":"Leader's pick","Gracz miesiąca zostanie wyróżniony za gwiazdki w CWL, pomoc klanowi i aktywność.":"The player of the month will be recognised for CWL stars, helping the clan and activity.",
 "Najhojniejszy darczyńca klanu — 7649 przekazanych oddziałów, prawie dwa razy więcej niż ktokolwiek inny. Jako Współlider i najwyższy ratusz w klanie (TH15) prowadził nas przez serię 9 wygranych wojen z rzędu i zawsze pomaga młodszym graczom.":"The clan's most generous donor — 7,649 troops donated, almost twice as many as anyone else. As Co-leader and our highest Town Hall (TH15) he led us through a 9-war win streak and always helps younger players.",
 "Skład":"Roster","Członkowie klanu":"Clan members","Sortuj z listy albo klikając nagłówek kolumny. Filtruj po roli i ratuszu.":"Sort from the list or by clicking a column header. Filter by role and Town Hall.",
 "Wszyscy":"All","Sortuj":"Sort","Ranga w klanie":"Clan rank","Ratusz: od najwyższego":"Town Hall: highest first","Ratusz: od najniższego":"Town Hall: lowest first","Przekazane: najwięcej":"Donated: most","Otrzymane: najwięcej":"Received: most","Bilans: najlepszy":"Balance: best","Bilans: najgorszy":"Balance: worst","Nick: A → Z":"Name: A → Z","Nick: Z → A":"Name: Z → A",
@@ -955,7 +1021,7 @@ const EN = {
 "Jak połączyć konto z Discordem?":"How do I link my account to Discord?","Na serwerze wpisz komendę":"On the server, type","i podaj swój tag gracza. Bot zweryfikuje konto, nada rangę i zmieni nick na ten z gry.":"and enter your player tag. The bot verifies the account, gives you a role and changes your nickname to your in-game name.",
 "Gotowy do walki?":"Ready for battle?","Dołącz do Armii Maurycego i rośnij razem z nami.":"Join Armia Maurycego and grow with us.",
 "Ta strona nie jest powiązana z Supercell, nie jest przez nią wspierana ani sponsorowana. Clash of Clans jest znakiem towarowym Supercell.":"This site is not affiliated with, endorsed, sponsored or specifically approved by Supercell. Clash of Clans is a trademark of Supercell.",
-"Skopiowano tag klanu ✓":"Clan tag copied ✓","Dzień przygotowań":"Preparation day","Wojna trwa":"War in progress","Wojna zakończona":"War ended","Start za":"Starts in","Koniec za":"Ends in","Wszyscy zaatakowali ✓":"Everyone has attacked ✓","Główny Dowódca":"Commander-in-chief","Zastępca Lidera":"Deputy leader"
+"Skopiowano tag klanu ✓":"Clan tag copied ✓","Ranking":"Ranking","Wojownicy":"Warriors","Ranking wojowników":"Warrior ranking","Liczony automatycznie z zakończonych wojen klanowych: gwiazdki, zniszczenia i opuszczone ataki.":"Calculated automatically from finished clan wars: stars, destruction and missed attacks.","Wojny":"Wars","Gwiazdki":"Stars","Śr. ★/atak":"Avg ★/attack","Śr. %":"Avg %","Opuszczone":"Missed","Stolica i skład":"Capital & roster","Rajdy Stolicy i ruchy w klanie":"Capital raids & roster changes","Wyniki weekendu rajdowego i dziennik zmian w składzie — aktualizowane same z gry.":"Raid weekend results and roster log — updated automatically from the game.","Ruchy w klanie":"Roster changes","Łupy":"Loot","Rajdy":"Raids","Ataki":"Attacks","Dzielnice":"Districts","Top rajdowcy":"Top raiders","Niewykorzystane ataki:":"Unused attacks:","Zakończony":"Ended","● Trwa":"● Live","Poziom":"Level","Gwiazdki wojenne":"War stars","Puchary":"Trophies","Rekord":"Best","Stolica":"Capital","Bohaterowie":"Heroes","Pokaż profil":"Show profile","Ranking ruszy po zakończeniu pierwszej wojny od uruchomienia automatycznych danych — robot zapisuje każdy atak.":"The ranking starts after the first war ends since automatic data was enabled — the bot records every attack.","Wyniki pojawią się automatycznie po pierwszym weekendzie rajdowym (piątek–poniedziałek).":"Results appear automatically after the first raid weekend (Friday–Monday).","Tu pojawią się automatycznie: nowi gracze, odejścia, awanse i nowe ratusze.":"New players, departures, promotions and Town Hall upgrades will appear here automatically.","Pełny profil (bohaterowie, gwiazdki wojenne) pojawi się po najbliższej automatycznej aktualizacji.":"The full profile (heroes, war stars) will appear after the next automatic update.","Dzień przygotowań":"Preparation day","Wojna trwa":"War in progress","Wojna zakończona":"War ended","Start za":"Starts in","Koniec za":"Ends in","Wszyscy zaatakowali ✓":"Everyone has attacked ✓","Główny Dowódca":"Commander-in-chief","Zastępca Lidera":"Deputy leader"
 };
 const EN_RULES = [
   [/^Pokazano (\d+) z (\d+)$/, "Showing $1 of $2"],
@@ -975,6 +1041,15 @@ const EN_RULES = [
   [/^Dane z gry, aktualizacja automatyczna · (.+)$/, "Live game data, updated automatically · $1"],
   [/^· 👁 (.+) odwiedzin$/, "· 👁 $1 visits"], [/^Tag: (.+)$/, "Tag: $1"],
   [/^Darczyńca #(\d)$/, "Donor #$1"],
+  [/^Opuszczone ataki w ostatniej wojnie \(vs (.+)\):$/, "Missed attacks in the last war (vs $1):"],
+  [/^Wojen w rankingu: (\d+)\. Zasada: .+$/, "Wars in ranking: $1. Rule: first attack on your own number — a missed attack = no spot in the next war."],
+  [/^(.+) online$/, "$1 online"], [/^· (.+) członków$/, "· $1 members"],
+  [/^dołączył\(a\) do klanu \(TH(\d+)\)$/, "joined the clan (TH$1)"], [/^opuścił\(a\) klan$/, "left the clan"],
+  [/^ulepszył\(a\) ratusz: TH(\d+) → TH(\d+)$/, "upgraded Town Hall: TH$1 → TH$2"],
+  [/^awansował\(a\) na (.+)$/, "was promoted"], [/^został\(a\) zdegradowany\(a\) do (.+)$/, "was demoted"],
+  [/^Pokaż wszystkie \((\d+)\)$/, "Show all ($1)"], [/^· (\d+)\/(\d+) ataków$/, "· $1/$2 attacks"],
+  [/^Wojny: ✅ zapisany\(a\) · Wygrane ataki: (.+) · Obrony: (.+)$/, "Wars: ✅ opted in · Attack wins: $1 · Defences: $2"],
+  [/^Wojny: ❌ wypisany\(a\) · Wygrane ataki: (.+) · Obrony: (.+)$/, "Wars: ❌ opted out · Attack wins: $1 · Defences: $2"],
   [/^Pozostałe ataki \((\d+)\):$/, "Attacks left ($1):"],
   [/^(.+)% zniszczeń · ⚔️ (.+)$/, "$1% destruction · ⚔️ $2"],
   [/^(\d+) vs (\d+) · stan z (.+) \(odświeżane co godzinę\)$/, "$1 vs $2 · as of $3 (refreshed hourly)"]
@@ -1020,7 +1095,7 @@ async function loadAuto(){
     const newNames = new Set(MEMBERS.filter(m=>m.isNew).map(m=>m.name));
     const RM = {leader:"leader", coLeader:"co", admin:"elder", member:"member"};
     if (Array.isArray(d.members) && d.members.length){
-      MEMBERS = d.members.map(m=>({name:m.name, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, isNew:newNames.has(m.name)}));
+      MEMBERS = d.members.map(m=>({name:m.name, tag:m.tag, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, profile:m.profile||null, isNew:newNames.has(m.name)}));
     }
     if (Array.isArray(d.wars) && d.wars.length){
       WARS = d.wars.map(w=>({date:w.date, enemy:w.enemy, size:w.size, xp:w.xp||0, us:{stars:w.us.stars, pct:w.us.pct}, them:{stars:w.them.stars, pct:w.them.pct}}));
@@ -1149,7 +1224,7 @@ $("#mvpCard").innerHTML = `<div class="fame-label">MVP miesiąca</div>` + (MVP
   : `<div class="mvp-name">Wybór lidera</div><p>Gracz miesiąca zostanie wyróżniony za gwiazdki w CWL, pomoc klanowi i aktywność.</p>`);
 const topD = [...rows].sort((a,b)=>b.given-a.given).slice(0,3);
 $("#donors").innerHTML = topD.map((r,i)=>`
-  <div class="donor"><div class="donor-row"><span><em>0${i+1}</em>${esc(r.name)}</span><b>${fmt(r.given)}</b></div>
+  <div class="donor"><div class="donor-row"><span><em class="medal">${["🥇","🥈","🥉"][i]}</em>${esc(r.name)}</span><b>${fmt(r.given)}</b></div>
   <div class="dbar"><u style="width:${r.given/topD[0].given*100}%"></u></div></div>`).join("");
 
 // ===== Struktura i kadra =====
@@ -1232,7 +1307,7 @@ function render(){
       return (x-y)*sortDir || a.rank-b.rank;
     });
   $("#tbody").innerHTML = list.map((r,i)=>`
-    <tr>
+    <tr class="prow" data-name="${esc(r.name)}" title="Pokaż profil">
       <td class="rank">${i+1}</td>
       <td><span class="pname">${esc(r.name)}</span>${r.isNew?'<span class="newb">Nowy</span>':''}</td>
       <td><span class="role ${r.role}">${ROLE[r.role][0]}</span></td>
@@ -1242,14 +1317,14 @@ function render(){
       <td class="${r.balance>0?'pos':r.balance<0?'neg':'zero'}">${r.balance>0?'+':''}${fmt(r.balance)}</td>
     </tr>`).join("") || `<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:30px">Brak wyników</td></tr>`;
   $("#countLabel").textContent = `Pokazano ${list.length} z ${rows.length}`;
-  document.querySelectorAll("thead th").forEach(th=>{
+  document.querySelectorAll("#czlonkowie thead th").forEach(th=>{
     th.classList.toggle("sorted", th.dataset.k===sortK);
     th.textContent = th.textContent.replace(/ [▲▼]$/,"") + (th.dataset.k===sortK ? (sortDir>0?" ▲":" ▼") : "");
   });
   const v = sortK+":"+sortDir, sel=$("#sortSel");
   if ([...sel.options].some(o=>o.value===v)) sel.value=v;
 }
-document.querySelectorAll("thead th").forEach(th=>th.addEventListener("click",()=>{
+document.querySelectorAll("#czlonkowie thead th").forEach(th=>th.addEventListener("click",()=>{
   const k = th.dataset.k;
   if (sortK===k) sortDir*=-1; else {sortK=k; sortDir = (k==="name"||k==="rank"||k==="role")?1:-1;}
   render();
@@ -1330,6 +1405,107 @@ $("#cwlTop").innerHTML = CWL.top.length
     if(cw.state==="warEnded"){el.textContent="";return;}
     el.innerHTML=`<small>${cw.state==="preparation"?"Start za":"Koniec za"}</small>${Math.floor(d/3600)}h ${String(Math.floor(d%3600/60)).padStart(2,"0")}m ${String(Math.floor(d%60)).padStart(2,"0")}s`;};
   tick(); setInterval(tick,1000);
+})();
+
+
+/* ===== Ranking wojowników ===== */
+(function(){
+  const box=$("#rankBox");
+  const arch=(AUTO&&AUTO.warArchive||[]).filter(w=>w.state==="warEnded");
+  if(!arch.length){
+    box.innerHTML=`<div class="empty">Ranking ruszy po zakończeniu pierwszej wojny od uruchomienia automatycznych danych — robot zapisuje każdy atak.</div>`;
+    return;
+  }
+  const P={};
+  arch.forEach(w=>w.members.forEach(m=>{
+    const k=m.tag||m.name; const p=P[k]||(P[k]={name:m.name,wars:0,att:0,max:0,stars:0,pct:0,three:0});
+    p.name=m.name; p.wars++; p.max+=w.perMember; p.att+=m.attacks.length;
+    m.attacks.forEach(a=>{p.stars+=a.stars;p.pct+=a.pct;if(a.stars===3)p.three++;});
+  }));
+  const list=Object.values(P).map(p=>({...p,miss:p.max-p.att,avg:p.att?p.stars/p.att:0,avgPct:p.att?p.pct/p.att:0}))
+    .sort((a,b)=>b.stars-a.stars||b.avg-a.avg);
+  const md=i=>i<3?`<span class="medal">${["🥇","🥈","🥉"][i]}</span>`:i+1;
+  const last=arch[0];
+  const missLast=last.members.filter(m=>m.attacks.length<last.perMember);
+  box.innerHTML=`<div class="table-box" style="max-height:360px"><table class="rank-table"><thead><tr>
+    <th>#</th><th>Gracz</th><th>Wojny</th><th>Gwiazdki</th><th>Śr. ★/atak</th><th>Śr. %</th><th>3★</th><th>Opuszczone</th></tr></thead><tbody>
+    ${list.map((p,i)=>`<tr><td class="rank">${md(i)}</td><td class="pname">${esc(p.name)}</td><td>${p.wars}</td><td><span class="stars-sm">★</span> ${p.stars}</td>
+      <td>${p.avg.toFixed(2).replace(".",",")}</td><td>${p.avgPct.toFixed(0)}%</td><td>${p.three}</td>
+      <td class="${p.miss?'neg':'zero'}">${p.miss?p.miss:"—"}</td></tr>`).join("")}
+  </tbody></table></div>
+  <div class="miss-box"><div class="lw-left">Opuszczone ataki w ostatniej wojnie (vs ${esc(last.enemy)}):</div>
+  <div class="lw-chips">${missLast.length?missLast.map(m=>`<span>${esc(m.name)}<b>×${last.perMember-m.attacks.length}</b></span>`).join(""):`<span class="all">Wszyscy zaatakowali ✓</span>`}</div></div>
+  <p class="updated">Wojen w rankingu: ${arch.length}. Zasada: pierwszy atak na swój numer — brak ataku = brak udziału w następnej wojnie.</p>`;
+})();
+
+/* ===== Rajdy Stolicy ===== */
+(function(){
+  const box=$("#raidBox"); const r=AUTO&&AUTO.raids&&AUTO.raids[0];
+  if(!r){ box.innerHTML=`<div class="fame-label">Rajdy Stolicy</div><div class="empty">Wyniki pojawią się automatycznie po pierwszym weekendzie rajdowym (piątek–poniedziałek).</div>`; return; }
+  const parseT=t=>new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:00Z`);
+  const dd=t=>parseT(t).toLocaleDateString(LOC(),{day:"numeric",month:"short"});
+  const top=r.members.slice(0,5);
+  const unused=r.members.filter(m=>m.attacks<m.limit);
+  box.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">Rajdy Stolicy</span><span class="chip"><span>${r.state==="ongoing"?"● Trwa":"Zakończony"}</span> · ${dd(r.start)}–${dd(r.end)}</span></div>
+    <div class="raid-stats"><div><small>Łupy</small><b>${fmt(r.loot)}</b></div><div><small>Rajdy</small><b>${r.raids}</b></div><div><small>Ataki</small><b>${r.attacks}</b></div><div><small>Dzielnice</small><b>${r.districts}</b></div></div>
+    <div class="fame-label" style="margin-bottom:6px">Top rajdowcy</div>
+    ${top.map((m,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal">${["🥇","🥈","🥉","4.","5."][i]}</em> ${esc(m.name)}</span><span>${fmt(m.loot)} <small style="color:var(--muted)">· ${m.attacks}/${m.limit} ataków</small></span></div>`).join("")}
+    ${r.state==="ended"&&unused.length?`<div class="lw-left" style="margin-top:10px">Niewykorzystane ataki:</div><div class="lw-chips">${unused.map(m=>`<span>${esc(m.name)}<b>×${m.limit-m.attacks}</b></span>`).join("")}</div>`:""}`;
+})();
+
+/* ===== Ruchy w klanie ===== */
+(function(){
+  const ev=(AUTO&&AUTO.events)||[]; const ul=$("#events");
+  $("#evCount").textContent = ev.length ? `${ev.length}` : "";
+  if(!ev.length){ ul.innerHTML=`<li style="border:none;padding:0"><div class="empty" style="width:100%">Tu pojawią się automatycznie: nowi gracze, odejścia, awanse i nowe ratusze.</div></li>`; return; }
+  const RN={leader:"Wodza",coLeader:"Współlidera",admin:"Starszego",member:"Członka"};
+  const txt=e=>({join:["➕",`<b>${esc(e.name)}</b> dołączył(a) do klanu (TH${e.th})`],
+    leave:["➖",`<b>${esc(e.name)}</b> opuścił(a) klan`],
+    th:["🏰",`<b>${esc(e.name)}</b> ulepszył(a) ratusz: TH${e.from} → TH${e.to}`],
+    promote:["⬆️",`<b>${esc(e.name)}</b> awansował(a) na ${RN[e.role]||e.role}`],
+    demote:["⬇️",`<b>${esc(e.name)}</b> został(a) zdegradowany(a) do ${RN[e.role]||e.role}`]}[e.type]||["•",esc(e.name)]);
+  ul.innerHTML=ev.map(e=>{const [i,t]=txt(e);return `<li><span class="ei">${i}</span><div>${t}<small>${new Date(e.t).toLocaleString(LOC(),{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}</small></div></li>`;}).join("");
+  if(ev.length>8){ul.classList.add("collapsed");const b=$("#moreEv");b.hidden=false;
+    const u=()=>b.textContent=ul.classList.contains("collapsed")?`Pokaż wszystkie (${ev.length})`:"Zwiń";u();
+    b.addEventListener("click",()=>{ul.classList.toggle("collapsed");u();});}
+})();
+
+/* ===== Discord na żywo ===== */
+(function(){
+  const d=AUTO&&AUTO.discord; if(!d||d.members==null) return;
+  const el=$("#dcLive");
+  el.innerHTML=`${d.icon?`<img src="${d.icon}" alt="">`:""}<div><b>${esc(d.name||"Discord klanu")}</b><span><span class="on">${fmt(d.online||0)} online</span> · ${fmt(d.members)} członków</span></div>`;
+  el.hidden=false;
+})();
+
+/* ===== Profile graczy ===== */
+(function(){
+  const modal=$("#modal"), body=$("#modalBody");
+  const close=()=>{modal.hidden=true;};
+  $("#modalX").addEventListener("click",close);
+  modal.addEventListener("click",e=>{if(e.target===modal)close();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")close();});
+  $("#tbody").addEventListener("click",e=>{
+    const tr=e.target.closest("tr.prow"); if(!tr) return;
+    const r=rows.find(x=>x.name===tr.dataset.name); if(!r) return;
+    const pf=r.profile;
+    const cell=(l,v)=>`<div><small>${l}</small><b>${v}</b></div>`;
+    body.innerHTML=`<div class="pf-head"><span class="th">${r.th}</span><div><h3>${esc(r.name)}</h3><span class="role ${r.role}">${ROLE[r.role][0]}</span>${r.tag?` <span class="ptag" style="margin-left:6px">${esc(r.tag)}</span>`:""}</div></div>
+      <div class="pf-grid">
+        ${cell("Ratusz","TH"+r.th)}
+        ${pf?cell("Poziom",pf.level):""}
+        ${pf?cell("Gwiazdki wojenne","★ "+fmt(pf.warStars)):""}
+        ${pf?cell("Puchary","🏆 "+fmt(pf.trophies)):""}
+        ${pf?cell("Rekord","🏆 "+fmt(pf.best)):""}
+        ${pf&&pf.league?cell("Liga",esc(pf.league)):""}
+        ${cell("Przekazane",fmt(r.given))}
+        ${cell("Otrzymane",fmt(r.received))}
+        ${pf?cell("Stolica",fmt(pf.capital)):""}
+      </div>
+      ${pf&&pf.heroes&&pf.heroes.length?`<div class="fame-label" style="margin-bottom:8px">Bohaterowie</div>${pf.heroes.map(h=>`<div class="hbar"><div class="hero-row"><b>${esc(h.name)}</b><span>${h.level} / ${h.max}</span></div><div class="dbar"><u style="width:${h.level/h.max*100}%"></u></div></div>`).join("")}`:""}
+      ${pf?(pf.warPref?`<p class="updated">Wojny: ${pf.warPref==="in"?"✅ zapisany(a)":"❌ wypisany(a)"} · Wygrane ataki: ${fmt(pf.attackWins)} · Obrony: ${fmt(pf.defenseWins)}</p>`:""):`<p class="updated">Pełny profil (bohaterowie, gwiazdki wojenne) pojawi się po najbliższej automatycznej aktualizacji.</p>`}`;
+    modal.hidden=false;
+  });
 })();
 
 /* ===== Rekordy klanu ===== */
