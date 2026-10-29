@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-29T23:15:48.112Z",
+  "updated": "2026-10-29T23:31:02.288Z",
   "clanLevel": 3,
-  "memberCount": 43,
+  "memberCount": 44,
   "cwlLeague": "Unranked",
   "warWinStreak": 9,
   "warWins": 11,
@@ -324,7 +324,7 @@
     ]
   },
   "cwl": null,
-  "visits": 21,
+  "visits": 22,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -462,6 +462,12 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-10-29T23:31:02.008Z",
+      "type": "join",
+      "name": "krupnik",
+      "th": 3
+    },
     {
       "t": "2026-10-29T23:15:47.365Z",
       "type": "th",
@@ -735,8 +741,8 @@
   "history": [
     {
       "d": "2026-10-29",
-      "members": 43,
-      "avgTh": 8.1,
+      "members": 44,
+      "avgTh": 8,
       "level": 3,
       "wins": 11,
       "points": 16200
@@ -959,6 +965,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 0
+      },
+      "#R2UJV2VJR": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
       }
     },
     "metric": "warStars"
@@ -1134,6 +1145,9 @@
     },
     "#GQR98J880": {
       "d": "2026-10-29T20:58:21.760Z"
+    },
+    "#R2UJV2VJR": {
+      "d": "2026-10-29T23:31:02.288Z"
     }
   },
   "activity": {
@@ -1348,9 +1362,14 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|101249|109405|0|0|0|0|0|0|7|4",
-      "last": "2026-10-29T23:15:48.111Z",
+      "sig": "0|157087|157360|0|0|0|0|0|0|8|4",
+      "last": "2026-10-29T23:31:02.288Z",
       "since": "2026-10-29T22:15:49.037Z"
+    },
+    "#R2UJV2VJR": {
+      "sig": "0|78727|82814|0|0|0|0|0|0|6|3",
+      "last": "2026-10-29T23:31:02.288Z",
+      "since": "2026-10-29T23:31:02.288Z"
     }
   },
   "clanGames": null,
@@ -1615,6 +1634,13 @@
         "don": 0,
         "cg": 0,
         "capLoot": 0
+      },
+      "#R2UJV2VJR": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0,
+        "joined": "2026-10-29T23:31:02.288Z"
       }
     }
   },
@@ -3366,15 +3392,15 @@
       }
     },
     {
-      "name": "TwojaSiora",
-      "tag": "#GQR98J880",
+      "name": "krupnik",
+      "tag": "#R2UJV2VJR",
       "role": "member",
-      "th": 4,
+      "th": 3,
       "given": 0,
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 7,
+        "level": 6,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -3389,8 +3415,38 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 101249,
-        "elixir": 109405,
+        "gold": 78727,
+        "elixir": 82814,
+        "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
+      "name": "TwojaSiora",
+      "tag": "#GQR98J880",
+      "role": "member",
+      "th": 4,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 8,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 157087,
+        "elixir": 157360,
         "capContrib": 0,
         "wins": 0
       }
