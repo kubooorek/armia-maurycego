@@ -1153,7 +1153,9 @@ async function loadAuto(){
     const r = await fetch("data.json?v="+Date.now(), {signal:ctl.signal});
     if(!r.ok) return;
     const d = await r.json();
-    const newNames = new Set(MEMBERS.filter(m=>m.isNew).map(m=>m.name));
+    // „Nowy” = dołączył w ciągu ostatnich 7 dni (z dziennika robota)
+    const weekAgo = Date.now() - 7*864e5;
+    const newNames = new Set((d.events||[]).filter(e=>e.type==="join" && new Date(e.t).getTime()>weekAgo).map(e=>e.name));
     const RM = {leader:"leader", coLeader:"co", admin:"elder", member:"member"};
     if (Array.isArray(d.members) && d.members.length){
       MEMBERS = d.members.map(m=>({name:m.name, tag:m.tag, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, profile:m.profile||null, isNew:newNames.has(m.name)}));
@@ -1377,7 +1379,7 @@ function render(){
   $("#tbody").innerHTML = list.map((r,i)=>`
     <tr class="prow" data-name="${esc(r.name)}" title="Pokaż profil">
       <td class="rank">${i+1}</td>
-      <td><span class="pname">${esc(r.name)}</span>${r.isNew?'<span class="newb">Nowy</span>':''}</td>
+      <td><span class="pname">${esc(r.name)}</span>${r.isNew?'<span class="newb" title="Dołączył(a) w ciągu ostatnich 7 dni">Nowy</span>':''}</td>
       <td><span class="role ${r.role}">${ROLE[r.role][0]}</span></td>
       <td><div class="thbar"><span class="th">${r.th}</span><i><u style="width:${r.th/maxTH*100}%"></u></i></div></td>
       <td>${fmt(r.given)}</td>
