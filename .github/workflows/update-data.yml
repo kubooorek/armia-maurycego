@@ -1,0 +1,28 @@
+name: Aktualizacja danych klanu
+
+on:
+  schedule:
+    - cron: "17 * * * *"     # co godzinę
+  workflow_dispatch:          # przycisk „Run workflow” do ręcznego uruchomienia
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Pobierz dane z API Clash of Clans
+        env:
+          COC_TOKEN: ${{ secrets.COC_TOKEN }}
+        run: node scripts/update-data.mjs
+      - name: Zapisz zmiany
+        run: |
+          git config user.name "bot-klanu"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || (git commit -m "Aktualizacja danych klanu" && git push)
