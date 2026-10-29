@@ -1,9 +1,286 @@
 {
-  "updated": "2026-10-29T16:42:42.486Z",
+  "updated": "2026-10-29T17:09:23.614Z",
   "clanLevel": 3,
   "memberCount": 41,
   "cwlLeague": "Unranked",
   "warWinStreak": 9,
+  "currentWar": {
+    "state": "inWar",
+    "size": 20,
+    "perMember": 2,
+    "start": "20261029T040002.000Z",
+    "end": "20261030T040002.000Z",
+    "us": {
+      "name": "ARMIA MAURYCEGO",
+      "stars": 57,
+      "pct": 95,
+      "attacks": 24
+    },
+    "them": {
+      "name": "старше 18",
+      "stars": 50,
+      "pct": 83.7,
+      "attacks": 18
+    },
+    "members": [
+      {
+        "name": "KUBOOOREK",
+        "pos": 1,
+        "th": 15,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "1. спартак"
+          }
+        ]
+      },
+      {
+        "name": "Albaroon.2",
+        "pos": 2,
+        "th": 12,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "2. РУСТАМ"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "4. putnick 2"
+          }
+        ]
+      },
+      {
+        "name": "MAQOS",
+        "pos": 3,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "oggsgdjdjbd",
+        "pos": 4,
+        "th": 12,
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 85,
+            "target": "4. putnick 2"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "5. BIM BOKS"
+          }
+        ]
+      },
+      {
+        "name": "VipeR",
+        "pos": 5,
+        "th": 11,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "6. пограничник 2"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "8. BIM DGON"
+          }
+        ]
+      },
+      {
+        "name": "Cwel123",
+        "pos": 6,
+        "th": 10,
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 90,
+            "target": "6. пограничник 2"
+          }
+        ]
+      },
+      {
+        "name": "tak",
+        "pos": 7,
+        "th": 9,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "7. пограничники 2)"
+          }
+        ]
+      },
+      {
+        "name": "Kojak",
+        "pos": 8,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Brann",
+        "pos": 9,
+        "th": 9,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "9. Romushka"
+          }
+        ]
+      },
+      {
+        "name": "Belaska",
+        "pos": 10,
+        "th": 9,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "10. ali"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "13. МаРмЕлАдКа27"
+          }
+        ]
+      },
+      {
+        "name": "Barnes",
+        "pos": 11,
+        "th": 8,
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 99,
+            "target": "11. СТАРШЕ 18"
+          }
+        ]
+      },
+      {
+        "name": "vvd",
+        "pos": 12,
+        "th": 9,
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 99,
+            "target": "13. МаРмЕлАдКа27"
+          }
+        ]
+      },
+      {
+        "name": "wiktor",
+        "pos": 13,
+        "th": 8,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "12. пограничники"
+          },
+          {
+            "stars": 1,
+            "pct": 68,
+            "target": "8. BIM DGON"
+          }
+        ]
+      },
+      {
+        "name": "KuN",
+        "pos": 14,
+        "th": 8,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "14. 27-09-2025"
+          }
+        ]
+      },
+      {
+        "name": "Mimbosz",
+        "pos": 15,
+        "th": 9,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "15. АБУБАКР"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "11. СТАРШЕ 18"
+          }
+        ]
+      },
+      {
+        "name": "SZAR3",
+        "pos": 16,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "Riczard",
+        "pos": 17,
+        "th": 7,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "17. 北极星✨1992"
+          }
+        ]
+      },
+      {
+        "name": "GoldBelt",
+        "pos": 18,
+        "th": 7,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "18. EmilyButler"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "20. кв баланс 4"
+          }
+        ]
+      },
+      {
+        "name": "Marsyllia",
+        "pos": 19,
+        "th": 7,
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "16. ak1movvv_"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "19. для баланса кв"
+          }
+        ]
+      },
+      {
+        "name": "samurai024",
+        "pos": 20,
+        "th": 5,
+        "attacks": []
+      }
+    ]
+  },
   "members": [
     {
       "name": "KUBOOOREK",
