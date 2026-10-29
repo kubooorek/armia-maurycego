@@ -984,7 +984,7 @@ const GOALS = [
 ];
 
 // Wyzwanie tygodnia (od poniedziałku do niedzieli). metric: warStars | donations | capital
-const CHALLENGE = {title:"Najwięcej gwiazdek wojennych w tygodniu", metric:"warStars", prize:"Wyróżnienie na Discordzie i plusik do awansu 🏅"};
+const CHALLENGE = {title:"Najwięcej gwiazdek wojennych w tygodniu", metric:"warStars", prize:"ranga „⚔️ Wojownik Tygodnia” na Discordzie i pewne miejsce w składzie najbliższej wojny"};
 
 /* ====== KONIEC DANYCH ====== */
 
@@ -1036,13 +1036,13 @@ const EN = {
 "Rekrutacja: otwarta":"Recruitment: open","Rekrutacja: ostatnie miejsca":"Recruitment: last spots","Rekrutacja: zamknięta":"Recruitment: closed","Na razie nikt — możesz być pierwszy!":"Nobody yet — you could be the first!",
 "Klan jest pełny. Zajrzyj na Discorda — damy znać, gdy zwolni się miejsce.":"The clan is full. Check our Discord — we'll let you know when a spot opens.",
 "CWL: wejście do składu":"CWL: getting in the lineup","W mniejszych wojnach ligowych przyda się każdy aktywny gracz — zapisz się, gdy ogłosimy zapisy.":"In smaller league wars every active player counts — sign up when we announce it.",
-"Najpierw obozy, koszary i laboratorium. Ulepszaj kopalnie i zbieracze, a w ataku stawiaj na Gigantów z Łuczniczkami i Barbarzyńcami.":"Army camps, barracks and laboratory first. Upgrade mines and collectors, and attack with Giants, Archers and Barbarians.",
+"Najpierw obozy, koszary i laboratorium. Od TH4 masz Króla Barbarzyńców — zabieraj go do każdego ataku. W ataku stawiaj na Gigantów z Łuczniczkami i Barbarzyńcami.":"Army camps, barracks and laboratory first. From TH4 you have the Barbarian King — take him into every attack. Attack with Giants, Archers and Barbarians.",
 "CWL: rezerwa i niższe pozycje":"CWL: bench and lower spots","Grasz na dolnych pozycjach — pewne 2–3 gwiazdki na równym przeciwniku to złoto dla klanu.":"You play the lower spots — reliable 2–3 stars on an equal opponent are gold for the clan.",
-"Na TH7 odblokujesz Króla Barbarzyńców i smoki — atak smokami to najprostsza droga do 3 gwiazdek.":"TH7 unlocks the Barbarian King and Dragons — mass Dragons is the easiest way to 3 stars.",
+"Na TH7 możesz zacząć ulepszać Króla Barbarzyńców (dostępny od TH4) i odblokujesz smoki — atak smokami to najprostsza droga do 3 gwiazdek.":"At TH7 you can start upgrading the Barbarian King (available from TH4) and you unlock Dragons — mass Dragons is the easiest way to 3 stars.",
 "CWL: środek składu":"CWL: middle of the lineup","Twoje ataki na środkowych pozycjach często przesądzają o wyniku dnia wojny.":"Your attacks in the middle spots often decide the war day.",
-"Rozwijaj bohaterów (Królowa Łuczniczek od TH9), Golemy i zaklęcia. Nie zostawiaj bohaterów w tyle za budynkami.":"Level your heroes (Archer Queen from TH9), Golems and spells. Don't let heroes fall behind your buildings.",
+"Na TH8 odblokujesz Królową Łuczniczek i wyposażenie bohaterów (chata kowala). Rozwijaj bohaterów, Golemy i zaklęcia — nie zostawiaj bohaterów w tyle za budynkami.":"TH8 unlocks the Archer Queen and hero equipment (Blacksmith). Level your heroes, Golems and spells — don't let heroes fall behind your buildings.",
 "CWL: mocny punkt składu":"CWL: a strong part of the lineup","Z rozwiniętą armią i bohaterami masz pewne miejsce w składzie CWL.":"With a developed army and heroes you have a sure spot in the CWL lineup.",
-"Priorytet: bohaterowie i ich wyposażenie. Na TH11 dochodzi Arcystrażnik — ulepszaj go razem z resztą bohaterów.":"Priority: heroes and their equipment. TH11 adds the Grand Warden — level him with the other heroes.",
+"Priorytet: bohaterowie i ich wyposażenie. Na TH11 dochodzi Wielki Strażnik — ulepszaj go razem z resztą bohaterów.":"Priority: heroes and their equipment. TH11 adds the Grand Warden — level him with the other heroes.",
 "CWL: solidny skład":"CWL: solid lineup","Z tym poziomem możesz liczyć na stałe miejsce w CWL, jeśli masz rozwinięte wojska.":"At this level you can count on a regular CWL spot if your troops are well upgraded.",
 "Skup się na pełnym rozwoju wybranych armii, zaklęć, bohaterów oraz wyposażenia bohaterów.":"Focus on fully upgrading your chosen armies, spells, heroes and hero equipment.",
 "CWL: filar klanu":"CWL: a pillar of the clan","Atakujesz na najwyższych pozycjach — Twoje 3 gwiazdki decydują o awansie w lidze.":"You attack at the top spots — your 3 stars decide promotion in the league.",
@@ -1306,13 +1306,13 @@ $("#ranks").innerHTML = [["leader","Wódz klanu"],["co","Współliderzy"],["elde
 // ===== Kalkulator ratusza =====
 const TH_TIPS = [
   [5,  "CWL: wejście do składu", "W mniejszych wojnach ligowych przyda się każdy aktywny gracz — zapisz się, gdy ogłosimy zapisy.",
-       "Najpierw obozy, koszary i laboratorium. Ulepszaj kopalnie i zbieracze, a w ataku stawiaj na Gigantów z Łuczniczkami i Barbarzyńcami."],
+       "Najpierw obozy, koszary i laboratorium. Od TH4 masz Króla Barbarzyńców — zabieraj go do każdego ataku. W ataku stawiaj na Gigantów z Łuczniczkami i Barbarzyńcami."],
   [7,  "CWL: rezerwa i niższe pozycje", "Grasz na dolnych pozycjach — pewne 2–3 gwiazdki na równym przeciwniku to złoto dla klanu.",
-       "Na TH7 odblokujesz Króla Barbarzyńców i smoki — atak smokami to najprostsza droga do 3 gwiazdek."],
+       "Na TH7 możesz zacząć ulepszać Króla Barbarzyńców (dostępny od TH4) i odblokujesz smoki — atak smokami to najprostsza droga do 3 gwiazdek."],
   [9,  "CWL: środek składu", "Twoje ataki na środkowych pozycjach często przesądzają o wyniku dnia wojny.",
-       "Rozwijaj bohaterów (Królowa Łuczniczek od TH9), Golemy i zaklęcia. Nie zostawiaj bohaterów w tyle za budynkami."],
+       "Na TH8 odblokujesz Królową Łuczniczek i wyposażenie bohaterów (chata kowala). Rozwijaj bohaterów, Golemy i zaklęcia — nie zostawiaj bohaterów w tyle za budynkami."],
   [11, "CWL: mocny punkt składu", "Z rozwiniętą armią i bohaterami masz pewne miejsce w składzie CWL.",
-       "Priorytet: bohaterowie i ich wyposażenie. Na TH11 dochodzi Arcystrażnik — ulepszaj go razem z resztą bohaterów."],
+       "Priorytet: bohaterowie i ich wyposażenie. Na TH11 dochodzi Wielki Strażnik — ulepszaj go razem z resztą bohaterów."],
   [14, "CWL: solidny skład", "Z tym poziomem możesz liczyć na stałe miejsce w CWL, jeśli masz rozwinięte wojska.",
        "Skup się na pełnym rozwoju wybranych armii, zaklęć, bohaterów oraz wyposażenia bohaterów."],
   [18, "CWL: filar klanu", "Atakujesz na najwyższych pozycjach — Twoje 3 gwiazdki decydują o awansie w lidze.",
