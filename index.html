@@ -185,7 +185,14 @@
         .custom-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 22px; height: 18px; background: #22252a; border: 1px solid #000; border-radius: 3px; cursor: pointer; }
 
         .th-scale { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); font-family: 'Orbitron'; }
-        .th-buttons-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 25px; }
+        
+        .th-buttons-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 6px; 
+            justify-content: center; 
+            margin-bottom: 25px; 
+        }
 
         .th-btn {
             background-color: var(--card-bg);
@@ -193,9 +200,11 @@
             color: var(--text);
             font-family: 'Orbitron';
             font-weight: 700;
-            padding: 10px 16px;
+            font-size: 0.8rem;
+            padding: 10px 12px;
             border-radius: 6px;
             cursor: pointer;
+            transition: all 0.2s;
         }
         .th-btn:hover, .th-btn.active { background-color: var(--gold); color: #000; border-color: var(--gold); }
 
@@ -345,10 +354,10 @@
                 <h3 style="color:#fff; font-size:1.1rem; margin-bottom:5px;">Raid Weekend</h3>
                 <p style="margin-bottom:15px;">Do rajdów pozostało:</p>
                 <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; text-align:center; margin-bottom:15px;">
-                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">01</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">DNI</span></div>
-                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">04</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">GODZ.</span></div>
-                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">30</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">MIN.</span></div>
-                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">54</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">SEK.</span></div>
+                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong id="timerDays" style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">00</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">DNI</span></div>
+                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong id="timerHours" style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">00</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">GODZ.</span></div>
+                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong id="timerMins" style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">00</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">MIN.</span></div>
+                    <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border);"><strong id="timerSecs" style="color:var(--gold); font-family:'Orbitron'; font-size:1.2rem;">00</strong><br><span style="font-size:0.65rem; color:var(--text-muted);">SEK.</span></div>
                 </div>
                 <p style="font-size:0.75rem; color:var(--text-muted);">Rajdy startują w piątek o 8:00 czasu polskiego i trwają do poniedziałku.</p>
             </div>
@@ -540,7 +549,7 @@
         </div>
     </section>
 
-    <!-- SKŁAD I TABELA (40 OSÓB) -->
+    <!-- SKŁAD I TABELA (PEŁNA LISTA 40 OSÓB) -->
     <section id="gracze" class="container" style="padding-top: 0;">
         <h2 class="section-title">Skład i Lista Graczy (40 osób)</h2>
         <input type="text" id="playerSearch" class="search-input" placeholder="Wyszukaj gracza (np. KUBOOOREK, SHAZAM, Filfox)..." onkeyup="filterPlayers()">
@@ -624,6 +633,34 @@
                 modal.style.display = 'none';
             }
         }
+
+        // ŻYWY TIMER DO RAID WEEKEND (Najbliższy piątek 8:00)
+        function updateRaidTimer() {
+            const now = new Date();
+            let target = new Date();
+            
+            target.setDate(now.getDate() + ((5 + 7 - now.getDay()) % 7));
+            target.setHours(8, 0, 0, 0);
+
+            if (now.getTime() > target.getTime()) {
+                target.setDate(target.getDate() + 7);
+            }
+
+            const diff = target - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const mins = Math.floor((diff / 1000 / 60) % 60);
+            const secs = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('timerDays').innerText = String(days).padStart(2, '0');
+            document.getElementById('timerHours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('timerMins').innerText = String(mins).padStart(2, '0');
+            document.getElementById('timerSecs').innerText = String(secs).padStart(2, '0');
+        }
+
+        setInterval(updateRaidTimer, 1000);
+        updateRaidTimer();
 
         function updateRecruitment(val) {
             document.getElementById('memberCountText').innerText = 'Liczba członków: ' + val + '/50';
