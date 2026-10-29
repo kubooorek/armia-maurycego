@@ -419,7 +419,7 @@
   .numbers span{font-size:1.1rem} .numbers b{font-family:Cinzel,serif;font-size:1.25rem;color:var(--gold2)} .numbers small{font-size:.76rem;color:var(--muted)}
   .btn-game{display:inline-flex;align-items:center;gap:6px;margin:0 0 12px;padding:7px 14px;border-radius:999px;font-size:.82rem;font-weight:700;color:#1a1408;background:linear-gradient(180deg,var(--gold2),var(--gold));text-decoration:none}
   .btn-game:hover{filter:brightness(1.08)}
-  .winbar{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);opacity:0;z-index:90;display:flex;align-items:center;gap:12px;max-width:calc(100% - 24px);padding:10px 14px 10px 18px;border-radius:999px;border:1px solid rgba(232,180,74,.55);background:rgba(20,18,14,.94);box-shadow:0 10px 30px rgba(0,0,0,.45);font-size:.9rem;transition:.4s}
+  .winbar{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);opacity:0;z-index:90;display:flex;align-items:center;gap:12px;width:max-content;max-width:calc(100vw - 24px);box-sizing:border-box;padding:10px 14px 10px 18px;border-radius:999px;border:1px solid rgba(232,180,74,.55);background:rgba(20,18,14,.94);box-shadow:0 10px 30px rgba(0,0,0,.45);font-size:.9rem;transition:.4s}
   .winbar.show{transform:translate(-50%,0);opacity:1} .winbar b{color:var(--gold2)}
   .winbar button{border:none;background:transparent;color:var(--muted);font-size:1.1rem;cursor:pointer;padding:0 4px}
   .confetti{position:fixed;inset:0;pointer-events:none;z-index:95}
