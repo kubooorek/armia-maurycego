@@ -2,7 +2,7 @@ name: Aktualizacja danych klanu
 
 on:
   schedule:
-    - cron: "17 * * * *"     # co godzinę
+        - cron: "*/15 * * * *"     # co godzinę
   workflow_dispatch:          # przycisk „Run workflow” do ręcznego uruchomienia
 
 permissions:
