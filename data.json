@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T21:01:29.731Z",
+  "updated": "2026-10-29T21:31:04.267Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -962,7 +962,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 7726,
+      "given": 7746,
       "received": 3077,
       "trophies": 447,
       "profile": {
@@ -1440,17 +1440,17 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 15,
+            "level": 16,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 15,
+            "level": 16,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 15,
+            "level": 16,
             "max": 95
           }
         ]
@@ -2072,7 +2072,7 @@
       "role": "member",
       "th": 7,
       "given": 40,
-      "received": 245,
+      "received": 265,
       "trophies": 40,
       "profile": {
         "level": 29,
