@@ -1,0 +1,590 @@
+{
+  "updated": "2026-10-29T16:42:42.486Z",
+  "clanLevel": 3,
+  "memberCount": 41,
+  "cwlLeague": "Unranked",
+  "warWinStreak": 9,
+  "members": [
+    {
+      "name": "KUBOOOREK",
+      "tag": "#VP9PLGLV",
+      "role": "coLeader",
+      "th": 15,
+      "given": 7669,
+      "received": 3077,
+      "trophies": 447
+    },
+    {
+      "name": "Baku",
+      "tag": "#LUGR0YQY0",
+      "role": "member",
+      "th": 15,
+      "given": 800,
+      "received": 80,
+      "trophies": 0
+    },
+    {
+      "name": "Albaroon.2",
+      "tag": "#GYUJR2URJ",
+      "role": "coLeader",
+      "th": 12,
+      "given": 3932,
+      "received": 2554,
+      "trophies": 391
+    },
+    {
+      "name": "oggsgdjdjbd",
+      "tag": "#Q9CU9P908",
+      "role": "member",
+      "th": 12,
+      "given": 98,
+      "received": 72,
+      "trophies": 276
+    },
+    {
+      "name": "MrDefPL",
+      "tag": "#8UCPRGC8",
+      "role": "member",
+      "th": 12,
+      "given": 127,
+      "received": 180,
+      "trophies": 0
+    },
+    {
+      "name": "MAQOS",
+      "tag": "#LJYR92002",
+      "role": "member",
+      "th": 12,
+      "given": 301,
+      "received": 0,
+      "trophies": 396
+    },
+    {
+      "name": "VipeR",
+      "tag": "#22R8PLCU8",
+      "role": "leader",
+      "th": 11,
+      "given": 2379,
+      "received": 3078,
+      "trophies": 362
+    },
+    {
+      "name": "tak",
+      "tag": "#Y02PYY922",
+      "role": "admin",
+      "th": 9,
+      "given": 0,
+      "received": 212,
+      "trophies": 0
+    },
+    {
+      "name": "Brann",
+      "tag": "#LC8VRR9R2",
+      "role": "member",
+      "th": 9,
+      "given": 15,
+      "received": 112,
+      "trophies": 0
+    },
+    {
+      "name": "Cwel123",
+      "tag": "#RPR0L809R",
+      "role": "member",
+      "th": 10,
+      "given": 44,
+      "received": 0,
+      "trophies": 269
+    },
+    {
+      "name": "Toster290",
+      "tag": "#GJJ90QGVQ",
+      "role": "member",
+      "th": 11,
+      "given": 160,
+      "received": 264,
+      "trophies": 162
+    },
+    {
+      "name": "monte",
+      "tag": "#QYJUV90JY",
+      "role": "member",
+      "th": 10,
+      "given": 20,
+      "received": 83,
+      "trophies": 348
+    },
+    {
+      "name": "Belaska",
+      "tag": "#GU0R2J8R0",
+      "role": "admin",
+      "th": 9,
+      "given": 316,
+      "received": 1437,
+      "trophies": 221
+    },
+    {
+      "name": "Kojak",
+      "tag": "#G8VGC2VRL",
+      "role": "admin",
+      "th": 9,
+      "given": 359,
+      "received": 2084,
+      "trophies": 77
+    },
+    {
+      "name": "Barnes",
+      "tag": "#LQVRCRUYR",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 130,
+      "trophies": 0
+    },
+    {
+      "name": "KuN",
+      "tag": "#YLLQL2VUP",
+      "role": "member",
+      "th": 8,
+      "given": 169,
+      "received": 434,
+      "trophies": 104
+    },
+    {
+      "name": "Mimbosz",
+      "tag": "#RY0QPVCCY",
+      "role": "member",
+      "th": 9,
+      "given": 14,
+      "received": 317,
+      "trophies": 240
+    },
+    {
+      "name": "wiktor",
+      "tag": "#QGPC2228Q",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 256,
+      "trophies": 100
+    },
+    {
+      "name": "vvd",
+      "tag": "#GQULCR98R",
+      "role": "member",
+      "th": 9,
+      "given": 288,
+      "received": 452,
+      "trophies": 299
+    },
+    {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 7,
+      "given": 69,
+      "received": 290,
+      "trophies": 181
+    },
+    {
+      "name": "filip",
+      "tag": "#R90YJUQCQ",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 174
+    },
+    {
+      "name": "zuzia",
+      "tag": "#R8V9U9VLJ",
+      "role": "member",
+      "th": 9,
+      "given": 27,
+      "received": 0,
+      "trophies": 85
+    },
+    {
+      "name": "my name billa",
+      "tag": "#GQ2QUJRGU",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0
+    },
+    {
+      "name": "SHA☆ZAM!",
+      "tag": "#GVGRVCQJR",
+      "role": "member",
+      "th": 8,
+      "given": 280,
+      "received": 240,
+      "trophies": 349
+    },
+    {
+      "name": "GoldBelt",
+      "tag": "#R9QQPG9JP",
+      "role": "member",
+      "th": 7,
+      "given": 12,
+      "received": 285,
+      "trophies": 309
+    },
+    {
+      "name": "Riczard",
+      "tag": "#R2PCVYQG2",
+      "role": "member",
+      "th": 7,
+      "given": 180,
+      "received": 445,
+      "trophies": 281
+    },
+    {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 7,
+      "given": 50,
+      "received": 170,
+      "trophies": 260
+    },
+    {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 257
+    },
+    {
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
+      "role": "member",
+      "th": 7,
+      "given": 30,
+      "received": 545,
+      "trophies": 255
+    },
+    {
+      "name": "Darui",
+      "tag": "#LUQJC2JGY",
+      "role": "member",
+      "th": 7,
+      "given": 123,
+      "received": 0,
+      "trophies": 242
+    },
+    {
+      "name": "Marsyllia",
+      "tag": "#R0VJLRGQ0",
+      "role": "member",
+      "th": 7,
+      "given": 1,
+      "received": 65,
+      "trophies": 188
+    },
+    {
+      "name": "Andrzej",
+      "tag": "#R0VLRL292",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 100,
+      "trophies": 73
+    },
+    {
+      "name": "threeten",
+      "tag": "#R8RVQVPCC",
+      "role": "member",
+      "th": 7,
+      "given": 40,
+      "received": 245,
+      "trophies": 40
+    },
+    {
+      "name": "BoT6790",
+      "tag": "#GVRY000P2",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 20,
+      "trophies": 0
+    },
+    {
+      "name": "szoks",
+      "tag": "#GGU0RJYR9",
+      "role": "member",
+      "th": 5,
+      "given": 1,
+      "received": 0,
+      "trophies": 0
+    },
+    {
+      "name": "TwarógPółtlusty",
+      "tag": "#R9GUJ0ULV",
+      "role": "member",
+      "th": 5,
+      "given": 41,
+      "received": 174,
+      "trophies": 0
+    },
+    {
+      "name": "samurai024",
+      "tag": "#RYUV9V9RC",
+      "role": "member",
+      "th": 5,
+      "given": 0,
+      "received": 0,
+      "trophies": 0
+    },
+    {
+      "name": "Filox74",
+      "tag": "#RYGL9UUR2",
+      "role": "member",
+      "th": 3,
+      "given": 0,
+      "received": 0,
+      "trophies": 0
+    },
+    {
+      "name": "kwiatek",
+      "tag": "#RY9GPJ822",
+      "role": "member",
+      "th": 6,
+      "given": 0,
+      "received": 0,
+      "trophies": 0
+    },
+    {
+      "name": "KungFuPanda",
+      "tag": "#RY9VL2GQV",
+      "role": "member",
+      "th": 3,
+      "given": 0,
+      "received": 10,
+      "trophies": 0
+    },
+    {
+      "name": "Fox",
+      "tag": "#R2CPURPY9",
+      "role": "member",
+      "th": 4,
+      "given": 0,
+      "received": 45,
+      "trophies": 0
+    }
+  ],
+  "wars": [
+    {
+      "date": "2026-10-27",
+      "enemy": "Grim Reapers",
+      "size": 20,
+      "xp": 188,
+      "result": "win",
+      "us": {
+        "stars": 60,
+        "pct": 100
+      },
+      "them": {
+        "stars": 44,
+        "pct": 80.15
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "enemy": "Glader’s Clan",
+      "size": 20,
+      "xp": 176,
+      "result": "win",
+      "us": {
+        "stars": 60,
+        "pct": 100
+      },
+      "them": {
+        "stars": 59,
+        "pct": 98.9
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "enemy": "Enma !!",
+      "size": 20,
+      "xp": 187,
+      "result": "win",
+      "us": {
+        "stars": 59,
+        "pct": 99.1
+      },
+      "them": {
+        "stars": 59,
+        "pct": 98.65
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "enemy": "BATCAVERNA",
+      "size": 15,
+      "xp": 160,
+      "result": "win",
+      "us": {
+        "stars": 44,
+        "pct": 99.4
+      },
+      "them": {
+        "stars": 43,
+        "pct": 98.4
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "enemy": "bwc85",
+      "size": 10,
+      "xp": 137,
+      "result": "win",
+      "us": {
+        "stars": 30,
+        "pct": 100
+      },
+      "them": {
+        "stars": 27,
+        "pct": 94.8
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "enemy": "HARK TAi",
+      "size": 10,
+      "xp": 135,
+      "result": "win",
+      "us": {
+        "stars": 30,
+        "pct": 100
+      },
+      "them": {
+        "stars": 29,
+        "pct": 96.4
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "enemy": "GEOMAGNETIC",
+      "size": 10,
+      "xp": 131,
+      "result": "win",
+      "us": {
+        "stars": 30,
+        "pct": 100
+      },
+      "them": {
+        "stars": 0,
+        "pct": 1
+      }
+    },
+    {
+      "date": "2026-10-12",
+      "enemy": "dasoba",
+      "size": 10,
+      "xp": 137,
+      "result": "win",
+      "us": {
+        "stars": 30,
+        "pct": 100
+      },
+      "them": {
+        "stars": 28,
+        "pct": 95.7
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "enemy": "TEAM NO.1.0",
+      "size": 10,
+      "xp": 130,
+      "result": "win",
+      "us": {
+        "stars": 30,
+        "pct": 100
+      },
+      "them": {
+        "stars": 5,
+        "pct": 18.3
+      }
+    },
+    {
+      "date": "2026-10-06",
+      "enemy": "DEPOKSADBOYS",
+      "size": 5,
+      "xp": 70,
+      "result": "tie",
+      "us": {
+        "stars": 15,
+        "pct": 100
+      },
+      "them": {
+        "stars": 15,
+        "pct": 100
+      }
+    },
+    {
+      "date": "2026-10-02",
+      "enemy": "Flolo",
+      "size": 5,
+      "xp": 72,
+      "result": "tie",
+      "us": {
+        "stars": 15,
+        "pct": 100
+      },
+      "them": {
+        "stars": 15,
+        "pct": 100
+      }
+    },
+    {
+      "date": "2026-09-30",
+      "enemy": "Badgers",
+      "size": 5,
+      "xp": 67,
+      "result": "lose",
+      "us": {
+        "stars": 14,
+        "pct": 95
+      },
+      "them": {
+        "stars": 15,
+        "pct": 100
+      }
+    },
+    {
+      "date": "2026-09-28",
+      "enemy": "Zags Clan",
+      "size": 5,
+      "xp": 115,
+      "result": "win",
+      "us": {
+        "stars": 14,
+        "pct": 95.8
+      },
+      "them": {
+        "stars": 1,
+        "pct": 14
+      }
+    },
+    {
+      "date": "2026-09-26",
+      "enemy": "MR UA",
+      "size": 5,
+      "xp": 104,
+      "result": "win",
+      "us": {
+        "stars": 14,
+        "pct": 95.4
+      },
+      "them": {
+        "stars": 0,
+        "pct": 0
+      }
+    }
+  ]
+}
