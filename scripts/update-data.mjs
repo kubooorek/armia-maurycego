@@ -5,6 +5,10 @@
 
 import { writeFile, readFile } from "node:fs/promises";
 
+// Siatka bezpieczeństwa: nieoczekiwany błąd nie kończy się czerwonym statusem, tylko wpisem w logu
+process.on("unhandledRejection", e => { console.error("Nieoczekiwany błąd:", e); process.exit(0); });
+process.on("uncaughtException", e => { console.error("Nieoczekiwany błąd:", e); process.exit(0); });
+
 const TAG = "#2GQQ8RGRL";
 const DISCORD_INVITE = "7SquD7SF3";
 const COUNTER = "https://api.counterapi.dev/v2/armia-maurycego/odwiedziny";
@@ -12,10 +16,23 @@ const BASE = "https://cocproxy.royaleapi.dev/v1";
 const TOKEN = process.env.COC_TOKEN;
 if (!TOKEN) { console.error("Brak sekretu COC_TOKEN"); process.exit(1); }
 
+// Zapytanie do API z ponawianiem (3 próby) i limitem czasu — chwilowe błędy serwera nie psują aktualizacji
 async function api(path) {
-  const res = await fetch(BASE + path, { headers: { Authorization: `Bearer ${TOKEN}` } });
-  if (!res.ok) throw new Error(`${path} → HTTP ${res.status}: ${await res.text()}`);
-  return res.json();
+  let last;
+  for (let i = 0; i < 3; i++) {
+    try {
+      const res = await fetch(BASE + path, { headers: { Authorization: `Bearer ${TOKEN}` }, signal: AbortSignal.timeout(20000) });
+      if (res.ok) return res.json();
+      const txt = await res.text();
+      last = new Error(`${path} → HTTP ${res.status}: ${txt.slice(0, 300)}`);
+      if (res.status === 404 || res.status === 403) throw last;   // tych błędów nie ponawiamy
+    } catch (e) {
+      last = e;
+      if (/HTTP 40[34]/.test(e.message)) throw e;
+    }
+    await new Promise(r => setTimeout(r, 2000 * (i + 1)));
+  }
+  throw last;
 }
 async function safe(label, fn, fallback = null) {
   try { return await fn(); } catch (e) { console.warn(`${label} niedostępne:`, e.message); return fallback; }
@@ -31,7 +48,13 @@ let old = null;
 try { old = JSON.parse(await readFile("data.json", "utf8")); } catch {}
 
 /* ---------- Klan i członkowie ---------- */
-const clan = await api(`/clans/${enc(TAG)}`);
+let clan;
+try { clan = await api(`/clans/${enc(TAG)}`); }
+catch (e) {
+  // API gry chwilowo niedostępne — kończymy spokojnie, dane zaktualizują się przy następnym uruchomieniu
+  console.warn("API Clash of Clans nie odpowiada, pomijam tę aktualizację:", e.message);
+  process.exit(0);
+}
 const members = (clan.memberList || []).map(m => ({
   name: m.name, tag: m.tag,
   role: m.role,               // leader | coLeader | admin | member
@@ -221,7 +244,7 @@ if (Array.isArray(old?.members) && old.members.length) {
 
 /* ---------- Discord ---------- */
 const discord = await safe("Discord", async () => {
-  const r = await fetch(`https://discord.com/api/v10/invites/${DISCORD_INVITE}?with_counts=true`);
+  const r = await fetch(`https://discord.com/api/v10/invites/${DISCORD_INVITE}?with_counts=true`, { signal: AbortSignal.timeout(15000) });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   const d = await r.json();
   return {
@@ -234,7 +257,7 @@ const discord = await safe("Discord", async () => {
 
 /* ---------- Licznik odwiedzin ---------- */
 const visits = await safe("Licznik odwiedzin", async () => {
-  const r = await fetch(COUNTER);
+  const r = await fetch(COUNTER, { signal: AbortSignal.timeout(15000) });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   const d = (await r.json()).data || {};
   return (d.up_count ?? 0) - (d.down_count ?? 0);
