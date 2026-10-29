@@ -240,6 +240,96 @@ const visits = await safe("Licznik odwiedzin", async () => {
   return (d.up_count ?? 0) - (d.down_count ?? 0);
 });
 
+/* ---------- Historia klanu (wykresy) ---------- */
+const today = new Date().toISOString().slice(0, 10);
+let history = Array.isArray(old?.history) ? old.history : [];
+const snap = {
+  d: today, members: members.length,
+  avgTh: Math.round(members.reduce((a, m) => a + m.th, 0) / (members.length || 1) * 10) / 10,
+  level: clan.clanLevel, wins: clan.warWins ?? null, points: clan.clanPoints ?? null
+};
+history = history.filter(h => h.d !== today);
+history.push(snap);
+history = history.slice(-180);
+
+/* ---------- Bazowy stan tygodnia (wyzwanie tygodnia) ---------- */
+function weekKey(dt) {
+  const d = new Date(Date.UTC(dt.getUTCFullYear(), dt.getUTCMonth(), dt.getUTCDate()));
+  const day = (d.getUTCDay() + 6) % 7;            // poniedziałek = 0
+  d.setUTCDate(d.getUTCDate() - day);
+  return d.toISOString().slice(0, 10);            // data poniedziałku
+}
+const wk = weekKey(new Date());
+let weekBase = old?.weekBase;
+if (!weekBase || weekBase.week !== wk) {
+  weekBase = { week: wk, players: {} };
+  for (const m of (old?.members || members)) {
+    weekBase.players[m.tag] = { given: m.given ?? 0, warStars: m.profile?.warStars ?? null, capital: m.profile?.capital ?? null };
+  }
+}
+for (const m of members) {   // gracze, którzy dołączyli w trakcie tygodnia
+  if (!weekBase.players[m.tag]) weekBase.players[m.tag] = { given: m.given ?? 0, warStars: m.profile?.warStars ?? null, capital: m.profile?.capital ?? null };
+}
+
+/* ---------- Powiadomienia na Discordzie (webhook) ---------- */
+const WEBHOOK = process.env.DISCORD_WEBHOOK;
+let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
+const SITE = "https://kubooorek.github.io/armia-maurycego/";
+async function post(content) {
+  if (!WEBHOOK) return;
+  try {
+    const r = await fetch(WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: [] } }) });
+    if (!r.ok) console.warn("Webhook:", r.status, await r.text());
+    await new Promise(res => setTimeout(res, 1200));
+  } catch (e) { console.warn("Webhook niedostępny:", e.message); }
+}
+const parseT = t => t ? new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : null;
+const firstRun = !old;   // przy pierwszym uruchomieniu nic nie wysyłamy (brak historii)
+
+if (WEBHOOK && !firstRun) {
+  // 1) Ruchy w klanie z tego uruchomienia
+  const RN = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
+  const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
+  for (const e of freshEvents.reverse()) {
+    if (e.type === "join") await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️`);
+    if (e.type === "th") await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`);
+    if (e.type === "promote") await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`);
+  }
+
+  // 2) Wojny: start, przypomnienia, wynik (zwykła wojna lub runda CWL)
+  const liveWars = [];
+  if (currentWar) liveWars.push({ ...currentWar, key: `w:${currentWar.start}`, label: "Wojna" });
+  for (const cw of (cwl?.wars || [])) liveWars.push({ ...cw, key: `c:${cw.start}:${cw.them.name}`, label: `CWL · Runda ${cw.round}` });
+  for (const w of liveWars) {
+    const sent = notified[w.key] || (notified[w.key] = []);
+    const once = async (id, msg) => { if (!sent.includes(id)) { sent.push(id); await post(msg); } };
+    const sinceStart = (Date.now() - parseT(w.start)) / 3600e3, sinceEnd = (Date.now() - parseT(w.end)) / 3600e3;
+    if (w.state === "preparation") {
+      await once("prep", `🛡️ **${w.label}** rozpoczyna się! Przeciwnik: **${w.them.name}** (${w.size} vs ${w.size}). Dzień przygotowań — wyślijcie wojska do zamków obronnych!`);
+    }
+    if (w.state === "inWar") {
+      const left = (parseT(w.end) - Date.now()) / 3600e3;
+      const missing = w.members.filter(m => m.attacks.length < w.perMember).map(m => `${m.name}${w.perMember - m.attacks.length > 1 ? ` ×${w.perMember - m.attacks.length}` : ""}`);
+      if (sinceStart < 6) await once("start", `⚔️ **${w.label}** — dzień bitwy ruszył! Przeciwnik: **${w.them.name}**. Pierwszy atak na swój numer! ${SITE}`);
+      // jedno przypomnienie na próg (12h, 4h, 1h) — wysyłamy tylko najmniejszy osiągnięty
+      const hit = [1, 4, 12].find(h => left <= h && left > 0);
+      if (hit && missing.length && !sent.includes(`r${hit}`)) {
+        for (const h of [12, 4, 1]) if (h >= hit && !sent.includes(`r${h}`)) sent.push(`r${h}`);
+        await post(`⏰ **${w.label}** — zostało ok. **${Math.max(1, Math.round(left))}h** do końca! Wynik: ${w.us.stars} ★ ${w.them.stars}.\nBrakujące ataki: ${missing.join(", ")}`);
+      }
+    }
+    if (w.state === "warEnded" && sinceEnd < 6) {
+      const res = w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct) ? "🏆 **Wygrana!**"
+        : (w.us.stars === w.them.stars && w.us.pct === w.them.pct) ? "🤝 **Remis**" : "❌ **Przegrana**";
+      const missing = w.members.filter(m => m.attacks.length < w.perMember).map(m => m.name);
+      await once("end", `${res} ${w.label} vs **${w.them.name}** — ${w.us.stars} ★ ${w.them.stars} (${w.us.pct}% : ${w.them.pct}%).${missing.length ? `\nOpuszczone ataki: ${missing.join(", ")}` : "\nWszyscy zaatakowali — brawo! 💪"}`);
+    }
+  }
+}
+// sprzątanie starych kluczy powiadomień
+notified = Object.fromEntries(Object.entries(notified).slice(-40));
+
 /* ---------- Zapis ---------- */
 const data = {
   updated: new Date().toISOString(),
@@ -247,6 +337,7 @@ const data = {
   memberCount: clan.members,
   cwlLeague: clan.warLeague?.name ?? null,
   warWinStreak: clan.warWinStreak,
+  warWins: clan.warWins ?? null,
   currentWar,
   cwl,
   visits,
@@ -254,6 +345,9 @@ const data = {
   raids,
   events,
   warArchive,
+  history,
+  weekBase,
+  notified,
   members,
   wars
 };
