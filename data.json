@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-29T17:57:01.194Z",
+  "updated": "2026-10-29T18:37:17.558Z",
   "clanLevel": 3,
-  "memberCount": 41,
+  "memberCount": 42,
   "cwlLeague": "Unranked",
   "warWinStreak": 9,
   "warWins": 11,
@@ -13,9 +13,9 @@
     "end": "20261030T040002.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 57,
-      "pct": 95,
-      "attacks": 24
+      "stars": 60,
+      "pct": 100,
+      "attacks": 25
     },
     "them": {
       "name": "старше 18",
@@ -60,7 +60,13 @@
         "tag": "#LJYR92002",
         "pos": 3,
         "th": 12,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "3. zhan_ed"
+          }
+        ]
       },
       {
         "name": "oggsgdjdjbd",
@@ -303,12 +309,12 @@
     ]
   },
   "cwl": null,
-  "visits": 7,
+  "visits": 10,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
-    "members": 11
+    "online": 7,
+    "members": 12
   },
   "raids": [
     {
@@ -440,7 +446,14 @@
       "members": []
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "t": "2026-10-29T18:37:15.767Z",
+      "type": "join",
+      "name": "maati",
+      "th": 3
+    }
+  ],
   "warArchive": [
     {
       "start": "20261029T040002.000Z",
@@ -449,7 +462,7 @@
       "size": 20,
       "perMember": 2,
       "state": "inWar",
-      "us": 57,
+      "us": 60,
       "them": 50,
       "members": [
         {
@@ -479,7 +492,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -670,8 +688,8 @@
   "history": [
     {
       "d": "2026-10-29",
-      "members": 41,
-      "avgTh": 8.3,
+      "members": 42,
+      "avgTh": 8.2,
       "level": 3,
       "wins": 11,
       "points": 16200
@@ -884,6 +902,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 0
+      },
+      "#GLV9998PC": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
       }
     }
   },
@@ -894,7 +917,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 7669,
+      "given": 7700,
       "received": 3077,
       "trophies": 447,
       "profile": {
@@ -946,7 +969,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 801,
+      "given": 821,
       "received": 80,
       "trophies": 0,
       "profile": {
@@ -993,7 +1016,7 @@
       "tag": "#GYUJR2URJ",
       "role": "coLeader",
       "th": 12,
-      "given": 3932,
+      "given": 3962,
       "received": 2554,
       "trophies": 391,
       "profile": {
@@ -1127,7 +1150,7 @@
         "trophies": 396,
         "best": 2224,
         "league": "Archer League 8",
-        "warStars": 112,
+        "warStars": 115,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 394851,
@@ -1204,11 +1227,11 @@
       "role": "admin",
       "th": 9,
       "given": 0,
-      "received": 212,
-      "trophies": 0,
+      "received": 273,
+      "trophies": 24,
       "profile": {
         "level": 134,
-        "trophies": 0,
+        "trophies": 24,
         "best": 3631,
         "league": "Archer League 8",
         "warStars": 3158,
@@ -1776,7 +1799,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
@@ -1788,7 +1811,7 @@
       "role": "member",
       "th": 7,
       "given": 12,
-      "received": 285,
+      "received": 305,
       "trophies": 309,
       "profile": {
         "level": 33,
@@ -2050,6 +2073,27 @@
             "max": 110
           }
         ]
+      }
+    },
+    {
+      "name": "maati",
+      "tag": "#GLV9998PC",
+      "role": "member",
+      "th": 3,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 4,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": []
       }
     },
     {
