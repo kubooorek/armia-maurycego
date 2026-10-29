@@ -1113,7 +1113,7 @@ const EN_RULES = [
   [/^Wojny: ❌ wypisany\(a\) · Wygrane ataki: (.+) · Obrony: (.+)$/, "Wars: ❌ opted out · Attack wins: $1 · Defences: $2"],
   [/^Pozostałe ataki \((\d+)\):$/, "Attacks left ($1):"],
   [/^(.+)% zniszczeń · ⚔️ (.+)$/, "$1% destruction · ⚔️ $2"],
-  [/^(\d+) vs (\d+) · stan z (.+) \(odświeżane co godzinę\)$/, "$1 vs $2 · as of $3 (refreshed hourly)"]
+  [/^(\d+) vs (\d+) · stan z (.+) \(odświeżane co 15 min\)$/, "$1 vs $2 · as of $3 (refreshed every 15 min)"]
 ];
 let LANG = "pl"; try{ LANG = localStorage.getItem("am_lang")==="en" ? "en" : "pl"; }catch(e){}
 const LOC = () => LANG==="en" ? "en-GB" : "pl-PL";
@@ -1484,7 +1484,7 @@ $("#cwlTop").innerHTML = CWL.top.length
     <div class="lw-bar"><u style="width:${cw.us.stars/sumStars*100}%"></u><s style="width:${cw.them.stars/sumStars*100}%"></s></div>
     ${cw.state==="inWar"?`<div class="lw-left">Pozostałe ataki (${missing.reduce((a,m)=>a+m.left,0)}):</div>
     <div class="lw-chips">${missing.length?missing.map(m=>`<span>${esc(m.n)}<b>×${m.left}</b></span>`).join(""):`<span class="all">Wszyscy zaatakowali ✓</span>`}</div>`:""}
-    <div class="lw-foot">${cw.size} vs ${cw.size} · stan z ${new Date(AUTO.updated).toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"})} (odświeżane co godzinę)</div>`;
+    <div class="lw-foot">${cw.size} vs ${cw.size} · stan z ${new Date(AUTO.updated).toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"})} (odświeżane co 15 min)</div>`;
   box.hidden=false;
   const tgt = cw.state==="preparation"?start:end;
   const tick=()=>{const el=$("#lwTime"); if(!el||!tgt) return; let d=Math.max(0,(tgt-Date.now())/1000);
