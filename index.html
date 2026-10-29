@@ -590,7 +590,7 @@
       <div class="stat" id="visitStat"><b id="statVisits">TH3+</b><span id="statVisitsLabel">Minimalny ratusz</span></div>
       <div class="stat"><b id="statDays">–</b><span>Dni razem</span></div>
     </div>
-    <div class="fact" id="fact" hidden><span class="fact-ico">💡</span><div><b id="factHead">Czy wiesz, że…</b><p id="factText"></p></div><button id="factNext" title="Następna ciekawostka" aria-label="Następna ciekawostka">↻</button></div>
+    <div class="fact" id="fact" hidden><span class="fact-ico">💡</span><div><b id="factHead">Czy wiesz, że…</b><p id="factText"></p></div></div>
   </div>
 </header>
 
@@ -1922,11 +1922,12 @@ $("#cwlTop").innerHTML = CWL.top.length
 /* ===== Ciekawostka dnia ===== */
 (function(){
   if(!FACTS.length) return;
-  const day=Math.floor((Date.now()+36e5)/864e5);   // zmienia się codziennie o północy (czas polski)
-  let i=day%FACTS.length;
+  // jedna ciekawostka na dobę: zmienia się o północy czasu polskiego (także przy czasie letnim)
+  const pl=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+  const day=Math.round(Date.parse(pl+"T00:00:00Z")/864e5);
+  const i=day%FACTS.length;
   const show=()=>{ $("#factText").textContent=FACTS[i][LANG==="en"?1:0]; };
   $("#factHead").textContent=LANG==="en"?"Did you know…":"Czy wiesz, że…";
-  $("#factNext").addEventListener("click",()=>{ i=(i+1)%FACTS.length; const t=$("#factText"); t.style.opacity=0; setTimeout(()=>{show(); t.style.opacity=1;},150); });
   show(); $("#fact").hidden=false;
 })();
 
