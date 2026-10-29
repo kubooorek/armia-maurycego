@@ -340,6 +340,22 @@
 
         .card ul { padding-left: 20px; }
 
+        /* SLIDER KALKULATORA TH */
+        .th-slider {
+            width: 100%;
+            margin: 20px 0;
+            accent-color: var(--gold);
+            cursor: pointer;
+        }
+
+        .th-scale {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: 'Orbitron', sans-serif;
+        }
+
         /* STRATEGIE ATAKU STYLES */
         .th-buttons-grid {
             display: flex;
@@ -442,7 +458,7 @@
                     <li><a href="#gracze">Skład</a></li>
                     <li><a href="#wojny">Wojny</a></li>
                     <li><a href="#slawa">Sława klanowa</a></li>
-                    <li><a href="#status-rekrutacji">Rekrutacja</a></li>
+                    <li><a href="#kalkulator-th">Rekrutacja</a></li>
                     <li><a href="#priorytety">Priorytety</a></li>
                     <li><a href="#kalendarz">Kalendarz</a></li>
                     <li><a href="https://discord.gg/7SquD7SF3" target="_blank" class="nav-discord">Dołącz na Discord</a></li>
@@ -475,7 +491,7 @@
             <p style="font-size:0.85rem; color:var(--text-muted);">40/50 miejsc zajętych · 10 wolnych miejsc.</p>
             <div class="hero-card-stats">
                 <div class="stat-box"><strong>40/50</strong><span>Miejsca</span></div>
-                <div class="stat-box"><strong>TH 3–18</strong><span>Strategie</span></div>
+                <div class="stat-box"><strong>TH 3–17</strong><span>Kalkulator</span></div>
                 <div class="stat-box"><strong>Fair play</strong><span>Zasady</span></div>
             </div>
             <p style="font-size:0.75rem; color:var(--text-muted); margin-top:15px; text-align:center;">Tag klanu: <strong>#2GQO8RGRL</strong></p>
@@ -533,19 +549,50 @@
         </div>
     </section>
 
-    <!-- STATUS REKRUTACJI -->
-    <section id="status-rekrutacji" class="container">
-        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Informacje</h2>
-        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Sprawdź status rekrutacji</h3>
-        <div class="card" style="max-width: 600px;">
-            <p style="color:var(--text-muted); margin-bottom: 15px;">Aktualny stan naboru w klanie Armia Maurycego.</p>
-            <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;">Liczba członków: 40/50</p>
-            <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
-                <div style="background: var(--gold); width: 80%; height: 100%;"></div>
+    <!-- KALKULATOR RATUSZA (TH) ORAZ ZABEZPIECZONY SUWAK REKRUTACJI -->
+    <section id="kalkulator-th" class="container">
+        <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Interaktywny widget</h2>
+        <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Kalkulator Ratusza (TH)</h3>
+        <div class="grid-2">
+            <!-- LEWA STRONA: KALKULATOR TH -->
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Twój poziom TH</h3>
+                    <span style="font-size: 0.8rem; color: var(--text-muted); background: var(--darker); padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border);">TH 3–17</span>
+                </div>
+                <p id="thDisplay" style="font-size: 2.2rem; font-family:'Orbitron'; color:var(--gold); margin:10px 0;">TH 10</p>
+                <input type="range" id="thSlider" min="3" max="17" value="10" class="th-slider" oninput="updateThCalculator(this.value)">
+                <div class="th-scale">
+                    <span>TH3</span>
+                    <span>TH10</span>
+                    <span>TH17</span>
+                </div>
+                <div id="thAdvice" style="margin-top: 20px;">
+                    <!-- Dynamiczna treść JS -->
+                </div>
             </div>
-            <div style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
-                <p style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
-                <p style="font-size: 0.85rem;">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
+
+            <!-- PRAWA STRONA: STATUS REKRUTACJI (TYLKO DLA LIDERKA) -->
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Sprawdź status rekrutacji</h3>
+                    <button onclick="unlockLeader()" id="leaderBtn" style="background:transparent; border:1px solid var(--border); color:var(--text-muted); font-size:0.7rem; padding:3px 8px; border-radius:4px; cursor:pointer;" title="Kliknij, aby odblokować edycję dla lidera">🔒 Lider</button>
+                </div>
+                <p style="color:var(--text-muted); margin-bottom: 15px; font-size: 0.9rem;">Ustaw liczbę członków, żeby wyświetlić właściwy komunikat.</p>
+                
+                <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;" id="memberCountText">Liczba członków: 40/50</p>
+                
+                <!-- SUWAK ZABEZPIECZONY (DOMYŚLNIE DISABLED) -->
+                <input type="range" id="memberSlider" min="0" max="50" value="40" class="th-slider" disabled oninput="updateRecruitment(this.value)">
+                
+                <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
+                    <div id="progressBar" style="background: var(--gold); width: 80%; height: 100%;"></div>
+                </div>
+                
+                <div id="recruitmentBox" style="background: rgba(46, 204, 113, 0.1); border: 1px solid var(--green); padding: 15px; border-radius: 8px;">
+                    <p id="recruitmentStatusTitle" style="color:var(--green); font-weight:700; margin-bottom:5px;">🟢 REKRUTACJA: OTWARTA</p>
+                    <p id="recruitmentStatusDesc" style="font-size: 0.85rem; color: var(--text-muted);">Zajęte miejsca: 40/50. Można przyjąć jeszcze 10 graczy.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -908,11 +955,52 @@
 
     <!-- SKRYPTY -->
     <script>
-        // Odliczanie do rajdów oraz pełna automatyzacja kalendarza
+        // --- Odblokowanie suwaka rekrutacji dla Lidera ---
+        // Kliknij ikonę kłódki "Lider" w prawym górnym rogu karty i wpisz hasło: admin123
+        function unlockLeader() {
+            const pass = prompt("Podaj hasło lidera:");
+            if (pass === "admin123") {
+                const slider = document.getElementById("memberSlider");
+                slider.removeAttribute("disabled");
+                document.getElementById("leaderBtn").innerText = "🔓 Edycja aktywna";
+                document.getElementById("leaderBtn").style.color = "var(--green)";
+                alert("Suwak rekrutacji został odblokowany! Możesz zmieniać liczbę członków.");
+            } else if (pass !== null) {
+                alert("Błędne hasło!");
+            }
+        }
+
+        // --- Aktualizacja statusu rekrutacji suwakiem ---
+        function updateRecruitment(val) {
+            document.getElementById('memberCountText').innerText = `Liczba członków: ${val}/50`;
+            const percent = (val / 50) * 100;
+            document.getElementById('progressBar').style.width = percent + '%';
+            
+            const box = document.getElementById('recruitmentBox');
+            const title = document.getElementById('recruitmentStatusTitle');
+            const desc = document.getElementById('recruitmentStatusDesc');
+
+            if (val >= 50) {
+                box.style.borderColor = 'var(--red)';
+                box.style.background = 'rgba(231, 76, 60, 0.1)';
+                title.style.color = 'var(--red)';
+                title.innerText = '🔴 REKRUTACJA: ZAMKNIĘTA';
+                desc.innerText = `Klan jest pełny (50/50). Brak wolnych miejsc.`;
+            } else {
+                box.style.borderColor = 'var(--green)';
+                box.style.background = 'rgba(46, 204, 113, 0.1)';
+                title.style.color = 'var(--green)';
+                title.innerText = '🟢 REKRUTACJA: OTWARTA';
+                const freeSpots = 50 - val;
+                desc.innerText = `Zajęte miejsca: ${val}/50. Można przyjąć jeszcze ${freeSpots} ${freeSpots === 1 ? 'gracza' : 'graczy'}.`;
+            }
+        }
+
+        // --- Odliczanie do rajdów oraz automatyzacja kalendarza ---
         function updateAutomatedWidgets() {
             const now = new Date();
             
-            // --- Odliczanie do Raid Weekend (Piątek 8:00) ---
+            // Odliczanie do Raid Weekend (Piątek 8:00)
             const resultDay = 5; 
             const resultHour = 8; 
             let targetRaid = new Date();
@@ -938,12 +1026,12 @@
                 }
             }
 
-            // --- Automatyzacja kalendarza ---
+            // Automatyzacja kalendarza
             const day = now.getDate();
             const month = now.getMonth();
             const year = now.getFullYear();
 
-            // Clan Games (22 - 28)
+            // Clan Games (22 - 28) -> Zakończone w tym miesiącu
             const cgEl = document.getElementById('cgStatus');
             if(cgEl) {
                 if (day >= 22 && day <= 28) {
@@ -1016,6 +1104,37 @@
                 }
             }
         }
+
+        // Kalkulator TH
+        function updateThCalculator(val) {
+            document.getElementById('thDisplay').innerText = 'TH ' + val;
+            const adviceBox = document.getElementById('thAdvice');
+            let cwlText = "";
+            let armyText = "";
+
+            if (val <= 7) {
+                cwlText = "Przy TH3–TH7 traktuj CWL przede wszystkim jako okazję do nauki i zdobywania doświadczenia. Udział zależy od planu lidera.";
+                armyText = "TH3–TH7: rozwijaj olbrzymów i łuczniczki, a później czarodzieje i smoki. Ulepszaj obozy, koszary i laboratorium.";
+            } else if (val <= 11) {
+                cwlText = "Solidny poziom do regularnych występów w składzie wojennym i CWL. Zadbaj o maxowanie bohaterów!";
+                armyText = `TH${val}: skup się na silnych armiach farmingowych oraz kluczowych czarach i maszynach oblężniczych.`;
+            } else {
+                cwlText = "Wysoki poziom ratusza. Twoje ataki mają kluczowe znaczenie dla wyniku całego klanu w CWL i wojnach!";
+                armyText = `TH${val}: pełny max kluczowych budynków obronnych oraz maksymalny poziom najważniejszych wojsk i zwierzaków.`;
+            }
+
+            adviceBox.innerHTML = `
+                <div style="background: var(--darker); border: 1px solid var(--border); padding: 12px; border-radius: 6px; margin-bottom: 10px;">
+                    <strong style="color: var(--gold); display: block; margin-bottom: 4px; font-size: 0.85rem; font-family: 'Orbitron';">CWL: skład rozwojowy</strong>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">${cwlText}</p>
+                </div>
+                <div style="background: var(--darker); border: 1px solid var(--border); padding: 12px; border-radius: 6px;">
+                    <strong style="color: var(--gold); display: block; margin-bottom: 4px; font-size: 0.85rem; font-family: 'Orbitron';">Minimalny kierunek rozwoju wojska</strong>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">${armyText}</p>
+                </div>
+            `;
+        }
+        updateThCalculator(10);
 
         // Baza Meta Strategii dla każdego TH
         const metaStrategies = {
