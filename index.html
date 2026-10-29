@@ -533,7 +533,7 @@
         </div>
     </section>
 
-    <!-- STATUS REKRUTACI (SZTYWNY 40/50 - TYLKO DLA WŁAŚCICIELA) -->
+    <!-- STATUS REKRUTACJI -->
     <section id="status-rekrutacji" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Informacje</h2>
         <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Sprawdź status rekrutacji</h3>
@@ -949,9 +949,13 @@
                 if (day >= 22 && day <= 28) {
                     cgEl.style.color = 'var(--green)';
                     cgEl.innerText = 'TRWAJĄ';
+                } else if (day > 28) {
+                    let targetCG = new Date(year, month + 1, 22);
+                    const daysLeft = Math.ceil((targetCG - now) / (1000 * 60 * 60 * 24));
+                    cgEl.style.color = 'var(--red)';
+                    cgEl.innerText = `ZA ${daysLeft} ${daysLeft === 1 ? 'DZIEŃ' : 'DNI'}`;
                 } else {
                     let targetCG = new Date(year, month, 22);
-                    if (day > 28) targetCG = new Date(year, month + 1, 22);
                     const daysLeft = Math.ceil((targetCG - now) / (1000 * 60 * 60 * 24));
                     cgEl.style.color = 'var(--red)';
                     cgEl.innerText = `ZA ${daysLeft} ${daysLeft === 1 ? 'DZIEŃ' : 'DNI'}`;
@@ -966,6 +970,7 @@
                     cwlEl.innerText = 'TRWAJĄ';
                 } else {
                     let targetCWL = new Date(year, month + 1, 1);
+                    if (day >= 1 && day > 7) targetCWL = new Date(year, month + 1, 1);
                     const daysLeft = Math.ceil((targetCWL - now) / (1000 * 60 * 60 * 24));
                     cwlEl.style.color = 'var(--red)';
                     cwlEl.innerText = `ZA ${daysLeft} ${daysLeft === 1 ? 'DZIEŃ' : 'DNI'}`;
@@ -1027,7 +1032,7 @@
             '8': { army: "Dragons + Lightning Spells", tip: "Zdejmij 2 przeciwogniowe wieże obronne za pomocą błyskawic, a resztę zniszcz spamem smoków." },
             '7': { army: "Dragons + Rage Spells", tip: "Smoki z czarami wściekłości to pewniak na każdą bazę TH7 w wojnie." },
             '6': { army: "Giant + Healer + Wizards", tip: "Giganci przyjmują obrażenia, Uzdrowicielka ich leczy, a czarodzieje czyszczą budynki." },
-            '5': {army: "Loons + Wizards + Giants", tip: "Użyj gigantów jako tarczy i doślij balony na obronę przeciwlotniczą."},
+            '5': { army: "Loons + Wizards + Giants", tip: "Użyj gigantów jako tarczy i doślij balony na obronę przeciwlotniczą." },
             '3-4': { army: "Giants + Archers + Barbarians", tip: "Podstawowy skład: Barbarzyńcy i Łuczniczki do czyszczenia, Giganci jako tank." }
         };
 
