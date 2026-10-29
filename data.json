@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-29T18:37:17.558Z",
+  "updated": "2026-10-29T20:58:22.747Z",
   "clanLevel": 3,
-  "memberCount": 42,
+  "memberCount": 43,
   "cwlLeague": "Unranked",
   "warWinStreak": 9,
   "warWins": 11,
@@ -15,7 +15,7 @@
       "name": "ARMIA MAURYCEGO",
       "stars": 60,
       "pct": 100,
-      "attacks": 25
+      "attacks": 28
     },
     "them": {
       "name": "старше 18",
@@ -34,6 +34,11 @@
             "stars": 3,
             "pct": 100,
             "target": "1. спартак"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "2. РУСТАМ"
           }
         ]
       },
@@ -222,6 +227,11 @@
             "stars": 3,
             "pct": 100,
             "target": "14. 27-09-2025"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "12. пограничники"
           }
         ]
       },
@@ -260,6 +270,11 @@
             "stars": 3,
             "pct": 100,
             "target": "17. 北极星✨1992"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "14. 27-09-2025"
           }
         ]
       },
@@ -309,11 +324,11 @@
     ]
   },
   "cwl": null,
-  "visits": 10,
+  "visits": 15,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 7,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -448,6 +463,19 @@
   ],
   "events": [
     {
+      "t": "2026-10-29T20:58:21.760Z",
+      "type": "th",
+      "name": "maati",
+      "from": 3,
+      "to": 4
+    },
+    {
+      "t": "2026-10-29T20:58:21.760Z",
+      "type": "join",
+      "name": "TwojaSiora",
+      "th": 3
+    },
+    {
       "t": "2026-10-29T18:37:15.767Z",
       "type": "join",
       "name": "maati",
@@ -469,6 +497,10 @@
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
           "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
             {
               "stars": 3,
               "pct": 100
@@ -617,6 +649,10 @@
             {
               "stars": 3,
               "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
             }
           ]
         },
@@ -643,6 +679,10 @@
           "name": "Riczard",
           "tag": "#R2PCVYQG2",
           "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
             {
               "stars": 3,
               "pct": 100
@@ -688,8 +728,8 @@
   "history": [
     {
       "d": "2026-10-29",
-      "members": 42,
-      "avgTh": 8.2,
+      "members": 43,
+      "avgTh": 8.1,
       "level": 3,
       "wins": 11,
       "points": 16200
@@ -907,6 +947,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 0
+      },
+      "#GQR98J880": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
       }
     }
   },
@@ -917,7 +962,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 7700,
+      "given": 7726,
       "received": 3077,
       "trophies": 447,
       "profile": {
@@ -969,7 +1014,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 821,
+      "given": 908,
       "received": 80,
       "trophies": 0,
       "profile": {
@@ -1016,7 +1061,7 @@
       "tag": "#GYUJR2URJ",
       "role": "coLeader",
       "th": 12,
-      "given": 3962,
+      "given": 3963,
       "received": 2554,
       "trophies": 391,
       "profile": {
@@ -1142,11 +1187,11 @@
       "tag": "#LJYR92002",
       "role": "member",
       "th": 12,
-      "given": 301,
+      "given": 302,
       "received": 0,
       "trophies": 396,
       "profile": {
-        "level": 119,
+        "level": 120,
         "trophies": 396,
         "best": 2224,
         "league": "Archer League 8",
@@ -1227,11 +1272,11 @@
       "role": "admin",
       "th": 9,
       "given": 0,
-      "received": 273,
-      "trophies": 24,
+      "received": 335,
+      "trophies": 42,
       "profile": {
         "level": 134,
-        "trophies": 24,
+        "trophies": 42,
         "best": 3631,
         "league": "Archer League 8",
         "warStars": 3158,
@@ -1523,7 +1568,7 @@
       "role": "member",
       "th": 8,
       "given": 169,
-      "received": 434,
+      "received": 460,
       "trophies": 104,
       "profile": {
         "level": 41,
@@ -1644,7 +1689,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
@@ -1779,10 +1824,10 @@
       "role": "member",
       "th": 8,
       "given": 343,
-      "received": 247,
+      "received": 274,
       "trophies": 349,
       "profile": {
-        "level": 40,
+        "level": 41,
         "trophies": 349,
         "best": 349,
         "league": "Skeleton League 1",
@@ -1843,12 +1888,39 @@
       "profile": {
         "level": 32,
         "trophies": 281,
-        "best": 260,
+        "best": 281,
         "league": "Skeleton League 1",
         "warStars": 18,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 25892,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      }
+    },
+    {
+      "name": "Andrzej",
+      "tag": "#R0VLRL292",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 100,
+      "trophies": 273,
+      "profile": {
+        "level": 34,
+        "trophies": 273,
+        "best": 273,
+        "league": "Skeleton League 1",
+        "warStars": 3,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 250,
         "warPref": "in",
         "heroes": [
           {
@@ -1995,33 +2067,6 @@
       }
     },
     {
-      "name": "Andrzej",
-      "tag": "#R0VLRL292",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 100,
-      "trophies": 73,
-      "profile": {
-        "level": 33,
-        "trophies": 73,
-        "best": 73,
-        "league": "Skeleton League 1",
-        "warStars": 3,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 250,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 3,
-            "max": 110
-          }
-        ]
-      }
-    },
-    {
       "name": "threeten",
       "tag": "#R8RVQVPCC",
       "role": "member",
@@ -2079,12 +2124,12 @@
       "name": "maati",
       "tag": "#GLV9998PC",
       "role": "member",
-      "th": 3,
+      "th": 4,
       "given": 0,
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 4,
+        "level": 8,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -2093,7 +2138,13 @@
         "defenseWins": 0,
         "capital": 0,
         "warPref": "in",
-        "heroes": []
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
       }
     },
     {
@@ -2105,7 +2156,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 13,
+        "level": 14,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -2234,7 +2285,7 @@
       "received": 10,
       "trophies": 0,
       "profile": {
-        "level": 8,
+        "level": 9,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -2271,6 +2322,27 @@
             "max": 110
           }
         ]
+      }
+    },
+    {
+      "name": "TwojaSiora",
+      "tag": "#GQR98J880",
+      "role": "member",
+      "th": 3,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 7,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": []
       }
     }
   ],
