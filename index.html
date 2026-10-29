@@ -222,6 +222,31 @@
   .updated{color:var(--muted);font-size:.74rem;margin-top:8px}
   .updated .live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle}
   @media (max-width:900px){.records{grid-template-columns:repeat(2,1fr)}}
+  .live-war{background:linear-gradient(135deg,rgba(217,83,79,.12),rgba(232,180,74,.06));border:1px solid rgba(217,83,79,.45);border-radius:var(--radius);padding:16px 18px;margin-bottom:14px}
+  .lw-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .lw-badge{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#ff7a70}
+  .lw-badge i{width:8px;height:8px;border-radius:50%;background:#ff4e45;box-shadow:0 0 0 4px rgba(255,78,69,.2);animation:pulse 1.6s infinite}
+  .lw-badge.prep{color:var(--gold2)} .lw-badge.prep i{background:var(--gold);box-shadow:0 0 0 4px rgba(232,180,74,.2)}
+  .lw-badge.done{color:var(--muted)} .lw-badge.done i{background:var(--muted);box-shadow:none;animation:none}
+  @keyframes pulse{50%{opacity:.35}}
+  .lw-time{font-family:ui-monospace,monospace;font-size:.86rem;color:var(--text)}
+  .lw-time small{color:var(--muted);font-family:Inter,sans-serif;margin-right:6px}
+  .lw-score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px}
+  .lw-side b{display:block;font-size:.98rem}
+  .lw-side span{color:var(--muted);font-size:.78rem}
+  .lw-side.r{text-align:right}
+  .lw-mid{font-family:Cinzel,serif;font-size:1.7rem;font-weight:800;white-space:nowrap}
+  .lw-mid .star{color:var(--gold)}
+  .lw-bar{display:flex;height:6px;border-radius:3px;overflow:hidden;background:var(--bg);margin:10px 0 12px}
+  .lw-bar u{display:block;background:linear-gradient(90deg,#2f8a55,var(--green))}
+  .lw-bar s{display:block;background:linear-gradient(90deg,var(--red),#b33a36);margin-left:auto}
+  .lw-left{font-size:.8rem;color:var(--muted);margin-bottom:6px}
+  .lw-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .lw-chips span{font-size:.78rem;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+  .lw-chips span b{color:#ff8a80;margin-left:4px}
+  .lw-chips span.all{border-color:rgba(79,180,119,.4);color:#7fd09f}
+  .lw-foot{color:var(--muted);font-size:.72rem;margin-top:10px}
+  @media (max-width:520px){.lw-score{grid-template-columns:1fr;text-align:center}.lw-side.r{text-align:center}}
   /* REQUIREMENTS */
   .reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
   .req{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
@@ -582,6 +607,7 @@
     <div class="eyebrow">Pole bitwy</div>
     <h2 class="sec-title">Historia wojen</h2>
     <p class="sec-lead">Od 5 na 5 do 20 na 20 — oto nasza droga od pierwszej bitwy.</p>
+    <div class="live-war" id="liveWar" hidden></div>
     <div class="war-summary">
       <div class="stat"><b id="wW" style="color:var(--green)">–</b><span>Wygrane</span></div>
       <div class="stat"><b id="wL" style="color:var(--red)">–</b><span>Przegrane</span></div>
@@ -834,6 +860,9 @@ const BASES = [];
 // Ogłoszenie na górze strony (null = brak). link/linkText opcjonalne.
 const ANNOUNCE = {text:"Zapisy do pierwszego sezonu CWL trwają — start 1 listopada!", link:"https://discord.gg/7SquD7SF3", linkText:"Zapisz się na Discordzie"};
 
+// Licznik odwiedzin: workspace i nazwa licznika z counterapi.dev
+const COUNTER = {workspace:"armia-maurycego", name:"odwiedziny"};
+
 /* ====== KONIEC DANYCH ====== */
 
 const $ = s => document.querySelector(s);
@@ -926,7 +955,7 @@ const EN = {
 "Jak połączyć konto z Discordem?":"How do I link my account to Discord?","Na serwerze wpisz komendę":"On the server, type","i podaj swój tag gracza. Bot zweryfikuje konto, nada rangę i zmieni nick na ten z gry.":"and enter your player tag. The bot verifies the account, gives you a role and changes your nickname to your in-game name.",
 "Gotowy do walki?":"Ready for battle?","Dołącz do Armii Maurycego i rośnij razem z nami.":"Join Armia Maurycego and grow with us.",
 "Ta strona nie jest powiązana z Supercell, nie jest przez nią wspierana ani sponsorowana. Clash of Clans jest znakiem towarowym Supercell.":"This site is not affiliated with, endorsed, sponsored or specifically approved by Supercell. Clash of Clans is a trademark of Supercell.",
-"Skopiowano tag klanu ✓":"Clan tag copied ✓","Główny Dowódca":"Commander-in-chief","Zastępca Lidera":"Deputy leader"
+"Skopiowano tag klanu ✓":"Clan tag copied ✓","Dzień przygotowań":"Preparation day","Wojna trwa":"War in progress","Wojna zakończona":"War ended","Start za":"Starts in","Koniec za":"Ends in","Wszyscy zaatakowali ✓":"Everyone has attacked ✓","Główny Dowódca":"Commander-in-chief","Zastępca Lidera":"Deputy leader"
 };
 const EN_RULES = [
   [/^Pokazano (\d+) z (\d+)$/, "Showing $1 of $2"],
@@ -945,7 +974,10 @@ const EN_RULES = [
   [/^W klanie z TH(\d+)$/, "Clan members at TH$1"], [/^Filmy z atakami i bazami TH(\d+)$/, "TH$1 attack & base videos"],
   [/^Dane z gry, aktualizacja automatyczna · (.+)$/, "Live game data, updated automatically · $1"],
   [/^· 👁 (.+) odwiedzin$/, "· 👁 $1 visits"], [/^Tag: (.+)$/, "Tag: $1"],
-  [/^Darczyńca #(\d)$/, "Donor #$1"]
+  [/^Darczyńca #(\d)$/, "Donor #$1"],
+  [/^Pozostałe ataki \((\d+)\):$/, "Attacks left ($1):"],
+  [/^(.+)% zniszczeń · ⚔️ (.+)$/, "$1% destruction · ⚔️ $2"],
+  [/^(\d+) vs (\d+) · stan z (.+) \(odświeżane co godzinę\)$/, "$1 vs $2 · as of $3 (refreshed hourly)"]
 ];
 let LANG = "pl"; try{ LANG = localStorage.getItem("am_lang")==="en" ? "en" : "pl"; }catch(e){}
 const LOC = () => LANG==="en" ? "en-GB" : "pl-PL";
@@ -1014,21 +1046,22 @@ document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",(
 $("#statMembers").textContent = MEMBERS.length + "/50";
 $("#statDays").textContent = Math.max(1, Math.floor((Date.now()-new Date(FOUNDED+"T00:00:00"))/864e5));
 
-/* ===== Licznik odwiedzin (counterapi.dev) =====
+/* ===== Licznik odwiedzin (counterapi.dev v2) =====
+   Workspace i licznik zakłada się na counterapi.dev (darmowe konto) — ustawienia w COUNTER (sekcja danych).
    Każda osoba liczona jest raz dziennie (w danej przeglądarce).
    Jeśli serwis licznika nie odpowie, w kafelku zostaje „TH3+”. */
 (async function visits(){
-  const BASE = "https://api.counterapi.dev/v1/armia-maurycego-2gqq8rgrl/odwiedziny";
+  const BASE = `https://api.counterapi.dev/v2/${COUNTER.workspace}/${COUNTER.name}`;
   const today = new Date().toISOString().slice(0,10);
   let counted = false;
-  try { counted = localStorage.getItem("am_visit") === today; } catch(e){}
+  try { counted = localStorage.getItem("am_visit2") === today; } catch(e){}
   try {
-    const res = await fetch(counted ? BASE + "/" : BASE + "/up");
+    const res = await fetch(counted ? BASE : BASE + "/up");
     if (!res.ok) throw 0;
-    const data = await res.json();
-    const n = Number(data.count);
+    const d = (await res.json()).data || {};
+    const n = Number(d.up_count) - Number(d.down_count || 0);
     if (!Number.isFinite(n)) throw 0;
-    try { localStorage.setItem("am_visit", today); } catch(e){}
+    try { localStorage.setItem("am_visit2", today); } catch(e){}
     $("#statVisits").textContent = fmt(n);
     $("#statVisitsLabel").textContent = "Odwiedzin strony";
     $("#footVisits").textContent = ` · 👁 ${fmt(n)} odwiedzin`;
@@ -1259,6 +1292,38 @@ $("#cwlTop").innerHTML = CWL.top.length
   ? CWL.top.slice(0,5).map((t,i)=>`<div class="mini-row"><span><em>0${i+1}</em>${esc(t[0])}</span><span>⭐ ${t[1]}${t[2]?` <small style="color:var(--muted)">/ ${t[2]} ataków</small>`:""}</span></div>`).join("")
   : `<div class="empty">Startujemy 1 listopada. Ranking gwiazdek pojawi się po pierwszych dniach wojen ligowych — zapisy na Discordzie.</div>`;
 
+
+
+/* ===== Wojna na żywo (z data.json) ===== */
+(function(){
+  const cw = AUTO && AUTO.currentWar; const box=$("#liveWar");
+  if(!cw || !["preparation","inWar","warEnded"].includes(cw.state)) return;
+  const parseT = t => t ? new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : null;
+  const end=parseT(cw.end), start=parseT(cw.start);
+  if (cw.state==="warEnded" && end && Date.now()-end > 24*3600e3) return;
+  const total=cw.size*cw.perMember;
+  const lbl={preparation:["prep","Dzień przygotowań"],inWar:["","Wojna trwa"],warEnded:["done","Wojna zakończona"]}[cw.state];
+  const pc=v=>v.toFixed(2).replace(".",",");
+  const missing=cw.members.map(m=>({n:m.name,left:cw.perMember-m.attacks.length})).filter(m=>m.left>0);
+  const sumStars=cw.us.stars+cw.them.stars||1;
+  box.innerHTML=`
+    <div class="lw-head"><span class="lw-badge ${lbl[0]}"><i></i>${lbl[1]}</span><span class="lw-time" id="lwTime"></span></div>
+    <div class="lw-score">
+      <div class="lw-side"><b>${esc(cw.us.name)}</b><span>${pc(cw.us.pct)}% zniszczeń · ⚔️ ${cw.us.attacks}/${total}</span></div>
+      <div class="lw-mid">${cw.us.stars} <span class="star">★</span> ${cw.them.stars}</div>
+      <div class="lw-side r"><b>${esc(cw.them.name)}</b><span>${pc(cw.them.pct)}% zniszczeń · ⚔️ ${cw.them.attacks}/${total}</span></div>
+    </div>
+    <div class="lw-bar"><u style="width:${cw.us.stars/sumStars*100}%"></u><s style="width:${cw.them.stars/sumStars*100}%"></s></div>
+    ${cw.state==="inWar"?`<div class="lw-left">Pozostałe ataki (${missing.reduce((a,m)=>a+m.left,0)}):</div>
+    <div class="lw-chips">${missing.length?missing.map(m=>`<span>${esc(m.n)}<b>×${m.left}</b></span>`).join(""):`<span class="all">Wszyscy zaatakowali ✓</span>`}</div>`:""}
+    <div class="lw-foot">${cw.size} vs ${cw.size} · stan z ${new Date(AUTO.updated).toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"})} (odświeżane co godzinę)</div>`;
+  box.hidden=false;
+  const tgt = cw.state==="preparation"?start:end;
+  const tick=()=>{const el=$("#lwTime"); if(!el||!tgt) return; let d=Math.max(0,(tgt-Date.now())/1000);
+    if(cw.state==="warEnded"){el.textContent="";return;}
+    el.innerHTML=`<small>${cw.state==="preparation"?"Start za":"Koniec za"}</small>${Math.floor(d/3600)}h ${String(Math.floor(d%3600/60)).padStart(2,"0")}m ${String(Math.floor(d%60)).padStart(2,"0")}s`;};
+  tick(); setInterval(tick,1000);
+})();
 
 /* ===== Rekordy klanu ===== */
 (function(){

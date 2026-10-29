@@ -25,12 +25,40 @@ let warlog = { items: [] };
 try { warlog = await api(`/clans/${tag}/warlog?limit=50`); }
 catch (e) { console.warn("Dziennik wojen niedostępny (czy jest publiczny?):", e.message); }
 
+let currentWar = null;
+try {
+  const w = await api(`/clans/${tag}/currentwar`);
+  if (w.state && w.state !== "notInWar") {
+    const side = c => ({
+      name: c.name, stars: c.stars ?? 0,
+      pct: Math.round((c.destructionPercentage ?? 0) * 100) / 100,
+      attacks: c.attacks ?? 0
+    });
+    const oppByTag = Object.fromEntries((w.opponent.members || []).map(m => [m.tag, m]));
+    currentWar = {
+      state: w.state,                       // preparation | inWar | warEnded
+      size: w.teamSize,
+      perMember: w.attacksPerMember ?? 2,
+      start: w.startTime, end: w.endTime,
+      us: side(w.clan), them: side(w.opponent),
+      members: (w.clan.members || []).sort((a, b) => a.mapPosition - b.mapPosition).map(m => ({
+        name: m.name, pos: m.mapPosition, th: m.townhallLevel,
+        attacks: (m.attacks || []).map(a => {
+          const d = oppByTag[a.defenderTag];
+          return { stars: a.stars, pct: a.destructionPercentage, target: d ? `${d.mapPosition}. ${d.name}` : "" };
+        })
+      }))
+    };
+  }
+} catch (e) { console.warn("Bieżąca wojna niedostępna:", e.message); }
+
 const data = {
   updated: new Date().toISOString(),
   clanLevel: clan.clanLevel,
   memberCount: clan.members,
   cwlLeague: clan.warLeague?.name ?? null,
   warWinStreak: clan.warWinStreak,
+  currentWar,
   members: (clan.memberList || []).map(m => ({
     name: m.name,
     tag: m.tag,
