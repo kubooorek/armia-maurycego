@@ -549,7 +549,7 @@
         </div>
     </section>
 
-    <!-- KALKULATOR RATUSZA (TH) ORAZ ZABEZPIECZONY SUWAK REKRUTACJI (TYLKO LEADER / CO-LEADER) -->
+    <!-- KALKULATOR RATUSZA (TH) ORAZ W PEŁNI PRZYWRÓCONY SUWAK REKRUTACJI -->
     <section id="kalkulator-th" class="container">
         <h2 style="font-size:0.8rem; font-family:'Orbitron'; color:var(--gold); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Interaktywny widget</h2>
         <h3 class="section-title" style="text-align:left; border:none; margin-bottom:20px;">Kalkulator Ratusza (TH)</h3>
@@ -572,7 +572,7 @@
                 </div>
             </div>
 
-            <!-- PRAWA STRONA: STATUS REKRUTACJI (TYLKO DLA LIDERA I CO-LEADERÓW) -->
+            <!-- PRAWA STRONA: STATUS REKRUTACJI (Z SUWAKIEM DLA OFICERÓW) -->
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <h3>Sprawdź status rekrutacji</h3>
@@ -582,7 +582,7 @@
                 
                 <p style="font-family:'Orbitron'; font-weight:700; margin-bottom:10px;" id="memberCountText">Liczba członków: 40/50</p>
                 
-                <!-- SUWAK ZABEZPIECZONY (DOMYŚLNIE DISABLED) -->
+                <!-- TUTAJ JEST PRZYWRÓCONY SUWAK REKRUTACJI -->
                 <input type="range" id="memberSlider" min="0" max="50" value="40" class="th-slider" disabled oninput="updateRecruitment(this.value)">
                 
                 <div style="background: var(--darker); height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border);">
@@ -956,7 +956,6 @@
     <!-- SKRYPTY -->
     <script>
         // --- Odblokowanie suwaka rekrutacji dla Lidera i Co-Leaderów ---
-        // Kliknij ikonę kłódki "Oficer" w prawym górnym rogu karty i wpisz hasło: oficer123
         function unlockOfficer() {
             const pass = prompt("Podaj hasło dla Lidera / Co-Leadera:");
             if (pass === "oficer123") {
