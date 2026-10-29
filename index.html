@@ -208,9 +208,9 @@
         }
         .th-btn:hover, .th-btn.active { background-color: var(--gold); color: #000; border-color: var(--gold); }
 
-        .table-responsive { width: 100%; overflow-x: auto; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 40px; max-height: 450px; }
+        .table-responsive { width: 100%; overflow-y: auto; overflow-x: auto; background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 40px; max-height: 350px; }
         table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
-        th, td { padding: 14px 18px; border-bottom: 1px solid var(--border); }
+        th, td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
         th { background-color: var(--darker); font-family: 'Orbitron'; color: var(--gold); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; position: sticky; top: 0; z-index: 10; }
 
         .badge-win { color: var(--green); border: 1px solid var(--green); padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-family: 'Orbitron'; font-weight: 700; }
@@ -440,9 +440,9 @@
             </div>
             <div class="card" style="text-align: center;">
                 <h3 style="font-size:1.1rem; color:#fff;">Idealne 100% w CW</h3>
-                <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border); margin-top:10px; font-size:0.8rem; color:var(--gold);">
-                    ARMIA MAURYCEGO vs Grim Reapers<br><strong>60 - 44 (100%)</strong><br><br>
-                    ARMIA MAURYCEGO vs Glader's Clan<br><strong>60 - 59 (100%)</strong>
+                <div style="background:var(--darker); padding:10px; border-radius:6px; border:1px solid var(--border); margin-top:10px; display: flex; flex-direction: column; gap: 12px;">
+                    <img src="image_10034b.png" alt="Armia Maurycego vs Grim Reapers 60-44" style="width: 100%; border-radius: 6px; border: 1px solid var(--border);">
+                    <img src="image_0f2aa5.png" alt="Armia Maurycego vs Glader's Clan 60-59" style="width: 100%; border-radius: 6px; border: 1px solid var(--border);">
                 </div>
             </div>
             <div class="card" style="text-align: center;">
@@ -477,7 +477,7 @@
         <div class="grid-3">
             <div class="card">
                 <h3>1. Offensive First</h3>
-                <p>Zawsze w pierwszej kolejności ulepszaj Laboratorium, Clan Castle, Spell Factory oraz Heroes. Siła ataku to klucz do wygrywania wojen.</p>
+                <p>Zawsze w pierwszej kolejności ulepszaj Laboratorium, Clan Castle, Spell Factory oraz Heroes. Siła ataku to klucz do wgrywania wojen.</p>
             </div>
             <div class="card">
                 <h3>2. Zasoby i Gospodarka</h3>
@@ -511,39 +511,74 @@
             </div>
             <div class="card">
                 <h3 style="font-size:1.1rem;">Koniec Sezonu</h3>
-                <p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">ZA 32 DNI</p>
-                <p style="font-size:0.85rem;">Ostatni poniedziałek miesiąca. Zbierz nagrody z ligi.</p>
+                <p style="color:var(--primary); font-weight:700; font-family:'Orbitron'; font-size:0.9rem; margin:10px 0;">1 LISTOPADA</p>
+                <p style="font-size:0.85rem;">1 listopada 2026 r. o 09:00 czasu polskiego[cite: 26]. Automatyczny transfer zasobów do skarbca[cite: 26].</p>
             </div>
         </div>
     </section>
 
-    <!-- ZASADY KLANU -->
+    <!-- ZASADY KLANU I OFERTA -->
     <section id="zasady" class="container" style="padding-top: 0;">
-        <h2 class="section-title">Zasady Klanu</h2>
-        <div class="grid-3">
-            <div class="card">
-                <h3>Wymagania</h3>
-                <p>· TH3+<br>· Minimum 1000 punktów w Igrzyskach Klanowych (CG)<br>· Aktywność w grze<br>· Udział w wojnach, jeśli jesteś w składzie</p>
+        <h2 class="section-title">Zasady Klanu & Oferta</h2>
+        
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; margin-bottom: 30px; text-align: center;">
+            <h3 style="font-family: 'Orbitron'; color: var(--gold); margin-bottom: 10px; font-size: 1.3rem;">⭐ WYMAGANIA I OFERTA KLANU: ARMIA MAURYCEGO ⭐</h3>
+            <p style="color: var(--text-muted); max-width: 900px; margin: 0 auto; font-size: 1rem;">Tworzymy klan od podstaw i budujemy zgraną ekipę! Na tym etapie drzwiczki są otwarte dla każdego, kto chce grać, rozwijać się i budować coś razem z nami. Nie musisz być pro — najważniejsza jest aktywność, chęć nauki i dobra atmosfera.</p>
+        </div>
+
+        <div class="grid-2">
+            <!-- WYMAGANIA / CZEGO OCZEKUJEMY -->
+            <div class="card" style="border-top: 4px solid var(--primary);">
+                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                    <span>📋</span> CZEGO OCZEKUJEMY (WYMAGANIA)
+                </h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                        <span style="color: var(--gold);">•</span> <div><strong>Brak „rushowania”</strong> — szukamy wiosek rozwiniętych rozsądnie, z odpowiednim poziomem obrony i wojska do swojego TH.</div>
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                        <span style="color: var(--gold);">•</span> <div><strong>Aktywność w grze</strong> — graj regularnie, rozwijaj wioskę i bądź z nami na czacie.</div>
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                        <span style="color: var(--gold);">•</span> <div><strong>Wojny Klanów</strong> — masz zielony status? Obowiązkowo atakujesz 2 razy na wojnie. Jeśli nie możesz, daj znać wcześniej liderowi.</div>
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                        <span style="color: var(--gold);">•</span> <div><strong>Gry Klanowe i Rajdy</strong> — pomagaj klanowi, bierz udział w weekendowych rajdach oraz grach klanowych. Minimum to 1000 punktów.</div>
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                        <span style="color: var(--gold);">•</span> <div><strong>Wzajemna pomoc</strong> — oddawaj wojsko innym, kiedy tylko możesz.</div>
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; gap: 10px;">
+                        <span style="color: var(--gold);">•</span> <div><strong>Kultura</strong> — szacunek na czacie, zero toksyczności, obrażania i reklamowania innych klanów. (Wejście tylko po bonusy = kick).</div>
+                    </li>
+                </ul>
             </div>
-            <div class="card">
-                <h3>Wojny</h3>
-                <p>· 2 ataki w CW obowiązkowe<br>· Nie możesz zaatakować? Napisz wcześniej do lidera<br>· Brak ataków bez informacji = możliwy kick</p>
-            </div>
-            <div class="card">
-                <h3>Stolica</h3>
-                <p>· Minimum 1000 punktów w Igrzyskach Klanowych (CG) na start<br>· Używaj ataków w Raid Weekend, jeśli możesz<br>· Regularny wkład w Igrzyska Klanowe (CG)</p>
-            </div>
-            <div class="card">
-                <h3>Aktywność</h3>
-                <p>· Tydzień nieaktywności – kick<br>· Przerwa? Daj znać w czasie</p>
-            </div>
-            <div class="card">
-                <h3>Donacje</h3>
-                <p>· Pomagaj innym, jeśli możesz<br>· Nie dawaj żołnierzy, o które nikt nie prosi</p>
-            </div>
-            <div class="card">
-                <h3>Zakazy</h3>
-                <p>· Obrażanie i toksyczność<br>· Reklamowanie innych klanów<br>· Świadome pucie wojen<br>· Wejście tylko po bonusy</p>
+
+            <!-- CO OFERUJEMY -->
+            <div class="card" style="border-top: 4px solid var(--green);">
+                <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                    <span>🎁</span> CO OFERUJEMY
+                </h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
+                        <span style="color: var(--green);">•</span> <div><strong>Wojny Klanów bez przerwy</strong> — szybki przyrost expa, zasobów i doświadczenia w atakach.</div>
+                    </li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
+                        <span style="color: var(--green);">•</span> <div><strong>Miejsce dla każdego</strong> — nie patrzymy tylko na poziom TH, każdy może się rozwinąć z nami.</div>
+                    </li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
+                        <span style="color: var(--green);">•</span> <div><strong>Wsparcie i donacje</strong> — pomożemy wojskiem na farmę i na wojnę.</div>
+                    </li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
+                        <span style="color: var(--green);">•</span> <div><strong>Pomoc dla początkujących</strong> — podpowiemy, jak rozwijać wioskę i atakować.</div>
+                    </li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
+                        <span style="color: var(--green);">•</span> <div><strong>Szybki awans</strong> — ranga Elder za aktywność, donacje i zaangażowanie.</div>
+                    </li>
+                    <li style="margin-bottom: 14px; display: flex; gap: 10px;">
+                        <span style="color: var(--green);">•</span> <div><strong>Super atmosferę</strong> — budujemy ten klan wspólnie od zera!</div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -557,6 +592,7 @@
             <table>
                 <thead>
                     <tr>
+                        <th style="width: 60px;">#</th>
                         <th>Gracz</th>
                         <th>Ranga</th>
                         <th>TH</th>
@@ -565,46 +601,46 @@
                     </tr>
                 </thead>
                 <tbody id="playerTableBody">
-                    <tr><td>KUBOOOREK</td><td>Co-Leader</td><td>TH15</td><td>7643</td><td>3077</td></tr>
-                    <tr><td>Baku</td><td>Member</td><td>TH15</td><td>740</td><td>80</td></tr>
-                    <tr><td>Albaroon.2</td><td>Co-Leader</td><td>TH12</td><td>3908</td><td>2554</td></tr>
-                    <tr><td>oggsgdjdbd</td><td>Member</td><td>TH12</td><td>70</td><td>72</td></tr>
-                    <tr><td>MrDefPL</td><td>Member</td><td>TH12</td><td>127</td><td>180</td></tr>
-                    <tr><td>MAQOS</td><td>Member</td><td>TH12</td><td>301</td><td>0</td></tr>
-                    <tr><td>VipeR</td><td>Leader</td><td>TH11</td><td>2344</td><td>3067</td></tr>
-                    <tr><td>Toster290</td><td>Member</td><td>TH11</td><td>140</td><td>264</td></tr>
-                    <tr><td>monte</td><td>Member</td><td>TH10</td><td>450</td><td>200</td></tr>
-                    <tr><td>Cwel123</td><td>Member</td><td>TH10</td><td>110</td><td>90</td></tr>
-                    <tr><td>Mimbosz</td><td>Member</td><td>TH9</td><td>200</td><td>110</td></tr>
-                    <tr><td>zuzia</td><td>Member</td><td>TH9</td><td>150</td><td>80</td></tr>
-                    <tr><td>Kojak</td><td>Elder</td><td>TH9</td><td>512</td><td>410</td></tr>
-                    <tr><td>Belaska</td><td>Elder</td><td>TH9</td><td>320</td><td>150</td></tr>
-                    <tr><td>Brann</td><td>Member</td><td>TH9</td><td>90</td><td>60</td></tr>
-                    <tr><td>tak</td><td>Elder</td><td>TH9</td><td>210</td><td>90</td></tr>
-                    <tr><td>vvd</td><td>Member</td><td>TH9</td><td>130</td><td>70</td></tr>
-                    <tr><td>my name billa</td><td>Member</td><td>TH8</td><td>180</td><td>90</td></tr>
-                    <tr><td>Barnes</td><td>Member</td><td>TH8</td><td>220</td><td>100</td></tr>
-                    <tr><td>KuN</td><td>Member</td><td>TH8</td><td>160</td><td>70</td></tr>
-                    <tr><td>wiktor</td><td>Member</td><td>TH8</td><td>110</td><td>50</td></tr>
-                    <tr><td>filip</td><td>Member</td><td>TH8</td><td>95</td><td>40</td></tr>
-                    <tr><td>erykos</td><td>Member</td><td>TH7</td><td>80</td><td>30</td></tr>
-                    <tr><td>kwiatek</td><td>Member</td><td>TH6</td><td>60</td><td>20</td></tr>
-                    <tr><td>BOT6790</td><td>Member</td><td>TH7</td><td>70</td><td>25</td></tr>
-                    <tr><td>Andrzej</td><td>Member</td><td>TH7</td><td>110</td><td>40</td></tr>
-                    <tr><td>threeten</td><td>Member</td><td>TH7</td><td>50</td><td>15</td></tr>
-                    <tr><td>Marsyllia</td><td>Member</td><td>TH7</td><td>90</td><td>35</td></tr>
-                    <tr><td>Darui</td><td>Member</td><td>TH7</td><td>120</td><td>50</td></tr>
-                    <tr><td>Rico</td><td>Member</td><td>TH7</td><td>40</td><td>10</td></tr>
-                    <tr><td>Martini</td><td>Member</td><td>TH7</td><td>85</td><td>30</td></tr>
-                    <tr><td>Riczard</td><td>Member</td><td>TH7</td><td>65</td><td>20</td></tr>
-                    <tr><td>GoldBelt</td><td>Member</td><td>TH7</td><td>100</td><td>45</td></tr>
-                    <tr><td>SHA⭐ZAM!</td><td>Member</td><td>TH7</td><td>140</td><td>60</td></tr>
-                    <tr><td>SZAR3</td><td>Member</td><td>TH7</td><td>75</td><td>25</td></tr>
-                    <tr><td>szoks</td><td>Member</td><td>TH5</td><td>30</td><td>10</td></tr>
-                    <tr><td>TwarógPółtlusty</td><td>Member</td><td>TH5</td><td>40</td><td>15</td></tr>
-                    <tr><td>samurai024</td><td>Member</td><td>TH5</td><td>20</td><td>5</td></tr>
-                    <tr><td>Fox</td><td>Member</td><td>TH4</td><td>10</td><td>0</td></tr>
-                    <tr><td>Filfox74</td><td>Member</td><td>TH3</td><td>5</td><td>0</td></tr>
+                    <tr><td>1</td><td>KUBOOOREK</td><td>Co-Leader</td><td>TH15</td><td>7643</td><td>3077</td></tr>
+                    <tr><td>2</td><td>Baku</td><td>Member</td><td>TH15</td><td>740</td><td>80</td></tr>
+                    <tr><td>3</td><td>Albaroon.2</td><td>Co-Leader</td><td>TH12</td><td>3908</td><td>2554</td></tr>
+                    <tr><td>4</td><td>oggsgdjdbd</td><td>Member</td><td>TH12</td><td>70</td><td>72</td></tr>
+                    <tr><td>5</td><td>MrDefPL</td><td>Member</td><td>TH12</td><td>127</td><td>180</td></tr>
+                    <tr><td>6</td><td>MAQOS</td><td>Member</td><td>TH12</td><td>301</td><td>0</td></tr>
+                    <tr><td>7</td><td>VipeR</td><td>Leader</td><td>TH11</td><td>2344</td><td>3067</td></tr>
+                    <tr><td>8</td><td>Toster290</td><td>Member</td><td>TH11</td><td>140</td><td>264</td></tr>
+                    <tr><td>9</td><td>monte</td><td>Member</td><td>TH10</td><td>450</td><td>200</td></tr>
+                    <tr><td>10</td><td>Cwel123</td><td>Member</td><td>TH10</td><td>110</td><td>90</td></tr>
+                    <tr><td>11</td><td>Mimbosz</td><td>Member</td><td>TH9</td><td>200</td><td>110</td></tr>
+                    <tr><td>12</td><td>zuzia</td><td>Member</td><td>TH9</td><td>150</td><td>80</td></tr>
+                    <tr><td>13</td><td>Kojak</td><td>Elder</td><td>TH9</td><td>512</td><td>410</td></tr>
+                    <tr><td>14</td><td>Belaska</td><td>Elder</td><td>TH9</td><td>320</td><td>150</td></tr>
+                    <tr><td>15</td><td>Brann</td><td>Member</td><td>TH9</td><td>90</td><td>60</td></tr>
+                    <tr><td>16</td><td>tak</td><td>Elder</td><td>TH9</td><td>210</td><td>90</td></tr>
+                    <tr><td>17</td><td>vvd</td><td>Member</td><td>TH9</td><td>130</td><td>70</td></tr>
+                    <tr><td>18</td><td>my name billa</td><td>Member</td><td>TH8</td><td>180</td><td>90</td></tr>
+                    <tr><td>19</td><td>Barnes</td><td>Member</td><td>TH8</td><td>220</td><td>100</td></tr>
+                    <tr><td>20</td><td>KuN</td><td>Member</td><td>TH8</td><td>160</td><td>70</td></tr>
+                    <tr><td>21</td><td>wiktor</td><td>Member</td><td>TH8</td><td>110</td><td>50</td></tr>
+                    <tr><td>22</td><td>filip</td><td>Member</td><td>TH8</td><td>95</td><td>40</td></tr>
+                    <tr><td>23</td><td>erykos</td><td>Member</td><td>TH7</td><td>80</td><td>30</td></tr>
+                    <tr><td>24</td><td>kwiatek</td><td>Member</td><td>TH6</td><td>60</td><td>20</td></tr>
+                    <tr><td>25</td><td>BOT6790</td><td>Member</td><td>TH7</td><td>70</td><td>25</td></tr>
+                    <tr><td>26</td><td>Andrzej</td><td>Member</td><td>TH7</td><td>110</td><td>40</td></tr>
+                    <tr><td>27</td><td>threeten</td><td>Member</td><td>TH7</td><td>50</td><td>15</td></tr>
+                    <tr><td>28</td><td>Marsyllia</td><td>Member</td><td>TH7</td><td>90</td><td>35</td></tr>
+                    <tr><td>29</td><td>Darui</td><td>Member</td><td>TH7</td><td>120</td><td>50</td></tr>
+                    <tr><td>30</td><td>Rico</td><td>Member</td><td>TH7</td><td>40</td><td>10</td></tr>
+                    <tr><td>31</td><td>Martini</td><td>Member</td><td>TH7</td><td>85</td><td>30</td></tr>
+                    <tr><td>32</td><td>Riczard</td><td>Member</td><td>TH7</td><td>65</td><td>20</td></tr>
+                    <tr><td>33</td><td>GoldBelt</td><td>Member</td><td>TH7</td><td>100</td><td>45</td></tr>
+                    <tr><td>34</td><td>SHA⭐ZAM!</td><td>Member</td><td>TH7</td><td>140</td><td>60</td></tr>
+                    <tr><td>35</td><td>SZAR3</td><td>Member</td><td>TH7</td><td>75</td><td>25</td></tr>
+                    <tr><td>36</td><td>szoks</td><td>Member</td><td>TH5</td><td>30</td><td>10</td></tr>
+                    <tr><td>37</td><td>TwarógPółtlusty</td><td>Member</td><td>TH5</td><td>40</td><td>15</td></tr>
+                    <tr><td>38</td><td>samurai024</td><td>Member</td><td>TH5</td><td>20</td><td>5</td></tr>
+                    <tr><td>39</td><td>Fox</td><td>Member</td><td>TH4</td><td>10</td><td>0</td></tr>
+                    <tr><td>40</td><td>Filfox74</td><td>Member</td><td>TH3</td><td>5</td><td>0</td></tr>
                 </tbody>
             </table>
         </div>
@@ -749,7 +785,7 @@
             let input = document.getElementById('playerSearch').value.toLowerCase();
             let rows = document.getElementById('playerTableBody').getElementsByTagName('tr');
             for (let i = 0; i < rows.length; i++) {
-                let name = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
+                let name = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
                 rows[i].style.display = name.includes(input) ? "" : "none";
             }
         }
