@@ -1065,7 +1065,14 @@ $("#statDays").textContent = Math.max(1, Math.floor((Date.now()-new Date(FOUNDED
     $("#statVisits").textContent = fmt(n);
     $("#statVisitsLabel").textContent = "Odwiedzin strony";
     $("#footVisits").textContent = ` · 👁 ${fmt(n)} odwiedzin`;
-  } catch(e) { /* licznik niedostępny — strona działa normalnie */ }
+  } catch(e) {
+    // Licznik zablokowany (np. bloker reklam) — pokaż wartość zapisaną przez robota w data.json
+    if (AUTO && Number.isFinite(AUTO.visits) && AUTO.visits > 0) {
+      $("#statVisits").textContent = fmt(AUTO.visits);
+      $("#statVisitsLabel").textContent = "Odwiedzin strony";
+      $("#footVisits").textContent = ` · 👁 ${fmt(AUTO.visits)} odwiedzin`;
+    }
+  }
 })();
 
 /* ===== Timery ===== */

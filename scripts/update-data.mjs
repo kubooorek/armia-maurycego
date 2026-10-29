@@ -52,6 +52,14 @@ try {
   }
 } catch (e) { console.warn("Bieżąca wojna niedostępna:", e.message); }
 
+// Licznik odwiedzin strony (counterapi.dev) — odczyt po stronie serwera, żeby blokery reklam
+// nie ukrywały liczby na stronie
+let visits = null;
+try {
+  const r = await fetch("https://api.counterapi.dev/v2/armia-maurycego/odwiedziny");
+  if (r.ok) { const d = (await r.json()).data || {}; visits = (d.up_count ?? 0) - (d.down_count ?? 0); }
+} catch (e) { console.warn("Licznik odwiedzin niedostępny:", e.message); }
+
 const data = {
   updated: new Date().toISOString(),
   clanLevel: clan.clanLevel,
@@ -59,6 +67,7 @@ const data = {
   cwlLeague: clan.warLeague?.name ?? null,
   warWinStreak: clan.warWinStreak,
   currentWar,
+  visits,
   members: (clan.memberList || []).map(m => ({
     name: m.name,
     tag: m.tag,
