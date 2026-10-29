@@ -89,6 +89,69 @@ if (w && w.state && w.state !== "notInWar") {
   };
 }
 
+/* ---------- Liga Wojen Klanów (CWL) ---------- */
+let cwl = old?.cwl ?? null;
+const group = await safe("Grupa CWL", () => api(`/clans/${enc(TAG)}/currentwar/leaguegroup`));
+if (group && group.state && group.state !== "notInWar" && Array.isArray(group.rounds)) {
+  const S = {};   // tabela grupy
+  for (const c of group.clans || []) S[c.tag] = { tag: c.tag, name: c.name, level: c.clanLevel, stars: 0, pct: 0, wins: 0, played: 0 };
+  const ours = [];
+  for (let i = 0; i < group.rounds.length; i++) {
+    for (const wt of group.rounds[i].warTags || []) {
+      if (!wt || wt === "#0") continue;
+      const war = await safe(`Wojna CWL ${wt}`, () => api(`/clanwarleagues/wars/${enc(wt)}`));
+      if (!war || war.state === "notInWar") continue;
+      const live = war.state === "inWar" || war.state === "warEnded";
+      for (const [a, b] of [[war.clan, war.opponent], [war.opponent, war.clan]]) {
+        const row = S[a.tag]; if (!row || !live) continue;
+        row.stars += a.stars ?? 0;
+        row.pct += (a.destructionPercentage ?? 0) * war.teamSize;
+        if (war.state === "warEnded") {
+          row.played++;
+          const win = (a.stars > b.stars) || (a.stars === b.stars && a.destructionPercentage > b.destructionPercentage);
+          if (win) { row.wins++; row.stars += 10; }   // +10 gwiazdek za wygraną wojnę ligową
+        }
+      }
+      // Nasza wojna w tej rundzie
+      const us = war.clan.tag === TAG ? war.clan : war.opponent.tag === TAG ? war.opponent : null;
+      if (us) {
+        const them = us === war.clan ? war.opponent : war.clan;
+        const oppByTag = Object.fromEntries((them.members || []).map(m => [m.tag, m]));
+        ours.push({
+          round: i + 1, state: war.state, size: war.teamSize, perMember: 1,
+          start: war.startTime, end: war.endTime,
+          us:   { name: us.name,   stars: us.stars ?? 0,   pct: round2(us.destructionPercentage),   attacks: us.attacks ?? 0 },
+          them: { name: them.name, stars: them.stars ?? 0, pct: round2(them.destructionPercentage), attacks: them.attacks ?? 0 },
+          members: (us.members || []).sort((a, b) => a.mapPosition - b.mapPosition).map(m => ({
+            name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
+            attacks: (m.attacks || []).map(at => {
+              const d = oppByTag[at.defenderTag];
+              return { stars: at.stars, pct: at.destructionPercentage, target: d ? `${d.mapPosition}. ${d.name}` : "" };
+            })
+          }))
+        });
+      }
+    }
+  }
+  // Najwięcej gwiazdek w CWL (nasi gracze)
+  const T = {};
+  for (const w of ours) if (w.state !== "preparation") for (const m of w.members) {
+    const t = T[m.tag] || (T[m.tag] = { name: m.name, stars: 0, attacks: 0, wars: 0 });
+    t.wars++; t.attacks += m.attacks.length; for (const at of m.attacks) t.stars += at.stars;
+  }
+  const standings = Object.values(S).map(r => ({ ...r, pct: Math.round(r.pct) }))
+    .sort((a, b) => b.stars - a.stars || b.pct - a.pct);
+  cwl = {
+    season: group.season, state: group.state,
+    rounds: group.rounds.length,
+    place: standings.findIndex(r => r.tag === TAG) + 1 || null,
+    groupSize: standings.length,
+    standings,
+    wars: ours,
+    top: Object.values(T).sort((a, b) => b.stars - a.stars || a.attacks - b.attacks).slice(0, 10)
+  };
+}
+
 /* ---------- Archiwum wojen (do rankingu wojowników) ---------- */
 let warArchive = Array.isArray(old?.warArchive) ? old.warArchive : [];
 if (currentWar && currentWar.state !== "preparation") {
@@ -104,10 +167,22 @@ if (currentWar && currentWar.state !== "preparation") {
   warArchive = warArchive.filter(x => x.start !== rec.start);
   warArchive.unshift(rec);
 }
+// Wojny ligowe (CWL) też trafiają do archiwum — 1 atak na gracza
+for (const cw of (cwl?.wars || [])) {
+  if (cw.state === "preparation") continue;
+  const rec = {
+    start: cw.start, end: cw.end, enemy: cw.them.name, size: cw.size, perMember: 1, state: cw.state, cwl: true,
+    us: cw.us.stars, them: cw.them.stars,
+    members: cw.members.map(m => ({ name: m.name, tag: m.tag, attacks: m.attacks.map(a => ({ stars: a.stars, pct: a.pct })) }))
+  };
+  warArchive = warArchive.filter(x => x.start !== rec.start || x.enemy !== rec.enemy);
+  warArchive.push(rec);
+}
+warArchive.sort((a, b) => (b.start || "").localeCompare(a.start || ""));
 // Wojna, która zniknęła z API po zakończeniu, zostaje oznaczona jako zakończona
 const nowStamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, ".000Z");
 warArchive.forEach(x => { if (x.end && x.end < nowStamp) x.state = "warEnded"; });
-warArchive = warArchive.slice(0, 30);
+warArchive = warArchive.slice(0, 40);
 
 /* ---------- Rajdy Stolicy ---------- */
 const raidsRaw = await safe("Rajdy Stolicy", () => api(`/clans/${enc(TAG)}/capitalraidseasons?limit=2`), { items: [] });
@@ -173,6 +248,7 @@ const data = {
   cwlLeague: clan.warLeague?.name ?? null,
   warWinStreak: clan.warWinStreak,
   currentWar,
+  cwl,
   visits,
   discord,
   raids,

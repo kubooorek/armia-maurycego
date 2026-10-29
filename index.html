@@ -174,6 +174,8 @@
   .mini-row:last-child{border-bottom:none}
   .mini-row em{font-style:normal;color:var(--gold);font-weight:800;margin-right:8px;font-family:Cinzel,serif}
   .empty{background:var(--bg);border:1px dashed var(--line);border-radius:9px;padding:12px 14px;color:var(--muted);font-size:.84rem}
+  .mini-row.grp.me{background:rgba(232,180,74,.1);border-radius:7px;padding-left:8px;padding-right:8px;border-bottom-color:transparent}
+  .mini-row.grp.me span:first-child{color:var(--gold2);font-weight:700}
   .cwl-info{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
   .cwl-info div{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:9px 11px;display:flex;flex-direction:column;gap:2px}
   .cwl-info b{font-family:Cinzel,serif;color:var(--gold2);font-size:1.1rem}
@@ -557,6 +559,7 @@
           <div><small>Miejsce w grupie</small><b id="cwlPlace"></b></div>
           <div><small>Gwiazdki klanu</small><b id="cwlStars"></b></div>
         </div>
+        <div id="cwlGroupWrap" hidden><div class="fame-label" style="margin:14px 0 8px">Tabela grupy</div><div id="cwlGroup"></div></div>
         <div class="fame-label" style="margin:14px 0 8px">Najwięcej gwiazdek w CWL</div>
         <div id="cwlTop"></div>
         <div class="fame-label" style="margin:14px 0 8px">Jak działa CWL</div>
@@ -1021,7 +1024,7 @@ const EN = {
 "Jak połączyć konto z Discordem?":"How do I link my account to Discord?","Na serwerze wpisz komendę":"On the server, type","i podaj swój tag gracza. Bot zweryfikuje konto, nada rangę i zmieni nick na ten z gry.":"and enter your player tag. The bot verifies the account, gives you a role and changes your nickname to your in-game name.",
 "Gotowy do walki?":"Ready for battle?","Dołącz do Armii Maurycego i rośnij razem z nami.":"Join Armia Maurycego and grow with us.",
 "Ta strona nie jest powiązana z Supercell, nie jest przez nią wspierana ani sponsorowana. Clash of Clans jest znakiem towarowym Supercell.":"This site is not affiliated with, endorsed, sponsored or specifically approved by Supercell. Clash of Clans is a trademark of Supercell.",
-"Skopiowano tag klanu ✓":"Clan tag copied ✓","Ranking":"Ranking","Wojownicy":"Warriors","Ranking wojowników":"Warrior ranking","Liczony automatycznie z zakończonych wojen klanowych: gwiazdki, zniszczenia i opuszczone ataki.":"Calculated automatically from finished clan wars: stars, destruction and missed attacks.","Wojny":"Wars","Gwiazdki":"Stars","Śr. ★/atak":"Avg ★/attack","Śr. %":"Avg %","Opuszczone":"Missed","Stolica i skład":"Capital & roster","Rajdy Stolicy i ruchy w klanie":"Capital raids & roster changes","Wyniki weekendu rajdowego i dziennik zmian w składzie — aktualizowane same z gry.":"Raid weekend results and roster log — updated automatically from the game.","Ruchy w klanie":"Roster changes","Łupy":"Loot","Rajdy":"Raids","Ataki":"Attacks","Dzielnice":"Districts","Top rajdowcy":"Top raiders","Niewykorzystane ataki:":"Unused attacks:","Zakończony":"Ended","● Trwa":"● Live","Poziom":"Level","Gwiazdki wojenne":"War stars","Puchary":"Trophies","Rekord":"Best","Stolica":"Capital","Bohaterowie":"Heroes","Pokaż profil":"Show profile","Ranking ruszy po zakończeniu pierwszej wojny od uruchomienia automatycznych danych — robot zapisuje każdy atak.":"The ranking starts after the first war ends since automatic data was enabled — the bot records every attack.","Wyniki pojawią się automatycznie po pierwszym weekendzie rajdowym (piątek–poniedziałek).":"Results appear automatically after the first raid weekend (Friday–Monday).","Tu pojawią się automatycznie: nowi gracze, odejścia, awanse i nowe ratusze.":"New players, departures, promotions and Town Hall upgrades will appear here automatically.","Pełny profil (bohaterowie, gwiazdki wojenne) pojawi się po najbliższej automatycznej aktualizacji.":"The full profile (heroes, war stars) will appear after the next automatic update.","Dzień przygotowań":"Preparation day","Wojna trwa":"War in progress","Wojna zakończona":"War ended","Start za":"Starts in","Koniec za":"Ends in","Wszyscy zaatakowali ✓":"Everyone has attacked ✓","Główny Dowódca":"Commander-in-chief","Zastępca Lidera":"Deputy leader"
+"Skopiowano tag klanu ✓":"Clan tag copied ✓","Tabela grupy":"Group standings","Ranking":"Ranking","Wojownicy":"Warriors","Ranking wojowników":"Warrior ranking","Liczony automatycznie z zakończonych wojen klanowych: gwiazdki, zniszczenia i opuszczone ataki.":"Calculated automatically from finished clan wars: stars, destruction and missed attacks.","Wojny":"Wars","Gwiazdki":"Stars","Śr. ★/atak":"Avg ★/attack","Śr. %":"Avg %","Opuszczone":"Missed","Stolica i skład":"Capital & roster","Rajdy Stolicy i ruchy w klanie":"Capital raids & roster changes","Wyniki weekendu rajdowego i dziennik zmian w składzie — aktualizowane same z gry.":"Raid weekend results and roster log — updated automatically from the game.","Ruchy w klanie":"Roster changes","Łupy":"Loot","Rajdy":"Raids","Ataki":"Attacks","Dzielnice":"Districts","Top rajdowcy":"Top raiders","Niewykorzystane ataki:":"Unused attacks:","Zakończony":"Ended","● Trwa":"● Live","Poziom":"Level","Gwiazdki wojenne":"War stars","Puchary":"Trophies","Rekord":"Best","Stolica":"Capital","Bohaterowie":"Heroes","Pokaż profil":"Show profile","Ranking ruszy po zakończeniu pierwszej wojny od uruchomienia automatycznych danych — robot zapisuje każdy atak.":"The ranking starts after the first war ends since automatic data was enabled — the bot records every attack.","Wyniki pojawią się automatycznie po pierwszym weekendzie rajdowym (piątek–poniedziałek).":"Results appear automatically after the first raid weekend (Friday–Monday).","Tu pojawią się automatycznie: nowi gracze, odejścia, awanse i nowe ratusze.":"New players, departures, promotions and Town Hall upgrades will appear here automatically.","Pełny profil (bohaterowie, gwiazdki wojenne) pojawi się po najbliższej automatycznej aktualizacji.":"The full profile (heroes, war stars) will appear after the next automatic update.","Dzień przygotowań":"Preparation day","Wojna trwa":"War in progress","Wojna zakończona":"War ended","Start za":"Starts in","Koniec za":"Ends in","Wszyscy zaatakowali ✓":"Everyone has attacked ✓","Główny Dowódca":"Commander-in-chief","Zastępca Lidera":"Deputy leader"
 };
 const EN_RULES = [
   [/^Pokazano (\d+) z (\d+)$/, "Showing $1 of $2"],
@@ -1041,6 +1044,8 @@ const EN_RULES = [
   [/^Dane z gry, aktualizacja automatyczna · (.+)$/, "Live game data, updated automatically · $1"],
   [/^· 👁 (.+) odwiedzin$/, "· 👁 $1 visits"], [/^Tag: (.+)$/, "Tag: $1"],
   [/^Darczyńca #(\d)$/, "Donor #$1"],
+  [/^CWL · Runda (\d+)\/(\d+)$/, "CWL · Round $1/$2"],
+  [/^· (.+)% · (\d+) W$/, "· $1% · $2 W"],
   [/^Opuszczone ataki w ostatniej wojnie \(vs (.+)\):$/, "Missed attacks in the last war (vs $1):"],
   [/^Wojen w rankingu: (\d+)\. Zasada: .+$/, "Wars in ranking: $1. Rule: first attack on your own number — a missed attack = no spot in the next war."],
   [/^(.+) online$/, "$1 online"], [/^· (.+) członków$/, "· $1 members"],
@@ -1101,6 +1106,13 @@ async function loadAuto(){
       WARS = d.wars.map(w=>({date:w.date, enemy:w.enemy, size:w.size, xp:w.xp||0, us:{stars:w.us.stars, pct:w.us.pct}, them:{stars:w.them.stars, pct:w.them.pct}}));
     }
     if (d.cwlLeague && d.cwlLeague!=="Unranked") CWL.league = d.cwlLeague;
+    if (d.cwl && Array.isArray(d.cwl.standings) && d.cwl.standings.length){
+      const [y,mo] = (d.cwl.season||"").split("-").map(Number);
+      if (y && mo){ const t=new Date(Date.UTC(y,mo-1,15)).toLocaleDateString("pl-PL",{month:"long",year:"numeric"}); CWL.season = t.charAt(0).toUpperCase()+t.slice(1); }
+      CWL.place = d.cwl.place; CWL.groupSize = d.cwl.groupSize;
+      const me = d.cwl.standings.find(r=>r.tag==="#2GQQ8RGRL"); if (me) CWL.stars = me.stars;
+      if (Array.isArray(d.cwl.top) && d.cwl.top.length) CWL.top = d.cwl.top.map(t=>[t.name,t.stars,t.attacks]);
+    }
     AUTO = d;
   }catch(e){}
 }
@@ -1371,14 +1383,30 @@ $("#cwlLeague").textContent = CWL.league || "Pierwszy sezon";
 $("#cwlPlace").textContent = CWL.place ? `${CWL.place} / ${CWL.groupSize}` : "—";
 $("#cwlStars").textContent = CWL.stars ?? "—";
 $("#cwlTop").innerHTML = CWL.top.length
-  ? CWL.top.slice(0,5).map((t,i)=>`<div class="mini-row"><span><em>0${i+1}</em>${esc(t[0])}</span><span>⭐ ${t[1]}${t[2]?` <small style="color:var(--muted)">/ ${t[2]} ataków</small>`:""}</span></div>`).join("")
+  ? CWL.top.slice(0,5).map((t,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${["🥇","🥈","🥉","4.","5."][i]}</em>${esc(t[0])}</span><span>⭐ ${t[1]}${t[2]?` <small style="color:var(--muted)">/ ${t[2]} ataków</small>`:""}</span></div>`).join("")
   : `<div class="empty">Startujemy 1 listopada. Ranking gwiazdek pojawi się po pierwszych dniach wojen ligowych — zapisy na Discordzie.</div>`;
 
 
 
+/* ===== Tabela grupy CWL ===== */
+(function(){
+  const c=AUTO&&AUTO.cwl; if(!c||!c.standings||!c.standings.length) return;
+  const md=i=>i<3?["🥇","🥈","🥉"][i]:`${i+1}.`;
+  $("#cwlGroup").innerHTML=c.standings.map((r,i)=>`<div class="mini-row grp${r.tag==="#2GQQ8RGRL"?" me":""}"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${esc(r.name)}</span><span>⭐ ${r.stars} <small style="color:var(--muted)">· ${fmt(r.pct)}% · ${r.wins} W</small></span></div>`).join("");
+  $("#cwlGroupWrap").hidden=false;
+})();
+
 /* ===== Wojna na żywo (z data.json) ===== */
 (function(){
-  const cw = AUTO && AUTO.currentWar; const box=$("#liveWar");
+  const box=$("#liveWar");
+  let cw = AUTO && AUTO.currentWar && ["preparation","inWar"].includes(AUTO.currentWar.state) ? AUTO.currentWar : null;
+  let cwlRound = null;
+  if (!cw && AUTO && AUTO.cwl && Array.isArray(AUTO.cwl.wars)){
+    const ws = AUTO.cwl.wars;
+    const pick = ws.find(w=>w.state==="inWar") || [...ws].reverse().find(w=>w.state==="preparation") || [...ws].reverse().find(w=>w.state==="warEnded");
+    if (pick){ cw = pick; cwlRound = `CWL · Runda ${pick.round}/${AUTO.cwl.rounds||7}`; }
+  }
+  if (!cw && AUTO && AUTO.currentWar) cw = AUTO.currentWar;
   if(!cw || !["preparation","inWar","warEnded"].includes(cw.state)) return;
   const parseT = t => t ? new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : null;
   const end=parseT(cw.end), start=parseT(cw.start);
@@ -1389,7 +1417,7 @@ $("#cwlTop").innerHTML = CWL.top.length
   const missing=cw.members.map(m=>({n:m.name,left:cw.perMember-m.attacks.length})).filter(m=>m.left>0);
   const sumStars=cw.us.stars+cw.them.stars||1;
   box.innerHTML=`
-    <div class="lw-head"><span class="lw-badge ${lbl[0]}"><i></i>${lbl[1]}</span><span class="lw-time" id="lwTime"></span></div>
+    <div class="lw-head"><span><span class="lw-badge ${lbl[0]}"><i></i>${lbl[1]}</span>${cwlRound?`<span class="chip" style="margin-left:8px">${cwlRound}</span>`:""}</span><span class="lw-time" id="lwTime"></span></div>
     <div class="lw-score">
       <div class="lw-side"><b>${esc(cw.us.name)}</b><span>${pc(cw.us.pct)}% zniszczeń · ⚔️ ${cw.us.attacks}/${total}</span></div>
       <div class="lw-mid">${cw.us.stars} <span class="star">★</span> ${cw.them.stars}</div>
@@ -1535,7 +1563,8 @@ $("#cwlTop").innerHTML = CWL.top.length
   let st=0; for (const w of WARS){ if(w.us.stars>w.them.stars || (w.us.stars===w.them.stars && w.us.pct>w.them.pct)) st++; else break; }
   if (st>=3) ms.push({date:WARS[0].date, text:`${st} wygranych wojen z rzędu 🔥`});
   if (MEMBERS.length>=40) ms.push({date:null, text:`${MEMBERS.length} członków w klanie`});
-  ms.push(...MILESTONES_EXTRA);
+  const todayStr=new Date().toISOString().slice(0,10);
+  ms.push(...MILESTONES_EXTRA.map(m=>({...m, future: m.future && m.date && m.date>todayStr})));
   const key = m => m.date || new Date().toISOString().slice(0,10);
   ms.sort((a,b)=>key(a).localeCompare(key(b)));
   $("#timeline").innerHTML = ms.map(m=>`<li class="${m.future?'future':(!m.date?'now':'')}"><small>${m.date?new Date(m.date).toLocaleDateString(LOC(),{day:"numeric",month:"long"}):"teraz"}${m.future?" · wkrótce":""}</small><b>${esc(m.text)}</b></li>`).join("");
