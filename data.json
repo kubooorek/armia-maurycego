@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T23:31:02.288Z",
+  "updated": "2026-10-30T00:01:31.464Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -741,6 +741,14 @@
   "history": [
     {
       "d": "2026-10-29",
+      "members": 44,
+      "avgTh": 8,
+      "level": 3,
+      "wins": 11,
+      "points": 16200
+    },
+    {
+      "d": "2026-10-30",
       "members": 44,
       "avgTh": 8,
       "level": 3,
