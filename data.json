@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T22:01:10.643Z",
+  "updated": "2026-10-30T22:15:58.636Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -1106,8 +1106,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "908|468157765|484353282|42500|92833|246500|448497|0|1207|151|15",
-      "last": "2026-10-29T22:15:49.037Z",
+      "sig": "908||||||||||15",
+      "last": "2026-10-30T22:15:58.635Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -1306,8 +1306,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|873302|1031015|0|0|0|0|0|0|13|4",
-      "last": "2026-10-30T19:31:10.280Z",
+      "sig": "0|1003448|1197262|0|0|0|0|0|0|13|4",
+      "last": "2026-10-30T22:15:58.635Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -1658,54 +1658,7 @@
       "th": 15,
       "given": 908,
       "received": 80,
-      "trophies": 0,
-      "profile": {
-        "level": 151,
-        "trophies": 0,
-        "best": 3270,
-        "league": "Witch League 17",
-        "warStars": 1207,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 448497,
-        "warPref": "out",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 41,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 54,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 29,
-            "max": 85
-          },
-          {
-            "name": "Royal Champion",
-            "level": 21,
-            "max": 55
-          },
-          {
-            "name": "Minion Prince",
-            "level": 44,
-            "max": 95
-          }
-        ]
-      },
-      "ach": {
-        "cg": 42500,
-        "don": 92833,
-        "capLoot": 246500,
-        "gold": 468157765,
-        "elixir": 484353282,
-        "capContrib": 448497,
-        "wins": 0
-      }
+      "trophies": 0
     },
     {
       "name": "Albaroon.2",
@@ -3371,8 +3324,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 873302,
-        "elixir": 1031015,
+        "gold": 1003448,
+        "elixir": 1197262,
         "capContrib": 0,
         "wins": 0
       }
