@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T22:15:58.636Z",
+  "updated": "2026-10-30T22:31:10.050Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -1106,8 +1106,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "908||||||||||15",
-      "last": "2026-10-30T22:15:58.635Z",
+      "sig": "908|468157765|484353282|42500|92833|246500|448497|0|1207|151|15",
+      "last": "2026-10-30T22:31:10.049Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -1236,8 +1236,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "50|20628423|20135419|0|48|0|700|0|5|32|7",
-      "last": "2026-10-30T07:01:15.445Z",
+      "sig": "50|20628423|20135419|0|48|0|700|0|5|33|7",
+      "last": "2026-10-30T22:31:10.049Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -1658,7 +1658,54 @@
       "th": 15,
       "given": 908,
       "received": 80,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 151,
+        "trophies": 0,
+        "best": 3270,
+        "league": "Witch League 17",
+        "warStars": 1207,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 448497,
+        "warPref": "out",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 41,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 54,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 29,
+            "max": 85
+          },
+          {
+            "name": "Royal Champion",
+            "level": 21,
+            "max": 55
+          },
+          {
+            "name": "Minion Prince",
+            "level": 44,
+            "max": 95
+          }
+        ]
+      },
+      "ach": {
+        "cg": 42500,
+        "don": 92833,
+        "capLoot": 246500,
+        "gold": 468157765,
+        "elixir": 484353282,
+        "capContrib": 448497,
+        "wins": 0
+      }
     },
     {
       "name": "Albaroon.2",
@@ -2697,7 +2744,7 @@
       "received": 170,
       "trophies": 300,
       "profile": {
-        "level": 32,
+        "level": 33,
         "trophies": 300,
         "best": 300,
         "league": "Skeleton League 1",
