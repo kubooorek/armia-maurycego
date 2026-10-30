@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T13:45:50.165Z",
+  "updated": "2026-10-30T14:01:22.067Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -19,10 +19,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 41558,
-      "raids": 3,
-      "attacks": 38,
-      "districts": 11,
+      "loot": 49851,
+      "raids": 4,
+      "attacks": 45,
+      "districts": 13,
       "medals": 0,
       "members": [
         {
@@ -31,6 +31,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 8017
+        },
+        {
+          "name": "Riczard",
+          "tag": "#R2PCVYQG2",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7182
         },
         {
           "name": "Albaroon.2",
@@ -61,18 +68,18 @@
           "loot": 5749
         },
         {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": 4,
+          "limit": 6,
+          "loot": 4713
+        },
+        {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
           "attacks": 4,
           "limit": 6,
           "loot": 4162
-        },
-        {
-          "name": "Riczard",
-          "tag": "#R2PCVYQG2",
-          "attacks": 3,
-          "limit": 6,
-          "loot": 3602
         },
         {
           "name": "GoldBelt",
@@ -895,8 +902,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "64|424584969|386648268|10100|239|19555|56321|0|24|73|10",
-      "last": "2026-10-30T11:15:53.917Z",
+      "sig": "64|424584969|386648268|10100|239|23800|59925|0|24|73|10",
+      "last": "2026-10-30T14:01:22.066Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -975,8 +982,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "180|15845909|14153680|1500|175|20495|25892|0|18|32|7",
-      "last": "2026-10-30T13:45:50.165Z",
+      "sig": "180|15845909|14153680|1500|175|24090|33274|0|18|32|7",
+      "last": "2026-10-30T14:01:22.066Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -1060,8 +1067,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|280215|267692|0|0|0|0|0|0|9|4",
-      "last": "2026-10-30T13:45:50.165Z",
+      "sig": "0|288215|279692|0|0|0|0|0|0|9|4",
+      "last": "2026-10-30T14:01:22.066Z",
       "since": "2026-10-29T23:31:02.288Z"
     }
   },
@@ -1819,7 +1826,7 @@
         "warStars": 24,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 56321,
+        "capital": 63108,
         "warPref": "in",
         "heroes": [
           {
@@ -1842,10 +1849,10 @@
       "ach": {
         "cg": 10100,
         "don": 239,
-        "capLoot": 19555,
+        "capLoot": 23800,
         "gold": 424584969,
         "elixir": 386648268,
-        "capContrib": 56321,
+        "capContrib": 59925,
         "wins": 0
       }
     },
@@ -2536,7 +2543,7 @@
         "warStars": 18,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 25892,
+        "capital": 33274,
         "warPref": "in",
         "heroes": [
           {
@@ -2549,10 +2556,10 @@
       "ach": {
         "cg": 1500,
         "don": 175,
-        "capLoot": 20495,
+        "capLoot": 24090,
         "gold": 15845909,
         "elixir": 14153680,
-        "capContrib": 25892,
+        "capContrib": 33274,
         "wins": 0
       }
     },
@@ -3078,8 +3085,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 280215,
-        "elixir": 267692,
+        "gold": 288215,
+        "elixir": 279692,
         "capContrib": 0,
         "wins": 0
       }
