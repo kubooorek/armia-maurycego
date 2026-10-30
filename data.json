@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T01:31:03.128Z",
+  "updated": "2026-10-30T01:45:52.580Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -1251,8 +1251,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|397577152|462248699|59470|11803|129550|226266|0|2445|87|8",
-      "last": "2026-10-30T01:31:03.127Z",
+      "sig": "0|398937543|463661119|59470|11803|129550|226266|0|2445|87|8",
+      "last": "2026-10-30T01:45:52.579Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -2329,6 +2329,47 @@
       }
     },
     {
+      "name": "Barnes",
+      "tag": "#LQVRCRUYR",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 130,
+      "trophies": 113,
+      "profile": {
+        "level": 87,
+        "trophies": 113,
+        "best": 2650,
+        "league": "Barbarian League 5",
+        "warStars": 2445,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 226266,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "ach": {
+        "cg": 59470,
+        "don": 11803,
+        "capLoot": 129550,
+        "gold": 398937543,
+        "elixir": 463661119,
+        "capContrib": 226266,
+        "wins": 0
+      }
+    },
+    {
       "name": "Kojak",
       "tag": "#G8VGC2VRL",
       "role": "admin",
@@ -2371,47 +2412,6 @@
         "gold": 120967155,
         "elixir": 111614091,
         "capContrib": 27485,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Barnes",
-      "tag": "#LQVRCRUYR",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 130,
-      "trophies": 40,
-      "profile": {
-        "level": 87,
-        "trophies": 40,
-        "best": 2650,
-        "league": "Barbarian League 5",
-        "warStars": 2445,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 226266,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "ach": {
-        "cg": 59470,
-        "don": 11803,
-        "capLoot": 129550,
-        "gold": 397577152,
-        "elixir": 462248699,
-        "capContrib": 226266,
         "wins": 0
       }
     },
