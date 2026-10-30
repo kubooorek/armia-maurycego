@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T14:46:07.955Z",
+  "updated": "2026-10-30T15:01:28.990Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -7,7 +7,7 @@
   "warWins": 12,
   "currentWar": null,
   "cwl": null,
-  "visits": 28,
+  "visits": 31,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -19,10 +19,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 56374,
-      "raids": 4,
-      "attacks": 52,
-      "districts": 14,
+      "loot": 57989,
+      "raids": 5,
+      "attacks": 54,
+      "districts": 15,
       "medals": 0,
       "members": [
         {
@@ -87,6 +87,13 @@
           "attacks": 4,
           "limit": 6,
           "loot": 4162
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": 2,
+          "limit": 6,
+          "loot": 1615
         },
         {
           "name": "GoldBelt",
@@ -926,8 +933,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "20|153929094|149118839|2900|20|15935|28873|0|40|71|10",
-      "last": "2026-10-29T22:59:49.907Z",
+      "sig": "20|153929094|149118839|2900|20|17475|28873|0|40|72|10",
+      "last": "2026-10-30T15:01:28.989Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -1930,7 +1937,7 @@
       "received": 83,
       "trophies": 348,
       "profile": {
-        "level": 71,
+        "level": 72,
         "trophies": 348,
         "best": 348,
         "league": "Barbarian League 5",
@@ -1960,7 +1967,7 @@
       "ach": {
         "cg": 2900,
         "don": 20,
-        "capLoot": 15935,
+        "capLoot": 17475,
         "gold": 153929094,
         "elixir": 149118839,
         "capContrib": 28873,
