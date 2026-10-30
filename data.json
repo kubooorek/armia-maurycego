@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T11:45:50.914Z",
+  "updated": "2026-10-30T12:01:19.365Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -47,6 +47,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-10-30T12:01:18.655Z",
+      "type": "th",
+      "name": "samurai024",
+      "from": 5,
+      "to": 6
+    },
     {
       "t": "2026-10-30T07:01:14.899Z",
       "type": "th",
@@ -349,7 +356,7 @@
     {
       "d": "2026-10-30",
       "members": 44,
-      "avgTh": 8,
+      "avgTh": 8.1,
       "level": 3,
       "wins": 12,
       "points": 16200
@@ -978,8 +985,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|5131363|5056243|0|0|0|0|0|0|19|5",
-      "last": "2026-10-29T22:45:46.633Z",
+      "sig": "0|5131363|5056243|0|0|0|0|0|0|19|6",
+      "last": "2026-10-30T12:01:19.365Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -2433,6 +2440,42 @@
       }
     },
     {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 7,
+      "given": 50,
+      "received": 170,
+      "trophies": 300,
+      "profile": {
+        "level": 32,
+        "trophies": 300,
+        "best": 260,
+        "league": "Skeleton League 1",
+        "warStars": 5,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 700,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 48,
+        "capLoot": 0,
+        "gold": 20628423,
+        "elixir": 20135419,
+        "capContrib": 700,
+        "wins": 0
+      }
+    },
+    {
       "name": "Riczard",
       "tag": "#R2PCVYQG2",
       "role": "member",
@@ -2501,42 +2544,6 @@
         "gold": 24946237,
         "elixir": 24186252,
         "capContrib": 250,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 7,
-      "given": 50,
-      "received": 170,
-      "trophies": 260,
-      "profile": {
-        "level": 32,
-        "trophies": 260,
-        "best": 260,
-        "league": "Skeleton League 1",
-        "warStars": 5,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 700,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 48,
-        "capLoot": 0,
-        "gold": 20628423,
-        "elixir": 20135419,
-        "capContrib": 700,
         "wins": 0
       }
     },
@@ -2868,7 +2875,7 @@
       "name": "samurai024",
       "tag": "#RYUV9V9RC",
       "role": "member",
-      "th": 5,
+      "th": 6,
       "given": 0,
       "received": 0,
       "trophies": 0,
