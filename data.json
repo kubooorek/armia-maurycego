@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T11:15:53.918Z",
+  "updated": "2026-10-30T11:31:57.539Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -11,10 +11,29 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 3,
     "members": 12
   },
   "raids": [
+    {
+      "state": "ongoing",
+      "start": "20261030T070000.000Z",
+      "end": "20261102T070000.000Z",
+      "loot": 1175,
+      "raids": 0,
+      "attacks": 1,
+      "districts": 0,
+      "medals": 0,
+      "members": [
+        {
+          "name": "GoldBelt",
+          "tag": "#R9QQPG9JP",
+          "attacks": 1,
+          "limit": 5,
+          "loot": 1175
+        }
+      ]
+    },
     {
       "state": "ended",
       "start": "20261023T070000.000Z",
@@ -24,123 +43,6 @@
       "attacks": 90,
       "districts": 32,
       "medals": 77,
-      "members": [
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8199
-        },
-        {
-          "name": "MrDefPL",
-          "tag": "#8UCPRGC8",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7493
-        },
-        {
-          "name": "threeten",
-          "tag": "#R8RVQVPCC",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7318
-        },
-        {
-          "name": "wiktor",
-          "tag": "#QGPC2228Q",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6912
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6728
-        },
-        {
-          "name": "Riczard",
-          "tag": "#R2PCVYQG2",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6645
-        },
-        {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6644
-        },
-        {
-          "name": "Toster290",
-          "tag": "#GJJ90QGVQ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6594
-        },
-        {
-          "name": "SZAR3",
-          "tag": "#RYLR2C92V",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6354
-        },
-        {
-          "name": "KuN",
-          "tag": "#YLLQL2VUP",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6347
-        },
-        {
-          "name": "Belaska",
-          "tag": "#GU0R2J8R0",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6101
-        },
-        {
-          "name": "oggsgdjdjbd",
-          "tag": "#Q9CU9P908",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5995
-        },
-        {
-          "name": "filip",
-          "tag": "#R90YJUQCQ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5938
-        },
-        {
-          "name": "Darui",
-          "tag": "#LUQJC2JGY",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5774
-        },
-        {
-          "name": "KUBOOOREK",
-          "tag": "#VP9PLGLV",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5316
-        }
-      ]
-    },
-    {
-      "state": "ended",
-      "start": "20261016T070000.000Z",
-      "end": "20261019T070000.000Z",
-      "loot": 56374,
-      "raids": 8,
-      "attacks": 66,
-      "districts": 18,
-      "medals": 45,
       "members": []
     }
   ],
@@ -1006,13 +908,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "343|36251791|35987888|2400|436|0|6550|0|0|42|8",
-      "last": "2026-10-30T07:15:46.771Z",
+      "sig": "343||||||||||8",
+      "last": "2026-10-30T11:31:57.538Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
-      "sig": "12|22373034|20363935|600|12|0|6580|0|17|34|7",
-      "last": "2026-10-30T04:31:02.163Z",
+      "sig": "12|22373034|20363935|600|12|1175|6580|0|17|34|7",
+      "last": "2026-10-30T11:31:57.538Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
@@ -2460,39 +2362,7 @@
       "th": 8,
       "given": 343,
       "received": 299,
-      "trophies": 349,
-      "profile": {
-        "level": 42,
-        "trophies": 349,
-        "best": 349,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 6550,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 6,
-            "max": 110
-          }
-        ]
-      },
-      "ach": {
-        "cg": 2400,
-        "don": 436,
-        "capLoot": 0,
-        "gold": 36251791,
-        "elixir": 35987888,
-        "capContrib": 6550,
-        "wins": 0
-      }
+      "trophies": 349
     },
     {
       "name": "GoldBelt",
@@ -2523,7 +2393,7 @@
       "ach": {
         "cg": 600,
         "don": 12,
-        "capLoot": 0,
+        "capLoot": 1175,
         "gold": 22373034,
         "elixir": 20363935,
         "capContrib": 6580,
