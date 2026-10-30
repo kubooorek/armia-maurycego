@@ -1,17 +1,212 @@
 {
-  "updated": "2026-10-30T18:01:19.381Z",
+  "updated": "2026-10-30T18:15:53.581Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
   "warWinStreak": 10,
   "warWins": 12,
-  "currentWar": null,
+  "currentWar": {
+    "state": "preparation",
+    "size": 25,
+    "perMember": 2,
+    "start": "20261031T171000.000Z",
+    "end": "20261101T171000.000Z",
+    "us": {
+      "name": "ARMIA MAURYCEGO",
+      "stars": 0,
+      "pct": 0,
+      "attacks": 0
+    },
+    "them": {
+      "name": "بچهای لارج",
+      "stars": 0,
+      "pct": 0,
+      "attacks": 0
+    },
+    "members": [
+      {
+        "name": "KUBOOOREK",
+        "tag": "#VP9PLGLV",
+        "pos": 1,
+        "th": 15,
+        "attacks": []
+      },
+      {
+        "name": "Albaroon.2",
+        "tag": "#GYUJR2URJ",
+        "pos": 2,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "MAQOS",
+        "tag": "#LJYR92002",
+        "pos": 3,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "oggsgdjdjbd",
+        "tag": "#Q9CU9P908",
+        "pos": 4,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "Toster290",
+        "tag": "#GJJ90QGVQ",
+        "pos": 5,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "VipeR",
+        "tag": "#22R8PLCU8",
+        "pos": 6,
+        "th": 11,
+        "attacks": []
+      },
+      {
+        "name": "monte",
+        "tag": "#QYJUV90JY",
+        "pos": 7,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "Cwel123",
+        "tag": "#RPR0L809R",
+        "pos": 8,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "tak",
+        "tag": "#Y02PYY922",
+        "pos": 9,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Kojak",
+        "tag": "#G8VGC2VRL",
+        "pos": 10,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Belaska",
+        "tag": "#GU0R2J8R0",
+        "pos": 11,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Brann",
+        "tag": "#LC8VRR9R2",
+        "pos": 12,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "zuzia",
+        "tag": "#R8V9U9VLJ",
+        "pos": 13,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Barnes",
+        "tag": "#LQVRCRUYR",
+        "pos": 14,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "KuN",
+        "tag": "#YLLQL2VUP",
+        "pos": 15,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "SHA☆ZAM!",
+        "tag": "#GVGRVCQJR",
+        "pos": 16,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "Mimbosz",
+        "tag": "#RY0QPVCCY",
+        "pos": 17,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "SZAR3",
+        "tag": "#RYLR2C92V",
+        "pos": 18,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "Darui",
+        "tag": "#LUQJC2JGY",
+        "pos": 19,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "GoldBelt",
+        "tag": "#R9QQPG9JP",
+        "pos": 20,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "erykos",
+        "tag": "#R9GPGL0QJ",
+        "pos": 21,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "Riczard",
+        "tag": "#R2PCVYQG2",
+        "pos": 22,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "Marsyllia",
+        "tag": "#R0VJLRGQ0",
+        "pos": 23,
+        "th": 7,
+        "attacks": []
+      },
+      {
+        "name": "samurai024",
+        "tag": "#RYUV9V9RC",
+        "pos": 24,
+        "th": 6,
+        "attacks": []
+      },
+      {
+        "name": "maati",
+        "tag": "#GLV9998PC",
+        "pos": 25,
+        "th": 5,
+        "attacks": []
+      }
+    ]
+  },
   "cwl": null,
   "visits": 35,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -19,9 +214,9 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 62378,
+      "loot": 63548,
       "raids": 5,
-      "attacks": 59,
+      "attacks": 60,
       "districts": 16,
       "medals": 0,
       "members": [
@@ -96,18 +291,18 @@
           "loot": 4162
         },
         {
+          "name": "GoldBelt",
+          "tag": "#R9QQPG9JP",
+          "attacks": 2,
+          "limit": 5,
+          "loot": 2345
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "attacks": 2,
           "limit": 6,
           "loot": 1615
-        },
-        {
-          "name": "GoldBelt",
-          "tag": "#R9QQPG9JP",
-          "attacks": 1,
-          "limit": 5,
-          "loot": 1175
         }
       ]
     },
@@ -124,6 +319,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-10-30T18:15:52.955Z",
+      "type": "th",
+      "name": "SZAR3",
+      "from": 7,
+      "to": 8
+    },
     {
       "t": "2026-10-30T18:01:18.439Z",
       "type": "th",
@@ -935,8 +1137,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "160|242064329|244203663|15400|1402|23370|38606|0|7|59|13",
-      "last": "2026-10-30T18:01:19.380Z",
+      "sig": "160|244902515|246044341|15400|1402|23370|38606|0|7|59|13",
+      "last": "2026-10-30T18:15:53.581Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -980,8 +1182,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "69|33188276|30508783|10050|68|10690|14253|0|4|40|7",
-      "last": "2026-10-30T09:01:18.663Z",
+      "sig": "69|33188276|30508783|10050|68|10690|14253|0|4|40|8",
+      "last": "2026-10-30T18:15:53.581Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -1005,8 +1207,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
-      "sig": "12|23369215|21345963|600|12|1175|6580|0|17|34|7",
-      "last": "2026-10-30T15:45:58.104Z",
+      "sig": "12|23369215|21345963|600|12|2345|9125|0|17|34|7",
+      "last": "2026-10-30T18:15:53.581Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
@@ -1929,8 +2131,8 @@
         "cg": 15400,
         "don": 1402,
         "capLoot": 23370,
-        "gold": 242064329,
-        "elixir": 244203663,
+        "gold": 244902515,
+        "elixir": 246044341,
         "capContrib": 38606,
         "wins": 0
       }
@@ -2287,7 +2489,7 @@
       "name": "SZAR3",
       "tag": "#RYLR2C92V",
       "role": "member",
-      "th": 7,
+      "th": 8,
       "given": 69,
       "received": 290,
       "trophies": 181,
@@ -2499,7 +2701,7 @@
         "warStars": 17,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 6580,
+        "capital": 9125,
         "warPref": "in",
         "heroes": [
           {
@@ -2512,10 +2714,10 @@
       "ach": {
         "cg": 600,
         "don": 12,
-        "capLoot": 1175,
+        "capLoot": 2345,
         "gold": 23369215,
         "elixir": 21345963,
-        "capContrib": 6580,
+        "capContrib": 9125,
         "wins": 0
       }
     },
