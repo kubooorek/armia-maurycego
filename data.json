@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T14:15:54.084Z",
+  "updated": "2026-10-30T14:31:24.856Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -21,7 +21,7 @@
       "end": "20261102T070000.000Z",
       "loot": 56374,
       "raids": 4,
-      "attacks": 51,
+      "attacks": 52,
       "districts": 14,
       "medals": 0,
       "members": [
@@ -94,6 +94,13 @@
           "attacks": 1,
           "limit": 5,
           "loot": 1175
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": 1,
+          "limit": 5,
+          "loot": 0
         }
       ]
     },
@@ -974,8 +981,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
-      "sig": "0|63869015|63929226|0|68|0|100|0|0|40|8",
-      "last": "2026-10-30T09:15:52.635Z",
+      "sig": "0|63869015|63929226|0|68|0|3870|0|0|40|8",
+      "last": "2026-10-30T14:31:24.856Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
@@ -994,8 +1001,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|24946237|24186252|0|0|0|250|0|3|34|8",
-      "last": "2026-10-30T05:15:54.505Z",
+      "sig": "0|25513908|24774199|0|0|0|250|0|3|34|8",
+      "last": "2026-10-30T14:31:24.856Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -2396,12 +2403,12 @@
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 100,
+        "capital": 3870,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           },
           {
@@ -2417,7 +2424,7 @@
         "capLoot": 0,
         "gold": 63869015,
         "elixir": 63929226,
-        "capContrib": 100,
+        "capContrib": 3870,
         "wins": 0
       }
     },
@@ -2600,8 +2607,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 24946237,
-        "elixir": 24186252,
+        "gold": 25513908,
+        "elixir": 24774199,
         "capContrib": 250,
         "wins": 0
       }
