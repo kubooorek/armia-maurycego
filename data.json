@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T05:15:54.505Z",
+  "updated": "2026-10-30T05:31:01.562Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -1344,8 +1344,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "123|15768344|15371052|0|135|5495|10055|0|0|38|7",
-      "last": "2026-10-29T22:15:49.037Z",
+      "sig": "148|16179985|15620055|0|160|5495|10055|0|0|38|7",
+      "last": "2026-10-30T05:31:01.561Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -2762,7 +2762,7 @@
       "role": "member",
       "th": 8,
       "given": 343,
-      "received": 274,
+      "received": 299,
       "trophies": 349,
       "profile": {
         "level": 41,
@@ -3018,7 +3018,7 @@
       "tag": "#LUQJC2JGY",
       "role": "member",
       "th": 7,
-      "given": 123,
+      "given": 148,
       "received": 0,
       "trophies": 242,
       "profile": {
@@ -3041,10 +3041,10 @@
       },
       "ach": {
         "cg": 0,
-        "don": 135,
+        "don": 160,
         "capLoot": 5495,
-        "gold": 15768344,
-        "elixir": 15371052,
+        "gold": 16179985,
+        "elixir": 15620055,
         "capContrib": 10055,
         "wins": 0
       }
