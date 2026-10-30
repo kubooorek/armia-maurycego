@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-30T03:31:03.725Z",
+  "updated": "2026-10-30T04:01:15.730Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
-  "warWinStreak": 9,
-  "warWins": 11,
+  "warWinStreak": 10,
+  "warWins": 12,
   "currentWar": {
-    "state": "inWar",
+    "state": "warEnded",
     "size": 20,
     "perMember": 2,
     "start": "20261029T040002.000Z",
@@ -502,7 +502,7 @@
       "enemy": "старше 18",
       "size": 20,
       "perMember": 2,
-      "state": "inWar",
+      "state": "warEnded",
       "us": 60,
       "them": 50,
       "members": [
@@ -752,7 +752,7 @@
       "members": 44,
       "avgTh": 8,
       "level": 3,
-      "wins": 11,
+      "wins": 12,
       "points": 16200
     }
   ],
@@ -1175,6 +1175,19 @@
       "value": 44,
       "name": "Armia Maurycego",
       "tag": "#2GQQ8RGRL",
+      "date": "2026-10-30"
+    },
+    "warStars": {
+      "value": 6,
+      "name": "KUBOOOREK",
+      "tag": "#VP9PLGLV",
+      "date": "2026-10-30",
+      "detail": "vs старше 18"
+    },
+    "tripleStreak": {
+      "value": 2,
+      "name": "KUBOOOREK",
+      "tag": "#VP9PLGLV",
       "date": "2026-10-30"
     }
   },
@@ -3482,6 +3495,21 @@
     }
   ],
   "wars": [
+    {
+      "date": "2026-10-30",
+      "enemy": "старше 18",
+      "size": 20,
+      "xp": 183,
+      "result": "win",
+      "us": {
+        "stars": 60,
+        "pct": 100
+      },
+      "them": {
+        "stars": 50,
+        "pct": 83.7
+      }
+    },
     {
       "date": "2026-10-27",
       "enemy": "Grim Reapers",
