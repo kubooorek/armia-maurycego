@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T09:15:52.636Z",
+  "updated": "2026-10-30T09:31:05.833Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -1283,8 +1283,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "169|33168099|32386181|10600|180|16685|32665|0|36|41|8",
-      "last": "2026-10-30T01:15:55.449Z",
+      "sig": "169|33168099|32386181|10600|180|16685|32665|0|36|42|8",
+      "last": "2026-10-30T09:31:05.832Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
@@ -1398,8 +1398,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
-      "sig": "0|41062|45737|0|0|0|0|0|0|7|3",
-      "last": "2026-10-29T22:15:49.037Z",
+      "sig": "0|41062|45737|0|0|0|0|0|0|8|3",
+      "last": "2026-10-30T09:31:05.832Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY9GPJ822": {
@@ -1877,10 +1877,10 @@
       "th": 12,
       "given": 100,
       "received": 72,
-      "trophies": 276,
+      "trophies": 284,
       "profile": {
         "level": 99,
-        "trophies": 276,
+        "trophies": 284,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 53,
@@ -2451,7 +2451,7 @@
       "received": 460,
       "trophies": 104,
       "profile": {
-        "level": 41,
+        "level": 42,
         "trophies": 104,
         "best": 348,
         "league": "Barbarian League 4",
@@ -3324,7 +3324,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 7,
+        "level": 8,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
