@@ -50,6 +50,11 @@ Kluczy i linków webhooków **nikomu nie wysyłamy**.
 | `MVP` / `MVP_HISTORY` | MVP miesiąca i galeria poprzednich MVP |
 | `CHALLENGE` | wyzwanie tygodnia: lista konkurencji `rotation` (zmieniają się co tydzień, po kolei), nagroda. Kolejność musi zgadzać się z `ROTATION` w `scripts/update-data.mjs` |
 | `BADGE_LIMITS` | progi odznak przy nickach: gwiazdki wojenne, oddane wojska w sezonie, złoto Stolicy, punkty w Grach Klanowych |
+| `FACTS` | ciekawostki z historii gry (jedna na dobę) |
+| `UPGRADES`, `UPG_RULES` | plan ulepszeń dla każdego TH (sekcja Poradnik, zmienia się z suwakiem TH) |
+| `GLOSSARY` | słowniczek pojęć w Poradniku |
+| `SEASONS` | motywy sezonowe (Halloween, Święta, Nowy Rok) — daty w formacie MM-DD. Podgląd: dopisz do adresu `?motyw=halloween`, `?motyw=swieta`, `?motyw=nowyrok` albo `?motyw=urodziny` |
+| `JUBILEES` | okrągłe liczby dni istnienia klanu, w które strona świętuje (plus urodziny klanu co roku, według `FOUNDED`) |
 | `GOALS` | cele klanu (paski postępu) |
 | `BASES` | bazy tygodnia: `th`, link `war`, link `ranked` |
 | `CWL` | sezon CWL wpisywany ręcznie (gdy brak danych z robota) |
@@ -67,10 +72,14 @@ Po 1–2 minutach odśwież stronę przez **Ctrl+F5**.
   oraz GitHub → Actions (uruchomienia „Aktualizacja danych klanu”).
 - **401 w historii cron-job.org:** wygasł lub jest błędny klucz GitHub.
 - **Robot kończy się błędem:** sprawdź sekret `COC_TOKEN` (klucz z IP `45.79.218.79`).
-- **Licznik odwiedzin pokazuje „TH3+”:** bloker reklam w przeglądarce — liczba i tak odświeża się co 15 min z `data.json`.
+- **Licznik odwiedzin pokazuje „TH6+”:** bloker reklam w przeglądarce — liczba i tak odświeża się co 15 min z `data.json`.
 
 ## Odznaki i staż
 
 - **Odznaki** przy nickach liczy strona sama z danych robota (wojny, profile, Gry Klanowe, wyzwanie tygodnia). Lista i opis są w FAQ na stronie.
 - **Staż** robot zapisuje w `data.json` (pole `joined`) od momentu, gdy pierwszy raz zobaczy gracza w klanie. Gracze, którzy byli w klanie przed włączeniem tej funkcji, mają przy stażu dopisek „lub dłużej”. Odejście z klanu zeruje staż.
 - **Rocznice** (miesiąc, 3 miesiące, pół roku, rok) pokazują się w sekcji „Sława klanowa” przez 7 dni od rocznicy.
+
+## Księga rekordów
+
+Robot zapisuje w `data.json` (pole `records`) rekordy wszech czasów: najwięcej gwiazdek w jednej wojnie, najdłuższa seria ataków za 3★, najwięcej łupów w weekendzie rajdowym, najwięcej oddanych wojsk w sezonie, najwięcej punktów w Grach Klanowych, najwięcej wygranych Wyzwań Tygodnia i rekord liczebności klanu. Rekord zmienia się tylko wtedy, gdy ktoś go pobije.

@@ -391,6 +391,50 @@ for (const m of members) {
 }
 
 /* ---------- Powiadomienia na Discordzie (webhook) ---------- */
+/* ---------- Księga rekordów klanu (rekordy wszech czasów, tylko rosną) ---------- */
+let records = old?.records && typeof old.records === "object" ? JSON.parse(JSON.stringify(old.records)) : {};
+const recDay = t => (t ? day(t) : null) || nowIso.slice(0, 10);
+const setRec = (key, value, name, tag, date, detail) => {
+  if (value == null || !(value > 0)) return;
+  const r = records[key];
+  if (!r || value > r.value) records[key] = { value, name, tag, date, ...(detail ? { detail } : {}) };
+  else if (r.tag === tag && value === r.value && name !== r.name) r.name = name;   // zmiana nicku rekordzisty
+};
+// 1) Najwięcej gwiazdek jednego gracza w jednej wojnie (zakończone wojny, także CWL)
+const endedWars = warArchive.filter(x => x.state === "warEnded").sort((a, b) => String(a.end).localeCompare(String(b.end)));
+for (const wr of endedWars) for (const m of wr.members || []) {
+  const st = (m.attacks || []).reduce((a, x) => a + (x.stars || 0), 0);
+  setRec("warStars", st, m.name, m.tag, recDay(wr.end), `vs ${wr.enemy}`);
+}
+// 2) Najdłuższa seria ataków za 3★ z rzędu (opuszczony atak przerywa serię)
+const streak = {};
+for (const wr of endedWars) for (const m of wr.members || []) {
+  const s = streak[m.tag] || (streak[m.tag] = { cur: 0, name: m.name });
+  s.name = m.name;
+  const atts = m.attacks || [];
+  for (let i = 0; i < (wr.perMember || atts.length); i++) {
+    const a = atts[i];
+    if (a && a.stars === 3) { s.cur++; setRec("tripleStreak", s.cur, m.name, m.tag, recDay(wr.end)); }
+    else s.cur = 0;
+  }
+}
+// 3) Najwięcej łupów w jednym weekendzie rajdowym
+for (const r of raids.filter(x => x.state === "ended")) for (const m of r.members || [])
+  setRec("raidLoot", m.loot, m.name, m.tag, recDay(r.end));
+// 4) Najwięcej oddanych wojsk w jednym sezonie
+for (const m of members) setRec("donSeason", m.given, m.name, m.tag, today);
+// 5) Najwięcej punktów w jednych Grach Klanowych
+for (const [t, v] of Object.entries(clanGames?.points || {})) setRec("clanGames", v.pts, v.name, t, today);
+// 6) Najwięcej wygranych Wyzwań Tygodnia
+let weekWins = old?.weekWins && typeof old.weekWins === "object" ? old.weekWins : {};
+if (weekWinners && weekWinners[0]) {
+  const w = weekWinners[0];
+  weekWins[w.tag] = { name: w.name, n: (weekWins[w.tag]?.n || 0) + 1 };
+  setRec("weekWins", weekWins[w.tag].n, w.name, w.tag, today);
+}
+// 7) Rekord liczebności klanu
+setRec("members", clan.members, "Armia Maurycego", TAG, today);
+
 const WEBHOOK = process.env.DISCORD_WEBHOOK;                         // kanał wojenny: przypomnienia, wyniki, Gry Klanowe
 const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // kanał ogólny: powitania, awanse, Wojownik Tygodnia
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
@@ -485,6 +529,8 @@ const data = {
   weekBase,
   lastWeek,
   joined,
+  records,
+  weekWins,
   activity,
   clanGames,
   monthBase,
