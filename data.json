@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T07:45:49.115Z",
+  "updated": "2026-10-30T08:15:59.954Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -328,7 +328,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1303,8 +1303,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "69|29875106|28054988|10050|68|10690|14253|0|4|40|7",
-      "last": "2026-10-29T22:15:49.037Z",
+      "sig": "69|30470866|28380931|10050|68|10690|14253|0|4|40|7",
+      "last": "2026-10-30T08:15:59.954Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -1423,8 +1423,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|137548|143868|0|0|0|0|0|0|7|4",
-      "last": "2026-10-30T07:31:05.001Z",
+      "sig": "0|137548|143868|0|0|0|0|0|0|8|4",
+      "last": "2026-10-30T08:15:59.954Z",
       "since": "2026-10-29T23:31:02.288Z"
     }
   },
@@ -2054,7 +2054,7 @@
           },
           {
             "name": "Grand Warden",
-            "level": 7,
+            "level": 8,
             "max": 85
           },
           {
@@ -2417,12 +2417,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 21,
+            "level": 22,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
@@ -2641,8 +2641,8 @@
         "cg": 10050,
         "don": 68,
         "capLoot": 10690,
-        "gold": 29875106,
-        "elixir": 28054988,
+        "gold": 30470866,
+        "elixir": 28380931,
         "capContrib": 14253,
         "wins": 0
       }
@@ -3012,7 +3012,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 6,
+            "level": 7,
             "max": 110
           }
         ]
@@ -3456,7 +3456,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 7,
+        "level": 8,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
