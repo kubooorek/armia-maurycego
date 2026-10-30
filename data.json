@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T18:15:53.581Z",
+  "updated": "2026-10-30T18:31:05.828Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -214,10 +214,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 63548,
-      "raids": 5,
-      "attacks": 60,
-      "districts": 16,
+      "loot": 71010,
+      "raids": 6,
+      "attacks": 66,
+      "districts": 18,
       "medals": 0,
       "members": [
         {
@@ -226,6 +226,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 8017
+        },
+        {
+          "name": "SZAR3",
+          "tag": "#RYLR2C92V",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7462
         },
         {
           "name": "Riczard",
@@ -1182,8 +1189,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "69|33188276|30508783|10050|68|10690|14253|0|4|40|8",
-      "last": "2026-10-30T18:15:53.581Z",
+      "sig": "69|33188276|30508783|10050|68|17945|14253|0|4|41|8",
+      "last": "2026-10-30T18:31:05.827Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -2494,7 +2501,7 @@
       "received": 290,
       "trophies": 181,
       "profile": {
-        "level": 40,
+        "level": 41,
         "trophies": 181,
         "best": 390,
         "league": "Skeleton League 2",
@@ -2514,7 +2521,7 @@
       "ach": {
         "cg": 10050,
         "don": 68,
-        "capLoot": 10690,
+        "capLoot": 17945,
         "gold": 33188276,
         "elixir": 30508783,
         "capContrib": 14253,
@@ -2670,7 +2677,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 6,
+            "level": 7,
             "max": 110
           }
         ]
@@ -3309,7 +3316,13 @@
         "defenseWins": 0,
         "capital": 0,
         "warPref": "in",
-        "heroes": []
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
       },
       "ach": {
         "cg": 0,
