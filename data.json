@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T10:01:15.471Z",
+  "updated": "2026-10-30T10:31:04.678Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -328,7 +328,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1258,8 +1258,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "160|242064329|244203663|15400|1402|19505|33906|0|7|59|12",
-      "last": "2026-10-30T10:01:15.471Z",
+      "sig": "160|242064329|244203663|15400|1402|19505|34706|0|7|59|12",
+      "last": "2026-10-30T10:31:04.678Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -1423,8 +1423,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|184530|191661|0|0|0|0|0|0|8|4",
-      "last": "2026-10-30T08:31:03.517Z",
+      "sig": "0|256191|241043|0|0|0|0|0|0|9|4",
+      "last": "2026-10-30T10:31:04.678Z",
       "since": "2026-10-29T23:31:02.288Z"
     }
   },
@@ -2228,7 +2228,7 @@
         "warStars": 7,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 33906,
+        "capital": 34706,
         "warPref": "in",
         "heroes": [
           {
@@ -2259,7 +2259,7 @@
         "capLoot": 19505,
         "gold": 242064329,
         "elixir": 244203663,
-        "capContrib": 33906,
+        "capContrib": 34706,
         "wins": 0
       }
     },
@@ -3456,7 +3456,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 8,
+        "level": 9,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -3471,8 +3471,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 184530,
-        "elixir": 191661,
+        "gold": 256191,
+        "elixir": 241043,
         "capContrib": 0,
         "wins": 0
       }
