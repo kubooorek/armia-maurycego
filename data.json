@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T15:01:28.990Z",
+  "updated": "2026-10-30T15:15:56.923Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -7,7 +7,7 @@
   "warWins": 12,
   "currentWar": null,
   "cwl": null,
-  "visits": 31,
+  "visits": 33,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -1023,8 +1023,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
-      "sig": "30|11169613|9938704|0|30|0|7670|0|15|31|7",
-      "last": "2026-10-30T13:31:09.088Z",
+      "sig": "30|11169613|9938704|0|30|0|7670|0|15|32|7",
+      "last": "2026-10-30T15:15:56.922Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
@@ -2665,7 +2665,7 @@
       "received": 545,
       "trophies": 255,
       "profile": {
-        "level": 31,
+        "level": 32,
         "trophies": 255,
         "best": 255,
         "league": "Skeleton League 1",
