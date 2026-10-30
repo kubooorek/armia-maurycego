@@ -50,6 +50,7 @@ Kluczy i linków webhooków **nikomu nie wysyłamy**.
 | `MVP` / `MVP_HISTORY` | MVP miesiąca i galeria poprzednich MVP |
 | `CHALLENGE` | wyzwanie tygodnia: lista konkurencji `rotation` (zmieniają się co tydzień, po kolei), nagroda. Kolejność musi zgadzać się z `ROTATION` w `scripts/update-data.mjs` |
 | `BADGE_LIMITS` | progi odznak przy nickach: gwiazdki wojenne, oddane wojska w sezonie, złoto Stolicy, punkty w Grach Klanowych |
+| `STRATEGIES` | strategie ataku dla każdego TH (Poradnik): nazwa, tryb, armia, zaklęcia, zamek, kroki, wskazówka. `img` = zdjęcie z folderu `img/strategie`, `own: true` = plakietka „Sprawdzona w naszym klanie”, `src: true` = link do AllClash |
 | `FACTS` | ciekawostki z historii gry (jedna na dobę) |
 | `UPGRADES`, `UPG_RULES` | plan ulepszeń dla każdego TH (sekcja Poradnik, zmienia się z suwakiem TH) |
 | `GLOSSARY` | słowniczek pojęć w Poradniku |
