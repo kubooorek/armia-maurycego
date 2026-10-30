@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T12:01:19.365Z",
+  "updated": "2026-10-30T13:01:18.880Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -19,18 +19,32 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 1175,
+      "loot": 7371,
       "raids": 0,
-      "attacks": 1,
-      "districts": 0,
+      "attacks": 7,
+      "districts": 2,
       "medals": 0,
       "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6196
+        },
         {
           "name": "GoldBelt",
           "tag": "#R9QQPG9JP",
           "attacks": 1,
           "limit": 5,
           "loot": 1175
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": 0,
+          "limit": 5,
+          "loot": 0
         }
       ]
     },
@@ -772,7 +786,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 7766,
+      "value": 7781,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-10-30"
@@ -800,8 +814,8 @@
   "weekWins": {},
   "activity": {
     "#VP9PLGLV": {
-      "sig": "7766|2000000000|2000000000|94700|80434|1202674|1598219|0|1238|204|15",
-      "last": "2026-10-30T11:15:53.917Z",
+      "sig": "7781|2000000000|2000000000|94700|80449|1208549|1605015|0|1238|204|15",
+      "last": "2026-10-30T13:01:18.879Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -890,8 +904,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "288|73449600|61151646|5100|286|0|16270|0|12|46|9",
-      "last": "2026-10-30T08:31:03.517Z",
+      "sig": "288|73449600|61151646|5100|286|0|16270|0|12|47|9",
+      "last": "2026-10-30T13:01:18.879Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -1010,8 +1024,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|497611|530969|0|0|0|0|0|0|11|4",
-      "last": "2026-10-30T11:45:50.914Z",
+      "sig": "0|600717|623644|0|0|0|0|0|0|12|4",
+      "last": "2026-10-30T13:01:18.879Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -1299,7 +1313,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 7766,
+      "given": 7781,
       "received": 3077,
       "trophies": 447,
       "profile": {
@@ -1310,7 +1324,7 @@
         "warStars": 1238,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 1598219,
+        "capital": 1605015,
         "warPref": "in",
         "heroes": [
           {
@@ -1347,11 +1361,11 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 80434,
-        "capLoot": 1202674,
+        "don": 80449,
+        "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
-        "capContrib": 1598219,
+        "capContrib": 1605015,
         "wins": 0
       }
     },
@@ -2171,7 +2185,7 @@
       "received": 452,
       "trophies": 299,
       "profile": {
-        "level": 46,
+        "level": 47,
         "trophies": 299,
         "best": 308,
         "league": "Skeleton League 2",
@@ -3075,10 +3089,10 @@
       "role": "member",
       "th": 4,
       "given": 0,
-      "received": 0,
+      "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 11,
+        "level": 12,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -3099,8 +3113,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 497611,
-        "elixir": 530969,
+        "gold": 600717,
+        "elixir": 623644,
         "capContrib": 0,
         "wins": 0
       }
