@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T02:15:53.968Z",
+  "updated": "2026-10-31T02:45:55.964Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -214,9 +214,9 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 77055,
+      "loot": 80815,
       "raids": 6,
-      "attacks": 72,
+      "attacks": 76,
       "districts": 20,
       "medals": 0,
       "members": [
@@ -284,6 +284,13 @@
           "loot": 5749
         },
         {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5375
+        },
+        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "attacks": 4,
@@ -310,13 +317,6 @@
           "attacks": 2,
           "limit": 5,
           "loot": 2345
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "attacks": 2,
-          "limit": 6,
-          "loot": 1615
         }
       ]
     },
@@ -1164,8 +1164,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "20|153929094|149118839|2900|20|17475|28873|0|40|72|10",
-      "last": "2026-10-30T15:01:28.989Z",
+      "sig": "20|153929094|149118839|2900|20|21235|28873|0|40|72|10",
+      "last": "2026-10-31T02:45:55.963Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -2198,7 +2198,7 @@
       "ach": {
         "cg": 2900,
         "don": 20,
-        "capLoot": 17475,
+        "capLoot": 21235,
         "gold": 153929094,
         "elixir": 149118839,
         "capContrib": 28873,
