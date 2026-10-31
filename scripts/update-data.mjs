@@ -119,7 +119,7 @@ if (w && w.state && w.state !== "notInWar") {
       name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
       attacks: (m.attacks || []).map(a => {
         const d = oppByTag[a.defenderTag];
-        return { stars: a.stars, pct: a.destructionPercentage, target: d ? `${d.mapPosition}. ${d.name}` : "" };
+        return { stars: a.stars, pct: a.destructionPercentage, order: a.order, target: d ? `${d.mapPosition}. ${d.name}` : "" };
       })
     }))
   };
@@ -195,6 +195,7 @@ if (currentWar && currentWar.state !== "preparation") {
     start: currentWar.start, end: currentWar.end, enemy: currentWar.them.name,
     size: currentWar.size, perMember: currentWar.perMember, state: currentWar.state,
     us: currentWar.us.stars, them: currentWar.them.stars,
+    final: currentWar.state === "warEnded",   // robot widział koniec wojny = komplet ataków
     members: currentWar.members.map(m => ({
       name: m.name, tag: m.tag,
       attacks: m.attacks.map(a => ({ stars: a.stars, pct: a.pct }))
@@ -219,6 +220,38 @@ warArchive.sort((a, b) => (b.start || "").localeCompare(a.start || ""));
 const nowStamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, ".000Z");
 warArchive.forEach(x => { if (x.end && x.end < nowStamp) x.state = "warEnded"; });
 warArchive = warArchive.slice(0, 40);
+
+/* ---------- Kary za łamanie zasad wojennych (tylko zwykłe wojny, 2 ataki) ---------- */
+let penalties = Array.isArray(old?.penalties) ? old.penalties : [];
+const addPen = p => { if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
+if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
+  const W = currentWar, byPos = Object.fromEntries(W.members.map(m => [m.pos, m]));
+  const tp = a => parseInt(a.target, 10);
+  const firstOrder = m => m.attacks.length ? Math.min(...m.attacks.map(a => a.order ?? 999)) : Infinity;
+  const base = m => ({ tag: m.tag, name: m.name, war: W.start, end: W.end, enemy: W.them.name });
+  for (const m of W.members) {
+    const atts = m.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    // 1) pierwszy atak nie na swój numer
+    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos)
+      addPen({ id: `${W.start}:${m.tag}:own`, type: "own", detail: `nr ${tp(atts[0])} zamiast nr ${m.pos}`, ...base(m) });
+    // 2) drugi atak na numer kogoś, kto jeszcze nie zaatakował (podkradanie ataku)
+    const a2 = atts[1];
+    if (a2 && a2.order != null && tp(a2) && tp(a2) !== m.pos) {
+      const owner = byPos[tp(a2)];
+      if (owner && owner.tag !== m.tag && firstOrder(owner) > a2.order)
+        addPen({ id: `${W.start}:${m.tag}:steal`, type: "steal", detail: `nr ${tp(a2)}, zanim ${owner.name} zaatakował(a) swój numer`, ...base(m) });
+    }
+  }
+}
+// 3) opuszczone ataki — tylko z wojen, których koniec robot widział (pewny komplet ataków), z ostatnich 7 dni
+for (const x of warArchive) {
+  if (x.cwl || !x.final || x.perMember !== 2 || Date.now() - stampMs(x.end) > 7 * 864e5) continue;
+  for (const m of x.members) if (m.attacks.length < x.perMember)
+    addPen({ id: `${x.start}:${m.tag}:missed`, type: "missed", detail: `wykorzystane ataki: ${m.attacks.length}/${x.perMember}`,
+             tag: m.tag, name: m.name, war: x.start, end: x.end, enemy: x.enemy });
+}
+penalties = penalties.slice(0, 80);
 
 /* ---------- Rajdy Stolicy ---------- */
 const raidsRaw = await safe("Rajdy Stolicy", () => api(`/clans/${enc(TAG)}/capitalraidseasons?limit=2`), { items: [] });
@@ -534,6 +567,7 @@ const data = {
   joined,
   records,
   weekWins,
+  penalties,
   activity,
   clanGames,
   monthBase,

@@ -91,3 +91,16 @@ Robot zapisuje w `data.json` (pole `records`) rekordy wszech czasów: najwięcej
 - **Ataki na żywo** pokazują ataki każdego gracza w trwającej wojnie. ⚠️ przy ataku = pierwszy atak nie na swój numer.
 - **Pasek „Na żywo”** pod menu zbiera wydarzenia z ostatnich 14 dni: dołączenia, nowe TH, awanse, 3★ na wojnie, wygrane i Wojownika Tygodnia.
 - **Gracz dnia** zmienia się o północy (czas polski). Losowany jest jeden z aktywnych członków.
+
+## Kary za łamanie zasad CW (zakładka „Kary”)
+
+Robot sam dopisuje kary w zwykłych wojnach (CWL się nie liczy):
+- **pierwszy atak nie na swój numer**,
+- **drugi atak na cudzy numer**, zanim właściciel tego numeru zaatakował,
+- **opuszczony atak** (tylko gdy robot widział koniec wojny, żeby nie było pomyłek).
+
+Status kary: „Kara na najbliższą wojnę” → „Odbywa karę” (gdy ruszy następna wojna; jeśli gracz mimo to jest w składzie, pojawi się ostrzeżenie) → „Kara odbyta” (w historii).
+
+W `index.html` są dwie listy:
+- `KARY_RECZNE` — kara dopisana ręcznie, np. `{name:"Nick", reason:"brak wojsk w zamku obronnym", date:"2026-10-31"}`,
+- `KARY_ANULOWANE` — anulowanie pomyłki lub usprawiedliwienia, np. `{name:"Nick", date:"2026-10-31"}` (data = dzień startu wojny).
