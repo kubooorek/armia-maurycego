@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T05:31:05.799Z",
+  "updated": "2026-10-31T06:31:02.604Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -214,10 +214,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 80815,
-      "raids": 6,
-      "attacks": 76,
-      "districts": 20,
+      "loot": 82248,
+      "raids": 7,
+      "attacks": 78,
+      "districts": 21,
       "medals": 0,
       "members": [
         {
@@ -284,6 +284,13 @@
           "loot": 5749
         },
         {
+          "name": "Toster290",
+          "tag": "#GJJ90QGVQ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5595
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "attacks": 6,
@@ -303,13 +310,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 4389
-        },
-        {
-          "name": "Toster290",
-          "tag": "#GJJ90QGVQ",
-          "attacks": 4,
-          "limit": 6,
-          "loot": 4162
         },
         {
           "name": "GoldBelt",
@@ -1166,8 +1166,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "160|244902515|246044341|15400|1402|23370|38606|0|7|59|13",
-      "last": "2026-10-30T18:15:53.581Z",
+      "sig": "160|245291621|246384865|15400|1402|24800|38606|0|7|59|13",
+      "last": "2026-10-31T06:31:02.604Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -2159,9 +2159,9 @@
       "ach": {
         "cg": 15400,
         "don": 1402,
-        "capLoot": 23370,
-        "gold": 244902515,
-        "elixir": 246044341,
+        "capLoot": 24800,
+        "gold": 245291621,
+        "elixir": 246384865,
         "capContrib": 38606,
         "wins": 0
       }
