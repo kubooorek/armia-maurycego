@@ -63,6 +63,26 @@ const members = (clan.memberList || []).map(m => ({
   trophies: m.trophies
 }));
 
+/* ---------- % rusha (wojska, zaklęcia, herosi, zwierzęta vs maksimum poprzedniego TH) ---------- */
+let CAPS = null;
+try { CAPS = JSON.parse(await readFile(new URL("./th-caps.json", import.meta.url), "utf8")); } catch (e) { console.error("Brak th-caps.json — pomijam % rusha"); }
+function rushOf(p, th) {
+  if (!CAPS || !th || th < 2) return null;
+  const units = [...(p.troops || []), ...(p.spells || []), ...(p.heroes || [])].filter(u => u.village === "home" && CAPS.caps[u.name]);
+  const sum = { troops: [0, 0], spells: [0, 0], heroes: [0, 0], pets: [0, 0] }, behind = [];
+  for (const u of units) {
+    const need = CAPS.caps[u.name][th - 2] || 0;      // maksimum dla poprzedniego ratusza
+    if (!need) continue;
+    const c = CAPS.cat[u.name], have = Math.min(u.level, need);
+    sum[c][0] += need; sum[c][1] += have;
+    if (u.level < need) behind.push({ n: CAPS.pl[u.name] || u.name, lvl: u.level, need });
+  }
+  const pct = ([n, h]) => n ? Math.round((n - h) / n * 1000) / 10 : 0;
+  const all = Object.values(sum).reduce((a, [n, h]) => [a[0] + n, a[1] + h], [0, 0]);
+  return { pct: pct(all), troops: pct(sum.troops), spells: pct(sum.spells), heroes: pct([sum.heroes[0] + sum.pets[0], sum.heroes[1] + sum.pets[1]]),
+           top: behind.sort((a, b) => (b.need - b.lvl) / b.need - (a.need - a.lvl) / a.need).slice(0, 6) };
+}
+
 /* ---------- Profile graczy ---------- */
 for (const m of members) {
   const p = await safe(`Profil ${m.name}`, () => api(`/players/${enc(m.tag)}`));
@@ -78,6 +98,7 @@ for (const m of members) {
     heroes: (p.heroes || []).filter(h => h.village === "home")
       .map(h => ({ name: h.name, level: h.level, max: h.maxLevel }))
   };
+  m.rush = rushOf(p, m.th);
   const A = Object.fromEntries((p.achievements || []).map(a => [a.name, a.value]));
   m.ach = {
     cg: A["Games Champion"] ?? null,        // suma punktów z Gier Klanowych

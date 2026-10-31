@@ -115,3 +115,11 @@ Do testów dopisz do adresu `?uklad=zwijane` (albo `kafelki` / `zakladki` / `kla
 - **Pomocnik składu CWL** (Panel zarządu): podpowiada 15 lub 30 osób + rezerwę na podstawie TH, herosów, skuteczności 3★, opuszczonych ataków, kar i aktywności. Przycisk kopiuje skład na Discorda.
 - **Porównaj dwóch graczy** (Członkowie) i **Quiz Clash of Clans** (Poradnik, pytania w stałej `Q` w skrypcie quizu).
 - **Automatyczne odświeżanie**: otwarta strona co minutę sprawdza `data.json` i sama się przeładowuje, gdy robot wrzuci nowe dane (nie przeładowuje w trakcie quizu, w otwartym profilu ani przy pisaniu).
+
+## % rusha, CWL i raporty
+
+- **% rusha** liczy robot (`scripts/update-data.mjs` + tabela `scripts/th-caps.json`): poziomy wojsk, zaklęć, herosów i zwierząt w porównaniu z maksimum poprzedniego ratusza. Budynków API gry nie podaje, więc nie są wliczane. Wynik widać w karcie gracza i w porównywarce. Tabelę `th-caps.json` warto odświeżyć, gdy gra doda nowe poziomy (nowy TH).
+- **Rundy CWL** (sekcja CWL): 7 rund z przeciwnikiem, wynikiem i odliczaniem. Przed startem sezonu pokazuje informację o starcie.
+- **Medale bonusowe CWL** (sekcja CWL): ranking sezonu po gwiazdkach i %; gracze z opuszczonym atakiem w CWL albo z aktywną karą są pomijani. Liczbę medali wybierasz z listy.
+- **Zapisani na wojnę** (sekcja Wojny): kto ma zielony / czerwony znaczek wojenny, podział na TH, ⛔ przy aktywnej karze.
+- **Raport tygodnia** (Panel zarządu): gotowy tekst z ostatnich 7 dni do skopiowania na Discorda.

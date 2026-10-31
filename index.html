@@ -414,6 +414,21 @@
   tbody tr:last-child td{border-bottom:none}
   .rank{color:var(--muted);font-family:ui-monospace,monospace}
   .pname{font-weight:600}
+  .rush{margin:0 0 14px;padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02)}
+  .rush-top{display:flex;align-items:baseline;gap:10px} .rush-top span{font-weight:700;font-size:.86rem} .rush-top b{font-family:Cinzel,serif;font-size:1.3rem} .rush-top small{font-weight:700;font-size:.78rem}
+  .rush-parts{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0} .rush-parts span{font-size:.76rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+  .rush-top-list{font-size:.8rem;color:var(--muted);line-height:1.6} .rush-top-list b{color:var(--text,#e8e6e1)} .rush-note{display:block;margin-top:6px;font-size:.72rem;color:var(--muted);opacity:.85}
+  .rnds{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+  .rnd{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);font-size:.8rem}
+  .rnd b{font-family:Cinzel,serif} .rnd small{color:var(--muted)} .rnd-st{font-size:.74rem;font-weight:700} .rnd-score{font-family:Cinzel,serif;font-size:1.15rem;margin-top:4px}
+  .rnd.live{border-color:rgba(217,83,79,.6);background:rgba(217,83,79,.08)} .rnd.prep{border-color:rgba(232,180,74,.5)} .rnd.win{border-color:rgba(79,180,119,.5)} .rnd.loss{border-color:rgba(217,83,79,.35)} .rnd.wait{opacity:.6}
+  .rnd-t{color:var(--gold2)!important;font-weight:700}
+  .bonus-n select{margin-left:4px;padding:3px 6px;border-radius:8px;border:1px solid var(--line);background:var(--card2);color:inherit;font:inherit}
+  .medal-pick{background:rgba(232,180,74,.08);border-radius:8px;padding-left:8px;padding-right:8px}
+  .optin{margin-bottom:14px} .optin summary{cursor:pointer}
+  .optin-row{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--line)} .optin-row>div{display:flex;flex-wrap:wrap;gap:5px}
+  .oi{font-size:.78rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line)} .oi.in{border-color:rgba(79,180,119,.45)} .oi.out{opacity:.6}
+  .report{margin-top:12px} .rep-pre{white-space:pre-wrap;font:inherit;font-size:.82rem;line-height:1.55;margin:0;padding:12px;border-radius:10px;border:1px solid var(--line);background:rgba(0,0,0,.2);max-height:360px;overflow:auto}
   .lay-hide{display:none!important}
   /* zwijane */
   .lay-acc section.acc{padding:6px 0} .lay-acc section.acc:first-of-type{padding-top:18px}
@@ -858,6 +873,8 @@
         <ol class="timeline" id="timeline"></ol>
       </div>
     </div>
+    <div class="panel" id="cwlRounds" style="margin-top:12px"></div>
+    <div class="panel" id="cwlMedals" style="margin-top:12px" hidden></div>
     <div class="duo" style="margin-top:12px">
       <div class="panel"><div class="fame-label">Cele klanu</div><div id="goals"></div></div>
       <div class="panel"><div class="fame-label">Rozwój klanu</div><div class="charts" id="charts"></div></div>
@@ -958,6 +975,7 @@
       </summary>
       <div class="admin-grid" id="adminGrid"></div>
       <div class="panel cwl-help" id="cwlHelp"></div>
+      <div class="panel report" id="report"></div>
     </details>
   </div>
 </section>
@@ -968,6 +986,7 @@
     <h2 class="sec-title">Historia wojen</h2>
     <p class="sec-lead">Od 5 na 5 do 20 na 20 — oto nasza droga od pierwszej bitwy.</p>
     <div class="live-war" id="liveWar" hidden></div>
+    <details class="panel optin" id="optinWrap" hidden><summary><span><span class="fame-label" style="margin:0;display:inline">📋 Zapisani na wojnę</span> <span class="chip" id="optinCount" style="margin-left:6px"></span></span></summary><div id="optin" style="margin-top:12px"></div></details>
     <div class="war-summary">
       <div class="stat"><b id="wW" style="color:var(--green)">–</b><span>Wygrane</span></div>
       <div class="stat"><b id="wL" style="color:var(--red)">–</b><span>Przegrane</span></div>
@@ -1517,7 +1536,7 @@ async function loadAuto(){
     const newNames = new Set((d.events||[]).filter(e=>e.type==="join" && new Date(e.t).getTime()>weekAgo).map(e=>e.name));
     const RM = {leader:"leader", coLeader:"co", admin:"elder", member:"member"};
     if (Array.isArray(d.members) && d.members.length){
-      MEMBERS = d.members.map(m=>({name:m.name, tag:m.tag, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, profile:m.profile||null, isNew:newNames.has(m.name), joined:(d.joined&&d.joined[m.tag])||null}));
+      MEMBERS = d.members.map(m=>({name:m.name, tag:m.tag, th:m.th, role:RM[m.role]||"member", given:m.given||0, received:m.received||0, profile:m.profile||null, isNew:newNames.has(m.name), joined:(d.joined&&d.joined[m.tag])||null, rush:m.rush||null}));
     }
     if (Array.isArray(d.wars) && d.wars.length){
       WARS = d.wars.map(w=>({date:w.date, enemy:w.enemy, size:w.size, xp:w.xp||0, us:{stars:w.us.stars, pct:w.us.pct}, them:{stars:w.them.stars, pct:w.them.pct}}));
@@ -2064,6 +2083,17 @@ function attacksHtml(cw){
   el.hidden=false;
 })();
 
+/* ===== % rusha ===== */
+function rushCol(v){ return v<5?"var(--green)":v<20?"var(--gold)":"var(--red)"; }
+function rushHtml(r){
+  const x=r&&r.rush; if(!x) return "";
+  const lbl=x.pct<5?"Wymaksowany ✓":x.pct<20?"Lekki rush":x.pct<40?"Zrushowany":"Mocno zrushowany";
+  return `<div class="rush"><div class="rush-top"><span>📊 Rush</span><b style="color:${rushCol(x.pct)}">${String(x.pct).replace(".",",")}%</b><small style="color:${rushCol(x.pct)}">${lbl}</small></div>
+    <div class="rush-parts"><span>⚔️ Wojska ${String(x.troops).replace(".",",")}%</span><span>🧪 Zaklęcia ${String(x.spells).replace(".",",")}%</span><span>👑 Herosi i zwierzęta ${String(x.heroes).replace(".",",")}%</span></div>
+    ${x.top&&x.top.length?`<div class="rush-top-list">Do nadrobienia: ${x.top.map(t=>`${esc(t.n)} <b>${t.lvl}/${t.need}</b>`).join(" · ")}</div>`:""}
+    <small class="rush-note">Liczone względem maksimum poprzedniego ratusza (TH${r.th-1}). Budynki nie są wliczane — gra ich nie udostępnia.</small></div>`;
+}
+
 /* ===== Profile graczy ===== */
 (function(){
   const modal=$("#modal"), body=$("#modalBody");
@@ -2093,7 +2123,8 @@ function attacksHtml(cw){
         const since=new Date(r.joined.d).toLocaleDateString(LOC());
         return `<p class="pf-staz">🗓️ ${en?"In the clan":"W klanie"}: <b>${r.joined.orig?(en?`since ${since} or earlier`:`od ${since} lub dłużej`):(en?`${sd} ${sd===1?"day":"days"} (since ${since})`:`${sd} ${sd===1?"dzień":"dni"} (od ${since})`)}</b></p>`;})()}
       ${(()=>{const bs=badgesFor(r); return bs.length?`<div class="pf-badges">${bs.map(b=>`<span>${b.i} ${esc(b.t.split(" — ")[0])}</span>`).join("")}</div>`:"";})()}
-      ${pf&&pf.heroes&&pf.heroes.length?`<div class="fame-label" style="margin-bottom:8px">Bohaterowie</div>${pf.heroes.map(h=>`<div class="hbar"><div class="hero-row"><b>${esc(h.name)}</b><span>${h.level} / ${h.max}</span></div><div class="dbar"><u style="width:${h.level/h.max*100}%"></u></div></div>`).join("")}`:""}
+      ${rushHtml(r)}
+      ${pf&&pf.heroes&&pf.heroes.length?`<div class="fame-label" style="margin-bottom:8px">Bohaterowie</div>${pf.heroes.map(h=>`<div class="hbar"><div class="hero-row"><b>${esc((LANG==="en"?{}:{"Barbarian King":"Król Barbarzyńców","Archer Queen":"Królowa Łuczniczek","Grand Warden":"Wielki Strażnik","Royal Champion":"Królewska Czempionka","Minion Prince":"Książę Minionów","Dragon Duke":"Smoczy Hrabia"})[h.name]||h.name)}</b><span>${h.level} / ${h.max}</span></div><div class="dbar"><u style="width:${h.level/h.max*100}%"></u></div></div>`).join("")}`:""}
       ${pf?(pf.warPref?`<p class="updated">Wojny: ${pf.warPref==="in"?"✅ zapisany(a)":"❌ wypisany(a)"} · Wygrane ataki: ${fmt(pf.attackWins)} · Obrony: ${fmt(pf.defenseWins)}</p>`:""):`<p class="updated">Pełny profil (bohaterowie, gwiazdki wojenne) pojawi się po najbliższej automatycznej aktualizacji.</p>`}`;
     modal.hidden=false;
   });
@@ -2398,6 +2429,7 @@ function attacksHtml(cw){
     return {...g,status,next,inLineup,d,reasons,text};
   }).sort((a,b)=>String(b.war).localeCompare(String(a.war)));
   const active=items.filter(i=>i.status!=="done"), hist=items.filter(i=>i.status==="done");
+  window.__karyActive=active.map(i=>({tag:i.tag,name:i.name,status:i.status,reasons:i.reasons}));
   const card=i=>{
     const badge = i.status==="next" ? `<span class="kara-st next">⛔ Kara na najbliższą wojnę</span>`
       : i.status==="serving" ? `<span class="kara-st serving">⏳ Odbywa karę — wojna z <bdi>${esc(i.next.enemy||"")}</bdi></span>` : `<span class="kara-st done">✓ Kara odbyta</span>`;
@@ -2584,7 +2616,7 @@ function attacksHtml(cw){
     const act=A.activity&&A.activity[m.tag]; const idle=act?Math.floor((Date.now()-new Date(act.last))/864e5):0;
     const pen=pens.filter(p=>p.tag===m.tag).length;
     const score=m.th*12+hp*25+(att?tri/att*12:0)-miss*8-pen*6-Math.min(idle,10)*3;
-    const flags=[]; if(miss) flags.push(`❌ ${miss} opuszcz.`); if(pen) flags.push(`⛔ ${pen} kara`); if(idle>=3) flags.push(`💤 ${idle} dni`); if(pf.warPref==="out") flags.push("🔴 wypisany z wojen");
+    const flags=[]; if(miss) flags.push(`❌ ${miss} opuszcz.`); if(pen) flags.push(`⛔ ${pen} kara`); if(idle>=3) flags.push(`💤 ${idle} dni`); if(pf.warPref==="out") flags.push("🔴 wypisany z wojen"); if(m.rush&&m.rush.pct>=30) flags.push(`📊 rush ${Math.round(m.rush.pct)}%`);
     return {name:m.name,th:m.th,hp:Math.round(hp*100),tri:att?Math.round(tri/att*100):null,score,flags,out:pf.warPref==="out"||idle>=7};
   }).sort((a,b)=>b.score-a.score);
   let size=15;
@@ -2620,13 +2652,15 @@ function attacksHtml(cw){
     const a=MEMBERS.find(m=>m.name===A.value), b=MEMBERS.find(m=>m.name===B.value); if(!a||!b) return;
     const pa=a.profile||{}, pb=b.profile||{};
     const rows=[["🏰 Ratusz",a.th,b.th],["⭐ Poziom",pa.level,pb.level],["⚔️ Gwiazdki wojenne",pa.warStars,pb.warStars],["🎯 Ataki za 3★ (nasze wojny)",tri(a),tri(b),"%"],
-      ["🏆 Puchary",pa.trophies,pb.trophies],["🥇 Rekord pucharów",pa.best,pb.best],["📦 Oddane w sezonie",a.given,b.given],["🏛️ Złoto dla Stolicy",pa.capital,pb.capital],["🗓️ Staż (dni)",a.joined&&!a.joined.orig?stazDays(a):null,b.joined&&!b.joined.orig?stazDays(b):null]];
+      ["🏆 Puchary",pa.trophies,pb.trophies],["🥇 Rekord pucharów",pa.best,pb.best],["📦 Oddane w sezonie",a.given,b.given],["🏛️ Złoto dla Stolicy",pa.capital,pb.capital],["🗓️ Staż (dni)",a.joined&&!a.joined.orig?stazDays(a):null,b.joined&&!b.joined.orig?stazDays(b):null],
+      ["📊 Rush (mniej = lepiej)",a.rush?a.rush.pct:null,b.rush?b.rush.pct:null,"%",true]];
     const names=new Set([...(pa.heroes||[]),...(pb.heroes||[])].map(h=>h.name));
     names.forEach(n=>{const ha=(pa.heroes||[]).find(h=>h.name===n), hb=(pb.heroes||[]).find(h=>h.name===n); rows.push(["👑 "+(HN[n]||n),ha?ha.level:null,hb?hb.level:null]);});
-    const cell=(v,o,suf)=>{ if(v==null) return `<td class="na">—</td>`; const win=o==null||v>o, eq=v===o; return `<td class="${eq?"":win?"win":""}">${fmt(v)}${suf||""}</td>`; };
-    let wa=0,wb=0; rows.forEach(r=>{ if(r[1]!=null&&(r[2]==null||r[1]>r[2])) wa++; else if(r[2]!=null&&(r[1]==null||r[2]>r[1])) wb++; });
+    const better=(v,o,low)=>v!=null&&(o==null||(low?v<o:v>o));
+    const cell=(v,o,suf,low)=>{ if(v==null) return `<td class="na">—</td>`; return `<td class="${v===o?"":better(v,o,low)?"win":""}">${typeof v==="number"&&!Number.isInteger(v)?String(v).replace(".",","):fmt(v)}${suf||""}</td>`; };
+    let wa=0,wb=0; rows.forEach(r=>{ if(better(r[1],r[2],r[4])) wa++; else if(better(r[2],r[1],r[4])) wb++; });
     $("#cmpOut").innerHTML=`<table class="cmp-t"><tbody><tr class="cmp-h"><th></th><td>${esc(a.name)}</td><td>${esc(b.name)}</td></tr>
-      ${rows.map(r=>`<tr><th>${r[0]}</th>${cell(r[1],r[2],r[3])}${cell(r[2],r[1],r[3])}</tr>`).join("")}</tbody>
+      ${rows.map(r=>`<tr><th>${r[0]}</th>${cell(r[1],r[2],r[3],r[4])}${cell(r[2],r[1],r[3],r[4])}</tr>`).join("")}</tbody>
       <tfoot><tr><th>Wygrane kategorie</th><td class="${wa>wb?"win":""}">${wa}</td><td class="${wb>wa?"win":""}">${wb}</td></tr></tfoot></table>`;
   };
   A.onchange=draw; B.onchange=draw; draw();
@@ -2674,6 +2708,96 @@ function attacksHtml(cw){
   };
   setInterval(check,60000);
   document.addEventListener("visibilitychange",()=>{ if(!document.hidden) check(); });
+})();
+
+/* ===== Rundy CWL na żywo ===== */
+(function(){
+  const box=$("#cwlRounds"); if(!box) return;
+  const C=AUTO&&AUTO.cwl, wars=(C&&C.wars)||[];
+  const st=t=>t?Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`):0;
+  if(!wars.length){ const n=new Date(); const next=new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth()+(n.getUTCDate()>=1&&n.getUTCHours()>=8&&n.getUTCDate()>10?1:0),1,8));
+    box.innerHTML=`<div class="fame-label">📅 Rundy CWL</div><div class="empty">Sezon CWL startuje ${next.toLocaleDateString(LOC(),{day:"numeric",month:"long"})}. Po rozpoczęciu pojawi się tu 7 rund: przeciwnicy, odliczanie i wyniki każdej rundy.</div>`; return; }
+  const total=(C&&C.rounds)||7, by={}; wars.forEach(w=>by[w.round]=w);
+  const known=wars.slice().sort((a,b)=>a.round-b.round); const last=known[known.length-1];
+  const card=r=>{ const w=by[r];
+    if(!w){ const est=st(last.start)+(r-last.round)*864e5; return `<div class="rnd wait"><b>Runda ${r}</b><span class="rnd-st">⌛ czeka</span><small>Przeciwnik nieznany</small><small class="rnd-t">ok. ${new Date(est).toLocaleString(LOC(),{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}</small></div>`; }
+    const win=w.us.stars>w.them.stars||(w.us.stars===w.them.stars&&w.us.pct>w.them.pct), draw=w.us.stars===w.them.stars&&w.us.pct===w.them.pct;
+    const s=w.state==="preparation"?["prep","🛡️ przygotowania"]:w.state==="inWar"?["live","🔴 trwa"]:draw?["draw","🤝 remis"]:win?["win","✅ wygrana"]:["loss","❌ przegrana"];
+    const tgt=w.state==="preparation"?st(w.start):w.state==="inWar"?st(w.end):0;
+    return `<div class="rnd ${s[0]}"><b>Runda ${r}</b><span class="rnd-st">${s[1]}</span><small>vs <bdi>${esc(w.them.name)}</bdi></small>
+      ${w.state!=="preparation"?`<div class="rnd-score">${w.us.stars} ★ ${w.them.stars}</div><small>${String(w.us.pct).replace(".",",")}% : ${String(w.them.pct).replace(".",",")}%</small>`:""}
+      ${tgt?`<small class="rnd-t" data-t="${tgt}" data-l="${w.state==="preparation"?"Start za":"Koniec za"}"></small>`:""}</div>`; };
+  const won=wars.filter(w=>w.state==="warEnded"&&(w.us.stars>w.them.stars||(w.us.stars===w.them.stars&&w.us.pct>w.them.pct))).length;
+  box.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">📅 Rundy CWL</span><span class="chip">Wygrane rundy: ${won}/${wars.filter(w=>w.state==="warEnded").length}</span></div>
+    <div class="rnds">${Array.from({length:total},(_,i)=>card(i+1)).join("")}</div>`;
+  const tick=()=>box.querySelectorAll(".rnd-t[data-t]").forEach(el=>{ const d=Math.max(0,(+el.dataset.t-Date.now())/1000); el.textContent=`${el.dataset.l} ${Math.floor(d/3600)}h ${String(Math.floor(d%3600/60)).padStart(2,"0")}m`; });
+  tick(); setInterval(tick,30000);
+})();
+
+/* ===== Medale bonusowe CWL ===== */
+(function(){
+  const box=$("#cwlMedals"); if(!box) return;
+  const C=AUTO&&AUTO.cwl, wars=((C&&C.wars)||[]).filter(w=>w.state!=="preparation"); if(!wars.length) return;
+  const P={};
+  wars.forEach(w=>w.members.forEach(m=>{ const p=P[m.tag]||(P[m.tag]={tag:m.tag,name:m.name,th:m.th,stars:0,pct:0,att:0,wars:0,missed:0});
+    p.name=m.name; p.wars++; m.attacks.forEach(a=>{p.att++;p.stars+=a.stars;p.pct+=a.pct;}); if(w.state==="warEnded"&&!m.attacks.length) p.missed++; }));
+  const pen=new Set((window.__karyActive||[]).map(k=>k.tag||k.name));
+  const list=Object.values(P).map(p=>({...p,pen:pen.has(p.tag)||pen.has(p.name),ok:!p.missed})).sort((a,b)=>b.stars-a.stars||b.pct-a.pct||b.att-a.att);
+  let n=2; try{ n=+localStorage.getItem("am_bonus")||2; }catch(e){}
+  const draw=()=>{
+    const eligible=list.filter(x=>x.ok&&!x.pen), pick=new Set(eligible.slice(0,n).map(x=>x.tag));
+    box.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">🎖️ Medale bonusowe CWL</span><span class="bonus-n">Ile medali: <select id="bonusN">${[1,2,3,4,5,6,7,8].map(i=>`<option ${i===n?"selected":""}>${i}</option>`).join("")}</select></span></div>
+      <p class="ch-meta">Ranking całego sezonu: gwiazdki, potem % zniszczeń. Gracz z opuszczonym atakiem w CWL albo z aktywną karą nie dostaje medalu — przechodzi na następnego.</p>
+      ${list.map((x,i)=>`<div class="mini-row${pick.has(x.tag)?" medal-pick":""}"><span>${pick.has(x.tag)?"🎖️":`<em class="cwl-n">${i+1}.</em>`} ${esc(x.name)}<span class="why">★ ${x.stars} · ${String(Math.round(x.pct/Math.max(1,x.att)*10)/10).replace(".",",")}% śr. · ataki ${x.att}/${x.wars}${x.missed?` · <span style="color:var(--red)">❌ opuszczone: ${x.missed}</span>`:""}${x.pen?` · <span style="color:var(--red)">⛔ kara</span>`:""}</span></span><b>${x.stars} ★</b></div>`).join("")}
+      <button class="btn btn-ghost btn-sm" id="bonusCopy" style="margin-top:10px">📋 Kopiuj listę na Discorda</button>`;
+    $("#bonusN").onchange=e=>{ n=+e.target.value; try{localStorage.setItem("am_bonus",n);}catch(_){} draw(); };
+    $("#bonusCopy").onclick=()=>{ const t=`🎖️ **Medale bonusowe CWL**\n`+eligible.slice(0,n).map((x,i)=>`${i+1}. ${x.name} — ${x.stars}★`).join("\n")+`\n\nKryteria: najwięcej gwiazdek w sezonie, bez opuszczonych ataków i kar.`;
+      (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast("Skopiowano ✓")).catch(()=>prompt("Skopiuj:",t)); };
+  };
+  draw(); box.hidden=false;
+})();
+
+/* ===== Zapisani na wojnę ===== */
+(function(){
+  const wrap=$("#optinWrap"); if(!wrap) return;
+  const L=MEMBERS.filter(m=>m.profile&&m.profile.warPref); if(!L.length) return;
+  const pen=new Set((window.__karyActive||[]).map(k=>k.tag||k.name));
+  const inn=L.filter(m=>m.profile.warPref==="in");
+  const byTh={}; L.forEach(m=>(byTh[m.th]=byTh[m.th]||[]).push(m));
+  $("#optinCount").textContent=`${inn.length}/${L.length}`;
+  $("#optin").innerHTML=`<p class="ch-meta" style="margin-top:0">🟢 zielony znaczek wojenny (chce grać) · 🔴 czerwony · ⛔ ma aktywną karę. Najlepszy rozmiar wojny teraz: <b>${[50,45,40,35,30,25,20,15,10,5].find(x=>x<=inn.length)||5} vs ${[50,45,40,35,30,25,20,15,10,5].find(x=>x<=inn.length)||5}</b>.</p>
+    ${Object.keys(byTh).sort((a,b)=>b-a).map(t=>`<div class="optin-row"><span class="th sm">${t}</span><div>${byTh[t].sort((a,b)=>(a.profile.warPref==="in"?0:1)-(b.profile.warPref==="in"?0:1)).map(m=>`<span class="oi ${m.profile.warPref}">${m.profile.warPref==="in"?"🟢":"🔴"} ${esc(m.name)}${pen.has(m.tag)||pen.has(m.name)?" ⛔":""}</span>`).join("")}</div></div>`).join("")}`;
+  wrap.hidden=false;
+})();
+
+/* ===== Raport tygodnia ===== */
+(function(){
+  const box=$("#report"); if(!box) return; const A=AUTO||{};
+  const wk=Date.now()-7*864e5, d0=new Date(wk), fmtD=d=>d.toLocaleDateString("pl-PL",{day:"2-digit",month:"2-digit"});
+  const st=t=>t?Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`):0;
+  const res=(u,t,up,tp)=>u>t||(u===t&&up>tp)?"✅":u===t&&up===tp?"🤝":"❌";
+  const wars=[...(A.wars||[]).filter(w=>Date.parse(w.date+"T23:59:00Z")>=wk).map(w=>({e:w.enemy,u:w.us.stars,t:w.them.stars,r:res(w.us.stars,w.them.stars,w.us.pct,w.them.pct),cwl:false})),
+    ...(((A.cwl&&A.cwl.wars)||[]).filter(w=>w.state==="warEnded"&&st(w.end)>=wk).map(w=>({e:w.them.name,u:w.us.stars,t:w.them.stars,r:res(w.us.stars,w.them.stars,w.us.pct,w.them.pct),cwl:w.round})))];
+  const ev=(A.events||[]).filter(e=>new Date(e.t)>=wk);
+  const RN={leader:"Wodza",coLeader:"Współlidera",admin:"Starszego",member:"Członka"};
+  const lw=A.lastWeek&&A.lastWeek.winners&&A.lastWeek.winners[0], UN={warStars:"★",donations:"oddanych wojsk",capital:"złota Stolicy"};
+  const don=MEMBERS.slice().sort((a,b)=>b.given-a.given).slice(0,3);
+  const kary=(window.__karyActive||[]).filter(k=>k.status==="next");
+  const L=[`📰 **Raport tygodnia — Armia Maurycego** (${fmtD(d0)}–${fmtD(new Date())})`, ""];
+  if(wars.length){ L.push(`⚔️ **Wojny: ${wars.length}** (✅ ${wars.filter(w=>w.r==="✅").length} · ❌ ${wars.filter(w=>w.r==="❌").length} · 🤝 ${wars.filter(w=>w.r==="🤝").length})`); wars.forEach(w=>L.push(`${w.r} ${w.cwl?`CWL R${w.cwl} `:""}vs ${w.e} — ${w.u}★${w.t}`)); L.push(""); }
+  if(A.warWinStreak>1) L.push(`🔥 Seria zwycięstw: **${A.warWinStreak}**`);
+  if(lw) L.push(`👑 Wojownik Tygodnia: **${lw.name}** (+${lw.d} ${UN[A.lastWeek.metric]||""})`);
+  const j=ev.filter(e=>e.type==="join"); if(j.length) L.push(`➕ Nowi w klanie: ${j.map(e=>e.name).join(", ")}`);
+  const thM={}; ev.filter(e=>e.type==="th").forEach(e=>{ if(!thM[e.name]||e.to>thM[e.name]) thM[e.name]=e.to; }); const th=Object.entries(thM);
+  if(th.length) L.push(`🏰 Nowe ratusze: ${th.map(([n,t])=>`${n} → TH${t}`).join(", ")}`);
+  const pr=ev.filter(e=>e.type==="promote"); if(pr.length) L.push(`⬆️ Awanse: ${pr.map(e=>`${e.name} na ${RN[e.role]||e.role}`).join(", ")}`);
+  if(don.length) L.push(`📦 Top donatorzy sezonu: ${don.map((m,i)=>`${i+1}. ${m.name} (${m.given})`).join(" · ")}`);
+  if(kary.length) L.push(`⛔ Przerwa od następnej wojny: ${kary.map(k=>k.name).join(", ")}`);
+  L.push("", `Wszystkie statystyki: https://kubooorek.github.io/armia-maurycego/`);
+  const text=L.join("\n");
+  box.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">📰 Raport tygodnia</span><button class="btn btn-ghost btn-sm" id="repCopy">📋 Kopiuj na Discorda</button></div>
+    <p class="ch-meta">Gotowe podsumowanie ostatnich 7 dni do wklejenia na #ogłoszenia. Liczy się samo z danych gry.</p><pre class="rep-pre">${esc(text)}</pre>`;
+  $("#repCopy").onclick=()=>(navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(()=>toast("Raport skopiowany ✓")).catch(()=>prompt("Skopiuj:",text));
 })();
 
 /* ===== Ogłoszenie ===== */
