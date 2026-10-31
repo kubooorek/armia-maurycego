@@ -415,6 +415,7 @@
   .rank{color:var(--muted);font-family:ui-monospace,monospace}
   .pname{font-weight:600}
   .pen-note{color:#ff9a92!important} .pen-note b{color:#ffb3ae}
+  .pen-why{display:block;color:#ff9a92!important}
   .kary-rules{display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 16px} .kary-rules span{font-size:.8rem;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
   .kary-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;font-weight:700}
   .kary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
@@ -2446,24 +2447,25 @@ function attacksHtml(cw){
   // Kary za łamanie regulaminu CW (z robota + ręczne, bez anulowanych)
   const stp=t=>t&&t.length>15?Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`):Date.parse(t);
   const dayW=t=>new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(new Date(stp(t)));
-  const pens=[...((AUTO.penalties)||[]).map(p=>({tag:p.tag,name:p.name,t:stp(p.war),day:dayW(p.war)})),
-    ...KARY_RECZNE.filter(k=>k&&k.name&&k.date).map(k=>({tag:null,name:k.name,t:Date.parse(k.date+"T12:00:00Z"),day:k.date}))]
+  const pens=[...((AUTO.penalties)||[]).map(p=>({tag:p.tag,name:p.name,type:p.type,t:stp(p.war),day:dayW(p.war)})),
+    ...KARY_RECZNE.filter(k=>k&&k.name&&k.date).map(k=>({tag:null,name:k.name,type:"manual",reason:k.reason,t:Date.parse(k.date+"T12:00:00Z"),day:k.date}))]
     .filter(p=>!KARY_ANULOWANE.some(a=>a&&a.name===p.name&&a.date===p.day));
-  const penCount=(x,from)=>{const ws=new Set(); pens.forEach(p=>{ if((p.tag?p.tag===x.tag:p.name===x.name)&&p.t>=from) ws.add(p.day); }); return ws.size;};
+  // Każda kara = minus punkty (widoczne przy graczu z wyjaśnieniem)
+  const PEN_PTS=30;
+  const PEN_TXT={own:"1. atak nie na swój numer",steal:"2. atak na cudzy numer",missed:"opuszczony atak",manual:"złamanie regulaminu"};
+  const penList=(x,from)=>pens.filter(p=>(p.tag?p.tag===x.tag:p.name===x.name)&&p.t>=from);
   const monthFrom=mb.since?new Date(mb.since).getTime():Date.now()-30*864e5;
-  scored.forEach(x=>{ x.penM=penCount(x,monthFrom); x.pen30=penCount(x,Date.now()-30*864e5); });
+  const penLine=l=>l.length?`<span class="why pen-why">⛔ −${l.length*PEN_PTS} pkt: ${l.map(p=>`${p.type==="manual"&&p.reason?p.reason:PEN_TXT[p.type]||"kara"} (${p.day.slice(8,10)}.${p.day.slice(5,7)})`).join(", ")}</span>`:"";
+  scored.forEach(x=>{ x.penM=penList(x,monthFrom); x.pen30=penList(x,Date.now()-30*864e5);
+    x.mvpScore=Math.max(0,x.score-x.penM.length*PEN_PTS); x.promoScore=Math.max(0,x.score-x.pen30.length*PEN_PTS); });
   const why=x=>[x.stars?`★ ${x.stars}`:"",x.don?`${fmt(x.don)} oddz.`:"",x.cgp?`${fmt(x.cgp)} pkt GK`:"",x.cap?`${fmt(x.cap)} złota stolicy`:""].filter(Boolean).join(" · ")||"brak punktów w tym miesiącu";
   const md=i=>["🥇","🥈","🥉"][i]||`${i+1}.`;
-  const monthNote=`<p class="admin-note">Liczone od ${mb.since?dd(mb.since):"początku miesiąca"}: gwiazdki ×10, oddziały ÷10, pkt Gier ÷50, złoto stolicy ÷500. Gracze z karą za łamanie regulaminu CW w tym miesiącu nie mogą zostać MVP.</p>`;
-  const mvp=scored.filter(x=>x.score>0&&!x.penM).slice(0,3);
-  const mvpOut=scored.filter(x=>x.score>0&&x.penM).slice(0,5);
-  const mvpHtml=(mvp.length?mvp.map((x,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${esc(x.name)}<span class="why">${why(x)}</span></span><b>${fmt(x.score)} pkt</b></div>`).join(""):`<div class="empty">Brak danych z tego miesiąca — ranking zbuduje się sam.</div>`)
-    +(mvpOut.length?`<p class="admin-note pen-note">⛔ Pominięci za kary w tym miesiącu: ${mvpOut.map(x=>`<b>${esc(x.name)}</b> (${x.penM}× kara)`).join(", ")}</p>`:"")+monthNote;
-  const promo=scored.filter(x=>x.role==="member"&&x.score>0&&!x.miss&&!x.pen30&&x.days<3).slice(0,3);
-  const promoOut=scored.filter(x=>x.role==="member"&&x.score>0&&x.pen30).slice(0,5);
-  const promoHtml=(promo.length?promo.map((x,i)=>`<div class="mini-row"><span>⬆️ ${esc(x.name)}<span class="why">${why(x)} · bez opuszczonych ataków i kar</span></span><b>${fmt(x.score)} pkt</b></div>`).join(""):`<div class="empty">Na razie brak kandydatów — pojawią się aktywni Członkowie bez opuszczonych ataków i kar.</div>`)
-    +(promoOut.length?`<p class="admin-note pen-note">⛔ Pominięci za kary (ostatnie 30 dni): ${promoOut.map(x=>`<b>${esc(x.name)}</b>`).join(", ")}</p>`:"")
-    +`<p class="admin-note">Tylko ranga „Członek”, aktywni w ostatnich 3 dniach, bez opuszczonych ataków w 5 ostatnich wojnach i bez kar za łamanie regulaminu CW w ostatnich 30 dniach.</p>`;
+  const monthNote=`<p class="admin-note">Liczone od ${mb.since?dd(mb.since):"początku miesiąca"}: gwiazdki ×10, oddziały ÷10, pkt Gier ÷50, złoto stolicy ÷500. Każda kara za łamanie regulaminu CW w tym miesiącu = −30 pkt.</p>`;
+  const mvp=scored.filter(x=>x.mvpScore>0).sort((a,b)=>b.mvpScore-a.mvpScore).slice(0,3);
+  const mvpHtml=(mvp.length?mvp.map((x,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${esc(x.name)}<span class="why">${why(x)}</span>${penLine(x.penM)}</span><b>${fmt(x.mvpScore)} pkt</b></div>`).join(""):`<div class="empty">Brak danych z tego miesiąca — ranking zbuduje się sam.</div>`)+monthNote;
+  const promo=scored.filter(x=>x.role==="member"&&x.promoScore>0&&!x.miss&&x.days<3).sort((a,b)=>b.promoScore-a.promoScore).slice(0,3);
+  const promoHtml=(promo.length?promo.map((x,i)=>`<div class="mini-row"><span>⬆️ ${esc(x.name)}<span class="why">${why(x)}${x.pen30.length?"":" · bez kar"}</span>${penLine(x.pen30)}</span><b>${fmt(x.promoScore)} pkt</b></div>`).join(""):`<div class="empty">Na razie brak kandydatów — pojawią się aktywni Członkowie bez opuszczonych ataków.</div>`)
+    +`<p class="admin-note">Tylko ranga „Członek”, aktywni w ostatnich 3 dniach, bez opuszczonych ataków w 5 ostatnich wojnach. Każda kara za łamanie regulaminu CW z ostatnich 30 dni = −${PEN_PTS} pkt.</p>`;
 
   grid.innerHTML=
     panel("🎯 Gry Klanowe — norma 1000 pkt",cgChip,cgHtml)+
