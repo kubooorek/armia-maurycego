@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T04:01:11.711Z",
+  "updated": "2026-10-31T04:45:52.028Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -333,6 +333,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-10-31T04:45:51.336Z",
+      "type": "th",
+      "name": "Darui",
+      "from": 7,
+      "to": 8
+    },
     {
       "t": "2026-10-30T18:15:52.955Z",
       "type": "th",
@@ -669,7 +676,7 @@
     {
       "d": "2026-10-31",
       "members": 43,
-      "avgTh": 8.2,
+      "avgTh": 8.3,
       "level": 3,
       "wins": 12,
       "points": 16200
@@ -1259,8 +1266,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "148|18030485|17384744|0|160|11195|16969|0|0|39|7",
-      "last": "2026-10-30T21:31:09.016Z",
+      "sig": "148|18349656|17579626|0|160|11195|16969|0|0|40|8",
+      "last": "2026-10-31T04:45:52.027Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -2963,12 +2970,12 @@
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
-      "th": 7,
+      "th": 8,
       "given": 148,
       "received": 0,
       "trophies": 242,
       "profile": {
-        "level": 39,
+        "level": 40,
         "trophies": 242,
         "best": 242,
         "league": "Skeleton League 1",
@@ -2989,8 +2996,8 @@
         "cg": 0,
         "don": 160,
         "capLoot": 11195,
-        "gold": 18030485,
-        "elixir": 17384744,
+        "gold": 18349656,
+        "elixir": 17579626,
         "capContrib": 16969,
         "wins": 0
       }
