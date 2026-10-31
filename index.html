@@ -2592,25 +2592,28 @@ function rushHtml(r){
   $("#ticker").hidden=false;
 })();
 
-/* ===== Gracz dnia ===== */
+/* ===== Gracz dnia (wybiera robot: kto wczoraj zrobił najwięcej dla klanu) ===== */
 (function(){
-  let list=MEMBERS.filter(m=>m.profile).slice().sort((a,b)=>String(a.tag).localeCompare(String(b.tag)));
-  const active=list.filter(m=>(m.profile.warStars||0)>0||(m.given||0)>0); if(active.length>=7) list=active;
-  if(!list.length) return;
+  const P=AUTO&&AUTO.potd; if(!P||!P.name) return;
+  const m=MEMBERS.find(x=>x.tag===P.tag)||{name:P.name,th:P.th,role:"member"};
   const en=LANG==="en";
-  const pl=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
-  const day=Math.round(Date.parse(pl+"T00:00:00Z")/864e5);
-  const m=list[(day*7919)%list.length], pf=m.profile;
-  const HN=en?{}:{"Barbarian King":"Król Barbarzyńców","Archer Queen":"Królowa Łuczniczek","Grand Warden":"Wielki Strażnik","Royal Champion":"Królewska Czempionka","Minion Prince":"Książę Minionów","Dragon Duke":"Smoczy Hrabia"};
-  const hero=(pf.heroes||[]).slice().sort((a,b)=>b.level-a.level)[0];
-  const sd=stazDays(m);
+  const d=new Date(P.day+"T12:00:00Z");
+  const todayPl=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(new Date());
+  const yest=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(new Date(Date.now()-864e5));
+  const when=P.day===yest?(en?"yesterday":"wczoraj"):d.toLocaleDateString(LOC(),{day:"numeric",month:"long"});
   const cell=(i,v,l)=>`<div><span>${i}</span><b>${v}</b><small>${l}</small></div>`;
-  $("#potd").innerHTML=`<div class="potd-head"><span class="fame-label" style="margin:0">🌟 ${en?"Player of the day":"Gracz dnia"}</span><small>${en?"a different member every day":"codziennie ktoś inny z klanu"}</small></div>
-    <div class="potd-body"><span class="th">${m.th}</span><div class="potd-name"><b>${esc(m.name)}</b><span class="role ${m.role}">${ROLE[m.role][0]}</span>${sd!=null&&!m.joined.orig?` <small>· ${en?`${sd} days in the clan`:`${sd} dni w klanie`}</small>`:""}</div>
-    <button class="btn btn-ghost btn-sm" id="potdBtn">${en?"View profile":"Zobacz profil"}</button></div>
-    <div class="potd-stats">${hero?cell("👑",`${hero.level}`,HN[hero.name]||hero.name):""}${cell("⭐",fmt(pf.warStars||0),en?"war stars":"gwiazdek wojennych")}${cell("📦",fmt(m.given||0),en?"donated this season":"oddanych w sezonie")}${cell("🏆",fmt(pf.trophies||0),en?"trophies":"pucharów")}</div>`;
+  const tiles=[P.stars?cell("⭐",fmt(P.stars),en?"war stars":(P.stars===1?"gwiazdka w wojnie":P.stars<5?"gwiazdki w wojnie":"gwiazdek w wojnie")):"",
+    P.three?cell("🎯",fmt(P.three),en?"3★ attacks":"ataki na 3★"):"",
+    P.don?cell("📦",fmt(P.don),en?"troops donated":"oddanych wojsk"):"",
+    P.cg?cell("🎮",fmt(P.cg),en?"Clan Games pts":"pkt w Grach Klanowych"):"",
+    P.cap?cell("🏰",fmt(P.cap),en?"raid gold":"złota z rajdów"):""].filter(Boolean).slice(0,4);
+  const role=ROLE[m.role]?m.role:"member";
+  $("#potd").innerHTML=`<div class="potd-head"><span class="fame-label" style="margin:0">🌟 ${en?"Player of the day":"Gracz dnia"}</span><small>${en?`most points for the clan ${when}`:`najwięcej punktów dla klanu ${when==="wczoraj"?"wczoraj":"· "+when}`}</small></div>
+    <div class="potd-body"><span class="th">${m.th||P.th||""}</span><div class="potd-name"><b>${esc(m.name)}</b><span class="role ${role}">${ROLE[role][0]}</span> <small>· ${fmt(P.score)} pkt</small></div>
+    ${MEMBERS.some(x=>x.tag===P.tag)?`<button class="btn btn-ghost btn-sm" id="potdBtn">${en?"View profile":"Zobacz profil"}</button>`:""}</div>
+    <div class="potd-stats">${tiles.join("")}</div>`;
   $("#potd").hidden=false;
-  $("#potdBtn").addEventListener("click",()=>{ const tr=[...document.querySelectorAll("tr.prow")].find(r=>r.dataset.name===m.name); if(tr) tr.click(); });
+  const b=$("#potdBtn"); if(b) b.addEventListener("click",()=>{ const r=rows.find(x=>x.tag===P.tag); if(r) openProfile(r); });
 })();
 
 /* ===== Kary za łamanie zasad CW ===== */

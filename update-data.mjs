@@ -525,6 +525,33 @@ if (old?.monthBase?.month && old.monthBase.month >= MVP_START && old.monthBase.m
   }
 }
 mvp.history = mvp.history.slice(0, 24);
+/* ---------- Gracz dnia: kto wczoraj zrobił najwięcej dla klanu (dzień liczony wg czasu w Polsce) ---------- */
+const POTD_PRZERWA = 3;   // ta sama osoba nie wygrywa częściej niż raz na tyle dni
+const todayPl = plDay(Date.now());
+const daySnap = m => ({ warStars: m.profile?.warStars ?? null, don: m.ach?.don ?? null, cg: m.ach?.cg ?? null, capLoot: m.ach?.capLoot ?? null });
+let dayBase = old?.dayBase;
+let potd = old?.potd ?? null;
+let potdHistory = Array.isArray(old?.potdHistory) ? old.potdHistory : [];
+if (dayBase && dayBase.day !== todayPl) {
+  const recent = potdHistory.slice(0, POTD_PRZERWA).map(x => x.tag);
+  const all = mvpScores(dayBase, dayBase.since, Date.now());
+  const win = all.find(x => x.score > 0 && !recent.includes(x.tag) && !mvpBez.includes(x.tag));
+  if (win) {
+    const m = members.find(x => x.tag === win.tag) || {};
+    potd = { day: dayBase.day, picked: nowIso, name: win.name, tag: win.tag, th: m.th ?? null, role: m.role ?? null,
+      score: win.score, stars: win.stars, don: win.don, cg: win.cg, cap: win.cap, att: win.att, three: win.three };
+    potdHistory = [{ day: dayBase.day, name: win.name, tag: win.tag, score: win.score }, ...potdHistory].slice(0, 14);
+    console.log(`Gracz dnia ${dayBase.day}: ${win.name} (${win.score} pkt)`);
+  }
+}
+if (!dayBase || dayBase.day !== todayPl) {
+  dayBase = { day: todayPl, since: nowIso, players: {} };
+  for (const m of members) dayBase.players[m.tag] = daySnap(m);
+} else {
+  for (const m of members) { const b = dayBase.players[m.tag]; const cur = daySnap(m);
+    if (!b) dayBase.players[m.tag] = cur; else for (const k of Object.keys(cur)) if (b[k] == null && cur[k] != null) b[k] = cur[k]; }
+}
+
 
 /* ---------- Bilans miesiąca (kandydaci na MVP i do awansu) ---------- */
 const monthKey = nowIso.slice(0, 7);
@@ -701,6 +728,9 @@ const data = {
   clanGames,
   monthBase,
   mvp,
+  dayBase,
+  potd,
+  potdHistory,
   notified,
   members,
   wars
