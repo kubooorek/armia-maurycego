@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T21:01:15.640Z",
+  "updated": "2026-10-31T21:16:01.824Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 49,
-      "pct": 67.6,
-      "attacks": 23,
+      "stars": 52,
+      "pct": 71.6,
+      "attacks": 24,
       "bases": [
         {
           "pos": 1,
@@ -273,7 +273,7 @@
         {
           "pos": 25,
           "th": 7,
-          "best": 0
+          "best": 3
         }
       ]
     },
@@ -570,7 +570,14 @@
         "tag": "#R2PCVYQG2",
         "pos": 22,
         "th": 7,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 48,
+            "target": "25. HOSEIN"
+          }
+        ]
       },
       {
         "name": "Marsyllia",
@@ -886,7 +893,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 49,
+      "us": 52,
       "them": 64,
       "final": false,
       "members": [
@@ -1096,7 +1103,12 @@
         {
           "name": "Riczard",
           "tag": "#R2PCVYQG2",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Marsyllia",
@@ -2089,8 +2101,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|900624|811385|0|0|0|0|0|0|11|4",
-      "last": "2026-10-31T21:01:15.639Z",
+      "sig": "0|900624|811385|0|0|0|0|0|0|12|4",
+      "last": "2026-10-31T21:16:01.823Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -4988,7 +5000,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 11,
+        "level": 12,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
