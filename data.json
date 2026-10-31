@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T17:45:55.410Z",
+  "updated": "2026-10-31T18:01:11.591Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,15 +13,15 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 16,
-      "pct": 22.16,
-      "attacks": 6
+      "stars": 20,
+      "pct": 29.6,
+      "attacks": 8
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 27,
-      "pct": 39,
-      "attacks": 10
+      "stars": 30,
+      "pct": 43,
+      "attacks": 11
     },
     "members": [
       {
@@ -29,7 +29,13 @@
         "tag": "#VP9PLGLV",
         "pos": 1,
         "th": 15,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "1. ❤VAHID❤"
+          }
+        ]
       },
       {
         "name": "Albaroon.2",
@@ -56,7 +62,13 @@
         "tag": "#Q9CU9P908",
         "pos": 4,
         "th": 12,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 86,
+            "target": "4. hossein"
+          }
+        ]
       },
       {
         "name": "Toster290",
@@ -237,7 +249,7 @@
     ]
   },
   "cwl": null,
-  "visits": 35,
+  "visits": 37,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -483,13 +495,18 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 16,
-      "them": 27,
+      "us": 20,
+      "them": 30,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -509,7 +526,12 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 86
+            }
+          ]
         },
         {
           "name": "Toster290",
@@ -1352,8 +1374,8 @@
   "weekWins": {},
   "activity": {
     "#VP9PLGLV": {
-      "sig": "7861|2000000000|2000000000|94700|80529|1208549|1605615|0|1238|204|15",
-      "last": "2026-10-31T15:15:51.017Z",
+      "sig": "7861|2000000000|2000000000|94700|80529|1208549|1605615|0|1241|204|15",
+      "last": "2026-10-31T18:01:11.590Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -1367,8 +1389,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "101|220689845|219385758|14450|123|53365|95655|0|53|100|12",
-      "last": "2026-10-31T17:45:55.409Z",
+      "sig": "101|220772245|219468158|14450|123|53365|95655|0|54|100|12",
+      "last": "2026-10-31T18:01:11.590Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -1562,8 +1584,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|474915|442585|0|0|0|0|0|0|10|4",
-      "last": "2026-10-31T17:45:55.409Z",
+      "sig": "0|505880|473697|0|0|0|0|0|0|10|4",
+      "last": "2026-10-31T18:01:11.590Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -1866,7 +1888,7 @@
         "trophies": 491,
         "best": 5066,
         "league": "P.E.K.K.A League 23",
-        "warStars": 1238,
+        "warStars": 1241,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 1605615,
@@ -2034,7 +2056,7 @@
         "trophies": 284,
         "best": 1032,
         "league": "Wizard League 10",
-        "warStars": 53,
+        "warStars": 54,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 95655,
@@ -2066,8 +2088,8 @@
         "cg": 14450,
         "don": 123,
         "capLoot": 53365,
-        "gold": 220689845,
-        "elixir": 219385758,
+        "gold": 220772245,
+        "elixir": 219468158,
         "capContrib": 95655,
         "wins": 0
       }
@@ -3639,8 +3661,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 474915,
-        "elixir": 442585,
+        "gold": 505880,
+        "elixir": 473697,
         "capContrib": 0,
         "wins": 0
       }
