@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T01:01:15.350Z",
+  "updated": "2026-10-31T01:15:49.018Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -2924,6 +2924,42 @@
       }
     },
     {
+      "name": "Marsyllia",
+      "tag": "#R0VJLRGQ0",
+      "role": "member",
+      "th": 7,
+      "given": 1,
+      "received": 65,
+      "trophies": 244,
+      "profile": {
+        "level": 25,
+        "trophies": 244,
+        "best": 216,
+        "league": "Skeleton League 1",
+        "warStars": 8,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 11193632,
+        "elixir": 9915919,
+        "capContrib": 400,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -2956,42 +2992,6 @@
         "gold": 18030485,
         "elixir": 17384744,
         "capContrib": 16969,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Marsyllia",
-      "tag": "#R0VJLRGQ0",
-      "role": "member",
-      "th": 7,
-      "given": 1,
-      "received": 65,
-      "trophies": 216,
-      "profile": {
-        "level": 25,
-        "trophies": 216,
-        "best": 216,
-        "league": "Skeleton League 1",
-        "warStars": 8,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 11193632,
-        "elixir": 9915919,
-        "capContrib": 400,
         "wins": 0
       }
     },
