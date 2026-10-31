@@ -233,7 +233,9 @@ if (currentWar && currentWar.state !== "preparation" && currentWar.perMember ===
   for (const m of W.members) {
     const atts = m.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
     // 1) pierwszy atak nie na swój numer
-    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos)
+    // wyjątek: ktoś wcześniej zrobił już 3★ na jego numerze — wtedy nie miał czego bić
+    const mirrorTaken = atts[0] && W.members.some(o => o.attacks.some(x => tp(x) === m.pos && x.stars === 3 && (x.order ?? 0) < (atts[0].order ?? 0)));
+    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos && !mirrorTaken)
       addPen({ id: `${W.start}:${m.tag}:own`, type: "own", detail: `nr ${tp(atts[0])} zamiast nr ${m.pos}`, ...base(m) });
     // 2) drugi atak na numer kogoś, kto jeszcze nie zaatakował (podkradanie ataku)
     const a2 = atts[1];
