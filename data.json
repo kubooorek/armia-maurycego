@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T20:01:13.579Z",
+  "updated": "2026-10-31T20:15:47.997Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -590,7 +590,7 @@
     ]
   },
   "cwl": null,
-  "visits": 39,
+  "visits": 40,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -1907,8 +1907,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "14|68446996|76825523|1900|14|0|3150|0|35|37|9",
-      "last": "2026-10-31T20:01:13.578Z",
+      "sig": "14|69347007|78636346|1900|14|0|3150|0|35|37|9",
+      "last": "2026-10-31T20:15:47.997Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -3144,8 +3144,8 @@
         "cg": 1900,
         "don": 14,
         "capLoot": 0,
-        "gold": 68446996,
-        "elixir": 76825523,
+        "gold": 69347007,
+        "elixir": 78636346,
         "capContrib": 3150,
         "wins": 0
       }
