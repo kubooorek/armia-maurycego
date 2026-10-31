@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T19:01:18.300Z",
+  "updated": "2026-10-31T19:15:49.574Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -14,8 +14,8 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "stars": 40,
-      "pct": 54.56,
-      "attacks": 17,
+      "pct": 55.6,
+      "attacks": 18,
       "bases": [
         {
           "pos": 1,
@@ -85,7 +85,7 @@
         {
           "pos": 14,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 15,
@@ -100,7 +100,7 @@
         {
           "pos": 17,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 18,
@@ -146,9 +146,9 @@
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 43,
-      "pct": 59.64,
-      "attacks": 16,
+      "stars": 49,
+      "pct": 67.64,
+      "attacks": 19,
       "bases": [
         {
           "pos": 1,
@@ -372,6 +372,12 @@
             "pct": 93,
             "order": 31,
             "target": "9. OMID SHOUGHI"
+          },
+          {
+            "stars": 2,
+            "pct": 97,
+            "order": 34,
+            "target": "10. spartan"
           }
         ]
       },
@@ -575,7 +581,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -843,7 +849,7 @@
       "perMember": 2,
       "state": "inWar",
       "us": 40,
-      "them": 43,
+      "them": 49,
       "final": false,
       "members": [
         {
@@ -912,6 +918,10 @@
             {
               "stars": 2,
               "pct": 93
+            },
+            {
+              "stars": 2,
+              "pct": 97
             }
           ]
         },
@@ -1732,7 +1742,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 8136,
+      "value": 8279,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-10-31"
@@ -1795,8 +1805,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "8136|2000000000|2000000000|94700|80744|1208549|1605615|0|1241|204|15",
-      "last": "2026-10-31T19:01:18.300Z",
+      "sig": "8279|2000000000|2000000000|94700|80744|1208549|1605615|0|1241|204|15",
+      "last": "2026-10-31T19:15:49.573Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -1805,8 +1815,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "3988|559747080|584276134|38350|7509|531795|665128|0|87|109|12",
-      "last": "2026-10-31T17:45:55.409Z",
+      "sig": "3988|559850080|584379134|38350|7509|531795|665128|0|90|109|12",
+      "last": "2026-10-31T19:15:49.573Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -1825,18 +1835,18 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "2379|363619059|340477887|15875|9326|10205|52473|0|223|104|11",
-      "last": "2026-10-30T13:15:48.816Z",
+      "sig": "2421|363619059|340477887|15875|9366|10205|52473|0|223|104|11",
+      "last": "2026-10-31T19:15:49.573Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
-      "sig": "0|829489441|888596588|118755|72883|212590|452225|0|3160|134|9",
-      "last": "2026-10-31T18:45:46.552Z",
+      "sig": "0|829569441|888676588|118755|72883|212590|452225|0|3160|134|9",
+      "last": "2026-10-31T19:15:49.573Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "15|465232502|511499412|53920|23588|84175|212149|0|2054|102|9",
-      "last": "2026-10-31T19:01:18.300Z",
+      "sig": "15|465232502|511499412|53920|23588|84190|216205|0|2054|102|9",
+      "last": "2026-10-31T19:15:49.573Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -1860,8 +1870,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "359|120967155|111614091|7600|594|9310|29985|0|30|57|9",
-      "last": "2026-10-30T13:15:48.816Z",
+      "sig": "359|123095755|113511529|7600|594|9310|29985|0|32|57|9",
+      "last": "2026-10-31T19:15:49.573Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -2296,7 +2306,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 8136,
+      "given": 8279,
       "received": 3077,
       "trophies": 491,
       "profile": {
@@ -2421,7 +2431,7 @@
         "trophies": 418,
         "best": 2839,
         "league": "Valkyrie League 13",
-        "warStars": 87,
+        "warStars": 90,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 665128,
@@ -2453,8 +2463,8 @@
         "cg": 38350,
         "don": 7509,
         "capLoot": 531795,
-        "gold": 559747080,
-        "elixir": 584276134,
+        "gold": 559850080,
+        "elixir": 584379134,
         "capContrib": 665128,
         "wins": 0
       }
@@ -2617,7 +2627,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 2379,
+      "given": 2421,
       "received": 3078,
       "trophies": 362,
       "profile": {
@@ -2655,7 +2665,7 @@
       },
       "ach": {
         "cg": 15875,
-        "don": 9326,
+        "don": 9366,
         "capLoot": 10205,
         "gold": 363619059,
         "elixir": 340477887,
@@ -2669,7 +2679,7 @@
       "role": "coLeader",
       "th": 9,
       "given": 0,
-      "received": 397,
+      "received": 427,
       "trophies": 75,
       "profile": {
         "level": 134,
@@ -2703,8 +2713,8 @@
         "cg": 118755,
         "don": 72883,
         "capLoot": 212590,
-        "gold": 829489441,
-        "elixir": 888596588,
+        "gold": 829569441,
+        "elixir": 888676588,
         "capContrib": 452225,
         "wins": 0
       }
@@ -2725,7 +2735,7 @@
         "warStars": 2054,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 212149,
+        "capital": 216205,
         "warPref": "in",
         "heroes": [
           {
@@ -2748,10 +2758,10 @@
       "ach": {
         "cg": 53920,
         "don": 23588,
-        "capLoot": 84175,
+        "capLoot": 84190,
         "gold": 465232502,
         "elixir": 511499412,
-        "capContrib": 212149,
+        "capContrib": 216205,
         "wins": 0
       }
     },
@@ -2945,6 +2955,52 @@
       }
     },
     {
+      "name": "Kojak",
+      "tag": "#G8VGC2VRL",
+      "role": "admin",
+      "th": 9,
+      "given": 359,
+      "received": 2269,
+      "trophies": 227,
+      "profile": {
+        "level": 57,
+        "trophies": 227,
+        "best": 696,
+        "league": "Barbarian League 5",
+        "warStars": 32,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 29985,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 23,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 21,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "ach": {
+        "cg": 7600,
+        "don": 594,
+        "capLoot": 9310,
+        "gold": 123095755,
+        "elixir": 113511529,
+        "capContrib": 29985,
+        "wins": 0
+      }
+    },
+    {
       "name": "Barnes",
       "tag": "#LQVRCRUYR",
       "role": "member",
@@ -2982,52 +3038,6 @@
         "gold": 399040543,
         "elixir": 463764119,
         "capContrib": 234074,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Kojak",
-      "tag": "#G8VGC2VRL",
-      "role": "admin",
-      "th": 9,
-      "given": 359,
-      "received": 2114,
-      "trophies": 94,
-      "profile": {
-        "level": 57,
-        "trophies": 94,
-        "best": 696,
-        "league": "Barbarian League 5",
-        "warStars": 30,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 29985,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 23,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 21,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 10,
-            "max": 95
-          }
-        ]
-      },
-      "ach": {
-        "cg": 7600,
-        "don": 594,
-        "capLoot": 9310,
-        "gold": 120967155,
-        "elixir": 111614091,
-        "capContrib": 29985,
         "wins": 0
       }
     },
