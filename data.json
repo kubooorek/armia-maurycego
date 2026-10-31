@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T18:01:11.591Z",
+  "updated": "2026-10-31T18:15:54.112Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,15 +13,269 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 20,
-      "pct": 29.6,
-      "attacks": 8
+      "stars": 21,
+      "pct": 32.36,
+      "attacks": 9,
+      "bases": [
+        {
+          "pos": 1,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 12,
+          "best": 2
+        },
+        {
+          "pos": 4,
+          "th": 12,
+          "best": 3
+        },
+        {
+          "pos": 5,
+          "th": 13,
+          "best": 1
+        },
+        {
+          "pos": 6,
+          "th": 11,
+          "best": 2
+        },
+        {
+          "pos": 7,
+          "th": 10,
+          "best": 3
+        },
+        {
+          "pos": 8,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 10,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 11,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 12,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 13,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 14,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 15,
+          "th": 8,
+          "best": 3
+        },
+        {
+          "pos": 16,
+          "th": 8,
+          "best": 3
+        },
+        {
+          "pos": 17,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 18,
+          "th": 8,
+          "best": 3
+        },
+        {
+          "pos": 19,
+          "th": 8,
+          "best": 3
+        },
+        {
+          "pos": 20,
+          "th": 7,
+          "best": 0
+        },
+        {
+          "pos": 21,
+          "th": 7,
+          "best": 0
+        },
+        {
+          "pos": 22,
+          "th": 7,
+          "best": 0
+        },
+        {
+          "pos": 23,
+          "th": 7,
+          "best": 0
+        },
+        {
+          "pos": 24,
+          "th": 6,
+          "best": 0
+        },
+        {
+          "pos": 25,
+          "th": 5,
+          "best": 0
+        }
+      ]
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 30,
-      "pct": 43,
-      "attacks": 11
+      "stars": 38,
+      "pct": 54.88,
+      "attacks": 14,
+      "bases": [
+        {
+          "pos": 1,
+          "th": 15,
+          "best": 3
+        },
+        {
+          "pos": 2,
+          "th": 13,
+          "best": 3
+        },
+        {
+          "pos": 3,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 4,
+          "th": 11,
+          "best": 1
+        },
+        {
+          "pos": 5,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 7,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 12,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 13,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 14,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 15,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 16,
+          "th": 8,
+          "best": 1
+        },
+        {
+          "pos": 17,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 18,
+          "th": 8,
+          "best": 3
+        },
+        {
+          "pos": 19,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 20,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 21,
+          "th": 8,
+          "best": 1
+        },
+        {
+          "pos": 22,
+          "th": 7,
+          "best": 3
+        },
+        {
+          "pos": 23,
+          "th": 8,
+          "best": 3
+        },
+        {
+          "pos": 24,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 25,
+          "th": 7,
+          "best": 0
+        }
+      ]
     },
     "members": [
       {
@@ -33,6 +287,7 @@
           {
             "stars": 3,
             "pct": 100,
+            "order": 18,
             "target": "1. ❤VAHID❤"
           }
         ]
@@ -46,6 +301,7 @@
           {
             "stars": 3,
             "pct": 100,
+            "order": 15,
             "target": "2. mikaiil.zoro"
           }
         ]
@@ -66,6 +322,7 @@
           {
             "stars": 1,
             "pct": 86,
+            "order": 19,
             "target": "4. hossein"
           }
         ]
@@ -121,6 +378,7 @@
           {
             "stars": 3,
             "pct": 100,
+            "order": 12,
             "target": "11. bahar"
           }
         ]
@@ -158,7 +416,14 @@
         "tag": "#GVGRVCQJR",
         "pos": 16,
         "th": 8,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 69,
+            "order": 21,
+            "target": "16. v0r0jak"
+          }
+        ]
       },
       {
         "name": "Mimbosz",
@@ -176,6 +441,7 @@
           {
             "stars": 3,
             "pct": 100,
+            "order": 9,
             "target": "18. alireza"
           }
         ]
@@ -203,6 +469,7 @@
           {
             "stars": 1,
             "pct": 54,
+            "order": 5,
             "target": "21. ریحانه"
           }
         ]
@@ -223,11 +490,13 @@
           {
             "stars": 3,
             "pct": 100,
+            "order": 1,
             "target": "22. علی"
           },
           {
             "stars": 3,
             "pct": 100,
+            "order": 3,
             "target": "23. جنگجویان جهنم"
           }
         ]
@@ -253,7 +522,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -261,10 +530,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 97675,
+      "loot": 101278,
       "raids": 8,
-      "attacks": 89,
-      "districts": 25,
+      "attacks": 92,
+      "districts": 26,
       "medals": 0,
       "members": [
         {
@@ -338,6 +607,13 @@
           "loot": 6003
         },
         {
+          "name": "GoldBelt",
+          "tag": "#R9QQPG9JP",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 5948
+        },
+        {
           "name": "SHA☆ZAM!",
           "tag": "#GVGRVCQJR",
           "attacks": 6,
@@ -371,13 +647,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 4389
-        },
-        {
-          "name": "GoldBelt",
-          "tag": "#R9QQPG9JP",
-          "attacks": 2,
-          "limit": 5,
-          "loot": 2345
         }
       ]
     },
@@ -495,8 +764,9 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 20,
-      "them": 30,
+      "us": 21,
+      "them": 38,
+      "final": false,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -596,7 +866,12 @@
         {
           "name": "SHA☆ZAM!",
           "tag": "#GVGRVCQJR",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 69
+            }
+          ]
         },
         {
           "name": "Mimbosz",
@@ -1346,7 +1621,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 7861,
+      "value": 7887,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-10-31"
@@ -1372,10 +1647,23 @@
     }
   },
   "weekWins": {},
+  "penalties": [
+    {
+      "id": "20261031T171000.000Z:#R0VJLRGQ0:own",
+      "type": "own",
+      "detail": "nr 22 zamiast nr 23",
+      "tag": "#R0VJLRGQ0",
+      "name": "Marsyllia",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-10-31T18:15:53.058Z"
+    }
+  ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "7861|2000000000|2000000000|94700|80529|1208549|1605615|0|1241|204|15",
-      "last": "2026-10-31T18:01:11.590Z",
+      "sig": "7887|2000000000|2000000000|94700|80554|1208549|1605615|0|1241|204|15",
+      "last": "2026-10-31T18:15:54.111Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -1489,13 +1777,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "358|42197802|42309134|2400|451|7665|6550|0|0|44|8",
-      "last": "2026-10-31T15:01:15.244Z",
+      "sig": "358|42223802|42322134|2400|451|7665|6550|0|1|44|8",
+      "last": "2026-10-31T18:15:54.111Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
-      "sig": "12|24443454|22719986|600|12|2345|9125|0|17|35|7",
-      "last": "2026-10-31T11:01:36.708Z",
+      "sig": "12|24443454|22719986|600|12|5885|9125|0|17|35|7",
+      "last": "2026-10-31T18:15:54.111Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
@@ -1880,7 +2168,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 7861,
+      "given": 7887,
       "received": 3077,
       "trophies": 491,
       "profile": {
@@ -1928,7 +2216,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 80529,
+        "don": 80554,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -2949,14 +3237,14 @@
       "role": "member",
       "th": 8,
       "given": 358,
-      "received": 376,
+      "received": 402,
       "trophies": 349,
       "profile": {
         "level": 44,
         "trophies": 349,
         "best": 349,
         "league": "Skeleton League 1",
-        "warStars": 0,
+        "warStars": 1,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 6550,
@@ -2978,8 +3266,8 @@
         "cg": 2400,
         "don": 451,
         "capLoot": 7665,
-        "gold": 42197802,
-        "elixir": 42309134,
+        "gold": 42223802,
+        "elixir": 42322134,
         "capContrib": 6550,
         "wins": 0
       }
@@ -3013,7 +3301,7 @@
       "ach": {
         "cg": 600,
         "don": 12,
-        "capLoot": 2345,
+        "capLoot": 5885,
         "gold": 24443454,
         "elixir": 22719986,
         "capContrib": 9125,
