@@ -104,3 +104,14 @@ Status kary: „Kara na najbliższą wojnę” → „Odbywa karę” (gdy ruszy
 W `index.html` są dwie listy:
 - `KARY_RECZNE` — kara dopisana ręcznie, np. `{name:"Nick", reason:"brak wojsk w zamku obronnym", date:"2026-10-31"}`,
 - `KARY_ANULOWANE` — anulowanie pomyłki lub usprawiedliwienia, np. `{name:"Nick", date:"2026-10-31"}` (data = dzień startu wojny).
+
+## Układ strony
+
+W `index.html` stała `UKLAD` wybiera układ: `"klasyczny"` (wszystko pod sobą), `"zwijane"`, `"kafelki"` albo `"zakladki"`.
+Do testów dopisz do adresu `?uklad=zwijane` (albo `kafelki` / `zakladki` / `klasyczny`). W lewym dolnym rogu pojawi się przełącznik; krzyżyk kończy test.
+
+## Inne narzędzia
+
+- **Pomocnik składu CWL** (Panel zarządu): podpowiada 15 lub 30 osób + rezerwę na podstawie TH, herosów, skuteczności 3★, opuszczonych ataków, kar i aktywności. Przycisk kopiuje skład na Discorda.
+- **Porównaj dwóch graczy** (Członkowie) i **Quiz Clash of Clans** (Poradnik, pytania w stałej `Q` w skrypcie quizu).
+- **Automatyczne odświeżanie**: otwarta strona co minutę sprawdza `data.json` i sama się przeładowuje, gdy robot wrzuci nowe dane (nie przeładowuje w trakcie quizu, w otwartym profilu ani przy pisaniu).

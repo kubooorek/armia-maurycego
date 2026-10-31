@@ -414,6 +414,47 @@
   tbody tr:last-child td{border-bottom:none}
   .rank{color:var(--muted);font-family:ui-monospace,monospace}
   .pname{font-weight:600}
+  .lay-hide{display:none!important}
+  /* zwijane */
+  .lay-acc section.acc{padding:6px 0} .lay-acc section.acc:first-of-type{padding-top:18px}
+  .acc-head{width:100%;display:flex;align-items:center;gap:14px;padding:14px 18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);color:inherit;font:inherit;text-align:left;cursor:pointer;transition:.2s}
+  .acc-head:hover{border-color:rgba(232,180,74,.45)}
+  .acc-ico{font-size:1.3rem;width:30px;text-align:center} .acc-t{flex:1;min-width:0} .acc-t b{display:block;font-family:Cinzel,serif;font-size:1.05rem} .acc-t small{display:block;color:var(--muted);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .acc-ch{font-style:normal;color:var(--gold2);transition:transform .2s} .acc.open .acc-ch{transform:rotate(180deg)}
+  .acc.open .acc-head{border-color:rgba(232,180,74,.5);border-bottom-left-radius:0;border-bottom-right-radius:0}
+  .acc-body{display:none;padding:18px 4px 26px} .acc.open .acc-body{display:block}
+  .acc-body>.eyebrow,.acc-body>.sec-title{display:none}
+  /* kafelki */
+  #pulpit{padding:26px 0 40px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+  .tile{display:flex;flex-direction:column;gap:3px;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);color:inherit;text-decoration:none;transition:.2s}
+  .tile:hover{border-color:rgba(232,180,74,.55);transform:translateY(-2px)} .tile-ico{font-size:1.5rem;margin-bottom:4px} .tile b{font-family:Cinzel,serif;font-size:1rem} .tile small{color:var(--muted);font-size:.78rem}
+  .back-btn{display:none;margin:0 0 14px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--gold2);font:inherit;font-weight:700;cursor:pointer}
+  .lay-tiles .back-btn{display:inline-block}
+  /* zakładki */
+  .tabbar{position:sticky;top:64px;z-index:45;background:rgba(13,15,20,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .tabbar .wrap{display:flex;gap:6px;overflow-x:auto;padding:8px 20px}
+  .tabbar button{flex:none;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:pointer}
+  .tabbar button.on{border-color:var(--gold);color:var(--gold2);background:rgba(232,180,74,.1)}
+  /* przełącznik testowy */
+  .lay-switch{position:fixed;left:12px;bottom:12px;z-index:120;display:flex;align-items:center;gap:4px;flex-wrap:wrap;max-width:calc(100vw - 24px);padding:6px 8px;border-radius:12px;border:1px solid var(--gold);background:rgba(15,15,20,.95);font-size:.76rem;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  .lay-switch span{color:var(--muted);margin-right:4px} .lay-switch a{padding:4px 9px;border-radius:999px;color:var(--text,#ddd);text-decoration:none;border:1px solid var(--line)}
+  .lay-switch a.on{border-color:var(--gold);color:var(--gold2)} .lay-switch button{border:none;background:none;color:var(--muted);font-size:1rem;cursor:pointer;margin-left:2px}
+  .cwl-help{margin-top:12px} .cwl-size{display:flex;gap:4px} .cwl-size button{padding:4px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:pointer}
+  .cwl-size button.on{border-color:var(--gold);color:var(--gold2);background:rgba(232,180,74,.1)}
+  .cwl-dist{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px} .cwl-dist span{font-size:.76rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+  .cwl-cols{display:grid;grid-template-columns:1.4fr 1fr;gap:16px} @media(max-width:760px){.cwl-cols{grid-template-columns:1fr}}
+  .cwl-n{font-style:normal;color:var(--muted);display:inline-block;min-width:24px} .th.sm{display:inline-grid;place-items:center;width:24px;height:24px;font-size:.72rem;margin-right:8px;vertical-align:middle}
+  .cmp{margin-top:12px} .cmp summary{cursor:pointer} .cmp-pick{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}
+  .cmp-pick select{flex:1;min-width:140px;padding:9px 10px;border-radius:10px;border:1px solid var(--line);background:var(--card2);color:inherit;font:inherit}
+  .cmp-t{width:100%;border-collapse:collapse;font-size:.86rem} .cmp-t th,.cmp-t td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:center}
+  .cmp-t th:first-child{text-align:left;color:var(--muted);font-weight:600} .cmp-t .cmp-h td{color:var(--gold2);font-weight:800} .cmp-t td.win{color:var(--green);font-weight:800} .cmp-t td.na{color:var(--muted)}
+  .cmp-t tfoot th,.cmp-t tfoot td{font-weight:800;border-bottom:none}
+  .quiz summary{cursor:pointer} .quiz-top{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted)} .quiz-q{font-weight:700;font-size:1rem;margin:8px 0 12px}
+  .quiz-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px} @media(max-width:600px){.quiz-opts{grid-template-columns:1fr}}
+  .quiz-opts button{padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:inherit;font:inherit;text-align:left;cursor:pointer}
+  .quiz-opts button:hover:not(:disabled){border-color:var(--gold)} .quiz-opts button.ok{border-color:var(--green);background:rgba(79,180,119,.15)} .quiz-opts button.bad{border-color:var(--red);background:rgba(217,83,79,.15)}
+  .quiz-end{text-align:center} .quiz-end b{font-family:Cinzel,serif;font-size:2.2rem;color:var(--gold2)} .quiz-end p{margin:4px 0 12px}
   .pen-note{color:#ff9a92!important} .pen-note b{color:#ffb3ae}
   .pen-why{display:block;color:#ff9a92!important}
   .kary-rules{display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 16px} .kary-rules span{font-size:.8rem;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
@@ -900,6 +941,10 @@
         <tbody id="tbody"></tbody>
       </table>
     </div>
+    <details class="panel cmp" id="cmpWrap"><summary><span><span class="fame-label" style="margin:0;display:inline">🆚 Porównaj dwóch graczy</span></span></summary>
+      <div class="cmp-pick"><select id="cmpA" aria-label="Gracz 1"></select><b>vs</b><select id="cmpB" aria-label="Gracz 2"></select></div>
+      <div id="cmpOut"></div>
+    </details>
   </div>
 </section>
 
@@ -912,6 +957,7 @@
         <span class="bw-btn"><span class="bw-open">Pokaż panel</span><span class="bw-close">Zwiń</span> <i>▾</i></span>
       </summary>
       <div class="admin-grid" id="adminGrid"></div>
+      <div class="panel cwl-help" id="cwlHelp"></div>
     </details>
   </div>
 </section>
@@ -1019,6 +1065,9 @@
       <p class="ch-meta" style="margin-top:10px">Skróty i pojęcia, które zobaczysz na czacie i na Discordzie.</p>
       <input class="gloss-q" id="glossQ" type="search" placeholder="Szukaj, np. funnel, CWL, rush…" aria-label="Szukaj pojęcia">
       <div id="gloss"></div>
+    </details>
+    <details class="panel quiz" id="quizWrap" style="margin-top:12px"><summary><span><span class="fame-label" style="margin:0;display:inline">🧠 Quiz Clash of Clans</span> <span class="chip" style="margin-left:6px">5 pytań</span></span></summary>
+      <div id="quiz" style="margin-top:12px"></div>
     </details>
   </div>
 </section>
@@ -1287,6 +1336,10 @@ const KARY_ANULOWANE = [
   {name:"Mimbosz", date:"2026-10-31"},  // zamiana numerów uzgodniona z zarządem
   {name:"Barnes",  date:"2026-10-31"},  // zamiana numerów uzgodniona z zarządem
 ];
+
+// Układ strony: "klasyczny" (wszystko pod sobą) | "zwijane" | "kafelki" | "zakladki"
+// Do testów: dopisz do adresu ?uklad=zwijane (albo kafelki / zakladki / klasyczny)
+const UKLAD = "klasyczny";
 
 // Odznaki przy nicku (progi można zmieniać)
 const BADGE_LIMITS = {warStars:100, donations:300, capital:100000, games:1000};
@@ -2517,6 +2570,112 @@ function attacksHtml(cw){
 
 
 
+/* ===== Pomocnik składu CWL ===== */
+(function(){
+  const box=$("#cwlHelp"); if(!box) return;
+  const A=AUTO||{}; const AM=A.members||[]; if(!AM.length){box.hidden=true;return;}
+  const ended=(A.warArchive||[]).filter(w=>w.state==="warEnded").slice(0,8);
+  const st=t=>t&&t.length>15?Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`):Date.parse(t);
+  const dayW=t=>new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(new Date(st(t)));
+  const pens=(A.penalties||[]).filter(p=>!KARY_ANULOWANE.some(a=>a&&a.name===p.name&&a.date===dayW(p.war))&&Date.now()-st(p.war)<30*864e5);
+  const list=AM.map(m=>{
+    const pf=m.profile||{}; const hs=(pf.heroes||[]); const hp=hs.length?hs.reduce((a,h)=>a+h.level/h.max,0)/hs.length:0;
+    let att=0,max=0,tri=0,miss=0; ended.forEach(w=>{const x=(w.members||[]).find(y=>y.tag===m.tag); if(!x) return; max+=w.perMember; att+=x.attacks.length; miss+=w.perMember-x.attacks.length; x.attacks.forEach(a=>{if(a.stars===3) tri++;});});
+    const act=A.activity&&A.activity[m.tag]; const idle=act?Math.floor((Date.now()-new Date(act.last))/864e5):0;
+    const pen=pens.filter(p=>p.tag===m.tag).length;
+    const score=m.th*12+hp*25+(att?tri/att*12:0)-miss*8-pen*6-Math.min(idle,10)*3;
+    const flags=[]; if(miss) flags.push(`❌ ${miss} opuszcz.`); if(pen) flags.push(`⛔ ${pen} kara`); if(idle>=3) flags.push(`💤 ${idle} dni`); if(pf.warPref==="out") flags.push("🔴 wypisany z wojen");
+    return {name:m.name,th:m.th,hp:Math.round(hp*100),tri:att?Math.round(tri/att*100):null,score,flags,out:pf.warPref==="out"||idle>=7};
+  }).sort((a,b)=>b.score-a.score);
+  let size=15;
+  const draw=()=>{
+    const ok=list.filter(x=>!x.out), main=ok.slice(0,size), res=ok.slice(size,size+5);
+    const dist={}; main.forEach(x=>dist[x.th]=(dist[x.th]||0)+1);
+    const row=(x,i)=>`<div class="mini-row"><span><em class="cwl-n">${i}.</em><span class="th sm">${x.th}</span>${esc(x.name)}<span class="why">herosi ${x.hp}%${x.tri!=null?` · 3★ ${x.tri}%`:""}${x.flags.length?" · "+x.flags.join(" · "):""}</span></span></div>`;
+    box.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">🏅 Pomocnik składu CWL</span><span class="cwl-size"><button data-s="15" class="${size===15?"on":""}">15</button><button data-s="30" class="${size===30?"on":""}">30</button></span></div>
+      <p class="ch-meta">Podpowiedź na rundę CWL: najmocniejsze ratusze i herosi, wysoka skuteczność 3★, bez opuszczonych ataków, kar i nieaktywności. Ostateczny wybór należy do zarządu.</p>
+      <div class="cwl-dist">${Object.keys(dist).sort((a,b)=>b-a).map(t=>`<span>TH${t} × ${dist[t]}</span>`).join("")}</div>
+      <div class="cwl-cols"><div>${main.map((x,i)=>row(x,i+1)).join("")}</div><div><div class="fame-label" style="margin:0 0 6px">Rezerwa</div>${res.map((x,i)=>row(x,size+i+1)).join("")||`<div class="empty">Brak</div>`}
+      ${list.filter(x=>x.out).length?`<p class="admin-note">Pominięci (wypisani z wojen albo 7+ dni nieaktywni): ${list.filter(x=>x.out).map(x=>esc(x.name)).join(", ")}</p>`:""}</div></div>
+      <button class="btn btn-ghost btn-sm" id="cwlCopy" style="margin-top:10px">📋 Kopiuj skład na Discorda</button>`;
+    box.querySelectorAll(".cwl-size button").forEach(b=>b.onclick=()=>{size=+b.dataset.s;draw();});
+    $("#cwlCopy").onclick=()=>{ const t=`🏅 **Skład CWL (${size})**\n`+main.map((x,i)=>`${i+1}. ${x.name} (TH${x.th})`).join("\n")+`\n\n🔄 Rezerwa: ${res.map(x=>x.name).join(", ")}`;
+      (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast("Skład skopiowany ✓")).catch(()=>prompt("Skopiuj:",t)); };
+  };
+  draw();
+})();
+
+/* ===== Porównaj dwóch graczy ===== */
+(function(){
+  const A=$("#cmpA"), B=$("#cmpB"); if(!A) return;
+  const L=MEMBERS.slice().sort((a,b)=>a.name.localeCompare(b.name,LOC()));
+  const opts=L.map(m=>`<option value="${esc(m.name)}">${esc(m.name)} (TH${m.th})</option>`).join("");
+  A.innerHTML=opts; B.innerHTML=opts;
+  const top=[...MEMBERS].sort((a,b)=>b.th-a.th);
+  A.value=(top[0]||{}).name; B.value=(top[1]||top[0]||{}).name;
+  const HN={"Barbarian King":"Król Barbarzyńców","Archer Queen":"Królowa Łuczniczek","Grand Warden":"Wielki Strażnik","Royal Champion":"Królewska Czempionka","Minion Prince":"Książę Minionów","Dragon Duke":"Smoczy Hrabia"};
+  const ended=((AUTO&&AUTO.warArchive)||[]).filter(w=>w.state==="warEnded");
+  const tri=m=>{let a=0,t=0; ended.forEach(w=>{const x=(w.members||[]).find(y=>y.tag===m.tag); if(x) x.attacks.forEach(z=>{a++; if(z.stars===3) t++;});}); return a?Math.round(t/a*100):null;};
+  const draw=()=>{
+    const a=MEMBERS.find(m=>m.name===A.value), b=MEMBERS.find(m=>m.name===B.value); if(!a||!b) return;
+    const pa=a.profile||{}, pb=b.profile||{};
+    const rows=[["🏰 Ratusz",a.th,b.th],["⭐ Poziom",pa.level,pb.level],["⚔️ Gwiazdki wojenne",pa.warStars,pb.warStars],["🎯 Ataki za 3★ (nasze wojny)",tri(a),tri(b),"%"],
+      ["🏆 Puchary",pa.trophies,pb.trophies],["🥇 Rekord pucharów",pa.best,pb.best],["📦 Oddane w sezonie",a.given,b.given],["🏛️ Złoto dla Stolicy",pa.capital,pb.capital],["🗓️ Staż (dni)",a.joined&&!a.joined.orig?stazDays(a):null,b.joined&&!b.joined.orig?stazDays(b):null]];
+    const names=new Set([...(pa.heroes||[]),...(pb.heroes||[])].map(h=>h.name));
+    names.forEach(n=>{const ha=(pa.heroes||[]).find(h=>h.name===n), hb=(pb.heroes||[]).find(h=>h.name===n); rows.push(["👑 "+(HN[n]||n),ha?ha.level:null,hb?hb.level:null]);});
+    const cell=(v,o,suf)=>{ if(v==null) return `<td class="na">—</td>`; const win=o==null||v>o, eq=v===o; return `<td class="${eq?"":win?"win":""}">${fmt(v)}${suf||""}</td>`; };
+    let wa=0,wb=0; rows.forEach(r=>{ if(r[1]!=null&&(r[2]==null||r[1]>r[2])) wa++; else if(r[2]!=null&&(r[1]==null||r[2]>r[1])) wb++; });
+    $("#cmpOut").innerHTML=`<table class="cmp-t"><tbody><tr class="cmp-h"><th></th><td>${esc(a.name)}</td><td>${esc(b.name)}</td></tr>
+      ${rows.map(r=>`<tr><th>${r[0]}</th>${cell(r[1],r[2],r[3])}${cell(r[2],r[1],r[3])}</tr>`).join("")}</tbody>
+      <tfoot><tr><th>Wygrane kategorie</th><td class="${wa>wb?"win":""}">${wa}</td><td class="${wb>wa?"win":""}">${wb}</td></tr></tfoot></table>`;
+  };
+  A.onchange=draw; B.onchange=draw; draw();
+})();
+
+/* ===== Quiz Clash of Clans ===== */
+(function(){
+  const box=$("#quiz"); if(!box) return;
+  // [pytanie, [poprawna, błędna, błędna, błędna]]
+  const Q=[["Od którego ratusza jest Orla artyleria?", ["TH11", "TH10", "TH12", "TH9"]], ["Który heros lata?", ["Książę Minionów", "Wielki Strażnik", "Królewska Czempionka", "Król Barbarzyńców"]], ["Co robi Dmuchawa?", ["Zdmuchuje jednostki powietrzne", "Leczy obronę", "Zamraża wojska", "Strzela kulami ognia"]], ["Ile ataków ma każdy gracz w zwykłej wojnie klanowej?", ["2", "1", "3", "4"]], ["Ile ataków dziennie masz w Lidze Wojen Klanów (CWL)?", ["1", "2", "3", "Ile chcesz"]], ["Ile klanów jest w jednej grupie CWL?", ["8", "6", "10", "16"]], ["Ile gwiazdek dostajesz za 50% zniszczeń i zniszczony ratusz?", ["2", "1", "3", "0"]], ["Od którego ratusza jest Królowa Łuczniczek?", ["TH8", "TH9", "TH7", "TH10"]], ["Od którego ratusza jest Wielki Strażnik?", ["TH11", "TH10", "TH12", "TH13"]], ["Od którego ratusza jest Królewska Czempionka?", ["TH13", "TH12", "TH14", "TH15"]], ["Od którego ratusza są Zwierzęta herosów?", ["TH14", "TH13", "TH15", "TH12"]], ["Od którego ratusza jest Monolit?", ["TH15", "TH14", "TH16", "TH13"]], ["Od którego ratusza jest Smok?", ["TH7", "TH8", "TH6", "TH9"]], ["Od którego ratusza są Maszyny oblężnicze?", ["TH12", "TH11", "TH13", "TH10"]], ["Od którego ratusza jest Bowler?", ["TH10", "TH9", "TH11", "TH8"]], ["W którym roku wyszło Clash of Clans?", ["2012", "2010", "2014", "2016"]], ["Z jakiego kraju jest Supercell?", ["Finlandia", "Szwecja", "Niemcy", "USA"]], ["Co robi Zaklęcie odwołania?", ["Wycofuje wojska z pola bitwy, żeby wystawić je ponownie", "Wskrzesza herosa", "Zamraża obronę", "Przyspiesza wojska"]], ["Co robi Lodowy golem, gdy zginie?", ["Zamraża wszystko dookoła", "Wybucha ogniem", "Dzieli się na mniejsze golemy", "Leczy wojska"]], ["Na co Nietoperze są najsłabsze?", ["Obrony obszarowe (np. Wieża maga)", "Pojedyncze działa", "Mury", "Kopalnie złota"]], ["Którą broń ma ratusz na TH12?", ["Gigateslę", "Orlą artylerię", "Wieżę inferno", "Monolit"]], ["Na kogo idzie Twój PIERWSZY atak na wojnie w Armii Maurycego?", ["Na swój numer", "Na najsłabszą bazę", "Na dowolny numer", "Na ratusz przeciwnika"]], ["Ile wynosi norma punktów w Grach Klanowych w naszym klanie?", ["1000", "500", "4000", "Brak normy"]], ["Od którego ratusza przyjmujemy do Armii Maurycego?", ["TH6", "TH3", "TH8", "TH10"]], ["Ile gwiazdek maksymalnie można zdobyć w jednym ataku?", ["3", "5", "2", "10"]], ["Co dzieje się z Wieżą odwetu, gdy niszczysz inne budynki?", ["Staje się silniejsza", "Słabnie", "Wyłącza się", "Nic"]]];
+  let qs,i,pts;
+  const shuffle=a=>{for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]];} return a;};
+  const start=()=>{ qs=shuffle(Q.slice()).slice(0,5).map(([q,o])=>({q,ok:o[0],opts:shuffle(o.slice())})); i=0; pts=0; show(); };
+  const show=()=>{
+    if(i>=qs.length){ const msg=pts===5?"Mistrz Clasha! 🏆":pts>=3?"Nieźle! 💪":"Jeszcze trochę nauki 📖";
+      box.innerHTML=`<div class="quiz-end"><b>${pts}/5</b><p>${msg}</p><button class="btn btn-gold btn-sm" id="qAgain">Zagraj jeszcze raz</button> <button class="btn btn-ghost btn-sm" id="qShare">📋 Pochwal się na Discordzie</button></div>`;
+      $("#qAgain").onclick=start;
+      $("#qShare").onclick=()=>{const t=`🧠 Quiz Clash of Clans na stronie Armii Maurycego: ${pts}/5! Pobijesz? https://kubooorek.github.io/armia-maurycego/#kalkulator`;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast("Skopiowano ✓")).catch(()=>prompt("Skopiuj:",t));};
+      return; }
+    const x=qs[i];
+    box.innerHTML=`<div class="quiz-top"><span>Pytanie ${i+1}/5</span><span>Punkty: ${pts}</span></div><p class="quiz-q">${esc(x.q)}</p>
+      <div class="quiz-opts">${x.opts.map(o=>`<button>${esc(o)}</button>`).join("")}</div>`;
+    box.querySelectorAll(".quiz-opts button").forEach(b=>b.onclick=()=>{
+      const good=b.textContent===x.ok; if(good) pts++;
+      box.querySelectorAll(".quiz-opts button").forEach(c=>{c.disabled=true; if(c.textContent===x.ok) c.classList.add("ok"); else if(c===b) c.classList.add("bad");});
+      setTimeout(()=>{i++;show();},1100);
+    });
+  };
+  start();
+})();
+
+/* ===== Automatyczne odświeżanie (co minutę sprawdza nowe dane) ===== */
+(function(){
+  if(!AUTO||!AUTO.updated) return;
+  try{ const y=sessionStorage.getItem("am_scroll"); if(y!=null){ sessionStorage.removeItem("am_scroll"); setTimeout(()=>scrollTo(0,+y),50); } }catch(e){}
+  const last=AUTO.updated;
+  const busy=()=>document.hidden || (document.activeElement&&/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName))
+    || ($("#modal")&&!$("#modal").hidden) || ($("#lightbox")&&!$("#lightbox").hidden) || document.querySelector(".quiz-opts");
+  let pending=false;
+  const check=async()=>{
+    try{ const r=await fetch("data.json?v="+Date.now(),{cache:"no-store"}); if(!r.ok) return; const d=await r.json();
+      if(d.updated&&d.updated!==last) pending=true; }catch(e){}
+    if(pending&&!busy()){ toast(LANG==="en"?"New data from the game — refreshing…":"Nowe dane z gry — odświeżam…");
+      setTimeout(()=>{ try{sessionStorage.setItem("am_scroll",String(scrollY)); saveLayoutState&&saveLayoutState();}catch(e){} location.reload(); },1200); }
+  };
+  setInterval(check,60000);
+  document.addEventListener("visibilitychange",()=>{ if(!document.hidden) check(); });
+})();
+
 /* ===== Ogłoszenie ===== */
 (function(){
   const el=$("#announce"); if(!ANNOUNCE||!ANNOUNCE.text) return;
@@ -2531,6 +2690,105 @@ if (AUTO && AUTO.updated){
   document.querySelectorAll(".auto-upd").forEach(el=>{el.innerHTML=`<span class="live-dot"></span>Dane z gry, aktualizacja automatyczna · ${t}`;el.hidden=false;});
 }
 $("#langBtn").addEventListener("click",()=>{ try{localStorage.setItem("am_lang", LANG==="en"?"pl":"en");}catch(e){} location.reload(); });
+/* ===== Układ strony ===== */
+let saveLayoutState=()=>{};
+(function(){
+  let mode=UKLAD;
+  try{ const q=new URLSearchParams(location.search).get("uklad"); if(q){ mode=q; localStorage.setItem("am_uklad_test",q); } else { const t=localStorage.getItem("am_uklad_test"); if(t) mode=t; } }catch(e){}
+  if(!["klasyczny","zwijane","kafelki","zakladki"].includes(mode)) mode="klasyczny";
+  const testing=(()=>{try{return !!localStorage.getItem("am_uklad_test");}catch(e){return false;}})();
+  const SEC=[["wymagania","📋","Wymagania"],["dolacz","➕","Jak dołączyć"],["regulamin","📜","Regulamin"],["wydarzenia","⏳","Wydarzenia"],
+    ["wojny","⚔️","Wojny"],["kary","⛔","Kary"],["osiagniecia","🏆","CWL i rozwój"],["ranking","🎖️","Ranking"],
+    ["kadra","👑","Kadra i sława"],["czlonkowie","👥","Członkowie"],["rajdy","🏰","Rajdy i skład"],["zarzad","🛡️","Zarząd"],
+    ["kalkulator","📖","Poradnik"],["bazy","🗺️","Bazy"],["discord","💬","Discord"],["faq","❓","FAQ"]].filter(x=>$("#"+x[0]));
+  const A=AUTO||{};
+  const sum=id=>{ try{
+    if(id==="wymagania") return "TH6+ · aktywność · wojny i Gry";
+    if(id==="dolacz") return "#2GQQ8RGRL · bez akceptacji";
+    if(id==="regulamin") { const n=document.querySelectorAll("#regulamin details").length; return n?`${n} zasad klanu i wojen`:"Zasady klanu i wojen"; }
+    if(id==="wydarzenia"){ const now=new Date(); let best=null; EVENTS.forEach(e=>{const [st,en]=e.win(now); const live=!e.endOnly&&now>=st&&now<en; const t=live?0:st-now; if(best===null||t<best.t) best={t,n:e.name,live};});
+      if(!best) return ""; if(best.live) return `Trwa: ${best.n}`; const h=Math.floor(best.t/36e5); return `${best.n} za ${h>=24?Math.floor(h/24)+" d "+h%24+" h":h+" h"}`; }
+    if(id==="wojny"){ const cw=A.currentWar; if(cw&&cw.state==="inWar") return `🔴 Trwa: ${cw.us.stars} ★ ${cw.them.stars}`; if(cw&&cw.state==="preparation") return "🟡 Dzień przygotowań";
+      const w=WARS.filter(x=>x.us.stars>x.them.stars||(x.us.stars===x.them.stars&&x.us.pct>x.them.pct)).length, l=WARS.filter(x=>x.us.stars<x.them.stars||(x.us.stars===x.them.stars&&x.us.pct<x.them.pct)).length; return `${w}W · ${l}P · ${WARS.length-w-l}R`; }
+    if(id==="kary"){ const n=document.querySelectorAll("#karyActive .kara").length; return n?`${n} ${n===1?"aktywna kara":"aktywne kary"}`:"Brak kar ✓"; }
+    if(id==="osiagniecia") return CWL.league?`Liga: ${CWL.league}`:"Pierwszy sezon CWL";
+    if(id==="ranking") return "Najlepsi wojownicy";
+    if(id==="kadra") return MVP?`MVP: ${MVP.name}`:"MVP i wyróżnienia";
+    if(id==="czlonkowie") return `${MEMBERS.length}/50 członków`;
+    if(id==="rajdy"){ const r=(A.raids||[])[0]; return r?`Ostatni rajd: ${fmt(r.loot)} złota`:"Rajdy Stolicy"; }
+    if(id==="zarzad") return "Kandydaci · nieaktywni · skład CWL";
+    if(id==="kalkulator") return "Strategie · plan ulepszeń · quiz";
+    if(id==="bazy") return "Bazy TH4–TH18";
+    if(id==="discord"){ const d=A.discord; return d&&d.online!=null?`${fmt(d.online)} online`:"Dołącz do nas"; }
+    if(id==="faq") return `${document.querySelectorAll("#faq details").length} pytań`;
+  }catch(e){} return ""; };
+  const secOf=id=>{ const el=document.getElementById(id); if(!el) return null; const s=el.closest("section"); return s&&SEC.some(x=>x[0]===s.id)?s.id:null; };
+  const scrollToEl=id=>{ const el=document.getElementById(id); if(el) setTimeout(()=>el.scrollIntoView({behavior:"smooth",block:"start"}),30); };
+  const route=fn=>{ document.addEventListener("click",e=>{ const a=e.target.closest('a[href^="#"]'); if(!a) return; const id=a.getAttribute("href").slice(1); if(!id||id==="top") return;
+    const sec=secOf(id); if(!sec) return; e.preventDefault(); $("#navLinks")&&$("#navLinks").classList.remove("open"); fn(sec,id); },true); };
+  const hashSec=()=>secOf(location.hash.slice(1));
+
+  if(mode==="zwijane"){
+    document.body.classList.add("lay-acc");
+    let open=new Set(); try{ JSON.parse(sessionStorage.getItem("am_acc")||"[]").forEach(x=>open.add(x)); }catch(e){}
+    if(!open.size && A.currentWar && A.currentWar.state==="inWar") open.add("wojny");
+    const h=hashSec(); if(h) open.add(h);
+    SEC.forEach(([id,ico,title])=>{
+      const sec=$("#"+id), wrap=sec.querySelector(".wrap"); if(!wrap) return;
+      const summary=sum(id);
+      const body=document.createElement("div"); body.className="acc-body"; while(wrap.firstChild) body.appendChild(wrap.firstChild);
+      const head=document.createElement("button"); head.className="acc-head"; head.type="button";
+      head.innerHTML=`<span class="acc-ico">${ico}</span><span class="acc-t"><b>${title}</b><small>${esc(summary)}</small></span><i class="acc-ch">▾</i>`;
+      wrap.appendChild(head); wrap.appendChild(body); sec.classList.add("acc"); if(open.has(id)) sec.classList.add("open");
+      head.onclick=()=>{ sec.classList.toggle("open"); if(sec.classList.contains("open")) open.add(id); else open.delete(id); };
+    });
+    route((sec,id)=>{ $("#"+sec).classList.add("open"); open.add(sec); scrollToEl(id); });
+    saveLayoutState=()=>{ try{ sessionStorage.setItem("am_acc",JSON.stringify([...open])); }catch(e){} };
+  }
+
+  if(mode==="kafelki"){
+    document.body.classList.add("lay-tiles");
+    const pul=document.createElement("section"); pul.id="pulpit";
+    pul.innerHTML=`<div class="wrap"><div class="tiles">${SEC.map(([id,ico,title])=>`<a class="tile" href="#${id}"><span class="tile-ico">${ico}</span><b>${title}</b><small>${esc(sum(id))}</small></a>`).join("")}</div></div>`;
+    $("#top").after(pul);
+    SEC.forEach(([id,ico,title])=>{ const w=$("#"+id).querySelector(".wrap"); const b=document.createElement("button"); b.className="back-btn"; b.type="button"; b.innerHTML=`← Pulpit`; b.onclick=()=>show(null); w.prepend(b); });
+    const show=(sec,id)=>{
+      SEC.forEach(([x])=>$("#"+x).classList.toggle("lay-hide",x!==sec));
+      pul.classList.toggle("lay-hide",!!sec); $("#top").classList.toggle("lay-hide",!!sec);
+      history.replaceState(null,"",sec?"#"+sec:location.pathname+location.search);
+      if(sec) scrollToEl(id||sec); else scrollTo({top:0,behavior:"smooth"});
+    };
+    route(show); document.addEventListener("click",e=>{ const a=e.target.closest('a[href="#top"]'); if(a){ e.preventDefault(); show(null);} },true);
+    show(hashSec());
+  }
+
+  if(mode==="zakladki"){
+    document.body.classList.add("lay-tabs");
+    const TABS=[["klan","🛡️ Klan",["wymagania","dolacz","regulamin","wydarzenia","kadra","discord","faq"]],["wojny","⚔️ Wojny",["wojny","kary","osiagniecia","ranking"]],
+      ["czlonkowie","👥 Członkowie",["czlonkowie","rajdy","zarzad"]],["poradnik","📖 Poradnik",["kalkulator","bazy"]]];
+    const bar=document.createElement("div"); bar.className="tabbar"; bar.innerHTML=`<div class="wrap">${TABS.map(t=>`<button data-t="${t[0]}">${t[1]}</button>`).join("")}</div>`;
+    ($("#ticker")||document.querySelector("nav")).after(bar);
+    const tabOf=sec=>(TABS.find(t=>t[2].includes(sec))||TABS[0])[0];
+    const show=(tab,id)=>{
+      TABS.forEach(t=>t[2].forEach(x=>$("#"+x)&&$("#"+x).classList.toggle("lay-hide",t[0]!==tab)));
+      $("#top").classList.toggle("lay-hide",tab!=="klan");
+      bar.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t===tab));
+      if(id) scrollToEl(id); else scrollTo({top:0});
+    };
+    bar.onclick=e=>{ const b=e.target.closest("button"); if(b){ show(b.dataset.t); history.replaceState(null,"","#"+TABS.find(t=>t[0]===b.dataset.t)[2][0]); } };
+    route((sec,id)=>{ show(tabOf(sec),id); });
+    const h=hashSec(); show(h?tabOf(h):"klan", h?location.hash.slice(1):null);
+  }
+
+  // Pasek do testowania układów
+  if(testing){
+    const sw=document.createElement("div"); sw.className="lay-switch";
+    sw.innerHTML=`<span>Układ (test):</span>${[["klasyczny","Klasyczny"],["zwijane","Zwijane"],["kafelki","Kafelki"],["zakladki","Zakładki"]].map(([k,l])=>`<a href="?uklad=${k}" class="${k===mode?"on":""}">${l}</a>`).join("")}<button title="Zakończ test" aria-label="Zakończ test">×</button>`;
+    sw.querySelector("button").onclick=()=>{ try{localStorage.removeItem("am_uklad_test");}catch(e){} location.href=location.pathname; };
+    document.body.appendChild(sw);
+  }
+})();
+
 applyLang();
 } // koniec boot()
 </script>
