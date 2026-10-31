@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T19:15:49.574Z",
+  "updated": "2026-10-31T19:31:04.124Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 40,
-      "pct": 55.6,
-      "attacks": 18,
+      "stars": 43,
+      "pct": 59.6,
+      "attacks": 20,
       "bases": [
         {
           "pos": 1,
@@ -115,7 +115,7 @@
         {
           "pos": 20,
           "th": 7,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 21,
@@ -146,9 +146,9 @@
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 49,
-      "pct": 67.64,
-      "attacks": 19,
+      "stars": 52,
+      "pct": 71.64,
+      "attacks": 20,
       "bases": [
         {
           "pos": 1,
@@ -223,7 +223,7 @@
         {
           "pos": 15,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 16,
@@ -455,7 +455,14 @@
         "tag": "#YLLQL2VUP",
         "pos": 15,
         "th": 8,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 94,
+            "order": 38,
+            "target": "15. ❤Ranjer❤"
+          }
+        ]
       },
       {
         "name": "SHA☆ZAM!",
@@ -488,6 +495,12 @@
             "pct": 100,
             "order": 26,
             "target": "14. danjer"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 39,
+            "target": "15. ❤Ranjer❤"
           }
         ]
       },
@@ -848,8 +861,8 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 40,
-      "them": 49,
+      "us": 43,
+      "them": 52,
       "final": false,
       "members": [
         {
@@ -977,7 +990,12 @@
         {
           "name": "KuN",
           "tag": "#YLLQL2VUP",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 94
+            }
+          ]
         },
         {
           "name": "SHA☆ZAM!",
@@ -997,6 +1015,10 @@
           "name": "Mimbosz",
           "tag": "#RY0QPVCCY",
           "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
             {
               "stars": 3,
               "pct": 100
@@ -1742,7 +1764,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 8279,
+      "value": 8309,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-10-31"
@@ -1805,8 +1827,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "8279|2000000000|2000000000|94700|80744|1208549|1605615|0|1241|204|15",
-      "last": "2026-10-31T19:15:49.573Z",
+      "sig": "8309|2000000000|2000000000|94700|80939|1208549|1605615|0|1241|204|15",
+      "last": "2026-10-31T19:31:04.124Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -1870,8 +1892,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "359|123095755|113511529|7600|594|9310|29985|0|32|57|9",
-      "last": "2026-10-31T19:15:49.573Z",
+      "sig": "359|123629755|114045529|7600|594|9310|29985|0|32|57|9",
+      "last": "2026-10-31T19:31:04.124Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -1880,13 +1902,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "169|33168099|32386181|10600|180|24180|41182|0|36|42|8",
-      "last": "2026-10-30T13:45:50.165Z",
+      "sig": "169|33216099|32434181|10600|180|24180|41182|0|38|42|8",
+      "last": "2026-10-31T19:31:04.124Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "14|67353094|75396396|1900|14|0|3150|0|32|37|9",
-      "last": "2026-10-31T18:31:06.352Z",
+      "sig": "14|67560725|75824461|1900|14|0|3150|0|35|37|9",
+      "last": "2026-10-31T19:31:04.124Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -2306,7 +2328,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 8279,
+      "given": 8309,
       "received": 3077,
       "trophies": 491,
       "profile": {
@@ -2354,7 +2376,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 80744,
+        "don": 80939,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -2909,6 +2931,52 @@
       }
     },
     {
+      "name": "Kojak",
+      "tag": "#G8VGC2VRL",
+      "role": "admin",
+      "th": 9,
+      "given": 359,
+      "received": 2269,
+      "trophies": 267,
+      "profile": {
+        "level": 57,
+        "trophies": 267,
+        "best": 696,
+        "league": "Barbarian League 5",
+        "warStars": 32,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 29985,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 23,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 21,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "ach": {
+        "cg": 7600,
+        "don": 594,
+        "capLoot": 9310,
+        "gold": 123629755,
+        "elixir": 114045529,
+        "capContrib": 29985,
+        "wins": 0
+      }
+    },
+    {
       "name": "Belaska",
       "tag": "#GU0R2J8R0",
       "role": "admin",
@@ -2951,52 +3019,6 @@
         "gold": 114775291,
         "elixir": 114376477,
         "capContrib": 42288,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Kojak",
-      "tag": "#G8VGC2VRL",
-      "role": "admin",
-      "th": 9,
-      "given": 359,
-      "received": 2269,
-      "trophies": 227,
-      "profile": {
-        "level": 57,
-        "trophies": 227,
-        "best": 696,
-        "league": "Barbarian League 5",
-        "warStars": 32,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 29985,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 23,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 21,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 10,
-            "max": 95
-          }
-        ]
-      },
-      "ach": {
-        "cg": 7600,
-        "don": 594,
-        "capLoot": 9310,
-        "gold": 123095755,
-        "elixir": 113511529,
-        "capContrib": 29985,
         "wins": 0
       }
     },
@@ -3054,7 +3076,7 @@
         "trophies": 104,
         "best": 348,
         "league": "Barbarian League 4",
-        "warStars": 36,
+        "warStars": 38,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 41182,
@@ -3076,8 +3098,8 @@
         "cg": 10600,
         "don": 180,
         "capLoot": 24180,
-        "gold": 33168099,
-        "elixir": 32386181,
+        "gold": 33216099,
+        "elixir": 32434181,
         "capContrib": 41182,
         "wins": 0
       }
@@ -3088,14 +3110,14 @@
       "role": "member",
       "th": 9,
       "given": 14,
-      "received": 347,
+      "received": 377,
       "trophies": 240,
       "profile": {
         "level": 37,
         "trophies": 240,
         "best": 252,
         "league": "Skeleton League 3",
-        "warStars": 32,
+        "warStars": 35,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 3150,
@@ -3122,8 +3144,8 @@
         "cg": 1900,
         "don": 14,
         "capLoot": 0,
-        "gold": 67353094,
-        "elixir": 75396396,
+        "gold": 67560725,
+        "elixir": 75824461,
         "capContrib": 3150,
         "wins": 0
       }
