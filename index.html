@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Armia Maurycego — Klan Clash of Clans</title>
 <meta name="description" content="Armia Maurycego — polski klan Clash of Clans (#2GQQ8RGRL). Rekrutacja otwarta od TH6: wojny, CWL, Gry Klanowe i aktywny Discord.">
 <meta name="theme-color" content="#0d0f14">
@@ -773,6 +773,67 @@
   @media(max-width:560px){.pf2-grid{grid-template-columns:repeat(2,1fr)}.pf2-hero{padding:18px 16px 14px}.pf2-body{padding:14px 16px 18px}}
   @media(max-width:520px){.badge-new{display:inline-block;text-align:center;line-height:1.5}.badge-new .dot{display:inline-block;vertical-align:middle;margin-right:6px}}
   .plink{cursor:pointer} .plink:hover{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}
+  /* ===== Telefon: wygląd jak aplikacja ===== */
+  .mtab,.m-join{display:none}
+  .m-join{align-items:center;padding:6px 14px;border-radius:999px;font-size:.8rem;font-weight:800;color:#1a1408;background:linear-gradient(180deg,var(--gold2),var(--gold))}
+  @media (max-width:760px){
+    .lay-pages .menu-btn{display:none!important}
+    .lay-pages .m-join{display:inline-flex}
+    .lay-pages .mtab{display:grid}
+    body.lay-pages{padding-bottom:calc(66px + env(safe-area-inset-bottom))}
+    .lay-pages .lay-switch{bottom:calc(76px + env(safe-area-inset-bottom))}
+    .lay-pages .toast{bottom:calc(84px + env(safe-area-inset-bottom))}
+  }
+  .mtab{position:fixed;left:0;right:0;bottom:0;z-index:90;grid-template-columns:repeat(5,1fr);background:rgba(11,13,18,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+  .mtab a{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.66rem;font-weight:600;color:var(--muted);padding:5px 0 3px;border-radius:12px;text-decoration:none;-webkit-tap-highlight-color:transparent}
+  .mtab .ic{width:22px;height:22px;color:currentColor;vertical-align:0}
+  .mtab a.on{color:var(--gold2)} .mtab a.on .ic{color:var(--gold)}
+  .mtab a.on::before{content:"";position:absolute;top:-6px;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:var(--gold)}
+  .mtab a:active{background:rgba(255,255,255,.05)}
+  @media (max-width:640px){
+    section{padding:30px 0}
+    .eyebrow{font-size:.66rem}
+    .sec-title{font-size:1.3rem} .sec-lead{font-size:.86rem;margin-bottom:16px}
+    .ticker{height:30px;font-size:.74rem} .announce{font-size:.76rem} .announce .wrap{padding-top:6px;padding-bottom:6px}
+    .hero{padding:22px 0 22px}
+    .crest{height:66px;margin-bottom:10px}
+    .season-chip{font-size:.72rem;padding:4px 12px;margin-bottom:8px}
+    .badge-new{font-size:.72rem;padding:5px 12px}
+    .hero h1{font-size:1.85rem;margin-bottom:8px}
+    .hero p.lead{font-size:.88rem;margin-bottom:14px;line-height:1.5}
+    .tag-chip{margin-bottom:14px}
+    .hero-ctas{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .hero-ctas .btn{width:auto;padding:12px 8px;font-size:.86rem;justify-content:center}
+    .stats{grid-template-columns:repeat(4,1fr);gap:6px;margin-top:16px}
+    .stats .stat{padding:9px 2px;text-align:center}
+    .stats .stat b{font-size:1.02rem} .stats .stat span{font-size:.6rem;line-height:1.25;display:block} .stats .stat-next{display:none}
+    .fact{margin-top:12px;padding:10px 12px;font-size:.82rem}
+    #start{padding:22px 0 6px}
+    .now-grid{grid-template-columns:1fr 1fr!important;gap:8px}
+    .now-card{flex-direction:column;align-items:flex-start;gap:8px;padding:12px}
+    .now-card:hover{transform:none}
+    .now-ico{width:34px;height:34px;border-radius:10px} .now-ico .ic{width:19px;height:19px}
+    .now-card small{font-size:.58rem;letter-spacing:.06em} .now-card b{font-size:.98rem} .now-card em{font-size:.7rem}
+    .now-feed .mini-row{font-size:.82rem}
+    /* przewijane w bok (karuzele) */
+    #newsBox>.news-grid,.timers{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -20px;padding:2px 20px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    #newsBox>.news-grid::-webkit-scrollbar,.timers::-webkit-scrollbar{display:none}
+    #newsBox>.news-grid>*,.timers>*{flex:0 0 84%;scroll-snap-align:center}
+    .news{padding:14px} .news p{font-size:.82rem}
+    .swipe-hint{display:flex!important}
+    /* podstrony */
+    .page-head{padding:20px 0 2px}
+    .page-head h1{font-size:1.65rem;margin:2px 0 4px} .page-head p{font-size:.84rem;margin-bottom:10px}
+    .page-sub{flex-wrap:nowrap;overflow-x:auto;margin:0 -20px;padding:0 20px 12px;scrollbar-width:none} .page-sub::-webkit-scrollbar{display:none}
+    .page-sub a{white-space:nowrap;flex:none}
+    .war-summary{grid-template-columns:repeat(3,1fr)!important;gap:6px}
+    .war-summary .stat{padding:9px 10px} .war-summary .stat b{font-size:1.15rem} .war-summary .stat span{font-size:.7rem}
+    .wch-box{height:165px} .wch .panel{padding:14px}
+    .hist-stats{gap:6px} .hist-stats div{padding:10px 4px} .hist-stats b{font-size:1.2rem} .hist-stats small{font-size:.66rem}
+    .final{padding:30px 0} .final .hero-ctas{max-width:none}
+    footer{padding-top:30px} footer .wrap.foot-grid{gap:18px} footer .wrap.foot-bottom{margin-top:22px}
+  }
+  .swipe-hint{display:none;align-items:center;gap:6px;justify-content:center;margin-top:6px;font-size:.7rem;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -3220,6 +3281,13 @@ let saveLayoutState=()=>{};
     // Menu: podstrony + złoty przycisk Dołącz
     const nav=$("#navLinks");
     nav.innerHTML=PAGES.filter(p=>p[0]!=="dolacz").map(p=>`<a href="#${p[0]}" data-page="${p[0]}">${p[1]}</a>`).join("")+`<a href="#dolacz" data-page="dolacz" class="nav-cta">Dołącz</a>`;
+    // Telefon: dolny pasek jak w aplikacji + przycisk Dołącz u góry
+    const MI={start:"home",klan:"shield",wojny:"swords",czlonkowie:"users",poradnik:"book"};
+    const mtab=document.createElement("div"); mtab.className="mtab"; mtab.setAttribute("role","navigation");
+    mtab.innerHTML=PAGES.filter(p=>p[0]!=="dolacz").map(p=>`<a href="#${p[0]}" data-page="${p[0]}"><svg class="ic" aria-hidden="true"><use href="#i-${MI[p[0]]}"/></svg><span>${p[0]==="czlonkowie"?"Gracze":p[1]}</span></a>`).join("");
+    document.body.appendChild(mtab);
+    const mj=document.createElement("a"); mj.className="m-join"; mj.href="#dolacz"; mj.dataset.page="dolacz"; mj.textContent="Dołącz";
+    const nr=document.querySelector(".nav-right"); nr&&nr.prepend(mj);
     // Strona główna: „Teraz w klanie” + kalendarz
     const home=document.createElement("section"); home.id="start";
     const A=AUTO||{};
@@ -3260,6 +3328,7 @@ let saveLayoutState=()=>{};
       ["#top","#start","#ogloszenia","#wydarzenia"].forEach(q=>$(q)&&$(q).classList.toggle("lay-hide",page!=="start"));
       final&&final.classList.toggle("lay-hide",!(page==="start"||page==="klan"));
       nav.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
+      mtab.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
       history.replaceState(null,"",page==="start"?location.pathname+location.search:"#"+(id&&id!==page?id:page));
       document.querySelectorAll("body>section:not(.lay-hide),body>header:not(.lay-hide),body>footer").forEach(el=>{el.classList.remove("pg-in");void el.offsetWidth;el.classList.add("pg-in");});
       if(id&&id!==page&&!PAGES.some(p=>p[0]===id)) scrollToEl(id); else scrollTo({top:0});
