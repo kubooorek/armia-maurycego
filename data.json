@@ -1,27 +1,27 @@
 {
-  "updated": "2026-10-31T17:01:18.419Z",
+  "updated": "2026-10-31T17:15:46.823Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
   "warWinStreak": 10,
   "warWins": 12,
   "currentWar": {
-    "state": "preparation",
+    "state": "inWar",
     "size": 25,
     "perMember": 2,
     "start": "20261031T171000.000Z",
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 0,
-      "pct": 0,
-      "attacks": 0
+      "stars": 3,
+      "pct": 4,
+      "attacks": 1
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 0,
-      "pct": 0,
-      "attacks": 0
+      "stars": 3,
+      "pct": 4,
+      "attacks": 1
     },
     "members": [
       {
@@ -56,7 +56,7 @@
         "name": "Toster290",
         "tag": "#GJJ90QGVQ",
         "pos": 5,
-        "th": 12,
+        "th": 13,
         "attacks": []
       },
       {
@@ -147,14 +147,14 @@
         "name": "SZAR3",
         "tag": "#RYLR2C92V",
         "pos": 18,
-        "th": 7,
+        "th": 8,
         "attacks": []
       },
       {
         "name": "Darui",
         "tag": "#LUQJC2JGY",
         "pos": 19,
-        "th": 7,
+        "th": 8,
         "attacks": []
       },
       {
@@ -183,7 +183,13 @@
         "tag": "#R0VJLRGQ0",
         "pos": 23,
         "th": 7,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "target": "22. علی"
+          }
+        ]
       },
       {
         "name": "samurai024",
@@ -441,6 +447,148 @@
     }
   ],
   "warArchive": [
+    {
+      "start": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "size": 25,
+      "perMember": 2,
+      "state": "inWar",
+      "us": 3,
+      "them": 3,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": []
+        },
+        {
+          "name": "Toster290",
+          "tag": "#GJJ90QGVQ",
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": []
+        },
+        {
+          "name": "zuzia",
+          "tag": "#R8V9U9VLJ",
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": []
+        },
+        {
+          "name": "KuN",
+          "tag": "#YLLQL2VUP",
+          "attacks": []
+        },
+        {
+          "name": "SHA☆ZAM!",
+          "tag": "#GVGRVCQJR",
+          "attacks": []
+        },
+        {
+          "name": "Mimbosz",
+          "tag": "#RY0QPVCCY",
+          "attacks": []
+        },
+        {
+          "name": "SZAR3",
+          "tag": "#RYLR2C92V",
+          "attacks": []
+        },
+        {
+          "name": "Darui",
+          "tag": "#LUQJC2JGY",
+          "attacks": []
+        },
+        {
+          "name": "GoldBelt",
+          "tag": "#R9QQPG9JP",
+          "attacks": []
+        },
+        {
+          "name": "erykos",
+          "tag": "#R9GPGL0QJ",
+          "attacks": []
+        },
+        {
+          "name": "Riczard",
+          "tag": "#R2PCVYQG2",
+          "attacks": []
+        },
+        {
+          "name": "Marsyllia",
+          "tag": "#R0VJLRGQ0",
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
+        },
+        {
+          "name": "samurai024",
+          "tag": "#RYUV9V9RC",
+          "attacks": []
+        },
+        {
+          "name": "maati",
+          "tag": "#GLV9998PC",
+          "attacks": []
+        }
+      ]
+    },
     {
       "start": "20261029T040002.000Z",
       "end": "20261030T040002.000Z",
@@ -1211,8 +1359,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "337|114709291|114310477|16800|494|21725|42288|0|62|54|9",
-      "last": "2026-10-31T17:01:18.418Z",
+      "sig": "357|114709291|114310477|16800|494|21725|42288|0|62|54|9",
+      "last": "2026-10-31T17:15:46.822Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -1306,8 +1454,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "1|12048443|10614170|0|0|0|400|0|8|27|7",
-      "last": "2026-10-31T14:31:03.009Z",
+      "sig": "1|12099442|11008009|0|0|0|400|0|8|27|7",
+      "last": "2026-10-31T17:15:46.822Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -1356,8 +1504,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|4685462|4650581|0|0|0|0|0|0|16|5",
-      "last": "2026-10-31T16:31:03.060Z",
+      "sig": "0|4839047|4921304|0|0|0|0|0|0|16|5",
+      "last": "2026-10-31T17:15:46.822Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -2264,7 +2412,7 @@
       "tag": "#GU0R2J8R0",
       "role": "admin",
       "th": 9,
-      "given": 337,
+      "given": 357,
       "received": 1500,
       "trophies": 261,
       "profile": {
@@ -2983,7 +3131,7 @@
       "role": "member",
       "th": 7,
       "given": 1,
-      "received": 85,
+      "received": 105,
       "trophies": 244,
       "profile": {
         "level": 27,
@@ -3007,8 +3155,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 12048443,
-        "elixir": 10614170,
+        "gold": 12099442,
+        "elixir": 11008009,
         "capContrib": 400,
         "wins": 0
       }
@@ -3474,8 +3622,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 4685462,
-        "elixir": 4650581,
+        "gold": 4839047,
+        "elixir": 4921304,
         "capContrib": 0,
         "wins": 0
       }
