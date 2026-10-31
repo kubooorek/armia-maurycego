@@ -414,6 +414,34 @@
   tbody tr:last-child td{border-bottom:none}
   .rank{color:var(--muted);font-family:ui-monospace,monospace}
   .pname{font-weight:600}
+  .ticker{display:flex;align-items:center;gap:10px;height:34px;border-bottom:1px solid var(--line);background:rgba(232,180,74,.05);overflow:hidden;font-size:.82rem}
+  .ticker[hidden]{display:none}
+  .ticker-tag{flex:none;padding:0 12px;height:100%;display:flex;align-items:center;font-size:.68rem;font-weight:800;letter-spacing:.1em;color:#ff7a70;background:rgba(217,83,79,.12);border-right:1px solid var(--line)}
+  .ticker-view{flex:1;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+  .ticker-track{display:inline-flex;white-space:nowrap;animation:tick linear infinite}
+  .ticker:hover .ticker-track{animation-play-state:paused}
+  .tk{padding:0 22px;color:var(--muted);position:relative} .tk b{color:var(--text,#e8e6e1)} .tk::after{content:"•";position:absolute;right:-3px;color:var(--gold)}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}.ticker-view{overflow-x:auto}}
+  .lw-pred{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;margin:2px 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.18)}
+  .lw-pred>span{font-size:.8rem;font-weight:700} .lw-pred b{font-family:Cinzel,serif;font-size:1.2rem}
+  .lw-pbar{height:8px;border-radius:4px;background:var(--bg);overflow:hidden} .lw-pbar u{display:block;height:100%;border-radius:4px;transition:width .6s}
+  .lw-pred small{grid-column:1/-1;color:var(--muted);font-size:.74rem}
+  .lw-att{margin:12px 0 4px;border-top:1px solid var(--line);padding-top:10px} .lw-att summary{cursor:pointer;font-weight:700;font-size:.9rem}
+  .at-list{margin-top:10px;display:flex;flex-direction:column;gap:4px;max-height:420px;overflow:auto}
+  .at-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,.02);font-size:.82rem;flex-wrap:wrap}
+  .at-row.left{background:rgba(217,83,79,.07)}
+  .at-who i{display:inline-block;min-width:22px;font-style:normal;color:var(--muted)} .at-who small{color:var(--muted)}
+  .at-slots{display:flex;gap:6px;flex-wrap:wrap}
+  .at{padding:3px 9px;border-radius:999px;border:1px solid var(--line);font-size:.76rem;white-space:nowrap} .at small{color:var(--muted)}
+  .at.s3{border-color:rgba(232,180,74,.55);background:rgba(232,180,74,.08)} .at.none{color:var(--muted);border-style:dashed}
+  .at.warn{border-color:rgba(217,83,79,.6);background:rgba(217,83,79,.1)} .at.warn b{color:#ff9a92;font-size:.7rem}
+  .st{font-style:normal;color:var(--gold);letter-spacing:-1px} .st i{font-style:normal;color:rgba(255,255,255,.18)}
+  .potd{margin-top:12px} .potd-head{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px} .potd-head small{color:var(--muted);font-size:.74rem}
+  .potd-body{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px} .potd-name{flex:1;min-width:160px} .potd-name b{display:block;font-size:1.1rem;margin-bottom:3px} .potd-name small{color:var(--muted)}
+  .potd-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+  .potd-stats div{padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.02);display:flex;flex-direction:column}
+  .potd-stats span{font-size:1rem} .potd-stats b{font-family:Cinzel,serif;color:var(--gold2);font-size:1.1rem} .potd-stats small{color:var(--muted);font-size:.74rem}
   .strat-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px} .strat-tabs[hidden]{display:none}
   .strat-tabs{align-items:center;padding:10px;border:1px dashed rgba(232,180,74,.4);border-radius:12px;background:rgba(232,180,74,.04)} .strat-tabs-l{font-size:.8rem;font-weight:800;color:var(--gold2);margin-right:4px}
   .strat-tabs button{padding:9px 14px;font-size:.88rem!important;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}
@@ -607,6 +635,7 @@
     <div class="nav-right"><button class="lang-btn" id="langBtn" aria-label="Language">EN</button><button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button></div>
   </div>
 </nav>
+<div class="ticker" id="ticker" hidden><span class="ticker-tag">● NA ŻYWO</span><div class="ticker-view"><div class="ticker-track" id="tickerTrack"></div></div></div>
 
 <div class="announce" id="announce" hidden></div>
 <script>document.addEventListener("DOMContentLoaded",()=>{const a=document.querySelector(".brand img"),b=document.getElementById("heroHerb");if(a&&b)b.src=a.src;});</script>
@@ -801,6 +830,7 @@
       <div class="panel"><div class="fame-label">Galeria MVP</div><div class="mvp-gallery" id="mvpGallery"></div></div>
     </div>
     <div class="panel congrats" id="congrats" hidden></div>
+    <div class="panel potd" id="potd" hidden></div>
   </div>
 </section>
 
@@ -1774,6 +1804,59 @@ $("#cwlTop").innerHTML = CWL.top.length
   $("#cwlGroupWrap").hidden=false;
 })();
 
+/* ===== Prognoza wojny (symulacja z TH i dotychczasowych ataków) ===== */
+function predictWar(cw){
+  const R=cw.perMember||2, n=cw.size;
+  const fill=(stars,ths)=>{ const b=ths.map(()=>0); let left=stars; for(let i=b.length-1;i>=0&&left>0;i--){const v=Math.min(3,left);b[i]=v;left-=v;} return b; };
+  const ourTh=cw.members.map(m=>m.th||10);
+  const usBases = cw.us.bases&&cw.us.bases.length ? cw.us.bases : ourTh.map((t,i)=>({th:t,best:fill(cw.them.stars,ourTh)[i]}));
+  const themBases = cw.them.bases&&cw.them.bases.length ? cw.them.bases : ourTh.map((t,i)=>({th:t,best:fill(cw.us.stars,ourTh)[i]}));
+  // skuteczność z naszej historii (odsetek ataków za 3★)
+  let at=0,tr=0; ((AUTO&&AUTO.warArchive)||[]).filter(w=>w.state==="warEnded").forEach(w=>w.members.forEach(m=>m.attacks.forEach(a=>{at++; if(a.stars===3) tr++;})));
+  const base = at>=10 ? Math.min(.85,Math.max(.25,tr/at)) : .5;
+  let kThem=1; if(cw.us.attacks>=3&&cw.them.attacks>=3){ kThem=Math.min(1.6,Math.max(.6,(cw.them.stars/cw.them.attacks)/((cw.us.stars/cw.us.attacks)||1))); }
+  const usLeft=[]; cw.members.forEach(m=>{for(let i=m.attacks.length;i<R;i++) usLeft.push(m.th||10);});
+  const themLeftN=Math.max(0,n*R-cw.them.attacks), themTh=themBases.map(b=>b.th||10);
+  const probs=(a,t,k)=>{ const p3=Math.min(.97,Math.max(.02,base*k+.16*(a-t))); return [ (1-p3)*.06, (1-p3)*.22, (1-p3)*.72, p3 ]; };
+  const gainE=(pr,b)=>{let e=0; for(let s=b+1;s<=3;s++) e+=pr[s]*(s-b); return e;};
+  const draw=pr=>{let r=rnd(),c=0; for(let s=0;s<4;s++){c+=pr[s]; if(r<c) return s;} return 3;};
+  const play=(attackers,bases,k)=>{ const best=bases.map(b=>b.best||0); let st=best.reduce((a,b)=>a+b,0);
+    for(const a of attackers){ let bi=-1,be=0; for(let i=0;i<bases.length;i++){ if(best[i]>=3) continue; const e=gainE(probs(a,bases[i].th||10,k),best[i]); if(e>be){be=e;bi=i;} }
+      if(bi<0) break; const s=draw(probs(a,bases[bi].th||10,k)); if(s>best[bi]){st+=s-best[bi];best[bi]=s;} }
+    return st; };
+  let seed=0; for(const ch of String(AUTO&&AUTO.updated)) seed=(seed*31+ch.charCodeAt(0))|0;
+  const rnd=()=>{seed=(seed+0x6D2B79F5)|0; let t=Math.imul(seed^seed>>>15,1|seed); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296;};
+  const N=500; let win=0, su=0, sh=0;
+  for(let k=0;k<N;k++){
+    const u=play(usLeft,themBases,1);
+    const them=[]; for(let i=0;i<themLeftN;i++) them.push(themTh[Math.floor(rnd()*themTh.length)]);
+    const h=play(them,usBases,kThem); su+=u; sh+=h;
+    win += u>h ? 1 : u===h ? (cw.us.pct>=cw.them.pct?.6:.4) : 0;
+  }
+  return {p:Math.round(win/N*100), us:Math.round(su/N), them:Math.round(sh/N)};
+}
+function predHtml(cw){
+  const r=predictWar(cw), en=LANG==="en", col=r.p>=60?"var(--green)":r.p>=40?"var(--gold)":"var(--red)";
+  return `<div class="lw-pred"><span>🔮 ${en?"Chance to win":"Szansa na wygraną"}</span><div class="lw-pbar"><u style="width:${r.p}%;background:${col}"></u></div><b style="color:${col}">${r.p}%</b>
+    <small>${en?"Projected result":"Przewidywany wynik"}: ~${r.us} ★ ${r.them} · ${en?"estimate from Town Halls and attacks so far":"szacunek z poziomów TH i dotychczasowych ataków"}</small></div>`;
+}
+/* ===== Ataki na żywo ===== */
+function attacksHtml(cw){
+  const en=LANG==="en", R=cw.perMember||2;
+  const used=cw.members.reduce((a,m)=>a+m.attacks.length,0);
+  const stars=n=>`<em class="st">${"★".repeat(n)}<i>${"★".repeat(3-n)}</i></em>`;
+  const rows=cw.members.map(m=>{
+    const slots=[]; for(let i=0;i<R;i++){ const a=m.attacks[i];
+      if(!a){ slots.push(`<span class="at none">${cw.state==="inWar"?(en?"— to do":"— czeka"):(en?"— missed":"— opuszczony")}</span>`); continue; }
+      const tp=parseInt(a.target,10);
+      const warn = R===2 && i===0 && tp && m.pos && tp!==m.pos;
+      slots.push(`<span class="at${a.stars===3?" s3":""}${warn?" warn":""}" title="${esc(a.target||"")}">${stars(a.stars)} ${Math.round(a.pct)}%${a.target?` <small>→ ${esc(a.target.split(". ")[0])}</small>`:""}${warn?` <b>⚠️ ${en?"not own number":"nie swój numer"}</b>`:""}</span>`); }
+    return `<div class="at-row${m.attacks.length<R&&cw.state==="inWar"?" left":""}"><span class="at-who"><i>${m.pos||""}</i>${esc(m.name)} <small>TH${m.th||"?"}</small></span><span class="at-slots">${slots.join("")}</span></div>`;
+  }).join("");
+  return `<details class="lw-att"><summary><span>⚔️ ${en?"Live attacks":"Ataki na żywo"} <span class="chip" style="margin-left:6px">${used}/${cw.size*R}</span></span></summary><div class="at-list">${rows}</div>
+    <p class="ch-meta" style="margin:8px 0 0">${en?"The number after the arrow is the enemy base position.":"Liczba po strzałce to numer bazy przeciwnika."}${R===2?(en?" ⚠️ = first attack not on own number.":" ⚠️ = pierwszy atak nie na swój numer."):""}</p></details>`;
+}
+
 /* ===== Wojna na żywo (z data.json) ===== */
 (function(){
   const box=$("#liveWar");
@@ -1799,11 +1882,13 @@ $("#cwlTop").innerHTML = CWL.top.length
     <div class="lw-score">
       <div class="lw-side"><b>${esc(cw.us.name)}</b><span>${pc(cw.us.pct)}% zniszczeń · ⚔️ ${cw.us.attacks}/${total}</span></div>
       <div class="lw-mid">${cw.us.stars} <span class="star">★</span> ${cw.them.stars}</div>
-      <div class="lw-side r"><b>${esc(cw.them.name)}</b><span>${pc(cw.them.pct)}% zniszczeń · ⚔️ ${cw.them.attacks}/${total}</span></div>
+      <div class="lw-side r"><b><bdi>${esc(cw.them.name)}</bdi></b><span>${pc(cw.them.pct)}% zniszczeń · ⚔️ ${cw.them.attacks}/${total}</span></div>
     </div>
     <div class="lw-bar"><u style="width:${cw.us.stars/sumStars*100}%"></u><s style="width:${cw.them.stars/sumStars*100}%"></s></div>
+    ${cw.state!=="warEnded"?predHtml(cw):""}
     ${cw.state==="inWar"?`<div class="lw-left">Pozostałe ataki (${missing.reduce((a,m)=>a+m.left,0)}):</div>
     <div class="lw-chips">${missing.length?missing.map(m=>`<span>${esc(m.n)}<b>×${m.left}</b></span>`).join(""):`<span class="all">Wszyscy zaatakowali ✓</span>`}</div>`:""}
+    ${cw.state!=="preparation"?attacksHtml(cw):""}
     <div class="lw-foot">${cw.size} vs ${cw.size} · stan z ${new Date(AUTO.updated).toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"})} (odświeżane co 15 min)</div>`;
   box.hidden=false;
   const tgt = cw.state==="preparation"?start:end;
@@ -2136,6 +2221,53 @@ $("#cwlTop").innerHTML = CWL.top.length
       else { x.fillStyle=p.col||"#fff"; x.beginPath(); x.arc(p.x,p.y,p.s,0,6.28); x.fill(); } }
     requestAnimationFrame(f); }
   requestAnimationFrame(f);
+})();
+
+/* ===== Pasek „Na żywo z klanu” ===== */
+(function(){
+  const A=AUTO; if(!A) return;
+  const en=LANG==="en", items=[];
+  const ago=t=>{const h=(Date.now()-new Date(t))/36e5; if(h<1) return en?"just now":"przed chwilą"; if(h<24) return en?`${Math.floor(h)} h ago`:`${Math.floor(h)} h temu`; const d=Math.floor(h/24); return d===1?(en?"yesterday":"wczoraj"):(en?`${d} days ago`:`${d} dni temu`);};
+  const cw=A.currentWar;
+  if(cw&&cw.state==="inWar") items.push(`⚔️ ${en?"War in progress vs":"Trwa wojna z"} <b><bdi>${esc(cw.them.name)}</bdi></b>: ${cw.us.stars} ★ ${cw.them.stars}`);
+  if(cw&&cw.state==="preparation") items.push(`🛡️ ${en?"Preparation day — war vs":"Dzień przygotowań — wojna z"} <b><bdi>${esc(cw.them.name)}</bdi></b>`);
+  if(cw&&cw.state!=="preparation") cw.members.forEach(m=>m.attacks.forEach(a=>{ if(a.stars===3) items.push(`⭐ <b>${esc(m.name)}</b> — 3★ ${en?"in the war":"na wojnie"}`); }));
+  const RN=en?{leader:"Leader",coLeader:"Co-leader",admin:"Elder",member:"Member"}:{leader:"Wodza",coLeader:"Współlidera",admin:"Starszego",member:"Członka"};
+  (A.events||[]).filter(e=>Date.now()-new Date(e.t)<14*864e5).slice(0,12).forEach(e=>{
+    if(e.type==="join") items.push(`➕ <b>${esc(e.name)}</b> ${en?"joined the clan":"dołączył(a) do klanu"}${e.th?` (TH${e.th})`:""} · ${ago(e.t)}`);
+    if(e.type==="th") items.push(`🏰 <b>${esc(e.name)}</b> ${en?"upgraded to":"wbił(a)"} TH${e.to} · ${ago(e.t)}`);
+    if(e.type==="promote") items.push(`⬆️ <b>${esc(e.name)}</b> ${en?"promoted to":"awansował(a) na"} ${RN[e.role]||e.role} · ${ago(e.t)}`);
+  });
+  (A.wars||[]).slice(0,3).forEach(w=>{ if(w.result==="win") items.push(`🏆 ${en?"Win vs":"Wygrana z"} <b><bdi>${esc(w.enemy)}</bdi></b> ${w.us.stars} ★ ${w.them.stars}`); });
+  if(A.warWinStreak>1) items.push(`🔥 ${en?"Win streak":"Seria zwycięstw"}: <b>${A.warWinStreak}</b>`);
+  const lw=A.lastWeek&&A.lastWeek.winners&&A.lastWeek.winners[0]; if(lw) items.push(`👑 ${en?"Warrior of the Week":"Wojownik Tygodnia"}: <b>${esc(lw.name)}</b>`);
+  if(A.memberCount) items.push(`🛡️ ${A.memberCount}/50 ${en?"members — recruitment open":"członków — rekrutacja otwarta"}`);
+  if(items.length<2) return;
+  const html=items.map(t=>`<span class="tk">${t}</span>`).join("");
+  const tr=$("#tickerTrack"); tr.innerHTML=html+html; tr.style.animationDuration=Math.max(30,items.length*6)+"s";
+  $("#ticker .ticker-tag").textContent=en?"● LIVE":"● NA ŻYWO";
+  $("#ticker").hidden=false;
+})();
+
+/* ===== Gracz dnia ===== */
+(function(){
+  let list=MEMBERS.filter(m=>m.profile).slice().sort((a,b)=>String(a.tag).localeCompare(String(b.tag)));
+  const active=list.filter(m=>(m.profile.warStars||0)>0||(m.given||0)>0); if(active.length>=7) list=active;
+  if(!list.length) return;
+  const en=LANG==="en";
+  const pl=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+  const day=Math.round(Date.parse(pl+"T00:00:00Z")/864e5);
+  const m=list[(day*7919)%list.length], pf=m.profile;
+  const HN=en?{}:{"Barbarian King":"Król Barbarzyńców","Archer Queen":"Królowa Łuczniczek","Grand Warden":"Wielki Strażnik","Royal Champion":"Królewska Czempionka","Minion Prince":"Książę Minionów","Dragon Duke":"Smoczy Hrabia"};
+  const hero=(pf.heroes||[]).slice().sort((a,b)=>b.level-a.level)[0];
+  const sd=stazDays(m);
+  const cell=(i,v,l)=>`<div><span>${i}</span><b>${v}</b><small>${l}</small></div>`;
+  $("#potd").innerHTML=`<div class="potd-head"><span class="fame-label" style="margin:0">🌟 ${en?"Player of the day":"Gracz dnia"}</span><small>${en?"a different member every day":"codziennie ktoś inny z klanu"}</small></div>
+    <div class="potd-body"><span class="th">${m.th}</span><div class="potd-name"><b>${esc(m.name)}</b><span class="role ${m.role}">${ROLE[m.role][0]}</span>${sd!=null&&!m.joined.orig?` <small>· ${en?`${sd} days in the clan`:`${sd} dni w klanie`}</small>`:""}</div>
+    <button class="btn btn-ghost btn-sm" id="potdBtn">${en?"View profile":"Zobacz profil"}</button></div>
+    <div class="potd-stats">${hero?cell("👑",`${hero.level}`,HN[hero.name]||hero.name):""}${cell("⭐",fmt(pf.warStars||0),en?"war stars":"gwiazdek wojennych")}${cell("📦",fmt(m.given||0),en?"donated this season":"oddanych w sezonie")}${cell("🏆",fmt(pf.trophies||0),en?"trophies":"pucharów")}</div>`;
+  $("#potd").hidden=false;
+  $("#potdBtn").addEventListener("click",()=>{ const tr=[...document.querySelectorAll("tr.prow")].find(r=>r.dataset.name===m.name); if(tr) tr.click(); });
 })();
 
 /* ===== Ciekawostka dnia ===== */

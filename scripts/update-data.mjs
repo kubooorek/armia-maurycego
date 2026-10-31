@@ -102,6 +102,9 @@ const wars = (warlog.items || [])
   }));
 
 /* ---------- Bieżąca wojna ---------- */
+// Bazy jednej strony: pozycja na mapie, TH i ile gwiazdek już z niej zdjęto (do prognozy wojny)
+const basesOf = side => (side?.members || []).slice().sort((a, b) => a.mapPosition - b.mapPosition)
+  .map(m => ({ pos: m.mapPosition, th: m.townhallLevel, best: m.bestOpponentAttack?.stars ?? 0 }));
 let currentWar = null;
 const w = await safe("Bieżąca wojna", () => api(`/clans/${enc(TAG)}/currentwar`));
 if (w && w.state && w.state !== "notInWar") {
@@ -111,7 +114,7 @@ if (w && w.state && w.state !== "notInWar") {
     state: w.state,                       // preparation | inWar | warEnded
     size: w.teamSize, perMember: w.attacksPerMember ?? 2,
     start: w.startTime, end: w.endTime,
-    us: side(w.clan), them: side(w.opponent),
+    us: { ...side(w.clan), bases: basesOf(w.clan) }, them: { ...side(w.opponent), bases: basesOf(w.opponent) },
     members: (w.clan.members || []).sort((a, b) => a.mapPosition - b.mapPosition).map(m => ({
       name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
       attacks: (m.attacks || []).map(a => {
@@ -153,8 +156,8 @@ if (group && group.state && group.state !== "notInWar" && Array.isArray(group.ro
         ours.push({
           round: i + 1, state: war.state, size: war.teamSize, perMember: 1,
           start: war.startTime, end: war.endTime,
-          us:   { name: us.name,   stars: us.stars ?? 0,   pct: round2(us.destructionPercentage),   attacks: us.attacks ?? 0 },
-          them: { name: them.name, stars: them.stars ?? 0, pct: round2(them.destructionPercentage), attacks: them.attacks ?? 0 },
+          us:   { name: us.name,   stars: us.stars ?? 0,   pct: round2(us.destructionPercentage),   attacks: us.attacks ?? 0, bases: basesOf(us) },
+          them: { name: them.name, stars: them.stars ?? 0, pct: round2(them.destructionPercentage), attacks: them.attacks ?? 0, bases: basesOf(them) },
           members: (us.members || []).sort((a, b) => a.mapPosition - b.mapPosition).map(m => ({
             name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
             attacks: (m.attacks || []).map(at => {

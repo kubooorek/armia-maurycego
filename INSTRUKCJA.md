@@ -84,3 +84,10 @@ Po 1–2 minutach odśwież stronę przez **Ctrl+F5**.
 ## Księga rekordów
 
 Robot zapisuje w `data.json` (pole `records`) rekordy wszech czasów: najwięcej gwiazdek w jednej wojnie, najdłuższa seria ataków za 3★, najwięcej łupów w weekendzie rajdowym, najwięcej oddanych wojsk w sezonie, najwięcej punktów w Grach Klanowych, najwięcej wygranych Wyzwań Tygodnia i rekord liczebności klanu. Rekord zmienia się tylko wtedy, gdy ktoś go pobije.
+
+## Wojna na żywo, pasek wydarzeń, Gracz dnia
+
+- **Prognoza wojny** (🔮 szansa na wygraną) to szacunek: strona symuluje pozostałe ataki na podstawie poziomów TH, gwiazdek zdjętych już z każdej bazy (`bases` w `currentWar`) i dotychczasowej skuteczności. To zabawa, nie pewnik.
+- **Ataki na żywo** pokazują ataki każdego gracza w trwającej wojnie. ⚠️ przy ataku = pierwszy atak nie na swój numer.
+- **Pasek „Na żywo”** pod menu zbiera wydarzenia z ostatnich 14 dni: dołączenia, nowe TH, awanse, 3★ na wojnie, wygrane i Wojownika Tygodnia.
+- **Gracz dnia** zmienia się o północy (czas polski). Losowany jest jeden z aktywnych członków.
