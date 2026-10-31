@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T11:01:36.708Z",
+  "updated": "2026-10-31T11:15:50.306Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -214,10 +214,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 91972,
-      "raids": 7,
-      "attacks": 85,
-      "districts": 23,
+      "loot": 93993,
+      "raids": 8,
+      "attacks": 86,
+      "districts": 24,
       "medals": 0,
       "members": [
         {
@@ -247,6 +247,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7169
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 6734
         },
         {
           "name": "Albaroon.2",
@@ -303,13 +310,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 5375
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "attacks": 4,
-          "limit": 6,
-          "loot": 4713
         },
         {
           "name": "MAQOS",
@@ -1147,18 +1147,18 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "3988||||||||||12",
-      "last": "2026-10-31T11:01:36.708Z",
+      "sig": "3988|559627080|584156134|38350|7509|531795|665128|0|84|109|12",
+      "last": "2026-10-31T11:15:50.305Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "100|220689845|219385758|14450|123|51560|95655|0|53|99|12",
-      "last": "2026-10-31T08:15:51.727Z",
+      "sig": "101|220689845|219385758|14450|123|51560|95655|0|53|99|12",
+      "last": "2026-10-31T11:15:50.305Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "186|724723637|755309955|13725|50927|64385|84211|0|504|146|12",
-      "last": "2026-10-31T11:01:36.708Z",
+      "sig": "186|728081465|758847678|13725|50927|64385|84211|0|504|146|12",
+      "last": "2026-10-31T11:15:50.305Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -1182,8 +1182,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "65|424584969|386648268|10100|239|23800|63108|0|24|73|10",
-      "last": "2026-10-30T15:31:09.614Z",
+      "sig": "65|424584969|386648268|10100|239|25620|67205|0|24|73|10",
+      "last": "2026-10-31T11:15:50.305Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -1750,14 +1750,56 @@
       "th": 12,
       "given": 3988,
       "received": 2554,
-      "trophies": 418
+      "trophies": 418,
+      "profile": {
+        "level": 109,
+        "trophies": 418,
+        "best": 2839,
+        "league": "Valkyrie League 13",
+        "warStars": 84,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 665128,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 56,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 55,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 21,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 40,
+            "max": 95
+          }
+        ]
+      },
+      "ach": {
+        "cg": 38350,
+        "don": 7509,
+        "capLoot": 531795,
+        "gold": 559627080,
+        "elixir": 584156134,
+        "capContrib": 665128,
+        "wins": 0
+      }
     },
     {
       "name": "oggsgdjdjbd",
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 100,
+      "given": 101,
       "received": 72,
       "trophies": 284,
       "profile": {
@@ -1848,8 +1890,8 @@
         "cg": 13725,
         "don": 50927,
         "capLoot": 64385,
-        "gold": 724723637,
-        "elixir": 755309955,
+        "gold": 728081465,
+        "elixir": 758847678,
         "capContrib": 84211,
         "wins": 0
       }
@@ -2064,7 +2106,7 @@
         "warStars": 24,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 63108,
+        "capital": 67205,
         "warPref": "in",
         "heroes": [
           {
@@ -2087,10 +2129,10 @@
       "ach": {
         "cg": 10100,
         "don": 239,
-        "capLoot": 23800,
+        "capLoot": 25620,
         "gold": 424584969,
         "elixir": 386648268,
-        "capContrib": 63108,
+        "capContrib": 67205,
         "wins": 0
       }
     },
@@ -2658,7 +2700,7 @@
       "role": "member",
       "th": 8,
       "given": 358,
-      "received": 375,
+      "received": 376,
       "trophies": 349,
       "profile": {
         "level": 43,
