@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T06:31:02.604Z",
+  "updated": "2026-10-31T06:45:47.955Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -1271,8 +1271,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "1|11193632|9915919|0|0|0|400|0|8|25|7",
-      "last": "2026-10-29T22:15:49.037Z",
+      "sig": "1|11193632|9915919|0|0|0|400|0|8|26|7",
+      "last": "2026-10-31T06:45:47.954Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -2939,9 +2939,9 @@
       "received": 65,
       "trophies": 244,
       "profile": {
-        "level": 25,
+        "level": 26,
         "trophies": 244,
-        "best": 216,
+        "best": 244,
         "league": "Skeleton League 1",
         "warStars": 8,
         "attackWins": 0,
