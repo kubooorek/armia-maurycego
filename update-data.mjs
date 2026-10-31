@@ -438,18 +438,21 @@ if (nowD >= cgStart && nowD < new Date(+cgEnd + 6 * 3600e3)) {        // trwa (z
 // Punkty: gwiazdki wojenne ×10, oddane wojska ÷10, pkt Gier Klanowych ÷50, złoto z rajdów ÷500, każda kara −30.
 // Ta sama osoba nie może wygrać dwa miesiące z rzędu (przerwa MVP_PRZERWA miesięcy).
 const MVP_PRZERWA = 2;
+const MVP_START = "2026-11";   // pierwszy miesiąc liczony przez robota (MVP za listopad wybierany 1 grudnia)
 const MIES = ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
 const MIES_D = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
 const plural = (n, a, b, c) => n === 1 ? a : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? b : c;
 const nf = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 // kary anulowane / ręczne wpisane w index.html
-let karyAnul = [], karyRecz = [], mvpRecz = [];
+let karyAnul = [], karyRecz = [], mvpRecz = [], mvpBez = [];
 try {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const grab = name => { const m = html.match(new RegExp(`const ${name}\\s*=\\s*\\[([\\s\\S]*?)\\n\\];`)); if (!m) return [];
     return [...m[1].matchAll(/\{\s*name\s*:\s*"([^"]+)"\s*,\s*date\s*:\s*"([^"]+)"/g)].map(x => ({ name: x[1], date: x[2] })); };
   karyAnul = grab("KARY_ANULOWANE"); karyRecz = grab("KARY_RECZNE");
   const mr = html.match(/const MVP_RECZNE\s*=\s*\[([\s\S]*?)\n\];/);
+  const mb = html.match(/const MVP_BEZ\s*=\s*\[([\s\S]*?)\n\];/);
+  if (mb) mvpBez = [...mb[1].matchAll(/"(#[0-9A-Z]+)"/g)].map(x => x[1]);
   if (mr) mvpRecz = [...mr[1].matchAll(/\{\s*key\s*:\s*"(\d{4}-\d{2})"\s*,\s*name\s*:\s*"([^"]+)"/g)].map(x => ({ month: x[1], name: x[2] }));
 } catch (e) { console.warn("index.html (kary) niedostępny:", e.message); }
 const warStartMs = t => t && t.length > 15 ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : Date.parse(t);
@@ -502,9 +505,10 @@ const blockedFor = key => { const ms = prevMonths(key, MVP_PRZERWA), tags = new 
   for (const k of ms) { const r = mvpRecz.find(x => x.month === k); const h = mvp.history.find(x => x.month === k);
     const name = r ? r.name : h?.name; const tag = r ? (members.find(m => m.name === r.name)?.tag || h?.tag) : h?.tag;
     if (tag) tags.add(tag); else if (name) members.filter(m => m.name === name).forEach(m => tags.add(m.tag)); }
+  mvpBez.forEach(x => tags.add(x));
   return [...tags]; };
 const curMonth = nowIso.slice(0, 7);
-if (old?.monthBase?.month && old.monthBase.month !== curMonth && !mvp.history.some(x => x.month === old.monthBase.month)) {
+if (old?.monthBase?.month && old.monthBase.month >= MVP_START && old.monthBase.month !== curMonth && !mvp.history.some(x => x.month === old.monthBase.month)) {
   const all = mvpScores(old.monthBase, old.monthBase.since, Date.now());
   const recent = blockedFor(old.monthBase.month);
   const manual = mvpRecz.find(x => x.month === old.monthBase.month);
@@ -539,7 +543,8 @@ for (const m of members) {
 }
 
 // wyścig o MVP bieżącego miesiąca (na żywo) — bez zwycięzców z ostatnich miesięcy
-{
+if (monthBase.month < MVP_START) { mvp.race = { month: monthBase.month, start: MVP_START, top: [] }; }
+else {
   const recent = blockedFor(monthBase.month);
   const all = mvpScores(monthBase, monthBase.since, Date.now());
   mvp.race = { month: monthBase.month, since: monthBase.since, blocked: recent,

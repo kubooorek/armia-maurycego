@@ -1442,6 +1442,11 @@ let WARS = [
 const MVP_RECZNE = [
   {key:"2026-10", name:"VipeR", reason:"Założyciel i Wódz Armii Maurycego. Postawił pierwszy sztandar, zebrał pierwszych graczy i w niecały miesiąc zrobił z tego klan, który wygrał 9 wojen z rzędu i ma ponad 40 osób. Pilnuje porządku, ustawia każdą wojnę, a do tego oddał ponad 2300 wojsk. Bez niego tej armii by nie było."},
 ];
+// Gracze, którzy nie biorą udziału w wyborze MVP przez robota (tagi z gry)
+const MVP_BEZ = [
+  "#VP9PLGLV",  // KUBOOOREK
+  "#22R8PLCU8", // VipeR
+];
 let MVP = null;   // ustawiane automatycznie (najnowszy MVP)
 
 // Uzupełniaj po sezonie: league np. "Kryształ III", place np. 3, stars = gwiazdki klanu,
@@ -1481,7 +1486,7 @@ const NEWS = [
   {date:"2026-10-31", tag:"wojny",  title:"Zapisy do pierwszego sezonu CWL", text:"1 listopada ruszamy z pierwszym sezonem Ligi Wojen Klanów. Zapisujcie się na Discordzie, zapisy trwają 48 h. Potem jest dzień przygotowań i 7 dni wojen, w każdej 1 atak."},
   {date:"2026-10-31", tag:"strona", title:"Nowa strona klanu", text:"Strona ma teraz zakładki: Start, Klan, Wojny, Członkowie i Poradnik. Kliknijcie w czyjś nick, to otworzy się jego profil. Linkiem do profilu można się podzielić na Discordzie."},
   {date:"2026-10-31", tag:"wazne",  title:"Kary w wojnach liczy teraz bot", text:"Od teraz bot sam sprawdza każdą wojnę. Kara jest za trzy rzeczy: pierwszy atak nie na swój numer, zabranie komuś bazy drugim atakiem i niewykorzystany atak. Dobijanie baz, które nie mają jeszcze 3 gwiazdek, jest jak najbardziej ok."},
-  {date:"2026-10-31", tag:"klan",   title:"MVP października: VipeR", text:"Pierwsze MVP w historii klanu idzie do naszego Wodza. Od listopada MVP wybiera bot, na podstawie wyników z gry."},
+  {date:"2026-10-31", tag:"klan",   title:"MVP października: VipeR", text:"Pierwsze MVP w historii klanu idzie do naszego Wodza i zostaje u niego na cały listopad. W listopadzie bot liczy już punkty z gry, a 1 grudnia poznamy kolejne MVP."},
 ];
 
 // Licznik odwiedzin: workspace i nazwa licznika z counterapi.dev
@@ -1582,7 +1587,7 @@ const fmt = n => n.toLocaleString(LOC());
 
 /* ===== Wersja angielska (PL/EN) ===== */
 const EN = {
-"ℹ️ MVP wybierany jest automatycznie 1. dnia każdego miesiąca. Punkty: gwiazdka w wojnie lub CWL = 10, 10 oddanych wojsk = 1, 50 pkt w Grach Klanowych = 1, 500 złota z rajdów = 1. Każda kara za łamanie zasad wojen to −30. Kto wygrał w jednym z 2 ostatnich miesięcy, tym razem odpada, więc nagroda krąży po klanie.":"ℹ️ The MVP is picked automatically on the 1st of every month. Points: a war or CWL star = 10, 10 donated troops = 1, 50 Clan Games points = 1, 500 raid gold = 1. Each war-rule penalty is −30. Whoever won in one of the last 2 months sits this one out, so the award moves around the clan.","Gwiazdki w wojnach":"War stars","Złoto z rajdów":"Raid gold","Wynik":"Score",
+"ℹ️ MVP wybierany jest automatycznie 1. dnia każdego miesiąca. Punkty: gwiazdka w wojnie lub CWL = 10, 10 oddanych wojsk = 1, 50 pkt w Grach Klanowych = 1, 500 złota z rajdów = 1. Każda kara za łamanie zasad wojen to −30. Kto wygrał w jednym z 2 ostatnich miesięcy, tym razem odpada, więc nagroda krąży po klanie. Wódz i KUBOOOREK nie biorą udziału.":"ℹ️ The MVP is picked automatically on the 1st of every month. Points: a war or CWL star = 10, 10 donated troops = 1, 50 Clan Games points = 1, 500 raid gold = 1. Each war-rule penalty is −30. Whoever won in one of the last 2 months sits this one out, so the award moves around the clan. The Leader and KUBOOOREK don't take part.","Gwiazdki w wojnach":"War stars","Złoto z rajdów":"Raid gold","Wynik":"Score",
 "Aktualności":"News","Ogłoszenia zarządu":"Leadership announcements","Najważniejsze informacje od Wodza i Współliderów.":"The most important news from the Leader and Co-leaders.","Ogłoszenia":"Announcements","Nasza historia":"Our story","Od pierwszego sztandaru":"Since the first banner","Najważniejsze chwile Armii Maurycego — od założenia klanu do dziś.":"The key moments of Armia Maurycego — from founding to today.","dni od założenia":"days since founding","stoczonych wojen":"wars fought","wygranych wojen":"wars won","średni ratusz":"average Town Hall","Gwiazdki w ostatnich wojnach":"Stars in recent wars","Zniszczenia w ostatnich wojnach":"Destruction in recent wars","Przeciwnik":"Opponent","Kopiuj link do profilu":"Copy profile link","Wojny w Armii":"Wars in the Army","Ostatnie ataki":"Recent attacks","Historia w klanie":"History in the clan","Stolica i Gry Klanowe":"Capital and Clan Games","Odznaki":"Badges","Gracze":"Players","Klan":"Clan","Rajdy Stolicy":"Capital raids","Kadra i sława":"Leaders and fame","Liga Wojen (CWL)":"Clan War League (CWL)","Polski klan Clash of Clans. Wojny, Liga Wojen Klanów, Gry Klanowe i rajdy na Stolicę — dołącz od TH6.":"A Polish Clash of Clans clan. Wars, Clan War League, Clan Games and Capital raids — join from TH6.","Starsze ogłoszenia":"Older announcements","Poziom":"Level","Puchary":"Trophies","Rekord pucharów":"Best trophies","Oddane wojska":"Troops donated","Otrzymane":"Received","Złoto dla Stolicy":"Capital Gold","Ataki":"Attacks","Opuszczone":"Missed","Kary":"Penalties","Śr. zniszczenia":"Avg. destruction","Ataki za 3★":"3★ attacks","Zapisany(a)":"Opted in","Wypisany(a)":"Opted out",
 "Wymagania":"Requirements","Dołącz":"Join","Wydarzenia":"Events","Członkowie":"Members","Wojny":"Wars","Poradnik":"Guide","Bazy":"Bases","Regulamin":"Rules",
 "Zapisy do pierwszego sezonu CWL trwają — start 1 listopada!":"Sign-ups for our first CWL season are open — it starts on November 1!",
@@ -1932,11 +1937,13 @@ let rows = [...MEMBERS].sort((a,b)=>ROLE[a.role][1]-ROLE[b.role][1] || b.th-a.th
     if(st) h+=`<div class="mvp-stats">${[st.stars?tile("Gwiazdki w wojnach","★ "+fmt(st.stars)):"",st.don?tile("Oddane wojska",fmt(st.don)):"",st.cg?tile("Gry Klanowe",fmt(st.cg)+" pkt"):"",st.cap?tile("Złoto z rajdów",fmt(st.cap)):"",tile("Wynik",fmt(st.score)+" pkt")].join("")}</div>`;
   } else h+=`<div class="mvp-name">Wkrótce</div><p>Pierwszy MVP zostanie wybrany 1. dnia miesiąca.</p>`;
   const race=AUTO&&AUTO.mvp&&AUTO.mvp.race;
+  if(race&&race.start&&race.month<race.start){ const si=Number(race.start.slice(5,7))-1;
+    h+=`<div class="mvp-race"><div class="fame-label" style="margin-bottom:6px">MVP od ${MIES_D[si]}</div><p style="margin:0;font-size:.86rem;color:var(--muted)">Robot zacznie liczyć punkty 1 ${MIES_D[si]}. Pierwsze MVP wybrane z wyników gry poznamy na początku kolejnego miesiąca.</p></div>`; }
   if(race&&race.top&&race.top.length&&(!MVP||race.month!==MVP.key)){
     const mi=Number(race.month.slice(5,7))-1;
     h+=`<div class="mvp-race"><div class="fame-label" style="margin-bottom:6px">Wyścig o MVP ${MIES_D[mi]}</div>${race.top.slice(0,3).map((x,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${["🥇","🥈","🥉"][i]}</em><span class="pname-r">${esc(x.name)}</span></span><b>${fmt(x.score)} pkt</b></div>`).join("")}</div>`;
   }
-  h+=`<p class="mvp-info">ℹ️ MVP wybierany jest automatycznie 1. dnia każdego miesiąca. Punkty: gwiazdka w wojnie lub CWL = 10, 10 oddanych wojsk = 1, 50 pkt w Grach Klanowych = 1, 500 złota z rajdów = 1. Każda kara za łamanie zasad wojen to −30. Kto wygrał w jednym z 2 ostatnich miesięcy, tym razem odpada, więc nagroda krąży po klanie.</p>`;
+  h+=`<p class="mvp-info">ℹ️ MVP wybierany jest automatycznie 1. dnia każdego miesiąca. Punkty: gwiazdka w wojnie lub CWL = 10, 10 oddanych wojsk = 1, 50 pkt w Grach Klanowych = 1, 500 złota z rajdów = 1. Każda kara za łamanie zasad wojen to −30. Kto wygrał w jednym z 2 ostatnich miesięcy, tym razem odpada, więc nagroda krąży po klanie. Wódz i KUBOOOREK nie biorą udziału.</p>`;
   $("#mvpCard").innerHTML=h;
 })();
 const topD = [...rows].sort((a,b)=>b.given-a.given).slice(0,3);
@@ -2756,7 +2763,7 @@ function rushHtml(r){
   const why=x=>[x.stars?`★ ${x.stars}`:"",x.don?`${fmt(x.don)} oddz.`:"",x.cgp?`${fmt(x.cgp)} pkt GK`:"",x.cap?`${fmt(x.cap)} złota stolicy`:""].filter(Boolean).join(" · ")||"brak punktów w tym miesiącu";
   const md=i=>["🥇","🥈","🥉"][i]||`${i+1}.`;
   const monthNote=`<p class="admin-note">Liczone od ${mb.since?dd(mb.since):"początku miesiąca"}: gwiazdki ×10, oddziały ÷10, pkt Gier ÷50, złoto stolicy ÷500. Każda kara za łamanie regulaminu CW w tym miesiącu = −30 pkt.</p>`;
-  const mvp=scored.filter(x=>x.mvpScore>0).sort((a,b)=>b.mvpScore-a.mvpScore).slice(0,3);
+  const mvp=scored.filter(x=>x.mvpScore>0&&!MVP_BEZ.includes(x.tag)).sort((a,b)=>b.mvpScore-a.mvpScore).slice(0,3);
   const mvpHtml=(mvp.length?mvp.map((x,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${esc(x.name)}<span class="why">${why(x)}</span>${penLine(x.penM)}</span><b>${fmt(x.mvpScore)} pkt</b></div>`).join(""):`<div class="empty">Brak danych z tego miesiąca — ranking zbuduje się sam.</div>`)+monthNote;
   const promo=scored.filter(x=>x.role==="member"&&x.promoScore>0&&!x.miss&&x.days<3).sort((a,b)=>b.promoScore-a.promoScore).slice(0,3);
   const promoHtml=(promo.length?promo.map((x,i)=>`<div class="mini-row"><span>⬆️ ${esc(x.name)}<span class="why">${why(x)}${x.pen30.length?"":" · bez kar"}</span>${penLine(x.pen30)}</span><b>${fmt(x.promoScore)} pkt</b></div>`).join(""):`<div class="empty">Na razie brak kandydatów — pojawią się aktywni Członkowie bez opuszczonych ataków.</div>`)
