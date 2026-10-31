@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T21:16:01.824Z",
+  "updated": "2026-10-31T21:31:14.616Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -45,7 +45,7 @@
         {
           "pos": 6,
           "th": 11,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 7,
@@ -146,9 +146,9 @@
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 64,
-      "pct": 87.64,
-      "attacks": 24,
+      "stars": 65,
+      "pct": 87.76,
+      "attacks": 25,
       "bases": [
         {
           "pos": 1,
@@ -616,7 +616,7 @@
     ]
   },
   "cwl": null,
-  "visits": 41,
+  "visits": 43,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -894,7 +894,7 @@
       "perMember": 2,
       "state": "inWar",
       "us": 52,
-      "them": 64,
+      "them": 65,
       "final": false,
       "members": [
         {
@@ -2021,8 +2021,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "180|16649117|14970795|1500|175|24090|33274|0|18|33|7",
-      "last": "2026-10-31T08:31:03.394Z",
+      "sig": "180|16671117|14992795|1500|175|24090|33274|0|21|33|7",
+      "last": "2026-10-31T21:31:14.615Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -4181,7 +4181,7 @@
         "trophies": 281,
         "best": 281,
         "league": "Skeleton League 1",
-        "warStars": 18,
+        "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 33274,
@@ -4205,8 +4205,8 @@
         "cg": 1500,
         "don": 175,
         "capLoot": 24090,
-        "gold": 16649117,
-        "elixir": 14970795,
+        "gold": 16671117,
+        "elixir": 14992795,
         "capContrib": 33274,
         "wins": 0
       }
