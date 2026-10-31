@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T18:15:54.112Z",
+  "updated": "2026-10-31T18:31:06.353Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 21,
-      "pct": 32.36,
-      "attacks": 9,
+      "stars": 34,
+      "pct": 47.44,
+      "attacks": 14,
       "bases": [
         {
           "pos": 1,
@@ -208,7 +208,7 @@
         {
           "pos": 12,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 13,
@@ -218,7 +218,7 @@
         {
           "pos": 14,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 15,
@@ -228,12 +228,12 @@
         {
           "pos": 16,
           "th": 8,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 17,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 18,
@@ -253,7 +253,7 @@
         {
           "pos": 21,
           "th": 8,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 22,
@@ -388,7 +388,14 @@
         "tag": "#LC8VRR9R2",
         "pos": 12,
         "th": 9,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 24,
+            "target": "12. zoro"
+          }
+        ]
       },
       {
         "name": "zuzia",
@@ -402,7 +409,20 @@
         "tag": "#LQVRCRUYR",
         "pos": 14,
         "th": 8,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 27,
+            "target": "17. Erfzamani"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 28,
+            "target": "16. v0r0jak"
+          }
+        ]
       },
       {
         "name": "KuN",
@@ -422,6 +442,12 @@
             "pct": 69,
             "order": 21,
             "target": "16. v0r0jak"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 25,
+            "target": "21. ریحانه"
           }
         ]
       },
@@ -430,7 +456,14 @@
         "tag": "#RY0QPVCCY",
         "pos": 17,
         "th": 9,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 26,
+            "target": "14. danjer"
+          }
+        ]
       },
       {
         "name": "SZAR3",
@@ -522,7 +555,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -764,7 +797,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 21,
+      "us": 34,
       "them": 38,
       "final": false,
       "members": [
@@ -846,7 +879,12 @@
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "zuzia",
@@ -856,7 +894,16 @@
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "KuN",
@@ -870,13 +917,22 @@
             {
               "stars": 1,
               "pct": 69
+            },
+            {
+              "stars": 3,
+              "pct": 100
             }
           ]
         },
         {
           "name": "Mimbosz",
           "tag": "#RY0QPVCCY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "SZAR3",
@@ -1621,7 +1677,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 7887,
+      "value": 7972,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-10-31"
@@ -1649,6 +1705,28 @@
   "weekWins": {},
   "penalties": [
     {
+      "id": "20261031T171000.000Z:#RY0QPVCCY:own",
+      "type": "own",
+      "detail": "nr 14 zamiast nr 17",
+      "tag": "#RY0QPVCCY",
+      "name": "Mimbosz",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-10-31T18:31:05.092Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#LQVRCRUYR:own",
+      "type": "own",
+      "detail": "nr 17 zamiast nr 14",
+      "tag": "#LQVRCRUYR",
+      "name": "Barnes",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-10-31T18:31:05.092Z"
+    },
+    {
       "id": "20261031T171000.000Z:#R0VJLRGQ0:own",
       "type": "own",
       "detail": "nr 22 zamiast nr 23",
@@ -1662,8 +1740,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "7887|2000000000|2000000000|94700|80554|1208549|1605615|0|1241|204|15",
-      "last": "2026-10-31T18:15:54.111Z",
+      "sig": "7972|2000000000|2000000000|94700|80639|1208549|1605615|0|1241|204|15",
+      "last": "2026-10-31T18:31:06.352Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -1702,8 +1780,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "15|465166502|511433412|53920|23588|79475|200722|0|2051|102|9",
-      "last": "2026-10-30T01:31:03.127Z",
+      "sig": "15|465232502|511499412|53920|23588|79475|200722|0|2054|102|9",
+      "last": "2026-10-31T18:31:06.352Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -1732,8 +1810,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|398937543|463661119|59470|11803|129550|226266|0|2445|87|8",
-      "last": "2026-10-30T01:45:52.579Z",
+      "sig": "0|399040543|463764119|59470|11803|129550|226266|0|2451|87|8",
+      "last": "2026-10-31T18:31:06.352Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -1742,8 +1820,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "14|67291094|75334396|1900|14|0|3150|0|29|37|9",
-      "last": "2026-10-31T15:01:15.244Z",
+      "sig": "14|67353094|75396396|1900|14|0|3150|0|32|37|9",
+      "last": "2026-10-31T18:31:06.352Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -1777,8 +1855,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "358|42223802|42322134|2400|451|7665|6550|0|1|44|8",
-      "last": "2026-10-31T18:15:54.111Z",
+      "sig": "358|42261802|42360134|2400|451|7665|6550|0|4|44|8",
+      "last": "2026-10-31T18:31:06.352Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -2168,7 +2246,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 7887,
+      "given": 7972,
       "received": 3077,
       "trophies": 491,
       "profile": {
@@ -2216,7 +2294,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 80554,
+        "don": 80639,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -2587,14 +2665,14 @@
       "role": "member",
       "th": 9,
       "given": 15,
-      "received": 112,
-      "trophies": 199,
+      "received": 142,
+      "trophies": 210,
       "profile": {
         "level": 102,
-        "trophies": 199,
+        "trophies": 210,
         "best": 2730,
         "league": "Archer League 7",
-        "warStars": 2051,
+        "warStars": 2054,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 200722,
@@ -2621,8 +2699,8 @@
         "cg": 53920,
         "don": 23588,
         "capLoot": 79475,
-        "gold": 465166502,
-        "elixir": 511433412,
+        "gold": 465232502,
+        "elixir": 511499412,
         "capContrib": 200722,
         "wins": 0
       }
@@ -2822,14 +2900,14 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 155,
+      "received": 180,
       "trophies": 113,
       "profile": {
         "level": 87,
         "trophies": 113,
         "best": 2650,
         "league": "Barbarian League 5",
-        "warStars": 2445,
+        "warStars": 2451,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 226266,
@@ -2851,8 +2929,8 @@
         "cg": 59470,
         "don": 11803,
         "capLoot": 129550,
-        "gold": 398937543,
-        "elixir": 463661119,
+        "gold": 399040543,
+        "elixir": 463764119,
         "capContrib": 226266,
         "wins": 0
       }
@@ -2950,14 +3028,14 @@
       "role": "member",
       "th": 9,
       "given": 14,
-      "received": 317,
+      "received": 347,
       "trophies": 240,
       "profile": {
         "level": 37,
         "trophies": 240,
         "best": 252,
         "league": "Skeleton League 3",
-        "warStars": 29,
+        "warStars": 32,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 3150,
@@ -2970,7 +3048,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
@@ -2984,8 +3062,8 @@
         "cg": 1900,
         "don": 14,
         "capLoot": 0,
-        "gold": 67291094,
-        "elixir": 75334396,
+        "gold": 67353094,
+        "elixir": 75396396,
         "capContrib": 3150,
         "wins": 0
       }
@@ -3244,7 +3322,7 @@
         "trophies": 349,
         "best": 349,
         "league": "Skeleton League 1",
-        "warStars": 1,
+        "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 6550,
@@ -3266,8 +3344,8 @@
         "cg": 2400,
         "don": 451,
         "capLoot": 7665,
-        "gold": 42223802,
-        "elixir": 42322134,
+        "gold": 42261802,
+        "elixir": 42360134,
         "capContrib": 6550,
         "wins": 0
       }
