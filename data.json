@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T13:15:46.240Z",
+  "updated": "2026-10-31T13:31:04.395Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -214,12 +214,19 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 93993,
+      "loot": 95693,
       "raids": 8,
-      "attacks": 86,
+      "attacks": 87,
       "districts": 24,
       "medals": 0,
       "members": [
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8434
+        },
         {
           "name": "KuN",
           "tag": "#YLLQL2VUP",
@@ -247,13 +254,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7169
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "attacks": 5,
-          "limit": 6,
-          "loot": 6734
         },
         {
           "name": "Albaroon.2",
@@ -1182,8 +1182,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "65|424584969|386648268|10100|239|25620|67205|0|24|73|10",
-      "last": "2026-10-31T11:15:50.305Z",
+      "sig": "65|425103163|387190540|10100|239|27320|68905|0|24|73|10",
+      "last": "2026-10-31T13:31:04.395Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -2106,7 +2106,7 @@
         "warStars": 24,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 67205,
+        "capital": 68905,
         "warPref": "in",
         "heroes": [
           {
@@ -2129,10 +2129,10 @@
       "ach": {
         "cg": 10100,
         "don": 239,
-        "capLoot": 25620,
-        "gold": 424584969,
-        "elixir": 386648268,
-        "capContrib": 67205,
+        "capLoot": 27320,
+        "gold": 425103163,
+        "elixir": 387190540,
+        "capContrib": 68905,
         "wins": 0
       }
     },
