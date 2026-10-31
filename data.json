@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-31T18:45:46.553Z",
+  "updated": "2026-10-31T19:01:18.300Z",
   "clanLevel": 3,
-  "memberCount": 44,
+  "memberCount": 43,
   "cwlLeague": "Unranked",
   "warWinStreak": 10,
   "warWins": 12,
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 36,
-      "pct": 51.16,
-      "attacks": 15,
+      "stars": 40,
+      "pct": 54.56,
+      "attacks": 17,
       "bases": [
         {
           "pos": 1,
@@ -168,7 +168,7 @@
         {
           "pos": 4,
           "th": 11,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 5,
@@ -198,7 +198,7 @@
         {
           "pos": 10,
           "th": 10,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 11,
@@ -303,6 +303,12 @@
             "pct": 100,
             "order": 15,
             "target": "2. mikaiil.zoro"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 33,
+            "target": "4. hossein"
           }
         ]
       },
@@ -374,7 +380,14 @@
         "tag": "#G8VGC2VRL",
         "pos": 10,
         "th": 9,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 71,
+            "order": 32,
+            "target": "10. spartan"
+          }
+        ]
       },
       {
         "name": "Belaska",
@@ -570,10 +583,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 102328,
-      "raids": 8,
-      "attacks": 93,
-      "districts": 26,
+      "loot": 113769,
+      "raids": 9,
+      "attacks": 102,
+      "districts": 29,
       "medals": 0,
       "members": [
         {
@@ -596,6 +609,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7462
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7308
         },
         {
           "name": "Riczard",
@@ -675,6 +695,13 @@
           "loot": 5375
         },
         {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": 4,
+          "limit": 6,
+          "loot": 5183
+        },
+        {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
           "attacks": 3,
@@ -687,13 +714,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 4389
-        },
-        {
-          "name": "Barnes",
-          "tag": "#LQVRCRUYR",
-          "attacks": 1,
-          "limit": 5,
-          "loot": 1050
         }
       ]
     },
@@ -710,6 +730,11 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-10-31T19:01:17.190Z",
+      "type": "leave",
+      "name": "Fox"
+    },
     {
       "t": "2026-10-31T18:45:45.826Z",
       "type": "promote",
@@ -817,7 +842,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 36,
+      "us": 40,
       "them": 43,
       "final": false,
       "members": [
@@ -835,6 +860,10 @@
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
           "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            },
             {
               "stars": 3,
               "pct": 100
@@ -889,7 +918,12 @@
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 71
+            }
+          ]
         },
         {
           "name": "Belaska",
@@ -1281,8 +1315,8 @@
     },
     {
       "d": "2026-10-31",
-      "members": 44,
-      "avgTh": 8.3,
+      "members": 43,
+      "avgTh": 8.4,
       "level": 3,
       "wins": 12,
       "points": 16200
@@ -1680,10 +1714,6 @@
       "d": "2026-10-29T22:59:49.907Z",
       "orig": true
     },
-    "#R2CPURPY9": {
-      "d": "2026-10-29T22:59:49.907Z",
-      "orig": true
-    },
     "#GQR98J880": {
       "d": "2026-10-29T20:58:21.760Z"
     },
@@ -1702,7 +1732,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 8080,
+      "value": 8136,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-10-31"
@@ -1765,8 +1795,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "8080|2000000000|2000000000|94700|80744|1208549|1605615|0|1241|204|15",
-      "last": "2026-10-31T18:45:46.552Z",
+      "sig": "8136|2000000000|2000000000|94700|80744|1208549|1605615|0|1241|204|15",
+      "last": "2026-10-31T19:01:18.300Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -1805,8 +1835,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "15|465232502|511499412|53920|23588|79475|200722|0|2054|102|9",
-      "last": "2026-10-31T18:31:06.352Z",
+      "sig": "15|465232502|511499412|53920|23588|84175|212149|0|2054|102|9",
+      "last": "2026-10-31T19:01:18.300Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -1835,8 +1865,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|399040543|463764119|59470|11803|130600|226266|0|2451|87|8",
-      "last": "2026-10-31T18:45:46.552Z",
+      "sig": "0|399040543|463764119|59470|11803|136585|234074|0|2451|87|8",
+      "last": "2026-10-31T19:01:18.300Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -1855,8 +1885,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "308|79382445|66337251|5100|306|0|17870|0|12|48|9",
-      "last": "2026-10-31T18:45:46.552Z",
+      "sig": "308|80702383|67269089|5100|306|0|17870|0|12|48|9",
+      "last": "2026-10-31T19:01:18.300Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -1880,8 +1910,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "358|42261802|42360134|2400|451|7665|6550|0|4|44|8",
-      "last": "2026-10-31T18:31:06.352Z",
+      "sig": "358|42261802|42360134|2400|451|7665|16159|0|4|44|8",
+      "last": "2026-10-31T19:01:18.300Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -1962,11 +1992,6 @@
     "#RY9GPJ822": {
       "sig": "0|2719084|2755801|0|0|0|400|0|0|22|6",
       "last": "2026-10-30T09:45:52.275Z",
-      "since": "2026-10-29T22:15:49.037Z"
-    },
-    "#R2CPURPY9": {
-      "sig": "0|2142658|2239089|0|0|0|0|0|0|13|4",
-      "last": "2026-10-29T22:15:49.037Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
@@ -2271,7 +2296,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 8080,
+      "given": 8136,
       "received": 3077,
       "trophies": 491,
       "profile": {
@@ -2700,7 +2725,7 @@
         "warStars": 2054,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 200722,
+        "capital": 212149,
         "warPref": "in",
         "heroes": [
           {
@@ -2723,10 +2748,10 @@
       "ach": {
         "cg": 53920,
         "don": 23588,
-        "capLoot": 79475,
+        "capLoot": 84175,
         "gold": 465232502,
         "elixir": 511499412,
-        "capContrib": 200722,
+        "capContrib": 212149,
         "wins": 0
       }
     },
@@ -2935,7 +2960,7 @@
         "warStars": 2451,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 226266,
+        "capital": 234074,
         "warPref": "in",
         "heroes": [
           {
@@ -2953,10 +2978,10 @@
       "ach": {
         "cg": 59470,
         "don": 11803,
-        "capLoot": 130600,
+        "capLoot": 136585,
         "gold": 399040543,
         "elixir": 463764119,
-        "capContrib": 226266,
+        "capContrib": 234074,
         "wins": 0
       }
     },
@@ -2966,7 +2991,7 @@
       "role": "admin",
       "th": 9,
       "given": 359,
-      "received": 2084,
+      "received": 2114,
       "trophies": 94,
       "profile": {
         "level": 57,
@@ -3169,8 +3194,8 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 79382445,
-        "elixir": 66337251,
+        "gold": 80702383,
+        "elixir": 67269089,
         "capContrib": 17870,
         "wins": 0
       }
@@ -3340,7 +3365,7 @@
       "role": "member",
       "th": 8,
       "given": 358,
-      "received": 402,
+      "received": 428,
       "trophies": 349,
       "profile": {
         "level": 44,
@@ -3350,7 +3375,7 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 6550,
+        "capital": 16159,
         "warPref": "in",
         "heroes": [
           {
@@ -3371,7 +3396,7 @@
         "capLoot": 7665,
         "gold": 42261802,
         "elixir": 42360134,
-        "capContrib": 6550,
+        "capContrib": 16159,
         "wins": 0
       }
     },
@@ -3983,42 +4008,6 @@
         "gold": 2719084,
         "elixir": 2755801,
         "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Fox",
-      "tag": "#R2CPURPY9",
-      "role": "member",
-      "th": 4,
-      "given": 0,
-      "received": 45,
-      "trophies": 0,
-      "profile": {
-        "level": 13,
-        "trophies": 0,
-        "best": 0,
-        "league": "Unranked",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 0,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 1,
-            "max": 110
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 2142658,
-        "elixir": 2239089,
-        "capContrib": 0,
         "wins": 0
       }
     },
