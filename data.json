@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T03:15:52.656Z",
+  "updated": "2026-10-31T03:31:03.454Z",
   "clanLevel": 3,
   "memberCount": 43,
   "cwlLeague": "Unranked",
@@ -1289,8 +1289,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "41|2321440|2375880|0|41|0|0|0|0|19|5",
-      "last": "2026-10-30T15:58:45.051Z",
+      "sig": "41|2321440|2375880|0|41|0|0|0|0|20|5",
+      "last": "2026-10-31T03:31:03.453Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -2313,12 +2313,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
@@ -3148,7 +3148,7 @@
       "received": 174,
       "trophies": 0,
       "profile": {
-        "level": 19,
+        "level": 20,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
