@@ -414,6 +414,25 @@
   tbody tr:last-child td{border-bottom:none}
   .rank{color:var(--muted);font-family:ui-monospace,monospace}
   .pname{font-weight:600}
+  /* podstrony */
+  .lay-pages .nav-links{align-items:center;gap:6px}
+  .lay-pages .nav-links a{padding:7px 12px;border-radius:999px;font-weight:600}
+  .lay-pages .nav-links a.on{color:var(--gold2);background:rgba(232,180,74,.1)}
+  .lay-pages .nav-links a.nav-cta{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1408;font-weight:800;margin-left:6px}
+  @media(max-width:900px){.lay-pages .nav-links{align-items:stretch;gap:0}.lay-pages .nav-links a{border-radius:0;padding:14px 20px}.lay-pages .nav-links a.nav-cta{margin:10px 20px;border-radius:999px;text-align:center}}
+  #start{padding:30px 0 10px}
+  .now-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+  @media (max-width:860px){.now-grid{grid-template-columns:repeat(2,1fr)}} @media (max-width:520px){.now-grid{grid-template-columns:1fr}}
+  .now-card{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);color:inherit;text-decoration:none;transition:.2s}
+  .now-card:hover{border-color:rgba(232,180,74,.55);transform:translateY(-2px)}
+  .now-ico{font-size:1.6rem;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(232,180,74,.08);flex:none}
+  .now-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+  .now-card b{display:block;font-family:Cinzel,serif;font-size:1.15rem;margin:2px 0} .now-card em{display:block;font-style:normal;font-size:.78rem;color:var(--muted)}
+  .now-feed{margin-top:12px} .now-feed small{color:var(--muted);font-size:.76rem;white-space:nowrap}
+  .page-head{padding:38px 0 6px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 0%,rgba(232,180,74,.10),transparent 70%)}
+  .page-head h1{font-family:Cinzel,serif;font-size:clamp(1.7rem,4vw,2.4rem);margin:4px 0 6px} .page-head p{color:var(--muted);margin:0 0 14px}
+  .page-sub{display:flex;gap:6px;flex-wrap:wrap;padding-bottom:14px} .page-sub a{font-size:.8rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:inherit;text-decoration:none}
+  .page-sub a:hover{border-color:var(--gold);color:var(--gold2)}
   .rush{margin:0 0 14px;padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02)}
   .rush-top{display:flex;align-items:baseline;gap:10px} .rush-top span{font-weight:700;font-size:.86rem} .rush-top b{font-family:Cinzel,serif;font-size:1.3rem} .rush-top small{font-weight:700;font-size:.78rem}
   .rush-parts{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0} .rush-parts span{font-size:.76rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
@@ -2828,7 +2847,7 @@ let saveLayoutState=()=>{};
 (function(){
   let mode=UKLAD;
   try{ const q=new URLSearchParams(location.search).get("uklad"); if(q){ mode=q; localStorage.setItem("am_uklad_test",q); } else { const t=localStorage.getItem("am_uklad_test"); if(t) mode=t; } }catch(e){}
-  if(!["klasyczny","zwijane","kafelki","zakladki"].includes(mode)) mode="klasyczny";
+  if(!["klasyczny","zwijane","kafelki","zakladki","strony"].includes(mode)) mode="klasyczny";
   const testing=(()=>{try{return !!localStorage.getItem("am_uklad_test");}catch(e){return false;}})();
   const SEC=[["wymagania","📋","Wymagania"],["dolacz","➕","Jak dołączyć"],["regulamin","📜","Regulamin"],["wydarzenia","⏳","Wydarzenia"],
     ["wojny","⚔️","Wojny"],["kary","⛔","Kary"],["osiagniecia","🏆","CWL i rozwój"],["ranking","🎖️","Ranking"],
@@ -2913,10 +2932,71 @@ let saveLayoutState=()=>{};
     const h=hashSec(); show(h?tabOf(h):"klan", h?location.hash.slice(1):null);
   }
 
+  if(mode==="strony"){
+    document.body.classList.add("lay-pages");
+    const PAGES=[
+      ["start","Start","",[],"",""],
+      ["klan","Klan","🛡️",["regulamin","kadra","discord"],"O klanie","Zasady, kadra, wyróżnienia i nasz Discord."],
+      ["wojny","Wojny","⚔️",["wojny","osiagniecia","kary","ranking"],"Pole bitwy","Wojna na żywo, CWL, historia, kary i ranking wojowników."],
+      ["czlonkowie","Członkowie","👥",["czlonkowie","rajdy","zarzad"],"Skład","Wszyscy gracze, rajdy Stolicy i panel zarządu."],
+      ["poradnik","Poradnik","📖",["kalkulator","bazy"],"Poradnik","Strategie ataku na każdy TH, plan ulepszeń, słowniczek, quiz i bazy."],
+      ["dolacz","Dołącz","➕",["wymagania","dolacz","faq"],"Rekrutacja","Wymagania, jak dołączyć i najczęstsze pytania."]];
+    const ALL=PAGES.flatMap(p=>p[3]);
+    // Menu: podstrony + złoty przycisk Dołącz
+    const nav=$("#navLinks");
+    nav.innerHTML=PAGES.filter(p=>p[0]!=="dolacz").map(p=>`<a href="#${p[0]}" data-page="${p[0]}">${p[1]}</a>`).join("")+`<a href="#dolacz" data-page="dolacz" class="nav-cta">Dołącz</a>`;
+    // Strona główna: „Teraz w klanie” + kalendarz
+    const home=document.createElement("section"); home.id="start";
+    const A=AUTO||{};
+    const card=(page,ico,title,val,sub)=>`<a class="now-card" href="#${page}"><span class="now-ico">${ico}</span><span><small>${title}</small><b>${val}</b>${sub?`<em>${sub}</em>`:""}</span></a>`;
+    const cw=A.currentWar;
+    const warVal=cw&&cw.state==="inWar"?`${cw.us.stars} ★ ${cw.them.stars}`:cw&&cw.state==="preparation"?"Przygotowania":sum("wojny");
+    const warSub=cw&&cw.state!=="warEnded"&&cw.them?`vs <bdi>${esc(cw.them.name)}</bdi>`:"Historia wojen";
+    const evs=(A.events||[]).filter(e=>["join","th","promote"].includes(e.type)).slice(0,5);
+    const ago=t=>{const h=(Date.now()-new Date(t))/36e5; return h<1?"przed chwilą":h<24?`${Math.floor(h)} h temu`:`${Math.floor(h/24)} d temu`;};
+    const evTxt=e=>e.type==="join"?`➕ <b>${esc(e.name)}</b> dołączył(a) do klanu`:e.type==="th"?`🏰 <b>${esc(e.name)}</b> wbił(a) TH${e.to}`:`⬆️ <b>${esc(e.name)}</b> awansował(a)`;
+    home.innerHTML=`<div class="wrap">
+      <div class="eyebrow">Teraz w klanie</div>
+      <div class="now-grid">
+        ${card("wojny",cw&&cw.state==="inWar"?"🔴":"⚔️","Wojna",warVal,warSub)}
+        ${card("wojny","🏆","Liga Wojen (CWL)",esc(sum("osiagniecia")),"Rundy, tabela i medale")}
+        ${card("wojny","⛔","Kary",esc(sum("kary")),"Regulamin wojenny")}
+        ${card("klan","👑","MVP miesiąca",MVP?esc(MVP.name):"—","Kadra i sława")}
+        ${card("czlonkowie","👥","Członkowie",`${MEMBERS.length}/50`,"Skład, rajdy, zarząd")}
+        ${card("poradnik","📖","Poradnik","TH3–TH18","Strategie i plan ulepszeń")}
+      </div>
+      ${evs.length?`<div class="panel now-feed"><div class="fame-label">Ostatnio w klanie</div>${evs.map(e=>`<div class="mini-row"><span>${evTxt(e)}</span><small>${ago(e.t)}</small></div>`).join("")}</div>`:""}
+    </div>`;
+    $("#top").after(home);
+    const wyd=$("#wydarzenia"); home.after(wyd);
+    // Nagłówki podstron
+    PAGES.slice(1).forEach(p=>{ const first=$("#"+p[3][0]); if(!first) return;
+      const h=document.createElement("section"); h.className="page-head"; h.dataset.page=p[0];
+      h.innerHTML=`<div class="wrap"><div class="eyebrow">${p[4]}</div><h1>${p[2]} ${p[1]}</h1><p>${p[5]}</p>
+        <div class="page-sub">${p[3].map(id=>{const t=SEC.find(x=>x[0]===id); return t?`<a href="#${id}">${t[1]} ${t[2]}</a>`:"";}).join("")}</div></div>`;
+      first.before(h);
+      p[3].slice(1).forEach((id,i)=>{ const prev=$("#"+p[3][i]); const el=$("#"+id); if(prev&&el) prev.after(el); });
+    });
+    const final=document.querySelector("section.final");
+    const pageOf=id=>{ if(PAGES.some(p=>p[0]===id)) return id; const sec=secOf(id)||id; if(sec==="wydarzenia") return "start"; const p=PAGES.find(p=>p[3].includes(sec)); return p?p[0]:null; };
+    const show=(page,id)=>{
+      PAGES.forEach(p=>p[3].forEach(x=>$("#"+x)&&$("#"+x).classList.toggle("lay-hide",p[0]!==page)));
+      document.querySelectorAll(".page-head").forEach(h=>h.classList.toggle("lay-hide",h.dataset.page!==page));
+      ["#top","#start","#wydarzenia"].forEach(q=>$(q)&&$(q).classList.toggle("lay-hide",page!=="start"));
+      final&&final.classList.toggle("lay-hide",!(page==="start"||page==="klan"));
+      nav.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
+      history.replaceState(null,"",page==="start"?location.pathname+location.search:"#"+(id&&id!==page?id:page));
+      if(id&&id!==page&&!PAGES.some(p=>p[0]===id)) scrollToEl(id); else scrollTo({top:0});
+    };
+    document.addEventListener("click",e=>{ const a=e.target.closest('a[href^="#"]'); if(!a) return; let id=a.getAttribute("href").slice(1); if(id==="top") id="start";
+      const pg=pageOf(id); if(!pg) return; e.preventDefault(); nav.classList.remove("open"); show(pg,id); },true);
+    const h=location.hash.slice(1); show(pageOf(h)||"start",h||null);
+  }
+
   // Pasek do testowania układów
   if(testing){
     const sw=document.createElement("div"); sw.className="lay-switch";
-    sw.innerHTML=`<span>Układ (test):</span>${[["klasyczny","Klasyczny"],["zwijane","Zwijane"],["kafelki","Kafelki"],["zakladki","Zakładki"]].map(([k,l])=>`<a href="?uklad=${k}" class="${k===mode?"on":""}">${l}</a>`).join("")}<button title="Zakończ test" aria-label="Zakończ test">×</button>`;
+    sw.innerHTML=`<span>Układ (test):</span>${[["klasyczny","Klasyczny"],["strony","Podstrony"],["zwijane","Zwijane"],["kafelki","Kafelki"],["zakladki","Zakładki"]].map(([k,l])=>`<a href="?uklad=${k}" class="${k===mode?"on":""}">${l}</a>`).join("")}<button title="Zakończ test" aria-label="Zakończ test">×</button>`;
     sw.querySelector("button").onclick=()=>{ try{localStorage.removeItem("am_uklad_test");}catch(e){} location.href=location.pathname; };
     document.body.appendChild(sw);
   }
