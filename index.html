@@ -1391,7 +1391,7 @@ const EN = {
 "Tag znajdziesz w grze: wejdź w swój profil (lewy górny róg) i skopiuj kod zaczynający się od # pod nickiem. Bot ClashPerk nada Ci rangę, zmieni nick i odblokuje resztę serwera.":"Find your tag in game: open your profile (top-left corner) and copy the code starting with # under your name. The ClashPerk bot will give you a role, set your nickname and unlock the rest of the server.",
 "Przeczytaj zasady":"Read the rules","Zajrzyj na kanał":"Check the","i sprawdź najnowsze informacje na kanale":"channel and the latest news in","ogłoszenia":"announcements",". Pamiętaj o 2 atakach w każdej wojnie.":". Remember: 2 attacks in every war.",
 "Kalendarz klanu":"Clan calendar","Najbliższe wydarzenia":"Upcoming events","Odliczanie liczone jest automatycznie w Twojej strefie czasowej. Nie przegap rajdów, ligi wojen ani Gier Klanowych.":"Countdowns use your own time zone. Don't miss raids, war league or Clan Games.",
-"Rajdy Stolicy":"Capital Raids","Start za":"Starts in","dni":"days","godz":"hrs","min":"min","sek":"sec","Liga Wojen (CWL)":"War League (CWL)","Gry Klanowe ":"Clan Games","Koniec sezonu":"Season end","Sezon kończy się za":"Season ends in","● Trwa — koniec za":"● Live — ends in",
+"Rajdy Stolicy":"Capital Raids","Start za":"Starts in","dni":"days","godz":"hrs","min":"min","sek":"sec","Liga Wojen (CWL)":"War League (CWL)","Gry Klanowe ":"Clan Games","Koniec sezonu":"Season end","Sezon kończy się za":"Season ends in","Zapisy startują za":"Sign-up starts in","● Zapisy trwają — koniec za":"● Sign-up open — ends in","● Wojny ligowe — koniec za":"● League wars — end in","● Trwa — koniec za":"● Live — ends in",
 "Godziny według stałego harmonogramu gry (czas UTC). Supercell czasem przesuwa wydarzenia — w razie różnic obowiązuje to, co widzisz w grze.":"Times follow the game's regular schedule (UTC). Supercell sometimes shifts events — if in doubt, the game is always right.",
 "Rozwój klanu":"Clan growth","CWL i kamienie milowe":"CWL & milestones","Gdzie jesteśmy w Lidze Wojen Klanów i jak szybko rośniemy.":"Where we stand in Clan War Leagues and how fast we're growing.",
 "Liga Wojen Klanów":"Clan War Leagues","Listopad 2026":"November 2026","Liga":"League","Pierwszy sezon":"First season","Miejsce w grupie":"Group placement","Gwiazdki klanu":"Clan stars","Najwięcej gwiazdek w CWL":"Most CWL stars",
@@ -1643,7 +1643,7 @@ function monthly(now, startFn, endFn){
 const EVENTS = [
   {name:"Rajdy Stolicy", sub:"pt 09:00 → pn 09:00 (PL)", color:"#e8b44a",
    icon:'<path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/>', win: raidWindow},
-  {name:"Liga Wojen (CWL)", sub:"od 1. dnia miesiąca", color:"#d9534f",
+  {name:"Liga Wojen (CWL)", sub:"od 1. dnia miesiąca", color:"#d9534f", cwl:true,
    icon:'<path d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2"/>',
    win: n => monthly(n,(y,m)=>U(y,m,1,8),(y,m)=>U(y,m,11,8))},
   {name:"Gry Klanowe", sub:"22. → 28. dnia miesiąca", color:"#4fb477",
@@ -1670,7 +1670,10 @@ function tick(){
   EVENTS.forEach((e,i)=>{
     const [s,end] = e.win(now);
     const live = !e.endOnly && now >= s && now < end;
-    const target = live ? end : s;
+    let target = live ? end : s;
+    // CWL: najpierw 48 h zapisów, potem 7 dni wojen ligowych
+    let cwlPhase=null;
+    if (e.cwl){ const su=new Date(+s+48*36e5); cwlPhase = !live ? "before" : now<su ? "signup" : "wars"; if(cwlPhase==="signup") target=su; e._su=su; }
     let diff = Math.max(0, target - now)/1000;
     const v = [Math.floor(diff/86400), Math.floor(diff%86400/3600), Math.floor(diff%3600/60), Math.floor(diff%60)];
     const box = document.getElementById("t"+i);
@@ -1680,6 +1683,12 @@ function tick(){
     st.textContent = live ? "● Trwa — koniec za" : (e.endOnly ? "Sezon kończy się za" : "Start za");
     box.querySelectorAll(".count b").forEach((b,j)=>b.textContent = pad(v[j]));
     box.querySelector(".when").textContent = (live?"Koniec: ":(e.endOnly?"Nowy sezon: ":"Start: ")) + dfmt(target);
+    if (cwlPhase){
+      const W = box.querySelector(".when");
+      if (cwlPhase==="before"){ st.textContent="Zapisy startują za"; W.textContent=`Zapisy: ${dfmt(s)} – ${dfmt(e._su)} (48 h) · potem dzień przygotowań, 1. bitwa ok. ${dfmt(new Date(+e._su+864e5))}`; }
+      if (cwlPhase==="signup"){ st.textContent="● Zapisy trwają — koniec za"; W.textContent=`Dzień przygotowań od ok. ${dfmt(e._su)} · 1. bitwa ok. ${dfmt(new Date(+e._su+864e5))} · koniec ok. ${dfmt(end)}`; }
+      if (cwlPhase==="wars"){ st.textContent="● Wojny ligowe — koniec za"; W.textContent=`7 dni bitewnych · koniec sezonu ok. ${dfmt(end)}`; }
+    }
   });
 }
 tick(); setInterval(tick,1000);
