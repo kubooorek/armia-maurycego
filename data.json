@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T17:15:48.466Z",
+  "updated": "2026-11-01T17:31:01.362Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -747,7 +747,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -755,10 +755,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 125780,
+      "loot": 126280,
       "raids": 10,
-      "attacks": 111,
-      "districts": 31,
+      "attacks": 112,
+      "districts": 32,
       "medals": 0,
       "members": [
         {
@@ -867,6 +867,13 @@
           "loot": 5749
         },
         {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 5683
+        },
+        {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
           "attacks": 6,
@@ -879,13 +886,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 5375
-        },
-        {
-          "name": "Brann",
-          "tag": "#LC8VRR9R2",
-          "attacks": 4,
-          "limit": 6,
-          "loot": 5183
         },
         {
           "name": "MAQOS",
@@ -2266,8 +2266,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "15|465308854|511552452|53920|23588|84190|216205|0|2054|102|9",
-      "last": "2026-11-01T12:15:52.136Z",
+      "sig": "15|465308854|511552452|53920|23588|84375|216205|0|2054|102|9",
+      "last": "2026-11-01T17:31:01.351Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -2276,8 +2276,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "160|245437421|246525446|15400|1402|24800|40751|0|11|60|13",
-      "last": "2026-11-01T15:45:52.836Z",
+      "sig": "160|247776283|248684659|15400|1402|24800|41251|0|11|60|13",
+      "last": "2026-11-01T17:31:01.351Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -2311,8 +2311,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|41361873|40196224|750|0|14130|17129|0|14|54|8",
-      "last": "2026-11-01T12:45:45.350Z",
+      "sig": "0|41883271|41074533|750|0|14130|17129|0|14|54|8",
+      "last": "2026-11-01T17:31:01.351Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
@@ -3693,7 +3693,7 @@
       "ach": {
         "cg": 53920,
         "don": 23588,
-        "capLoot": 84190,
+        "capLoot": 84375,
         "gold": 465308854,
         "elixir": 511552452,
         "capContrib": 216205,
@@ -3785,7 +3785,7 @@
         "warStars": 11,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 40751,
+        "capital": 41251,
         "warPref": "in",
         "heroes": [
           {
@@ -3852,9 +3852,9 @@
         "cg": 15400,
         "don": 1402,
         "capLoot": 24800,
-        "gold": 245437421,
-        "elixir": 246525446,
-        "capContrib": 40751,
+        "gold": 247776283,
+        "elixir": 248684659,
+        "capContrib": 41251,
         "wins": 0
       }
     },
@@ -4291,7 +4291,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
@@ -4312,8 +4312,8 @@
         "cg": 750,
         "don": 0,
         "capLoot": 14130,
-        "gold": 41361873,
-        "elixir": 40196224,
+        "gold": 41883271,
+        "elixir": 41074533,
         "capContrib": 17129,
         "wins": 0
       }
@@ -4926,21 +4926,21 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 5,
+            "level": 6,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 17.5,
+        "pct": 14,
         "troops": 2.9,
-        "spells": 30.8,
-        "heroes": 50,
+        "spells": 23.1,
+        "heroes": 40,
         "top": [
           {
             "n": "Zaklęcie szału",
@@ -4954,13 +4954,8 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 5,
+            "lvl": 6,
             "need": 10
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 3,
-            "need": 4
           }
         ]
       },
