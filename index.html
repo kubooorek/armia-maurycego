@@ -837,6 +837,17 @@
     footer{padding-top:30px} footer .wrap.foot-grid{gap:18px} footer .wrap.foot-bottom{margin-top:22px}
   }
   .swipe-hint{display:none;align-items:center;gap:6px;justify-content:center;margin-top:6px;font-size:.7rem;color:var(--muted)}
+  .kto{position:fixed;right:16px;bottom:16px;z-index:150;width:min(360px,calc(100vw - 32px));background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:14px;padding:16px 16px 12px;box-shadow:0 12px 40px rgba(0,0,0,.5);transform:translateY(20px);opacity:0;transition:.3s}
+  .kto.on{transform:none;opacity:1}
+  .kto b{display:block;font-size:1rem;margin-bottom:4px} .kto p{color:var(--muted);font-size:.84rem;margin-bottom:10px;line-height:1.45}
+  .kto-row{display:flex;gap:8px} .kto select{flex:1;min-width:0;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:8px 10px;font:inherit;font-size:.86rem}
+  .kto .btn-gold[disabled]{opacity:.5;cursor:default}
+  .kto-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px} .kto-chips:empty{display:none}
+  .kto-chips span{display:inline-flex;align-items:center;gap:4px;padding:4px 6px 4px 10px;border-radius:999px;font-size:.8rem;font-weight:600;border:1px solid rgba(232,180,74,.4);background:rgba(232,180,74,.08);color:var(--gold2)}
+  .kto-chips button{background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem;line-height:1;padding:0 2px}
+  .kto-skip{display:block;margin:10px auto 0;background:none;border:none;color:var(--muted);font:inherit;font-size:.78rem;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+  .kto-x{position:absolute;top:6px;right:10px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
+  @media (max-width:760px){.lay-pages .kto{bottom:calc(78px + env(safe-area-inset-bottom));right:12px;left:12px;width:auto}}
 </style>
 </head>
 <body>
@@ -1360,7 +1371,7 @@
     <div class="foot-col"><h4>Klan</h4><a href="#ogloszenia">Ogłoszenia</a><a href="#historia">Nasza historia</a><a href="#regulamin">Regulamin</a><a href="#kadra">Kadra i sława</a></div>
     <div class="foot-col"><h4>Wojny</h4><a href="#wojny">Historia wojen</a><a href="#osiagniecia">Liga Wojen (CWL)</a><a href="#kary">Kary</a><a href="#ranking">Ranking</a></div>
     <div class="foot-col"><h4>Gracze</h4><a href="#czlonkowie">Członkowie</a><a href="#rajdy">Rajdy Stolicy</a><a href="#kalkulator">Poradnik</a><a href="#bazy">Bazy</a></div>
-    <div class="foot-col"><h4>Dołącz</h4><a href="#wymagania">Wymagania</a><a href="#faq">FAQ</a><a href="https://discord.gg/7SquD7SF3">Discord</a><button class="link-btn" id="installBtn">📲 Zainstaluj aplikację</button></div>
+    <div class="foot-col"><h4>Dołącz</h4><a href="#wymagania">Wymagania</a><a href="#faq">FAQ</a><a href="https://discord.gg/7SquD7SF3">Discord</a><button class="link-btn" id="installBtn">📲 Zainstaluj aplikację</button><button class="link-btn" onclick="window.amKto&&amKto()">Kim jestem?</button></div>
   </div>
   <div class="wrap foot-bottom"><span>© 2026 Armia Maurycego · #2GQQ8RGRL<span id="footVisits"></span></span><span>Ta strona nie jest powiązana z Supercell, nie jest przez nią wspierana ani sponsorowana. Clash of Clans jest znakiem towarowym Supercell.</span></div>
 </footer>
@@ -1492,6 +1503,9 @@ const NEWS = [
 
 // Licznik odwiedzin: workspace i nazwa licznika z counterapi.dev
 const COUNTER = {workspace:"armia-maurycego", name:"odwiedziny"};
+
+// Statystyki odwiedzin GoatCounter: nazwa strony z adresu NAZWA.goatcounter.com ("" = wyłączone)
+const GOATCOUNTER = "armia-maurycego";
 
 // Poprzedni MVP (najnowsi na górze) — obecny MVP dodaje się automatycznie
 const MVP_HISTORY = [
@@ -3194,6 +3208,54 @@ let openProfile=()=>{};
   const fromHash=(e,h)=>{ const m=(h||location.hash).match(/^#gracz-([0-9A-Z]+)$/i); if(m){ const r=rows.find(x=>(x.tag||"").replace("#","").toUpperCase()===m[1].toUpperCase()); if(r) openProfile(r); } };
   setTimeout(()=>fromHash(null,h0),60);
   addEventListener("hashchange",fromHash);
+})();
+
+/* ===== Statystyki odwiedzin (GoatCounter) + „Kim jesteś?” =====
+   Anonimowe statystyki: ile wejść, z jakich urządzeń i krajów, skąd, które zakładki.
+   Gracz, który sam wybierze swój nick, liczony jest w statystykach jako zdarzenie „gracz/Nick” (raz dziennie). */
+(function(){
+  if(!GOATCOUNTER) return;
+  const Q=[]; const gc=o=>{ if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count(o); else Q.push(o); };
+  const s=document.createElement("script"); s.async=true; s.src="https://gc.zgo.at/count.js";
+  s.dataset.goatcounter=`https://${GOATCOUNTER}.goatcounter.com/count`;
+  s.dataset.goatcounterSettings=JSON.stringify({no_onload:true});
+  s.onload=()=>{ while(Q.length) gc(Q.shift()); };
+  document.head.appendChild(s);
+  // odsłony zakładek (podstrony) albo całej strony
+  let paged=false; const NAMES={start:"Start",klan:"Klan",wojny:"Wojny",czlonkowie:"Członkowie",poradnik:"Poradnik",dolacz:"Dołącz"};
+  addEventListener("am:page",e=>{ paged=true; gc({path:"/"+(e.detail==="start"?"":e.detail),title:NAMES[e.detail]||e.detail}); });
+  setTimeout(()=>{ if(!paged) gc({path:"/",title:"Strona główna"}); },800);
+  // kto zagląda (tylko gdy gracz sam się przedstawi; można wybrać kilka swoich kont)
+  let me=null; try{ me=localStorage.getItem("am_kto"); }catch(e){}
+  const myTags=()=>{ if(!me||me==="skip") return []; if(me[0]==="#") return [me]; try{ const a=JSON.parse(me); return Array.isArray(a)?a:[]; }catch(e){ return []; } };
+  const today=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(new Date());
+  const ping=tags=>{ let last=null; try{ last=localStorage.getItem("am_kto_d"); }catch(e){} if(last===today) return;
+    tags.forEach(tag=>{ const m=MEMBERS.find(x=>x.tag===tag); if(m) gc({path:"gracz/"+m.name,title:"Gracz: "+m.name,event:true}); });
+    try{ localStorage.setItem("am_kto_d",today); }catch(e){} };
+  if(myTags().length) ping(myTags());
+  const ask=()=>{
+    const box=document.createElement("div"); box.className="kto";
+    const sorted=[...MEMBERS].sort((a,b)=>a.name.localeCompare(b.name,"pl"));
+    const picked=[...myTags()];
+    box.innerHTML=`<button class="kto-x" aria-label="Zamknij">×</button><b>Hej! Kim jesteś w klanie?</b><p>Wybierz swój nick, a zarząd będzie wiedział, że zaglądasz na stronę. Masz kilka kont? Dodaj wszystkie. Nie musisz.</p>
+      <div class="kto-chips"></div>
+      <div class="kto-row"><select aria-label="Twój nick"></select><button class="btn btn-gold btn-sm" disabled>Gotowe</button></div>
+      <button class="kto-skip">Nie jestem w klanie / pomiń</button>`;
+    document.body.appendChild(box); requestAnimationFrame(()=>box.classList.add("on"));
+    const sel=box.querySelector("select"), ok=box.querySelector(".btn-gold"), chips=box.querySelector(".kto-chips");
+    const draw=()=>{ sel.innerHTML=`<option value="">${picked.length?"+ Dodaj kolejne konto…":"Wybierz nick…"}</option>`+sorted.filter(m=>!picked.includes(m.tag)).map(m=>`<option value="${esc(m.tag)}">${esc(m.name)} · TH${m.th}</option>`).join("");
+      chips.innerHTML=picked.map(t=>{ const m=MEMBERS.find(x=>x.tag===t); return m?`<span>${esc(m.name)}<button data-t="${esc(t)}" aria-label="Usuń">×</button></span>`:""; }).join("");
+      ok.disabled=!picked.length; };
+    draw();
+    sel.onchange=()=>{ if(sel.value){ picked.push(sel.value); draw(); } };
+    chips.onclick=e=>{ const b=e.target.closest("button[data-t]"); if(b){ picked.splice(picked.indexOf(b.dataset.t),1); draw(); } };
+    const close=v=>{ me=v; try{ localStorage.setItem("am_kto",v); }catch(e){} box.classList.remove("on"); setTimeout(()=>box.remove(),300); };
+    ok.onclick=()=>{ close(JSON.stringify(picked)); ping(picked); toast("Dzięki! ✓"); };
+    box.querySelector(".kto-skip").onclick=()=>close("skip");
+    box.querySelector(".kto-x").onclick=()=>close("skip");
+  };
+  window.amKto=()=>{ try{ localStorage.removeItem("am_kto_d"); }catch(e){} ask(); };
+  if(!me) setTimeout(ask,5000);
 })();
 
 /* ===== Ogłoszenie ===== */
