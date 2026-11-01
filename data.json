@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T02:45:49.896Z",
+  "updated": "2026-11-01T03:01:15.702Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -2064,8 +2064,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "40|6932588|7529737|300|40|24805|31434|0|15|29|7",
-      "last": "2026-10-30T14:15:54.084Z",
+      "sig": "40|7322588|7919737|300|40|24805|31434|0|15|29|7",
+      "last": "2026-11-01T03:01:15.702Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVRY000P2": {
@@ -4478,8 +4478,8 @@
       "trophies": 240,
       "profile": {
         "level": 29,
-        "trophies": 40,
-        "best": 40,
+        "trophies": 240,
+        "best": 240,
         "league": "Skeleton League 1",
         "warStars": 15,
         "attackWins": 0,
@@ -4511,8 +4511,8 @@
         "cg": 300,
         "don": 40,
         "capLoot": 24805,
-        "gold": 6932588,
-        "elixir": 7529737,
+        "gold": 7322588,
+        "elixir": 7919737,
         "capContrib": 31434,
         "wins": 0
       }
