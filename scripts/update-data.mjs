@@ -146,6 +146,19 @@ if (w && w.state && w.state !== "notInWar") {
   };
 }
 
+// Kiedy robot pierwszy raz zobaczył każdy atak (API nie podaje godziny ataku) — potrzebne do zasady 12 h
+if (currentWar && currentWar.state !== "preparation") {
+  const oldW = old?.currentWar && old.currentWar.start === currentWar.start ? old.currentWar : null;
+  const seenNow = new Date().toISOString();
+  for (const m of currentWar.members) {
+    const om = oldW?.members?.find(x => x.tag === m.tag);
+    for (const a of m.attacks) {
+      const oa = om?.attacks?.find(x => x.order != null && x.order === a.order);
+      a.seen = oa ? (oa.seen ?? null) : seenNow;   // null = nie wiadomo (atak sprzed wprowadzenia śledzenia)
+    }
+  }
+}
+
 /* ---------- Liga Wojen Klanów (CWL) ---------- */
 let cwl = old?.cwl ?? null;
 const group = await safe("Grupa CWL", () => api(`/clans/${enc(TAG)}/currentwar/leaguegroup`));
@@ -243,24 +256,38 @@ warArchive.forEach(x => { if (x.end && x.end < nowStamp) x.state = "warEnded"; }
 warArchive = warArchive.slice(0, 40);
 
 /* ---------- Kary za łamanie zasad wojennych (tylko zwykłe wojny, 2 ataki) ---------- */
-let penalties = Array.isArray(old?.penalties) ? old.penalties : [];
-const addPen = p => { if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+// konta zwolnione z kar (lista KARY_ZWOLNIENI w index.html)
+let karyZw = [];
+try { const h = await readFile(new URL("../index.html", import.meta.url), "utf8"); const m = h.match(/const KARY_ZWOLNIENI\s*=\s*\[([\s\S]*?)\n\];/);
+  if (m) karyZw = [...m[1].matchAll(/"(#[0-9A-Z]+)"/g)].map(x => x[1]); } catch (e) { console.warn("index.html (zwolnieni z kar) niedostępny:", e.message); }
+let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag));
+const addPen = p => { if (karyZw.includes(p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+const WOLNE_PO_H = 12;   // po tylu godzinach od startu bitwy można atakować cudze numery bez kary
 const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
 if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
   const W = currentWar, byPos = Object.fromEntries(W.members.map(m => [m.pos, m]));
   const tp = a => parseInt(a.target, 10);
   const firstOrder = m => m.attacks.length ? Math.min(...m.attacks.map(a => a.order ?? 999)) : Infinity;
   const base = m => ({ tag: m.tag, name: m.name, war: W.start, end: W.end, enemy: W.them.name });
+  // Zasada klanu: po 12 h od startu bitwy wolno bić cudze numery (kto nie zaatakował swojego do 12 h, ten może być bity)
+  const free = stampMs(W.start) + WOLNE_PO_H * 36e5;
+  const late = a => a && a.seen && Date.parse(a.seen) >= free;
+  penalties = penalties.filter(p => {
+    if (p.war !== W.start || (p.type !== "own" && p.type !== "steal")) return true;
+    const mm = W.members.find(x => x.tag === p.tag); if (!mm) return true;
+    const at = mm.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0))[p.type === "own" ? 0 : 1];
+    return !late(at);
+  });
   for (const m of W.members) {
     const atts = m.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
     // 1) pierwszy atak nie na swój numer
     // wyjątek: ktoś wcześniej zrobił już 3★ na jego numerze — wtedy nie miał czego bić
     const mirrorTaken = atts[0] && W.members.some(o => o.attacks.some(x => tp(x) === m.pos && x.stars === 3 && (x.order ?? 0) < (atts[0].order ?? 0)));
-    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos && !mirrorTaken)
+    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos && !mirrorTaken && !late(atts[0]))
       addPen({ id: `${W.start}:${m.tag}:own`, type: "own", detail: `nr ${tp(atts[0])} zamiast nr ${m.pos}`, ...base(m) });
     // 2) drugi atak na numer kogoś, kto jeszcze nie zaatakował (podkradanie ataku)
     const a2 = atts[1];
-    if (a2 && a2.order != null && tp(a2) && tp(a2) !== m.pos) {
+    if (a2 && a2.order != null && tp(a2) && tp(a2) !== m.pos && !late(a2)) {
       const owner = byPos[tp(a2)];
       if (owner && owner.tag !== m.tag && firstOrder(owner) > a2.order)
         addPen({ id: `${W.start}:${m.tag}:steal`, type: "steal", detail: `nr ${tp(a2)}, zanim ${owner.name} zaatakował(a) swój numer`, ...base(m) });
@@ -433,6 +460,126 @@ if (nowD >= cgStart && nowD < new Date(+cgEnd + 6 * 3600e3)) {        // trwa (z
   clanGames.state = "ended";
 }
 
+
+/* ---------- MVP miesiąca (wybierany automatycznie 1. dnia miesiąca) ---------- */
+// Punkty: gwiazdki wojenne ×10, oddane wojska ÷10, pkt Gier Klanowych ÷50, złoto z rajdów ÷500, każda kara −30.
+// Ta sama osoba nie może wygrać dwa miesiące z rzędu (przerwa MVP_PRZERWA miesięcy).
+const MVP_PRZERWA = 2;
+const MVP_START = "2026-11";   // pierwszy miesiąc liczony przez robota (MVP za listopad wybierany 1 grudnia)
+const MIES = ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
+const MIES_D = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
+const plural = (n, a, b, c) => n === 1 ? a : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? b : c;
+const nf = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+// kary anulowane / ręczne wpisane w index.html
+let karyAnul = [], karyRecz = [], mvpRecz = [], mvpBez = [];
+try {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const grab = name => { const m = html.match(new RegExp(`const ${name}\\s*=\\s*\\[([\\s\\S]*?)\\n\\];`)); if (!m) return [];
+    return [...m[1].matchAll(/\{\s*name\s*:\s*"([^"]+)"\s*,\s*date\s*:\s*"([^"]+)"/g)].map(x => ({ name: x[1], date: x[2] })); };
+  karyAnul = grab("KARY_ANULOWANE"); karyRecz = grab("KARY_RECZNE");
+  const mr = html.match(/const MVP_RECZNE\s*=\s*\[([\s\S]*?)\n\];/);
+  const mb = html.match(/const MVP_BEZ\s*=\s*\[([\s\S]*?)\n\];/);
+  if (mb) mvpBez = [...mb[1].matchAll(/"(#[0-9A-Z]+)"/g)].map(x => x[1]);
+  if (mr) mvpRecz = [...mr[1].matchAll(/\{\s*key\s*:\s*"(\d{4}-\d{2})"\s*,\s*name\s*:\s*"([^"]+)"/g)].map(x => ({ month: x[1], name: x[2] }));
+} catch (e) { console.warn("index.html (kary) niedostępny:", e.message); }
+const warStartMs = t => t && t.length > 15 ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : Date.parse(t);
+const plDay = ms => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Warsaw" }).format(new Date(ms));
+function mvpScores(base, fromIso, toMs) {
+  if (!base?.players) return [];
+  const from = Date.parse(fromIso || 0);
+  const pens = [
+    ...penalties.map(p => ({ tag: p.tag, name: p.name, t: warStartMs(p.war) })).filter(p => !karyAnul.some(a => a.name === p.name && a.date === plDay(p.t))),
+    ...karyRecz.map(k => ({ tag: null, name: k.name, t: Date.parse(k.date + "T12:00:00Z") }))
+  ].filter(p => p.t >= from && p.t < toMs);
+  const wars = warArchive.filter(w => w.state === "warEnded" && warStartMs(w.end) >= from && warStartMs(w.end) < toMs);
+  return members.map(m => {
+    const b = base.players[m.tag] || {};
+    const d = (cur, st) => (cur != null && st != null) ? Math.max(0, cur - st) : 0;
+    const stars = d(m.profile?.warStars, b.warStars), don = d(m.ach?.don, b.don), cg = d(m.ach?.cg, b.cg), cap = d(m.ach?.capLoot, b.capLoot);
+    let att = 0, three = 0, missed = 0, wcount = 0;
+    for (const w of wars) { const me = (w.members || []).find(x => x.tag === m.tag); if (!me) continue;
+      wcount++; att += me.attacks.length; three += me.attacks.filter(a => a.stars === 3).length; missed += Math.max(0, (w.perMember || 2) - me.attacks.length); }
+    const pen = pens.filter(p => p.tag ? p.tag === m.tag : p.name === m.name).length;
+    const score = Math.max(0, Math.round(stars * 10 + don / 10 + cg / 50 + cap / 500) - pen * 30);
+    return { name: m.name, tag: m.tag, score, stars, don, cg, cap, wars: wcount, att, three, missed, pen };
+  }).sort((a, b) => b.score - a.score);
+}
+function mvpText(w, all, monthIdx) {
+  const h = [...(w.tag + monthIdx)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+  const pick = arr => arr[h % arr.length];
+  const rank = k => all.filter(x => x[k] > w[k]).length;   // 0 = najlepszy w klanie
+  const mi = MIES[monthIdx], md = MIES_D[monthIdx];
+  const out = [pick([`${w.name} zgarnia MVP za ${mi}.`, `MVP ${md} to ${w.name}.`, `Za ${mi} MVP bierze ${w.name}.`, `${w.name} z tytułem MVP ${md}.`])];
+  const parts = [];
+  if (w.stars) parts.push({ r: rank("stars"), k: "stars", t: `${nf(w.stars)} ${plural(w.stars, "gwiazdka", "gwiazdki", "gwiazdek")} w wojnach` });
+  if (w.don) parts.push({ r: rank("don"), t: `${nf(w.don)} ${plural(w.don, "oddana jednostka", "oddane jednostki", "oddanych jednostek")}` });
+  if (w.cg) parts.push({ r: rank("cg"), t: `${nf(w.cg)} pkt w Grach Klanowych` });
+  if (w.cap) parts.push({ r: rank("cap"), t: `${nf(w.cap)} złota z rajdów na Stolicę` });
+  parts.sort((a, b) => a.r - b.r);
+  const top = parts.slice(0, 3);
+  if (top[0] && top[0].k === "stars" && w.three >= 2) top[0].t += ` (${w.three} ${plural(w.three, "atak", "ataki", "ataków")} na 3 gwiazdki)`;
+  if (top[0]) out.push(top[0].t.charAt(0).toUpperCase() + top[0].t.slice(1) + (top[0].r === 0 ? pick([", najwięcej w klanie.", ". Nikt w klanie nie miał więcej.", ", najlepszy wynik w klanie."]) : "."));
+  if (top[1]) out.push(pick(["Do tego ", "Poza tym ", "Plus "]) + top[1].t + (top[2] ? ` i ${top[2].t}.` : "."));
+  if (!w.pen && !w.missed && w.wars) out.push(pick(["Zero kar i żadnego opuszczonego ataku.", "Ani jednej kary, wszystkie ataki wykorzystane.", "Bez kar i bez opuszczonych ataków."]));
+  out.push(pick(["Gratulacje!", "Brawo, tak trzymać!", "Szacun!", "Gratki!", "Dobra robota!"]));
+  return out.join(" ");
+}
+let mvp = old?.mvp && typeof old.mvp === "object" ? old.mvp : { history: [] };
+if (!Array.isArray(mvp.history)) mvp.history = [];
+// kto ma przerwę: zwycięzcy z MVP_PRZERWA poprzednich miesięcy (wybór robota albo wpis ręczny)
+const prevMonths = (key, n) => { let [y, m] = key.split("-").map(Number); const out = []; for (let i = 0; i < n; i++) { m--; if (!m) { m = 12; y--; } out.push(`${y}-${String(m).padStart(2, "0")}`); } return out; };
+const blockedFor = key => { const ms = prevMonths(key, MVP_PRZERWA), tags = new Set();
+  for (const k of ms) { const r = mvpRecz.find(x => x.month === k); const h = mvp.history.find(x => x.month === k);
+    const name = r ? r.name : h?.name; const tag = r ? (members.find(m => m.name === r.name)?.tag || h?.tag) : h?.tag;
+    if (tag) tags.add(tag); else if (name) members.filter(m => m.name === name).forEach(m => tags.add(m.tag)); }
+  mvpBez.forEach(x => tags.add(x));
+  return [...tags]; };
+const curMonth = nowIso.slice(0, 7);
+if (old?.monthBase?.month && old.monthBase.month >= MVP_START && old.monthBase.month !== curMonth && !mvp.history.some(x => x.month === old.monthBase.month)) {
+  const all = mvpScores(old.monthBase, old.monthBase.since, Date.now());
+  const recent = blockedFor(old.monthBase.month);
+  const manual = mvpRecz.find(x => x.month === old.monthBase.month);
+  const win = manual ? null : all.find(x => x.score > 0 && !recent.includes(x.tag));
+  if (manual) {
+    const st = all.find(x => x.name === manual.name) || { name: manual.name, tag: (members.find(m => m.name === manual.name) || {}).tag || null };
+    mvp.history.unshift({ month: old.monthBase.month, since: old.monthBase.since, picked: nowIso, ...st, manual: true });
+    console.log(`MVP ${old.monthBase.month}: ${manual.name} (wybór zarządu)`);
+  } else if (win) {
+    const mIdx = Number(old.monthBase.month.slice(5, 7)) - 1;
+    mvp.history.unshift({ month: old.monthBase.month, since: old.monthBase.since, picked: nowIso, ...win, text: mvpText(win, all, mIdx),
+      runnersUp: all.filter(x => x.tag !== win.tag && x.score > 0).slice(0, 2).map(x => ({ name: x.name, score: x.score })) });
+    console.log(`MVP ${old.monthBase.month}: ${win.name} (${win.score} pkt)`);
+  }
+}
+mvp.history = mvp.history.slice(0, 24);
+/* ---------- Gracz dnia: kto wczoraj zrobił najwięcej dla klanu (dzień liczony wg czasu w Polsce) ---------- */
+const POTD_PRZERWA = 3;   // ta sama osoba nie wygrywa częściej niż raz na tyle dni
+const todayPl = plDay(Date.now());
+const daySnap = m => ({ warStars: m.profile?.warStars ?? null, don: m.ach?.don ?? null, cg: m.ach?.cg ?? null, capLoot: m.ach?.capLoot ?? null });
+let dayBase = old?.dayBase;
+let potd = old?.potd ?? null;
+let potdHistory = Array.isArray(old?.potdHistory) ? old.potdHistory : [];
+if (dayBase && dayBase.day !== todayPl) {
+  const recent = potdHistory.slice(0, POTD_PRZERWA).map(x => x.tag);
+  const all = mvpScores(dayBase, dayBase.since, Date.now());
+  const win = all.find(x => x.score > 0 && !recent.includes(x.tag) && !mvpBez.includes(x.tag));
+  if (win) {
+    const m = members.find(x => x.tag === win.tag) || {};
+    potd = { day: dayBase.day, picked: nowIso, name: win.name, tag: win.tag, th: m.th ?? null, role: m.role ?? null,
+      score: win.score, stars: win.stars, don: win.don, cg: win.cg, cap: win.cap, att: win.att, three: win.three };
+    potdHistory = [{ day: dayBase.day, name: win.name, tag: win.tag, score: win.score }, ...potdHistory].slice(0, 14);
+    console.log(`Gracz dnia ${dayBase.day}: ${win.name} (${win.score} pkt)`);
+  }
+}
+if (!dayBase || dayBase.day !== todayPl) {
+  dayBase = { day: todayPl, since: nowIso, players: {} };
+  for (const m of members) dayBase.players[m.tag] = daySnap(m);
+} else {
+  for (const m of members) { const b = dayBase.players[m.tag]; const cur = daySnap(m);
+    if (!b) dayBase.players[m.tag] = cur; else for (const k of Object.keys(cur)) if (b[k] == null && cur[k] != null) b[k] = cur[k]; }
+}
+
+
 /* ---------- Bilans miesiąca (kandydaci na MVP i do awansu) ---------- */
 const monthKey = nowIso.slice(0, 7);
 let monthBase = old?.monthBase;
@@ -447,6 +594,15 @@ for (const m of members) {
   const b = monthBase.players[m.tag];
   if (!b) { monthBase.players[m.tag] = { ...cur, joined: nowIso }; continue; }
   for (const k of Object.keys(cur)) if (b[k] == null && cur[k] != null) b[k] = cur[k];   // uzupełnij brakujące wartości startowe
+}
+
+// wyścig o MVP bieżącego miesiąca (na żywo) — bez zwycięzców z ostatnich miesięcy
+if (monthBase.month < MVP_START) { mvp.race = { month: monthBase.month, start: MVP_START, top: [] }; }
+else {
+  const recent = blockedFor(monthBase.month);
+  const all = mvpScores(monthBase, monthBase.since, Date.now());
+  mvp.race = { month: monthBase.month, since: monthBase.since, blocked: recent,
+    top: all.filter(x => x.score > 0 && !recent.includes(x.tag)).slice(0, 5).map(x => ({ name: x.name, tag: x.tag, score: x.score, stars: x.stars, don: x.don, cg: x.cg, cap: x.cap })) };
 }
 
 /* ---------- Powiadomienia na Discordzie (webhook) ---------- */
@@ -510,18 +666,36 @@ async function post(content, url = WEBHOOK) {
 const parseT = t => t ? new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : null;
 const firstRun = !old;   // przy pierwszym uruchomieniu nic nie wysyłamy (brak historii)
 
+// Które wiadomości robot wysyła na Discorda (false = wyłączone, bo robi to ClashPerk)
+const POSTY = {
+  dolaczenie: true,        // powitanie nowego gracza z instrukcją /link (ClashPerk pisze tylko „dołączył”)
+  ratusz: false,           // nowy ratusz — robi ClashPerk (#ruchy-w-klanie)
+  awans: false,            // awans w grze — robi ClashPerk (#ruchy-w-klanie)
+  mvp: true,               // MVP miesiąca
+  wojownikTygodnia: true,  // Wojownik Tygodnia
+  gryKlanowe: true,        // kto zrobił normę 1000 pkt w Grach Klanowych
+  przygotowania: true,     // start dnia przygotowań (wyślijcie wojska do zamków)
+  startBitwy: true,        // start dnia bitwy + zasada „pierwszy atak na swój numer”
+  wolneNumery: true,       // po 12 h: które numery są wolne (zasada 12 h)
+  przypomnienia: true,     // 4 h i 1 h przed końcem: kto jeszcze nie zaatakował
+  wynikWojny: false        // wynik i opuszczone ataki — robi ClashPerk (war board + missed attacks)
+};
 if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
   // 1) Ruchy w klanie z tego uruchomienia
   const RN = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
   const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
   for (const e of freshEvents.reverse()) {
-    if (e.type === "join") await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️ Zajrzyj na kanał z regulaminem i połącz konto komendą \`/link create\`.`, WEBHOOK_INFO);
-    if (e.type === "th") await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_INFO);
-    if (e.type === "promote") await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`, WEBHOOK_INFO);
+    if (e.type === "join" && POSTY.dolaczenie) await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️ Zajrzyj na kanał z regulaminem i połącz konto komendą \`/link create\`.`, WEBHOOK_INFO);
+    if (e.type === "th" && POSTY.ratusz) await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_INFO);
+    if (e.type === "promote" && POSTY.awans) await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`, WEBHOOK_INFO);
   }
 
+  // Nowy MVP miesiąca (wybrany w tym uruchomieniu)
+  const newMvp = mvp.history[0];
+  if (POSTY.mvp && newMvp && newMvp.picked === nowIso && !newMvp.manual && newMvp.text) await post(`🏆 ${newMvp.text}\n${SITE}#kadra`, WEBHOOK_INFO);
+
   // Wojownik Tygodnia (pierwsze uruchomienie po północy z niedzieli na poniedziałek)
-  if (weekWinners && weekWinners.length) {
+  if (POSTY.wojownikTygodnia && weekWinners && weekWinners.length) {
     const md = ["🥇", "🥈", "🥉"];
     const u = UNIT[lastWeek.metric] || "";
     await post(`⚔️ **WOJOWNIK TYGODNIA: ${weekWinners[0].name}** (+${weekWinners[0].d} ${u})! Gratulacje — ranga ⚔️ Wojownik Tygodnia leci do Ciebie! 🏆\n` +
@@ -529,7 +703,7 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
   }
 
   // Podsumowanie Gier Klanowych
-  if (clanGames && clanGames.state === "ended" && prevCgState === "ongoing") {
+  if (POSTY.gryKlanowe && clanGames && clanGames.state === "ended" && prevCgState === "ongoing") {
     const rows = Object.values(clanGames.points || {});
     const low = rows.filter(r => r.pts < 1000).sort((a, b) => a.pts - b.pts);
     await post(`🎯 **Gry Klanowe zakończone!** Normę 1000 pkt zrobiło **${rows.length - low.length}/${rows.length}** graczy. 💪` +
@@ -544,21 +718,28 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
     const sent = notified[w.key] || (notified[w.key] = []);
     const once = async (id, msg) => { if (!sent.includes(id)) { sent.push(id); await post(msg); } };
     const sinceStart = (Date.now() - parseT(w.start)) / 3600e3, sinceEnd = (Date.now() - parseT(w.end)) / 3600e3;
-    if (w.state === "preparation") {
+    if (w.state === "preparation" && POSTY.przygotowania) {
       await once("prep", `🛡️ **${w.label}** rozpoczyna się! Przeciwnik: **${w.them.name}** (${w.size} vs ${w.size}). Dzień przygotowań — wyślijcie wojska do zamków obronnych!`);
     }
     if (w.state === "inWar") {
       const left = (parseT(w.end) - Date.now()) / 3600e3;
       const missing = w.members.filter(m => m.attacks.length < w.perMember).map(m => `${m.name}${w.perMember - m.attacks.length > 1 ? ` ×${w.perMember - m.attacks.length}` : ""}`);
-      if (sinceStart < 6) await once("start", `⚔️ **${w.label}** — dzień bitwy ruszył! Przeciwnik: **${w.them.name}**. Pierwszy atak na swój numer! ${SITE}`);
-      // jedno przypomnienie na próg (12h, 4h, 1h) — wysyłamy tylko najmniejszy osiągnięty
-      const hit = [1, 4, 12].find(h => left <= h && left > 0);
-      if (hit && missing.length && !sent.includes(`r${hit}`)) {
-        for (const h of [12, 4, 1]) if (h >= hit && !sent.includes(`r${h}`)) sent.push(`r${h}`);
+      if (sinceStart < 6 && POSTY.startBitwy) await once("start", `⚔️ **${w.label}** — dzień bitwy ruszył! Przeciwnik: **${w.them.name}**. Pierwszy atak na swój numer! ${SITE}`);
+      // Zasada 12 h (zwykłe wojny): numery graczy, którzy jeszcze nie zaatakowali, są wolne
+      if (POSTY.wolneNumery && w.perMember === 2 && sinceStart >= 12 && left > 0.5) {
+        const free = w.members.filter(m => m.attacks.length === 0 && m.pos).map(m => m.pos).sort((a, b) => a - b);
+        const open = free.filter(p => { const b = (w.them.bases || []).find(x => x.pos === p); return !b || b.best < 3; });
+        if (open.length) await once("free12", `🔓 **${w.label}** — minęło 12 h od startu bitwy. Te numery są teraz wolne i może je bić każdy: **${open.join(", ")}**. Zostało ok. ${Math.max(1, Math.round(left))} h.`);
+        else sent.includes("free12") || sent.push("free12");
+      }
+      // przypomnienie na progach 4 h i 1 h — wysyłamy tylko najmniejszy osiągnięty
+      const hit = [1, 4].find(h => left <= h && left > 0);
+      if (POSTY.przypomnienia && hit && missing.length && !sent.includes(`r${hit}`)) {
+        for (const h of [4, 1]) if (h >= hit && !sent.includes(`r${h}`)) sent.push(`r${h}`);
         await post(`⏰ **${w.label}** — zostało ok. **${Math.max(1, Math.round(left))}h** do końca! Wynik: ${w.us.stars} ★ ${w.them.stars}.\nBrakujące ataki: ${missing.join(", ")}`);
       }
     }
-    if (w.state === "warEnded" && sinceEnd < 6) {
+    if (w.state === "warEnded" && sinceEnd < 6 && POSTY.wynikWojny) {
       const res = w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct) ? "🏆 **Wygrana!**"
         : (w.us.stars === w.them.stars && w.us.pct === w.them.pct) ? "🤝 **Remis**" : "❌ **Przegrana**";
       const missing = w.members.filter(m => m.attacks.length < w.perMember).map(m => m.name);
@@ -594,6 +775,10 @@ const data = {
   activity,
   clanGames,
   monthBase,
+  mvp,
+  dayBase,
+  potd,
+  potdHistory,
   notified,
   members,
   wars
