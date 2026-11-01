@@ -1583,9 +1583,19 @@ const STRATEGIES = {"3": [{"name": "Giganci + Łuczniczki", "mode": "Wojna / Ran
 const KARY_RECZNE = [
 ];
 // Anulowanie kary (pomyłka, usprawiedliwienie): {name:"Nick", date:"2026-10-31"} — anuluje kary gracza z wojny z tego dnia
+// Konta zwolnione z kar (tagi z gry) — robot ich nie sprawdza, na stronie się nie pokazują
+const KARY_ZWOLNIENI = [
+  "#VP9PLGLV",  // KUBOOOREK
+  "#GU0R2J8R0", // Belaska
+  "#GYUJR2URJ", // Albaroon.2
+  "#22R8PLCU8", // VipeR
+  "#G8VGC2VRL", // Kojak
+];
 const KARY_ANULOWANE = [
   {name:"Mimbosz", date:"2026-10-31"},  // zamiana numerów uzgodniona z zarządem
   {name:"Barnes",  date:"2026-10-31"},  // zamiana numerów uzgodniona z zarządem
+  {name:"MAQOS",   date:"2026-10-31"},  // cel wskazany przez zarząd
+  {name:"monte",   date:"2026-10-31"},  // cel wskazany przez zarząd
 ];
 
 // Układ strony: "klasyczny" (wszystko pod sobą) | "zwijane" | "kafelki" | "zakladki"
@@ -1765,6 +1775,7 @@ async function loadAuto(){
     const r = await fetch("data.json?v="+Date.now(), {signal:ctl.signal});
     if(!r.ok) return;
     const d = await r.json();
+    if (Array.isArray(d.penalties)) d.penalties = d.penalties.filter(p=>!KARY_ZWOLNIENI.includes(p.tag));
     // „Nowy” = dołączył w ciągu ostatnich 7 dni (z dziennika robota)
     const weekAgo = Date.now() - 7*864e5;
     const newNames = new Set((d.events||[]).filter(e=>e.type==="join" && new Date(e.t).getTime()>weekAgo).map(e=>e.name));
@@ -3219,7 +3230,7 @@ let openProfile=()=>{};
   const s=document.createElement("script"); s.async=true; s.src="https://gc.zgo.at/count.js";
   s.dataset.goatcounter=`https://${GOATCOUNTER}.goatcounter.com/count`;
   s.dataset.goatcounterSettings=JSON.stringify({no_onload:true});
-  s.onload=()=>{ while(Q.length) gc(Q.shift()); };
+  s.onload=()=>{ if(window.goatcounter&&window.goatcounter.count) Q.splice(0).forEach(o=>window.goatcounter.count(o)); };
   document.head.appendChild(s);
   // odsłony zakładek (podstrony) albo całej strony
   let paged=false; const NAMES={start:"Start",klan:"Klan",wojny:"Wojny",czlonkowie:"Członkowie",poradnik:"Poradnik",dolacz:"Dołącz"};

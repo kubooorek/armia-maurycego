@@ -243,8 +243,12 @@ warArchive.forEach(x => { if (x.end && x.end < nowStamp) x.state = "warEnded"; }
 warArchive = warArchive.slice(0, 40);
 
 /* ---------- Kary za łamanie zasad wojennych (tylko zwykłe wojny, 2 ataki) ---------- */
-let penalties = Array.isArray(old?.penalties) ? old.penalties : [];
-const addPen = p => { if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+// konta zwolnione z kar (lista KARY_ZWOLNIENI w index.html)
+let karyZw = [];
+try { const h = await readFile(new URL("../index.html", import.meta.url), "utf8"); const m = h.match(/const KARY_ZWOLNIENI\s*=\s*\[([\s\S]*?)\n\];/);
+  if (m) karyZw = [...m[1].matchAll(/"(#[0-9A-Z]+)"/g)].map(x => x[1]); } catch (e) { console.warn("index.html (zwolnieni z kar) niedostępny:", e.message); }
+let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag));
+const addPen = p => { if (karyZw.includes(p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
 const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
 if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
   const W = currentWar, byPos = Object.fromEntries(W.members.map(m => [m.pos, m]));
