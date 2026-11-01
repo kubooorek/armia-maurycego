@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T12:05:00.052Z",
+  "updated": "2026-11-01T12:15:52.136Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -15,7 +15,7 @@
       "name": "ARMIA MAURYCEGO",
       "stars": 67,
       "pct": 92.56,
-      "attacks": 32,
+      "attacks": 33,
       "bases": [
         {
           "pos": 1,
@@ -471,6 +471,12 @@
             "pct": 100,
             "order": 24,
             "target": "12. zoro"
+          },
+          {
+            "stars": 2,
+            "pct": 94,
+            "order": 65,
+            "target": "8. Nrkh1"
           }
         ]
       },
@@ -827,6 +833,13 @@
   ],
   "events": [
     {
+      "t": "2026-11-01T12:15:51.193Z",
+      "type": "th",
+      "name": "krupnik",
+      "from": 4,
+      "to": 5
+    },
+    {
       "t": "2026-11-01T09:01:12.690Z",
       "type": "th",
       "name": "TwojaSiora",
@@ -1097,6 +1110,10 @@
             {
               "stars": 3,
               "pct": 100
+            },
+            {
+              "stars": 2,
+              "pct": 94
             }
           ]
         },
@@ -2052,8 +2069,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "101|224081444|222872385|14450|123|53365|95655|0|57|100|12",
-      "last": "2026-11-01T10:01:10.371Z",
+      "sig": "102|224930078|223698045|14450|123|53365|95655|0|57|100|12",
+      "last": "2026-11-01T12:15:52.136Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -2077,8 +2094,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "15|465232502|511499412|53920|23588|84190|216205|0|2054|102|9",
-      "last": "2026-10-31T19:15:49.573Z",
+      "sig": "15|465308854|511552452|53920|23588|84190|216205|0|2054|102|9",
+      "last": "2026-11-01T12:15:52.136Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -2142,8 +2159,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "27||||||||||9",
-      "last": "2026-11-01T12:05:00.051Z",
+      "sig": "27|59515687|51304197|3000|26|0|0|0|0|37|9",
+      "last": "2026-11-01T12:15:52.136Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2157,8 +2174,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
-      "sig": "12|24909052|23210315|600|12|5885|9125|0|21|35|7",
-      "last": "2026-11-01T01:45:50.362Z",
+      "sig": "12|25118601|23467326|600|12|5885|9125|0|21|35|7",
+      "last": "2026-11-01T12:15:52.136Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
@@ -2242,8 +2259,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|900624|811385|0|0|0|0|0|0|12|4",
-      "last": "2026-10-31T21:16:01.823Z",
+      "sig": "0|900624|811385|0|0|0|0|0|0|13|5",
+      "last": "2026-11-01T12:15:52.136Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -2755,7 +2772,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 101,
+      "given": 102,
       "received": 144,
       "trophies": 284,
       "profile": {
@@ -2833,8 +2850,8 @@
         "cg": 14450,
         "don": 123,
         "capLoot": 53365,
-        "gold": 224081444,
-        "elixir": 222872385,
+        "gold": 224930078,
+        "elixir": 223698045,
         "capContrib": 95655,
         "wins": 0
       }
@@ -3134,7 +3151,7 @@
       "role": "member",
       "th": 9,
       "given": 15,
-      "received": 142,
+      "received": 143,
       "trophies": 210,
       "profile": {
         "level": 102,
@@ -3175,8 +3192,8 @@
         "cg": 53920,
         "don": 23588,
         "capLoot": 84190,
-        "gold": 465232502,
-        "elixir": 511499412,
+        "gold": 465308854,
+        "elixir": 511552452,
         "capContrib": 216205,
         "wins": 0
       }
@@ -4007,7 +4024,77 @@
       "th": 9,
       "given": 27,
       "received": 0,
-      "trophies": 97
+      "trophies": 97,
+      "profile": {
+        "level": 37,
+        "trophies": 97,
+        "best": 149,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 45.5,
+        "troops": 23.9,
+        "spells": 75,
+        "heroes": 66.7,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 2,
+            "need": 10
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 3000,
+        "don": 26,
+        "capLoot": 0,
+        "gold": 59515687,
+        "elixir": 51304197,
+        "capContrib": 0,
+        "wins": 0
+      }
     },
     {
       "name": "my name billa",
@@ -4218,8 +4305,8 @@
         "cg": 600,
         "don": 12,
         "capLoot": 5885,
-        "gold": 24909052,
-        "elixir": 23210315,
+        "gold": 25118601,
+        "elixir": 23467326,
         "capContrib": 9125,
         "wins": 0
       }
@@ -4553,6 +4640,11 @@
           {
             "name": "Barbarian King",
             "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
             "max": 110
           }
         ]
@@ -5062,12 +5154,12 @@
       "name": "krupnik",
       "tag": "#R2UJV2VJR",
       "role": "member",
-      "th": 4,
+      "th": 5,
       "given": 0,
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 12,
+        "level": 13,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -5085,11 +5177,17 @@
         ]
       },
       "rush": {
-        "pct": 0,
-        "troops": 0,
+        "pct": 8.3,
+        "troops": 8.3,
         "spells": 0,
         "heroes": 0,
-        "top": []
+        "top": [
+          {
+            "n": "Balon",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
       },
       "ach": {
         "cg": 0,
