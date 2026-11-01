@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T08:15:58.354Z",
+  "updated": "2026-11-01T08:31:03.842Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 57,
-      "pct": 80.4,
-      "attacks": 27,
+      "stars": 59,
+      "pct": 84.16,
+      "attacks": 28,
       "bases": [
         {
           "pos": 1,
@@ -188,7 +188,7 @@
         {
           "pos": 8,
           "th": 10,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 9,
@@ -379,7 +379,14 @@
         "tag": "#RPR0L809R",
         "pos": 8,
         "th": 10,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 94,
+            "order": 56,
+            "target": "8. Nrkh1"
+          }
+        ]
       },
       {
         "name": "tak",
@@ -920,7 +927,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 57,
+      "us": 59,
       "them": 68,
       "final": false,
       "members": [
@@ -995,7 +1002,12 @@
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 94
+            }
+          ]
         },
         {
           "name": "tak",
