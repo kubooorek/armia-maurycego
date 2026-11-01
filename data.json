@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T11:47:08.958Z",
+  "updated": "2026-11-01T12:01:23.559Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -2082,8 +2082,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "70|425547103|387887457|10100|244|27320|68905|0|29|74|10",
-      "last": "2026-11-01T08:45:58.014Z",
+      "sig": "70|425547103|387887457|10100|244|27320|69255|0|29|74|10",
+      "last": "2026-11-01T12:01:23.558Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -2127,8 +2127,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "308||||||||||9",
-      "last": "2026-11-01T11:47:08.957Z",
+      "sig": "308|83645534|69559630|5100|306|0|17870|0|12|48|9",
+      "last": "2026-11-01T12:01:23.558Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -2222,8 +2222,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0||||||||||6",
-      "last": "2026-11-01T11:47:08.957Z",
+      "sig": "0|5801236|5650670|0|0|0|0|0|0|22|6",
+      "last": "2026-11-01T12:01:23.558Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -3197,7 +3197,7 @@
         "warStars": 29,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 68905,
+        "capital": 69255,
         "warPref": "in",
         "heroes": [
           {
@@ -3246,7 +3246,7 @@
         "capLoot": 27320,
         "gold": 425547103,
         "elixir": 387887457,
-        "capContrib": 68905,
+        "capContrib": 69255,
         "wins": 0
       }
     },
@@ -3806,7 +3806,77 @@
       "th": 9,
       "given": 308,
       "received": 504,
-      "trophies": 299
+      "trophies": 299,
+      "profile": {
+        "level": 48,
+        "trophies": 299,
+        "best": 308,
+        "league": "Skeleton League 2",
+        "warStars": 12,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 17870,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 40.4,
+        "troops": 30.8,
+        "spells": 47.1,
+        "heroes": 53.3,
+        "top": [
+          {
+            "n": "Goblin",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 4,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5100,
+        "don": 306,
+        "capLoot": 0,
+        "gold": 83645534,
+        "elixir": 69559630,
+        "capContrib": 17870,
+        "wins": 0
+      }
     },
     {
       "name": "SZAR3",
@@ -4294,7 +4364,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
@@ -4337,7 +4407,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 4,
+            "level": 5,
             "max": 110
           },
           {
@@ -4348,10 +4418,10 @@
         ]
       },
       "rush": {
-        "pct": 19.6,
+        "pct": 17.5,
         "troops": 2.9,
-        "spells": 33.3,
-        "heroes": 60,
+        "spells": 30.8,
+        "heroes": 50,
         "top": [
           {
             "n": "Zaklęcie szału",
@@ -4359,14 +4429,14 @@
             "need": 4
           },
           {
-            "n": "Król Barbarzyńców",
-            "lvl": 4,
-            "need": 10
-          },
-          {
             "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 5,
+            "need": 10
           },
           {
             "n": "Zaklęcie leczenia",
@@ -4910,7 +4980,67 @@
       "th": 6,
       "given": 0,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 22,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 33.3,
+        "troops": 23.5,
+        "spells": 75,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Mag",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Barbarzyńca",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Łuczniczka",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Goblin",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 5801236,
+        "elixir": 5650670,
+        "capContrib": 0,
+        "wins": 0
+      }
     },
     {
       "name": "Filox74",
