@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T22:45:50.008Z",
+  "updated": "2026-11-01T23:01:18.623Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2418,12 +2418,12 @@
     }
   },
   "dayBase": {
-    "day": "2026-11-01",
-    "since": "2026-11-01T17:01:14.456Z",
+    "day": "2026-11-02",
+    "since": "2026-11-01T23:01:18.610Z",
     "players": {
       "#VP9PLGLV": {
         "warStars": 1244,
-        "don": 81114,
+        "don": 81149,
         "cg": 94700,
         "capLoot": 1208549
       },
@@ -2473,7 +2473,7 @@
         "warStars": 2054,
         "don": 23588,
         "cg": 53920,
-        "capLoot": 84190
+        "capLoot": 84375
       },
       "#RPR0L809R": {
         "warStars": 29,
@@ -2567,7 +2567,7 @@
       },
       "#GVGRVCQJR": {
         "warStars": 4,
-        "don": 451,
+        "don": 456,
         "cg": 2400,
         "capLoot": 7665
       },
@@ -2581,7 +2581,7 @@
         "warStars": 6,
         "don": 73,
         "cg": 0,
-        "capLoot": 0
+        "capLoot": 2290
       },
       "#R2PCVYQG2": {
         "warStars": 21,
@@ -2687,8 +2687,29 @@
       }
     }
   },
-  "potd": null,
-  "potdHistory": [],
+  "potd": {
+    "day": "2026-11-01",
+    "picked": "2026-11-01T23:01:18.610Z",
+    "name": "erykos",
+    "tag": "#R9GPGL0QJ",
+    "th": 7,
+    "role": "member",
+    "score": 5,
+    "stars": 0,
+    "don": 0,
+    "cg": 0,
+    "cap": 2290,
+    "att": 1,
+    "three": 0
+  },
+  "potdHistory": [
+    {
+      "day": "2026-11-01",
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "score": 5
+    }
+  ],
   "notified": {},
   "members": [
     {
