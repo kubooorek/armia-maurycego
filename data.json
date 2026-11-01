@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T12:45:45.351Z",
+  "updated": "2026-11-01T13:01:13.667Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 67,
-      "pct": 92.56,
-      "attacks": 33,
+      "stars": 68,
+      "pct": 93.96,
+      "attacks": 34,
       "bases": [
         {
           "pos": 1,
@@ -173,7 +173,7 @@
         {
           "pos": 5,
           "th": 11,
-          "best": 1
+          "best": 2
         },
         {
           "pos": 6,
@@ -323,7 +323,14 @@
         "tag": "#LJYR92002",
         "pos": 3,
         "th": 12,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 98,
+            "order": 66,
+            "target": "5. Nima"
+          }
+        ]
       },
       {
         "name": "oggsgdjdjbd",
@@ -685,12 +692,19 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 124491,
+      "loot": 125780,
       "raids": 10,
-      "attacks": 110,
-      "districts": 30,
+      "attacks": 111,
+      "districts": 31,
       "medals": 0,
       "members": [
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8631
+        },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
@@ -718,13 +732,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7462
-        },
-        {
-          "name": "oggsgdjdjbd",
-          "tag": "#Q9CU9P908",
-          "attacks": 5,
-          "limit": 6,
-          "loot": 7342
         },
         {
           "name": "Barnes",
@@ -839,6 +846,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-01T13:01:12.826Z",
+      "type": "th",
+      "name": "CJ Alabama",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-01T12:15:51.193Z",
       "type": "th",
@@ -978,7 +992,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 67,
+      "us": 68,
       "them": 68,
       "final": false,
       "members": [
@@ -1013,7 +1027,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 98
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -2076,8 +2095,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "102|226376544|224831545|14450|123|56170|101542|0|57|100|12",
-      "last": "2026-11-01T12:45:45.350Z",
+      "sig": "128|226376544|224831545|14450|148|57300|101542|0|57|100|12",
+      "last": "2026-11-01T13:01:13.666Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -2246,8 +2265,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|5801236|5650670|0|0|0|0|0|0|22|6",
-      "last": "2026-11-01T12:01:23.558Z",
+      "sig": "0|5951236|5800670|0|0|0|0|0|0|22|6",
+      "last": "2026-11-01T13:01:13.666Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -2261,8 +2280,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|6902395|6718909|0|0|0|100|0|0|18|6",
-      "last": "2026-11-01T11:15:53.948Z",
+      "sig": "0|7420636|7303458|0|0|0|100|0|0|18|6",
+      "last": "2026-11-01T13:01:13.666Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -2271,8 +2290,8 @@
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|32789170|30673780|800|89|7180|16616|0|2|46|8",
-      "last": "2026-10-31T20:01:13.578Z",
+      "sig": "0|32789170|30673780|800|89|7180|16616|0|2|46|9",
+      "last": "2026-11-01T13:01:13.666Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -2779,7 +2798,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 102,
+      "given": 128,
       "received": 144,
       "trophies": 284,
       "profile": {
@@ -2790,7 +2809,7 @@
         "warStars": 57,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 101542,
+        "capital": 105636,
         "warPref": "in",
         "heroes": [
           {
@@ -2855,8 +2874,8 @@
       },
       "ach": {
         "cg": 14450,
-        "don": 123,
-        "capLoot": 56170,
+        "don": 148,
+        "capLoot": 57300,
         "gold": 226376544,
         "elixir": 224831545,
         "capContrib": 101542,
@@ -4227,7 +4246,7 @@
       "role": "member",
       "th": 8,
       "given": 358,
-      "received": 453,
+      "received": 479,
       "trophies": 349,
       "profile": {
         "level": 45,
@@ -4909,7 +4928,7 @@
       "name": "CJ Alabama",
       "tag": "#GV0P9JL8Q",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 0,
       "received": 0,
       "trophies": 0,
@@ -5029,8 +5048,8 @@
         ]
       },
       "rush": {
-        "pct": 33.3,
-        "troops": 23.5,
+        "pct": 31.8,
+        "troops": 22.2,
         "spells": 75,
         "heroes": 0,
         "top": [
@@ -5065,8 +5084,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 5801236,
-        "elixir": 5650670,
+        "gold": 5951236,
+        "elixir": 5800670,
         "capContrib": 0,
         "wins": 0
       }
@@ -5249,8 +5268,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 6902395,
-        "elixir": 6718909,
+        "gold": 7420636,
+        "elixir": 7303458,
         "capContrib": 100,
         "wins": 0
       }
