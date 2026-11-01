@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T08:31:03.842Z",
+  "updated": "2026-11-01T08:45:58.015Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 59,
-      "pct": 84.16,
-      "attacks": 28,
+      "stars": 60,
+      "pct": 84.28,
+      "attacks": 29,
       "bases": [
         {
           "pos": 1,
@@ -148,7 +148,7 @@
       "name": "بچهای لارج",
       "stars": 68,
       "pct": 91.84,
-      "attacks": 28,
+      "attacks": 30,
       "bases": [
         {
           "pos": 1,
@@ -198,7 +198,7 @@
         {
           "pos": 10,
           "th": 10,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 11,
@@ -385,6 +385,12 @@
             "pct": 94,
             "order": 56,
             "target": "8. Nrkh1"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 57,
+            "target": "10. spartan"
           }
         ]
       },
@@ -927,7 +933,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 59,
+      "us": 60,
       "them": 68,
       "final": false,
       "members": [
@@ -1006,6 +1012,10 @@
             {
               "stars": 2,
               "pct": 94
+            },
+            {
+              "stars": 3,
+              "pct": 100
             }
           ]
         },
@@ -2013,8 +2023,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "65|425384463|387736057|10100|239|27320|68905|0|24|74|10",
-      "last": "2026-10-31T21:01:15.639Z",
+      "sig": "70|425547103|387887457|10100|244|27320|68905|0|29|74|10",
+      "last": "2026-11-01T08:45:58.014Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -2078,8 +2088,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
-      "sig": "0|69127572|67789541|0|68|0|3870|0|0|41|8",
-      "last": "2026-11-01T02:31:06.992Z",
+      "sig": "0|70064428|68706422|0|68|0|3870|0|0|41|8",
+      "last": "2026-11-01T08:45:58.014Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
@@ -3117,7 +3127,7 @@
       "tag": "#RPR0L809R",
       "role": "member",
       "th": 10,
-      "given": 65,
+      "given": 70,
       "received": 0,
       "trophies": 295,
       "profile": {
@@ -3125,7 +3135,7 @@
         "trophies": 295,
         "best": 400,
         "league": "Barbarian League 6",
-        "warStars": 24,
+        "warStars": 29,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 68905,
@@ -3173,10 +3183,10 @@
       },
       "ach": {
         "cg": 10100,
-        "don": 239,
+        "don": 244,
         "capLoot": 27320,
-        "gold": 425384463,
-        "elixir": 387736057,
+        "gold": 425547103,
+        "elixir": 387887457,
         "capContrib": 68905,
         "wins": 0
       }
@@ -4073,8 +4083,8 @@
         "cg": 0,
         "don": 68,
         "capLoot": 0,
-        "gold": 69127572,
-        "elixir": 67789541,
+        "gold": 70064428,
+        "elixir": 68706422,
         "capContrib": 3870,
         "wins": 0
       }
@@ -4134,7 +4144,7 @@
       "role": "member",
       "th": 8,
       "given": 358,
-      "received": 428,
+      "received": 433,
       "trophies": 349,
       "profile": {
         "level": 44,
