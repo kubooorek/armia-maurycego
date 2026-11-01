@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T20:15:46.208Z",
+  "updated": "2026-11-01T20:31:02.987Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -4258,9 +4258,9 @@
         ]
       },
       "rush": {
-        "pct": 6.3,
+        "pct": 4.8,
         "troops": 7.7,
-        "spells": 7.1,
+        "spells": 0,
         "heroes": 0,
         "top": [
           {
@@ -4275,11 +4275,6 @@
           },
           {
             "n": "Barbarzyńca",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie szału",
             "lvl": 3,
             "need": 4
           }
