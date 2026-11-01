@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T16:31:06.593Z",
+  "updated": "2026-11-01T16:46:02.230Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -20,7 +20,7 @@
         {
           "pos": 1,
           "th": 15,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 2,
@@ -146,9 +146,9 @@
     },
     "them": {
       "name": "بچهای لارج",
-      "stars": 71,
-      "pct": 96.48,
-      "attacks": 33,
+      "stars": 74,
+      "pct": 99.84,
+      "attacks": 34,
       "bases": [
         {
           "pos": 1,
@@ -1018,7 +1018,7 @@
       "perMember": 2,
       "state": "inWar",
       "us": 75,
-      "them": 71,
+      "them": 74,
       "final": false,
       "members": [
         {
@@ -2288,8 +2288,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "1|12170442|11079009|0|0|0|400|0|14|27|7",
-      "last": "2026-10-31T17:31:04.108Z",
+      "sig": "1|12401890|11144121|0|0|0|400|0|14|28|7",
+      "last": "2026-11-01T16:46:02.229Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -3472,8 +3472,8 @@
         ]
       },
       "rush": {
-        "pct": 24.9,
-        "troops": 13.9,
+        "pct": 24.3,
+        "troops": 12.7,
         "spells": 25,
         "heroes": 37.1,
         "top": [
@@ -3789,7 +3789,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
@@ -4652,7 +4652,7 @@
       "received": 105,
       "trophies": 244,
       "profile": {
-        "level": 27,
+        "level": 28,
         "trophies": 244,
         "best": 244,
         "league": "Skeleton League 1",
@@ -4670,7 +4670,7 @@
         ]
       },
       "rush": {
-        "pct": 11.8,
+        "pct": 11.4,
         "troops": 0,
         "spells": 40,
         "heroes": 0,
@@ -4691,8 +4691,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 12170442,
-        "elixir": 11079009,
+        "gold": 12401890,
+        "elixir": 11144121,
         "capContrib": 400,
         "wins": 0
       }
