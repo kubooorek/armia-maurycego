@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T13:45:44.514Z",
+  "updated": "2026-11-01T14:01:20.268Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -2301,8 +2301,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|7420636|7303458|0|0|0|100|0|0|18|6",
-      "last": "2026-11-01T13:01:13.666Z",
+      "sig": "0|7709314|7591999|0|0|0|100|0|0|18|6",
+      "last": "2026-11-01T14:01:20.267Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3057,10 +3057,10 @@
       "th": 11,
       "given": 2441,
       "received": 3144,
-      "trophies": 362,
+      "trophies": 385,
       "profile": {
         "level": 104,
-        "trophies": 362,
+        "trophies": 385,
         "best": 2156,
         "league": "Archer League 8",
         "warStars": 223,
@@ -5289,8 +5289,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 7420636,
-        "elixir": 7303458,
+        "gold": 7709314,
+        "elixir": 7591999,
         "capContrib": 100,
         "wins": 0
       }
