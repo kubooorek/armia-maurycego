@@ -1,749 +1,377 @@
 {
-  "updated": "2026-11-01T17:31:01.362Z",
+  "updated": "2026-11-01T17:45:57.034Z",
   "clanLevel": 3,
   "memberCount": 44,
-  "cwlLeague": "Unranked",
+  "cwlLeague": "Silver League I",
   "warWinStreak": 11,
   "warWins": 13,
-  "currentWar": {
-    "state": "warEnded",
-    "size": 25,
-    "perMember": 2,
-    "start": "20261031T171000.000Z",
-    "end": "20261101T171000.000Z",
-    "us": {
-      "name": "ARMIA MAURYCEGO",
-      "stars": 75,
-      "pct": 100,
-      "attacks": 38,
-      "bases": [
-        {
-          "pos": 1,
-          "th": 15,
-          "best": 3
-        },
-        {
-          "pos": 2,
-          "th": 12,
-          "best": 3
-        },
-        {
-          "pos": 3,
-          "th": 12,
-          "best": 2
-        },
-        {
-          "pos": 4,
-          "th": 12,
-          "best": 3
-        },
-        {
-          "pos": 5,
-          "th": 13,
-          "best": 3
-        },
-        {
-          "pos": 6,
-          "th": 11,
-          "best": 3
-        },
-        {
-          "pos": 7,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 8,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 9,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 10,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 11,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 12,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 13,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 14,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 15,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 16,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 17,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 18,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 19,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 20,
-          "th": 7,
-          "best": 3
-        },
-        {
-          "pos": 21,
-          "th": 7,
-          "best": 3
-        },
-        {
-          "pos": 22,
-          "th": 7,
-          "best": 3
-        },
-        {
-          "pos": 23,
-          "th": 7,
-          "best": 3
-        },
-        {
-          "pos": 24,
-          "th": 6,
-          "best": 3
-        },
-        {
-          "pos": 25,
-          "th": 5,
-          "best": 3
-        }
-      ]
-    },
-    "them": {
-      "name": "بچهای لارج",
-      "stars": 74,
-      "pct": 99.84,
-      "attacks": 34,
-      "bases": [
-        {
-          "pos": 1,
-          "th": 15,
-          "best": 3
-        },
-        {
-          "pos": 2,
-          "th": 13,
-          "best": 3
-        },
-        {
-          "pos": 3,
-          "th": 12,
-          "best": 3
-        },
-        {
-          "pos": 4,
-          "th": 11,
-          "best": 3
-        },
-        {
-          "pos": 5,
-          "th": 11,
-          "best": 3
-        },
-        {
-          "pos": 6,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 7,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 8,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 9,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 10,
-          "th": 10,
-          "best": 3
-        },
-        {
-          "pos": 11,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 12,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 13,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 14,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 15,
-          "th": 9,
-          "best": 3
-        },
-        {
-          "pos": 16,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 17,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 18,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 19,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 20,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 21,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 22,
-          "th": 7,
-          "best": 3
-        },
-        {
-          "pos": 23,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 24,
-          "th": 8,
-          "best": 3
-        },
-        {
-          "pos": 25,
-          "th": 7,
-          "best": 3
-        }
-      ]
-    },
-    "members": [
+  "currentWar": null,
+  "cwl": {
+    "season": "2026-11-01",
+    "state": "preparation",
+    "rounds": 7,
+    "place": 4,
+    "groupSize": 8,
+    "standings": [
       {
-        "name": "KUBOOOREK",
-        "tag": "#VP9PLGLV",
-        "pos": 1,
-        "th": 15,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 18,
-            "target": "1. ❤VAHID❤",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 64,
-            "target": "3. Nima.ri2",
-            "seen": null
-          }
-        ]
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "Albaroon.2",
-        "tag": "#GYUJR2URJ",
-        "pos": 2,
-        "th": 12,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 15,
-            "target": "2. mikaiil.zoro",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 33,
-            "target": "4. hossein",
-            "seen": null
-          }
-        ]
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "MAQOS",
-        "tag": "#LJYR92002",
-        "pos": 3,
-        "th": 12,
-        "attacks": [
-          {
-            "stars": 2,
-            "pct": 98,
-            "order": 66,
-            "target": "5. Nima",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 67,
-            "target": "6. leon",
-            "seen": null
-          }
-        ]
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "oggsgdjdjbd",
-        "tag": "#Q9CU9P908",
-        "pos": 4,
-        "th": 12,
-        "attacks": [
-          {
-            "stars": 1,
-            "pct": 86,
-            "order": 19,
-            "target": "4. hossein",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 61,
-            "target": "9. OMID SHOUGHI",
-            "seen": null
-          }
-        ]
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "Toster290",
-        "tag": "#GJJ90QGVQ",
-        "pos": 5,
-        "th": 13,
-        "attacks": [
-          {
-            "stars": 1,
-            "pct": 63,
-            "order": 55,
-            "target": "5. Nima",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 70,
-            "target": "8. Nrkh1",
-            "seen": null
-          }
-        ]
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "VipeR",
-        "tag": "#22R8PLCU8",
-        "pos": 6,
-        "th": 11,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 68,
-            "target": "7. koroush",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 69,
-            "target": "5. Nima",
-            "seen": null
-          }
-        ]
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "monte",
-        "tag": "#QYJUV90JY",
-        "pos": 7,
-        "th": 10,
-        "attacks": [
-          {
-            "stars": 1,
-            "pct": 57,
-            "order": 53,
-            "target": "7. koroush",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 54,
-            "target": "13. صادق",
-            "seen": null
-          }
-        ]
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       },
       {
-        "name": "Cwel123",
-        "tag": "#RPR0L809R",
-        "pos": 8,
-        "th": 10,
-        "attacks": [
-          {
-            "stars": 2,
-            "pct": 94,
-            "order": 56,
-            "target": "8. Nrkh1",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 57,
-            "target": "10. spartan",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "tak",
-        "tag": "#Y02PYY922",
-        "pos": 9,
-        "th": 9,
-        "attacks": [
-          {
-            "stars": 2,
-            "pct": 93,
-            "order": 31,
-            "target": "9. OMID SHOUGHI",
-            "seen": null
-          },
-          {
-            "stars": 2,
-            "pct": 97,
-            "order": 34,
-            "target": "10. spartan",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Kojak",
-        "tag": "#G8VGC2VRL",
-        "pos": 10,
-        "th": 9,
-        "attacks": [
-          {
-            "stars": 2,
-            "pct": 71,
-            "order": 32,
-            "target": "10. spartan",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Belaska",
-        "tag": "#GU0R2J8R0",
-        "pos": 11,
-        "th": 9,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 12,
-            "target": "11. bahar",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 60,
-            "target": "19. pourya",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Brann",
-        "tag": "#LC8VRR9R2",
-        "pos": 12,
-        "th": 9,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 24,
-            "target": "12. zoro",
-            "seen": null
-          },
-          {
-            "stars": 2,
-            "pct": 94,
-            "order": 65,
-            "target": "8. Nrkh1",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "zuzia",
-        "tag": "#R8V9U9VLJ",
-        "pos": 13,
-        "th": 9,
-        "attacks": []
-      },
-      {
-        "name": "Barnes",
-        "tag": "#LQVRCRUYR",
-        "pos": 14,
-        "th": 8,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 27,
-            "target": "17. Erfzamani",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 28,
-            "target": "16. v0r0jak",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "KuN",
-        "tag": "#YLLQL2VUP",
-        "pos": 15,
-        "th": 8,
-        "attacks": [
-          {
-            "stars": 2,
-            "pct": 94,
-            "order": 38,
-            "target": "15. ❤Ranjer❤",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 47,
-            "target": "20. marjan",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "SHA☆ZAM!",
-        "tag": "#GVGRVCQJR",
-        "pos": 16,
-        "th": 8,
-        "attacks": [
-          {
-            "stars": 1,
-            "pct": 69,
-            "order": 21,
-            "target": "16. v0r0jak",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 25,
-            "target": "21. ریحانه",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Mimbosz",
-        "tag": "#RY0QPVCCY",
-        "pos": 17,
-        "th": 9,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 26,
-            "target": "14. danjer",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 39,
-            "target": "15. ❤Ranjer❤",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "SZAR3",
-        "tag": "#RYLR2C92V",
-        "pos": 18,
-        "th": 8,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 9,
-            "target": "18. alireza",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Darui",
-        "tag": "#LUQJC2JGY",
-        "pos": 19,
-        "th": 8,
-        "attacks": []
-      },
-      {
-        "name": "GoldBelt",
-        "tag": "#R9QQPG9JP",
-        "pos": 20,
-        "th": 7,
-        "attacks": [
-          {
-            "stars": 1,
-            "pct": 76,
-            "order": 45,
-            "target": "20. marjan",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 46,
-            "target": "24. آیدین",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "erykos",
-        "tag": "#R9GPGL0QJ",
-        "pos": 21,
-        "th": 7,
-        "attacks": [
-          {
-            "stars": 1,
-            "pct": 54,
-            "order": 5,
-            "target": "21. ریحانه",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Riczard",
-        "tag": "#R2PCVYQG2",
-        "pos": 22,
-        "th": 7,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 48,
-            "target": "25. HOSEIN",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "Marsyllia",
-        "tag": "#R0VJLRGQ0",
-        "pos": 23,
-        "th": 7,
-        "attacks": [
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 1,
-            "target": "22. علی",
-            "seen": null
-          },
-          {
-            "stars": 3,
-            "pct": 100,
-            "order": 3,
-            "target": "23. جنگجویان جهنم",
-            "seen": null
-          }
-        ]
-      },
-      {
-        "name": "samurai024",
-        "tag": "#RYUV9V9RC",
-        "pos": 24,
-        "th": 6,
-        "attacks": []
-      },
-      {
-        "name": "maati",
-        "tag": "#GLV9998PC",
-        "pos": 25,
-        "th": 5,
-        "attacks": []
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 0,
+        "pct": 0,
+        "wins": 0,
+        "played": 0
       }
-    ]
+    ],
+    "wars": [
+      {
+        "round": 1,
+        "state": "preparation",
+        "size": 15,
+        "perMember": 1,
+        "start": "20261102T173507.000Z",
+        "end": "20261103T173507.000Z",
+        "us": {
+          "name": "ARMIA MAURYCEGO",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 17,
+              "th": 8,
+              "best": 0
+            }
+          ]
+        },
+        "them": {
+          "name": "React",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 16,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 12,
+              "best": 0
+            }
+          ]
+        },
+        "members": [
+          {
+            "name": "KUBOOOREK",
+            "tag": "#VP9PLGLV",
+            "pos": 1,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Baku",
+            "tag": "#LUGR0YQY0",
+            "pos": 2,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Albaroon.2",
+            "tag": "#GYUJR2URJ",
+            "pos": 3,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MAQOS",
+            "tag": "#LJYR92002",
+            "pos": 4,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MrDefPL",
+            "tag": "#8UCPRGC8",
+            "pos": 5,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "oggsgdjdjbd",
+            "tag": "#Q9CU9P908",
+            "pos": 6,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "VipeR",
+            "tag": "#22R8PLCU8",
+            "pos": 7,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "monte",
+            "tag": "#QYJUV90JY",
+            "pos": 8,
+            "th": 10,
+            "attacks": []
+          },
+          {
+            "name": "Cwel123",
+            "tag": "#RPR0L809R",
+            "pos": 9,
+            "th": 10,
+            "attacks": []
+          },
+          {
+            "name": "tak",
+            "tag": "#Y02PYY922",
+            "pos": 10,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Kojak",
+            "tag": "#G8VGC2VRL",
+            "pos": 11,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Belaska",
+            "tag": "#GU0R2J8R0",
+            "pos": 12,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Brann",
+            "tag": "#LC8VRR9R2",
+            "pos": 13,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "vvd",
+            "tag": "#GQULCR98R",
+            "pos": 14,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Barnes",
+            "tag": "#LQVRCRUYR",
+            "pos": 17,
+            "th": 8,
+            "attacks": []
+          }
+        ]
+      }
+    ],
+    "top": []
   },
-  "cwl": null,
-  "visits": 58,
+  "visits": 59,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -2316,8 +1944,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "308|83645534|69559630|5100|306|0|17870|0|12|48|9",
-      "last": "2026-11-01T12:01:23.558Z",
+      "sig": "308|84562267|69920126|5100|306|0|17870|0|12|48|9",
+      "last": "2026-11-01T17:45:57.026Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -2361,8 +1989,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "75|22537534|21876442|0|73|0|700|0|6|34|7",
-      "last": "2026-10-31T17:31:04.108Z",
+      "sig": "75|22537534|21876442|0|73|0|700|0|6|35|7",
+      "last": "2026-11-01T17:45:57.026Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -4391,8 +4019,8 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 83645534,
-        "elixir": 69559630,
+        "gold": 84562267,
+        "elixir": 69920126,
         "capContrib": 17870,
         "wins": 0
       }
@@ -4822,7 +4450,7 @@
       "received": 210,
       "trophies": 300,
       "profile": {
-        "level": 34,
+        "level": 35,
         "trophies": 300,
         "best": 300,
         "league": "Skeleton League 1",
@@ -4834,7 +4462,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
