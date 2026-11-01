@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T22:15:47.801Z",
+  "updated": "2026-11-01T22:45:50.008Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -4428,17 +4428,11 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
+        "pct": 0,
         "troops": 0,
-        "spells": 10,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 600,
