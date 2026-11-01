@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T08:01:24.211Z",
+  "updated": "2026-11-01T08:15:58.354Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -4068,6 +4068,55 @@
       }
     },
     {
+      "name": "Nateq",
+      "tag": "#LYUQYCU9G",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 41,
+        "trophies": 0,
+        "best": 678,
+        "league": "Skeleton League 2",
+        "warStars": 6,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 9685,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 13.8,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 80,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 2,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 1200,
+        "don": 139,
+        "capLoot": 6445,
+        "gold": 759050,
+        "elixir": 846575,
+        "capContrib": 9685,
+        "wins": 0
+      }
+    },
+    {
       "name": "SHA☆ZAM!",
       "tag": "#GVGRVCQJR",
       "role": "member",
@@ -4571,55 +4620,6 @@
         "gold": 7322588,
         "elixir": 7919737,
         "capContrib": 31434,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Nateq",
-      "tag": "#LYUQYCU9G",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 41,
-        "trophies": 0,
-        "best": 678,
-        "league": "Skeleton League 2",
-        "warStars": 6,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 9685,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 13.8,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 80,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 2,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 1200,
-        "don": 139,
-        "capLoot": 6445,
-        "gold": 759050,
-        "elixir": 846575,
-        "capContrib": 9685,
         "wins": 0
       }
     },
