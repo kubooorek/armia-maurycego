@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T09:01:13.267Z",
+  "updated": "2026-11-01T09:16:10.999Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -1479,7 +1479,7 @@
       "avgTh": 8.4,
       "level": 3,
       "wins": 12,
-      "points": 16200
+      "points": 16300
     }
   ],
   "weekBase": {
@@ -2015,8 +2015,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "2421|363619059|340477887|15875|9366|10205|52473|0|223|104|11",
-      "last": "2026-10-31T19:15:49.573Z",
+      "sig": "2441|363619059|340477887|15875|9386|10205|52473|0|223|104|11",
+      "last": "2026-11-01T09:16:10.998Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -2050,8 +2050,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "359|123629755|114045529|7600|594|9310|29985|0|32|57|9",
-      "last": "2026-10-31T19:31:04.124Z",
+      "sig": "374|123629755|114045529|7600|609|9310|29985|0|32|57|9",
+      "last": "2026-11-01T09:16:10.998Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -2185,8 +2185,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|5926199|5805341|0|0|0|100|0|0|17|6",
-      "last": "2026-11-01T09:01:13.266Z",
+      "sig": "0|6367034|6246287|0|0|0|100|0|0|18|6",
+      "last": "2026-11-01T09:16:10.998Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -2939,7 +2939,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 2421,
+      "given": 2441,
       "received": 3078,
       "trophies": 362,
       "profile": {
@@ -3015,7 +3015,7 @@
       },
       "ach": {
         "cg": 15875,
-        "don": 9366,
+        "don": 9386,
         "capLoot": 10205,
         "gold": 363619059,
         "elixir": 340477887,
@@ -3240,8 +3240,8 @@
         ]
       },
       "rush": {
-        "pct": 76.5,
-        "troops": 59.4,
+        "pct": 76.4,
+        "troops": 59.6,
         "spells": 55.8,
         "heroes": 91.9,
         "top": [
@@ -3308,26 +3308,26 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 16,
+            "level": 17,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 16,
+            "level": 17,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 16,
+            "level": 17,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 26,
+        "pct": 24.9,
         "troops": 13.9,
         "spells": 25,
-        "heroes": 40,
+        "heroes": 37.1,
         "top": [
           {
             "n": "Golem",
@@ -3376,7 +3376,7 @@
       "tag": "#G8VGC2VRL",
       "role": "admin",
       "th": 9,
-      "given": 359,
+      "given": 374,
       "received": 2269,
       "trophies": 267,
       "profile": {
@@ -3408,8 +3408,8 @@
         ]
       },
       "rush": {
-        "pct": 9.8,
-        "troops": 16.9,
+        "pct": 8.9,
+        "troops": 15.3,
         "spells": 4.3,
         "heroes": 0,
         "top": [
@@ -3429,11 +3429,6 @@
             "need": 5
           },
           {
-            "n": "P.E.K.K.A",
-            "lvl": 2,
-            "need": 3
-          },
-          {
             "n": "Barbarzyńca",
             "lvl": 4,
             "need": 5
@@ -3442,12 +3437,17 @@
             "n": "Łuczniczka",
             "lvl": 4,
             "need": 5
+          },
+          {
+            "n": "Gigant",
+            "lvl": 4,
+            "need": 5
           }
         ]
       },
       "ach": {
         "cg": 7600,
-        "don": 594,
+        "don": 609,
         "capLoot": 9310,
         "gold": 123629755,
         "elixir": 114045529,
@@ -4151,7 +4151,7 @@
       "role": "member",
       "th": 8,
       "given": 358,
-      "received": 433,
+      "received": 453,
       "trophies": 349,
       "profile": {
         "level": 44,
@@ -5125,10 +5125,10 @@
       "role": "member",
       "th": 6,
       "given": 0,
-      "received": 45,
+      "received": 60,
       "trophies": 0,
       "profile": {
-        "level": 17,
+        "level": 18,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -5162,8 +5162,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 5926199,
-        "elixir": 5805341,
+        "gold": 6367034,
+        "elixir": 6246287,
         "capContrib": 100,
         "wins": 0
       }
