@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T19:15:48.156Z",
+  "updated": "2026-11-01T19:31:07.154Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2039,8 +2039,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|6377847|6262269|0|0|0|0|0|0|22|6",
-      "last": "2026-11-01T13:16:07.036Z",
+      "sig": "0|7017447|7002082|0|0|0|0|0|0|23|6",
+      "last": "2026-11-01T19:31:07.144Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -4624,17 +4624,11 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
+        "pct": 0,
         "troops": 0,
-        "spells": 10,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 5600,
@@ -5129,7 +5123,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 22,
+        "level": 23,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -5178,8 +5172,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 6377847,
-        "elixir": 6262269,
+        "gold": 7017447,
+        "elixir": 7002082,
         "capContrib": 0,
         "wins": 0
       }
