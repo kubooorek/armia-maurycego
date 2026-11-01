@@ -436,7 +436,8 @@
   .now-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
   .now-card b{display:block;font-family:Cinzel,serif;font-size:1.15rem;margin:2px 0} .now-card em{display:block;font-style:normal;font-size:.78rem;color:var(--muted)}
   .now-feed{margin-top:12px} .now-feed small{color:var(--muted);font-size:.76rem;white-space:nowrap}
-  .page-head{padding:38px 0 6px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 0%,rgba(232,180,74,.10),transparent 70%)}
+  .page-head{position:relative;overflow:hidden;padding:38px 0 6px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 0%,rgba(232,180,74,.10),transparent 70%)}
+  .page-head>.wrap{position:relative;z-index:1}
   .page-head h1{font-family:Cinzel,serif;font-size:clamp(1.7rem,4vw,2.4rem);margin:4px 0 6px} .page-head p{color:var(--muted);margin:0 0 14px}
   .page-sub{display:flex;gap:6px;flex-wrap:wrap;padding-bottom:14px} .page-sub a{font-size:.8rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:inherit;text-decoration:none}
   .page-sub a:hover{border-color:var(--gold);color:var(--gold2)}
@@ -2544,9 +2545,16 @@ function rushHtml(r){
   const c=$("#seasonChip"); c.textContent=chip; c.hidden=false;
   if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   // Delikatne efekty w nagłówku strony
-  const hero=document.querySelector("header"); if(!hero) return;
+  let hero=document.querySelector("header"); if(!hero) return;
   const cv=document.createElement("canvas"); cv.className="season-fx"; hero.prepend(cv);
-  const x=cv.getContext("2d"); let W,H; const fit=()=>{W=cv.width=hero.offsetWidth;H=cv.height=hero.offsetHeight;}; fit(); addEventListener("resize",fit);
+  const R0=(a,b)=>a+Math.random()*(b-a); let P=[];
+  const x=cv.getContext("2d"); let W=0,H=0; const fit=()=>{ const ow=W,oh=H; W=cv.width=hero.offsetWidth; H=cv.height=hero.offsetHeight;
+    if(!W||!H) return; if(!ow||!oh) P.forEach(p=>{p.x=R0(0,W);p.y=R0(0,H);}); else if(ow!==W||oh!==H) P.forEach(p=>{p.x=p.x/ow*W;p.y=p.y/oh*H;}); };
+  fit(); addEventListener("resize",fit);
+  // Na podstronach efekty idą do nagłówka aktualnej zakładki
+  addEventListener("am:page",e=>{ const el=e.detail==="start"?document.querySelector("header"):document.querySelector(`.page-head[data-page="${e.detail}"]`);
+    if(!el) return; hero=el; el.prepend(cv); fit(); });
+  setTimeout(fit,50);
   const R=(a,b)=>a+Math.random()*(b-a);
   const SET={
     halloween:{n:18,make:()=>({ch:Math.random()<.55?"🦇":(Math.random()<.5?"🎃":"🍂"),s:R(14,24),vx:R(-.4,.4),vy:R(-.35,-.1),a:R(.25,.55),w:R(0,6.28)})},
@@ -2554,7 +2562,7 @@ function rushHtml(r){
     nowyrok:{n:40,make:()=>({ch:null,s:R(1,2.4),vx:R(-.2,.2),vy:R(-.6,-.2),a:R(.4,1),w:R(0,6.28),col:["#f5d58a","#ffffff","#e8b44a","#ff7a70","#7aa2ff"][Math.floor(R(0,5))]})},
     urodziny:{n:16,make:()=>({ch:Math.random()<.6?"🎈":"🎉",s:R(16,26),vx:R(-.2,.2),vy:R(-.6,-.25),a:R(.35,.7),w:R(0,6.28)})}
   }[theme];
-  const P=Array.from({length:SET.n},()=>({...SET.make(),x:R(0,W),y:R(0,H)}));
+  P=Array.from({length:SET.n},()=>({...SET.make(),x:R(0,W||1),y:R(0,H||1)})); if(!W||!H) P.forEach(p=>{p.x=-999;});
   let run=true; document.addEventListener("visibilitychange",()=>{run=!document.hidden; if(run) requestAnimationFrame(f);});
   function f(){ if(!run) return; x.clearRect(0,0,W,H);
     for(const p of P){ p.w+=.02; p.x+=p.vx+Math.sin(p.w)*.3; p.y+=p.vy;
@@ -2594,7 +2602,8 @@ function rushHtml(r){
 
 /* ===== Gracz dnia (wybiera robot: kto wczoraj zrobił najwięcej dla klanu) ===== */
 (function(){
-  const P=AUTO&&AUTO.potd; if(!P||!P.name) return;
+  const P=AUTO&&AUTO.potd;
+  if(!P||!P.name){ $("#potd").innerHTML=`<div class="potd-head"><span class="fame-label" style="margin:0">🌟 Gracz dnia</span><small>codziennie po północy</small></div><p style="margin:8px 0 0;color:var(--muted);font-size:.9rem">Bot liczy, kto dzisiaj zdobędzie dla klanu najwięcej punktów: gwiazdki w wojnach, oddane wojska, Gry Klanowe i rajdy. Pierwszego Gracza dnia poznamy po północy.</p>`; $("#potd").hidden=false; return; }
   const m=MEMBERS.find(x=>x.tag===P.tag)||{name:P.name,th:P.th,role:"member"};
   const en=LANG==="en";
   const d=new Date(P.day+"T12:00:00Z");
@@ -3371,6 +3380,7 @@ let saveLayoutState=()=>{};
       final&&final.classList.toggle("lay-hide",!(page==="start"||page==="klan"));
       nav.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
       mtab.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
+      dispatchEvent(new CustomEvent("am:page",{detail:page}));
       history.replaceState(null,"",page==="start"?location.pathname+location.search:"#"+(id&&id!==page?id:page));
       document.querySelectorAll("body>section:not(.lay-hide),body>header:not(.lay-hide),body>footer").forEach(el=>{el.classList.remove("pg-in");void el.offsetWidth;el.classList.add("pg-in");});
       if(id&&id!==page&&!PAGES.some(p=>p[0]===id)) scrollToEl(id); else scrollTo({top:0});
