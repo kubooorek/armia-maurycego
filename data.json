@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-01T17:01:14.468Z",
+  "updated": "2026-11-01T17:15:48.466Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
-  "warWinStreak": 10,
-  "warWins": 12,
+  "warWinStreak": 11,
+  "warWins": 13,
   "currentWar": {
-    "state": "inWar",
+    "state": "warEnded",
     "size": 25,
     "perMember": 2,
     "start": "20261031T171000.000Z",
@@ -1054,10 +1054,10 @@
       "enemy": "بچهای لارج",
       "size": 25,
       "perMember": 2,
-      "state": "inWar",
+      "state": "warEnded",
       "us": 75,
       "them": 74,
-      "final": false,
+      "final": true,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -1631,7 +1631,7 @@
       "members": 44,
       "avgTh": 8.4,
       "level": 3,
-      "wins": 12,
+      "wins": 13,
       "points": 16300
     }
   ],
@@ -2072,14 +2072,91 @@
       "detail": "vs старше 18"
     },
     "tripleStreak": {
-      "value": 2,
+      "value": 4,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
-      "date": "2026-10-30"
+      "date": "2026-11-01"
     }
   },
   "weekWins": {},
   "penalties": [
+    {
+      "id": "20261031T171000.000Z:#GLV9998PC:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#GLV9998PC",
+      "name": "maati",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#RYUV9V9RC:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#RYUV9V9RC",
+      "name": "samurai024",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#R2PCVYQG2:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 1/2",
+      "tag": "#R2PCVYQG2",
+      "name": "Riczard",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#R9GPGL0QJ:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 1/2",
+      "tag": "#R9GPGL0QJ",
+      "name": "erykos",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#LUQJC2JGY:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#LUQJC2JGY",
+      "name": "Darui",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#RYLR2C92V:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 1/2",
+      "tag": "#RYLR2C92V",
+      "name": "SZAR3",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
+    {
+      "id": "20261031T171000.000Z:#R8V9U9VLJ:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#R8V9U9VLJ",
+      "name": "zuzia",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T17:15:47.615Z"
+    },
     {
       "id": "20261031T171000.000Z:#LJYR92002:steal",
       "type": "steal",
@@ -2354,8 +2431,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|1220359|1053804|0|0|0|0|0|0|14|5",
-      "last": "2026-11-01T16:31:06.592Z",
+      "sig": "0|1562773|1253564|0|0|0|0|0|0|14|5",
+      "last": "2026-11-01T17:15:48.457Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -5613,8 +5690,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 1220359,
-        "elixir": 1053804,
+        "gold": 1562773,
+        "elixir": 1253564,
         "capContrib": 0,
         "wins": 0
       }
@@ -5670,6 +5747,21 @@
     }
   ],
   "wars": [
+    {
+      "date": "2026-11-01",
+      "enemy": "بچهای لارج",
+      "size": 25,
+      "xp": 208,
+      "result": "win",
+      "us": {
+        "stars": 75,
+        "pct": 100
+      },
+      "them": {
+        "stars": 74,
+        "pct": 99.84
+      }
+    },
     {
       "date": "2026-10-30",
       "enemy": "старше 18",
