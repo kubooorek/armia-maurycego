@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T16:01:19.429Z",
+  "updated": "2026-11-01T16:15:52.690Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -705,7 +705,7 @@
     ]
   },
   "cwl": null,
-  "visits": 54,
+  "visits": 55,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -2015,7 +2015,7 @@
       "date": "2026-10-26"
     },
     "donSeason": {
-      "value": 8497,
+      "value": 8517,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
       "date": "2026-11-01"
@@ -2133,8 +2133,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "8497|2000000000|2000000000|94700|81094|1208549|1606215|0|1244|204|15",
-      "last": "2026-11-01T14:31:13.920Z",
+      "sig": "8517|2000000000|2000000000|94700|81114|1208549|1606215|0|1244|204|15",
+      "last": "2026-11-01T16:15:52.690Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2631,7 +2631,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 8497,
+      "given": 8517,
       "received": 3077,
       "trophies": 491,
       "profile": {
@@ -2686,7 +2686,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81094,
+        "don": 81114,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -4396,7 +4396,7 @@
       "role": "member",
       "th": 7,
       "given": 75,
-      "received": 190,
+      "received": 210,
       "trophies": 300,
       "profile": {
         "level": 34,
