@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T18:31:12.633Z",
+  "updated": "2026-11-01T18:46:05.143Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2054,8 +2054,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|7834314|7716999|0|0|0|100|0|0|18|6",
-      "last": "2026-11-01T15:45:52.836Z",
+      "sig": "0|7834314|7716999|0|0|0|100|0|0|19|6",
+      "last": "2026-11-01T18:46:05.135Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3851,8 +3851,8 @@
         ]
       },
       "rush": {
-        "pct": 25.5,
-        "troops": 32.8,
+        "pct": 24.5,
+        "troops": 31,
         "spells": 18.2,
         "heroes": 16.7,
         "top": [
@@ -5328,7 +5328,7 @@
       "received": 60,
       "trophies": 0,
       "profile": {
-        "level": 18,
+        "level": 19,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -5346,15 +5346,20 @@
         ]
       },
       "rush": {
-        "pct": 14.3,
+        "pct": 17.4,
         "troops": 0,
-        "spells": 75,
+        "spells": 66.7,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie błyskawicy",
             "lvl": 1,
             "need": 4
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 2
           }
         ]
       },
