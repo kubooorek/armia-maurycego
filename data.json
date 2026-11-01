@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T03:01:15.702Z",
+  "updated": "2026-11-01T03:31:04.208Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -13,9 +13,9 @@
     "end": "20261101T171000.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
-      "stars": 52,
-      "pct": 71.6,
-      "attacks": 24,
+      "stars": 57,
+      "pct": 80.4,
+      "attacks": 27,
       "bases": [
         {
           "pos": 1,
@@ -173,7 +173,7 @@
         {
           "pos": 5,
           "th": 11,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 6,
@@ -183,7 +183,7 @@
         {
           "pos": 7,
           "th": 10,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 8,
@@ -213,7 +213,7 @@
         {
           "pos": 13,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 14,
@@ -338,7 +338,14 @@
         "tag": "#GJJ90QGVQ",
         "pos": 5,
         "th": 13,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 63,
+            "order": 55,
+            "target": "5. Nima"
+          }
+        ]
       },
       {
         "name": "VipeR",
@@ -352,7 +359,20 @@
         "tag": "#QYJUV90JY",
         "pos": 7,
         "th": 10,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 57,
+            "order": 53,
+            "target": "7. koroush"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 54,
+            "target": "13. صادق"
+          }
+        ]
       },
       {
         "name": "Cwel123",
@@ -893,7 +913,7 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 52,
+      "us": 57,
       "them": 68,
       "final": false,
       "members": [
@@ -939,7 +959,12 @@
         {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 63
+            }
+          ]
         },
         {
           "name": "VipeR",
@@ -949,7 +974,16 @@
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 57
+            },
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Cwel123",
@@ -1857,6 +1891,17 @@
   },
   "weekWins": {},
   "penalties": [
+    {
+      "id": "20261031T171000.000Z:#QYJUV90JY:steal",
+      "type": "steal",
+      "detail": "nr 13, zanim zuzia zaatakował(a) swój numer",
+      "tag": "#QYJUV90JY",
+      "name": "monte",
+      "war": "20261031T171000.000Z",
+      "end": "20261101T171000.000Z",
+      "enemy": "بچهای لارج",
+      "t": "2026-11-01T03:31:03.075Z"
+    },
     {
       "id": "20261031T171000.000Z:#R9QQPG9JP:steal",
       "type": "steal",
