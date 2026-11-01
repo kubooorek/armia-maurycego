@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T00:15:52.365Z",
+  "updated": "2026-11-01T00:31:06.974Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -3692,16 +3692,16 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 41.4,
+        "pct": 40.4,
         "troops": 30.8,
         "spells": 47.1,
-        "heroes": 56.7,
+        "heroes": 53.3,
         "top": [
           {
             "n": "Goblin",
@@ -3719,11 +3719,6 @@
             "need": 4
           },
           {
-            "n": "Królowa Łuczniczek",
-            "lvl": 3,
-            "need": 10
-          },
-          {
             "n": "Uzdrowicielka",
             "lvl": 1,
             "need": 3
@@ -3732,6 +3727,11 @@
             "n": "Burzyciel",
             "lvl": 2,
             "need": 5
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 4,
+            "need": 10
           }
         ]
       },
