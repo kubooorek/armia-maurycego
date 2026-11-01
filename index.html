@@ -849,10 +849,54 @@
   .kto-skip{display:block;margin:10px auto 0;background:none;border:none;color:var(--muted);font:inherit;font-size:.78rem;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
   .kto-x{position:absolute;top:6px;right:10px;background:none;border:none;color:var(--muted);font-size:1.3rem;cursor:pointer}
   @media (max-width:760px){.lay-pages .kto{bottom:calc(78px + env(safe-area-inset-bottom));right:12px;left:12px;width:auto}}
+  /* ===== Logowanie + Mój panel ===== */
+  .lg-nav{position:relative}
+  .lg-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;border:1px solid rgba(232,180,74,.5);background:rgba(232,180,74,.08);color:var(--gold2);font:inherit;font-size:.82rem;font-weight:700;cursor:pointer}
+  .lg-btn:hover{background:rgba(232,180,74,.16)}
+  .lg-me{display:flex;align-items:center;gap:8px;padding:3px 12px 3px 3px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--text);font:inherit;cursor:pointer;text-align:left}
+  .lg-me:hover{border-color:rgba(232,180,74,.5)}
+  .lg-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#1a1408;background:linear-gradient(135deg,var(--gold2),#a8761d);flex:none}
+  .lg-nm{font-size:.82rem;font-weight:700;line-height:1.15;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .lg-nm small{display:block;font-size:.66rem;color:var(--muted);font-weight:500}
+  .lg-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:220px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px;box-shadow:0 14px 40px rgba(0,0,0,.5);z-index:160}
+  .lg-menu a,.lg-menu button{display:flex;align-items:center;gap:8px;width:100%;padding:9px 10px;border-radius:8px;background:none;border:none;color:var(--text);font:inherit;font-size:.86rem;cursor:pointer;text-align:left}
+  .lg-menu a:hover,.lg-menu button:hover{background:rgba(255,255,255,.05)} .lg-menu button.on{color:var(--gold2)}
+  .lg-sep{font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:8px 10px 2px;border-top:1px solid var(--line);margin-top:4px}
+  .lg-ov{position:fixed;inset:0;z-index:210;background:rgba(5,6,10,.78);backdrop-filter:blur(5px);display:grid;place-items:center;padding:16px;overflow:auto}
+  .lg-ov[hidden]{display:none}
+  .lg-card{position:relative;width:100%;max-width:440px;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:16px;padding:24px 24px 18px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  .lg-x{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer}
+  .lg-head{text-align:center;margin-bottom:14px} .lg-head img{height:58px;margin-bottom:6px} .lg-head h2{font-size:1.35rem;margin-bottom:4px} .lg-sub{color:var(--muted);font-size:.86rem}
+  .lg-form label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .lg-form input{display:block;width:100%;margin-top:5px;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:600 .98rem ui-monospace,monospace;letter-spacing:.02em;text-transform:none}
+  .lg-form input:focus{outline:none;border-color:var(--gold)}
+  .lg-help{margin:2px 0 10px;font-size:.82rem} .lg-help summary{cursor:pointer;color:var(--gold2);font-weight:600;list-style:none} .lg-help ol{margin:8px 0 0 18px;color:var(--muted);line-height:1.5} .lg-help li{margin-bottom:5px} .lg-help b{color:var(--text)}
+  .lg-err{background:rgba(217,83,79,.12);border:1px solid rgba(217,83,79,.45);color:#ff9b97;border-radius:9px;padding:8px 10px;font-size:.84rem;margin-bottom:10px}
+  .lg-go{width:100%;justify-content:center;padding:12px} .lg-go.busy{opacity:.6;pointer-events:none}
+  .lg-skip{display:block;width:100%;margin-top:8px;padding:11px;border-radius:12px;border:1px solid var(--line);background:none;color:var(--text);font:inherit;font-weight:700;cursor:pointer}
+  .lg-skip:hover{border-color:rgba(232,180,74,.5)}
+  .lg-note{color:var(--muted);font-size:.76rem;text-align:center;margin-top:12px;line-height:1.45}
+  #panel{padding-top:34px}
+  .pn-hello{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+  .pn-accs{display:flex;gap:6px;flex-wrap:wrap} .pn-accs button{padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--muted);font:inherit;font-size:.8rem;font-weight:600;cursor:pointer}
+  .pn-accs button.on{border-color:rgba(232,180,74,.55);color:var(--gold2);background:rgba(232,180,74,.08)} .pn-accs button:hover{color:var(--text)}
+  .pn-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+  .pn-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+  .pn-card small{display:block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .pn-card b{display:block;font-family:Cinzel,serif;font-size:1.3rem;color:var(--gold2);margin:4px 0 2px}
+  .pn-card em{display:block;font-style:normal;font-size:.76rem;color:var(--muted)} .pn-card em.ok{color:var(--green)} .pn-card em.warn{color:#f0a35c}
+  .pn-target{display:flex;gap:12px;align-items:center;padding:12px;border:1px solid rgba(232,180,74,.45);border-radius:12px;background:rgba(232,180,74,.06);margin-bottom:8px}
+  .pn-num{flex:none;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-family:Cinzel,serif;font-weight:800;font-size:1.25rem;color:var(--gold2);background:#2a2212;border:1px solid rgba(232,180,74,.5)}
+  .pn-target b{display:block;font-size:.95rem} .pn-target>div>span{font-size:.8rem;color:var(--muted)}
+  .pn-tip{margin:10px 0 0;font-size:.82rem;color:var(--gold2)}
+  .pn-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .pn-duo{margin-bottom:10px}
+  .pn-soon{font-size:.8rem;color:var(--muted);margin-top:4px}
+  @media(max-width:900px){.pn-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.lg-nm{display:none}.lg-me{padding:2px}.lg-btn span{display:none}.lg-btn{padding:6px 8px}.pn-card b{font-size:1.05rem}.pn-card{padding:12px}}
 </style>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="i-swords" viewBox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/><path d="M14.5 6.5 18 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/><path d="m3 19 2 2"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol><symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></symbol><symbol id="i-crown" viewBox="0 0 24 24"><path d="m2 6 4 11h12l4-11-6 5-4-7-4 7-6-5z"/><path d="M6 21h12"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-userplus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol><symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9 3 12 8 12 8s3-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-medal" viewBox="0 0 24 24"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><circle cx="12" cy="17" r="5"/></symbol><symbol id="i-castle" viewBox="0 0 24 24"><path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"/><path d="M18 11V4H6v7"/><path d="M15 22v-4a3 3 0 0 0-6 0v4"/><path d="M22 11V9M2 11V9M6 4V2M18 4V2M10 4V2M14 4V2"/></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol><symbol id="i-scroll" viewBox="0 0 24 24"><path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/></symbol><symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14M5 2h14"/><path d="M17 22v-4.17a2 2 0 0 0-.59-1.42L12 12l-4.41 4.41A2 2 0 0 0 7 17.83V22"/><path d="M7 2v4.17a2 2 0 0 0 .59 1.42L12 12l4.41-4.41A2 2 0 0 0 17 6.17V2"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></symbol><symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></symbol><symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></symbol><symbol id="i-versus" viewBox="0 0 24 24"><path d="M16 3h5v5M8 21H3v-5M21 3l-7 7M3 21l7-7"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol><symbol id="i-live" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9" opacity=".45"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol><symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/><rect x="2" y="6" width="20" height="12" rx="2"/></symbol><symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol><symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol><symbol id="i-coins" viewBox="0 0 24 24"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-leave" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></symbol><symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol><symbol id="i-warn" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></symbol></svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol><symbol id="i-swords" viewBox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4 4"/><path d="m19 21 2-2"/><path d="M14.5 6.5 18 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/><path d="m3 19 2 2"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol><symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></symbol><symbol id="i-crown" viewBox="0 0 24 24"><path d="m2 6 4 11h12l4-11-6 5-4-7-4 7-6-5z"/><path d="M6 21h12"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-userplus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol><symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9 3 12 8 12 8s3-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-medal" viewBox="0 0 24 24"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"/><path d="M11 12 5.12 2.2"/><path d="m13 12 5.88-9.8"/><circle cx="12" cy="17" r="5"/></symbol><symbol id="i-castle" viewBox="0 0 24 24"><path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"/><path d="M18 11V4H6v7"/><path d="M15 22v-4a3 3 0 0 0-6 0v4"/><path d="M22 11V9M2 11V9M6 4V2M18 4V2M10 4V2M14 4V2"/></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol><symbol id="i-scroll" viewBox="0 0 24 24"><path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/></symbol><symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14M5 2h14"/><path d="M17 22v-4.17a2 2 0 0 0-.59-1.42L12 12l-4.41 4.41A2 2 0 0 0 7 17.83V22"/><path d="M7 2v4.17a2 2 0 0 0 .59 1.42L12 12l4.41-4.41A2 2 0 0 0 17 6.17V2"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/></symbol><symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h6"/></symbol><symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></symbol><symbol id="i-versus" viewBox="0 0 24 24"><path d="M16 3h5v5M8 21H3v-5M21 3l-7 7M3 21l7-7"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol><symbol id="i-live" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9" opacity=".45"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol><symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/><rect x="2" y="6" width="20" height="12" rx="2"/></symbol><symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol><symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol><symbol id="i-coins" viewBox="0 0 24 24"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-leave" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></symbol><symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol><symbol id="i-warn" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></symbol></svg>
 
 <!-- Herb klanu (oryginalna grafika) -->
 <svg width="0" height="0" style="position:absolute">
@@ -1505,6 +1549,10 @@ const NEWS = [
 
 // Licznik odwiedzin: workspace i nazwa licznika z counterapi.dev
 const COUNTER = {workspace:"armia-maurycego", name:"odwiedziny"};
+
+// Logowanie kontem z gry: adres serwera logowania (Cloudflare Worker), np. "https://armia-login.NAZWA.workers.dev"
+// "" = logowanie wyłączone (strona działa jak dotąd)
+const LOGIN_API = "https://armia-login.fifacz39.workers.dev";
 
 // Statystyki odwiedzin GoatCounter: nazwa strony z adresu NAZWA.goatcounter.com ("" = wyłączone)
 const GOATCOUNTER = "armia-maurycego";
@@ -3229,6 +3277,155 @@ let openProfile=()=>{};
   addEventListener("hashchange",fromHash);
 })();
 
+/* ===== Logowanie kontem z gry (token API) + Mój panel =====
+   Logowanie jest dobrowolne: „Kontynuuj bez logowania” zostawia całą stronę do swobodnego przeglądania.
+   Serwer logowania: folder serwer/ (Cloudflare Worker). Adres serwera wpisz w LOGIN_API. */
+let AM_USER=null;   // {tags:[...], active:"#TAG", accs:[{tag,name,th}]}
+(function(){
+  if(!LOGIN_API) return;
+  const LS={get:k=>{try{return localStorage.getItem(k);}catch(e){return null;}},set:(k,v)=>{try{localStorage.setItem(k,v);}catch(e){}},del:k=>{try{localStorage.removeItem(k);}catch(e){}}};
+  const decode=s=>{ try{ const p=JSON.parse(decodeURIComponent(escape(atob(s.split(".")[0].replace(/-/g,"+").replace(/_/g,"/"))))); return p.exp*1000>Date.now()?p:null; }catch(e){ return null; } };
+  const sess=LS.get("am_sess"), pay=sess&&decode(sess);
+  if(sess&&!pay){ LS.del("am_sess"); }
+  if(pay){ let accs=[]; try{ accs=JSON.parse(LS.get("am_accs")||"[]"); }catch(e){}
+    let active=LS.get("am_active"); if(!pay.tags.includes(active)) active=pay.tags[0];
+    AM_USER={tags:pay.tags,active,accs}; }
+  const nameOf=t=>{ const m=MEMBERS.find(x=>x.tag===t); if(m) return m.name; const a=(AM_USER&&AM_USER.accs||[]).find(x=>x.tag===t); return a&&a.name||t; };
+  const ic=(n,c)=>`<svg class="ic${c?" "+c:""}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+
+  // --- okno logowania ---
+  const ov=document.createElement("div"); ov.className="lg-ov"; ov.hidden=true;
+  const herb=(document.querySelector(".brand img")||{}).src||"";
+  ov.innerHTML=`<div class="lg-card" role="dialog" aria-modal="true">
+    <button class="lg-x" aria-label="Zamknij">×</button>
+    <div class="lg-head"><img src="${herb}" alt=""><h2>Zaloguj kontem z gry</h2><p class="lg-sub">Potwierdź, że to Twoje konto w Clash of Clans. Nie podajesz żadnego hasła.</p></div>
+    <form class="lg-form" autocomplete="off">
+      <label>Tag gracza<input name="tag" placeholder="#ABC123" spellcheck="false" autocapitalize="characters"></label>
+      <label>Token API z gry<input name="token" placeholder="np. a1b2c3d4" spellcheck="false" autocapitalize="off"></label>
+      <details class="lg-help"><summary>Gdzie znajdę tag i token?</summary><ol>
+        <li><b>Tag:</b> w grze kliknij swój profil (nick w lewym górnym rogu). Tag jest pod nickiem, zaczyna się od #.</li>
+        <li><b>Token:</b> w grze otwórz <b>Ustawienia → Więcej ustawień</b>, przewiń w dół do <b>Token API</b> i kliknij <b>Pokaż</b>. Przepisz kod albo skopiuj go przyciskiem.</li>
+        <li>Token widzisz tylko Ty w swojej grze, więc nikt inny nie zaloguje się na Twoje konto.</li></ol></details>
+      <p class="lg-err" hidden></p>
+      <button class="btn btn-gold lg-go" type="submit">${ic("swords")} Zaloguj się</button>
+    </form>
+    <button class="lg-skip" type="button">Kontynuuj bez logowania</button>
+    <p class="lg-note">Bez logowania cała strona działa normalnie. Po zalogowaniu dostajesz <b>Mój panel</b>: Twój numer w wojnie, kary, wyścig o MVP, Gry Klanowe i plan rozwoju w jednym miejscu.</p>
+  </div>`;
+  document.body.appendChild(ov);
+  const form=ov.querySelector("form"), err=ov.querySelector(".lg-err"), go=ov.querySelector(".lg-go");
+  let addMode=false;
+  const open=(add)=>{ addMode=!!add; ov.querySelector("h2").textContent=add?"Dodaj kolejne konto":"Zaloguj kontem z gry";
+    ov.querySelector(".lg-skip").textContent=add?"Anuluj":"Kontynuuj bez logowania"; ov.querySelector(".lg-note").hidden=!!add;
+    err.hidden=true; form.reset(); ov.hidden=false; setTimeout(()=>form.tag.focus(),50); };
+  const close=()=>{ ov.hidden=true; if(!AM_USER) LS.set("am_gate","skip"); };
+  ov.querySelector(".lg-x").onclick=close; ov.querySelector(".lg-skip").onclick=close;
+  ov.addEventListener("click",e=>{ if(e.target===ov) close(); });
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!ov.hidden) close(); });
+  form.onsubmit=async e=>{ e.preventDefault();
+    const tag=form.tag.value.trim(), token=form.token.value.trim();
+    if(!tag||!token){ err.textContent="Wpisz tag gracza i token API."; err.hidden=false; return; }
+    go.disabled=true; go.classList.add("busy"); err.hidden=true;
+    try{
+      const r=await fetch(LOGIN_API.replace(/\/$/,"")+"/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({tag,token,session:addMode?LS.get("am_sess"):undefined})});
+      const d=await r.json().catch(()=>({}));
+      if(!r.ok||!d.session) throw new Error(d.error||"Nie udało się zalogować. Spróbuj za chwilę.");
+      LS.set("am_sess",d.session); LS.set("am_active",d.player.tag); LS.set("am_gate","login");
+      let accs=[]; try{ accs=JSON.parse(LS.get("am_accs")||"[]"); }catch(x){}
+      accs=accs.filter(a=>a.tag!==d.player.tag); accs.unshift({tag:d.player.tag,name:d.player.name,th:d.player.th});
+      LS.set("am_accs",JSON.stringify(accs.slice(0,6)));
+      location.hash="#panel"; location.reload();
+    }catch(x){ err.textContent=x.message||"Nie udało się zalogować."; err.hidden=false; }
+    go.disabled=false; go.classList.remove("busy");
+  };
+  window.amLogin=open;
+
+  // --- przycisk w menu ---
+  const nr=document.querySelector(".nav-right");
+  if(nr){
+    const b=document.createElement("div"); b.className="lg-nav";
+    if(!AM_USER){ b.innerHTML=`<button class="lg-btn" type="button">${ic("user")}<span>Zaloguj</span></button>`; b.querySelector("button").onclick=()=>open(false); }
+    else {
+      const me=MEMBERS.find(x=>x.tag===AM_USER.active);
+      b.innerHTML=`<button class="lg-me" type="button" aria-haspopup="true"><span class="lg-av">${esc([...nameOf(AM_USER.active)][0]||"?").toUpperCase()}</span><span class="lg-nm">${esc(nameOf(AM_USER.active))}<small>${me?`TH${me.th} · ${ROLE[me.role][0]}`:"Gość"}</small></span></button>
+        <div class="lg-menu" hidden><a href="#panel">${ic("user")} Mój panel</a>
+          ${AM_USER.tags.length>1?`<div class="lg-sep">Twoje konta</div>`+AM_USER.tags.map(t=>`<button data-acc="${esc(t)}" class="${t===AM_USER.active?"on":""}">${t===AM_USER.active?ic("check","ic-green"):ic("user","ic-muted")} ${esc(nameOf(t))}</button>`).join(""):""}
+          <button data-add>${ic("plus")} Dodaj kolejne konto</button><button data-out>${ic("leave","ic-red")} Wyloguj</button></div>`;
+      const menu=b.querySelector(".lg-menu");
+      b.querySelector(".lg-me").onclick=e=>{ e.stopPropagation(); menu.hidden=!menu.hidden; };
+      document.addEventListener("click",e=>{ if(!b.contains(e.target)) menu.hidden=true; });
+      menu.addEventListener("click",e=>{ const t=e.target.closest("button,a"); if(!t) return; menu.hidden=true;
+        if(t.dataset.acc){ LS.set("am_active",t.dataset.acc); location.hash="#panel"; location.reload(); }
+        else if(t.hasAttribute("data-add")) open(true);
+        else if(t.hasAttribute("data-out")){ ["am_sess","am_accs","am_active"].forEach(LS.del); LS.set("am_gate","skip"); location.hash=""; location.reload(); } });
+    }
+    nr.insertBefore(b,nr.querySelector("#langBtn"));
+  }
+  // pierwsze wejście: zaproszenie do logowania (zawsze z opcją „Kontynuuj bez logowania”)
+  if(!AM_USER&&!LS.get("am_gate")) setTimeout(()=>{ if(ov.hidden) open(false); },1200);
+
+  // --- Mój panel ---
+  if(!AM_USER) return;
+  const sec=document.createElement("section"); sec.id="panel";
+  const anchor=$("#wymagania"); anchor.parentNode.insertBefore(sec,anchor);
+  const t=AM_USER.active, r=rows.find(x=>x.tag===t), A=AUTO||{};
+  const card=(lab,val,sub,cls)=>`<div class="pn-card"><small>${lab}</small><b>${val}</b>${sub?`<em class="${cls||""}">${sub}</em>`:""}</div>`;
+  const switcher=AM_USER.tags.length>1?`<div class="pn-accs">${AM_USER.tags.map(x=>`<button data-acc="${esc(x)}" class="${x===t?"on":""}">${esc(nameOf(x))}</button>`).join("")}<button data-add>+ konto</button></div>`:`<div class="pn-accs"><button data-add>+ Dodaj kolejne konto</button></div>`;
+  if(!r){
+    sec.innerHTML=`<div class="wrap"><div class="eyebrow">Twoje konto</div><h2 class="sec-title">Cześć, ${esc(nameOf(t))}!</h2>${switcher}
+      <div class="panel" style="margin-top:14px"><p style="margin:0 0 12px">Tego konta nie ma teraz w Armii Maurycego. Gdy dołączysz, tutaj pojawi się Twój panel: numer w wojnie, kary, wyścig o MVP i plan rozwoju.</p>
+      <a class="btn btn-gold btn-sm" href="https://link.clashofclans.com/pl?action=OpenClanProfile&tag=%232GQQ8RGRL">Dołącz do klanu</a> <a class="btn btn-ghost btn-sm" href="#wymagania">Wymagania</a></div></div>`;
+  } else {
+    const en=LANG==="en", pf=r.profile||{};
+    const stp=s=>s?Date.parse(`${s.slice(0,4)}-${s.slice(4,6)}-${s.slice(6,8)}T${s.slice(9,11)}:${s.slice(11,13)}:00Z`):0;
+    const dayW=s=>new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(new Date(stp(s)));
+    const left=ms=>{ const h=Math.max(0,Math.floor(ms/36e5)), m=Math.max(0,Math.floor(ms%36e5/6e4)); return h?`${h} h ${m} min`:`${m} min`; };
+    // wojna
+    const cw=A.currentWar, my=cw&&cw.state!=="warEnded"?(cw.members||[]).find(x=>x.tag===t):null;
+    let warTile, attHtml="";
+    if(my){ const R=cw.perMember||2, used=my.attacks.length;
+      warTile=card(cw.state==="preparation"?"Dzień przygotowań":"Wojna trwa",`Twój numer: ${my.pos}`,cw.state==="preparation"?`Bitwa za ${left(stp(cw.start)-Date.now())}`:(used<R?`Zostało Ci ${R-used} ${R-used===1?"atak":"ataki"} · koniec za ${left(stp(cw.end)-Date.now())}`:`Komplet ataków ✓`),used<R&&cw.state==="inWar"?"warn":"ok");
+      const opp=(cw.them.bases||[]).find(b=>b.pos===my.pos);
+      const pen=new Set((A.penalties||[]).filter(p=>p.war===cw.start&&p.tag===t&&!KARY_ANULOWANE.some(k=>k&&k.name===p.name&&k.date===dayW(p.war))).map(p=>p.type));
+      const free=stp(cw.start)+12*36e5, ord=my.attacks.slice().sort((a,b)=>(a.order??0)-(b.order??0));
+      attHtml=`<div class="pn-target"><span class="pn-num">${my.pos}</span><div><b>Twój numer${opp?` · TH${opp.th}`:""}</b><span>${opp?(opp.best?`Najlepszy atak na tej bazie: ${"★".repeat(opp.best)} — ${opp.best===3?"baza zrobiona":"można poprawić"}`:"Nikt jeszcze nie atakował tej bazy"):""}</span></div></div>
+        ${ord.map((a,i)=>{ const tp=parseInt(a.target,10), bad=pen.has(i===0?"own":"steal"), late=tp&&tp!==my.pos&&a.seen&&Date.parse(a.seen)>=free;
+          return `<div class="mini-row"><span>${i+1}. atak: nr ${tp||"?"} · <span class="stars-sm">${"★".repeat(a.stars)}</span>${"☆".repeat(3-a.stars)} ${Math.round(a.pct)}%</span><b class="${bad?"neg":"pos"}">${bad?"kara":late?"ok (po 12 h)":"ok"}</b></div>`; }).join("")}
+        ${used<R&&cw.state==="inWar"?`<p class="pn-tip">${used===0?`Pierwszy atak: na swój numer (${my.pos}).`:`Drugi atak: popraw bazę bez 3★ albo poczekaj — po 12 h od startu bitwy wolne numery może bić każdy.`}</p>`:""}`;
+    } else warTile=card("Wojna","Brak wojny",pf.warPref?(pf.warPref==="in"?"Jesteś zapisany(a) na wojny":"Jesteś wypisany(a) z wojen"):"","");
+    // MVP
+    const race=A.mvp&&A.mvp.race; let mvpTile;
+    if(MVP_BEZ.includes(t)) mvpTile=card("Wyścig o MVP","Poza konkursem","Konto zarządu","");
+    else if(race&&race.top&&race.top.length){ const i=race.top.findIndex(x=>x.tag===t);
+      mvpTile=i>=0?card("Wyścig o MVP",`${i+1}. miejsce`,`${fmt(race.top[i].score)} pkt${i>0?` · do 1. brakuje ${fmt(race.top[0].score-race.top[i].score)} pkt`:" · prowadzisz!"}`,i===0?"ok":""):((race.blocked||[]).includes(t)?card("Wyścig o MVP","Przerwa","Wygrałeś(-aś) niedawno",""):card("Wyścig o MVP","Poza top 5",`Do 5. miejsca: ${fmt(race.top[race.top.length-1].score)} pkt`,""));
+    } else mvpTile=card("Wyścig o MVP","Wkrótce","Liczenie rusza z nowym miesiącem","");
+    // Gry Klanowe
+    const cg=A.clanGames, cgp=cg&&cg.points&&cg.points[t];
+    const cgTile=cg&&cg.state==="ongoing"?card("Gry Klanowe",`${fmt(cgp?cgp.pts:0)} / 1000`,(cgp&&cgp.pts>=1000)?"Norma zrobiona ✓":`Do normy brakuje ${fmt(1000-(cgp?cgp.pts:0))} pkt`,(cgp&&cgp.pts>=1000)?"ok":"warn"):card("Gry Klanowe","Przerwa",cgp?`Ostatnio: ${fmt(cgp.pts)} pkt`:"Następne od 22. dnia miesiąca","");
+    // kary
+    const myPen=(A.penalties||[]).filter(p=>p.tag===t&&!KARY_ANULOWANE.some(k=>k&&k.name===p.name&&k.date===dayW(p.war))&&Date.now()-stp(p.war)<7*864e5);
+    const penTile=KARY_ZWOLNIENI.includes(t)?card("Kary","—","Konto zarządu",""):card("Kary",String(myPen.length),myPen.length?"Zobacz szczegóły w zakładce Kary":"Czysto — tak trzymaj",myPen.length?"warn":"ok");
+    const bs=badgesFor(r);
+    const HN={"Barbarian King":"Król Barbarzyńców","Archer Queen":"Królowa Łuczniczek","Grand Warden":"Wielki Strażnik","Royal Champion":"Królewska Czempionka","Minion Prince":"Książę Minionów","Dragon Duke":"Smoczy Hrabia"};
+    sec.innerHTML=`<div class="wrap">
+      <div class="pn-hello"><div><div class="eyebrow">Twoje konto</div><h2 class="sec-title">Cześć, ${esc(r.name)}!</h2><p class="sec-lead" style="margin:0">Wszystko, co dotyczy Ciebie, w jednym miejscu. Dane z gry odświeżają się co 15 minut.</p></div>${switcher}</div>
+      <div class="pn-grid">${warTile}${mvpTile}${cgTile}${penTile}</div>
+      <div class="duo pn-duo">
+        <div class="panel"><div class="fame-label">${my?"Twoja wojna":"Wojny"}</div>${attHtml||`<p class="updated" style="margin:0">Gdy ruszy wojna, zobaczysz tu swój numer, bazę przeciwnika i swoje ataki.</p>`}
+          <div class="pn-btns"><button class="btn btn-ghost btn-sm" data-go="strat">${ic("book")} Strategia dla TH${r.th}</button><button class="btn btn-ghost btn-sm" data-go="profil">${ic("user")} Pełny profil</button></div></div>
+        <div class="panel"><div class="fame-label">Twój rozwój · TH${r.th}</div>${rushHtml(r)||""}
+          ${pf.heroes&&pf.heroes.length?pf.heroes.map(h=>`<div class="hbar"><div class="hero-row"><b>${esc((en?{}:HN)[h.name]||h.name)}</b><span>${h.level} / ${h.max}</span></div><div class="dbar"><u style="width:${h.level/h.max*100}%"></u></div></div>`).join(""):""}
+          ${bs.length?`<div class="fame-label" style="margin:12px 0 6px">Twoje odznaki</div><div class="pf-badges">${bs.map(b=>`<span title="${esc(b.t)}">${b.i} ${esc(b.t.split(" — ")[0])}</span>`).join("")}</div>`:""}</div>
+      </div>
+      <p class="pn-soon">${ic("sparkles")} Wkrótce w panelu: prywatne przypomnienia na Discordzie i szybkie akcje (wypisanie z wojny, zapis do CWL, zgłoszenie zamiany numerów).</p>
+    </div>`;
+    sec.querySelector('[data-go="strat"]').onclick=()=>{ const s=$("#thRange"); if(s){ s.value=Math.min(18,Math.max(3,r.th)); s.dispatchEvent(new Event("input")); } location.hash="#kalkulator"; };
+    sec.querySelector('[data-go="profil"]').onclick=()=>openProfile(r);
+  }
+  sec.addEventListener("click",e=>{ const b=e.target.closest("button[data-acc],button[data-add]"); if(!b) return;
+    if(b.dataset.acc){ LS.set("am_active",b.dataset.acc); location.reload(); } else open(true); });
+})();
+
 /* ===== Statystyki odwiedzin (GoatCounter) + „Kim jesteś?” =====
    Anonimowe statystyki: ile wejść, z jakich urządzeń i krajów, skąd, które zakładki.
    Gracz, który sam wybierze swój nick, liczony jest w statystykach jako zdarzenie „gracz/Nick” (raz dziennie). */
@@ -3251,7 +3448,7 @@ let openProfile=()=>{};
   const ping=tags=>{ let last=null; try{ last=localStorage.getItem("am_kto_d"); }catch(e){} if(last===today) return;
     tags.forEach(tag=>{ const m=MEMBERS.find(x=>x.tag===tag); if(m) gc({path:"gracz/"+m.name,title:"Gracz: "+m.name,event:true}); });
     try{ localStorage.setItem("am_kto_d",today); }catch(e){} };
-  if(myTags().length) ping(myTags());
+  if(AM_USER) ping(AM_USER.tags); else if(myTags().length) ping(myTags());
   const ask=()=>{
     const box=document.createElement("div"); box.className="kto";
     const sorted=[...MEMBERS].sort((a,b)=>a.name.localeCompare(b.name,"pl"));
@@ -3274,7 +3471,8 @@ let openProfile=()=>{};
     box.querySelector(".kto-x").onclick=()=>close("skip");
   };
   window.amKto=()=>{ try{ localStorage.removeItem("am_kto_d"); }catch(e){} ask(); };
-  if(!me) setTimeout(ask,5000);
+  if(!me&&!LOGIN_API) setTimeout(ask,5000);
+  if(LOGIN_API){ const fb=document.querySelector('footer [onclick*="amKto"]'); if(fb){ fb.textContent=AM_USER?"Mój panel":"Zaloguj się"; fb.onclick=()=>AM_USER?(location.hash="#panel"):window.amLogin(false); } }
 })();
 
 /* ===== Ogłoszenie ===== */
@@ -3319,7 +3517,7 @@ let saveLayoutState=()=>{};
   const testing=(()=>{try{return !!localStorage.getItem("am_uklad_test");}catch(e){return false;}})();
   const SEC=[["wymagania","📋","Wymagania"],["dolacz","➕","Jak dołączyć"],["regulamin","📜","Regulamin"],["wydarzenia","⏳","Wydarzenia"],
     ["wojny","⚔️","Wojny"],["kary","⛔","Kary"],["osiagniecia","🏆","CWL i rozwój"],["ranking","🎖️","Ranking"],
-    ["ogloszenia","📢","Ogłoszenia"],["historia","📜","Nasza historia"],["kadra","👑","Kadra i sława"],["czlonkowie","👥","Członkowie"],["rajdy","🏰","Rajdy i skład"],["zarzad","🛡️","Zarząd"],
+    ["panel","👤","Mój panel"],["ogloszenia","📢","Ogłoszenia"],["historia","📜","Nasza historia"],["kadra","👑","Kadra i sława"],["czlonkowie","👥","Członkowie"],["rajdy","🏰","Rajdy i skład"],["zarzad","🛡️","Zarząd"],
     ["kalkulator","📖","Poradnik"],["bazy","🗺️","Bazy"],["discord","💬","Discord"],["faq","❓","FAQ"]].filter(x=>$("#"+x[0]));
   const A=AUTO||{};
   const sum=id=>{ try{
@@ -3409,14 +3607,15 @@ let saveLayoutState=()=>{};
       ["czlonkowie","Członkowie","👥",["czlonkowie","rajdy","zarzad"],"Skład",(document.getElementById("zarzad")?"Wszyscy gracze, rajdy Stolicy i panel zarządu.":"Wszyscy gracze i rajdy Stolicy.")],
       ["poradnik","Poradnik","📖",["kalkulator","bazy"],"Poradnik","Strategie ataku na każdy TH, plan ulepszeń, słowniczek, quiz i bazy."],
       ["dolacz","Dołącz","➕",["wymagania","dolacz","faq"],"Rekrutacja","Wymagania, jak dołączyć i najczęstsze pytania."]];
+    if($("#panel")) PAGES.push(["panel","Mój panel","👤",["panel"],"",""]);
     const ALL=PAGES.flatMap(p=>p[3]);
     // Menu: podstrony + złoty przycisk Dołącz
     const nav=$("#navLinks");
-    nav.innerHTML=PAGES.filter(p=>p[0]!=="dolacz").map(p=>`<a href="#${p[0]}" data-page="${p[0]}">${p[1]}</a>`).join("")+`<a href="#dolacz" data-page="dolacz" class="nav-cta">Dołącz</a>`;
+    nav.innerHTML=PAGES.filter(p=>p[0]!=="dolacz"&&p[0]!=="panel").map(p=>`<a href="#${p[0]}" data-page="${p[0]}">${p[1]}</a>`).join("")+`<a href="#dolacz" data-page="dolacz" class="nav-cta">Dołącz</a>`;
     // Telefon: dolny pasek jak w aplikacji + przycisk Dołącz u góry
     const MI={start:"home",klan:"shield",wojny:"swords",czlonkowie:"users",poradnik:"book"};
     const mtab=document.createElement("div"); mtab.className="mtab"; mtab.setAttribute("role","navigation");
-    mtab.innerHTML=PAGES.filter(p=>p[0]!=="dolacz").map(p=>`<a href="#${p[0]}" data-page="${p[0]}"><svg class="ic" aria-hidden="true"><use href="#i-${MI[p[0]]}"/></svg><span>${p[0]==="czlonkowie"?"Gracze":p[1]}</span></a>`).join("");
+    mtab.innerHTML=PAGES.filter(p=>p[0]!=="dolacz"&&p[0]!=="panel").map(p=>`<a href="#${p[0]}" data-page="${p[0]}"><svg class="ic" aria-hidden="true"><use href="#i-${MI[p[0]]}"/></svg><span>${p[0]==="czlonkowie"?"Gracze":p[1]}</span></a>`).join("");
     document.body.appendChild(mtab);
     const mj=document.createElement("a"); mj.className="m-join"; mj.href="#dolacz"; mj.dataset.page="dolacz"; mj.textContent="Dołącz";
     const nr=document.querySelector(".nav-right"); nr&&nr.prepend(mj);
@@ -3445,7 +3644,7 @@ let saveLayoutState=()=>{};
     $("#top").after(home);
     const wyd=$("#wydarzenia"); home.after(wyd); const ogl=$("#ogloszenia"); if(ogl) home.after(ogl);
     // Nagłówki podstron
-    PAGES.slice(1).forEach(p=>{ const first=$("#"+p[3][0]); if(!first) return;
+    PAGES.slice(1).forEach(p=>{ if(p[0]==="panel") return; const first=$("#"+p[3][0]); if(!first) return;
       const h=document.createElement("section"); h.className="page-head"; h.dataset.page=p[0];
       h.innerHTML=`<div class="wrap"><div class="eyebrow">${p[4]}</div><h1>${p[2]} ${p[1]}</h1><p>${p[5]}</p>
         <div class="page-sub">${p[3].map(id=>{const t=SEC.find(x=>x[0]===id); return t?`<a href="#${id}">${t[1]} ${t[2]}</a>`:"";}).join("")}</div></div>`;
@@ -3484,7 +3683,7 @@ let saveLayoutState=()=>{};
 applyLang();
 /* ===== Ikony zamiast emoji (jednolity wygląd na każdym telefonie) ===== */
 (function(){
-  const M={"⚔":"swords","🏆":"trophy","⛔":"ban","👑":"crown","👥":"users","📖":"book","🛡":"shield","➕":"userplus|ic-green","🔥":"flame|ic-orange","⭐":"star","🌟":"star","🎁":"gift","💬":"chat","🏅":"medal","🎖":"medal","🏰":"castle","🗺":"map","❓":"help","📜":"scroll","⏳":"hourglass","⌛":"hourglass","❌":"x|ic-red","💡":"bulb","📋":"clipboard","🏛":"landmark","🆚":"versus","📅":"calendar","🗓":"calendar","📆":"calendar","📢":"megaphone","📣":"megaphone","📊":"chart","📈":"chart","🔴":"live|ic-red","🟡":"live","🟢":"live|ic-green","✅":"check|ic-green","✔":"check|ic-green","⬆":"up|ic-green","🎮":"gamepad","📦":"box","🎯":"target","🔮":"sparkles","✨":"sparkles","🎉":"sparkles","📲":"phone","📱":"phone","ℹ":"info|ic-blue","🔍":"search","🔎":"search","🏠":"home","⏰":"clock","🕒":"clock","⏱":"clock","💰":"coins","🪙":"coins","👁":"eye|ic-muted","🔗":"link","🚪":"leave|ic-red","⚡":"zap","⚠":"warn|ic-orange","🚩":"flag","🥇":"medal","🥈":"medal|ic-silver","🥉":"medal|ic-bronze"};
+  const M={"👤":"user","⚔":"swords","🏆":"trophy","⛔":"ban","👑":"crown","👥":"users","📖":"book","🛡":"shield","➕":"userplus|ic-green","🔥":"flame|ic-orange","⭐":"star","🌟":"star","🎁":"gift","💬":"chat","🏅":"medal","🎖":"medal","🏰":"castle","🗺":"map","❓":"help","📜":"scroll","⏳":"hourglass","⌛":"hourglass","❌":"x|ic-red","💡":"bulb","📋":"clipboard","🏛":"landmark","🆚":"versus","📅":"calendar","🗓":"calendar","📆":"calendar","📢":"megaphone","📣":"megaphone","📊":"chart","📈":"chart","🔴":"live|ic-red","🟡":"live","🟢":"live|ic-green","✅":"check|ic-green","✔":"check|ic-green","⬆":"up|ic-green","🎮":"gamepad","📦":"box","🎯":"target","🔮":"sparkles","✨":"sparkles","🎉":"sparkles","📲":"phone","📱":"phone","ℹ":"info|ic-blue","🔍":"search","🔎":"search","🏠":"home","⏰":"clock","🕒":"clock","⏱":"clock","💰":"coins","🪙":"coins","👁":"eye|ic-muted","🔗":"link","🚪":"leave|ic-red","⚡":"zap","⚠":"warn|ic-orange","🚩":"flag","🥇":"medal","🥈":"medal|ic-silver","🥉":"medal|ic-bronze"};
   const keys=Object.keys(M).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
   const RE=new RegExp("("+keys.join("|")+")\\uFE0F?","gu");
   const SKIP="script,style,textarea,option,select,pre,code,svg,title,input,.no-ico,.lay-switch";
