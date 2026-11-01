@@ -146,6 +146,19 @@ if (w && w.state && w.state !== "notInWar") {
   };
 }
 
+// Kiedy robot pierwszy raz zobaczył każdy atak (API nie podaje godziny ataku) — potrzebne do zasady 12 h
+if (currentWar && currentWar.state !== "preparation") {
+  const oldW = old?.currentWar && old.currentWar.start === currentWar.start ? old.currentWar : null;
+  const seenNow = new Date().toISOString();
+  for (const m of currentWar.members) {
+    const om = oldW?.members?.find(x => x.tag === m.tag);
+    for (const a of m.attacks) {
+      const oa = om?.attacks?.find(x => x.order != null && x.order === a.order);
+      a.seen = oa ? (oa.seen ?? null) : seenNow;   // null = nie wiadomo (atak sprzed wprowadzenia śledzenia)
+    }
+  }
+}
+
 /* ---------- Liga Wojen Klanów (CWL) ---------- */
 let cwl = old?.cwl ?? null;
 const group = await safe("Grupa CWL", () => api(`/clans/${enc(TAG)}/currentwar/leaguegroup`));
@@ -249,22 +262,32 @@ try { const h = await readFile(new URL("../index.html", import.meta.url), "utf8"
   if (m) karyZw = [...m[1].matchAll(/"(#[0-9A-Z]+)"/g)].map(x => x[1]); } catch (e) { console.warn("index.html (zwolnieni z kar) niedostępny:", e.message); }
 let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag));
 const addPen = p => { if (karyZw.includes(p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+const WOLNE_PO_H = 12;   // po tylu godzinach od startu bitwy można atakować cudze numery bez kary
 const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
 if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
   const W = currentWar, byPos = Object.fromEntries(W.members.map(m => [m.pos, m]));
   const tp = a => parseInt(a.target, 10);
   const firstOrder = m => m.attacks.length ? Math.min(...m.attacks.map(a => a.order ?? 999)) : Infinity;
   const base = m => ({ tag: m.tag, name: m.name, war: W.start, end: W.end, enemy: W.them.name });
+  // Zasada klanu: po 12 h od startu bitwy wolno bić cudze numery (kto nie zaatakował swojego do 12 h, ten może być bity)
+  const free = stampMs(W.start) + WOLNE_PO_H * 36e5;
+  const late = a => a && a.seen && Date.parse(a.seen) >= free;
+  penalties = penalties.filter(p => {
+    if (p.war !== W.start || (p.type !== "own" && p.type !== "steal")) return true;
+    const mm = W.members.find(x => x.tag === p.tag); if (!mm) return true;
+    const at = mm.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0))[p.type === "own" ? 0 : 1];
+    return !late(at);
+  });
   for (const m of W.members) {
     const atts = m.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
     // 1) pierwszy atak nie na swój numer
     // wyjątek: ktoś wcześniej zrobił już 3★ na jego numerze — wtedy nie miał czego bić
     const mirrorTaken = atts[0] && W.members.some(o => o.attacks.some(x => tp(x) === m.pos && x.stars === 3 && (x.order ?? 0) < (atts[0].order ?? 0)));
-    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos && !mirrorTaken)
+    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos && !mirrorTaken && !late(atts[0]))
       addPen({ id: `${W.start}:${m.tag}:own`, type: "own", detail: `nr ${tp(atts[0])} zamiast nr ${m.pos}`, ...base(m) });
     // 2) drugi atak na numer kogoś, kto jeszcze nie zaatakował (podkradanie ataku)
     const a2 = atts[1];
-    if (a2 && a2.order != null && tp(a2) && tp(a2) !== m.pos) {
+    if (a2 && a2.order != null && tp(a2) && tp(a2) !== m.pos && !late(a2)) {
       const owner = byPos[tp(a2)];
       if (owner && owner.tag !== m.tag && firstOrder(owner) > a2.order)
         addPen({ id: `${W.start}:${m.tag}:steal`, type: "steal", detail: `nr ${tp(a2)}, zanim ${owner.name} zaatakował(a) swój numer`, ...base(m) });

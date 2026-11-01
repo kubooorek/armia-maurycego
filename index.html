@@ -288,6 +288,7 @@
   .modal-card{position:relative;width:100%;max-width:440px;max-height:90vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:14px;padding:20px}
   .modal-x{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer}
   .modal-x:hover{color:var(--text)}
+  .at-late{color:var(--green)!important;font-weight:600}
   .pf-head{display:flex;gap:12px;align-items:center;margin-bottom:14px}
   .pf-head .th{min-width:44px;height:44px;font-size:1rem}
   .pf-head h3{font-family:Inter,sans-serif;font-size:1.15rem}
@@ -981,6 +982,7 @@
         <li>Jeśli jesteś w składzie, wykonujesz <b>oba ataki</b>.</li>
         <li><b>Pierwszy atak — obowiązkowo na swój numer</b> (ten sam numer na mapie wojny).</li>
         <li><b>Drugim atakiem czekamy</b> albo poprawiamy cele bez 3 gwiazdek — tak, żeby nie podkradać ataków innym członkom.</li>
+        <li><b>Po 12 godzinach od startu bitwy</b> numery, których właściciel jeszcze nie zaatakował, są wolne — wtedy może je bić każdy.</li>
         <li class="rule-warn">Niestosowanie się do tej zasady = brak udziału w następnej wojnie.</li>
         <li>Nie możesz grać? Wypisz się przed startem wojny (zielony/czerwony przełącznik w profilu).</li>
       </ul></div></details>
@@ -1213,7 +1215,7 @@
     <h2 class="sec-title">Kary za łamanie zasad CW</h2>
     <p class="sec-lead">Robot sprawdza każdą wojnę i sam dopisuje graczy, którzy złamali zasady. Kara = przerwa w najbliższej wojnie klanowej.</p>
     <div class="kary-rules">
-      <span>⚔️ Pierwszy atak zawsze na swój numer</span><span>⏳ Drugim atakiem nie zabieramy cudzych numerów</span><span>❌ Bez opuszczonych ataków</span>
+      <span>⚔️ Pierwszy atak zawsze na swój numer</span><span>⏳ Do 12 h nie zabieramy cudzych numerów, potem są wolne</span><span>❌ Bez opuszczonych ataków</span>
     </div>
     <div id="karyActive"></div>
     <details class="panel kary-hist" id="karyHistWrap" hidden><summary><span><span class="fame-label" style="margin:0;display:inline">📜 Historia kar</span> <span class="chip" id="karyHistCount" style="margin-left:6px"></span></span></summary><div id="karyHist" style="margin-top:12px"></div></details>
@@ -2238,16 +2240,22 @@ function attacksHtml(cw){
   const en=LANG==="en", R=cw.perMember||2;
   const used=cw.members.reduce((a,m)=>a+m.attacks.length,0);
   const stars=n=>`<em class="st">${"★".repeat(n)}<i>${"★".repeat(3-n)}</i></em>`;
+  // ostrzeżenia tylko tam, gdzie robot naliczył karę (bez anulowanych i zwolnionych); po 12 h cudze numery są dozwolone
+  const dayW=t=>{ const d=new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:00Z`); return new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Warsaw"}).format(d); };
+  const pen=new Set(((AUTO&&AUTO.penalties)||[]).filter(p=>p.war===cw.start&&!KARY_ANULOWANE.some(k=>k&&k.name===p.name&&k.date===dayW(p.war))).map(p=>p.tag+":"+p.type));
+  const free=cw.start?Date.parse(`${cw.start.slice(0,4)}-${cw.start.slice(4,6)}-${cw.start.slice(6,8)}T${cw.start.slice(9,11)}:${cw.start.slice(11,13)}:00Z`)+12*36e5:Infinity;
   const rows=cw.members.map(m=>{
-    const slots=[]; for(let i=0;i<R;i++){ const a=m.attacks[i];
+    const ord=m.attacks.slice().sort((x,y)=>(x.order??0)-(y.order??0));
+    const slots=[]; for(let i=0;i<R;i++){ const a=ord[i];
       if(!a){ slots.push(`<span class="at none">${cw.state==="inWar"?(en?"— to do":"— czeka"):(en?"— missed":"— opuszczony")}</span>`); continue; }
       const tp=parseInt(a.target,10);
-      const warn = R===2 && i===0 && tp && m.pos && tp!==m.pos;
-      slots.push(`<span class="at${a.stars===3?" s3":""}${warn?" warn":""}" title="${esc(a.target||"")}">${stars(a.stars)} ${Math.round(a.pct)}%${a.target?` <small>→ ${esc(a.target.split(". ")[0])}</small>`:""}${warn?` <b>⚠️ ${en?"not own number":"nie swój numer"}</b>`:""}</span>`); }
+      const type=i===0?"own":"steal", warn=R===2 && pen.has(m.tag+":"+type);
+      const late=R===2 && tp && m.pos && tp!==m.pos && !warn && a.seen && Date.parse(a.seen)>=free;
+      slots.push(`<span class="at${a.stars===3?" s3":""}${warn?" warn":""}" title="${esc(a.target||"")}">${stars(a.stars)} ${Math.round(a.pct)}%${a.target?` <small>→ ${esc(a.target.split(". ")[0])}</small>`:""}${warn?` <b>⚠️ ${type==="own"?(en?"not own number":"nie swój numer"):(en?"took someone's base":"cudzy numer")}</b>`:""}${late?` <small class="at-late">${en?"after 12h":"po 12 h"}</small>`:""}</span>`); }
     return `<div class="at-row${m.attacks.length<R&&cw.state==="inWar"?" left":""}"><span class="at-who"><i>${m.pos||""}</i>${esc(m.name)} <small>TH${m.th||"?"}</small></span><span class="at-slots">${slots.join("")}</span></div>`;
   }).join("");
   return `<details class="lw-att"><summary><span>⚔️ ${en?"Live attacks":"Ataki na żywo"} <span class="chip" style="margin-left:6px">${used}/${cw.size*R}</span></span></summary><div class="at-list">${rows}</div>
-    <p class="ch-meta" style="margin:8px 0 0">${en?"The number after the arrow is the enemy base position.":"Liczba po strzałce to numer bazy przeciwnika."}${R===2?(en?" ⚠️ = first attack not on own number.":" ⚠️ = pierwszy atak nie na swój numer."):""}</p></details>`;
+    <p class="ch-meta" style="margin:8px 0 0">${en?"The number after the arrow is the enemy base position.":"Liczba po strzałce to numer bazy przeciwnika."}${R===2?(en?" ⚠️ = attack that breaks the war rules (penalty). After 12 h of battle day other numbers are fair game.":" ⚠️ = atak niezgodny z zasadami (kara). Po 12 h od startu bitwy można bić cudze numery."):""}</p></details>`;
 }
 
 /* ===== Wojna na żywo (z data.json) ===== */
@@ -2671,7 +2679,7 @@ function rushHtml(r){
   const G={};
   all.filter(p=>!canceled(p)).forEach(p=>{ const k=(p.tag||p.name)+"|"+p.war; (G[k]=G[k]||{name:p.name,tag:p.tag,war:p.war,enemy:p.enemy,list:[]}).list.push(p); });
   const REASON={own:p=>`pierwszy atak nie na swój numer (${p.detail})`,steal:p=>`drugi atak na cudzy numer (${p.detail})`,missed:p=>`opuszczony atak (${p.detail})`,manual:p=>p.detail};
-  const RULE={own:"Pierwszy atak zawsze na swój numer.",steal:"Drugim atakiem czekamy albo poprawiamy bazy, na których brakuje gwiazdek — nie zabieramy ataków innym.",missed:"Każdy w składzie wykorzystuje oba ataki.",manual:""};
+  const RULE={own:"Pierwszy atak zawsze na swój numer (cudze numery są wolne dopiero po 12 h od startu bitwy).",steal:"Drugim atakiem czekamy albo poprawiamy bazy, na których brakuje gwiazdek. Cudze numery są wolne dopiero po 12 h od startu bitwy.",missed:"Każdy w składzie wykorzystuje oba ataki.",manual:""};
   const items=Object.values(G).map(g=>{
     const next=wars.find(w=>String(w.start)>String(g.war));
     let status="next"; if(next) status = next.state==="warEnded" ? "done" : "serving";
