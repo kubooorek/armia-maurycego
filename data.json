@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T12:01:23.559Z",
+  "updated": "2026-11-01T12:05:00.052Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -2142,8 +2142,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "27|59515687|51304197|3000|26|0|0|0|0|37|9",
-      "last": "2026-10-31T18:45:46.552Z",
+      "sig": "27||||||||||9",
+      "last": "2026-11-01T12:05:00.051Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -4007,77 +4007,7 @@
       "th": 9,
       "given": 27,
       "received": 0,
-      "trophies": 97,
-      "profile": {
-        "level": 37,
-        "trophies": 97,
-        "best": 149,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 0,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 45.5,
-        "troops": 23.9,
-        "spells": 75,
-        "heroes": 66.7,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 2,
-            "need": 10
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 3000,
-        "don": 26,
-        "capLoot": 0,
-        "gold": 59515687,
-        "elixir": 51304197,
-        "capContrib": 0,
-        "wins": 0
-      }
+      "trophies": 97
     },
     {
       "name": "my name billa",
