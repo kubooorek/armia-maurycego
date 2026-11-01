@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T06:01:16.118Z",
+  "updated": "2026-11-01T07:01:15.255Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Unranked",
@@ -3616,18 +3616,13 @@
         ]
       },
       "rush": {
-        "pct": 26.4,
-        "troops": 34.5,
+        "pct": 25.5,
+        "troops": 32.8,
         "spells": 18.2,
         "heroes": 16.7,
         "top": [
           {
             "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 4
           },
@@ -3640,6 +3635,11 @@
             "n": "Gigant",
             "lvl": 2,
             "need": 5
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 4
           },
           {
             "n": "Walkiria",
