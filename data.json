@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T07:01:16.851Z",
+  "updated": "2026-11-02T07:15:55.087Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -380,14 +380,14 @@
   },
   "raids": [
     {
-      "state": "ongoing",
+      "state": "ended",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
       "loot": 133828,
       "raids": 11,
       "attacks": 118,
       "districts": 33,
-      "medals": 0,
+      "medals": 67,
       "members": [
         {
           "name": "oggsgdjdjbd",
@@ -1707,10 +1707,10 @@
   },
   "records": {
     "raidLoot": {
-      "value": 8199,
-      "name": "Cwel123",
-      "tag": "#RPR0L809R",
-      "date": "2026-10-26"
+      "value": 8631,
+      "name": "oggsgdjdjbd",
+      "tag": "#Q9CU9P908",
+      "date": "2026-11-02"
     },
     "donSeason": {
       "value": 8656,
@@ -2002,8 +2002,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|61962149|53378882|3000|26|0|0|0|0|38|9",
-      "last": "2026-11-02T05:45:55.165Z",
+      "sig": "0|63214632|54141455|3000|26|0|0|0|0|38|9",
+      "last": "2026-11-02T07:15:55.074Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -4072,8 +4072,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 61962149,
-        "elixir": 53378882,
+        "gold": 63214632,
+        "elixir": 54141455,
         "capContrib": 0,
         "wins": 0
       }
