@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:01:29.717Z",
+  "updated": "2026-11-02T19:15:52.619Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -3458,10 +3458,10 @@
       "th": 13,
       "given": 20,
       "received": 0,
-      "trophies": 0,
+      "trophies": 9,
       "profile": {
         "level": 61,
-        "trophies": 0,
+        "trophies": 9,
         "best": 327,
         "league": "Wizard League 11",
         "warStars": 11,
@@ -3688,6 +3688,95 @@
       }
     },
     {
+      "name": "VipeR",
+      "tag": "#22R8PLCU8",
+      "role": "leader",
+      "th": 11,
+      "given": 0,
+      "received": 0,
+      "trophies": 13,
+      "profile": {
+        "level": 104,
+        "trophies": 13,
+        "best": 2156,
+        "league": "Archer League 9",
+        "warStars": 229,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 52473,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 38,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 38,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 10,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 21,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 7.2,
+        "troops": 4,
+        "spells": 20.4,
+        "heroes": 4,
+        "top": [
+          {
+            "n": "Zaklęcie klonowania",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie szkieletów",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie nietoperzy",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Górnik",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 15875,
+        "don": 9386,
+        "capLoot": 10205,
+        "gold": 363808059,
+        "elixir": 340666887,
+        "capContrib": 52473,
+        "wins": 0
+      }
+    },
+    {
       "name": "MrDefPL",
       "tag": "#8UCPRGC8",
       "role": "member",
@@ -3773,95 +3862,6 @@
         "gold": 728081465,
         "elixir": 758847678,
         "capContrib": 84211,
-        "wins": 0
-      }
-    },
-    {
-      "name": "VipeR",
-      "tag": "#22R8PLCU8",
-      "role": "leader",
-      "th": 11,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 104,
-        "trophies": 0,
-        "best": 2156,
-        "league": "Archer League 9",
-        "warStars": 229,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 52473,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 38,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 38,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 10,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 21,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 7.2,
-        "troops": 4,
-        "spells": 20.4,
-        "heroes": 4,
-        "top": [
-          {
-            "n": "Zaklęcie klonowania",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie szkieletów",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie nietoperzy",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie przyspieszenia",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Górnik",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 15875,
-        "don": 9386,
-        "capLoot": 10205,
-        "gold": 363808059,
-        "elixir": 340666887,
-        "capContrib": 52473,
         "wins": 0
       }
     },
@@ -4495,6 +4495,90 @@
       }
     },
     {
+      "name": "vvd",
+      "tag": "#GQULCR98R",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 40,
+      "profile": {
+        "level": 49,
+        "trophies": 40,
+        "best": 308,
+        "league": "Skeleton League 3",
+        "warStars": 12,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 19170,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 40.2,
+        "troops": 30.9,
+        "spells": 47.1,
+        "heroes": 53.3,
+        "top": [
+          {
+            "n": "Goblin",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 4,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5100,
+        "don": 306,
+        "capLoot": 0,
+        "gold": 86611277,
+        "elixir": 71387241,
+        "capContrib": 19170,
+        "wins": 0
+      }
+    },
+    {
       "name": "zuzia",
       "tag": "#R8V9U9VLJ",
       "role": "member",
@@ -4649,90 +4733,6 @@
         "gold": 19657915,
         "elixir": 19320035,
         "capContrib": 13078,
-        "wins": 0
-      }
-    },
-    {
-      "name": "vvd",
-      "tag": "#GQULCR98R",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 49,
-        "trophies": 0,
-        "best": 308,
-        "league": "Skeleton League 3",
-        "warStars": 12,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 19170,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 40.2,
-        "troops": 30.9,
-        "spells": 47.1,
-        "heroes": 53.3,
-        "top": [
-          {
-            "n": "Goblin",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Burzyciel",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 4,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 5100,
-        "don": 306,
-        "capLoot": 0,
-        "gold": 86611277,
-        "elixir": 71387241,
-        "capContrib": 19170,
         "wins": 0
       }
     },
