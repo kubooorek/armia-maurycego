@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T11:01:23.256Z",
+  "updated": "2026-11-02T11:15:55.659Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -544,6 +544,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-02T11:15:54.923Z",
+      "type": "th",
+      "name": "monte",
+      "from": 10,
+      "to": 11
+    },
     {
       "t": "2026-11-02T10:15:51.130Z",
       "type": "th",
@@ -1973,8 +1980,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|166318732|160190253|2900|20|21235|28873|0|44|75|10",
-      "last": "2026-11-02T10:15:51.751Z",
+      "sig": "0|166318732|160190253|2900|20|21235|28873|0|44|75|11",
+      "last": "2026-11-02T11:15:55.646Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -3575,7 +3582,7 @@
       "name": "monte",
       "tag": "#QYJUV90JY",
       "role": "member",
-      "th": 10,
+      "th": 11,
       "given": 0,
       "received": 0,
       "trophies": 0,
@@ -3608,40 +3615,40 @@
         ]
       },
       "rush": {
-        "pct": 23.2,
-        "troops": 11.4,
-        "spells": 21.9,
-        "heroes": 37.1,
+        "pct": 34,
+        "troops": 16.2,
+        "spells": 39.6,
+        "heroes": 49,
         "top": [
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 1,
+            "need": 4
+          },
           {
             "n": "Wieprzowy jeździec",
             "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Walkiria",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Golem",
-            "lvl": 2,
-            "need": 4
+            "need": 6
           },
           {
             "n": "Lawowy ogar",
             "lvl": 1,
-            "need": 2
+            "need": 3
           },
           {
             "n": "Zaklęcie skoku",
             "lvl": 1,
-            "need": 2
+            "need": 3
           },
           {
-            "n": "Zaklęcie przyspieszenia",
+            "n": "Zaklęcie klonowania",
             "lvl": 1,
-            "need": 2
+            "need": 3
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 2,
+            "need": 5
           }
         ]
       },
