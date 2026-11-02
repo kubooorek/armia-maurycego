@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T22:15:54.425Z",
+  "updated": "2026-11-02T22:31:10.737Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -789,7 +789,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2612,8 +2612,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|88252677|73013705|5100|306|0|20470|0|12|49|9",
-      "last": "2026-11-02T22:15:54.414Z",
+      "sig": "0|88987677|73748705|5100|306|0|20470|0|12|50|9",
+      "last": "2026-11-02T22:31:10.724Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -2722,8 +2722,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|9781741|9596413|0|0|0|100|0|0|22|8",
-      "last": "2026-11-02T22:01:18.931Z",
+      "sig": "0|10499824|10351833|0|0|0|100|0|0|23|8",
+      "last": "2026-11-02T22:31:10.724Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -4659,8 +4659,8 @@
       "received": 103,
       "trophies": 280,
       "profile": {
-        "level": 49,
-        "trophies": 200,
+        "level": 50,
+        "trophies": 280,
         "best": 308,
         "league": "Skeleton League 3",
         "warStars": 12,
@@ -4687,8 +4687,8 @@
         ]
       },
       "rush": {
-        "pct": 40.2,
-        "troops": 30.9,
+        "pct": 39.2,
+        "troops": 29.1,
         "spells": 47.1,
         "heroes": 53.3,
         "top": [
@@ -4708,11 +4708,6 @@
             "need": 4
           },
           {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 3
-          },
-          {
             "n": "Burzyciel",
             "lvl": 2,
             "need": 5
@@ -4721,6 +4716,11 @@
             "n": "Królowa Łuczniczek",
             "lvl": 4,
             "need": 10
+          },
+          {
+            "n": "Minion",
+            "lvl": 2,
+            "need": 4
           }
         ]
       },
@@ -4728,8 +4728,8 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 88252677,
-        "elixir": 73013705,
+        "gold": 88987677,
+        "elixir": 73748705,
         "capContrib": 20470,
         "wins": 0
       }
@@ -4899,10 +4899,10 @@
       "th": 8,
       "given": 0,
       "received": 60,
-      "trophies": 174,
+      "trophies": 203,
       "profile": {
         "level": 37,
-        "trophies": 174,
+        "trophies": 203,
         "best": 300,
         "league": "Skeleton League 2",
         "warStars": 6,
@@ -4953,6 +4953,55 @@
         "gold": 26910795,
         "elixir": 25808935,
         "capContrib": 8648,
+        "wins": 0
+      }
+    },
+    {
+      "name": "threeten",
+      "tag": "#R8RVQVPCC",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 80,
+      "profile": {
+        "level": 30,
+        "trophies": 0,
+        "best": 240,
+        "league": "Skeleton League 2",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 31434,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 2.9,
+        "troops": 0,
+        "spells": 10,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 300,
+        "don": 40,
+        "capLoot": 24805,
+        "gold": 7322588,
+        "elixir": 7919737,
+        "capContrib": 31434,
         "wins": 0
       }
     },
@@ -5168,55 +5217,6 @@
         "gold": 22692671,
         "elixir": 21351907,
         "capContrib": 6070,
-        "wins": 0
-      }
-    },
-    {
-      "name": "threeten",
-      "tag": "#R8RVQVPCC",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 30,
-        "trophies": 0,
-        "best": 240,
-        "league": "Skeleton League 2",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 31434,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 6,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 2.9,
-        "troops": 0,
-        "spells": 10,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 300,
-        "don": 40,
-        "capLoot": 24805,
-        "gold": 7322588,
-        "elixir": 7919737,
-        "capContrib": 31434,
         "wins": 0
       }
     },
@@ -5629,9 +5629,9 @@
       "received": 20,
       "trophies": 120,
       "profile": {
-        "level": 22,
-        "trophies": 40,
-        "best": 40,
+        "level": 23,
+        "trophies": 120,
+        "best": 120,
         "league": "Skeleton League 1",
         "warStars": 0,
         "attackWins": 0,
@@ -5688,8 +5688,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 9781741,
-        "elixir": 9596413,
+        "gold": 10499824,
+        "elixir": 10351833,
         "capContrib": 100,
         "wins": 0
       }
