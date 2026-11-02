@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:31:11.170Z",
+  "updated": "2026-11-02T21:45:51.163Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -59,20 +59,20 @@
         "played": 0
       },
       {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 7,
+        "pct": 393,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 7,
         "pct": 257,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 5,
-        "pct": 309,
         "wins": 0,
         "played": 0
       },
@@ -96,9 +96,9 @@
         "end": "20261103T173507.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 5,
-          "pct": 20.6,
-          "attacks": 8,
+          "stars": 7,
+          "pct": 26.2,
+          "attacks": 10,
           "bases": [
             {
               "pos": 1,
@@ -216,7 +216,7 @@
             {
               "pos": 7,
               "th": 14,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 8,
@@ -332,7 +332,13 @@
             "tag": "#22R8PLCU8",
             "pos": 7,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 57,
+                "target": "7. Marshal"
+              }
+            ]
           },
           {
             "name": "monte",
@@ -366,7 +372,13 @@
             "tag": "#G8VGC2VRL",
             "pos": 11,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 27,
+                "target": "11. АРТУР ТН ДОВЛЕТ"
+              }
+            ]
           },
           {
             "name": "Belaska",
@@ -706,6 +718,12 @@
         "wars": 1
       },
       {
+        "name": "VipeR",
+        "stars": 2,
+        "attacks": 1,
+        "wars": 1
+      },
+      {
         "name": "oggsgdjdjbd",
         "stars": 1,
         "attacks": 1,
@@ -730,12 +748,6 @@
         "wars": 1
       },
       {
-        "name": "VipeR",
-        "stars": 0,
-        "attacks": 0,
-        "wars": 1
-      },
-      {
         "name": "monte",
         "stars": 0,
         "attacks": 0,
@@ -748,15 +760,15 @@
         "wars": 1
       },
       {
-        "name": "Kojak",
+        "name": "Brann",
         "stars": 0,
         "attacks": 0,
         "wars": 1
       },
       {
-        "name": "Brann",
+        "name": "Albaroon.2",
         "stars": 0,
-        "attacks": 0,
+        "attacks": 1,
         "wars": 1
       }
     ]
@@ -1144,7 +1156,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 5,
+      "us": 7,
       "them": 9,
       "members": [
         {
@@ -1200,7 +1212,12 @@
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 57
+            }
+          ]
         },
         {
           "name": "monte",
@@ -1225,7 +1242,12 @@
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 27
+            }
+          ]
         },
         {
           "name": "Belaska",
@@ -2501,8 +2523,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "0|363808059|340666887|15875|9386|10205|52473|0|229|104|11",
-      "last": "2026-11-02T05:15:47.602Z",
+      "sig": "0|363887859|340755553|15875|9386|10205|52473|0|231|104|11",
+      "last": "2026-11-02T21:45:51.150Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -2521,8 +2543,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|249299713|250449072|15400|1422|24800|41251|0|11|61|13",
-      "last": "2026-11-02T16:01:28.655Z",
+      "sig": "20|249299713|250449072|15400|1422|24800|41751|0|11|61|13",
+      "last": "2026-11-02T21:45:51.150Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -2536,8 +2558,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "0|123629755|114045529|7600|609|9310|29985|0|32|57|9",
-      "last": "2026-11-02T05:15:47.602Z",
+      "sig": "25|123629755|114045529|7600|634|9310|29985|0|32|57|9",
+      "last": "2026-11-02T21:45:51.150Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -2561,8 +2583,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|87473677|72234705|5100|306|0|20470|0|12|49|9",
-      "last": "2026-11-02T19:45:56.135Z",
+      "sig": "0|87854677|72615705|5100|306|0|20470|0|12|49|9",
+      "last": "2026-11-02T21:45:51.150Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -2576,8 +2598,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|75693347|63896506|3000|26|0|0|0|0|39|9",
-      "last": "2026-11-02T20:15:58.752Z",
+      "sig": "0|76299627|64232258|3000|26|0|0|0|0|39|9",
+      "last": "2026-11-02T21:45:51.150Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2671,8 +2693,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|9082885|9128161|0|0|0|100|0|0|22|7",
-      "last": "2026-11-02T21:01:22.509Z",
+      "sig": "0|9781741|9596413|0|0|0|100|0|0|22|7",
+      "last": "2026-11-02T21:45:51.150Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3551,7 +3573,7 @@
         "warStars": 11,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 41251,
+        "capital": 41751,
         "warPref": "in",
         "heroes": [
           {
@@ -3620,7 +3642,7 @@
         "capLoot": 24800,
         "gold": 249299713,
         "elixir": 250449072,
-        "capContrib": 41251,
+        "capContrib": 41751,
         "wins": 0
       }
     },
@@ -3784,7 +3806,7 @@
         "trophies": 13,
         "best": 2156,
         "league": "Archer League 9",
-        "warStars": 229,
+        "warStars": 231,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 52473,
@@ -3792,12 +3814,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 38,
+            "level": 39,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 38,
+            "level": 39,
             "max": 110
           },
           {
@@ -3813,10 +3835,10 @@
         ]
       },
       "rush": {
-        "pct": 7.2,
+        "pct": 6.4,
         "troops": 4,
         "spells": 20.4,
-        "heroes": 4,
+        "heroes": 2,
         "top": [
           {
             "n": "Zaklęcie klonowania",
@@ -3854,8 +3876,8 @@
         "cg": 15875,
         "don": 9386,
         "capLoot": 10205,
-        "gold": 363808059,
-        "elixir": 340666887,
+        "gold": 363887859,
+        "elixir": 340755553,
         "capContrib": 52473,
         "wins": 0
       }
@@ -4271,7 +4293,7 @@
       "tag": "#G8VGC2VRL",
       "role": "admin",
       "th": 9,
-      "given": 0,
+      "given": 25,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -4303,14 +4325,14 @@
         ]
       },
       "rush": {
-        "pct": 8.9,
-        "troops": 15.3,
+        "pct": 8,
+        "troops": 13.6,
         "spells": 4.3,
         "heroes": 0,
         "top": [
           {
             "n": "Wieprzowy jeździec",
-            "lvl": 1,
+            "lvl": 2,
             "need": 4
           },
           {
@@ -4342,7 +4364,7 @@
       },
       "ach": {
         "cg": 7600,
-        "don": 609,
+        "don": 634,
         "capLoot": 9310,
         "gold": 123629755,
         "elixir": 114045529,
@@ -4430,8 +4452,8 @@
         ]
       },
       "rush": {
-        "pct": 5.7,
-        "troops": 8.9,
+        "pct": 4.8,
+        "troops": 7.1,
         "spells": 5.3,
         "heroes": 0,
         "top": [
@@ -4439,11 +4461,6 @@
             "n": "Minion",
             "lvl": 2,
             "need": 4
-          },
-          {
-            "n": "Golem",
-            "lvl": 1,
-            "need": 2
           },
           {
             "n": "Zaklęcie trucizny",
@@ -4610,11 +4627,11 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 52,
-      "trophies": 120,
+      "received": 77,
+      "trophies": 160,
       "profile": {
         "level": 49,
-        "trophies": 120,
+        "trophies": 160,
         "best": 308,
         "league": "Skeleton League 3",
         "warStars": 12,
@@ -4682,8 +4699,8 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 87473677,
-        "elixir": 72234705,
+        "gold": 87854677,
+        "elixir": 72615705,
         "capContrib": 20470,
         "wins": 0
       }
@@ -4761,8 +4778,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 75693347,
-        "elixir": 63896506,
+        "gold": 76299627,
+        "elixir": 64232258,
         "capContrib": 0,
         "wins": 0
       }
@@ -5627,8 +5644,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 9082885,
-        "elixir": 9128161,
+        "gold": 9781741,
+        "elixir": 9596413,
         "capContrib": 100,
         "wins": 0
       }
