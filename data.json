@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T15:15:58.850Z",
+  "updated": "2026-11-02T15:31:16.353Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -375,7 +375,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -4838,22 +4838,17 @@
           },
           {
             "name": "Archer Queen",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 42.1,
-        "troops": 28.3,
+        "pct": 40,
+        "troops": 26.1,
         "spells": 36.8,
-        "heroes": 66.7,
+        "heroes": 63.3,
         "top": [
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
           {
             "n": "Król Barbarzyńców",
             "lvl": 6,
@@ -4865,17 +4860,22 @@
             "need": 5
           },
           {
-            "n": "Królowa Łuczniczek",
-            "lvl": 4,
-            "need": 10
-          },
-          {
             "n": "Minion",
             "lvl": 2,
             "need": 4
           },
           {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 4
+          },
+          {
             "n": "Zaklęcie trucizny",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Zaklęcie wstrząsu",
             "lvl": 1,
             "need": 2
           }
