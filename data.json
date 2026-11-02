@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T20:31:12.445Z",
+  "updated": "2026-11-02T21:01:22.519Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -18,7 +18,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 11,
-        "pct": 397,
+        "pct": 434,
         "wins": 0,
         "played": 0
       },
@@ -2649,8 +2649,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|9082885|9128161|0|0|0|100|0|0|21|7",
-      "last": "2026-11-02T19:01:29.704Z",
+      "sig": "0|9082885|9128161|0|0|0|100|0|0|22|7",
+      "last": "2026-11-02T21:01:22.509Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -5561,7 +5561,7 @@
       "received": 20,
       "trophies": 40,
       "profile": {
-        "level": 21,
+        "level": 22,
         "trophies": 40,
         "best": 40,
         "league": "Skeleton League 1",
