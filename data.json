@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T00:45:52.355Z",
+  "updated": "2026-11-02T01:01:18.332Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -1957,8 +1957,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "357|114824291|114425477|16800|514|21725|42288|0|68|54|9",
-      "last": "2026-11-01T09:31:04.034Z",
+      "sig": "357|114824291|114425477|16800|514|21725|42288|0|68|55|9",
+      "last": "2026-11-02T01:01:18.319Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -3727,7 +3727,7 @@
       "received": 1500,
       "trophies": 261,
       "profile": {
-        "level": 54,
+        "level": 55,
         "trophies": 261,
         "best": 622,
         "league": "Barbarian League 5",
@@ -3739,12 +3739,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 14,
+            "level": 15,
             "max": 110
           },
           {
@@ -3755,22 +3755,11 @@
         ]
       },
       "rush": {
-        "pct": 1.8,
+        "pct": 0,
         "troops": 0,
-        "spells": 4.3,
-        "heroes": 3.3,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 19,
-            "need": 20
-          }
-        ]
+        "spells": 0,
+        "heroes": 0,
+        "top": []
       },
       "ach": {
         "cg": 16800,
