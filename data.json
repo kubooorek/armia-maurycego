@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T23:01:20.748Z",
+  "updated": "2026-11-02T23:16:05.651Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -98,7 +98,7 @@
           "name": "ARMIA MAURYCEGO",
           "stars": 7,
           "pct": 30,
-          "attacks": 12,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -345,7 +345,13 @@
             "tag": "#QYJUV90JY",
             "pos": 8,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 40,
+                "target": "15. lil buda"
+              }
+            ]
           },
           {
             "name": "Cwel123",
@@ -760,12 +766,6 @@
         "wars": 1
       },
       {
-        "name": "monte",
-        "stars": 0,
-        "attacks": 0,
-        "wars": 1
-      },
-      {
         "name": "Albaroon.2",
         "stars": 0,
         "attacks": 1,
@@ -773,6 +773,12 @@
       },
       {
         "name": "MrDefPL",
+        "stars": 0,
+        "attacks": 1,
+        "wars": 1
+      },
+      {
+        "name": "monte",
         "stars": 0,
         "attacks": 1,
         "wars": 1
@@ -789,7 +795,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -1241,7 +1247,12 @@
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 40
+            }
+          ]
         },
         {
           "name": "Cwel123",
@@ -2532,8 +2543,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "0|567102691|590792953|38350|7509|531795|665578|0|90|109|12",
-      "last": "2026-11-02T20:15:58.752Z",
+      "sig": "0|576348176|599058320|38350|7509|531795|665578|0|90|109|12",
+      "last": "2026-11-02T23:16:05.635Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -2577,8 +2588,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|168335319|161774478|2900|20|21235|28873|0|44|79|11",
-      "last": "2026-11-02T18:46:07.631Z",
+      "sig": "0|168386753|161806215|2900|20|21235|28873|0|44|79|11",
+      "last": "2026-11-02T23:16:05.635Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -2707,8 +2718,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|8787352|8545228|0|0|0|0|0|0|23|6",
-      "last": "2026-11-02T01:45:53.992Z",
+      "sig": "0|8787352|8545228|0|0|0|0|0|0|24|6",
+      "last": "2026-11-02T23:16:05.635Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -2722,8 +2733,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|13624987|13071942|0|0|0|100|0|0|23|8",
-      "last": "2026-11-02T23:01:20.737Z",
+      "sig": "0|13624987|13071942|0|0|0|100|0|0|24|8",
+      "last": "2026-11-02T23:16:05.635Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3544,7 +3555,7 @@
       "trophies": 162,
       "profile": {
         "level": 109,
-        "trophies": 0,
+        "trophies": 162,
         "best": 2839,
         "league": "Valkyrie League 14",
         "warStars": 90,
@@ -3586,8 +3597,8 @@
         "cg": 38350,
         "don": 7509,
         "capLoot": 531795,
-        "gold": 567102691,
-        "elixir": 590792953,
+        "gold": 576348176,
+        "elixir": 599058320,
         "capContrib": 665578,
         "wins": 0
       }
@@ -4317,8 +4328,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 168335319,
-        "elixir": 161774478,
+        "gold": 168386753,
+        "elixir": 161806215,
         "capContrib": 28873,
         "wins": 0
       }
@@ -5635,7 +5646,7 @@
       "received": 20,
       "trophies": 120,
       "profile": {
-        "level": 23,
+        "level": 24,
         "trophies": 120,
         "best": 120,
         "league": "Skeleton League 1",
@@ -5989,7 +6000,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 23,
+        "level": 24,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
