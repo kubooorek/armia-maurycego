@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T17:31:09.853Z",
+  "updated": "2026-11-02T17:46:52.682Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -8,26 +8,17 @@
   "currentWar": null,
   "cwl": {
     "season": "2026-11-01",
-    "state": "preparation",
+    "state": "inWar",
     "rounds": 7,
-    "place": 4,
+    "place": 5,
     "groupSize": 8,
     "standings": [
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 0,
-        "pct": 0,
-        "wins": 0,
-        "played": 0
-      },
       {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 0,
-        "pct": 0,
+        "stars": 3,
+        "pct": 100,
         "wins": 0,
         "played": 0
       },
@@ -35,6 +26,24 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
+        "stars": 3,
+        "pct": 100,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 3,
+        "pct": 100,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
         "stars": 0,
         "pct": 0,
         "wins": 0,
@@ -68,15 +77,6 @@
         "played": 0
       },
       {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 0,
-        "pct": 0,
-        "wins": 0,
-        "played": 0
-      },
-      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
@@ -89,7 +89,7 @@
     "wars": [
       {
         "round": 1,
-        "state": "preparation",
+        "state": "inWar",
         "size": 15,
         "perMember": 1,
         "start": "20261102T173507.000Z",
@@ -137,8 +137,8 @@
             },
             {
               "pos": 8,
-              "th": 10,
-              "best": 0
+              "th": 11,
+              "best": 3
             },
             {
               "pos": 9,
@@ -179,9 +179,9 @@
         },
         "them": {
           "name": "React",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 3,
+          "pct": 6.67,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -314,7 +314,7 @@
             "name": "monte",
             "tag": "#QYJUV90JY",
             "pos": 8,
-            "th": 10,
+            "th": 11,
             "attacks": []
           },
           {
@@ -367,9 +367,351 @@
             "attacks": []
           }
         ]
+      },
+      {
+        "round": 2,
+        "state": "preparation",
+        "size": 15,
+        "perMember": 1,
+        "start": "20261103T173512.000Z",
+        "end": "20261104T173512.000Z",
+        "us": {
+          "name": "ARMIA MAURYCEGO",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 18,
+              "th": 8,
+              "best": 0
+            }
+          ]
+        },
+        "them": {
+          "name": "BattlerManipur2",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 17,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 17,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 9,
+              "best": 0
+            }
+          ]
+        },
+        "members": [
+          {
+            "name": "KUBOOOREK",
+            "tag": "#VP9PLGLV",
+            "pos": 1,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Baku",
+            "tag": "#LUGR0YQY0",
+            "pos": 2,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Albaroon.2",
+            "tag": "#GYUJR2URJ",
+            "pos": 3,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MAQOS",
+            "tag": "#LJYR92002",
+            "pos": 4,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MrDefPL",
+            "tag": "#8UCPRGC8",
+            "pos": 5,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "oggsgdjdjbd",
+            "tag": "#Q9CU9P908",
+            "pos": 6,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "VipeR",
+            "tag": "#22R8PLCU8",
+            "pos": 7,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "monte",
+            "tag": "#QYJUV90JY",
+            "pos": 8,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "Cwel123",
+            "tag": "#RPR0L809R",
+            "pos": 9,
+            "th": 10,
+            "attacks": []
+          },
+          {
+            "name": "tak",
+            "tag": "#Y02PYY922",
+            "pos": 10,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Kojak",
+            "tag": "#G8VGC2VRL",
+            "pos": 11,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Belaska",
+            "tag": "#GU0R2J8R0",
+            "pos": 12,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Brann",
+            "tag": "#LC8VRR9R2",
+            "pos": 13,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "vvd",
+            "tag": "#GQULCR98R",
+            "pos": 14,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Barnes",
+            "tag": "#LQVRCRUYR",
+            "pos": 18,
+            "th": 8,
+            "attacks": []
+          }
+        ]
       }
     ],
-    "top": []
+    "top": [
+      {
+        "name": "KUBOOOREK",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "Baku",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "Albaroon.2",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "MAQOS",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "MrDefPL",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "oggsgdjdjbd",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "VipeR",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "monte",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "Cwel123",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      },
+      {
+        "name": "tak",
+        "stars": 0,
+        "attacks": 0,
+        "wars": 1
+      }
+    ]
   },
   "visits": 63,
   "discord": {
@@ -732,6 +1074,94 @@
     }
   ],
   "warArchive": [
+    {
+      "start": "20261102T173507.000Z",
+      "end": "20261103T173507.000Z",
+      "enemy": "React",
+      "size": 15,
+      "perMember": 1,
+      "state": "inWar",
+      "cwl": true,
+      "us": 0,
+      "them": 3,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": []
+        },
+        {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": []
+        }
+      ]
+    },
     {
       "start": "20261031T171000.000Z",
       "end": "20261101T171000.000Z",
@@ -2054,8 +2484,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "3|45845826|45469923|2400|459|7665|19659|0|4|47|9",
-      "last": "2026-11-02T16:31:23.786Z",
+      "sig": "23|46869946|45898822|2400|479|7665|19659|0|4|48|9",
+      "last": "2026-11-02T17:46:52.674Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -2074,13 +2504,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "0|25355521|24369584|0|73|7410|8648|0|6|37|8",
-      "last": "2026-11-02T16:01:28.655Z",
+      "sig": "0|25791626|24797584|0|73|7410|8648|0|6|37|8",
+      "last": "2026-11-02T17:46:52.674Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|21992671|20651907|5600|0|0|6070|0|0|37|8",
-      "last": "2026-11-02T12:45:51.200Z",
+      "sig": "0|22192671|20851907|5600|0|0|6070|0|0|37|8",
+      "last": "2026-11-02T17:46:52.674Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -2089,8 +2519,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|44|8",
-      "last": "2026-11-02T05:15:47.602Z",
+      "sig": "0||||||||||8",
+      "last": "2026-11-02T17:46:52.674Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -4332,81 +4762,22 @@
       }
     },
     {
-      "name": "Darui",
-      "tag": "#LUQJC2JGY",
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 44,
-        "trophies": 0,
-        "best": 242,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16969,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 9,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 3.2,
-        "troops": 0,
-        "spells": 7.1,
-        "heroes": 10,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 160,
-        "capLoot": 11195,
-        "gold": 22155257,
-        "elixir": 21522055,
-        "capContrib": 16969,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Martini",
-      "tag": "#GVG02VV98",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
+      "received": 40,
+      "trophies": 41,
       "profile": {
         "level": 37,
-        "trophies": 0,
-        "best": 257,
+        "trophies": 41,
+        "best": 300,
         "league": "Skeleton League 2",
-        "warStars": 0,
+        "warStars": 6,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 6070,
+        "capital": 8648,
         "warPref": "in",
         "heroes": [
           {
@@ -4417,9 +4788,9 @@
         ]
       },
       "rush": {
-        "pct": 8.3,
-        "troops": 5.3,
-        "spells": 0,
+        "pct": 13.6,
+        "troops": 8.3,
+        "spells": 15.4,
         "heroes": 30,
         "top": [
           {
@@ -4428,24 +4799,34 @@
             "need": 2
           },
           {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 2,
+            "need": 4
+          },
+          {
             "n": "Król Barbarzyńców",
             "lvl": 7,
             "need": 10
           },
           {
-            "n": "Goblin",
+            "n": "Barbarzyńca",
             "lvl": 3,
             "need": 4
           }
         ]
       },
       "ach": {
-        "cg": 5600,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 21992671,
-        "elixir": 20651907,
-        "capContrib": 6070,
+        "cg": 0,
+        "don": 73,
+        "capLoot": 7410,
+        "gold": 25791626,
+        "elixir": 24797584,
+        "capContrib": 8648,
         "wins": 0
       }
     },
@@ -4454,12 +4835,12 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 3,
+      "given": 23,
       "received": 50,
-      "trophies": 0,
+      "trophies": 40,
       "profile": {
-        "level": 47,
-        "trophies": 0,
+        "level": 48,
+        "trophies": 40,
         "best": 349,
         "league": "Skeleton League 2",
         "warStars": 4,
@@ -4495,11 +4876,79 @@
       },
       "ach": {
         "cg": 2400,
-        "don": 459,
+        "don": 479,
         "capLoot": 7665,
-        "gold": 45845826,
-        "elixir": 45469923,
+        "gold": 46869946,
+        "elixir": 45898822,
         "capContrib": 19659,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Darui",
+      "tag": "#LUQJC2JGY",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0
+    },
+    {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 37,
+        "trophies": 0,
+        "best": 257,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6070,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 6.7,
+        "troops": 2.6,
+        "spells": 0,
+        "heroes": 30,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 7,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5600,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 22192671,
+        "elixir": 20851907,
+        "capContrib": 6070,
         "wins": 0
       }
     },
@@ -4705,75 +5154,6 @@
         "gold": 11623371,
         "elixir": 10528310,
         "capContrib": 7670,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 20,
-      "trophies": 0,
-      "profile": {
-        "level": 37,
-        "trophies": 0,
-        "best": 300,
-        "league": "Skeleton League 2",
-        "warStars": 6,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 8648,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 7,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 13.8,
-        "troops": 8.3,
-        "spells": 16.7,
-        "heroes": 30,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 10
-          },
-          {
-            "n": "Barbarzyńca",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 73,
-        "capLoot": 7410,
-        "gold": 25355521,
-        "elixir": 24369584,
-        "capContrib": 8648,
         "wins": 0
       }
     },
