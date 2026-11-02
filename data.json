@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T01:45:54.005Z",
+  "updated": "2026-11-02T02:31:09.921Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -375,7 +375,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3635,6 +3635,59 @@
       }
     },
     {
+      "name": "Belaska",
+      "tag": "#GU0R2J8R0",
+      "role": "admin",
+      "th": 9,
+      "given": 357,
+      "received": 1500,
+      "trophies": 291,
+      "profile": {
+        "level": 55,
+        "trophies": 291,
+        "best": 622,
+        "league": "Barbarian League 5",
+        "warStars": 68,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 42288,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 4,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 16800,
+        "don": 514,
+        "capLoot": 21725,
+        "gold": 114824291,
+        "elixir": 114425477,
+        "capContrib": 42288,
+        "wins": 0
+      }
+    },
+    {
       "name": "Kojak",
       "tag": "#G8VGC2VRL",
       "role": "admin",
@@ -3715,59 +3768,6 @@
         "gold": 123629755,
         "elixir": 114045529,
         "capContrib": 29985,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Belaska",
-      "tag": "#GU0R2J8R0",
-      "role": "admin",
-      "th": 9,
-      "given": 357,
-      "received": 1500,
-      "trophies": 261,
-      "profile": {
-        "level": 55,
-        "trophies": 261,
-        "best": 622,
-        "league": "Barbarian League 5",
-        "warStars": 68,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 42288,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 15,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 4,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 16800,
-        "don": 514,
-        "capLoot": 21725,
-        "gold": 114824291,
-        "elixir": 114425477,
-        "capContrib": 42288,
         "wins": 0
       }
     },
