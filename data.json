@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T13:01:35.678Z",
+  "updated": "2026-11-02T13:16:03.587Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -375,7 +375,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -1940,8 +1940,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "5|230535514|228726938|14450|153|57300|106086|0|57|101|12",
-      "last": "2026-11-02T09:31:06.485Z",
+      "sig": "17|230535514|228726938|14450|153|57300|106086|0|57|101|12",
+      "last": "2026-11-02T13:16:03.574Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -2030,8 +2030,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|69156541|58525129|3000|26|0|0|0|0|39|9",
-      "last": "2026-11-02T13:01:35.668Z",
+      "sig": "0|70371628|59220838|3000|26|0|0|0|0|39|9",
+      "last": "2026-11-02T13:16:03.574Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -3083,7 +3083,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 5,
+      "given": 17,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -4105,8 +4105,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 69156541,
-        "elixir": 58525129,
+        "gold": 70371628,
+        "elixir": 59220838,
         "capContrib": 0,
         "wins": 0
       }
@@ -4962,6 +4962,65 @@
       }
     },
     {
+      "name": "TwojaSiora",
+      "tag": "#GQR98J880",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 21,
+        "trophies": 0,
+        "best": 0,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 100,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 21.9,
+        "troops": 0,
+        "spells": 70,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 9038885,
+        "elixir": 9084161,
+        "capContrib": 100,
+        "wins": 0
+      }
+    },
+    {
       "name": "BoT6790",
       "tag": "#GVRY000P2",
       "role": "member",
@@ -5391,7 +5450,7 @@
       "role": "member",
       "th": 6,
       "given": 0,
-      "received": 3,
+      "received": 15,
       "trophies": 0,
       "profile": {
         "level": 16,
@@ -5435,65 +5494,6 @@
         "capLoot": 0,
         "gold": 2316298,
         "elixir": 2022687,
-        "capContrib": 100,
-        "wins": 0
-      }
-    },
-    {
-      "name": "TwojaSiora",
-      "tag": "#GQR98J880",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 21,
-        "trophies": 0,
-        "best": 0,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 100,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 1,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 21.9,
-        "troops": 0,
-        "spells": 70,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 9038885,
-        "elixir": 9084161,
         "capContrib": 100,
         "wins": 0
       }
