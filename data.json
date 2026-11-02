@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:15:52.619Z",
+  "updated": "2026-11-02T19:32:01.578Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -17,6 +17,15 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
+        "stars": 9,
+        "pct": 300,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
         "stars": 9,
         "pct": 300,
         "wins": 0,
@@ -59,20 +68,11 @@
         "played": 0
       },
       {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 3,
-        "pct": 100,
-        "wins": 0,
-        "played": 0
-      },
-      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 1,
-        "pct": 24,
+        "pct": 48,
         "wins": 0,
         "played": 0
       },
@@ -97,8 +97,8 @@
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 1,
-          "pct": 1.6,
-          "attacks": 1,
+          "pct": 3.2,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -357,7 +357,13 @@
             "tag": "#GQULCR98R",
             "pos": 14,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 24,
+                "target": "14. midnight"
+              }
+            ]
           },
           {
             "name": "Barnes",
@@ -1166,7 +1172,12 @@
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 24
+            }
+          ]
         },
         {
           "name": "Barnes",
@@ -2502,8 +2513,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "23|48543038|47533151|2400|479|7665|19659|0|4|48|9",
-      "last": "2026-11-02T19:01:29.704Z",
+      "sig": "49|48543038|47533151|2400|479|7665|19659|0|4|48|9",
+      "last": "2026-11-02T19:32:01.565Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4500,7 +4511,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 0,
+      "received": 26,
       "trophies": 40,
       "profile": {
         "level": 49,
@@ -4800,16 +4811,16 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 13.6,
+        "pct": 11.9,
         "troops": 8.3,
         "spells": 15.4,
-        "heroes": 30,
+        "heroes": 20,
         "top": [
           {
             "n": "Minion",
@@ -4827,14 +4838,14 @@
             "need": 4
           },
           {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 10
-          },
-          {
             "n": "Barbarzyńca",
             "lvl": 3,
             "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 10
           }
         ]
       },
@@ -4853,7 +4864,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 23,
+      "given": 49,
       "received": 50,
       "trophies": 40,
       "profile": {
