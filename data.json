@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T14:31:12.000Z",
+  "updated": "2026-11-02T14:46:06.489Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -544,6 +544,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-02T14:46:05.686Z",
+      "type": "th",
+      "name": "erykos",
+      "from": 7,
+      "to": 8
+    },
     {
       "t": "2026-11-02T11:15:54.923Z",
       "type": "th",
@@ -1307,7 +1314,7 @@
     {
       "d": "2026-11-02",
       "members": 44,
-      "avgTh": 8.5,
+      "avgTh": 8.6,
       "level": 3,
       "wins": 13,
       "points": 18800
@@ -2030,8 +2037,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|71117229|59954427|3000|26|0|0|0|0|39|9",
-      "last": "2026-11-02T13:32:11.668Z",
+      "sig": "0|73057841|61575019|3000|26|0|0|0|0|39|9",
+      "last": "2026-11-02T14:46:06.479Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2060,8 +2067,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "0|23275034|22776443|0|73|7410|8648|0|6|36|7",
-      "last": "2026-11-02T14:31:11.992Z",
+      "sig": "0|23537534|22776443|0|73|7410|8648|0|6|37|8",
+      "last": "2026-11-02T14:46:06.479Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -4105,8 +4112,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 71117229,
-        "elixir": 59954427,
+        "gold": 73057841,
+        "elixir": 61575019,
         "capContrib": 0,
         "wins": 0
       }
@@ -4692,12 +4699,12 @@
       "name": "erykos",
       "tag": "#R9GPGL0QJ",
       "role": "member",
-      "th": 7,
+      "th": 8,
       "given": 0,
       "received": 20,
       "trophies": 0,
       "profile": {
-        "level": 36,
+        "level": 37,
         "trophies": 0,
         "best": 300,
         "league": "Skeleton League 2",
@@ -4715,15 +4722,35 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
-        "troops": 0,
-        "spells": 10,
-        "heroes": 0,
+        "pct": 13.8,
+        "troops": 8.3,
+        "spells": 16.7,
+        "heroes": 30,
         "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
           {
             "n": "Zaklęcie szału",
             "lvl": 2,
-            "need": 3
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 7,
+            "need": 10
+          },
+          {
+            "n": "Barbarzyńca",
+            "lvl": 3,
+            "need": 4
           }
         ]
       },
@@ -4731,7 +4758,7 @@
         "cg": 0,
         "don": 73,
         "capLoot": 7410,
-        "gold": 23275034,
+        "gold": 23537534,
         "elixir": 22776443,
         "capContrib": 8648,
         "wins": 0
