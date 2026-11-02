@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T21:01:22.519Z",
+  "updated": "2026-11-02T21:15:55.529Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 11,
-        "pct": 434,
+        "stars": 14,
+        "pct": 534,
         "wins": 0,
         "played": 0
       },
@@ -753,7 +753,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2654,8 +2654,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|2316298|2022687|0|0|0|100|0|0|18|6",
-      "last": "2026-11-02T16:31:23.786Z",
+      "sig": "0|2504246|2147140|0|0|0|100|0|0|19|6",
+      "last": "2026-11-02T21:15:55.521Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -3609,7 +3609,7 @@
       "th": 12,
       "given": 42,
       "received": 40,
-      "trophies": 0,
+      "trophies": 109,
       "profile": {
         "level": 101,
         "trophies": 0,
@@ -5178,7 +5178,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
@@ -6055,7 +6055,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 18,
+        "level": 19,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -6094,8 +6094,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 2316298,
-        "elixir": 2022687,
+        "gold": 2504246,
+        "elixir": 2147140,
         "capContrib": 100,
         "wins": 0
       }
