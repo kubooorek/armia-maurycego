@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T16:01:28.668Z",
+  "updated": "2026-11-02T16:31:23.797Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -375,7 +375,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -544,6 +544,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-02T16:31:22.863Z",
+      "type": "th",
+      "name": "SHA☆ZAM!",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-02T14:46:05.686Z",
       "type": "th",
@@ -2047,8 +2054,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "3|45845826|45469923|2400|459|7665|16159|0|4|47|8",
-      "last": "2026-11-02T12:31:05.924Z",
+      "sig": "3|45845826|45469923|2400|459|7665|19659|0|4|47|9",
+      "last": "2026-11-02T16:31:23.786Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -2137,13 +2144,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|2316298|2022687|0|0|0|100|0|0|17|6",
-      "last": "2026-11-02T15:01:31.367Z",
+      "sig": "0|2316298|2022687|0|0|0|100|0|0|18|6",
+      "last": "2026-11-02T16:31:23.786Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|32970435|30975367|800|89|7180|16616|0|2|47|9",
-      "last": "2026-11-02T14:15:55.072Z",
+      "sig": "0|32970435|30975367|800|89|7180|16616|0|2|48|9",
+      "last": "2026-11-02T16:31:23.786Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -4071,16 +4078,11 @@
         ]
       },
       "rush": {
-        "pct": 42.9,
+        "pct": 41.8,
         "troops": 20.4,
-        "spells": 75,
+        "spells": 66.7,
         "heroes": 66.7,
         "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 5
-          },
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
@@ -4100,6 +4102,11 @@
             "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 4
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 2,
+            "need": 5
           },
           {
             "n": "Król Barbarzyńców",
@@ -4403,7 +4410,7 @@
       "name": "SHA☆ZAM!",
       "tag": "#GVGRVCQJR",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 3,
       "received": 50,
       "trophies": 0,
@@ -4415,12 +4422,12 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 16159,
+        "capital": 19659,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
@@ -4431,11 +4438,17 @@
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 6.7,
         "troops": 0,
         "spells": 0,
-        "heroes": 0,
-        "top": []
+        "heroes": 23.3,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 13,
+            "need": 20
+          }
+        ]
       },
       "ach": {
         "cg": 2400,
@@ -4443,7 +4456,7 @@
         "capLoot": 7665,
         "gold": 45845826,
         "elixir": 45469923,
-        "capContrib": 16159,
+        "capContrib": 19659,
         "wins": 0
       }
     },
@@ -5223,7 +5236,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 47,
+        "level": 48,
         "trophies": 0,
         "best": 240,
         "league": "Unranked",
@@ -5235,12 +5248,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 10,
+            "level": 11,
             "max": 110
           },
           {
@@ -5480,7 +5493,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 17,
+        "level": 18,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -5498,14 +5511,14 @@
         ]
       },
       "rush": {
-        "pct": 19,
+        "pct": 14.3,
         "troops": 5.9,
-        "spells": 75,
+        "spells": 50,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
+            "lvl": 2,
             "need": 4
           },
           {
