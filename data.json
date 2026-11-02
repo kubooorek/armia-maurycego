@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T10:46:05.759Z",
+  "updated": "2026-11-02T11:01:23.256Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -371,11 +371,11 @@
     ],
     "top": []
   },
-  "visits": null,
+  "visits": 61,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2023,8 +2023,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|65269204|55948170|3000|26|0|0|0|0|38|9",
-      "last": "2026-11-02T09:45:57.464Z",
+      "sig": "0|66014318|56372529|3000|26|0|0|0|0|38|9",
+      "last": "2026-11-02T11:01:23.247Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -3608,16 +3608,11 @@
         ]
       },
       "rush": {
-        "pct": 23.8,
-        "troops": 12.7,
+        "pct": 23.2,
+        "troops": 11.4,
         "spells": 21.9,
         "heroes": 37.1,
         "top": [
-          {
-            "n": "Golem",
-            "lvl": 1,
-            "need": 4
-          },
           {
             "n": "Wieprzowy jeździec",
             "lvl": 2,
@@ -3625,6 +3620,11 @@
           },
           {
             "n": "Walkiria",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Golem",
             "lvl": 2,
             "need": 4
           },
@@ -4093,8 +4093,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 65269204,
-        "elixir": 55948170,
+        "gold": 66014318,
+        "elixir": 56372529,
         "capContrib": 0,
         "wins": 0
       }
