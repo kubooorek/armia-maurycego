@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T17:46:52.682Z",
+  "updated": "2026-11-02T18:01:27.226Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -10,21 +10,30 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 5,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 3,
-        "pct": 100,
+        "stars": 9,
+        "pct": 300,
         "wins": 0,
         "played": 0
       },
       {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
+        "level": 5,
+        "stars": 5,
+        "pct": 187,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
         "level": 5,
         "stars": 3,
         "pct": 100,
@@ -41,6 +50,24 @@
         "played": 0
       },
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 3,
+        "pct": 100,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 1,
+        "pct": 24,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
@@ -50,36 +77,9 @@
         "played": 0
       },
       {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 0,
-        "pct": 0,
-        "wins": 0,
-        "played": 0
-      },
-      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 0,
-        "pct": 0,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 0,
-        "pct": 0,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
         "stars": 0,
         "pct": 0,
         "wins": 0,
@@ -96,9 +96,9 @@
         "end": "20261103T173507.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 1,
+          "pct": 1.6,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -128,7 +128,7 @@
             {
               "pos": 6,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 7,
@@ -158,7 +158,7 @@
             {
               "pos": 12,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 13,
@@ -179,9 +179,9 @@
         },
         "them": {
           "name": "React",
-          "stars": 3,
-          "pct": 6.67,
-          "attacks": 1,
+          "stars": 9,
+          "pct": 20,
+          "attacks": 3,
           "bases": [
             {
               "pos": 1,
@@ -256,7 +256,7 @@
             {
               "pos": 15,
               "th": 12,
-              "best": 0
+              "best": 1
             }
           ]
         },
@@ -364,7 +364,13 @@
             "tag": "#LQVRCRUYR",
             "pos": 17,
             "th": 8,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 24,
+                "target": "15. lil buda"
+              }
+            ]
           }
         ]
       },
@@ -652,6 +658,12 @@
     ],
     "top": [
       {
+        "name": "Barnes",
+        "stars": 1,
+        "attacks": 1,
+        "wars": 1
+      },
+      {
         "name": "KUBOOOREK",
         "stars": 0,
         "attacks": 0,
@@ -701,12 +713,6 @@
       },
       {
         "name": "Cwel123",
-        "stars": 0,
-        "attacks": 0,
-        "wars": 1
-      },
-      {
-        "name": "tak",
         "stars": 0,
         "attacks": 0,
         "wars": 1
@@ -1082,8 +1088,8 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 0,
-      "them": 3,
+      "us": 1,
+      "them": 9,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -1158,7 +1164,12 @@
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 24
+            }
+          ]
         }
       ]
     },
@@ -2374,8 +2385,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "121|468157765|484353282|42500|92953|246500|453697|0|1207|151|15",
-      "last": "2026-11-02T14:01:31.962Z",
+      "sig": "147|468157765|484353282|42500|92978|246500|453697|0|1207|151|15",
+      "last": "2026-11-02T18:01:27.214Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -2439,8 +2450,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|399040543|463764119|59470|11803|136585|234074|0|2451|87|8",
-      "last": "2026-10-31T19:01:18.300Z",
+      "sig": "0|399064543|463821734|59470|11803|136585|234074|0|2452|87|8",
+      "last": "2026-11-02T18:01:27.214Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -2519,8 +2530,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0||||||||||8",
-      "last": "2026-11-02T17:46:52.674Z",
+      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|44|8",
+      "last": "2026-11-02T18:01:27.214Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -3286,7 +3297,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 121,
+      "given": 147,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -3367,7 +3378,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 92953,
+        "don": 92978,
         "capLoot": 246500,
         "gold": 468157765,
         "elixir": 484353282,
@@ -4254,14 +4265,14 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 0,
+      "received": 26,
       "trophies": 0,
       "profile": {
         "level": 87,
         "trophies": 0,
         "best": 2650,
         "league": "Barbarian League 5",
-        "warStars": 2451,
+        "warStars": 2452,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 234074,
@@ -4290,8 +4301,8 @@
         "cg": 59470,
         "don": 11803,
         "capLoot": 136585,
-        "gold": 399040543,
-        "elixir": 463764119,
+        "gold": 399064543,
+        "elixir": 463821734,
         "capContrib": 234074,
         "wins": 0
       }
@@ -4891,7 +4902,57 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 0
+      "trophies": 0,
+      "profile": {
+        "level": 44,
+        "trophies": 0,
+        "best": 242,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16969,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 3.2,
+        "troops": 0,
+        "spells": 7.1,
+        "heroes": 10,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 9,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 160,
+        "capLoot": 11195,
+        "gold": 22155257,
+        "elixir": 21522055,
+        "capContrib": 16969,
+        "wins": 0
+      }
     },
     {
       "name": "Martini",
@@ -5644,11 +5705,17 @@
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 0.9,
         "troops": 0,
-        "spells": 0,
+        "spells": 4.8,
         "heroes": 0,
-        "top": []
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
       },
       "ach": {
         "cg": 800,
