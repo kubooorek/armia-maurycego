@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T05:45:55.177Z",
+  "updated": "2026-11-02T06:01:15.039Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -1282,7 +1282,7 @@
       "avgTh": 8.5,
       "level": 3,
       "wins": 13,
-      "points": 17300
+      "points": 17600
     }
   ],
   "weekBase": {
@@ -2748,12 +2748,12 @@
       "th": 15,
       "given": 0,
       "received": 0,
-      "trophies": 491,
+      "trophies": 0,
       "profile": {
         "level": 204,
-        "trophies": 491,
+        "trophies": 0,
         "best": 5066,
-        "league": "P.E.K.K.A League 23",
+        "league": "P.E.K.K.A League 24",
         "warStars": 1244,
         "attackWins": 0,
         "defenseWins": 0,
@@ -3778,10 +3778,10 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 113,
+      "trophies": 0,
       "profile": {
         "level": 87,
-        "trophies": 113,
+        "trophies": 0,
         "best": 2650,
         "league": "Barbarian League 5",
         "warStars": 2451,
@@ -4079,6 +4079,85 @@
       }
     },
     {
+      "name": "filip",
+      "tag": "#R90YJUQCQ",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 37,
+        "trophies": 0,
+        "best": 193,
+        "league": "Skeleton League 3",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 13078,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 49.5,
+        "troops": 42.6,
+        "spells": 52.6,
+        "heroes": 60,
+        "top": [
+          {
+            "n": "Goblin",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "P.E.K.K.A",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 7,
+            "need": 20
+          },
+          {
+            "n": "Balon",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Mag",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 2,
+            "need": 5
+          }
+        ]
+      },
+      "ach": {
+        "cg": 1250,
+        "don": 43,
+        "capLoot": 5665,
+        "gold": 19657915,
+        "elixir": 19320035,
+        "capContrib": 13078,
+        "wins": 0
+      }
+    },
+    {
       "name": "vvd",
       "tag": "#GQULCR98R",
       "role": "member",
@@ -4202,85 +4281,6 @@
         "gold": 38303577,
         "elixir": 35562453,
         "capContrib": 22915,
-        "wins": 0
-      }
-    },
-    {
-      "name": "filip",
-      "tag": "#R90YJUQCQ",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 174,
-      "profile": {
-        "level": 37,
-        "trophies": 174,
-        "best": 193,
-        "league": "Skeleton League 2",
-        "warStars": 4,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 13078,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 7,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 5,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 49.5,
-        "troops": 42.6,
-        "spells": 52.6,
-        "heroes": 60,
-        "top": [
-          {
-            "n": "Goblin",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "P.E.K.K.A",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 20
-          },
-          {
-            "n": "Balon",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Mag",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 2,
-            "need": 5
-          }
-        ]
-      },
-      "ach": {
-        "cg": 1250,
-        "don": 43,
-        "capLoot": 5665,
-        "gold": 19657915,
-        "elixir": 19320035,
-        "capContrib": 13078,
         "wins": 0
       }
     },
@@ -4441,6 +4441,55 @@
       }
     },
     {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 35,
+        "trophies": 0,
+        "best": 300,
+        "league": "Skeleton League 2",
+        "warStars": 6,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 700,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 5.7,
+        "troops": 0,
+        "spells": 20,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 73,
+        "capLoot": 2290,
+        "gold": 22537534,
+        "elixir": 21876442,
+        "capContrib": 700,
+        "wins": 0
+      }
+    },
+    {
       "name": "SHA☆ZAM!",
       "tag": "#GVGRVCQJR",
       "role": "member",
@@ -4528,55 +4577,6 @@
         "gold": 25617157,
         "elixir": 23994965,
         "capContrib": 9125,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 300,
-      "profile": {
-        "level": 35,
-        "trophies": 300,
-        "best": 300,
-        "league": "Skeleton League 1",
-        "warStars": 6,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 700,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 6,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 5.7,
-        "troops": 0,
-        "spells": 20,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 73,
-        "capLoot": 2290,
-        "gold": 22537534,
-        "elixir": 21876442,
-        "capContrib": 700,
         "wins": 0
       }
     },
@@ -4751,24 +4751,24 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 8.6,
+        "pct": 5.7,
         "troops": 0,
-        "spells": 30,
+        "spells": 20,
         "heroes": 0,
         "top": [
           {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
+            "n": "Zaklęcie leczenia",
+            "lvl": 2,
             "need": 3
           },
           {
-            "n": "Zaklęcie leczenia",
+            "n": "Zaklęcie szału",
             "lvl": 2,
             "need": 3
           }
