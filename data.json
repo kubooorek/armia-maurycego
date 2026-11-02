@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T20:15:58.760Z",
+  "updated": "2026-11-02T20:31:12.445Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -14,20 +14,20 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 11,
+        "pct": 397,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
         "stars": 11,
         "pct": 390,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 10,
-        "pct": 328,
         "wins": 0,
         "played": 0
       },
@@ -4851,9 +4851,9 @@
         ]
       },
       "rush": {
-        "pct": 11.9,
-        "troops": 8.3,
-        "spells": 15.4,
+        "pct": 8.5,
+        "troops": 5.6,
+        "spells": 7.7,
         "heroes": 20,
         "top": [
           {
@@ -4862,17 +4862,12 @@
             "need": 2
           },
           {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
+            "n": "Barbarzyńca",
+            "lvl": 3,
             "need": 4
           },
           {
-            "n": "Barbarzyńca",
+            "n": "Zaklęcie szału",
             "lvl": 3,
             "need": 4
           },
@@ -4909,7 +4904,7 @@
         "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 9125,
+        "capital": 13328,
         "warPref": "in",
         "heroes": [
           {
