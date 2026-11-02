@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T06:15:53.980Z",
+  "updated": "2026-11-02T06:31:15.757Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -383,10 +383,10 @@
       "state": "ongoing",
       "start": "20261030T070000.000Z",
       "end": "20261102T070000.000Z",
-      "loot": 128570,
-      "raids": 10,
-      "attacks": 115,
-      "districts": 32,
+      "loot": 133828,
+      "raids": 11,
+      "attacks": 118,
+      "districts": 33,
       "medals": 0,
       "members": [
         {
@@ -416,6 +416,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7917
+        },
+        {
+          "name": "erykos",
+          "tag": "#R9GPGL0QJ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7548
         },
         {
           "name": "SZAR3",
@@ -521,13 +528,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 4389
-        },
-        {
-          "name": "erykos",
-          "tag": "#R9GPGL0QJ",
-          "attacks": 3,
-          "limit": 5,
-          "loot": 2290
         }
       ]
     },
@@ -1282,7 +1282,7 @@
       "avgTh": 8.5,
       "level": 3,
       "wins": 13,
-      "points": 18300
+      "points": 18800
     }
   ],
   "weekBase": {
@@ -2032,8 +2032,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "0|22537534|21876442|0|73|2290|700|0|6|35|7",
-      "last": "2026-11-02T05:15:47.602Z",
+      "sig": "0|22537534|21876442|0|73|7410|8648|0|6|35|7",
+      "last": "2026-11-02T06:31:15.745Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -3060,7 +3060,7 @@
       "trophies": 0,
       "profile": {
         "level": 100,
-        "trophies": 284,
+        "trophies": 0,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 57,
@@ -3435,12 +3435,12 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 210,
+      "trophies": 0,
       "profile": {
         "level": 102,
-        "trophies": 210,
+        "trophies": 0,
         "best": 2730,
-        "league": "Archer League 7",
+        "league": "Archer League 8",
         "warStars": 2054,
         "attackWins": 0,
         "defenseWins": 0,
@@ -3491,7 +3491,7 @@
       "trophies": 0,
       "profile": {
         "level": 74,
-        "trophies": 295,
+        "trophies": 0,
         "best": 400,
         "league": "Archer League 7",
         "warStars": 29,
@@ -3829,7 +3829,7 @@
       "trophies": 0,
       "profile": {
         "level": 37,
-        "trophies": 240,
+        "trophies": 0,
         "best": 252,
         "league": "Barbarian League 4",
         "warStars": 35,
@@ -4237,50 +4237,61 @@
       }
     },
     {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
+      "name": "Darui",
+      "tag": "#LUQJC2JGY",
       "role": "member",
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 181,
+      "trophies": 0,
       "profile": {
-        "level": 43,
-        "trophies": 181,
-        "best": 390,
+        "level": 44,
+        "trophies": 0,
+        "best": 242,
         "league": "Skeleton League 2",
-        "warStars": 7,
+        "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 22915,
+        "capital": 16969,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 10,
+            "level": 8,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 4.8,
         "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
+        "spells": 7.1,
+        "heroes": 20,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 10
+          }
+        ]
       },
       "ach": {
-        "cg": 10050,
-        "don": 68,
-        "capLoot": 17945,
-        "gold": 38303577,
-        "elixir": 35562453,
-        "capContrib": 22915,
+        "cg": 0,
+        "don": 160,
+        "capLoot": 11195,
+        "gold": 22155257,
+        "elixir": 21522055,
+        "capContrib": 16969,
         "wins": 0
       }
     },
@@ -4305,7 +4316,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 6,
+            "level": 7,
             "max": 110
           }
         ]
@@ -4324,6 +4335,103 @@
         "gold": 19707313,
         "elixir": 18599113,
         "capContrib": 6070,
+        "wins": 0
+      }
+    },
+    {
+      "name": "SHA☆ZAM!",
+      "tag": "#GVGRVCQJR",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 46,
+        "trophies": 0,
+        "best": 349,
+        "league": "Skeleton League 2",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16159,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 12,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 2400,
+        "don": 456,
+        "capLoot": 7665,
+        "gold": 45845826,
+        "elixir": 45469923,
+        "capContrib": 16159,
+        "wins": 0
+      }
+    },
+    {
+      "name": "threeten",
+      "tag": "#R8RVQVPCC",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 30,
+        "trophies": 0,
+        "best": 240,
+        "league": "Skeleton League 2",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 31434,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 5,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 5.7,
+        "troops": 0,
+        "spells": 20,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 300,
+        "don": 40,
+        "capLoot": 24805,
+        "gold": 7322588,
+        "elixir": 7919737,
+        "capContrib": 31434,
         "wins": 0
       }
     },
@@ -4441,81 +4549,27 @@
       }
     },
     {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
       "role": "member",
       "th": 7,
       "given": 0,
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 35,
+        "level": 33,
         "trophies": 0,
-        "best": 300,
+        "best": 255,
         "league": "Skeleton League 2",
-        "warStars": 6,
+        "warStars": 15,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 700,
+        "capital": 7670,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 6,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 5.7,
-        "troops": 0,
-        "spells": 20,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 73,
-        "capLoot": 2290,
-        "gold": 22537534,
-        "elixir": 21876442,
-        "capContrib": 700,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SHA☆ZAM!",
-      "tag": "#GVGRVCQJR",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 349,
-      "profile": {
-        "level": 46,
-        "trophies": 349,
-        "best": 349,
-        "league": "Skeleton League 1",
-        "warStars": 4,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16159,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 12,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
+            "level": 8,
             "max": 110
           }
         ]
@@ -4528,12 +4582,12 @@
         "top": []
       },
       "ach": {
-        "cg": 2400,
-        "don": 456,
-        "capLoot": 7665,
-        "gold": 45845826,
-        "elixir": 45469923,
-        "capContrib": 16159,
+        "cg": 0,
+        "don": 30,
+        "capLoot": 0,
+        "gold": 11623371,
+        "elixir": 10528310,
+        "capContrib": 7670,
         "wins": 0
       }
     },
@@ -4544,12 +4598,12 @@
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 309,
+      "trophies": 0,
       "profile": {
         "level": 36,
-        "trophies": 309,
+        "trophies": 0,
         "best": 309,
-        "league": "Skeleton League 1",
+        "league": "Skeleton League 2",
         "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
@@ -4581,27 +4635,81 @@
       }
     },
     {
-      "name": "Riczard",
-      "tag": "#R2PCVYQG2",
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
       "role": "member",
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 281,
+      "trophies": 0,
       "profile": {
-        "level": 34,
-        "trophies": 281,
-        "best": 281,
-        "league": "Skeleton League 1",
-        "warStars": 21,
+        "level": 35,
+        "trophies": 0,
+        "best": 300,
+        "league": "Skeleton League 2",
+        "warStars": 6,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 33674,
+        "capital": 8648,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 7,
+            "level": 6,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 5.7,
+        "troops": 0,
+        "spells": 20,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 73,
+        "capLoot": 7410,
+        "gold": 22537534,
+        "elixir": 21876442,
+        "capContrib": 8648,
+        "wins": 0
+      }
+    },
+    {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 43,
+        "trophies": 0,
+        "best": 390,
+        "league": "Skeleton League 2",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 22915,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
             "max": 110
           }
         ]
@@ -4614,12 +4722,12 @@
         "top": []
       },
       "ach": {
-        "cg": 1500,
-        "don": 175,
-        "capLoot": 24090,
-        "gold": 18297359,
-        "elixir": 16388805,
-        "capContrib": 33674,
+        "cg": 10050,
+        "don": 68,
+        "capLoot": 17945,
+        "gold": 38303577,
+        "elixir": 35562453,
+        "capContrib": 22915,
         "wins": 0
       }
     },
@@ -4630,12 +4738,12 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 273,
+      "trophies": 0,
       "profile": {
         "level": 37,
-        "trophies": 273,
+        "trophies": 0,
         "best": 273,
-        "league": "Skeleton League 1",
+        "league": "Skeleton League 2",
         "warStars": 3,
         "attackWins": 0,
         "defenseWins": 0,
@@ -4688,27 +4796,27 @@
       }
     },
     {
-      "name": "Rico",
-      "tag": "#R92C0U8UU",
+      "name": "Riczard",
+      "tag": "#R2PCVYQG2",
       "role": "member",
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 255,
+      "trophies": 0,
       "profile": {
-        "level": 33,
-        "trophies": 255,
-        "best": 255,
-        "league": "Skeleton League 1",
-        "warStars": 15,
+        "level": 34,
+        "trophies": 0,
+        "best": 281,
+        "league": "Skeleton League 2",
+        "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 7670,
+        "capital": 33674,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 7,
             "max": 110
           }
         ]
@@ -4721,12 +4829,12 @@
         "top": []
       },
       "ach": {
-        "cg": 0,
-        "don": 30,
-        "capLoot": 0,
-        "gold": 11623371,
-        "elixir": 10528310,
-        "capContrib": 7670,
+        "cg": 1500,
+        "don": 175,
+        "capLoot": 24090,
+        "gold": 18297359,
+        "elixir": 16388805,
+        "capContrib": 33674,
         "wins": 0
       }
     },
@@ -4737,12 +4845,12 @@
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 244,
+      "trophies": 0,
       "profile": {
         "level": 28,
-        "trophies": 244,
+        "trophies": 0,
         "best": 244,
-        "league": "Skeleton League 1",
+        "league": "Skeleton League 2",
         "warStars": 14,
         "attackWins": 0,
         "defenseWins": 0,
@@ -4781,114 +4889,6 @@
         "gold": 12744180,
         "elixir": 12012279,
         "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Darui",
-      "tag": "#LUQJC2JGY",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 242,
-      "profile": {
-        "level": 44,
-        "trophies": 242,
-        "best": 242,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16969,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 4.8,
-        "troops": 0,
-        "spells": 7.1,
-        "heroes": 20,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 8,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 160,
-        "capLoot": 11195,
-        "gold": 22155257,
-        "elixir": 21522055,
-        "capContrib": 16969,
-        "wins": 0
-      }
-    },
-    {
-      "name": "threeten",
-      "tag": "#R8RVQVPCC",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 240,
-      "profile": {
-        "level": 30,
-        "trophies": 240,
-        "best": 240,
-        "league": "Skeleton League 1",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 31434,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 5,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 5.7,
-        "troops": 0,
-        "spells": 20,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 300,
-        "don": 40,
-        "capLoot": 24805,
-        "gold": 7322588,
-        "elixir": 7919737,
-        "capContrib": 31434,
         "wins": 0
       }
     },
