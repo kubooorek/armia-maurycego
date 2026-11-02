@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T10:15:51.765Z",
+  "updated": "2026-11-02T10:31:19.794Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -4206,6 +4206,11 @@
             "name": "Archer Queen",
             "level": 4,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
