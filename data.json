@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T19:32:01.578Z",
+  "updated": "2026-11-02T19:45:56.143Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -50,20 +50,20 @@
         "played": 0
       },
       {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 7,
+        "pct": 218,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 5,
         "pct": 187,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 4,
-        "pct": 118,
         "wins": 0,
         "played": 0
       },
@@ -2488,8 +2488,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|86611277|71387241|5100|306|0|19170|0|12|49|9",
-      "last": "2026-11-02T11:31:22.461Z",
+      "sig": "0|87473677|72234705|5100|306|0|20470|0|12|49|9",
+      "last": "2026-11-02T19:45:56.135Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -2503,8 +2503,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|73057841|61575019|3000|26|0|0|0|0|39|9",
-      "last": "2026-11-02T14:46:06.479Z",
+      "sig": "0|73640303|62031699|3000|26|0|0|0|0|39|9",
+      "last": "2026-11-02T19:45:56.135Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2513,8 +2513,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "49|48543038|47533151|2400|479|7665|19659|0|4|48|9",
-      "last": "2026-11-02T19:32:01.565Z",
+      "sig": "75|48543038|47533151|2400|529|7665|19659|0|4|48|9",
+      "last": "2026-11-02T19:45:56.135Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -2533,8 +2533,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "0|25791626|24797584|0|73|7410|8648|0|6|37|8",
-      "last": "2026-11-02T17:46:52.674Z",
+      "sig": "0|26340795|25238935|0|73|7410|8648|0|6|37|8",
+      "last": "2026-11-02T19:45:56.135Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -4511,17 +4511,17 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 26,
-      "trophies": 40,
+      "received": 52,
+      "trophies": 120,
       "profile": {
         "level": 49,
-        "trophies": 40,
+        "trophies": 120,
         "best": 308,
         "league": "Skeleton League 3",
         "warStars": 12,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 19170,
+        "capital": 20470,
         "warPref": "in",
         "heroes": [
           {
@@ -4583,9 +4583,9 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 86611277,
-        "elixir": 71387241,
-        "capContrib": 19170,
+        "gold": 87473677,
+        "elixir": 72234705,
+        "capContrib": 20470,
         "wins": 0
       }
     },
@@ -4662,8 +4662,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 73057841,
-        "elixir": 61575019,
+        "gold": 73640303,
+        "elixir": 62031699,
         "capContrib": 0,
         "wins": 0
       }
@@ -4748,59 +4748,16 @@
       }
     },
     {
-      "name": "GoldBelt",
-      "tag": "#R9QQPG9JP",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 50,
-      "profile": {
-        "level": 36,
-        "trophies": 50,
-        "best": 309,
-        "league": "Skeleton League 2",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 9125,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 600,
-        "don": 12,
-        "capLoot": 5885,
-        "gold": 26558013,
-        "elixir": 24832357,
-        "capContrib": 9125,
-        "wins": 0
-      }
-    },
-    {
       "name": "erykos",
       "tag": "#R9GPGL0QJ",
       "role": "member",
       "th": 8,
       "given": 0,
       "received": 40,
-      "trophies": 41,
+      "trophies": 94,
       "profile": {
         "level": 37,
-        "trophies": 41,
+        "trophies": 94,
         "best": 300,
         "league": "Skeleton League 2",
         "warStars": 6,
@@ -4853,9 +4810,52 @@
         "cg": 0,
         "don": 73,
         "capLoot": 7410,
-        "gold": 25791626,
-        "elixir": 24797584,
+        "gold": 26340795,
+        "elixir": 25238935,
         "capContrib": 8648,
+        "wins": 0
+      }
+    },
+    {
+      "name": "GoldBelt",
+      "tag": "#R9QQPG9JP",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 50,
+      "profile": {
+        "level": 36,
+        "trophies": 50,
+        "best": 309,
+        "league": "Skeleton League 2",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 9125,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 600,
+        "don": 12,
+        "capLoot": 5885,
+        "gold": 26558013,
+        "elixir": 24832357,
+        "capContrib": 9125,
         "wins": 0
       }
     },
@@ -4864,7 +4864,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 49,
+      "given": 75,
       "received": 50,
       "trophies": 40,
       "profile": {
@@ -4905,7 +4905,7 @@
       },
       "ach": {
         "cg": 2400,
-        "don": 479,
+        "don": 529,
         "capLoot": 7665,
         "gold": 48543038,
         "elixir": 47533151,
