@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T10:31:19.794Z",
+  "updated": "2026-11-02T10:46:05.759Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -371,11 +371,11 @@
     ],
     "top": []
   },
-  "visits": 61,
+  "visits": null,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -1918,8 +1918,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "0|2000000000|2000000000|94700|81189|1208549|1606815|0|1244|204|15",
-      "last": "2026-11-02T05:15:47.602Z",
+      "sig": "0|2000000000|2000000000|94700|81189|1208549|1606815|0|1244|205|15",
+      "last": "2026-11-02T10:46:05.749Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2771,7 +2771,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 204,
+        "level": 205,
         "trophies": 0,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
@@ -4878,7 +4878,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
