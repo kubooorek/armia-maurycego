@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T05:15:47.614Z",
+  "updated": "2026-11-02T05:31:09.321Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -1282,7 +1282,7 @@
       "avgTh": 8.5,
       "level": 3,
       "wins": 13,
-      "points": 16300
+      "points": 16700
     }
   ],
   "weekBase": {
@@ -3140,76 +3140,18 @@
       }
     },
     {
-      "name": "MAQOS",
-      "tag": "#LJYR92002",
-      "role": "member",
-      "th": 12,
-      "given": 0,
-      "received": 0,
-      "trophies": 436,
-      "profile": {
-        "level": 120,
-        "trophies": 436,
-        "best": 2224,
-        "league": "Archer League 8",
-        "warStars": 120,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 401040,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 51,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 51,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 20,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 30,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 12900,
-        "don": 632,
-        "capLoot": 275915,
-        "gold": 317310907,
-        "elixir": 328358319,
-        "capContrib": 401040,
-        "wins": 0
-      }
-    },
-    {
       "name": "VipeR",
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 385,
+      "trophies": 0,
       "profile": {
         "level": 104,
-        "trophies": 385,
+        "trophies": 0,
         "best": 2156,
-        "league": "Archer League 8",
+        "league": "Archer League 9",
         "warStars": 229,
         "attackWins": 0,
         "defenseWins": 0,
@@ -3283,6 +3225,64 @@
         "gold": 363808059,
         "elixir": 340666887,
         "capContrib": 52473,
+        "wins": 0
+      }
+    },
+    {
+      "name": "MAQOS",
+      "tag": "#LJYR92002",
+      "role": "member",
+      "th": 12,
+      "given": 0,
+      "received": 0,
+      "trophies": 436,
+      "profile": {
+        "level": 120,
+        "trophies": 436,
+        "best": 2224,
+        "league": "Archer League 8",
+        "warStars": 120,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 401040,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 20,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 30,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 12900,
+        "don": 632,
+        "capLoot": 275915,
+        "gold": 317310907,
+        "elixir": 328358319,
+        "capContrib": 401040,
         "wins": 0
       }
     },
@@ -3551,6 +3551,143 @@
       }
     },
     {
+      "name": "Kojak",
+      "tag": "#G8VGC2VRL",
+      "role": "admin",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 57,
+        "trophies": 0,
+        "best": 696,
+        "league": "Barbarian League 6",
+        "warStars": 32,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 29985,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 23,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 21,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 8.9,
+        "troops": 15.3,
+        "spells": 4.3,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Goblin",
+            "lvl": 3,
+            "need": 5
+          },
+          {
+            "n": "Barbarzyńca",
+            "lvl": 4,
+            "need": 5
+          },
+          {
+            "n": "Łuczniczka",
+            "lvl": 4,
+            "need": 5
+          },
+          {
+            "n": "Gigant",
+            "lvl": 4,
+            "need": 5
+          }
+        ]
+      },
+      "ach": {
+        "cg": 7600,
+        "don": 609,
+        "capLoot": 9310,
+        "gold": 123629755,
+        "elixir": 114045529,
+        "capContrib": 29985,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Belaska",
+      "tag": "#GU0R2J8R0",
+      "role": "admin",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 55,
+        "trophies": 0,
+        "best": 622,
+        "league": "Barbarian League 6",
+        "warStars": 68,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 42288,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 4,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 16800,
+        "don": 514,
+        "capLoot": 21725,
+        "gold": 114824291,
+        "elixir": 114425477,
+        "capContrib": 42288,
+        "wins": 0
+      }
+    },
+    {
       "name": "monte",
       "tag": "#QYJUV90JY",
       "role": "member",
@@ -3631,143 +3768,6 @@
         "gold": 166318732,
         "elixir": 160190253,
         "capContrib": 28873,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Belaska",
-      "tag": "#GU0R2J8R0",
-      "role": "admin",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 291,
-      "profile": {
-        "level": 55,
-        "trophies": 291,
-        "best": 622,
-        "league": "Barbarian League 5",
-        "warStars": 68,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 42288,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 15,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 4,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 16800,
-        "don": 514,
-        "capLoot": 21725,
-        "gold": 114824291,
-        "elixir": 114425477,
-        "capContrib": 42288,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Kojak",
-      "tag": "#G8VGC2VRL",
-      "role": "admin",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 267,
-      "profile": {
-        "level": 57,
-        "trophies": 267,
-        "best": 696,
-        "league": "Barbarian League 5",
-        "warStars": 32,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 29985,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 23,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 21,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 10,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 8.9,
-        "troops": 15.3,
-        "spells": 4.3,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Goblin",
-            "lvl": 3,
-            "need": 5
-          },
-          {
-            "n": "Barbarzyńca",
-            "lvl": 4,
-            "need": 5
-          },
-          {
-            "n": "Łuczniczka",
-            "lvl": 4,
-            "need": 5
-          },
-          {
-            "n": "Gigant",
-            "lvl": 4,
-            "need": 5
-          }
-        ]
-      },
-      "ach": {
-        "cg": 7600,
-        "don": 609,
-        "capLoot": 9310,
-        "gold": 123629755,
-        "elixir": 114045529,
-        "capContrib": 29985,
         "wins": 0
       }
     },
@@ -4000,6 +4000,85 @@
       }
     },
     {
+      "name": "zuzia",
+      "tag": "#R8V9U9VLJ",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 38,
+        "trophies": 0,
+        "best": 149,
+        "league": "Skeleton League 3",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 44,
+        "troops": 22.4,
+        "spells": 75,
+        "heroes": 66.7,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 2,
+            "need": 10
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 20
+          }
+        ]
+      },
+      "ach": {
+        "cg": 3000,
+        "don": 26,
+        "capLoot": 0,
+        "gold": 59808557,
+        "elixir": 51917983,
+        "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
       "name": "vvd",
       "tag": "#GQULCR98R",
       "role": "member",
@@ -4101,6 +4180,11 @@
             "name": "Barbarian King",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
           }
         ]
       },
@@ -4197,85 +4281,6 @@
         "gold": 19657915,
         "elixir": 19320035,
         "capContrib": 13078,
-        "wins": 0
-      }
-    },
-    {
-      "name": "zuzia",
-      "tag": "#R8V9U9VLJ",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 97,
-      "profile": {
-        "level": 38,
-        "trophies": 97,
-        "best": 149,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 0,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 44,
-        "troops": 22.4,
-        "spells": 75,
-        "heroes": 66.7,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 2,
-            "need": 10
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 8,
-            "need": 20
-          }
-        ]
-      },
-      "ach": {
-        "cg": 3000,
-        "don": 26,
-        "capLoot": 0,
-        "gold": 59808557,
-        "elixir": 51917983,
-        "capContrib": 0,
         "wins": 0
       }
     },
