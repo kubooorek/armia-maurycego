@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T18:15:57.269Z",
+  "updated": "2026-11-02T18:29:46.211Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 6,
-        "pct": 200,
+        "stars": 8,
+        "pct": 290,
         "wins": 0,
         "played": 0
       },
@@ -41,20 +41,20 @@
         "played": 0
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 5,
+        "pct": 174,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
         "stars": 3,
         "pct": 135,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 3,
-        "pct": 100,
         "wins": 0,
         "played": 0
       },
@@ -723,7 +723,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
