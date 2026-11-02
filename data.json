@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T16:31:23.797Z",
+  "updated": "2026-11-02T16:45:58.585Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -375,7 +375,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -2094,8 +2094,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|12880492|12175456|0|0|0|400|0|14|29|7",
-      "last": "2026-11-02T09:31:06.485Z",
+      "sig": "0|13341474|12583011|0|0|0|400|0|14|29|7",
+      "last": "2026-11-02T16:45:58.578Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -4968,7 +4968,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
@@ -4990,8 +4990,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 12880492,
-        "elixir": 12175456,
+        "gold": 13341474,
+        "elixir": 12583011,
         "capContrib": 400,
         "wins": 0
       }
