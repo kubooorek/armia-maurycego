@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T22:31:10.737Z",
+  "updated": "2026-11-02T22:45:55.445Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -789,7 +789,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 0,
     "members": 12
   },
   "raids": [
@@ -2522,8 +2522,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "0|2000000000|2000000000|94700|81189|1208549|1606815|0|1247|205|15",
-      "last": "2026-11-02T20:15:58.752Z",
+      "sig": "72|2000000000|2000000000|94700|81229|1208549|1606815|0|1247|205|15",
+      "last": "2026-11-02T22:45:55.432Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2682,8 +2682,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "0|7322588|7919737|300|40|24805|31434|0|15|30|7",
-      "last": "2026-11-02T05:15:47.602Z",
+      "sig": "0|8212588|8809737|300|40|24805|31434|0|15|30|7",
+      "last": "2026-11-02T22:45:55.432Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVRY000P2": {
@@ -2722,8 +2722,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|10499824|10351833|0|0|0|100|0|0|23|8",
-      "last": "2026-11-02T22:31:10.724Z",
+      "sig": "0|12240546|11945168|0|0|0|100|0|0|23|8",
+      "last": "2026-11-02T22:45:55.432Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3371,7 +3371,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 0,
+      "given": 72,
       "received": 0,
       "trophies": 40,
       "profile": {
@@ -3426,7 +3426,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81189,
+        "don": 81229,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -3534,8 +3534,8 @@
       "role": "coLeader",
       "th": 12,
       "given": 0,
-      "received": 0,
-      "trophies": 0,
+      "received": 72,
+      "trophies": 41,
       "profile": {
         "level": 109,
         "trophies": 0,
@@ -4963,10 +4963,10 @@
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 80,
+      "trophies": 120,
       "profile": {
         "level": 30,
-        "trophies": 0,
+        "trophies": 120,
         "best": 240,
         "league": "Skeleton League 2",
         "warStars": 15,
@@ -4977,7 +4977,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 6,
+            "level": 7,
             "max": 110
           }
         ]
@@ -4999,8 +4999,8 @@
         "cg": 300,
         "don": 40,
         "capLoot": 24805,
-        "gold": 7322588,
-        "elixir": 7919737,
+        "gold": 8212588,
+        "elixir": 8809737,
         "capContrib": 31434,
         "wins": 0
       }
@@ -5524,7 +5524,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 9,
             "max": 110
           }
         ]
@@ -5688,8 +5688,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 10499824,
-        "elixir": 10351833,
+        "gold": 12240546,
+        "elixir": 11945168,
         "capContrib": 100,
         "wins": 0
       }
