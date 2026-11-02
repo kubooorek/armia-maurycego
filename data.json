@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T17:01:47.062Z",
+  "updated": "2026-11-02T17:16:11.624Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -4289,6 +4289,49 @@
       }
     },
     {
+      "name": "GoldBelt",
+      "tag": "#R9QQPG9JP",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 11,
+      "profile": {
+        "level": 36,
+        "trophies": 0,
+        "best": 309,
+        "league": "Skeleton League 2",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 9125,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 600,
+        "don": 12,
+        "capLoot": 5885,
+        "gold": 26100713,
+        "elixir": 24471357,
+        "capContrib": 9125,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -4662,49 +4705,6 @@
         "gold": 11623371,
         "elixir": 10528310,
         "capContrib": 7670,
-        "wins": 0
-      }
-    },
-    {
-      "name": "GoldBelt",
-      "tag": "#R9QQPG9JP",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 36,
-        "trophies": 0,
-        "best": 309,
-        "league": "Skeleton League 2",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 9125,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 600,
-        "don": 12,
-        "capLoot": 5885,
-        "gold": 26100713,
-        "elixir": 24471357,
-        "capContrib": 9125,
         "wins": 0
       }
     },
