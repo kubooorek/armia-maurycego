@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T12:45:51.213Z",
+  "updated": "2026-11-02T13:01:35.678Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2030,8 +2030,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|69156541|58525129|3000|26|0|0|0|0|38|9",
-      "last": "2026-11-02T12:01:19.932Z",
+      "sig": "0|69156541|58525129|3000|26|0|0|0|0|39|9",
+      "last": "2026-11-02T13:01:35.668Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -4005,7 +4005,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
@@ -4041,7 +4041,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 38,
+        "level": 39,
         "trophies": 0,
         "best": 149,
         "league": "Skeleton League 3",
