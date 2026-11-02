@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T11:45:53.719Z",
+  "updated": "2026-11-02T12:01:19.944Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -371,7 +371,7 @@
     ],
     "top": []
   },
-  "visits": 61,
+  "visits": 62,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -2030,8 +2030,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|67554425|57443449|3000|26|0|0|0|0|38|9",
-      "last": "2026-11-02T11:31:22.461Z",
+      "sig": "0|69156541|58525129|3000|26|0|0|0|0|38|9",
+      "last": "2026-11-02T12:01:19.932Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2125,8 +2125,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "0|8841456|8669007|0|0|0|100|0|0|20|7",
-      "last": "2026-11-02T01:27:21.184Z",
+      "sig": "0|9038885|9084161|0|0|0|100|0|0|21|7",
+      "last": "2026-11-02T12:01:19.932Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -4105,8 +4105,8 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 67554425,
-        "elixir": 57443449,
+        "gold": 69156541,
+        "elixir": 58525129,
         "capContrib": 0,
         "wins": 0
       }
@@ -4227,8 +4227,8 @@
         ]
       },
       "rush": {
-        "pct": 40,
-        "troops": 30.2,
+        "pct": 40.2,
+        "troops": 30.9,
         "spells": 47.1,
         "heroes": 53.3,
         "top": [
@@ -5448,10 +5448,10 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 20,
+        "level": 21,
         "trophies": 0,
         "best": 0,
-        "league": "Unranked",
+        "league": "Skeleton League 1",
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
@@ -5466,9 +5466,9 @@
         ]
       },
       "rush": {
-        "pct": 17.2,
+        "pct": 21.9,
         "troops": 0,
-        "spells": 71.4,
+        "spells": 70,
         "heroes": 0,
         "top": [
           {
@@ -5480,6 +5480,11 @@
             "n": "Zaklęcie leczenia",
             "lvl": 1,
             "need": 3
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
           }
         ]
       },
@@ -5487,8 +5492,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 8841456,
-        "elixir": 8669007,
+        "gold": 9038885,
+        "elixir": 9084161,
         "capContrib": 100,
         "wins": 0
       }
