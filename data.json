@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T05:46:32.530Z",
+  "updated": "2026-11-03T06:15:55.970Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
-        "stars": 0,
-        "pct": 0,
+        "stars": 3,
+        "pct": 100,
         "wins": 0,
         "played": 0
       }
@@ -2707,8 +2707,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|13341474|12583011|0|0|0|400|0|14|29|8",
-      "last": "2026-11-02T18:15:57.259Z",
+      "sig": "0|13341474|12583011|0|0|0|400|0|14|30|8",
+      "last": "2026-11-03T06:15:55.956Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -2767,8 +2767,8 @@
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
-      "sig": "0|1034050|1121575|1200|139|6445|14135|0|6|43|8",
-      "last": "2026-11-02T17:31:09.843Z",
+      "sig": "0|1034050|1121575|1200|139|6445|14135|0|6|44|8",
+      "last": "2026-11-03T06:15:55.956Z",
       "since": "2026-10-31T20:31:00.210Z"
     }
   },
@@ -5504,7 +5504,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 43,
+        "level": 44,
         "trophies": 0,
         "best": 678,
         "league": "Skeleton League 2",
@@ -5644,7 +5644,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 29,
+        "level": 30,
         "trophies": 0,
         "best": 244,
         "league": "Skeleton League 2",
@@ -5656,16 +5656,16 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 6,
+            "level": 7,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 22.4,
+        "pct": 19,
         "troops": 19.4,
-        "spells": 16.7,
-        "heroes": 40,
+        "spells": 8.3,
+        "heroes": 30,
         "top": [
           {
             "n": "Uzdrowicielka",
@@ -5683,17 +5683,17 @@
             "need": 2
           },
           {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 4
-          },
-          {
             "n": "Król Barbarzyńców",
-            "lvl": 6,
+            "lvl": 7,
             "need": 10
           },
           {
             "n": "Goblin",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Gigant",
             "lvl": 3,
             "need": 4
           }
