@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T11:01:24.562Z",
+  "updated": "2026-11-03T11:15:52.738Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -14,20 +14,20 @@
     "groupSize": 8,
     "standings": [
       {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
         "stars": 21,
         "pct": 700,
         "wins": 0,
         "played": 0
       },
       {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 18,
-        "pct": 600,
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 21,
+        "pct": 700,
         "wins": 0,
         "played": 0
       },
@@ -5325,6 +5325,65 @@
       }
     },
     {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 39,
+      "profile": {
+        "level": 39,
+        "trophies": 39,
+        "best": 257,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6070,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 4.9,
+        "troops": 2.6,
+        "spells": 0,
+        "heroes": 20,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5600,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 25731657,
+        "elixir": 24158998,
+        "capContrib": 6070,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -5380,65 +5439,6 @@
         "gold": 22155257,
         "elixir": 21522055,
         "capContrib": 16969,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Martini",
-      "tag": "#GVG02VV98",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 11,
-      "profile": {
-        "level": 39,
-        "trophies": 11,
-        "best": 257,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 6070,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 4.9,
-        "troops": 2.6,
-        "spells": 0,
-        "heroes": 20,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 8,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 5600,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 25731657,
-        "elixir": 24158998,
-        "capContrib": 6070,
         "wins": 0
       }
     },
@@ -5741,22 +5741,17 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 36.5,
+        "pct": 34.6,
         "troops": 6.7,
         "spells": 75,
-        "heroes": 80,
+        "heroes": 70,
         "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 2,
-            "need": 10
-          },
           {
             "n": "Zaklęcie błyskawicy",
             "lvl": 1,
@@ -5771,6 +5766,11 @@
             "n": "Zaklęcie szału",
             "lvl": 1,
             "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 3,
+            "need": 10
           },
           {
             "n": "Minion",
