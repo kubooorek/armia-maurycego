@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T10:31:07.653Z",
+  "updated": "2026-11-03T10:46:00.867Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 8,
     "groupSize": 8,
     "standings": [
       {
@@ -68,20 +68,20 @@
         "played": 0
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 9,
+        "pct": 300,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 7,
         "pct": 485,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 6,
-        "pct": 200,
         "wins": 0,
         "played": 0
       }
@@ -2753,8 +2753,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "0|2922076|2918246|0|41|0|100|0|0|22|6",
-      "last": "2026-11-03T06:45:58.422Z",
+      "sig": "20|2922076|2918246|0|61|0|100|0|0|22|6",
+      "last": "2026-11-03T10:46:00.856Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -2773,8 +2773,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "13|14002147|13449698|0|12|0|100|0|0|24|8",
-      "last": "2026-11-03T09:45:51.361Z",
+      "sig": "13|14361147|13812698|0|12|0|100|0|0|24|8",
+      "last": "2026-11-03T10:46:00.856Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -5624,7 +5624,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
@@ -5726,12 +5726,12 @@
       "role": "member",
       "th": 8,
       "given": 13,
-      "received": 40,
-      "trophies": 120,
+      "received": 60,
+      "trophies": 200,
       "profile": {
         "level": 24,
-        "trophies": 120,
-        "best": 120,
+        "trophies": 200,
+        "best": 200,
         "league": "Skeleton League 1",
         "warStars": 0,
         "attackWins": 0,
@@ -5788,8 +5788,8 @@
         "cg": 0,
         "don": 12,
         "capLoot": 0,
-        "gold": 14002147,
-        "elixir": 13449698,
+        "gold": 14361147,
+        "elixir": 13812698,
         "capContrib": 100,
         "wins": 0
       }
@@ -5981,7 +5981,7 @@
       "tag": "#R9GUJ0ULV",
       "role": "member",
       "th": 6,
-      "given": 0,
+      "given": 20,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -6017,7 +6017,7 @@
       },
       "ach": {
         "cg": 0,
-        "don": 41,
+        "don": 61,
         "capLoot": 0,
         "gold": 2922076,
         "elixir": 2918246,
