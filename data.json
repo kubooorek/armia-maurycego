@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T03:31:19.553Z",
+  "updated": "2026-11-03T03:46:02.655Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -3718,10 +3718,10 @@
       "th": 12,
       "given": 42,
       "received": 40,
-      "trophies": 128,
+      "trophies": 156,
       "profile": {
         "level": 101,
-        "trophies": 128,
+        "trophies": 156,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 58,
@@ -5512,7 +5512,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 9,
             "max": 110
           }
         ]
