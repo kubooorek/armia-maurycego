@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T00:01:45.415Z",
+  "updated": "2026-11-03T00:16:05.848Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -5666,20 +5666,20 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 40.4,
+        "pct": 38.5,
         "troops": 10,
         "spells": 75,
-        "heroes": 90,
+        "heroes": 80,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 1,
+            "lvl": 2,
             "need": 10
           },
           {
