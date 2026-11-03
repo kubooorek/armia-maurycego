@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T16:07:53.195Z",
+  "updated": "2026-11-03T16:15:58.244Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -23,20 +23,20 @@
         "played": 0
       },
       {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 21,
+        "pct": 751,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 21,
         "pct": 700,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 20,
-        "pct": 697,
         "wins": 0,
         "played": 0
       },
