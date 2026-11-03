@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T21:48:49.266Z",
+  "updated": "2026-11-03T22:01:21.593Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 8,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
@@ -26,8 +26,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 33,
-        "pct": 890,
+        "stars": 34,
+        "pct": 951,
         "wins": 1,
         "played": 1
       },
@@ -68,20 +68,20 @@
         "played": 1
       },
       {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 23,
+        "pct": 1111,
+        "wins": 0,
+        "played": 1
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
         "stars": 20,
         "pct": 784,
-        "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 18,
-        "pct": 927,
         "wins": 0,
         "played": 1
       }
@@ -467,9 +467,9 @@
         "end": "20261104T173512.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 8,
-          "pct": 24.4,
-          "attacks": 7,
+          "stars": 13,
+          "pct": 36.67,
+          "attacks": 9,
           "bases": [
             {
               "pos": 1,
@@ -577,7 +577,7 @@
             {
               "pos": 5,
               "th": 14,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 6,
@@ -622,7 +622,7 @@
             {
               "pos": 14,
               "th": 11,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 15,
@@ -644,7 +644,13 @@
             "tag": "#LUGR0YQY0",
             "pos": 2,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "5. DEMON SLAYER"
+              }
+            ]
           },
           {
             "name": "Albaroon.2",
@@ -724,7 +730,13 @@
             "tag": "#Y02PYY922",
             "pos": 10,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 84,
+                "target": "14. Pritsm√"
+              }
+            ]
           },
           {
             "name": "Kojak",
@@ -1065,13 +1077,13 @@
     ],
     "top": [
       {
-        "name": "KUBOOOREK",
-        "stars": 3,
-        "attacks": 1,
+        "name": "Baku",
+        "stars": 6,
+        "attacks": 2,
         "wars": 2
       },
       {
-        "name": "Baku",
+        "name": "KUBOOOREK",
         "stars": 3,
         "attacks": 1,
         "wars": 2
@@ -1090,6 +1102,12 @@
       },
       {
         "name": "Albaroon.2",
+        "stars": 2,
+        "attacks": 2,
+        "wars": 2
+      },
+      {
+        "name": "tak",
         "stars": 2,
         "attacks": 2,
         "wars": 2
@@ -1114,12 +1132,6 @@
       },
       {
         "name": "MrDefPL",
-        "stars": 0,
-        "attacks": 1,
-        "wars": 2
-      },
-      {
-        "name": "Cwel123",
         "stars": 0,
         "attacks": 1,
         "wars": 2
@@ -1299,6 +1311,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-03T22:01:20.812Z",
+      "type": "th",
+      "name": "Riczard",
+      "from": 7,
+      "to": 8
+    },
     {
       "t": "2026-11-03T14:15:52.641Z",
       "type": "th",
@@ -1544,7 +1563,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 8,
+      "us": 13,
       "them": 0,
       "members": [
         {
@@ -1555,7 +1574,12 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -1615,7 +1639,12 @@
         {
           "name": "tak",
           "tag": "#Y02PYY922",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 84
+            }
+          ]
         },
         {
           "name": "Kojak",
@@ -3072,8 +3101,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
-      "sig": "0|831159947|890460863|118755|72883|212590|452225|0|3160|134|9",
-      "last": "2026-11-02T22:01:18.931Z",
+      "sig": "0|831243947|890553683|118755|72883|212590|452225|0|3162|134|9",
+      "last": "2026-11-03T22:01:21.579Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
@@ -3162,8 +3191,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|18297359|16388805|1500|175|24090|33674|0|21|35|7",
-      "last": "2026-11-02T17:01:47.050Z",
+      "sig": "0|18297359|16388805|1500|175|24090|33674|0|21|36|8",
+      "last": "2026-11-03T22:01:21.579Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -3222,8 +3251,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|9443001|9145979|0|0|0|0|0|0|25|7",
-      "last": "2026-11-03T19:01:33.674Z",
+      "sig": "0|10806506|10440914|0|0|0|0|0|0|25|7",
+      "last": "2026-11-03T22:01:21.579Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -4534,7 +4563,7 @@
         "trophies": 0,
         "best": 3631,
         "league": "Archer League 8",
-        "warStars": 3160,
+        "warStars": 3162,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 452225,
@@ -4568,8 +4597,8 @@
         "cg": 118755,
         "don": 72883,
         "capLoot": 212590,
-        "gold": 831159947,
-        "elixir": 890460863,
+        "gold": 831243947,
+        "elixir": 890553683,
         "capContrib": 452225,
         "wins": 0
       }
@@ -4806,7 +4835,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
@@ -5129,7 +5158,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 14,
+            "level": 15,
             "max": 110
           },
           {
@@ -5542,7 +5571,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 9,
             "max": 110
           }
         ]
@@ -5926,12 +5955,12 @@
       "name": "Riczard",
       "tag": "#R2PCVYQG2",
       "role": "member",
-      "th": 7,
+      "th": 8,
       "given": 0,
       "received": 0,
       "trophies": 40,
       "profile": {
-        "level": 35,
+        "level": 36,
         "trophies": 40,
         "best": 281,
         "league": "Skeleton League 2",
@@ -6552,8 +6581,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 9443001,
-        "elixir": 9145979,
+        "gold": 10806506,
+        "elixir": 10440914,
         "capContrib": 0,
         "wins": 0
       }
