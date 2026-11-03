@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T21:31:35.303Z",
+  "updated": "2026-11-03T21:46:01.441Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -32,20 +32,20 @@
         "played": 1
       },
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 33,
+        "pct": 790,
+        "wins": 1,
+        "played": 1
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 31,
         "pct": 700,
-        "wins": 1,
-        "played": 1
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 30,
-        "pct": 690,
         "wins": 1,
         "played": 1
       },
@@ -80,8 +80,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 16,
-        "pct": 858,
+        "stars": 18,
+        "pct": 927,
         "wins": 0,
         "played": 1
       }
@@ -467,9 +467,9 @@
         "end": "20261104T173512.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 6,
-          "pct": 19.8,
-          "attacks": 6,
+          "stars": 8,
+          "pct": 24.4,
+          "attacks": 7,
           "bases": [
             {
               "pos": 1,
@@ -612,7 +612,7 @@
             {
               "pos": 12,
               "th": 13,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 13,
@@ -651,7 +651,13 @@
             "tag": "#GYUJR2URJ",
             "pos": 3,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 69,
+                "target": "12. Mim"
+              }
+            ]
           },
           {
             "name": "MAQOS",
@@ -1083,6 +1089,12 @@
         "wars": 2
       },
       {
+        "name": "Albaroon.2",
+        "stars": 2,
+        "attacks": 2,
+        "wars": 2
+      },
+      {
         "name": "Brann",
         "stars": 2,
         "attacks": 2,
@@ -1098,12 +1110,6 @@
         "name": "Barnes",
         "stars": 1,
         "attacks": 2,
-        "wars": 2
-      },
-      {
-        "name": "Albaroon.2",
-        "stars": 0,
-        "attacks": 1,
         "wars": 2
       },
       {
@@ -1124,7 +1130,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1538,7 +1544,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 6,
+      "us": 8,
       "them": 0,
       "members": [
         {
@@ -1554,7 +1560,12 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 69
+            }
+          ]
         },
         {
           "name": "MAQOS",
@@ -3141,8 +3152,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "141|56776486|56653048|2400|594|7665|19909|0|4|49|9",
-      "last": "2026-11-03T21:31:35.291Z",
+      "sig": "141|57249696|57126258|2400|594|7665|19909|0|4|50|9",
+      "last": "2026-11-03T21:46:01.431Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -5455,7 +5466,7 @@
       "received": 102,
       "trophies": 248,
       "profile": {
-        "level": 49,
+        "level": 50,
         "trophies": 248,
         "best": 349,
         "league": "Skeleton League 2",
@@ -5504,8 +5515,8 @@
         "cg": 2400,
         "don": 594,
         "capLoot": 7665,
-        "gold": 56776486,
-        "elixir": 56653048,
+        "gold": 57249696,
+        "elixir": 57126258,
         "capContrib": 19909,
         "wins": 0
       }
