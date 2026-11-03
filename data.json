@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T17:31:15.711Z",
+  "updated": "2026-11-03T17:46:05.137Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -17,10 +17,37 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 24,
+        "stars": 34,
         "pct": 800,
-        "wins": 0,
-        "played": 0
+        "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 31,
+        "pct": 757,
+        "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 31,
+        "pct": 700,
+        "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 27,
+        "pct": 590,
+        "wins": 1,
+        "played": 1
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -29,43 +56,16 @@
         "stars": 21,
         "pct": 751,
         "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 21,
-        "pct": 700,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 18,
-        "pct": 657,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 17,
-        "pct": 590,
-        "wins": 0,
-        "played": 0
+        "played": 1
       },
       {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 16,
-        "pct": 672,
+        "stars": 19,
+        "pct": 821,
         "wins": 0,
-        "played": 0
+        "played": 1
       },
       {
         "tag": "#2RVLCPPUR",
@@ -74,7 +74,7 @@
         "stars": 11,
         "pct": 484,
         "wins": 0,
-        "played": 0
+        "played": 1
       },
       {
         "tag": "#2GQQ8RGRL",
@@ -83,13 +83,13 @@
         "stars": 10,
         "pct": 561,
         "wins": 0,
-        "played": 0
+        "played": 1
       }
     ],
     "wars": [
       {
         "round": 1,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261102T173507.000Z",
@@ -118,7 +118,7 @@
             {
               "pos": 4,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 5,
@@ -179,9 +179,9 @@
         },
         "them": {
           "name": "React",
-          "stars": 18,
-          "pct": 43.8,
-          "attacks": 7,
+          "stars": 21,
+          "pct": 50.47,
+          "attacks": 8,
           "bases": [
             {
               "pos": 1,
@@ -460,7 +460,7 @@
       },
       {
         "round": 2,
-        "state": "preparation",
+        "state": "inWar",
         "size": 15,
         "perMember": 1,
         "start": "20261103T173512.000Z",
@@ -745,61 +745,61 @@
         "name": "KUBOOOREK",
         "stars": 3,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "Baku",
         "stars": 3,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "VipeR",
         "stars": 2,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "oggsgdjdjbd",
         "stars": 1,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "Barnes",
         "stars": 1,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "Albaroon.2",
         "stars": 0,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "MAQOS",
         "stars": 0,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "MrDefPL",
         "stars": 0,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "monte",
         "stars": 0,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       },
       {
         "name": "Cwel123",
         "stars": 0,
         "attacks": 1,
-        "wars": 1
+        "wars": 2
       }
     ]
   },
@@ -1214,15 +1214,103 @@
   ],
   "warArchive": [
     {
+      "start": "20261103T173512.000Z",
+      "end": "20261104T173512.000Z",
+      "enemy": "BattlerManipur2",
+      "size": 15,
+      "perMember": 1,
+      "state": "inWar",
+      "cwl": true,
+      "us": 0,
+      "them": 0,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": []
+        },
+        {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": []
+        }
+      ]
+    },
+    {
       "start": "20261102T173507.000Z",
       "end": "20261103T173507.000Z",
       "enemy": "React",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 10,
-      "them": 18,
+      "them": 21,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -2426,10 +2514,10 @@
       "detail": "vs старше 18"
     },
     "tripleStreak": {
-      "value": 4,
+      "value": 5,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
-      "date": "2026-11-01"
+      "date": "2026-11-03"
     },
     "weekWins": {
       "value": 1,
@@ -2706,8 +2794,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "115|54206113|53541338|2400|569|7665|19909|0|4|49|9",
-      "last": "2026-11-03T17:16:12.398Z",
+      "sig": "115|55193393|54526543|2400|569|7665|19909|0|4|49|9",
+      "last": "2026-11-03T17:46:05.124Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4909,7 +4997,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 1,
+            "level": 2,
             "max": 95
           }
         ]
@@ -5069,8 +5157,8 @@
         "cg": 2400,
         "don": 569,
         "capLoot": 7665,
-        "gold": 54206113,
-        "elixir": 53541338,
+        "gold": 55193393,
+        "elixir": 54526543,
         "capContrib": 19909,
         "wins": 0
       }
