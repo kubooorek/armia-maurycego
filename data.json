@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T01:31:12.477Z",
+  "updated": "2026-11-03T01:45:56.955Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
@@ -28,6 +28,15 @@
         "level": 21,
         "stars": 14,
         "pct": 490,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 10,
+        "pct": 357,
         "wins": 0,
         "played": 0
       },
@@ -64,15 +73,6 @@
         "level": 3,
         "stars": 7,
         "pct": 450,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 7,
-        "pct": 257,
         "wins": 0,
         "played": 0
       },
