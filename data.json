@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T15:45:53.911Z",
+  "updated": "2026-11-03T16:01:44.176Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2741,8 +2741,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|45|8",
-      "last": "2026-11-03T01:01:22.457Z",
+      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|46|8",
+      "last": "2026-11-03T16:01:44.162Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -5199,9 +5199,9 @@
         ]
       },
       "rush": {
-        "pct": 38.8,
+        "pct": 38.4,
         "troops": 26.5,
-        "spells": 36.8,
+        "spells": 35,
         "heroes": 60,
         "top": [
           {
@@ -5474,7 +5474,7 @@
       "received": 0,
       "trophies": 15,
       "profile": {
-        "level": 45,
+        "level": 46,
         "trophies": 15,
         "best": 242,
         "league": "Skeleton League 2",
@@ -5486,7 +5486,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           },
           {
@@ -5497,20 +5497,15 @@
         ]
       },
       "rush": {
-        "pct": 3.2,
+        "pct": 1.6,
         "troops": 0,
         "spells": 7.1,
-        "heroes": 10,
+        "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie szału",
             "lvl": 3,
             "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 10
           }
         ]
       },
