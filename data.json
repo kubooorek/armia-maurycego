@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T13:45:51.903Z",
+  "updated": "2026-11-03T14:01:34.215Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -41,6 +41,15 @@
         "played": 0
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 18,
+        "pct": 657,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
@@ -55,15 +64,6 @@
         "level": 5,
         "stars": 14,
         "pct": 540,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 12,
-        "pct": 457,
         "wins": 0,
         "played": 0
       },
@@ -168,20 +168,20 @@
             {
               "pos": 14,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 17,
               "th": 8,
-              "best": 0
+              "best": 3
             }
           ]
         },
         "them": {
           "name": "React",
-          "stars": 12,
-          "pct": 30.47,
-          "attacks": 5,
+          "stars": 18,
+          "pct": 43.8,
+          "attacks": 7,
           "bases": [
             {
               "pos": 1,
@@ -1215,7 +1215,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 10,
-      "them": 12,
+      "them": 18,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -2599,8 +2599,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "74|246582357|244032928|14450|222|57300|106536|0|58|101|12",
-      "last": "2026-11-03T11:31:13.110Z",
+      "sig": "74|247383357|244833928|14450|222|57300|106536|0|58|101|12",
+      "last": "2026-11-03T14:01:34.205Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -2634,8 +2634,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|251360513|252545860|15400|1422|24800|41751|0|11|61|13",
-      "last": "2026-11-03T08:45:56.645Z",
+      "sig": "20|251366550|252545860|15400|1422|24800|41751|0|11|61|13",
+      "last": "2026-11-03T14:01:34.205Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -2719,8 +2719,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|26948295|25808935|0|76|7410|8648|0|6|39|8",
-      "last": "2026-11-03T08:31:15.934Z",
+      "sig": "3|26948295|25808935|0|76|7410|8648|0|6|40|8",
+      "last": "2026-11-03T14:01:34.205Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -3737,7 +3737,7 @@
         "cg": 15400,
         "don": 1422,
         "capLoot": 24800,
-        "gold": 251360513,
+        "gold": 251366550,
         "elixir": 252545860,
         "capContrib": 41751,
         "wins": 0
@@ -3750,10 +3750,10 @@
       "th": 12,
       "given": 74,
       "received": 40,
-      "trophies": 156,
+      "trophies": 196,
       "profile": {
         "level": 101,
-        "trophies": 156,
+        "trophies": 196,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 58,
@@ -3826,8 +3826,8 @@
         "cg": 14450,
         "don": 222,
         "capLoot": 57300,
-        "gold": 246582357,
-        "elixir": 244032928,
+        "gold": 247383357,
+        "elixir": 244833928,
         "capContrib": 106536,
         "wins": 0
       }
@@ -4285,9 +4285,9 @@
         ]
       },
       "rush": {
-        "pct": 30.2,
+        "pct": 29.4,
         "troops": 12,
-        "spells": 29.2,
+        "spells": 25,
         "heroes": 49,
         "top": [
           {
@@ -4297,11 +4297,6 @@
           },
           {
             "n": "Lawowy ogar",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie skoku",
             "lvl": 1,
             "need": 3
           },
@@ -4317,6 +4312,11 @@
           },
           {
             "n": "Król Barbarzyńców",
+            "lvl": 17,
+            "need": 40
+          },
+          {
+            "n": "Królowa Łuczniczek",
             "lvl": 17,
             "need": 40
           }
@@ -5120,7 +5120,7 @@
       "received": 60,
       "trophies": 203,
       "profile": {
-        "level": 39,
+        "level": 40,
         "trophies": 203,
         "best": 300,
         "league": "Skeleton League 2",
