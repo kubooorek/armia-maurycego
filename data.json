@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T20:46:02.899Z",
+  "updated": "2026-11-03T21:01:28.537Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -4115,26 +4115,26 @@
             "max": 110
           },
           {
+            "name": "Grand Warden",
+            "level": 2,
+            "max": 85
+          },
+          {
             "name": "Minion Prince",
             "level": 4,
             "max": 95
-          },
-          {
-            "name": "Grand Warden",
-            "level": 1,
-            "max": 85
           }
         ]
       },
       "rush": {
-        "pct": 75.6,
+        "pct": 75.3,
         "troops": 58.9,
         "spells": 52.2,
-        "heroes": 91.9,
+        "heroes": 91.4,
         "top": [
           {
             "n": "Wielki Strażnik",
-            "lvl": 1,
+            "lvl": 2,
             "need": 40
           },
           {
