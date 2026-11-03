@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:45:56.653Z",
+  "updated": "2026-11-03T09:01:23.129Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -970,6 +970,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-03T09:01:22.424Z",
+      "type": "th",
+      "name": "maati",
+      "from": 4,
+      "to": 5
+    },
     {
       "t": "2026-11-03T07:31:04.211Z",
       "type": "th",
@@ -2706,8 +2713,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|24013147|22749823|5600|0|0|6070|0|0|38|8",
-      "last": "2026-11-03T06:31:18.442Z",
+      "sig": "0|24013147|22749823|5600|0|0|6070|0|0|39|8",
+      "last": "2026-11-03T09:01:23.117Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -2736,8 +2743,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GLV9998PC": {
-      "sig": "0|173949|173048|0|0|0|0|0|0|9|4",
-      "last": "2026-10-30T03:31:03.724Z",
+      "sig": "0|173949|173048|0|0|0|0|0|0|9|5",
+      "last": "2026-11-03T09:01:23.117Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GGU0RJYR9": {
@@ -4163,10 +4170,10 @@
       "th": 10,
       "given": 0,
       "received": 0,
-      "trophies": 8,
+      "trophies": 37,
       "profile": {
         "level": 75,
-        "trophies": 8,
+        "trophies": 37,
         "best": 400,
         "league": "Archer League 7",
         "warStars": 29,
@@ -4668,7 +4675,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 13,
+            "level": 14,
             "max": 110
           },
           {
@@ -5300,7 +5307,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
@@ -5390,7 +5397,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 38,
+        "level": 39,
         "trophies": 0,
         "best": 257,
         "league": "Skeleton League 2",
@@ -5407,7 +5414,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
@@ -5870,7 +5877,7 @@
       "name": "maati",
       "tag": "#GLV9998PC",
       "role": "member",
-      "th": 4,
+      "th": 5,
       "given": 0,
       "received": 0,
       "trophies": 0,
@@ -5893,13 +5900,23 @@
         ]
       },
       "rush": {
-        "pct": 12.5,
-        "troops": 12.5,
+        "pct": 30,
+        "troops": 30,
         "spells": 0,
         "heroes": 0,
         "top": [
           {
             "n": "Goblin",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Gigant",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Burzyciel",
             "lvl": 1,
             "need": 2
           }
