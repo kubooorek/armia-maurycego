@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T18:31:36.015Z",
+  "updated": "2026-11-03T18:46:05.349Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -71,8 +71,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 14,
-        "pct": 584,
+        "stars": 17,
+        "pct": 684,
         "wins": 0,
         "played": 1
       },
@@ -3026,8 +3026,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|173873518|167793442|2900|20|21235|28873|0|47|80|11",
-      "last": "2026-11-03T18:31:36.005Z",
+      "sig": "0|174292987|168174494|2900|20|21235|28873|0|47|80|11",
+      "last": "2026-11-03T18:46:05.339Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -3061,8 +3061,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|92066738|75666905|5100|306|0|20470|0|12|50|9",
-      "last": "2026-11-03T11:01:24.549Z",
+      "sig": "0|92365846|76090921|5100|306|0|20770|0|12|50|9",
+      "last": "2026-11-03T18:46:05.339Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -4672,9 +4672,9 @@
         ]
       },
       "rush": {
-        "pct": 27.6,
-        "troops": 9.9,
-        "spells": 20.4,
+        "pct": 26,
+        "troops": 7.9,
+        "spells": 16.3,
         "heroes": 49,
         "top": [
           {
@@ -4684,11 +4684,6 @@
           },
           {
             "n": "Lawowy ogar",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie klonowania",
             "lvl": 1,
             "need": 3
           },
@@ -4706,6 +4701,11 @@
             "n": "Królowa Łuczniczek",
             "lvl": 17,
             "need": 40
+          },
+          {
+            "n": "Zaklęcie wstrząsu",
+            "lvl": 2,
+            "need": 4
           }
         ]
       },
@@ -4713,8 +4713,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 173873518,
-        "elixir": 167793442,
+        "gold": 174292987,
+        "elixir": 168174494,
         "capContrib": 28873,
         "wins": 0
       }
@@ -5111,7 +5111,7 @@
         "warStars": 12,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 20470,
+        "capital": 20770,
         "warPref": "in",
         "heroes": [
           {
@@ -5173,9 +5173,9 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 92066738,
-        "elixir": 75666905,
-        "capContrib": 20470,
+        "gold": 92365846,
+        "elixir": 76090921,
+        "capContrib": 20770,
         "wins": 0
       }
     },
@@ -5905,6 +5905,49 @@
       }
     },
     {
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 29,
+      "profile": {
+        "level": 33,
+        "trophies": 29,
+        "best": 255,
+        "league": "Skeleton League 2",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 8470,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 30,
+        "capLoot": 0,
+        "gold": 11623371,
+        "elixir": 10528310,
+        "capContrib": 7670,
+        "wins": 0
+      }
+    },
+    {
       "name": "my name billa",
       "tag": "#GQ2QUJRGU",
       "role": "member",
@@ -6014,49 +6057,6 @@
         "gold": 1034050,
         "elixir": 1121575,
         "capContrib": 14385,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Rico",
-      "tag": "#R92C0U8UU",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 33,
-        "trophies": 0,
-        "best": 255,
-        "league": "Skeleton League 2",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 8470,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 9,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 30,
-        "capLoot": 0,
-        "gold": 11623371,
-        "elixir": 10528310,
-        "capContrib": 7670,
         "wins": 0
       }
     },
