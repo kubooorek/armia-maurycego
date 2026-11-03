@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T00:16:05.848Z",
+  "updated": "2026-11-03T00:31:11.190Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2561,8 +2561,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "0|728096130|758901278|13725|50927|64385|84211|0|504|146|12",
-      "last": "2026-11-02T20:15:58.752Z",
+      "sig": "0|728096130|758901278|13725|50927|64385|84211|0|504|147|12",
+      "last": "2026-11-03T00:31:11.178Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -3945,7 +3945,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 146,
+        "level": 147,
         "trophies": 0,
         "best": 2938,
         "league": "Archer League 9",
@@ -5128,6 +5128,85 @@
       }
     },
     {
+      "name": "Andrzej",
+      "tag": "#R0VLRL292",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 16,
+      "profile": {
+        "level": 39,
+        "trophies": 16,
+        "best": 273,
+        "league": "Skeleton League 2",
+        "warStars": 3,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 250,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 40,
+        "troops": 26.1,
+        "spells": 36.8,
+        "heroes": 63.3,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 6,
+            "need": 20
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Minion",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie trucizny",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Zaklęcie wstrząsu",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 29682102,
+        "elixir": 28918221,
+        "capContrib": 250,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -5446,85 +5525,6 @@
         "gold": 39203577,
         "elixir": 36462453,
         "capContrib": 22915,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Andrzej",
-      "tag": "#R0VLRL292",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 39,
-        "trophies": 0,
-        "best": 273,
-        "league": "Skeleton League 2",
-        "warStars": 3,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 250,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 6,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 5,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 40,
-        "troops": 26.1,
-        "spells": 36.8,
-        "heroes": 63.3,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 6,
-            "need": 20
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Minion",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie trucizny",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Zaklęcie wstrząsu",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 29682102,
-        "elixir": 28918221,
-        "capContrib": 250,
         "wins": 0
       }
     },
