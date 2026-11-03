@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T17:46:05.137Z",
+  "updated": "2026-11-03T18:01:28.029Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -44,9 +44,18 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 27,
-        "pct": 590,
+        "stars": 30,
+        "pct": 690,
         "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 22,
+        "pct": 921,
+        "wins": 0,
         "played": 1
       },
       {
@@ -59,20 +68,11 @@
         "played": 1
       },
       {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 19,
-        "pct": 821,
-        "wins": 0,
-        "played": 1
-      },
-      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 11,
-        "pct": 484,
+        "stars": 14,
+        "pct": 584,
         "wins": 0,
         "played": 1
       },
@@ -734,6 +734,287 @@
             "name": "Barnes",
             "tag": "#LQVRCRUYR",
             "pos": 18,
+            "th": 8,
+            "attacks": []
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "state": "preparation",
+        "size": 15,
+        "perMember": 1,
+        "start": "20261104T175058.000Z",
+        "end": "20261105T175058.000Z",
+        "us": {
+          "name": "ARMIA MAURYCEGO",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 19,
+              "th": 8,
+              "best": 0
+            }
+          ]
+        },
+        "them": {
+          "name": "Freax",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 12,
+              "best": 0
+            }
+          ]
+        },
+        "members": [
+          {
+            "name": "KUBOOOREK",
+            "tag": "#VP9PLGLV",
+            "pos": 1,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Baku",
+            "tag": "#LUGR0YQY0",
+            "pos": 2,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Albaroon.2",
+            "tag": "#GYUJR2URJ",
+            "pos": 3,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MAQOS",
+            "tag": "#LJYR92002",
+            "pos": 4,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MrDefPL",
+            "tag": "#8UCPRGC8",
+            "pos": 5,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "oggsgdjdjbd",
+            "tag": "#Q9CU9P908",
+            "pos": 6,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "VipeR",
+            "tag": "#22R8PLCU8",
+            "pos": 7,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "monte",
+            "tag": "#QYJUV90JY",
+            "pos": 8,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "Cwel123",
+            "tag": "#RPR0L809R",
+            "pos": 9,
+            "th": 10,
+            "attacks": []
+          },
+          {
+            "name": "tak",
+            "tag": "#Y02PYY922",
+            "pos": 10,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Kojak",
+            "tag": "#G8VGC2VRL",
+            "pos": 11,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Belaska",
+            "tag": "#GU0R2J8R0",
+            "pos": 12,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Brann",
+            "tag": "#LC8VRR9R2",
+            "pos": 13,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "vvd",
+            "tag": "#GQULCR98R",
+            "pos": 14,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Barnes",
+            "tag": "#LQVRCRUYR",
+            "pos": 19,
             "th": 8,
             "attacks": []
           }
@@ -2729,8 +3010,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|251442461|252548150|15400|1422|24800|41751|0|11|61|13",
-      "last": "2026-11-03T14:15:53.857Z",
+      "sig": "20|252237707|253241750|15400|1422|24800|41751|0|11|61|13",
+      "last": "2026-11-03T18:01:28.017Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -2784,8 +3065,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|79595568|66880273|3000|27|0|0|0|0|40|9",
-      "last": "2026-11-03T13:15:52.192Z",
+      "sig": "1|80707368|67440698|3000|27|0|0|0|0|40|9",
+      "last": "2026-11-03T18:01:28.017Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2879,8 +3160,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|15895308|15464773|0|22|0|100|0|0|25|8",
-      "last": "2026-11-03T15:01:26.895Z",
+      "sig": "25|16391936|15910085|0|22|0|100|0|0|26|8",
+      "last": "2026-11-03T18:01:28.017Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3756,10 +4037,10 @@
       "th": 13,
       "given": 20,
       "received": 0,
-      "trophies": 88,
+      "trophies": 104,
       "profile": {
         "level": 61,
-        "trophies": 88,
+        "trophies": 104,
         "best": 327,
         "league": "Wizard League 11",
         "warStars": 11,
@@ -3832,8 +4113,8 @@
         "cg": 15400,
         "don": 1422,
         "capLoot": 24800,
-        "gold": 251442461,
-        "elixir": 252548150,
+        "gold": 252237707,
+        "elixir": 253241750,
         "capContrib": 41751,
         "wins": 0
       }
@@ -4960,8 +5241,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 79595568,
-        "elixir": 66880273,
+        "gold": 80707368,
+        "elixir": 67440698,
         "capContrib": 0,
         "wins": 0
       }
@@ -5132,6 +5413,11 @@
             "name": "Archer Queen",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
@@ -5820,7 +6106,7 @@
       "received": 60,
       "trophies": 240,
       "profile": {
-        "level": 25,
+        "level": 26,
         "trophies": 240,
         "best": 240,
         "league": "Skeleton League 1",
@@ -5884,8 +6170,8 @@
         "cg": 0,
         "don": 22,
         "capLoot": 0,
-        "gold": 15895308,
-        "elixir": 15464773,
+        "gold": 16391936,
+        "elixir": 15910085,
         "capContrib": 100,
         "wins": 0
       }
