@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T17:01:47.754Z",
+  "updated": "2026-11-03T17:16:12.409Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2621,8 +2621,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "0|363887859|340755553|15875|9386|10205|52473|0|231|105|11",
-      "last": "2026-11-03T00:01:45.403Z",
+      "sig": "0|363887859|340755553|15875|9386|10205|55073|0|231|105|11",
+      "last": "2026-11-03T17:16:12.398Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -2706,8 +2706,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "95|54206113|53541338|2400|549|7665|19909|0|4|49|9",
-      "last": "2026-11-03T16:31:16.020Z",
+      "sig": "115|54206113|53541338|2400|569|7665|19909|0|4|49|9",
+      "last": "2026-11-03T17:16:12.398Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -2746,8 +2746,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|15706430|14360446|0|0|0|400|0|14|31|8",
-      "last": "2026-11-03T17:01:47.743Z",
+      "sig": "0|17261382|15953345|0|0|0|400|0|14|31|8",
+      "last": "2026-11-03T17:16:12.398Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -2801,8 +2801,8 @@
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|33943668|32103991|800|89|7180|16616|0|2|48|9",
-      "last": "2026-11-03T03:01:28.547Z",
+      "sig": "0|33943668|32103991|800|89|7180|25466|0|2|49|9",
+      "last": "2026-11-03T17:16:12.398Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -3913,7 +3913,7 @@
         "warStars": 231,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 52473,
+        "capital": 55073,
         "warPref": "in",
         "heroes": [
           {
@@ -3982,7 +3982,7 @@
         "capLoot": 10205,
         "gold": 363887859,
         "elixir": 340755553,
-        "capContrib": 52473,
+        "capContrib": 55073,
         "wins": 0
       }
     },
@@ -4887,14 +4887,14 @@
       "received": 0,
       "trophies": 40,
       "profile": {
-        "level": 48,
+        "level": 49,
         "trophies": 40,
         "best": 240,
         "league": "Skeleton League 3",
         "warStars": 2,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 16616,
+        "capital": 25466,
         "warPref": "in",
         "heroes": [
           {
@@ -4933,7 +4933,7 @@
         "capLoot": 7180,
         "gold": 33943668,
         "elixir": 32103991,
-        "capContrib": 16616,
+        "capContrib": 25466,
         "wins": 0
       }
     },
@@ -5021,7 +5021,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 95,
+      "given": 115,
       "received": 100,
       "trophies": 248,
       "profile": {
@@ -5067,7 +5067,7 @@
       },
       "ach": {
         "cg": 2400,
-        "don": 549,
+        "don": 569,
         "capLoot": 7665,
         "gold": 54206113,
         "elixir": 53541338,
@@ -5349,6 +5349,80 @@
       }
     },
     {
+      "name": "Marsyllia",
+      "tag": "#R0VJLRGQ0",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 20,
+      "trophies": 66,
+      "profile": {
+        "level": 31,
+        "trophies": 66,
+        "best": 244,
+        "league": "Skeleton League 2",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 18.6,
+        "troops": 19.4,
+        "spells": 7.7,
+        "heroes": 30,
+        "top": [
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 7,
+            "need": 10
+          },
+          {
+            "n": "Goblin",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Gigant",
+            "lvl": 3,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 17261382,
+        "elixir": 15953345,
+        "capContrib": 400,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -5442,80 +5516,6 @@
         "gold": 18297359,
         "elixir": 16388805,
         "capContrib": 33674,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Marsyllia",
-      "tag": "#R0VJLRGQ0",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 26,
-      "profile": {
-        "level": 31,
-        "trophies": 26,
-        "best": 244,
-        "league": "Skeleton League 2",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 7,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 18.6,
-        "troops": 19.4,
-        "spells": 7.7,
-        "heroes": 30,
-        "top": [
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 10
-          },
-          {
-            "n": "Goblin",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Gigant",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 15706430,
-        "elixir": 14360446,
-        "capContrib": 400,
         "wins": 0
       }
     },
@@ -5648,7 +5648,7 @@
         "warStars": 15,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 7670,
+        "capital": 8470,
         "warPref": "in",
         "heroes": [
           {
