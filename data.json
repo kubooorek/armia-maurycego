@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T03:15:51.244Z",
+  "updated": "2026-11-03T03:31:19.553Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -32,6 +32,24 @@
         "played": 0
       },
       {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 12,
+        "pct": 400,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 11,
+        "pct": 442,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
@@ -46,24 +64,6 @@
         "level": 5,
         "stars": 10,
         "pct": 357,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 9,
-        "pct": 366,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 9,
-        "pct": 300,
         "wins": 0,
         "played": 0
       },
@@ -2757,8 +2757,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|2504246|2147140|0|0|0|100|0|0|19|6",
-      "last": "2026-11-02T21:15:55.521Z",
+      "sig": "0|2504246|2147140|0|0|0|100|0|0|20|6",
+      "last": "2026-11-03T03:31:19.543Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -6174,7 +6174,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 19,
+        "level": 20,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
