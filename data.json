@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T12:01:25.352Z",
+  "updated": "2026-11-03T12:15:54.341Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2773,8 +2773,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "13|14361147|13812698|0|12|0|100|0|0|24|8",
-      "last": "2026-11-03T10:46:00.856Z",
+      "sig": "13|15340849|14792400|0|12|0|100|0|0|25|8",
+      "last": "2026-11-03T12:15:54.333Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -3430,10 +3430,10 @@
       "th": 15,
       "given": 269,
       "received": 100,
-      "trophies": 367,
+      "trophies": 439,
       "profile": {
         "level": 205,
-        "trophies": 367,
+        "trophies": 439,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
         "warStars": 1247,
@@ -5722,11 +5722,11 @@
       "th": 8,
       "given": 13,
       "received": 60,
-      "trophies": 200,
+      "trophies": 240,
       "profile": {
-        "level": 24,
-        "trophies": 200,
-        "best": 200,
+        "level": 25,
+        "trophies": 240,
+        "best": 240,
         "league": "Skeleton League 1",
         "warStars": 0,
         "attackWins": 0,
@@ -5747,9 +5747,9 @@
         ]
       },
       "rush": {
-        "pct": 34.6,
-        "troops": 6.7,
-        "spells": 75,
+        "pct": 34.5,
+        "troops": 9.4,
+        "spells": 69.2,
         "heroes": 70,
         "top": [
           {
@@ -5778,9 +5778,9 @@
             "need": 2
           },
           {
-            "n": "Goblin",
-            "lvl": 3,
-            "need": 4
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
           }
         ]
       },
@@ -5788,8 +5788,8 @@
         "cg": 0,
         "don": 12,
         "capLoot": 0,
-        "gold": 14361147,
-        "elixir": 13812698,
+        "gold": 15340849,
+        "elixir": 14792400,
         "capContrib": 100,
         "wins": 0
       }
