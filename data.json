@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T20:01:50.341Z",
+  "updated": "2026-11-03T20:16:09.028Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 13,
-        "pct": 681,
+        "stars": 15,
+        "pct": 731,
         "wins": 0,
         "played": 1
       }
@@ -467,9 +467,9 @@
         "end": "20261104T173512.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 3,
-          "pct": 8,
-          "attacks": 2,
+          "stars": 5,
+          "pct": 11.33,
+          "attacks": 3,
           "bases": [
             {
               "pos": 1,
@@ -617,7 +617,7 @@
             {
               "pos": 13,
               "th": 12,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 14,
@@ -727,7 +727,13 @@
             "tag": "#LC8VRR9R2",
             "pos": 13,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 50,
+                "target": "13. Shiwarex"
+              }
+            ]
           },
           {
             "name": "vvd",
@@ -1059,6 +1065,12 @@
         "wars": 2
       },
       {
+        "name": "Brann",
+        "stars": 2,
+        "attacks": 2,
+        "wars": 2
+      },
+      {
         "name": "oggsgdjdjbd",
         "stars": 1,
         "attacks": 1,
@@ -1084,12 +1096,6 @@
       },
       {
         "name": "MrDefPL",
-        "stars": 0,
-        "attacks": 1,
-        "wars": 2
-      },
-      {
-        "name": "Cwel123",
         "stars": 0,
         "attacks": 1,
         "wars": 2
@@ -1514,7 +1520,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 3,
+      "us": 5,
       "them": 0,
       "members": [
         {
@@ -1585,7 +1591,12 @@
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 50
+            }
+          ]
         },
         {
           "name": "vvd",
@@ -2997,8 +3008,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "75|248141357|245591928|14450|222|57300|106986|0|58|101|12",
-      "last": "2026-11-03T19:16:17.086Z",
+      "sig": "76|248141357|245591928|14450|222|57300|106986|0|58|101|12",
+      "last": "2026-11-03T20:16:09.018Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -3032,8 +3043,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|252237707|253241750|15400|1422|24800|41751|0|11|61|13",
-      "last": "2026-11-03T18:01:28.017Z",
+      "sig": "20|252245007|253380244|15400|1422|24800|41751|0|11|61|13",
+      "last": "2026-11-03T20:16:09.018Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -4135,8 +4146,8 @@
         "cg": 15400,
         "don": 1422,
         "capLoot": 24800,
-        "gold": 252237707,
-        "elixir": 253241750,
+        "gold": 252245007,
+        "elixir": 253380244,
         "capContrib": 41751,
         "wins": 0
       }
@@ -4146,7 +4157,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 75,
+      "given": 76,
       "received": 40,
       "trophies": 236,
       "profile": {
@@ -5413,7 +5424,7 @@
       "role": "member",
       "th": 9,
       "given": 141,
-      "received": 101,
+      "received": 102,
       "trophies": 248,
       "profile": {
         "level": 49,
@@ -5428,7 +5439,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 15,
+            "level": 16,
             "max": 110
           },
           {
@@ -5444,10 +5455,10 @@
         ]
       },
       "rush": {
-        "pct": 5.6,
+        "pct": 4.7,
         "troops": 0,
         "spells": 4.8,
-        "heroes": 16.7,
+        "heroes": 13.3,
         "top": [
           {
             "n": "Zaklęcie skoku",
@@ -5456,7 +5467,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 15,
+            "lvl": 16,
             "need": 20
           }
         ]
