@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T12:15:54.341Z",
+  "updated": "2026-11-03T12:31:17.664Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2728,8 +2728,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|14896117|13689055|0|0|0|400|0|14|30|8",
-      "last": "2026-11-03T08:45:56.645Z",
+      "sig": "0|15544987|14273233|0|0|0|400|0|14|30|8",
+      "last": "2026-11-03T12:31:17.652Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -5379,6 +5379,80 @@
       }
     },
     {
+      "name": "Marsyllia",
+      "tag": "#R0VJLRGQ0",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 26,
+      "profile": {
+        "level": 30,
+        "trophies": 26,
+        "best": 244,
+        "league": "Skeleton League 2",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 19,
+        "troops": 19.4,
+        "spells": 8.3,
+        "heroes": 30,
+        "top": [
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 7,
+            "need": 10
+          },
+          {
+            "n": "Goblin",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Gigant",
+            "lvl": 3,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 15544987,
+        "elixir": 14273233,
+        "capContrib": 400,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -5642,80 +5716,6 @@
       }
     },
     {
-      "name": "Marsyllia",
-      "tag": "#R0VJLRGQ0",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 30,
-        "trophies": 0,
-        "best": 244,
-        "league": "Skeleton League 2",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 7,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 19,
-        "troops": 19.4,
-        "spells": 8.3,
-        "heroes": 30,
-        "top": [
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 10
-          },
-          {
-            "n": "Goblin",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Gigant",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 14896117,
-        "elixir": 13689055,
-        "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
       "name": "TwojaSiora",
       "tag": "#GQR98J880",
       "role": "member",
@@ -5741,7 +5741,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
