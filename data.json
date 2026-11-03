@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T04:15:55.782Z",
+  "updated": "2026-11-03T04:31:14.270Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -32,6 +32,15 @@
         "played": 0
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 12,
+        "pct": 418,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
@@ -55,15 +64,6 @@
         "level": 7,
         "stars": 11,
         "pct": 383,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 10,
-        "pct": 357,
         "wins": 0,
         "played": 0
       },
@@ -3571,10 +3571,10 @@
       "th": 12,
       "given": 0,
       "received": 144,
-      "trophies": 162,
+      "trophies": 192,
       "profile": {
         "level": 109,
-        "trophies": 162,
+        "trophies": 192,
         "best": 2839,
         "league": "Valkyrie League 14",
         "warStars": 90,
