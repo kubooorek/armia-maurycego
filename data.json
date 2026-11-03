@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T20:16:09.028Z",
+  "updated": "2026-11-03T20:31:15.256Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -50,20 +50,20 @@
         "played": 1
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 25,
+        "pct": 1021,
+        "wins": 0,
+        "played": 1
+      },
+      {
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
         "stars": 24,
         "pct": 871,
-        "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 22,
-        "pct": 921,
         "wins": 0,
         "played": 1
       },
@@ -1106,7 +1106,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -2998,8 +2998,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "260|468279765|484475282|42500|93088|246500|453697|0|1210|152|15",
-      "last": "2026-11-03T19:16:17.086Z",
+      "sig": "291|468279765|484475282|42500|93118|246500|453697|0|1210|152|15",
+      "last": "2026-11-03T20:31:15.243Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -3033,8 +3033,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "0|465359654|511552452|53920|23588|84375|216205|0|2054|102|9",
-      "last": "2026-11-02T22:01:18.931Z",
+      "sig": "0|465425675|511623252|53920|23588|84375|216205|0|2056|102|9",
+      "last": "2026-11-03T20:31:15.243Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -3043,8 +3043,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|252245007|253380244|15400|1422|24800|41751|0|11|61|13",
-      "last": "2026-11-03T20:16:09.018Z",
+      "sig": "20|255425748|256192444|15400|1422|24800|41751|0|11|61|13",
+      "last": "2026-11-03T20:31:15.243Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -3504,6 +3504,15 @@
           "cap": 0
         },
         {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "score": 59,
+          "stars": 3,
+          "don": 285,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
           "score": 58,
@@ -3511,15 +3520,6 @@
           "don": 99,
           "cg": 0,
           "cap": 3935
-        },
-        {
-          "name": "Baku",
-          "tag": "#LUGR0YQY0",
-          "score": 56,
-          "stars": 3,
-          "don": 255,
-          "cg": 0,
-          "cap": 0
         },
         {
           "name": "Cwel123",
@@ -3916,7 +3916,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 260,
+      "given": 291,
       "received": 52,
       "trophies": 0,
       "profile": {
@@ -3997,7 +3997,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 93088,
+        "don": 93118,
         "capLoot": 246500,
         "gold": 468279765,
         "elixir": 484475282,
@@ -4146,8 +4146,8 @@
         "cg": 15400,
         "don": 1422,
         "capLoot": 24800,
-        "gold": 252245007,
-        "elixir": 253380244,
+        "gold": 255425748,
+        "elixir": 256192444,
         "capContrib": 41751,
         "wins": 0
       }
@@ -4536,14 +4536,14 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 31,
+      "received": 62,
       "trophies": 0,
       "profile": {
         "level": 102,
         "trophies": 0,
         "best": 2730,
         "league": "Archer League 8",
-        "warStars": 2054,
+        "warStars": 2056,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 216205,
@@ -4577,8 +4577,8 @@
         "cg": 53920,
         "don": 23588,
         "capLoot": 84375,
-        "gold": 465359654,
-        "elixir": 511552452,
+        "gold": 465425675,
+        "elixir": 511623252,
         "capContrib": 216205,
         "wins": 0
       }
@@ -4958,8 +4958,8 @@
         ]
       },
       "rush": {
-        "pct": 1.9,
-        "troops": 3.6,
+        "pct": 1,
+        "troops": 1.8,
         "spells": 0,
         "heroes": 0,
         "top": [
@@ -4967,11 +4967,6 @@
             "n": "Minion",
             "lvl": 3,
             "need": 4
-          },
-          {
-            "n": "Łuczniczka",
-            "lvl": 4,
-            "need": 5
           }
         ]
       },
