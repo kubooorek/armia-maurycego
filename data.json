@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T04:45:58.220Z",
+  "updated": "2026-11-03T05:16:05.740Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -1937,7 +1937,7 @@
       "avgTh": 8.7,
       "level": 3,
       "wins": 13,
-      "points": 18800
+      "points": 18900
     }
   ],
   "weekBase": {
@@ -2552,8 +2552,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "144|2000000000|2000000000|94700|81269|1208549|1606815|0|1247|205|15",
-      "last": "2026-11-02T23:01:20.737Z",
+      "sig": "169|2000000000|2000000000|94700|81294|1208549|1607415|0|1247|205|15",
+      "last": "2026-11-03T05:16:05.728Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2562,8 +2562,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "0|576348176|599058320|38350|7509|531795|665578|0|90|109|12",
-      "last": "2026-11-02T23:16:05.635Z",
+      "sig": "0|576348176|599058320|38350|7509|531795|666028|0|90|109|12",
+      "last": "2026-11-03T05:16:05.728Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -2612,8 +2612,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "20|114844056|114433097|16800|534|21725|42288|0|68|55|9",
-      "last": "2026-11-02T20:01:16.517Z",
+      "sig": "20|114844056|114433097|16800|534|21725|42888|0|68|55|9",
+      "last": "2026-11-03T05:16:05.728Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -2657,8 +2657,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "0|76299627|64232258|3000|26|0|0|0|0|39|9",
-      "last": "2026-11-02T21:45:51.150Z",
+      "sig": "0|76951035|64596010|3000|26|0|0|0|0|39|9",
+      "last": "2026-11-03T05:16:05.728Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -2712,8 +2712,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "0|8212588|8809737|300|40|24805|31434|0|15|30|7",
-      "last": "2026-11-02T22:45:55.432Z",
+      "sig": "0|8212588|8809737|300|40|24805|31434|0|15|31|7",
+      "last": "2026-11-03T05:16:05.728Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVRY000P2": {
@@ -3407,7 +3407,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 144,
+      "given": 169,
       "received": 0,
       "trophies": 110,
       "profile": {
@@ -3418,7 +3418,7 @@
         "warStars": 1247,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 1606815,
+        "capital": 1607415,
         "warPref": "in",
         "heroes": [
           {
@@ -3462,11 +3462,11 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81269,
+        "don": 81294,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
-        "capContrib": 1606815,
+        "capContrib": 1607415,
         "wins": 0
       }
     },
@@ -3580,7 +3580,7 @@
         "warStars": 90,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 665578,
+        "capital": 666028,
         "warPref": "in",
         "heroes": [
           {
@@ -3618,7 +3618,7 @@
         "capLoot": 531795,
         "gold": 576348176,
         "elixir": 599058320,
-        "capContrib": 665578,
+        "capContrib": 666028,
         "wins": 0
       }
     },
@@ -3737,7 +3737,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
@@ -3753,10 +3753,10 @@
         ]
       },
       "rush": {
-        "pct": 41.9,
+        "pct": 41.6,
         "troops": 30.1,
         "spells": 27.1,
-        "heroes": 57.3,
+        "heroes": 56.7,
         "top": [
           {
             "n": "Książę Minionów",
@@ -4316,7 +4316,7 @@
         "warStars": 68,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 42288,
+        "capital": 42888,
         "warPref": "in",
         "heroes": [
           {
@@ -4331,7 +4331,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 5,
+            "level": 6,
             "max": 95
           }
         ]
@@ -4349,7 +4349,7 @@
         "capLoot": 21725,
         "gold": 114844056,
         "elixir": 114433097,
-        "capContrib": 42288,
+        "capContrib": 42888,
         "wins": 0
       }
     },
@@ -4843,9 +4843,68 @@
         "cg": 3000,
         "don": 26,
         "capLoot": 0,
-        "gold": 76299627,
-        "elixir": 64232258,
+        "gold": 76951035,
+        "elixir": 64596010,
         "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
+      "name": "CJ Alabama",
+      "tag": "#GV0P9JL8Q",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 48,
+        "trophies": 0,
+        "best": 240,
+        "league": "Skeleton League 3",
+        "warStars": 2,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16616,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 21,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 11,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.5,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 800,
+        "don": 89,
+        "capLoot": 7180,
+        "gold": 33943668,
+        "elixir": 32103991,
+        "capContrib": 16616,
         "wins": 0
       }
     },
@@ -5001,7 +5060,7 @@
       "received": 0,
       "trophies": 120,
       "profile": {
-        "level": 30,
+        "level": 31,
         "trophies": 120,
         "best": 240,
         "league": "Skeleton League 2",
@@ -5019,17 +5078,11 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
+        "pct": 0,
         "troops": 0,
-        "spells": 10,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 300,
@@ -5090,7 +5143,7 @@
       "role": "member",
       "th": 9,
       "given": 95,
-      "received": 50,
+      "received": 75,
       "trophies": 48,
       "profile": {
         "level": 48,
@@ -5899,65 +5952,6 @@
         "gold": 668752,
         "elixir": 668293,
         "capContrib": 0,
-        "wins": 0
-      }
-    },
-    {
-      "name": "CJ Alabama",
-      "tag": "#GV0P9JL8Q",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 48,
-        "trophies": 0,
-        "best": 240,
-        "league": "Skeleton League 3",
-        "warStars": 2,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16616,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 21,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 11,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.8,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 800,
-        "don": 89,
-        "capLoot": 7180,
-        "gold": 33943668,
-        "elixir": 32103991,
-        "capContrib": 16616,
         "wins": 0
       }
     },
