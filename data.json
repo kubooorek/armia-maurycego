@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T12:45:52.840Z",
+  "updated": "2026-11-03T13:01:24.762Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 17,
-        "pct": 634,
+        "stars": 20,
+        "pct": 697,
         "wins": 0,
         "played": 0
       },
@@ -80,8 +80,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 7,
-        "pct": 485,
+        "stars": 10,
+        "pct": 561,
         "wins": 0,
         "played": 0
       }
@@ -96,9 +96,9 @@
         "end": "20261103T173507.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 7,
-          "pct": 32.33,
-          "attacks": 14,
+          "stars": 10,
+          "pct": 37.4,
+          "attacks": 15,
           "bases": [
             {
               "pos": 1,
@@ -251,7 +251,7 @@
             {
               "pos": 14,
               "th": 13,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 15,
@@ -279,7 +279,13 @@
             "tag": "#LUGR0YQY0",
             "pos": 2,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "14. midnight"
+              }
+            ]
           },
           {
             "name": "Albaroon.2",
@@ -742,6 +748,12 @@
         "wars": 1
       },
       {
+        "name": "Baku",
+        "stars": 3,
+        "attacks": 1,
+        "wars": 1
+      },
+      {
         "name": "VipeR",
         "stars": 2,
         "attacks": 1,
@@ -757,12 +769,6 @@
         "name": "Barnes",
         "stars": 1,
         "attacks": 1,
-        "wars": 1
-      },
-      {
-        "name": "Baku",
-        "stars": 0,
-        "attacks": 0,
         "wars": 1
       },
       {
@@ -1208,7 +1214,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 7,
+      "us": 10,
       "them": 12,
       "members": [
         {
@@ -1224,7 +1230,12 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -2578,8 +2589,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "235|468157765|484353282|42500|93063|246500|453697|0|1207|152|15",
-      "last": "2026-11-02T22:01:18.931Z",
+      "sig": "235|468279765|484475282|42500|93063|246500|453697|0|1210|152|15",
+      "last": "2026-11-03T13:01:24.750Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -2633,8 +2644,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "20|114844056|114433097|16800|534|21725|42888|0|68|55|9",
-      "last": "2026-11-03T05:16:05.728Z",
+      "sig": "20|114844056|114433097|16800|534|21725|42888|0|68|56|9",
+      "last": "2026-11-03T13:01:24.750Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -3084,6 +3095,15 @@
           "cap": 3935
         },
         {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "score": 53,
+          "stars": 3,
+          "don": 230,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "score": 51,
@@ -3107,15 +3127,6 @@
           "score": 42,
           "stars": 4,
           "don": 20,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "score": 40,
-          "stars": 4,
-          "don": 0,
           "cg": 0,
           "cap": 0
         }
@@ -3504,7 +3515,7 @@
         "trophies": 0,
         "best": 3270,
         "league": "Witch League 17",
-        "warStars": 1207,
+        "warStars": 1210,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 453697,
@@ -3579,8 +3590,8 @@
         "cg": 42500,
         "don": 93063,
         "capLoot": 246500,
-        "gold": 468157765,
-        "elixir": 484353282,
+        "gold": 468279765,
+        "elixir": 484475282,
         "capContrib": 453697,
         "wins": 0
       }
@@ -4330,7 +4341,7 @@
       "received": 0,
       "trophies": 48,
       "profile": {
-        "level": 55,
+        "level": 56,
         "trophies": 48,
         "best": 622,
         "league": "Barbarian League 6",
@@ -5127,16 +5138,11 @@
         ]
       },
       "rush": {
-        "pct": 3.4,
-        "troops": 2.8,
+        "pct": 1.7,
+        "troops": 0,
         "spells": 0,
         "heroes": 10,
         "top": [
-          {
-            "n": "Barbarzyńca",
-            "lvl": 3,
-            "need": 4
-          },
           {
             "n": "Król Barbarzyńców",
             "lvl": 9,
