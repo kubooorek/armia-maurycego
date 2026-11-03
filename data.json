@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T10:01:19.867Z",
+  "updated": "2026-11-03T10:31:07.653Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -801,7 +801,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -2573,8 +2573,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "192|2000000000|2000000000|94700|81316|1208549|1607415|0|1247|205|15",
-      "last": "2026-11-03T07:59:31.640Z",
+      "sig": "197|2000000000|2000000000|94700|81321|1208549|1607415|0|1247|205|15",
+      "last": "2026-11-03T10:31:07.640Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2688,8 +2688,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "95|51100245|50003112|2400|549|7665|19659|0|4|48|9",
-      "last": "2026-11-03T10:01:19.854Z",
+      "sig": "95|51100245|50003112|2400|549|7665|19659|0|4|49|9",
+      "last": "2026-11-03T10:31:07.640Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -3428,7 +3428,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 192,
+      "given": 197,
       "received": 0,
       "trophies": 119,
       "profile": {
@@ -3483,7 +3483,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81316,
+        "don": 81321,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -5063,10 +5063,10 @@
       "role": "member",
       "th": 9,
       "given": 95,
-      "received": 75,
+      "received": 80,
       "trophies": 128,
       "profile": {
-        "level": 48,
+        "level": 49,
         "trophies": 128,
         "best": 349,
         "league": "Skeleton League 2",
