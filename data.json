@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T21:16:16.811Z",
+  "updated": "2026-11-03T21:31:35.303Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -81,7 +81,7 @@
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 16,
-        "pct": 827,
+        "pct": 858,
         "wins": 0,
         "played": 1
       }
@@ -468,8 +468,8 @@
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 6,
-          "pct": 17.73,
-          "attacks": 5,
+          "pct": 19.8,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -658,7 +658,13 @@
             "tag": "#LJYR92002",
             "pos": 4,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 31,
+                "target": "9. palin sorai"
+              }
+            ]
           },
           {
             "name": "MrDefPL",
@@ -1101,13 +1107,13 @@
         "wars": 2
       },
       {
-        "name": "MAQOS",
+        "name": "MrDefPL",
         "stars": 0,
         "attacks": 1,
         "wars": 2
       },
       {
-        "name": "MrDefPL",
+        "name": "Cwel123",
         "stars": 0,
         "attacks": 1,
         "wars": 2
@@ -1553,7 +1559,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 31
+            }
+          ]
         },
         {
           "name": "MrDefPL",
@@ -3040,8 +3051,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "0|328338572|337527162|12900|632|275915|401040|0|120|121|12",
-      "last": "2026-11-03T02:45:51.835Z",
+      "sig": "0|328364372|337578762|12900|632|275915|401040|0|120|121|12",
+      "last": "2026-11-03T21:31:35.291Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -3130,8 +3141,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "141|56169684|56055396|2400|594|7665|19909|0|4|49|9",
-      "last": "2026-11-03T20:01:50.326Z",
+      "sig": "141|56776486|56653048|2400|594|7665|19909|0|4|49|9",
+      "last": "2026-11-03T21:31:35.291Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4315,8 +4326,8 @@
         "cg": 12900,
         "don": 632,
         "capLoot": 275915,
-        "gold": 328338572,
-        "elixir": 337527162,
+        "gold": 328364372,
+        "elixir": 337578762,
         "capContrib": 401040,
         "wins": 0
       }
@@ -5466,7 +5477,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 1,
+            "level": 2,
             "max": 95
           }
         ]
@@ -5493,8 +5504,8 @@
         "cg": 2400,
         "don": 594,
         "capLoot": 7665,
-        "gold": 56169684,
-        "elixir": 56055396,
+        "gold": 56776486,
+        "elixir": 56653048,
         "capContrib": 19909,
         "wins": 0
       }
