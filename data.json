@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-03T22:45:58.257Z",
+  "updated": "2026-11-03T23:01:23.791Z",
   "clanLevel": 3,
-  "memberCount": 44,
+  "memberCount": 45,
   "cwlLeague": "Silver League I",
   "warWinStreak": 11,
   "warWins": 13,
@@ -1150,7 +1150,7 @@
       }
     ]
   },
-  "visits": 65,
+  "visits": 66,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -1323,6 +1323,12 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-03T23:01:22.973Z",
+      "type": "join",
+      "name": "eskii",
+      "th": 11
+    },
     {
       "t": "2026-11-03T22:01:20.812Z",
       "type": "th",
@@ -2469,11 +2475,11 @@
     },
     {
       "d": "2026-11-03",
-      "members": 44,
+      "members": 45,
       "avgTh": 8.8,
       "level": 3,
       "wins": 13,
-      "points": 18900
+      "points": 19300
     }
   ],
   "weekBase": {
@@ -2699,6 +2705,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 100
+      },
+      "#YQ0RPRP88": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
       }
     }
   },
@@ -2894,6 +2905,9 @@
     },
     "#LYUQYCU9G": {
       "d": "2026-10-31T20:31:00.210Z"
+    },
+    "#YQ0RPRP88": {
+      "d": "2026-11-03T23:01:23.781Z"
     }
   },
   "records": {
@@ -2910,10 +2924,10 @@
       "date": "2026-11-02"
     },
     "members": {
-      "value": 44,
+      "value": 45,
       "name": "Armia Maurycego",
       "tag": "#2GQQ8RGRL",
-      "date": "2026-10-30"
+      "date": "2026-11-03"
     },
     "warStars": {
       "value": 6,
@@ -3113,8 +3127,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "0|328364372|337578762|12900|632|275915|401040|0|120|121|12",
-      "last": "2026-11-03T21:31:35.291Z",
+      "sig": "0|334386458|343621362|12900|632|275915|401040|0|120|121|12",
+      "last": "2026-11-03T23:01:23.781Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -3306,6 +3320,11 @@
       "sig": "0|1064050|1151575|1200|139|6445|14385|0|6|44|8",
       "last": "2026-11-03T20:46:02.885Z",
       "since": "2026-10-31T20:31:00.210Z"
+    },
+    "#YQ0RPRP88": {
+      "sig": "0|1916059|1777660|0|23|0|0|0|0|97|11",
+      "last": "2026-11-03T23:01:23.781Z",
+      "since": "2026-11-03T23:01:23.781Z"
     }
   },
   "clanGames": null,
@@ -3576,6 +3595,13 @@
         "don": 0,
         "cg": 0,
         "capLoot": 0
+      },
+      "#YQ0RPRP88": {
+        "warStars": 0,
+        "don": 23,
+        "cg": 0,
+        "capLoot": 0,
+        "joined": "2026-11-03T23:01:23.781Z"
       }
     }
   },
@@ -3638,24 +3664,24 @@
     }
   },
   "dayBase": {
-    "day": "2026-11-03",
-    "since": "2026-11-02T23:01:20.737Z",
+    "day": "2026-11-04",
+    "since": "2026-11-03T23:01:23.781Z",
     "players": {
       "#VP9PLGLV": {
-        "warStars": 1247,
-        "don": 81269,
+        "warStars": 1250,
+        "don": 81421,
         "cg": 94700,
         "capLoot": 1208549
       },
       "#LUGR0YQY0": {
-        "warStars": 1207,
-        "don": 93063,
+        "warStars": 1213,
+        "don": 93148,
         "cg": 42500,
         "capLoot": 246500
       },
       "#GYUJR2URJ": {
-        "warStars": 90,
-        "don": 7509,
+        "warStars": 92,
+        "don": 7609,
         "cg": 38350,
         "capLoot": 531795
       },
@@ -3667,7 +3693,7 @@
       },
       "#Q9CU9P908": {
         "warStars": 58,
-        "don": 190,
+        "don": 222,
         "cg": 14450,
         "capLoot": 57300
       },
@@ -3678,7 +3704,7 @@
         "capLoot": 275915
       },
       "#22R8PLCU8": {
-        "warStars": 231,
+        "warStars": 232,
         "don": 9386,
         "cg": 15875,
         "capLoot": 10205
@@ -3690,13 +3716,13 @@
         "capLoot": 64385
       },
       "#Y02PYY922": {
-        "warStars": 3160,
+        "warStars": 3162,
         "don": 72883,
         "cg": 118755,
         "capLoot": 212590
       },
       "#LC8VRR9R2": {
-        "warStars": 2054,
+        "warStars": 2056,
         "don": 23588,
         "cg": 53920,
         "capLoot": 84375
@@ -3707,23 +3733,29 @@
         "cg": 10100,
         "capLoot": 27320
       },
+      "#QYJUV90JY": {
+        "warStars": 47,
+        "don": 20,
+        "cg": 2900,
+        "capLoot": 21235
+      },
       "#GU0R2J8R0": {
         "warStars": 68,
         "don": 534,
         "cg": 16800,
         "capLoot": 21725
       },
-      "#QYJUV90JY": {
-        "warStars": 44,
-        "don": 20,
-        "cg": 2900,
-        "capLoot": 21235
-      },
       "#G8VGC2VRL": {
         "warStars": 32,
         "don": 634,
         "cg": 7600,
         "capLoot": 9310
+      },
+      "#YQ0RPRP88": {
+        "warStars": 0,
+        "don": 23,
+        "cg": 0,
+        "capLoot": 0
       },
       "#LQVRCRUYR": {
         "warStars": 2452,
@@ -3757,9 +3789,15 @@
       },
       "#R8V9U9VLJ": {
         "warStars": 0,
-        "don": 26,
+        "don": 27,
         "cg": 3000,
         "capLoot": 0
+      },
+      "#GV0P9JL8Q": {
+        "warStars": 2,
+        "don": 89,
+        "cg": 800,
+        "capLoot": 7180
       },
       "#R90YJUQCQ": {
         "warStars": 4,
@@ -3767,11 +3805,11 @@
         "cg": 1250,
         "capLoot": 5665
       },
-      "#R9GPGL0QJ": {
-        "warStars": 6,
-        "don": 73,
-        "cg": 0,
-        "capLoot": 7410
+      "#GVGRVCQJR": {
+        "warStars": 4,
+        "don": 594,
+        "cg": 2400,
+        "capLoot": 7665
       },
       "#R8RVQVPCC": {
         "warStars": 15,
@@ -3779,17 +3817,35 @@
         "cg": 300,
         "capLoot": 24805
       },
+      "#R9GPGL0QJ": {
+        "warStars": 6,
+        "don": 76,
+        "cg": 0,
+        "capLoot": 7410
+      },
+      "#GVG02VV98": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 5600,
+        "capLoot": 0
+      },
+      "#R0VLRL292": {
+        "warStars": 3,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0
+      },
       "#R9QQPG9JP": {
         "warStars": 21,
         "don": 12,
         "cg": 600,
         "capLoot": 5885
       },
-      "#GVGRVCQJR": {
-        "warStars": 4,
-        "don": 549,
-        "cg": 2400,
-        "capLoot": 7665
+      "#R0VJLRGQ0": {
+        "warStars": 14,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0
       },
       "#LUQJC2JGY": {
         "warStars": 0,
@@ -3797,10 +3853,16 @@
         "cg": 0,
         "capLoot": 11195
       },
-      "#GVG02VV98": {
-        "warStars": 0,
-        "don": 0,
-        "cg": 5600,
+      "#R2PCVYQG2": {
+        "warStars": 21,
+        "don": 175,
+        "cg": 1500,
+        "capLoot": 24090
+      },
+      "#R92C0U8UU": {
+        "warStars": 15,
+        "don": 30,
+        "cg": 0,
         "capLoot": 0
       },
       "#GQ2QUJRGU": {
@@ -3815,39 +3877,15 @@
         "cg": 1200,
         "capLoot": 6445
       },
-      "#R92C0U8UU": {
-        "warStars": 15,
-        "don": 30,
-        "cg": 0,
-        "capLoot": 0
-      },
       "#RYLR2C92V": {
         "warStars": 7,
         "don": 68,
         "cg": 10050,
         "capLoot": 17945
       },
-      "#R0VLRL292": {
-        "warStars": 3,
-        "don": 0,
-        "cg": 0,
-        "capLoot": 0
-      },
-      "#R2PCVYQG2": {
-        "warStars": 21,
-        "don": 175,
-        "cg": 1500,
-        "capLoot": 24090
-      },
-      "#R0VJLRGQ0": {
-        "warStars": 14,
-        "don": 0,
-        "cg": 0,
-        "capLoot": 0
-      },
       "#GQR98J880": {
         "warStars": 0,
-        "don": 0,
+        "don": 22,
         "cg": 0,
         "capLoot": 0
       },
@@ -3869,15 +3907,9 @@
         "cg": 0,
         "capLoot": 0
       },
-      "#GV0P9JL8Q": {
-        "warStars": 2,
-        "don": 89,
-        "cg": 800,
-        "capLoot": 7180
-      },
       "#R9GUJ0ULV": {
         "warStars": 0,
-        "don": 41,
+        "don": 61,
         "cg": 0,
         "capLoot": 0
       },
@@ -3908,21 +3940,27 @@
     }
   },
   "potd": {
-    "day": "2026-11-02",
-    "picked": "2026-11-02T23:01:20.737Z",
-    "name": "Baku",
-    "tag": "#LUGR0YQY0",
-    "th": 15,
-    "role": "member",
-    "score": 23,
-    "stars": 0,
-    "don": 230,
+    "day": "2026-11-03",
+    "picked": "2026-11-03T23:01:23.781Z",
+    "name": "Albaroon.2",
+    "tag": "#GYUJR2URJ",
+    "th": 12,
+    "role": "coLeader",
+    "score": 30,
+    "stars": 2,
+    "don": 100,
     "cg": 0,
     "cap": 0,
-    "att": 0,
+    "att": 1,
     "three": 0
   },
   "potdHistory": [
+    {
+      "day": "2026-11-03",
+      "name": "Albaroon.2",
+      "tag": "#GYUJR2URJ",
+      "score": 30
+    },
     {
       "day": "2026-11-02",
       "name": "Baku",
@@ -4343,10 +4381,10 @@
       "th": 12,
       "given": 0,
       "received": 0,
-      "trophies": 248,
+      "trophies": 305,
       "profile": {
         "level": 121,
-        "trophies": 59,
+        "trophies": 305,
         "best": 2224,
         "league": "Archer League 9",
         "warStars": 120,
@@ -4388,8 +4426,8 @@
         "cg": 12900,
         "don": 632,
         "capLoot": 275915,
-        "gold": 328364372,
-        "elixir": 337578762,
+        "gold": 334386458,
+        "elixir": 343621362,
         "capContrib": 401040,
         "wins": 0
       }
@@ -4970,6 +5008,85 @@
         "gold": 123654955,
         "elixir": 114055545,
         "capContrib": 29985,
+        "wins": 0
+      }
+    },
+    {
+      "name": "eskii",
+      "tag": "#YQ0RPRP88",
+      "role": "member",
+      "th": 11,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 97,
+        "trophies": 0,
+        "best": 1364,
+        "league": "Barbarian League 6",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 30,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 30,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 31.8,
+        "troops": 29.9,
+        "spells": 47.8,
+        "heroes": 25,
+        "top": [
+          {
+            "n": "Walkiria",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Golem",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie zamrożenia",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 3,
+            "need": 7
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 3,
+            "need": 7
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 23,
+        "capLoot": 0,
+        "gold": 1916059,
+        "elixir": 1777660,
+        "capContrib": 0,
         "wins": 0
       }
     },
