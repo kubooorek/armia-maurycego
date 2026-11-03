@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:16:01.060Z",
+  "updated": "2026-11-03T09:31:14.416Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2713,8 +2713,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|24013147|22749823|5600|0|0|6070|0|0|39|8",
-      "last": "2026-11-03T09:01:23.117Z",
+      "sig": "0|25731657|24158998|5600|0|0|6070|0|0|39|8",
+      "last": "2026-11-03T09:31:14.404Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -5107,7 +5107,7 @@
       "th": 9,
       "given": 0,
       "received": 26,
-      "trophies": 80,
+      "trophies": 102,
       "profile": {
         "level": 39,
         "trophies": 80,
@@ -5390,10 +5390,10 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 0,
+      "trophies": 11,
       "profile": {
         "level": 39,
-        "trophies": 0,
+        "trophies": 11,
         "best": 257,
         "league": "Skeleton League 2",
         "warStars": 0,
@@ -5436,8 +5436,8 @@
         "cg": 5600,
         "don": 0,
         "capLoot": 0,
-        "gold": 24013147,
-        "elixir": 22749823,
+        "gold": 25731657,
+        "elixir": 24158998,
         "capContrib": 6070,
         "wins": 0
       }
