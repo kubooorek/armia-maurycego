@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:45:51.370Z",
+  "updated": "2026-11-03T10:01:19.867Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,17 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 18,
-        "pct": 600,
+        "stars": 21,
+        "pct": 700,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 17,
+        "pct": 634,
         "wins": 0,
         "played": 0
       },
@@ -28,15 +37,6 @@
         "level": 21,
         "stars": 17,
         "pct": 590,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 14,
-        "pct": 534,
         "wins": 0,
         "played": 0
       },
@@ -2588,8 +2588,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "74|239351648|236671694|14450|222|57300|106086|0|58|101|12",
-      "last": "2026-11-03T09:45:51.361Z",
+      "sig": "74|239351648|236671694|14450|222|57300|106536|0|58|101|12",
+      "last": "2026-11-03T10:01:19.854Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -2688,8 +2688,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "95|49340321|48338784|2400|549|7665|19659|0|4|48|9",
-      "last": "2026-11-02T20:15:58.752Z",
+      "sig": "95|51100245|50003112|2400|549|7665|19659|0|4|48|9",
+      "last": "2026-11-03T10:01:19.854Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -3748,7 +3748,7 @@
         "warStars": 58,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 106086,
+        "capital": 106536,
         "warPref": "in",
         "heroes": [
           {
@@ -3817,7 +3817,7 @@
         "capLoot": 57300,
         "gold": 239351648,
         "elixir": 236671694,
-        "capContrib": 106086,
+        "capContrib": 106536,
         "wins": 0
       }
     },
@@ -4704,10 +4704,10 @@
       "th": 9,
       "given": 0,
       "received": 103,
-      "trophies": 280,
+      "trophies": 320,
       "profile": {
         "level": 50,
-        "trophies": 280,
+        "trophies": 320,
         "best": 308,
         "league": "Skeleton League 3",
         "warStars": 12,
@@ -5058,6 +5058,65 @@
       }
     },
     {
+      "name": "SHA☆ZAM!",
+      "tag": "#GVGRVCQJR",
+      "role": "member",
+      "th": 9,
+      "given": 95,
+      "received": 75,
+      "trophies": 128,
+      "profile": {
+        "level": 48,
+        "trophies": 128,
+        "best": 349,
+        "league": "Skeleton League 2",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 19659,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 5.6,
+        "troops": 0,
+        "spells": 4.8,
+        "heroes": 16.7,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 15,
+            "need": 20
+          }
+        ]
+      },
+      "ach": {
+        "cg": 2400,
+        "don": 549,
+        "capLoot": 7665,
+        "gold": 51100245,
+        "elixir": 50003112,
+        "capContrib": 19659,
+        "wins": 0
+      }
+    },
+    {
       "name": "threeten",
       "tag": "#R8RVQVPCC",
       "role": "member",
@@ -5219,65 +5278,6 @@
         "gold": 26558013,
         "elixir": 24832357,
         "capContrib": 13328,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SHA☆ZAM!",
-      "tag": "#GVGRVCQJR",
-      "role": "member",
-      "th": 9,
-      "given": 95,
-      "received": 75,
-      "trophies": 48,
-      "profile": {
-        "level": 48,
-        "trophies": 48,
-        "best": 349,
-        "league": "Skeleton League 2",
-        "warStars": 4,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 19659,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 15,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 5.6,
-        "troops": 0,
-        "spells": 4.8,
-        "heroes": 16.7,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 15,
-            "need": 20
-          }
-        ]
-      },
-      "ach": {
-        "cg": 2400,
-        "don": 549,
-        "capLoot": 7665,
-        "gold": 49340321,
-        "elixir": 48338784,
-        "capContrib": 19659,
         "wins": 0
       }
     },
