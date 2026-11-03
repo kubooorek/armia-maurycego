@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T13:31:09.882Z",
+  "updated": "2026-11-03T13:45:51.903Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2669,8 +2669,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|44676337|43463939|750|0|14130|17129|0|14|56|9",
-      "last": "2026-11-03T11:01:24.549Z",
+      "sig": "0|45793017|44570619|750|0|14130|17129|0|14|56|9",
+      "last": "2026-11-03T13:45:51.891Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
@@ -4285,9 +4285,9 @@
         ]
       },
       "rush": {
-        "pct": 31,
+        "pct": 30.2,
         "troops": 12,
-        "spells": 33.3,
+        "spells": 29.2,
         "heroes": 49,
         "top": [
           {
@@ -4316,9 +4316,9 @@
             "need": 5
           },
           {
-            "n": "Zaklęcie zamrożenia",
-            "lvl": 2,
-            "need": 5
+            "n": "Król Barbarzyńców",
+            "lvl": 17,
+            "need": 40
           }
         ]
       },
@@ -4527,7 +4527,7 @@
       "trophies": 80,
       "profile": {
         "level": 56,
-        "trophies": 40,
+        "trophies": 80,
         "best": 787,
         "league": "Barbarian League 4",
         "warStars": 14,
@@ -4570,8 +4570,8 @@
         "cg": 750,
         "don": 0,
         "capLoot": 14130,
-        "gold": 44676337,
-        "elixir": 43463939,
+        "gold": 45793017,
+        "elixir": 44570619,
         "capContrib": 17129,
         "wins": 0
       }
