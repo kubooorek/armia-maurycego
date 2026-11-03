@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T16:15:58.244Z",
+  "updated": "2026-11-03T16:31:16.033Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -807,7 +807,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -2706,8 +2706,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "95|51984245|50887112|2400|549|7665|19659|0|4|49|9",
-      "last": "2026-11-03T12:01:25.342Z",
+      "sig": "95|54206113|53541338|2400|549|7665|19909|0|4|49|9",
+      "last": "2026-11-03T16:31:16.020Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -2806,8 +2806,8 @@
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
-      "sig": "0|1034050|1121575|1200|139|6445|14135|0|6|44|8",
-      "last": "2026-11-03T06:15:55.956Z",
+      "sig": "0|1034050|1121575|1200|139|6445|14385|0|6|44|8",
+      "last": "2026-11-03T16:31:16.020Z",
       "since": "2026-10-31T20:31:00.210Z"
     }
   },
@@ -4370,7 +4370,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 6,
+            "level": 7,
             "max": 95
           }
         ]
@@ -4413,12 +4413,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 24,
+            "level": 25,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
@@ -4429,8 +4429,8 @@
         ]
       },
       "rush": {
-        "pct": 7.1,
-        "troops": 11.9,
+        "pct": 6.3,
+        "troops": 10.2,
         "spells": 4.3,
         "heroes": 0,
         "top": [
@@ -4445,11 +4445,6 @@
             "need": 5
           },
           {
-            "n": "Wieprzowy jeździec",
-            "lvl": 3,
-            "need": 4
-          },
-          {
             "n": "Barbarzyńca",
             "lvl": 4,
             "need": 5
@@ -4461,6 +4456,11 @@
           },
           {
             "n": "Gigant",
+            "lvl": 4,
+            "need": 5
+          },
+          {
+            "n": "Burzyciel",
             "lvl": 4,
             "need": 5
           }
@@ -4722,11 +4722,11 @@
       "th": 9,
       "given": 0,
       "received": 103,
-      "trophies": 320,
+      "trophies": 346,
       "profile": {
         "level": 50,
-        "trophies": 320,
-        "best": 320,
+        "trophies": 346,
+        "best": 346,
         "league": "Skeleton League 3",
         "warStars": 12,
         "attackWins": 0,
@@ -5032,7 +5032,7 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 19659,
+        "capital": 19909,
         "warPref": "in",
         "heroes": [
           {
@@ -5069,9 +5069,9 @@
         "cg": 2400,
         "don": 549,
         "capLoot": 7665,
-        "gold": 51984245,
-        "elixir": 50887112,
-        "capContrib": 19659,
+        "gold": 54206113,
+        "elixir": 53541338,
+        "capContrib": 19909,
         "wins": 0
       }
     },
@@ -5599,7 +5599,7 @@
         "warStars": 6,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 14135,
+        "capital": 14385,
         "warPref": "in",
         "heroes": [
           {
@@ -5628,7 +5628,7 @@
         "capLoot": 6445,
         "gold": 1034050,
         "elixir": 1121575,
-        "capContrib": 14135,
+        "capContrib": 14385,
         "wins": 0
       }
     },
