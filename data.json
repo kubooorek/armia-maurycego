@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T18:16:10.297Z",
+  "updated": "2026-11-03T18:31:36.015Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 10,
-        "pct": 561,
+        "stars": 13,
+        "pct": 661,
         "wins": 0,
         "played": 1
       }
@@ -467,9 +467,9 @@
         "end": "20261104T173512.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 3,
+          "pct": 6.67,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -627,7 +627,7 @@
             {
               "pos": 15,
               "th": 9,
-              "best": 0
+              "best": 3
             }
           ]
         },
@@ -686,7 +686,13 @@
             "tag": "#QYJUV90JY",
             "pos": 8,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "15. Lillll"
+              }
+            ]
           },
           {
             "name": "Cwel123",
@@ -1035,6 +1041,12 @@
         "wars": 2
       },
       {
+        "name": "monte",
+        "stars": 3,
+        "attacks": 2,
+        "wars": 2
+      },
+      {
         "name": "VipeR",
         "stars": 2,
         "attacks": 1,
@@ -1071,12 +1083,6 @@
         "wars": 2
       },
       {
-        "name": "monte",
-        "stars": 0,
-        "attacks": 1,
-        "wars": 2
-      },
-      {
         "name": "Cwel123",
         "stars": 0,
         "attacks": 1,
@@ -1088,7 +1094,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -1502,7 +1508,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 0,
+      "us": 3,
       "them": 0,
       "members": [
         {
@@ -1543,7 +1549,12 @@
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Cwel123",
@@ -3015,8 +3026,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|173806518|167726442|2900|20|21235|28873|0|44|79|11",
-      "last": "2026-11-03T17:31:15.702Z",
+      "sig": "0|173873518|167793442|2900|20|21235|28873|0|47|80|11",
+      "last": "2026-11-03T18:31:36.005Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -3462,6 +3473,15 @@
       ],
       "top": [
         {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "score": 70,
+          "stars": 7,
+          "don": 0,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
           "score": 58,
@@ -3494,15 +3514,6 @@
           "score": 50,
           "stars": 5,
           "don": 0,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "Toster290",
-          "tag": "#GJJ90QGVQ",
-          "score": 42,
-          "stars": 4,
-          "don": 20,
           "cg": 0,
           "cap": 0
         }
@@ -4628,11 +4639,11 @@
       "received": 0,
       "trophies": 173,
       "profile": {
-        "level": 79,
+        "level": 80,
         "trophies": 173,
         "best": 348,
         "league": "Barbarian League 6",
-        "warStars": 44,
+        "warStars": 47,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 28873,
@@ -4661,9 +4672,9 @@
         ]
       },
       "rush": {
-        "pct": 28.4,
+        "pct": 27.6,
         "troops": 9.9,
-        "spells": 24.5,
+        "spells": 20.4,
         "heroes": 49,
         "top": [
           {
@@ -4702,8 +4713,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 173806518,
-        "elixir": 167726442,
+        "gold": 173873518,
+        "elixir": 167793442,
         "capContrib": 28873,
         "wins": 0
       }
@@ -5822,7 +5833,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
