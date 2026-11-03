@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T09:01:23.129Z",
+  "updated": "2026-11-03T09:16:01.060Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -14,20 +14,20 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 18,
+        "pct": 600,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
         "stars": 17,
         "pct": 590,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 15,
-        "pct": 500,
         "wins": 0,
         "played": 0
       },
@@ -2743,8 +2743,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GLV9998PC": {
-      "sig": "0|173949|173048|0|0|0|0|0|0|9|5",
-      "last": "2026-11-03T09:01:23.117Z",
+      "sig": "0|298949|298048|0|0|0|0|0|0|9|5",
+      "last": "2026-11-03T09:16:01.047Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GGU0RJYR9": {
@@ -4538,8 +4538,8 @@
         ]
       },
       "rush": {
-        "pct": 3.8,
-        "troops": 7.1,
+        "pct": 2.9,
+        "troops": 5.4,
         "spells": 0,
         "heroes": 0,
         "top": [
@@ -4547,11 +4547,6 @@
             "n": "Minion",
             "lvl": 2,
             "need": 4
-          },
-          {
-            "n": "Barbarzyńca",
-            "lvl": 4,
-            "need": 5
           },
           {
             "n": "Łuczniczka",
@@ -5926,8 +5921,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 173949,
-        "elixir": 173048,
+        "gold": 298949,
+        "elixir": 298048,
         "capContrib": 0,
         "wins": 0
       }
