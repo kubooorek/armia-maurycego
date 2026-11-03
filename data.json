@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T12:31:17.664Z",
+  "updated": "2026-11-03T12:45:52.840Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2678,8 +2678,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|78933313|66239589|3000|27|0|0|0|0|39|9",
-      "last": "2026-11-03T11:45:50.612Z",
+      "sig": "1|78938498|66338589|3000|27|0|0|0|0|40|9",
+      "last": "2026-11-03T12:45:52.828Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -4788,10 +4788,10 @@
       "th": 9,
       "given": 1,
       "received": 0,
-      "trophies": 74,
+      "trophies": 78,
       "profile": {
-        "level": 39,
-        "trophies": 74,
+        "level": 40,
+        "trophies": 78,
         "best": 149,
         "league": "Skeleton League 3",
         "warStars": 0,
@@ -4813,8 +4813,8 @@
         ]
       },
       "rush": {
-        "pct": 40.7,
-        "troops": 20.4,
+        "pct": 39.6,
+        "troops": 18.4,
         "spells": 58.3,
         "heroes": 66.7,
         "top": [
@@ -4829,11 +4829,6 @@
             "need": 10
           },
           {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
             "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 4
@@ -4842,6 +4837,11 @@
             "n": "Król Barbarzyńców",
             "lvl": 8,
             "need": 20
+          },
+          {
+            "n": "Minion",
+            "lvl": 2,
+            "need": 4
           },
           {
             "n": "Zaklęcie trucizny",
@@ -4854,8 +4854,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 78933313,
-        "elixir": 66239589,
+        "gold": 78938498,
+        "elixir": 66338589,
         "capContrib": 0,
         "wins": 0
       }
@@ -5254,7 +5254,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
