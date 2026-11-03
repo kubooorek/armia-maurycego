@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T06:45:58.435Z",
+  "updated": "2026-11-03T07:01:22.627Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
-        "stars": 3,
-        "pct": 100,
+        "stars": 6,
+        "pct": 200,
         "wins": 0,
         "played": 0
       }
@@ -5738,8 +5738,8 @@
         ]
       },
       "rush": {
-        "pct": 38.5,
-        "troops": 10,
+        "pct": 36.5,
+        "troops": 6.7,
         "spells": 75,
         "heroes": 80,
         "top": [
