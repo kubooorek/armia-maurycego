@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T15:16:07.652Z",
+  "updated": "2026-11-03T15:31:15.980Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 14,
-        "pct": 580,
+        "stars": 16,
+        "pct": 672,
         "wins": 0,
         "played": 0
       },
@@ -2591,8 +2591,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "309|2000000000|2000000000|94700|81401|1208549|1607415|0|1247|205|15",
-      "last": "2026-11-03T13:15:52.192Z",
+      "sig": "329|2000000000|2000000000|94700|81421|1208549|1607415|0|1247|205|15",
+      "last": "2026-11-03T15:31:15.967Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2726,8 +2726,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|26948295|25808935|0|76|7410|8648|0|6|40|8",
-      "last": "2026-11-03T14:01:34.205Z",
+      "sig": "3|27784954|26665542|0|76|7410|8648|0|6|40|8",
+      "last": "2026-11-03T15:31:15.967Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -3446,7 +3446,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 309,
+      "given": 329,
       "received": 100,
       "trophies": 439,
       "profile": {
@@ -3501,7 +3501,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81401,
+        "don": 81421,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -4292,9 +4292,9 @@
         ]
       },
       "rush": {
-        "pct": 29.4,
-        "troops": 12,
-        "spells": 25,
+        "pct": 28.5,
+        "troops": 10,
+        "spells": 24.5,
         "heroes": 49,
         "top": [
           {
@@ -5022,7 +5022,7 @@
       "role": "member",
       "th": 9,
       "given": 95,
-      "received": 80,
+      "received": 100,
       "trophies": 248,
       "profile": {
         "level": 49,
@@ -5161,8 +5161,8 @@
         "cg": 0,
         "don": 76,
         "capLoot": 7410,
-        "gold": 26948295,
-        "elixir": 25808935,
+        "gold": 27784954,
+        "elixir": 26665542,
         "capContrib": 8648,
         "wins": 0
       }
@@ -5247,6 +5247,65 @@
       }
     },
     {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 66,
+      "profile": {
+        "level": 39,
+        "trophies": 66,
+        "best": 257,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6070,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 4.9,
+        "troops": 2.6,
+        "spells": 0,
+        "heroes": 20,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5600,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 25731657,
+        "elixir": 24158998,
+        "capContrib": 6070,
+        "wins": 0
+      }
+    },
+    {
       "name": "GoldBelt",
       "tag": "#R9QQPG9JP",
       "role": "member",
@@ -5273,17 +5332,11 @@
         ]
       },
       "rush": {
-        "pct": 1.7,
-        "troops": 2.8,
+        "pct": 0,
+        "troops": 0,
         "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Barbarzyńca",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 600,
@@ -5335,65 +5388,6 @@
         "gold": 18297359,
         "elixir": 16388805,
         "capContrib": 33674,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Martini",
-      "tag": "#GVG02VV98",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 39,
-      "profile": {
-        "level": 39,
-        "trophies": 39,
-        "best": 257,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 6070,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 4.9,
-        "troops": 2.6,
-        "spells": 0,
-        "heroes": 20,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 8,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 5600,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 25731657,
-        "elixir": 24158998,
-        "capContrib": 6070,
         "wins": 0
       }
     },
