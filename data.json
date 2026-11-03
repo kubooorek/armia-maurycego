@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:59:31.649Z",
+  "updated": "2026-11-03T08:15:55.501Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -4177,35 +4177,35 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 12,
+            "level": 13,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 14.9,
+        "pct": 13.8,
         "troops": 1.3,
         "spells": 0,
-        "heroes": 37.1,
+        "heroes": 34.3,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 17,
+            "lvl": 18,
             "need": 30
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 17,
+            "lvl": 18,
             "need": 30
           },
           {
