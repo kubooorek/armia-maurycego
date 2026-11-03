@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T10:46:00.867Z",
+  "updated": "2026-11-03T11:01:24.562Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -19,6 +19,15 @@
         "level": 9,
         "stars": 21,
         "pct": 700,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 18,
+        "pct": 600,
         "wins": 0,
         "played": 0
       },
@@ -64,15 +73,6 @@
         "level": 5,
         "stars": 11,
         "pct": 442,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 9,
-        "pct": 300,
         "wins": 0,
         "played": 0
       },
@@ -2658,13 +2658,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|44676337|43463939|750|0|14130|17129|0|14|55|9",
-      "last": "2026-11-02T20:15:58.752Z",
+      "sig": "0|44676337|43463939|750|0|14130|17129|0|14|56|9",
+      "last": "2026-11-03T11:01:24.549Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|91030829|74677621|5100|306|0|20470|0|12|50|9",
-      "last": "2026-11-03T08:31:15.934Z",
+      "sig": "0|92066738|75666905|5100|306|0|20470|0|12|50|9",
+      "last": "2026-11-03T11:01:24.549Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -4515,7 +4515,7 @@
       "received": 0,
       "trophies": 40,
       "profile": {
-        "level": 55,
+        "level": 56,
         "trophies": 40,
         "best": 787,
         "league": "Barbarian League 4",
@@ -4708,7 +4708,7 @@
       "profile": {
         "level": 50,
         "trophies": 320,
-        "best": 308,
+        "best": 320,
         "league": "Skeleton League 3",
         "warStars": 12,
         "attackWins": 0,
@@ -4775,8 +4775,8 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 91030829,
-        "elixir": 74677621,
+        "gold": 92066738,
+        "elixir": 75666905,
         "capContrib": 20470,
         "wins": 0
       }
