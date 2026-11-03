@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T14:15:53.867Z",
+  "updated": "2026-11-03T14:45:57.916Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -14,18 +14,18 @@
     "groupSize": 8,
     "standings": [
       {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 21,
-        "pct": 700,
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 24,
+        "pct": 800,
         "wins": 0,
         "played": 0
       },
       {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
         "stars": 21,
         "pct": 700,
         "wins": 0,
@@ -2606,8 +2606,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "74|247383357|244833928|14450|222|57300|106536|0|58|101|12",
-      "last": "2026-11-03T14:01:34.205Z",
+      "sig": "74|248141357|245591928|14450|222|57300|106986|0|58|101|12",
+      "last": "2026-11-03T14:45:57.906Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -2796,8 +2796,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|2716730|2318714|0|0|0|400|0|0|20|6",
-      "last": "2026-11-03T11:45:50.612Z",
+      "sig": "0|3169658|2835518|0|0|0|400|0|0|21|6",
+      "last": "2026-11-03T14:45:57.906Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -3757,16 +3757,16 @@
       "th": 12,
       "given": 74,
       "received": 40,
-      "trophies": 196,
+      "trophies": 236,
       "profile": {
         "level": 101,
-        "trophies": 196,
+        "trophies": 236,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 58,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 106536,
+        "capital": 106986,
         "warPref": "in",
         "heroes": [
           {
@@ -3833,9 +3833,9 @@
         "cg": 14450,
         "don": 222,
         "capLoot": 57300,
-        "gold": 247383357,
-        "elixir": 244833928,
-        "capContrib": 106536,
+        "gold": 248141357,
+        "elixir": 245591928,
+        "capContrib": 106986,
         "wins": 0
       }
     },
@@ -4885,10 +4885,10 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 0,
+      "trophies": 40,
       "profile": {
         "level": 48,
-        "trophies": 0,
+        "trophies": 40,
         "best": 240,
         "league": "Skeleton League 3",
         "warStars": 2,
@@ -6218,7 +6218,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 20,
+        "level": 21,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -6252,8 +6252,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 2716730,
-        "elixir": 2318714,
+        "gold": 3169658,
+        "elixir": 2835518,
         "capContrib": 400,
         "wins": 0
       }
