@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T13:15:52.199Z",
+  "updated": "2026-11-03T13:31:09.882Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2629,8 +2629,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|429340971|391117621|10100|244|27320|71255|0|29|75|10",
-      "last": "2026-11-03T08:45:56.645Z",
+      "sig": "0|429340971|391117621|10100|244|27320|75275|0|29|75|10",
+      "last": "2026-11-03T13:31:09.870Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -4190,7 +4190,7 @@
         "warStars": 29,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 71255,
+        "capital": 75275,
         "warPref": "in",
         "heroes": [
           {
@@ -4239,7 +4239,7 @@
         "capLoot": 27320,
         "gold": 429340971,
         "elixir": 391117621,
-        "capContrib": 71255,
+        "capContrib": 75275,
         "wins": 0
       }
     },
@@ -4524,7 +4524,7 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 40,
+      "trophies": 80,
       "profile": {
         "level": 56,
         "trophies": 40,
@@ -4549,14 +4549,14 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
-        "troops": 5.4,
+        "pct": 1.9,
+        "troops": 3.6,
         "spells": 0,
         "heroes": 0,
         "top": [
           {
             "n": "Minion",
-            "lvl": 2,
+            "lvl": 3,
             "need": 4
           },
           {
@@ -5484,7 +5484,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
