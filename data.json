@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T08:15:55.501Z",
+  "updated": "2026-11-03T08:31:15.944Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -14,6 +14,15 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 17,
+        "pct": 590,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
@@ -23,20 +32,20 @@
         "played": 0
       },
       {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 14,
-        "pct": 490,
-        "wins": 0,
-        "played": 0
-      },
-      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 13,
         "pct": 471,
+        "wins": 0,
+        "played": 0
+      },
+      {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 12,
+        "pct": 457,
         "wins": 0,
         "played": 0
       },
@@ -55,15 +64,6 @@
         "level": 5,
         "stars": 11,
         "pct": 442,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 11,
-        "pct": 383,
         "wins": 0,
         "played": 0
       },
@@ -103,7 +103,7 @@
             {
               "pos": 1,
               "th": 15,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 2,
@@ -179,9 +179,9 @@
         },
         "them": {
           "name": "React",
-          "stars": 11,
-          "pct": 25.53,
-          "attacks": 4,
+          "stars": 12,
+          "pct": 30.47,
+          "attacks": 5,
           "bases": [
             {
               "pos": 1,
@@ -1202,7 +1202,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 7,
-      "them": 11,
+      "them": 12,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -2656,8 +2656,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|89663260|74037772|5100|306|0|20470|0|12|50|9",
-      "last": "2026-11-03T00:01:45.403Z",
+      "sig": "0|91030829|74677621|5100|306|0|20470|0|12|50|9",
+      "last": "2026-11-03T08:31:15.934Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -2701,8 +2701,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|26910795|25808935|0|76|7410|8648|0|6|38|8",
-      "last": "2026-11-03T07:59:31.640Z",
+      "sig": "3|26948295|25808935|0|76|7410|8648|0|6|39|8",
+      "last": "2026-11-03T08:31:15.934Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -3678,9 +3678,9 @@
         ]
       },
       "rush": {
-        "pct": 75.8,
+        "pct": 75.6,
         "troops": 58.9,
-        "spells": 54.3,
+        "spells": 52.2,
         "heroes": 91.9,
         "top": [
           {
@@ -3815,74 +3815,16 @@
       }
     },
     {
-      "name": "MAQOS",
-      "tag": "#LJYR92002",
-      "role": "member",
-      "th": 12,
-      "given": 0,
-      "received": 0,
-      "trophies": 30,
-      "profile": {
-        "level": 121,
-        "trophies": 30,
-        "best": 2224,
-        "league": "Archer League 9",
-        "warStars": 120,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 401040,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 51,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 51,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 20,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 30,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 12900,
-        "don": 632,
-        "capLoot": 275915,
-        "gold": 328338572,
-        "elixir": 337527162,
-        "capContrib": 401040,
-        "wins": 0
-      }
-    },
-    {
       "name": "VipeR",
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 13,
+      "trophies": 35,
       "profile": {
         "level": 105,
-        "trophies": 13,
+        "trophies": 35,
         "best": 2156,
         "league": "Archer League 9",
         "warStars": 231,
@@ -3958,6 +3900,64 @@
         "gold": 363887859,
         "elixir": 340755553,
         "capContrib": 52473,
+        "wins": 0
+      }
+    },
+    {
+      "name": "MAQOS",
+      "tag": "#LJYR92002",
+      "role": "member",
+      "th": 12,
+      "given": 0,
+      "received": 0,
+      "trophies": 30,
+      "profile": {
+        "level": 121,
+        "trophies": 30,
+        "best": 2224,
+        "league": "Archer League 9",
+        "warStars": 120,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 401040,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 20,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 30,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 12900,
+        "don": 632,
+        "capLoot": 275915,
+        "gold": 328338572,
+        "elixir": 337527162,
+        "capContrib": 401040,
         "wins": 0
       }
     },
@@ -4773,8 +4773,8 @@
         "cg": 5100,
         "don": 306,
         "capLoot": 0,
-        "gold": 89663260,
-        "elixir": 74037772,
+        "gold": 91030829,
+        "elixir": 74677621,
         "capContrib": 20470,
         "wins": 0
       }
@@ -5005,7 +5005,7 @@
       "received": 60,
       "trophies": 203,
       "profile": {
-        "level": 38,
+        "level": 39,
         "trophies": 203,
         "best": 300,
         "league": "Skeleton League 2",
@@ -5054,7 +5054,7 @@
         "cg": 0,
         "don": 76,
         "capLoot": 7410,
-        "gold": 26910795,
+        "gold": 26948295,
         "elixir": 25808935,
         "capContrib": 8648,
         "wins": 0
