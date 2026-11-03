@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T15:31:15.980Z",
+  "updated": "2026-11-03T15:45:53.911Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -807,7 +807,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -4292,8 +4292,8 @@
         ]
       },
       "rush": {
-        "pct": 28.5,
-        "troops": 10,
+        "pct": 28.4,
+        "troops": 9.9,
         "spells": 24.5,
         "heroes": 49,
         "top": [
@@ -5418,9 +5418,9 @@
         ]
       },
       "rush": {
-        "pct": 19,
+        "pct": 18.6,
         "troops": 19.4,
-        "spells": 8.3,
+        "spells": 7.7,
         "heroes": 30,
         "top": [
           {
