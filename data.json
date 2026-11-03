@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T01:45:56.955Z",
+  "updated": "2026-11-03T02:01:21.041Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -72,7 +72,7 @@
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 7,
-        "pct": 450,
+        "pct": 485,
         "wins": 0,
         "played": 0
       },
@@ -97,8 +97,8 @@
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 7,
-          "pct": 30,
-          "attacks": 13,
+          "pct": 32.33,
+          "attacks": 14,
           "bases": [
             {
               "pos": 1,
@@ -299,7 +299,13 @@
             "tag": "#LJYR92002",
             "pos": 4,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 35,
+                "target": "4. bodya Top1"
+              }
+            ]
           },
           {
             "name": "MrDefPL",
@@ -760,13 +766,13 @@
         "wars": 1
       },
       {
-        "name": "MAQOS",
+        "name": "Albaroon.2",
         "stars": 0,
-        "attacks": 0,
+        "attacks": 1,
         "wars": 1
       },
       {
-        "name": "Albaroon.2",
+        "name": "MAQOS",
         "stars": 0,
         "attacks": 1,
         "wars": 1
@@ -795,7 +801,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -1212,7 +1218,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 35
+            }
+          ]
         },
         {
           "name": "MrDefPL",
@@ -2566,8 +2577,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "0|320456440|331671245|12900|632|275915|401040|0|120|121|12",
-      "last": "2026-11-02T10:15:51.751Z",
+      "sig": "0|320505455|331726045|12900|632|275915|401040|0|120|121|12",
+      "last": "2026-11-03T02:01:21.028Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -3841,8 +3852,8 @@
         "cg": 12900,
         "don": 632,
         "capLoot": 275915,
-        "gold": 320456440,
-        "elixir": 331671245,
+        "gold": 320505455,
+        "elixir": 331726045,
         "capContrib": 401040,
         "wins": 0
       }
@@ -5128,6 +5139,49 @@
       }
     },
     {
+      "name": "Riczard",
+      "tag": "#R2PCVYQG2",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 40,
+      "profile": {
+        "level": 35,
+        "trophies": 40,
+        "best": 281,
+        "league": "Skeleton League 2",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 33674,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 1500,
+        "don": 175,
+        "capLoot": 24090,
+        "gold": 18297359,
+        "elixir": 16388805,
+        "capContrib": 33674,
+        "wins": 0
+      }
+    },
+    {
       "name": "Andrzej",
       "tag": "#R0VLRL292",
       "role": "member",
@@ -5525,49 +5579,6 @@
         "gold": 39203577,
         "elixir": 36462453,
         "capContrib": 22915,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Riczard",
-      "tag": "#R2PCVYQG2",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 35,
-        "trophies": 0,
-        "best": 281,
-        "league": "Skeleton League 2",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 33674,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 9,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 1500,
-        "don": 175,
-        "capLoot": 24090,
-        "gold": 18297359,
-        "elixir": 16388805,
-        "capContrib": 33674,
         "wins": 0
       }
     },
