@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T01:01:22.467Z",
+  "updated": "2026-11-03T01:31:12.477Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -5291,13 +5291,13 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 5,
+        "pct": 4.9,
         "troops": 2.6,
         "spells": 0,
         "heroes": 20,
