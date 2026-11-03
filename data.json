@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T23:31:19.549Z",
+  "updated": "2026-11-03T23:46:01.627Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 20,
-        "pct": 784,
+        "stars": 23,
+        "pct": 884,
         "wins": 0,
         "played": 1
       }
@@ -1154,7 +1154,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -4381,10 +4381,10 @@
       "th": 12,
       "given": 0,
       "received": 0,
-      "trophies": 305,
+      "trophies": 345,
       "profile": {
         "level": 121,
-        "trophies": 305,
+        "trophies": 345,
         "best": 2224,
         "league": "Archer League 9",
         "warStars": 120,
@@ -4827,9 +4827,9 @@
         ]
       },
       "rush": {
-        "pct": 26,
+        "pct": 25.6,
         "troops": 7.9,
-        "spells": 16.3,
+        "spells": 14.3,
         "heroes": 49,
         "top": [
           {
