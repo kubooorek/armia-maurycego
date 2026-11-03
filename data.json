@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T23:01:23.791Z",
+  "updated": "2026-11-03T23:15:53.929Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 44,
-        "pct": 1178,
+        "stars": 46,
+        "pct": 1243,
         "wins": 1,
         "played": 1
       },
@@ -26,8 +26,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 34,
-        "pct": 951,
+        "stars": 35,
+        "pct": 1012,
         "wins": 1,
         "played": 1
       },
@@ -3112,8 +3112,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "100|576766893|599768444|38350|7609|531795|666478|0|92|109|12",
-      "last": "2026-11-03T22:45:58.244Z",
+      "sig": "100|577729445|600888434|38350|7609|531795|666478|0|92|109|12",
+      "last": "2026-11-03T23:15:53.916Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -3192,8 +3192,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "0|92365846|76090921|5100|306|0|20770|0|12|50|9",
-      "last": "2026-11-03T18:46:05.339Z",
+      "sig": "31|92365846|76090921|5100|336|0|20770|0|12|50|9",
+      "last": "2026-11-03T23:15:53.916Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -4190,8 +4190,8 @@
         "cg": 38350,
         "don": 7609,
         "capLoot": 531795,
-        "gold": 576766893,
-        "elixir": 599768444,
+        "gold": 577729445,
+        "elixir": 600888434,
         "capContrib": 666478,
         "wins": 0
       }
@@ -4880,7 +4880,7 @@
       "role": "admin",
       "th": 9,
       "given": 20,
-      "received": 0,
+      "received": 31,
       "trophies": 48,
       "profile": {
         "level": 56,
@@ -5039,15 +5039,25 @@
             "name": "Archer Queen",
             "level": 30,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 31.8,
+        "pct": 37,
         "troops": 29.9,
         "spells": 47.8,
-        "heroes": 25,
+        "heroes": 39,
         "top": [
+          {
+            "n": "Książę Minionów",
+            "lvl": 1,
+            "need": 20
+          },
           {
             "n": "Walkiria",
             "lvl": 2,
@@ -5070,11 +5080,6 @@
           },
           {
             "n": "Zaklęcie błyskawicy",
-            "lvl": 3,
-            "need": 7
-          },
-          {
-            "n": "Zaklęcie leczenia",
             "lvl": 3,
             "need": 7
           }
@@ -5329,7 +5334,7 @@
       "tag": "#GQULCR98R",
       "role": "member",
       "th": 9,
-      "given": 0,
+      "given": 31,
       "received": 103,
       "trophies": 346,
       "profile": {
@@ -5400,7 +5405,7 @@
       },
       "ach": {
         "cg": 5100,
-        "don": 306,
+        "don": 336,
         "capLoot": 0,
         "gold": 92365846,
         "elixir": 76090921,
