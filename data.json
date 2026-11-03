@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T02:01:21.041Z",
+  "updated": "2026-11-03T02:45:51.847Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -32,6 +32,15 @@
         "played": 0
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 11,
+        "pct": 383,
+        "wins": 0,
+        "played": 0
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
@@ -41,11 +50,11 @@
         "played": 0
       },
       {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
         "stars": 9,
-        "pct": 300,
+        "pct": 328,
         "wins": 0,
         "played": 0
       },
@@ -55,15 +64,6 @@
         "level": 9,
         "stars": 9,
         "pct": 300,
-        "wins": 0,
-        "played": 0
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 8,
-        "pct": 274,
         "wins": 0,
         "played": 0
       },
@@ -108,7 +108,7 @@
             {
               "pos": 2,
               "th": 15,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 3,
@@ -179,9 +179,9 @@
         },
         "them": {
           "name": "React",
-          "stars": 9,
-          "pct": 20,
-          "attacks": 3,
+          "stars": 11,
+          "pct": 25.53,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -1188,7 +1188,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 7,
-      "them": 9,
+      "them": 11,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -2577,8 +2577,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "0|320505455|331726045|12900|632|275915|401040|0|120|121|12",
-      "last": "2026-11-03T02:01:21.028Z",
+      "sig": "0|328338572|337527162|12900|632|275915|401040|0|120|121|12",
+      "last": "2026-11-03T02:45:51.835Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -2762,8 +2762,8 @@
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|33085664|31129944|800|89|7180|16616|0|2|48|9",
-      "last": "2026-11-03T00:01:45.403Z",
+      "sig": "0|33928668|32073991|800|89|7180|16616|0|2|48|9",
+      "last": "2026-11-03T02:45:51.835Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -3852,8 +3852,8 @@
         "cg": 12900,
         "don": 632,
         "capLoot": 275915,
-        "gold": 320505455,
-        "elixir": 331726045,
+        "gold": 328338572,
+        "elixir": 337527162,
         "capContrib": 401040,
         "wins": 0
       }
@@ -5914,7 +5914,7 @@
         "level": 48,
         "trophies": 0,
         "best": 240,
-        "league": "Unranked",
+        "league": "Skeleton League 3",
         "warStars": 2,
         "attackWins": 0,
         "defenseWins": 0,
@@ -5955,8 +5955,8 @@
         "cg": 800,
         "don": 89,
         "capLoot": 7180,
-        "gold": 33085664,
-        "elixir": 31129944,
+        "gold": 33928668,
+        "elixir": 32073991,
         "capContrib": 16616,
         "wins": 0
       }
