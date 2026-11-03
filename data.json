@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T07:45:50.765Z",
+  "updated": "2026-11-03T07:59:31.649Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -2566,8 +2566,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "169|2000000000|2000000000|94700|81294|1208549|1607415|0|1247|205|15",
-      "last": "2026-11-03T05:16:05.728Z",
+      "sig": "192|2000000000|2000000000|94700|81316|1208549|1607415|0|1247|205|15",
+      "last": "2026-11-03T07:59:31.640Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -2696,13 +2696,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|29725882|28930221|0|0|0|250|0|3|39|9",
-      "last": "2026-11-03T07:45:50.751Z",
+      "sig": "0|29927956|29117735|0|0|0|250|0|3|39|9",
+      "last": "2026-11-03T07:59:31.640Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "0|26910795|25808935|0|73|7410|8648|0|6|38|8",
-      "last": "2026-11-03T07:31:04.847Z",
+      "sig": "3|26910795|25808935|0|76|7410|8648|0|6|38|8",
+      "last": "2026-11-03T07:59:31.640Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -3421,7 +3421,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 169,
+      "given": 192,
       "received": 0,
       "trophies": 119,
       "profile": {
@@ -3476,7 +3476,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81294,
+        "don": 81316,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -5001,7 +5001,7 @@
       "tag": "#R9GPGL0QJ",
       "role": "member",
       "th": 8,
-      "given": 0,
+      "given": 3,
       "received": 60,
       "trophies": 203,
       "profile": {
@@ -5052,7 +5052,7 @@
       },
       "ach": {
         "cg": 0,
-        "don": 73,
+        "don": 76,
         "capLoot": 7410,
         "gold": 26910795,
         "elixir": 25808935,
@@ -5100,6 +5100,85 @@
         "gold": 8212588,
         "elixir": 8809737,
         "capContrib": 31434,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Andrzej",
+      "tag": "#R0VLRL292",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 26,
+      "trophies": 80,
+      "profile": {
+        "level": 39,
+        "trophies": 80,
+        "best": 273,
+        "league": "Skeleton League 2",
+        "warStars": 3,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 250,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 7,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 38.8,
+        "troops": 26.5,
+        "spells": 36.8,
+        "heroes": 60,
+        "top": [
+          {
+            "n": "Smok",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 7,
+            "need": 20
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Minion",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie trucizny",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 29927956,
+        "elixir": 29117735,
+        "capContrib": 250,
         "wins": 0
       }
     },
@@ -5249,85 +5328,6 @@
       }
     },
     {
-      "name": "Andrzej",
-      "tag": "#R0VLRL292",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 27,
-      "profile": {
-        "level": 39,
-        "trophies": 27,
-        "best": 273,
-        "league": "Skeleton League 2",
-        "warStars": 3,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 250,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 7,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 5,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 38.8,
-        "troops": 26.5,
-        "spells": 36.8,
-        "heroes": 60,
-        "top": [
-          {
-            "n": "Smok",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 20
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Minion",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie trucizny",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 29725882,
-        "elixir": 28930221,
-        "capContrib": 250,
-        "wins": 0
-      }
-    },
-    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -5353,7 +5353,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
