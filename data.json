@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T19:16:17.099Z",
+  "updated": "2026-11-03T19:31:35.112Z",
   "clanLevel": 3,
   "memberCount": 44,
   "cwlLeague": "Silver League I",
@@ -50,20 +50,20 @@
         "played": 1
       },
       {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 24,
+        "pct": 871,
+        "wins": 0,
+        "played": 1
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 22,
         "pct": 921,
-        "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 21,
-        "pct": 751,
         "wins": 0,
         "played": 1
       },
@@ -1100,7 +1100,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -5584,7 +5584,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 7,
+            "level": 8,
             "max": 110
           },
           {
@@ -5595,25 +5595,20 @@
         ]
       },
       "rush": {
-        "pct": 38.4,
-        "troops": 26.5,
+        "pct": 36.4,
+        "troops": 24.5,
         "spells": 35,
-        "heroes": 60,
+        "heroes": 56.7,
         "top": [
-          {
-            "n": "Smok",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 20
-          },
           {
             "n": "Zaklęcie szału",
             "lvl": 2,
             "need": 5
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 20
           },
           {
             "n": "Minion",
@@ -5627,6 +5622,11 @@
           },
           {
             "n": "Zaklęcie trucizny",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Zaklęcie wstrząsu",
             "lvl": 1,
             "need": 2
           }
