@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T17:02:05.987Z",
+  "updated": "2026-11-04T17:15:54.149Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1172,7 +1172,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1341,6 +1341,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-04T17:15:53.352Z",
+      "type": "th",
+      "name": "threeten",
+      "from": 7,
+      "to": 8
+    },
     {
       "t": "2026-11-04T09:15:53.847Z",
       "type": "join",
@@ -3324,8 +3331,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "0|8818088|9389071|300|40|24805|32034|0|15|32|7",
-      "last": "2026-11-04T12:01:29.206Z",
+      "sig": "0|8818088|9389071|300|40|24805|32034|0|15|32|8",
+      "last": "2026-11-04T17:15:54.140Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVRY000P2": {
@@ -4372,10 +4379,10 @@
       "th": 12,
       "given": 96,
       "received": 40,
-      "trophies": 265,
+      "trophies": 293,
       "profile": {
         "level": 101,
-        "trophies": 265,
+        "trophies": 293,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 60,
@@ -5820,7 +5827,7 @@
       "name": "threeten",
       "tag": "#R8RVQVPCC",
       "role": "member",
-      "th": 7,
+      "th": 8,
       "given": 0,
       "received": 0,
       "trophies": 210,
