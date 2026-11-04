@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T09:22:32.904Z",
+  "updated": "2026-11-04T10:31:22.892Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 42,
-        "pct": 1589,
+        "stars": 45,
+        "pct": 1689,
         "wins": 0,
         "played": 1
       },
@@ -44,8 +44,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 35,
-        "pct": 1012,
+        "stars": 38,
+        "pct": 1112,
         "wins": 1,
         "played": 1
       },
@@ -71,8 +71,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 28,
-        "pct": 1291,
+        "stars": 30,
+        "pct": 1341,
         "wins": 0,
         "played": 1
       },
@@ -467,9 +467,9 @@
         "end": "20261104T180109.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 18,
-          "pct": 48.67,
-          "attacks": 12,
+          "stars": 20,
+          "pct": 52,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -592,7 +592,7 @@
             {
               "pos": 8,
               "th": 13,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 9,
@@ -689,7 +689,13 @@
             "tag": "#8UCPRGC8",
             "pos": 5,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 50,
+                "target": "8. Gliders"
+              }
+            ]
           },
           {
             "name": "oggsgdjdjbd",
@@ -1131,6 +1137,12 @@
         "wars": 2
       },
       {
+        "name": "MrDefPL",
+        "stars": 2,
+        "attacks": 2,
+        "wars": 2
+      },
+      {
         "name": "tak",
         "stars": 2,
         "attacks": 2,
@@ -1147,16 +1159,10 @@
         "stars": 2,
         "attacks": 2,
         "wars": 2
-      },
-      {
-        "name": "Barnes",
-        "stars": 1,
-        "attacks": 2,
-        "wars": 2
       }
     ]
   },
-  "visits": 67,
+  "visits": 68,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -1600,7 +1606,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 18,
+      "us": 20,
       "them": 3,
       "members": [
         {
@@ -1646,7 +1652,12 @@
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 50
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -3147,8 +3158,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "321|468415765|484611282|42500|93148|246500|453697|0|1213|152|15",
-      "last": "2026-11-03T22:31:11.307Z",
+      "sig": "351|468415765|484611282|42500|93178|246500|453697|0|1213|152|15",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -3157,13 +3168,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "96|248259160|245701339|14450|242|57300|106986|0|60|101|12",
-      "last": "2026-11-04T07:01:27.084Z",
+      "sig": "96|248259160|245701339|14450|242|57300|108986|0|60|101|12",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "0|728096130|758901278|13725|50927|64385|84211|0|504|147|12",
-      "last": "2026-11-03T00:31:11.178Z",
+      "sig": "0|733752251|764982824|13725|50927|64385|84211|0|506|147|12",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -3187,18 +3198,18 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|429340971|391117621|10100|244|27320|75275|0|29|76|10",
-      "last": "2026-11-04T03:15:55.061Z",
+      "sig": "0|429702511|391674989|10100|244|27320|75275|0|29|76|10",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|260125808|258991207|15400|1422|24800|41751|0|11|62|13",
-      "last": "2026-11-04T06:45:52.865Z",
+      "sig": "20|261941541|261491655|15400|1422|24800|43251|0|11|62|13",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|186738843|179650958|2900|20|21235|36648|0|47|81|11",
-      "last": "2026-11-04T03:46:02.812Z",
+      "sig": "0|188849421|182116314|2900|20|21235|36648|0|47|81|11",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -3222,8 +3233,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|77111502|85261212|1900|29|0|3150|0|35|39|10",
-      "last": "2026-11-04T09:15:54.703Z",
+      "sig": "0|81931298|90121240|1900|29|0|3150|0|35|39|10",
+      "last": "2026-11-04T10:31:22.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -3670,9 +3681,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 92,
+          "score": 95,
           "stars": 6,
-          "don": 315,
+          "don": 345,
           "cg": 0,
           "cap": 0
         },
@@ -4107,7 +4118,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 321,
+      "given": 351,
       "received": 54,
       "trophies": 0,
       "profile": {
@@ -4188,7 +4199,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 93148,
+        "don": 93178,
         "capLoot": 246500,
         "gold": 468415765,
         "elixir": 484611282,
@@ -4261,16 +4272,16 @@
       "th": 13,
       "given": 20,
       "received": 0,
-      "trophies": 104,
+      "trophies": 118,
       "profile": {
         "level": 62,
-        "trophies": 104,
+        "trophies": 118,
         "best": 327,
         "league": "Wizard League 11",
         "warStars": 11,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 41751,
+        "capital": 43251,
         "warPref": "in",
         "heroes": [
           {
@@ -4337,9 +4348,9 @@
         "cg": 15400,
         "don": 1422,
         "capLoot": 24800,
-        "gold": 260125808,
-        "elixir": 258991207,
-        "capContrib": 41751,
+        "gold": 261941541,
+        "elixir": 261491655,
+        "capContrib": 43251,
         "wins": 0
       }
     },
@@ -4359,7 +4370,7 @@
         "warStars": 60,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 106986,
+        "capital": 108986,
         "warPref": "in",
         "heroes": [
           {
@@ -4428,7 +4439,7 @@
         "capLoot": 57300,
         "gold": 248259160,
         "elixir": 245701339,
-        "capContrib": 106986,
+        "capContrib": 108986,
         "wins": 0
       }
     },
@@ -4592,7 +4603,7 @@
         "trophies": 0,
         "best": 2938,
         "league": "Archer League 9",
-        "warStars": 504,
+        "warStars": 506,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 84211,
@@ -4662,8 +4673,8 @@
         "cg": 13725,
         "don": 50927,
         "capLoot": 64385,
-        "gold": 728096130,
-        "elixir": 758901278,
+        "gold": 733752251,
+        "elixir": 764982824,
         "capContrib": 84211,
         "wins": 0
       }
@@ -4837,8 +4848,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 27320,
-        "gold": 429340971,
-        "elixir": 391117621,
+        "gold": 429702511,
+        "elixir": 391674989,
         "capContrib": 75275,
         "wins": 0
       }
@@ -4885,9 +4896,9 @@
         ]
       },
       "rush": {
-        "pct": 24.4,
+        "pct": 24,
         "troops": 7.9,
-        "spells": 8.2,
+        "spells": 6.1,
         "heroes": 49,
         "top": [
           {
@@ -4926,8 +4937,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 186738843,
-        "elixir": 179650958,
+        "gold": 188849421,
+        "elixir": 182116314,
         "capContrib": 36648,
         "wins": 0
       }
@@ -5229,6 +5240,11 @@
             "name": "Archer Queen",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
@@ -5255,7 +5271,7 @@
       "role": "member",
       "th": 10,
       "given": 0,
-      "received": 61,
+      "received": 91,
       "trophies": 0,
       "profile": {
         "level": 39,
@@ -5327,8 +5343,8 @@
         "cg": 1900,
         "don": 29,
         "capLoot": 0,
-        "gold": 77111502,
-        "elixir": 85261212,
+        "gold": 81931298,
+        "elixir": 90121240,
         "capContrib": 3150,
         "wins": 0
       }
@@ -5713,7 +5729,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
