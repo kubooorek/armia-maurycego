@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T19:45:55.234Z",
+  "updated": "2026-11-04T20:01:24.965Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 43,
-        "pct": 1528,
+        "stars": 49,
+        "pct": 1728,
         "wins": 1,
         "played": 2
       },
@@ -832,9 +832,9 @@
         "end": "20261105T181550.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 3,
-          "pct": 10.67,
-          "attacks": 4,
+          "stars": 9,
+          "pct": 24,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -932,7 +932,7 @@
             {
               "pos": 3,
               "th": 13,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -967,7 +967,7 @@
             {
               "pos": 10,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 11,
@@ -1002,7 +1002,13 @@
             "tag": "#VP9PLGLV",
             "pos": 1,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "3. Minny"
+              }
+            ]
           },
           {
             "name": "Baku",
@@ -1016,7 +1022,13 @@
             "tag": "#GYUJR2URJ",
             "pos": 3,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "10. RefriedB3anz"
+              }
+            ]
           },
           {
             "name": "MAQOS",
@@ -1413,14 +1425,20 @@
     "top": [
       {
         "name": "KUBOOOREK",
-        "stars": 6,
-        "attacks": 2,
+        "stars": 9,
+        "attacks": 3,
         "wars": 3
       },
       {
         "name": "Baku",
         "stars": 6,
         "attacks": 2,
+        "wars": 3
+      },
+      {
+        "name": "Albaroon.2",
+        "stars": 5,
+        "attacks": 3,
         "wars": 3
       },
       {
@@ -1445,12 +1463,6 @@
         "name": "tak",
         "stars": 3,
         "attacks": 3,
-        "wars": 3
-      },
-      {
-        "name": "Albaroon.2",
-        "stars": 2,
-        "attacks": 2,
         "wars": 3
       },
       {
@@ -1929,13 +1941,18 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 3,
+      "us": 9,
       "them": 0,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Baku",
@@ -1945,7 +1962,12 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "MAQOS",
@@ -3585,8 +3607,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "414|2000000000|2000000000|94700|81501|1208549|1607415|0|1250|205|15",
-      "last": "2026-11-04T18:46:09.263Z",
+      "sig": "414|2000000000|2000000000|94700|81501|1208549|1607415|0|1253|205|15",
+      "last": "2026-11-04T20:01:24.953Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -3595,8 +3617,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "100|578408145|601377375|38350|7609|531795|666478|0|92|109|12",
-      "last": "2026-11-04T12:01:29.206Z",
+      "sig": "151|578527145|601496375|38350|7659|531795|666478|0|95|109|12",
+      "last": "2026-11-04T20:01:24.953Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -3785,8 +3807,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|3640033|3288658|0|0|0|400|0|0|22|6",
-      "last": "2026-11-04T07:46:02.289Z",
+      "sig": "0|3640033|3288658|0|0|0|400|0|0|23|6",
+      "last": "2026-11-04T20:01:24.953Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -3800,8 +3822,8 @@
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
-      "sig": "0|1916059|1777660|0|23|0|0|0|0|97|11",
-      "last": "2026-11-03T23:01:23.781Z",
+      "sig": "0|1916059|1777660|0|23|0|0|0|0|98|11",
+      "last": "2026-11-04T20:01:24.953Z",
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
@@ -4133,20 +4155,20 @@
           "cap": 0
         },
         {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "score": 65,
+          "stars": 5,
+          "don": 150,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "MAQOS",
           "tag": "#LJYR92002",
           "score": 61,
           "stars": 6,
           "don": 10,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "score": 51,
-          "stars": 5,
-          "don": 5,
           "cg": 0,
           "cap": 0
         }
@@ -4478,14 +4500,14 @@
       "role": "coLeader",
       "th": 15,
       "given": 414,
-      "received": 100,
+      "received": 151,
       "trophies": 479,
       "profile": {
         "level": 205,
         "trophies": 479,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
-        "warStars": 1250,
+        "warStars": 1253,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 1607415,
@@ -4639,7 +4661,7 @@
       "tag": "#GYUJR2URJ",
       "role": "coLeader",
       "th": 12,
-      "given": 100,
+      "given": 151,
       "received": 216,
       "trophies": 192,
       "profile": {
@@ -4647,7 +4669,7 @@
         "trophies": 192,
         "best": 2839,
         "league": "Valkyrie League 14",
-        "warStars": 92,
+        "warStars": 95,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 666478,
@@ -4655,12 +4677,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 57,
+            "level": 58,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 55,
+            "level": 56,
             "max": 110
           },
           {
@@ -4684,10 +4706,10 @@
       },
       "ach": {
         "cg": 38350,
-        "don": 7609,
+        "don": 7659,
         "capLoot": 531795,
-        "gold": 578408145,
-        "elixir": 601377375,
+        "gold": 578527145,
+        "elixir": 601496375,
         "capContrib": 666478,
         "wins": 0
       }
@@ -5516,7 +5538,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 97,
+        "level": 98,
         "trophies": 0,
         "best": 1364,
         "league": "Barbarian League 6",
@@ -5538,20 +5560,20 @@
           },
           {
             "name": "Minion Prince",
-            "level": 1,
+            "level": 2,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 37,
+        "pct": 36.6,
         "troops": 29.9,
         "spells": 47.8,
-        "heroes": 39,
+        "heroes": 38,
         "top": [
           {
             "n": "Książę Minionów",
-            "lvl": 1,
+            "lvl": 2,
             "need": 20
           },
           {
@@ -7300,7 +7322,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 22,
+        "level": 23,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
