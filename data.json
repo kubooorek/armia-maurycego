@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T06:31:14.785Z",
+  "updated": "2026-11-04T06:45:52.878Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1154,7 +1154,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3160,8 +3160,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|257449597|257762040|15400|1422|24800|41751|0|11|61|13",
-      "last": "2026-11-03T20:46:02.885Z",
+      "sig": "20|260125808|258991207|15400|1422|24800|41751|0|11|62|13",
+      "last": "2026-11-04T06:45:52.865Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -3190,8 +3190,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|74990607|84027087|1900|29|0|3150|0|35|38|9",
-      "last": "2026-11-03T22:31:11.307Z",
+      "sig": "0|74990607|84027087|1900|29|0|3150|0|35|39|9",
+      "last": "2026-11-04T06:45:52.865Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -4213,7 +4213,7 @@
       "received": 0,
       "trophies": 104,
       "profile": {
-        "level": 61,
+        "level": 62,
         "trophies": 104,
         "best": 327,
         "league": "Wizard League 11",
@@ -4287,8 +4287,8 @@
         "cg": 15400,
         "don": 1422,
         "capLoot": 24800,
-        "gold": 257449597,
-        "elixir": 257762040,
+        "gold": 260125808,
+        "elixir": 258991207,
         "capContrib": 41751,
         "wins": 0
       }
@@ -5214,7 +5214,7 @@
       "received": 61,
       "trophies": 0,
       "profile": {
-        "level": 38,
+        "level": 39,
         "trophies": 0,
         "best": 252,
         "league": "Barbarian League 4",
@@ -5242,8 +5242,8 @@
         ]
       },
       "rush": {
-        "pct": 20.9,
-        "troops": 31,
+        "pct": 20.7,
+        "troops": 30.5,
         "spells": 18.2,
         "heroes": 3.3,
         "top": [
