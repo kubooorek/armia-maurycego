@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-04T09:01:17.407Z",
+  "updated": "2026-11-04T09:15:54.721Z",
   "clanLevel": 3,
-  "memberCount": 45,
+  "memberCount": 46,
   "cwlLeague": "Silver League I",
   "warWinStreak": 11,
   "warWins": 13,
@@ -35,8 +35,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 39,
-        "pct": 990,
+        "stars": 42,
+        "pct": 1090,
         "wins": 1,
         "played": 1
       },
@@ -81,7 +81,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 27,
-        "pct": 981,
+        "pct": 1005,
         "wins": 0,
         "played": 1
       }
@@ -1330,6 +1330,12 @@
   ],
   "events": [
     {
+      "t": "2026-11-04T09:15:53.847Z",
+      "type": "join",
+      "name": "Grzybek",
+      "th": 6
+    },
+    {
       "t": "2026-11-04T08:45:53.358Z",
       "type": "th",
       "name": "Mimbosz",
@@ -2501,7 +2507,7 @@
     },
     {
       "d": "2026-11-04",
-      "members": 45,
+      "members": 46,
       "avgTh": 8.8,
       "level": 3,
       "wins": 13,
@@ -2736,6 +2742,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 0
+      },
+      "#RYPRPQUQJ": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 100
       }
     }
   },
@@ -2934,6 +2945,9 @@
     },
     "#YQ0RPRP88": {
       "d": "2026-11-03T23:01:23.781Z"
+    },
+    "#RYPRPQUQJ": {
+      "d": "2026-11-04T09:15:54.703Z"
     }
   },
   "records": {
@@ -2950,10 +2964,10 @@
       "date": "2026-11-02"
     },
     "members": {
-      "value": 45,
+      "value": 46,
       "name": "Armia Maurycego",
       "tag": "#2GQQ8RGRL",
-      "date": "2026-11-03"
+      "date": "2026-11-04"
     },
     "warStars": {
       "value": 6,
@@ -3208,8 +3222,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|75693393|84298398|1900|29|0|3150|0|35|39|10",
-      "last": "2026-11-04T09:01:17.393Z",
+      "sig": "0|77111502|85261212|1900|29|0|3150|0|35|39|10",
+      "last": "2026-11-04T09:15:54.703Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -3351,6 +3365,11 @@
       "sig": "0|1916059|1777660|0|23|0|0|0|0|97|11",
       "last": "2026-11-03T23:01:23.781Z",
       "since": "2026-11-03T23:01:23.781Z"
+    },
+    "#RYPRPQUQJ": {
+      "sig": "0|1551934|1454492|0|0|0|100|0|0|14|6",
+      "last": "2026-11-04T09:15:54.703Z",
+      "since": "2026-11-04T09:15:54.703Z"
     }
   },
   "clanGames": null,
@@ -3628,6 +3647,13 @@
         "cg": 0,
         "capLoot": 0,
         "joined": "2026-11-03T23:01:23.781Z"
+      },
+      "#RYPRPQUQJ": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0,
+        "joined": "2026-11-04T09:15:54.703Z"
       }
     }
   },
@@ -3958,6 +3984,12 @@
         "capLoot": 0
       },
       "#R2UJV2VJR": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0
+      },
+      "#RYPRPQUQJ": {
         "warStars": 0,
         "don": 0,
         "cg": 0,
@@ -5295,8 +5327,8 @@
         "cg": 1900,
         "don": 29,
         "capLoot": 0,
-        "gold": 75693393,
-        "elixir": 84298398,
+        "gold": 77111502,
+        "elixir": 85261212,
         "capContrib": 3150,
         "wins": 0
       }
@@ -6384,8 +6416,8 @@
       },
       "rush": {
         "pct": 34.5,
-        "troops": 9.4,
-        "spells": 69.2,
+        "troops": 11.8,
+        "spells": 64.3,
         "heroes": 70,
         "top": [
           {
@@ -6409,12 +6441,12 @@
             "need": 10
           },
           {
-            "n": "Minion",
+            "n": "Uzdrowicielka",
             "lvl": 1,
             "need": 2
           },
           {
-            "n": "Wieprzowy jeździec",
+            "n": "Minion",
             "lvl": 1,
             "need": 2
           }
@@ -6774,6 +6806,55 @@
         "gold": 41062,
         "elixir": 45737,
         "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Grzybek",
+      "tag": "#RYPRPQUQJ",
+      "role": "member",
+      "th": 6,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 14,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 100,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 9.1,
+        "troops": 0,
+        "spells": 50,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 2,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 1551934,
+        "elixir": 1454492,
+        "capContrib": 100,
         "wins": 0
       }
     },
