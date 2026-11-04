@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T16:01:39.075Z",
+  "updated": "2026-11-04T16:16:04.771Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 32,
-        "pct": 1141,
+        "stars": 35,
+        "pct": 1241,
         "wins": 0,
         "played": 1
       },
@@ -3254,8 +3254,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|94699217|78377125|5100|336|0|20770|0|12|51|9",
-      "last": "2026-11-04T11:01:33.063Z",
+      "sig": "31|96765356|80700120|5100|336|0|20770|0|12|52|9",
+      "last": "2026-11-04T16:16:04.759Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -5417,7 +5417,7 @@
       "received": 103,
       "trophies": 346,
       "profile": {
-        "level": 51,
+        "level": 52,
         "trophies": 346,
         "best": 346,
         "league": "Skeleton League 3",
@@ -5429,7 +5429,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
@@ -5445,20 +5445,15 @@
         ]
       },
       "rush": {
-        "pct": 26.4,
-        "troops": 15.8,
-        "spells": 26.3,
-        "heroes": 46.7,
+        "pct": 23.4,
+        "troops": 15.5,
+        "spells": 15.8,
+        "heroes": 43.3,
         "top": [
           {
             "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 4
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 5
           },
           {
             "n": "Królowa Łuczniczek",
@@ -5479,6 +5474,11 @@
             "n": "Golem",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Zaklęcie wstrząsu",
+            "lvl": 1,
+            "need": 2
           }
         ]
       },
@@ -5486,8 +5486,8 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 0,
-        "gold": 94699217,
-        "elixir": 78377125,
+        "gold": 96765356,
+        "elixir": 80700120,
         "capContrib": 20770,
         "wins": 0
       }
@@ -6175,10 +6175,10 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 40,
+      "trophies": 53,
       "profile": {
         "level": 38,
-        "trophies": 40,
+        "trophies": 53,
         "best": 281,
         "league": "Skeleton League 2",
         "warStars": 21,
