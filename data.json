@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T13:45:57.626Z",
+  "updated": "2026-11-04T14:01:31.099Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1172,7 +1172,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -3219,8 +3219,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|189549421|182816314|2900|20|21235|36648|0|47|82|11",
-      "last": "2026-11-04T12:45:53.926Z",
+      "sig": "0|190127749|183254246|2900|20|21235|36648|0|47|82|11",
+      "last": "2026-11-04T14:01:31.090Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4907,9 +4907,9 @@
         ]
       },
       "rush": {
-        "pct": 23.6,
+        "pct": 23.2,
         "troops": 7.9,
-        "spells": 4.1,
+        "spells": 2,
         "heroes": 49,
         "top": [
           {
@@ -4933,14 +4933,14 @@
             "need": 40
           },
           {
-            "n": "Zaklęcie przyspieszenia",
-            "lvl": 2,
-            "need": 4
-          },
-          {
             "n": "Walkiria",
             "lvl": 3,
             "need": 5
+          },
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 3,
+            "need": 4
           }
         ]
       },
@@ -4948,8 +4948,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 189549421,
-        "elixir": 182816314,
+        "gold": 190127749,
+        "elixir": 183254246,
         "capContrib": 36648,
         "wins": 0
       }
