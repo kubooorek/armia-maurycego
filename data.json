@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T02:31:19.535Z",
+  "updated": "2026-11-04T02:46:00.032Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1154,7 +1154,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -6075,7 +6075,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
