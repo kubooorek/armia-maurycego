@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T14:15:57.447Z",
+  "updated": "2026-11-04T14:31:06.919Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
-        "stars": 34,
-        "pct": 800,
+        "stars": 37,
+        "pct": 900,
         "wins": 1,
         "played": 1
       },
@@ -484,7 +484,7 @@
             {
               "pos": 3,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -550,9 +550,9 @@
         },
         "them": {
           "name": "BattlerManipur2",
-          "stars": 3,
-          "pct": 6.67,
-          "attacks": 1,
+          "stars": 6,
+          "pct": 13.33,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -1172,7 +1172,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -1613,7 +1613,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 20,
-      "them": 3,
+      "them": 6,
       "members": [
         {
           "name": "KUBOOOREK",
