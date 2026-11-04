@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T12:45:53.939Z",
+  "updated": "2026-11-04T13:01:25.029Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -44,8 +44,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 38,
-        "pct": 1112,
+        "stars": 40,
+        "pct": 1177,
         "wins": 1,
         "played": 1
       },
@@ -5429,7 +5429,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 11,
+            "level": 12,
             "max": 110
           },
           {
@@ -5445,10 +5445,10 @@
         ]
       },
       "rush": {
-        "pct": 30.4,
-        "troops": 18.2,
+        "pct": 29.8,
+        "troops": 19.3,
         "spells": 35.3,
-        "heroes": 50,
+        "heroes": 46.7,
         "top": [
           {
             "n": "Wieprzowy jeździec",
@@ -5476,9 +5476,9 @@
             "need": 2
           },
           {
-            "n": "Król Barbarzyńców",
-            "lvl": 11,
-            "need": 20
+            "n": "Golem",
+            "lvl": 1,
+            "need": 2
           }
         ]
       },
@@ -5950,11 +5950,16 @@
         ]
       },
       "rush": {
-        "pct": 36.4,
-        "troops": 24.5,
+        "pct": 37.3,
+        "troops": 26.9,
         "spells": 35,
         "heroes": 56.7,
         "top": [
+          {
+            "n": "P.E.K.K.A",
+            "lvl": 1,
+            "need": 3
+          },
           {
             "n": "Zaklęcie szału",
             "lvl": 2,
@@ -5977,11 +5982,6 @@
           },
           {
             "n": "Zaklęcie trucizny",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Zaklęcie wstrząsu",
             "lvl": 1,
             "need": 2
           }
