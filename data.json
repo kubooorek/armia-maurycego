@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T08:31:16.483Z",
+  "updated": "2026-11-04T08:45:54.220Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1329,6 +1329,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-04T08:45:53.358Z",
+      "type": "th",
+      "name": "Mimbosz",
+      "from": 9,
+      "to": 10
+    },
     {
       "t": "2026-11-03T23:01:22.973Z",
       "type": "join",
@@ -3201,8 +3208,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|74990607|84027087|1900|29|0|3150|0|35|39|9",
-      "last": "2026-11-04T06:45:52.865Z",
+      "sig": "0|74990607|84027087|1900|29|0|3150|0|35|39|10",
+      "last": "2026-11-04T08:45:54.212Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -4756,35 +4763,35 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 15,
+            "level": 16,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 11.6,
+        "pct": 10.5,
         "troops": 1.3,
         "spells": 0,
-        "heroes": 28.6,
+        "heroes": 25.7,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 20,
+            "lvl": 21,
             "need": 30
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 20,
+            "lvl": 21,
             "need": 30
           },
           {
@@ -5214,7 +5221,7 @@
       "name": "Mimbosz",
       "tag": "#RY0QPVCCY",
       "role": "member",
-      "th": 9,
+      "th": 10,
       "given": 0,
       "received": 61,
       "trophies": 0,
@@ -5231,12 +5238,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
@@ -5247,40 +5254,40 @@
         ]
       },
       "rush": {
-        "pct": 20.7,
-        "troops": 30.5,
-        "spells": 18.2,
-        "heroes": 3.3,
+        "pct": 32.4,
+        "troops": 41.6,
+        "spells": 27.6,
+        "heroes": 24.3,
         "top": [
           {
             "n": "Minion",
             "lvl": 1,
-            "need": 4
+            "need": 5
           },
           {
             "n": "P.E.K.K.A",
             "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Gigant",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
             "need": 4
           },
           {
             "n": "Walkiria",
             "lvl": 1,
-            "need": 2
+            "need": 4
           },
           {
-            "n": "Zaklęcie skoku",
+            "n": "Gigant",
+            "lvl": 2,
+            "need": 6
+          },
+          {
+            "n": "Zaklęcie wstrząsu",
             "lvl": 1,
-            "need": 2
+            "need": 3
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 5
           }
         ]
       },
