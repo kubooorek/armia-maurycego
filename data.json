@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T11:15:49.980Z",
+  "updated": "2026-11-04T11:31:13.002Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 27,
-        "pct": 1005,
+        "stars": 29,
+        "pct": 1065,
         "wins": 0,
         "played": 1
       }
@@ -1172,7 +1172,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3209,8 +3209,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|429702511|391674989|10100|244|27320|75275|0|29|76|10",
-      "last": "2026-11-04T10:31:22.880Z",
+      "sig": "0|429792498|391709122|10100|244|27320|75275|0|29|76|10",
+      "last": "2026-11-04T11:31:12.988Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -4372,10 +4372,10 @@
       "th": 12,
       "given": 96,
       "received": 40,
-      "trophies": 236,
+      "trophies": 265,
       "profile": {
         "level": 101,
-        "trophies": 236,
+        "trophies": 265,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 60,
@@ -4817,35 +4817,35 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 21,
+            "level": 22,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 21,
+            "level": 22,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 16,
+            "level": 17,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 10.5,
+        "pct": 9.4,
         "troops": 1.3,
         "spells": 0,
-        "heroes": 25.7,
+        "heroes": 22.9,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 21,
+            "lvl": 22,
             "need": 30
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 21,
+            "lvl": 22,
             "need": 30
           },
           {
@@ -4859,8 +4859,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 27320,
-        "gold": 429702511,
-        "elixir": 391674989,
+        "gold": 429792498,
+        "elixir": 391709122,
         "capContrib": 75275,
         "wins": 0
       }
@@ -5439,7 +5439,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 3,
+            "level": 4,
             "max": 95
           }
         ]
@@ -6280,7 +6280,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
