@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T16:31:12.998Z",
+  "updated": "2026-11-04T16:45:59.193Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -23,6 +23,15 @@
         "played": 1
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 49,
+        "pct": 1300,
+        "wins": 1,
+        "played": 1
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
@@ -37,15 +46,6 @@
         "level": 21,
         "stars": 47,
         "pct": 1272,
-        "wins": 1,
-        "played": 1
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 46,
-        "pct": 1200,
         "wins": 1,
         "played": 1
       },
@@ -504,7 +504,7 @@
             {
               "pos": 7,
               "th": 11,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 8,
@@ -550,9 +550,9 @@
         },
         "them": {
           "name": "BattlerManipur2",
-          "stars": 15,
-          "pct": 33.33,
-          "attacks": 5,
+          "stars": 18,
+          "pct": 40,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -1168,11 +1168,11 @@
       }
     ]
   },
-  "visits": 70,
+  "visits": 71,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1613,7 +1613,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 20,
-      "them": 15,
+      "them": 18,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3244,8 +3244,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|88821321|96584213|1900|29|0|3150|0|35|39|10",
-      "last": "2026-11-04T16:31:12.990Z",
+      "sig": "0|90037046|97925796|1900|29|0|3150|0|35|39|10",
+      "last": "2026-11-04T16:45:59.180Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -3279,8 +3279,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "141|57249696|57126258|2400|594|7665|19909|0|4|51|9",
-      "last": "2026-11-04T16:31:12.990Z",
+      "sig": "161|57249696|57126258|2400|614|7665|19909|0|4|51|9",
+      "last": "2026-11-04T16:45:59.180Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -5354,8 +5354,8 @@
         "cg": 1900,
         "don": 29,
         "capLoot": 0,
-        "gold": 88821321,
-        "elixir": 96584213,
+        "gold": 90037046,
+        "elixir": 97925796,
         "capContrib": 3150,
         "wins": 0
       }
@@ -5714,7 +5714,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 141,
+      "given": 161,
       "received": 102,
       "trophies": 248,
       "profile": {
@@ -5765,7 +5765,7 @@
       },
       "ach": {
         "cg": 2400,
-        "don": 594,
+        "don": 614,
         "capLoot": 7665,
         "gold": 57249696,
         "elixir": 57126258,
@@ -6003,7 +6003,7 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 40,
+      "received": 60,
       "trophies": 96,
       "profile": {
         "level": 31,
