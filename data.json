@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T01:31:14.584Z",
+  "updated": "2026-11-04T01:45:54.186Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 28,
-        "pct": 1121,
+        "stars": 30,
+        "pct": 1189,
         "wins": 0,
         "played": 1
       },
@@ -3295,8 +3295,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|10806506|10440914|0|0|0|0|0|0|26|7",
-      "last": "2026-11-04T01:31:14.575Z",
+      "sig": "0|11267000|10793568|0|0|0|0|0|0|26|7",
+      "last": "2026-11-04T01:45:54.173Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -4447,10 +4447,10 @@
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 35,
+      "trophies": 46,
       "profile": {
         "level": 105,
-        "trophies": 35,
+        "trophies": 46,
         "best": 2156,
         "league": "Archer League 9",
         "warStars": 232,
@@ -6733,8 +6733,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 10806506,
-        "elixir": 10440914,
+        "gold": 11267000,
+        "elixir": 10793568,
         "capContrib": 0,
         "wins": 0
       }
