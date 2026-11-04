@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T17:31:12.143Z",
+  "updated": "2026-11-04T17:46:02.574Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3321,13 +3321,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|46|8",
-      "last": "2026-11-03T16:01:44.162Z",
+      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|47|8",
+      "last": "2026-11-04T17:46:02.564Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|20490410|19439044|0|0|0|400|0|14|31|8",
-      "last": "2026-11-04T17:02:05.976Z",
+      "sig": "0|20624564|19734044|0|0|0|400|0|14|31|8",
+      "last": "2026-11-04T17:46:02.564Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -5867,6 +5867,85 @@
       }
     },
     {
+      "name": "Marsyllia",
+      "tag": "#R0VJLRGQ0",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 60,
+      "trophies": 157,
+      "profile": {
+        "level": 31,
+        "trophies": 117,
+        "best": 244,
+        "league": "Skeleton League 2",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 8,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 15.3,
+        "troops": 16.7,
+        "spells": 7.7,
+        "heroes": 20,
+        "top": [
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Goblin",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Gigant",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 3,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 20624564,
+        "elixir": 19734044,
+        "capContrib": 400,
+        "wins": 0
+      }
+    },
+    {
       "name": "Martini",
       "tag": "#GVG02VV98",
       "role": "member",
@@ -6005,80 +6084,6 @@
       }
     },
     {
-      "name": "Marsyllia",
-      "tag": "#R0VJLRGQ0",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 60,
-      "trophies": 96,
-      "profile": {
-        "level": 31,
-        "trophies": 96,
-        "best": 244,
-        "league": "Skeleton League 2",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 8,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 15.3,
-        "troops": 16.7,
-        "spells": 7.7,
-        "heroes": 20,
-        "top": [
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Goblin",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Gigant",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Burzyciel",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 20490410,
-        "elixir": 19439044,
-        "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
       "name": "GoldBelt",
       "tag": "#R9QQPG9JP",
       "role": "member",
@@ -6130,7 +6135,7 @@
       "received": 0,
       "trophies": 58,
       "profile": {
-        "level": 46,
+        "level": 47,
         "trophies": 58,
         "best": 242,
         "league": "Skeleton League 2",
@@ -6346,7 +6351,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
