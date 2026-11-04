@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T20:01:24.965Z",
+  "updated": "2026-11-04T20:15:57.854Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 49,
-        "pct": 1728,
+        "stars": 50,
+        "pct": 1807,
         "wins": 1,
         "played": 2
       },
@@ -71,8 +71,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 41,
-        "pct": 1482,
+        "stars": 42,
+        "pct": 1557,
         "wins": 0,
         "played": 2
       },
@@ -832,9 +832,9 @@
         "end": "20261105T181550.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 9,
-          "pct": 24,
-          "attacks": 6,
+          "stars": 10,
+          "pct": 29.27,
+          "attacks": 7,
           "bases": [
             {
               "pos": 1,
@@ -947,7 +947,7 @@
             {
               "pos": 6,
               "th": 13,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 7,
@@ -1055,7 +1055,13 @@
             "tag": "#Q9CU9P908",
             "pos": 6,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 79,
+                "target": "6. sohelkhan1432"
+              }
+            ]
           },
           {
             "name": "VipeR",
@@ -1443,8 +1449,8 @@
       },
       {
         "name": "oggsgdjdjbd",
-        "stars": 3,
-        "attacks": 2,
+        "stars": 4,
+        "attacks": 3,
         "wars": 3
       },
       {
@@ -1941,7 +1947,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 9,
+      "us": 10,
       "them": 0,
       "members": [
         {
@@ -1987,7 +1993,12 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 79
+            }
+          ]
         },
         {
           "name": "VipeR",
@@ -3622,8 +3633,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "126|251337813|249668682|14450|272|57300|109436|0|60|101|12",
-      "last": "2026-11-04T19:01:28.773Z",
+      "sig": "126|251435413|249741882|14450|272|57300|109436|0|61|101|12",
+      "last": "2026-11-04T20:15:57.842Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -3657,8 +3668,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "20|261941541|261491655|15400|1422|24800|43251|0|11|62|13",
-      "last": "2026-11-04T10:31:22.880Z",
+      "sig": "20|261941541|261491655|15400|1422|24800|43751|0|11|62|13",
+      "last": "2026-11-04T20:15:57.842Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -3722,8 +3733,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|59154394|59487796|2400|614|7665|19909|0|4|51|9",
-      "last": "2026-11-04T19:16:03.822Z",
+      "sig": "161|59769372|60119770|2400|614|7665|19909|0|4|51|9",
+      "last": "2026-11-04T20:15:57.842Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4139,8 +4150,8 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "score": 83,
-          "stars": 6,
+          "score": 93,
+          "stars": 7,
           "don": 149,
           "cg": 0,
           "cap": 3935
@@ -4730,7 +4741,7 @@
         "warStars": 11,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 43251,
+        "capital": 43751,
         "warPref": "in",
         "heroes": [
           {
@@ -4799,7 +4810,7 @@
         "capLoot": 24800,
         "gold": 261941541,
         "elixir": 261491655,
-        "capContrib": 43251,
+        "capContrib": 43751,
         "wins": 0
       }
     },
@@ -4816,7 +4827,7 @@
         "trophies": 293,
         "best": 1032,
         "league": "Wizard League 10",
-        "warStars": 60,
+        "warStars": 61,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 109436,
@@ -4834,7 +4845,7 @@
           },
           {
             "name": "Grand Warden",
-            "level": 9,
+            "level": 10,
             "max": 85
           },
           {
@@ -4845,10 +4856,10 @@
         ]
       },
       "rush": {
-        "pct": 41.6,
+        "pct": 41.3,
         "troops": 30.1,
         "spells": 27.1,
-        "heroes": 56.7,
+        "heroes": 56,
         "top": [
           {
             "n": "Książę Minionów",
@@ -4886,8 +4897,8 @@
         "cg": 14450,
         "don": 272,
         "capLoot": 57300,
-        "gold": 251337813,
-        "elixir": 249668682,
+        "gold": 251435413,
+        "elixir": 249741882,
         "capContrib": 109436,
         "wins": 0
       }
@@ -6168,7 +6179,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
@@ -6184,10 +6195,10 @@
         ]
       },
       "rush": {
-        "pct": 3.7,
+        "pct": 2.8,
         "troops": 0,
         "spells": 4.8,
-        "heroes": 10,
+        "heroes": 6.7,
         "top": [
           {
             "n": "Zaklęcie skoku",
@@ -6196,7 +6207,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 17,
+            "lvl": 18,
             "need": 20
           }
         ]
@@ -6205,8 +6216,8 @@
         "cg": 2400,
         "don": 614,
         "capLoot": 7665,
-        "gold": 59154394,
-        "elixir": 59487796,
+        "gold": 59769372,
+        "elixir": 60119770,
         "capContrib": 19909,
         "wins": 0
       }
