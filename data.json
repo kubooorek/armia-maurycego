@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T17:46:02.574Z",
+  "updated": "2026-11-04T18:01:28.232Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,9 +10,27 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 8,
+    "place": 6,
     "groupSize": 8,
     "standings": [
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 58,
+        "pct": 1789,
+        "wins": 1,
+        "played": 2
+      },
+      {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 57,
+        "pct": 1272,
+        "wins": 2,
+        "played": 2
+      },
       {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
@@ -20,7 +38,7 @@
         "stars": 51,
         "pct": 1393,
         "wins": 1,
-        "played": 1
+        "played": 2
       },
       {
         "tag": "#2YRR8GPUU",
@@ -29,25 +47,25 @@
         "stars": 50,
         "pct": 1403,
         "wins": 1,
-        "played": 1
+        "played": 2
       },
       {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
         "level": 5,
-        "stars": 48,
-        "pct": 1789,
-        "wins": 0,
-        "played": 1
+        "stars": 41,
+        "pct": 1174,
+        "wins": 1,
+        "played": 2
       },
       {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 47,
-        "pct": 1272,
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 40,
+        "pct": 1368,
         "wins": 1,
-        "played": 1
+        "played": 2
       },
       {
         "tag": "#2CPJQQVQ9",
@@ -56,7 +74,7 @@
         "stars": 40,
         "pct": 1177,
         "wins": 1,
-        "played": 1
+        "played": 2
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -65,25 +83,7 @@
         "stars": 35,
         "pct": 1241,
         "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 31,
-        "pct": 1174,
-        "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 30,
-        "pct": 1368,
-        "wins": 0,
-        "played": 1
+        "played": 2
       }
     ],
     "wars": [
@@ -460,7 +460,7 @@
       },
       {
         "round": 2,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261103T173512.000Z",
@@ -1617,7 +1617,7 @@
       "enemy": "BattlerManipur2",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 20,
       "them": 20,
@@ -3006,10 +3006,10 @@
       "detail": "vs старше 18"
     },
     "tripleStreak": {
-      "value": 5,
+      "value": 6,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
-      "date": "2026-11-03"
+      "date": "2026-11-04"
     },
     "weekWins": {
       "value": 1,
@@ -3326,8 +3326,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|20624564|19734044|0|0|0|400|0|14|31|8",
-      "last": "2026-11-04T17:46:02.564Z",
+      "sig": "0|20951564|20061044|0|0|0|400|0|14|31|8",
+      "last": "2026-11-04T18:01:28.223Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -5873,10 +5873,10 @@
       "th": 8,
       "given": 0,
       "received": 60,
-      "trophies": 157,
+      "trophies": 197,
       "profile": {
         "level": 31,
-        "trophies": 117,
+        "trophies": 197,
         "best": 244,
         "league": "Skeleton League 2",
         "warStars": 14,
@@ -5939,68 +5939,9 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 20624564,
-        "elixir": 19734044,
+        "gold": 20951564,
+        "elixir": 20061044,
         "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Martini",
-      "tag": "#GVG02VV98",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 106,
-      "profile": {
-        "level": 40,
-        "trophies": 106,
-        "best": 257,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 6070,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 9,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 3.3,
-        "troops": 2.6,
-        "spells": 0,
-        "heroes": 10,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 5600,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 26527424,
-        "elixir": 24893475,
-        "capContrib": 6070,
         "wins": 0
       }
     },
@@ -6011,10 +5952,10 @@
       "th": 9,
       "given": 0,
       "received": 52,
-      "trophies": 106,
+      "trophies": 115,
       "profile": {
         "level": 40,
-        "trophies": 106,
+        "trophies": 115,
         "best": 273,
         "league": "Skeleton League 2",
         "warStars": 3,
@@ -6080,6 +6021,65 @@
         "gold": 31542206,
         "elixir": 30608003,
         "capContrib": 250,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 106,
+      "profile": {
+        "level": 40,
+        "trophies": 106,
+        "best": 257,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6070,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 3.3,
+        "troops": 2.6,
+        "spells": 0,
+        "heroes": 10,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 9,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5600,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 26527424,
+        "elixir": 24893475,
+        "capContrib": 6070,
         "wins": 0
       }
     },
