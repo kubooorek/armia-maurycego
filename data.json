@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T20:31:19.199Z",
+  "updated": "2026-11-04T20:46:02.031Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3713,8 +3713,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "0|40905497|38310966|10050|68|17945|23865|0|7|45|8",
-      "last": "2026-11-04T20:31:19.186Z",
+      "sig": "0|43094349|39718954|10050|68|17945|23865|0|7|45|8",
+      "last": "2026-11-04T20:46:02.020Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -3833,8 +3833,8 @@
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
-      "sig": "0|1916059|1777660|0|23|0|0|0|0|98|11",
-      "last": "2026-11-04T20:01:24.953Z",
+      "sig": "0|2338648|1933871|0|23|0|0|0|0|98|11",
+      "last": "2026-11-04T20:46:02.020Z",
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
@@ -5618,8 +5618,8 @@
         "cg": 0,
         "don": 23,
         "capLoot": 0,
-        "gold": 1916059,
-        "elixir": 1777660,
+        "gold": 2338648,
+        "elixir": 1933871,
         "capContrib": 0,
         "wins": 0
       }
@@ -6041,7 +6041,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
@@ -6059,7 +6059,7 @@
       "rush": {
         "pct": 0.9,
         "troops": 0,
-        "spells": 4.5,
+        "spells": 4.3,
         "heroes": 0,
         "top": [
           {
@@ -6548,6 +6548,11 @@
             "name": "Barbarian King",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
           }
         ]
       },
@@ -6662,6 +6667,54 @@
         "gold": 18297359,
         "elixir": 16388805,
         "capContrib": 33874,
+        "wins": 0
+      }
+    },
+    {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 26,
+      "trophies": 40,
+      "profile": {
+        "level": 45,
+        "trophies": 40,
+        "best": 390,
+        "league": "Skeleton League 2",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 23865,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 8,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 68,
+        "capLoot": 17945,
+        "gold": 43094349,
+        "elixir": 39718954,
+        "capContrib": 23865,
         "wins": 0
       }
     },
@@ -6818,54 +6871,6 @@
         "gold": 1099050,
         "elixir": 1186575,
         "capContrib": 14385,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 26,
-      "trophies": 0,
-      "profile": {
-        "level": 45,
-        "trophies": 0,
-        "best": 390,
-        "league": "Skeleton League 2",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 23865,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 15,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 8,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 68,
-        "capLoot": 17945,
-        "gold": 40905497,
-        "elixir": 38310966,
-        "capContrib": 23865,
         "wins": 0
       }
     },
