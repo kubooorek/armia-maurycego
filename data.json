@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T03:15:55.073Z",
+  "updated": "2026-11-04T03:31:07.277Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -23,6 +23,15 @@
         "played": 1
       },
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 36,
+        "pct": 890,
+        "wins": 1,
+        "played": 1
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
@@ -37,15 +46,6 @@
         "level": 12,
         "stars": 34,
         "pct": 800,
-        "wins": 1,
-        "played": 1
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 33,
-        "pct": 790,
         "wins": 1,
         "played": 1
       },
@@ -3165,8 +3165,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|186528872|179438639|2900|20|21235|36648|0|47|80|11",
-      "last": "2026-11-04T03:01:25.315Z",
+      "sig": "0|186528872|179438639|2900|20|21235|36648|0|47|81|11",
+      "last": "2026-11-04T03:31:07.263Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4802,7 +4802,7 @@
       "received": 0,
       "trophies": 173,
       "profile": {
-        "level": 80,
+        "level": 81,
         "trophies": 173,
         "best": 348,
         "league": "Barbarian League 6",
@@ -4835,9 +4835,9 @@
         ]
       },
       "rush": {
-        "pct": 25.2,
+        "pct": 24.4,
         "troops": 7.9,
-        "spells": 12.2,
+        "spells": 8.2,
         "heroes": 49,
         "top": [
           {
@@ -6167,7 +6167,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
