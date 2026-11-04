@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T21:31:12.305Z",
+  "updated": "2026-11-04T21:46:00.707Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -834,7 +834,7 @@
           "name": "ARMIA MAURYCEGO",
           "stars": 12,
           "pct": 34.6,
-          "attacks": 9,
+          "attacks": 10,
           "bases": [
             {
               "pos": 1,
@@ -1115,7 +1115,13 @@
             "tag": "#GU0R2J8R0",
             "pos": 12,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 39,
+                "target": "14. Twilight"
+              }
+            ]
           },
           {
             "name": "Brann",
@@ -1498,7 +1504,7 @@
       {
         "name": "Belaska",
         "stars": 2,
-        "attacks": 2,
+        "attacks": 3,
         "wars": 3
       }
     ]
@@ -1507,7 +1513,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1676,6 +1682,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-04T21:45:59.655Z",
+      "type": "th",
+      "name": "KuN",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-04T18:46:08.487Z",
       "type": "leave",
@@ -2050,7 +2063,12 @@
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 39
+            }
+          ]
         },
         {
           "name": "Brann",
@@ -3010,7 +3028,7 @@
     {
       "d": "2026-11-04",
       "members": 45,
-      "avgTh": 8.8,
+      "avgTh": 8.9,
       "level": 3,
       "wins": 13,
       "points": 19300
@@ -3640,8 +3658,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "445|2000000000|2000000000|94700|81531|1208549|1607415|0|1253|205|15",
-      "last": "2026-11-04T21:31:12.292Z",
+      "sig": "476|2000000000|2000000000|94700|81561|1208549|1607415|0|1253|205|15",
+      "last": "2026-11-04T21:46:00.694Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -3700,8 +3718,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "20|114907056|114503770|16800|534|21725|42888|0|68|56|9",
-      "last": "2026-11-03T22:45:58.244Z",
+      "sig": "20|118829056|118425770|16800|534|21725|45188|0|68|56|9",
+      "last": "2026-11-04T21:46:00.694Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -3715,8 +3733,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "0|34302213|33011166|10600|180|24180|42182|0|41|44|8",
-      "last": "2026-11-03T22:45:58.244Z",
+      "sig": "0|34302213|33011166|10600|180|24180|44432|0|41|44|9",
+      "last": "2026-11-04T21:46:00.694Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
@@ -3820,8 +3838,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|11974747|11670429|0|0|0|0|0|0|28|7",
-      "last": "2026-11-04T21:31:12.292Z",
+      "sig": "0|12274747|11882429|0|0|0|0|0|0|28|7",
+      "last": "2026-11-04T21:46:00.694Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -4532,7 +4550,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 445,
+      "given": 476,
       "received": 151,
       "trophies": 479,
       "profile": {
@@ -4587,7 +4605,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81531,
+        "don": 81561,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -5342,17 +5360,17 @@
       "role": "admin",
       "th": 9,
       "given": 20,
-      "received": 62,
-      "trophies": 199,
+      "received": 93,
+      "trophies": 279,
       "profile": {
         "level": 56,
-        "trophies": 48,
+        "trophies": 279,
         "best": 622,
         "league": "Barbarian League 6",
         "warStars": 68,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 42888,
+        "capital": 45188,
         "warPref": "in",
         "heroes": [
           {
@@ -5383,9 +5401,9 @@
         "cg": 16800,
         "don": 534,
         "capLoot": 21725,
-        "gold": 114907056,
-        "elixir": 114503770,
-        "capContrib": 42888,
+        "gold": 118829056,
+        "elixir": 118425770,
+        "capContrib": 45188,
         "wins": 0
       }
     },
@@ -5835,7 +5853,7 @@
       "name": "KuN",
       "tag": "#YLLQL2VUP",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 0,
       "received": 0,
       "trophies": 0,
@@ -5847,12 +5865,12 @@
         "warStars": 41,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 42182,
+        "capital": 44432,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 16,
+            "level": 19,
             "max": 110
           },
           {
@@ -5863,11 +5881,17 @@
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 1,
         "troops": 0,
         "spells": 0,
-        "heroes": 0,
-        "top": []
+        "heroes": 3.3,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 19,
+            "need": 20
+          }
+        ]
       },
       "ach": {
         "cg": 10600,
@@ -5875,7 +5899,7 @@
         "capLoot": 24180,
         "gold": 34302213,
         "elixir": 33011166,
-        "capContrib": 42182,
+        "capContrib": 44432,
         "wins": 0
       }
     },
@@ -6187,10 +6211,10 @@
       "th": 9,
       "given": 161,
       "received": 132,
-      "trophies": 248,
+      "trophies": 277,
       "profile": {
         "level": 51,
-        "trophies": 248,
+        "trophies": 277,
         "best": 349,
         "league": "Skeleton League 2",
         "warStars": 4,
@@ -7210,8 +7234,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 11974747,
-        "elixir": 11670429,
+        "gold": 12274747,
+        "elixir": 11882429,
         "capContrib": 0,
         "wins": 0
       }
