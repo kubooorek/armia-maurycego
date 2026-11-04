@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T20:15:57.854Z",
+  "updated": "2026-11-04T20:31:19.199Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,17 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 43,
-        "pct": 1277,
+        "stars": 46,
+        "pct": 1377,
+        "wins": 1,
+        "played": 2
+      },
+      {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 44,
+        "pct": 1274,
         "wins": 1,
         "played": 2
       },
@@ -74,15 +83,6 @@
         "stars": 42,
         "pct": 1557,
         "wins": 0,
-        "played": 2
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 41,
-        "pct": 1174,
-        "wins": 1,
         "played": 2
       }
     ],
@@ -899,7 +899,7 @@
             {
               "pos": 13,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 14,
@@ -915,9 +915,9 @@
         },
         "them": {
           "name": "Freax",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 3,
+          "pct": 6.67,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -1948,7 +1948,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 10,
-      "them": 0,
+      "them": 3,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3713,8 +3713,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "0|39805497|37210966|10050|68|17945|23865|0|7|45|8",
-      "last": "2026-11-04T09:01:17.393Z",
+      "sig": "0|40905497|38310966|10050|68|17945|23865|0|7|45|8",
+      "last": "2026-11-04T20:31:19.186Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -6863,8 +6863,8 @@
         "cg": 10050,
         "don": 68,
         "capLoot": 17945,
-        "gold": 39805497,
-        "elixir": 37210966,
+        "gold": 40905497,
+        "elixir": 38310966,
         "capContrib": 23865,
         "wins": 0
       }
