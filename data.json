@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T07:01:27.097Z",
+  "updated": "2026-11-04T07:15:58.529Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1160,7 +1160,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -5670,7 +5670,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 16,
+            "level": 17,
             "max": 110
           },
           {
@@ -5686,10 +5686,10 @@
         ]
       },
       "rush": {
-        "pct": 4.7,
+        "pct": 3.7,
         "troops": 0,
         "spells": 4.8,
-        "heroes": 13.3,
+        "heroes": 10,
         "top": [
           {
             "n": "Zaklęcie skoku",
@@ -5698,7 +5698,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 16,
+            "lvl": 17,
             "need": 20
           }
         ]
