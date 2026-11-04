@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T23:31:09.154Z",
+  "updated": "2026-11-04T23:46:01.475Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -59,20 +59,20 @@
         "played": 2
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 47,
+        "pct": 1374,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
         "stars": 46,
         "pct": 1377,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 44,
-        "pct": 1274,
         "wins": 1,
         "played": 2
       },
@@ -854,7 +854,7 @@
             {
               "pos": 4,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 5,
@@ -915,9 +915,9 @@
         },
         "them": {
           "name": "Freax",
-          "stars": 3,
-          "pct": 6.67,
-          "attacks": 1,
+          "stars": 6,
+          "pct": 13.33,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -1973,7 +1973,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 12,
-      "them": 3,
+      "them": 6,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -5749,11 +5749,17 @@
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 0.9,
         "troops": 0,
-        "spells": 0,
+        "spells": 4.8,
         "heroes": 0,
-        "top": []
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
       },
       "ach": {
         "cg": 750,
