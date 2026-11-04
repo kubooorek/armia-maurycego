@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T11:01:33.076Z",
+  "updated": "2026-11-04T11:15:49.980Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -72,7 +72,7 @@
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 30,
-        "pct": 1341,
+        "pct": 1368,
         "wins": 0,
         "played": 1
       },
@@ -468,8 +468,8 @@
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 20,
-          "pct": 52,
-          "attacks": 13,
+          "pct": 53.8,
+          "attacks": 14,
           "bases": [
             {
               "pos": 1,
@@ -741,7 +741,13 @@
             "tag": "#RPR0L809R",
             "pos": 9,
             "th": 10,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 47,
+                "target": "10. Frengky"
+              }
+            ]
           },
           {
             "name": "tak",
@@ -1692,7 +1698,12 @@
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 47
+            }
+          ]
         },
         {
           "name": "tak",
@@ -3233,8 +3244,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|81931298|90121240|1900|29|0|3150|0|35|39|10",
-      "last": "2026-11-04T10:31:22.880Z",
+      "sig": "0|82722529|90889452|1900|29|0|3150|0|35|39|10",
+      "last": "2026-11-04T11:15:49.967Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -5343,8 +5354,8 @@
         "cg": 1900,
         "don": 29,
         "capLoot": 0,
-        "gold": 81931298,
-        "elixir": 90121240,
+        "gold": 82722529,
+        "elixir": 90889452,
         "capContrib": 3150,
         "wins": 0
       }
@@ -5428,15 +5439,15 @@
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 31.4,
+        "pct": 30.4,
         "troops": 18.2,
-        "spells": 41.2,
+        "spells": 35.3,
         "heroes": 50,
         "top": [
           {
@@ -5465,9 +5476,9 @@
             "need": 2
           },
           {
-            "n": "Zaklęcie trucizny",
-            "lvl": 1,
-            "need": 2
+            "n": "Król Barbarzyńców",
+            "lvl": 11,
+            "need": 20
           }
         ]
       },
