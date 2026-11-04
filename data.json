@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T15:45:54.792Z",
+  "updated": "2026-11-04T16:01:39.075Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -23,20 +23,11 @@
         "played": 1
       },
       {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 46,
-        "pct": 1200,
-        "wins": 1,
-        "played": 1
-      },
-      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 45,
-        "pct": 1689,
+        "stars": 48,
+        "pct": 1789,
         "wins": 0,
         "played": 1
       },
@@ -44,8 +35,17 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 45,
-        "pct": 1190,
+        "stars": 47,
+        "pct": 1272,
+        "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 46,
+        "pct": 1200,
         "wins": 1,
         "played": 1
       },
