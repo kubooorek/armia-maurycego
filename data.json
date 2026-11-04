@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T07:46:02.299Z",
+  "updated": "2026-11-04T08:31:16.483Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 36,
-        "pct": 890,
+        "stars": 39,
+        "pct": 990,
         "wins": 1,
         "played": 1
       },
@@ -464,7 +464,7 @@
         "size": 15,
         "perMember": 1,
         "start": "20261103T173512.000Z",
-        "end": "20261104T173512.000Z",
+        "end": "20261104T180109.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 18,
@@ -816,8 +816,8 @@
         "state": "preparation",
         "size": 15,
         "perMember": 1,
-        "start": "20261104T175058.000Z",
-        "end": "20261105T175058.000Z",
+        "start": "20261104T181550.000Z",
+        "end": "20261105T181550.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 0,
@@ -1581,7 +1581,7 @@
   "warArchive": [
     {
       "start": "20261103T173512.000Z",
-      "end": "20261104T173512.000Z",
+      "end": "20261104T180109.000Z",
       "enemy": "BattlerManipur2",
       "size": 15,
       "perMember": 1,
@@ -5194,17 +5194,11 @@
         ]
       },
       "rush": {
-        "pct": 1,
-        "troops": 1.8,
+        "pct": 0,
+        "troops": 0,
         "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 750,
@@ -5537,12 +5531,12 @@
           },
           {
             "name": "Archer Queen",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
