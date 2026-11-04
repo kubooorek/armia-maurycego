@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T06:15:51.464Z",
+  "updated": "2026-11-04T06:31:14.785Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 39,
-        "pct": 1489,
+        "stars": 42,
+        "pct": 1589,
         "wins": 0,
         "played": 1
       },
@@ -1154,7 +1154,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -3215,8 +3215,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|80707368|67440698|3000|27|0|0|0|0|40|9",
-      "last": "2026-11-03T18:01:28.017Z",
+      "sig": "1|81228811|67990267|3000|27|0|0|0|0|40|9",
+      "last": "2026-11-04T06:31:14.774Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -4025,7 +4025,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 67,
+            "level": 68,
             "max": 95
           },
           {
@@ -5494,8 +5494,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 80707368,
-        "elixir": 67440698,
+        "gold": 81228811,
+        "elixir": 67990267,
         "capContrib": 0,
         "wins": 0
       }
@@ -6070,7 +6070,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 10,
+            "level": 11,
             "max": 110
           },
           {
@@ -6280,7 +6280,7 @@
         ]
       },
       "rush": {
-        "pct": 13.6,
+        "pct": 13.1,
         "troops": 0,
         "spells": 0,
         "heroes": 80,
