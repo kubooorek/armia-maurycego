@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T19:01:28.786Z",
+  "updated": "2026-11-04T19:16:03.835Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 5,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -50,6 +50,15 @@
         "played": 2
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 43,
+        "pct": 1277,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
@@ -73,15 +82,6 @@
         "level": 5,
         "stars": 41,
         "pct": 1174,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 40,
-        "pct": 1177,
         "wins": 1,
         "played": 2
       }
@@ -1471,7 +1471,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3689,8 +3689,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|58474038|58876158|2400|614|7665|19909|0|4|51|9",
-      "last": "2026-11-04T19:01:28.773Z",
+      "sig": "161|59154394|59487796|2400|614|7665|19909|0|4|51|9",
+      "last": "2026-11-04T19:16:03.822Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -6172,8 +6172,8 @@
         "cg": 2400,
         "don": 614,
         "capLoot": 7665,
-        "gold": 58474038,
-        "elixir": 58876158,
+        "gold": 59154394,
+        "elixir": 59487796,
         "capContrib": 19909,
         "wins": 0
       }
