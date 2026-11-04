@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T18:01:28.232Z",
+  "updated": "2026-11-04T18:16:03.382Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1168,11 +1168,11 @@
       }
     ]
   },
-  "visits": 71,
+  "visits": 72,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 0,
     "members": 12
   },
   "raids": [
