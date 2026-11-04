@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T12:01:29.221Z",
+  "updated": "2026-11-04T12:15:52.127Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3364,8 +3364,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|16391936|15910085|0|22|0|100|0|0|27|8",
-      "last": "2026-11-04T11:01:33.063Z",
+      "sig": "25|17196031|16656272|0|22|0|100|0|0|27|8",
+      "last": "2026-11-04T12:15:52.111Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -4907,16 +4907,11 @@
         ]
       },
       "rush": {
-        "pct": 24,
+        "pct": 23.6,
         "troops": 7.9,
-        "spells": 6.1,
+        "spells": 4.1,
         "heroes": 49,
         "top": [
-          {
-            "n": "Zaklęcie przyspieszenia",
-            "lvl": 1,
-            "need": 4
-          },
           {
             "n": "Lawowy ogar",
             "lvl": 1,
@@ -4936,6 +4931,11 @@
             "n": "Królowa Łuczniczek",
             "lvl": 17,
             "need": 40
+          },
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 2,
+            "need": 4
           },
           {
             "n": "Walkiria",
@@ -6483,8 +6483,8 @@
         "cg": 0,
         "don": 22,
         "capLoot": 0,
-        "gold": 16391936,
-        "elixir": 15910085,
+        "gold": 17196031,
+        "elixir": 16656272,
         "capContrib": 100,
         "wins": 0
       }
