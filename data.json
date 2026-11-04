@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T14:31:06.919Z",
+  "updated": "2026-11-04T14:45:50.465Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,15 +10,15 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 8,
     "groupSize": 8,
     "standings": [
       {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 47,
-        "pct": 1303,
+        "stars": 50,
+        "pct": 1403,
         "wins": 1,
         "played": 1
       },
@@ -53,9 +53,18 @@
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
-        "stars": 37,
-        "pct": 900,
+        "stars": 40,
+        "pct": 1000,
         "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 32,
+        "pct": 1141,
+        "wins": 0,
         "played": 1
       },
       {
@@ -73,15 +82,6 @@
         "level": 3,
         "stars": 30,
         "pct": 1368,
-        "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 29,
-        "pct": 1065,
         "wins": 0,
         "played": 1
       }
@@ -489,7 +489,7 @@
             {
               "pos": 4,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 5,
@@ -550,9 +550,9 @@
         },
         "them": {
           "name": "BattlerManipur2",
-          "stars": 6,
-          "pct": 13.33,
-          "attacks": 2,
+          "stars": 9,
+          "pct": 20,
+          "attacks": 3,
           "bases": [
             {
               "pos": 1,
@@ -1613,7 +1613,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 20,
-      "them": 6,
+      "them": 9,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3389,8 +3389,8 @@
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
-      "sig": "0|1551934|1454492|0|0|0|100|0|0|14|6",
-      "last": "2026-11-04T09:15:54.703Z",
+      "sig": "0|1635934|1522492|0|0|0|100|0|0|14|6",
+      "last": "2026-11-04T14:45:50.452Z",
       "since": "2026-11-04T09:15:54.703Z"
     }
   },
@@ -4907,8 +4907,8 @@
         ]
       },
       "rush": {
-        "pct": 23.2,
-        "troops": 7.9,
+        "pct": 22.8,
+        "troops": 6.9,
         "spells": 2,
         "heroes": 49,
         "top": [
@@ -4933,14 +4933,14 @@
             "need": 40
           },
           {
-            "n": "Walkiria",
-            "lvl": 3,
-            "need": 5
-          },
-          {
             "n": "Zaklęcie przyspieszenia",
             "lvl": 3,
             "need": 4
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 4,
+            "need": 5
           }
         ]
       },
@@ -6884,8 +6884,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 1551934,
-        "elixir": 1454492,
+        "gold": 1635934,
+        "elixir": 1522492,
         "capContrib": 100,
         "wins": 0
       }
