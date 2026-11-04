@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T03:01:25.323Z",
+  "updated": "2026-11-04T03:15:55.073Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -68,20 +68,20 @@
         "played": 1
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 25,
+        "pct": 974,
+        "wins": 0,
+        "played": 1
+      },
+      {
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
         "stars": 24,
         "pct": 871,
-        "wins": 0,
-        "played": 1
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 23,
-        "pct": 884,
         "wins": 0,
         "played": 1
       }
@@ -3155,8 +3155,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|429340971|391117621|10100|244|27320|75275|0|29|75|10",
-      "last": "2026-11-03T13:31:09.870Z",
+      "sig": "0|429340971|391117621|10100|244|27320|75275|0|29|76|10",
+      "last": "2026-11-04T03:15:55.061Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -4733,7 +4733,7 @@
       "received": 0,
       "trophies": 37,
       "profile": {
-        "level": 75,
+        "level": 76,
         "trophies": 37,
         "best": 400,
         "league": "Archer League 7",
