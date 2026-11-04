@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T13:31:14.682Z",
+  "updated": "2026-11-04T13:45:57.626Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1168,7 +1168,7 @@
       }
     ]
   },
-  "visits": 69,
+  "visits": 70,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -3379,8 +3379,8 @@
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
-      "sig": "0|1064050|1151575|1200|139|6445|14385|0|6|44|8",
-      "last": "2026-11-03T20:46:02.885Z",
+      "sig": "0|1064050|1151575|1200|139|6445|14385|0|6|45|8",
+      "last": "2026-11-04T13:45:57.613Z",
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
@@ -6322,7 +6322,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 44,
+        "level": 45,
         "trophies": 0,
         "best": 678,
         "league": "Skeleton League 2",
@@ -6335,6 +6335,11 @@
           {
             "name": "Barbarian King",
             "level": 2,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
             "max": 110
           }
         ]
@@ -6431,7 +6436,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 3,
+            "level": 4,
             "max": 110
           },
           {
@@ -6442,10 +6447,10 @@
         ]
       },
       "rush": {
-        "pct": 34.5,
+        "pct": 32.8,
         "troops": 11.8,
         "spells": 64.3,
-        "heroes": 70,
+        "heroes": 60,
         "top": [
           {
             "n": "Zaklęcie błyskawicy",
@@ -6464,7 +6469,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 3,
+            "lvl": 4,
             "need": 10
           },
           {
