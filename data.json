@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T14:45:50.465Z",
+  "updated": "2026-11-04T15:01:30.831Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -41,20 +41,20 @@
         "played": 1
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 43,
+        "pct": 1100,
+        "wins": 1,
+        "played": 1
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
         "stars": 40,
         "pct": 1177,
-        "wins": 1,
-        "played": 1
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 40,
-        "pct": 1000,
         "wins": 1,
         "played": 1
       },
@@ -494,7 +494,7 @@
             {
               "pos": 5,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 6,
@@ -550,9 +550,9 @@
         },
         "them": {
           "name": "BattlerManipur2",
-          "stars": 9,
-          "pct": 20,
-          "attacks": 3,
+          "stars": 12,
+          "pct": 26.67,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -1172,7 +1172,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1613,7 +1613,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 20,
-      "them": 9,
+      "them": 12,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3219,8 +3219,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|190127749|183254246|2900|20|21235|36648|0|47|82|11",
-      "last": "2026-11-04T14:01:31.090Z",
+      "sig": "0|194741057|188049244|2900|20|21235|36648|0|47|82|11",
+      "last": "2026-11-04T15:01:30.821Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -3349,8 +3349,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|11267000|10793568|0|0|0|0|0|0|26|7",
-      "last": "2026-11-04T01:45:54.173Z",
+      "sig": "0|11628183|11134246|0|0|0|0|0|0|26|7",
+      "last": "2026-11-04T15:01:30.821Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -3389,8 +3389,8 @@
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
-      "sig": "0|1635934|1522492|0|0|0|100|0|0|14|6",
-      "last": "2026-11-04T14:45:50.452Z",
+      "sig": "0|1694934|1596492|0|0|0|100|0|0|15|6",
+      "last": "2026-11-04T15:01:30.821Z",
       "since": "2026-11-04T09:15:54.703Z"
     }
   },
@@ -4948,8 +4948,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 190127749,
-        "elixir": 183254246,
+        "gold": 194741057,
+        "elixir": 188049244,
         "capContrib": 36648,
         "wins": 0
       }
@@ -5445,9 +5445,9 @@
         ]
       },
       "rush": {
-        "pct": 28.8,
+        "pct": 27.9,
         "troops": 19.3,
-        "spells": 29.4,
+        "spells": 23.5,
         "heroes": 46.7,
         "top": [
           {
@@ -6654,13 +6654,18 @@
         ]
       },
       "rush": {
-        "pct": 10,
-        "troops": 10,
+        "pct": 16.7,
+        "troops": 16.7,
         "spells": 0,
         "heroes": 0,
         "top": [
           {
             "n": "Burzyciel",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Balon",
             "lvl": 1,
             "need": 2
           }
@@ -6798,8 +6803,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 11267000,
-        "elixir": 10793568,
+        "gold": 11628183,
+        "elixir": 11134246,
         "capContrib": 0,
         "wins": 0
       }
@@ -6850,7 +6855,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 14,
+        "level": 15,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -6884,8 +6889,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 1635934,
-        "elixir": 1522492,
+        "gold": 1694934,
+        "elixir": 1596492,
         "capContrib": 100,
         "wins": 0
       }
