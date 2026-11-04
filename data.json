@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T02:16:02.876Z",
+  "updated": "2026-11-04T02:31:19.535Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3165,8 +3165,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|180754897|173747702|2900|20|21235|28873|0|47|80|11",
-      "last": "2026-11-04T02:16:02.863Z",
+      "sig": "0|185915558|178721960|2900|20|21235|36648|0|47|80|11",
+      "last": "2026-11-04T02:31:19.521Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4809,7 +4809,7 @@
         "warStars": 47,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 28873,
+        "capital": 36648,
         "warPref": "in",
         "heroes": [
           {
@@ -4835,9 +4835,9 @@
         ]
       },
       "rush": {
-        "pct": 25.6,
+        "pct": 25.2,
         "troops": 7.9,
-        "spells": 14.3,
+        "spells": 12.2,
         "heroes": 49,
         "top": [
           {
@@ -4866,9 +4866,9 @@
             "need": 40
           },
           {
-            "n": "Zaklęcie wstrząsu",
-            "lvl": 2,
-            "need": 4
+            "n": "Walkiria",
+            "lvl": 3,
+            "need": 5
           }
         ]
       },
@@ -4876,9 +4876,9 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 180754897,
-        "elixir": 173747702,
-        "capContrib": 28873,
+        "gold": 185915558,
+        "elixir": 178721960,
+        "capContrib": 36648,
         "wins": 0
       }
     },
@@ -6686,7 +6686,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
