@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T05:01:23.717Z",
+  "updated": "2026-11-04T05:15:54.764Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -20,6 +20,15 @@
         "stars": 46,
         "pct": 1243,
         "wins": 1,
+        "played": 1
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 36,
+        "pct": 1389,
+        "wins": 0,
         "played": 1
       },
       {
@@ -47,15 +56,6 @@
         "stars": 34,
         "pct": 800,
         "wins": 1,
-        "played": 1
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 33,
-        "pct": 1289,
-        "wins": 0,
         "played": 1
       },
       {
