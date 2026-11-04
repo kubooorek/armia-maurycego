@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T04:15:56.358Z",
+  "updated": "2026-11-04T05:01:23.717Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -5703,6 +5703,55 @@
       }
     },
     {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 8,
+      "given": 3,
+      "received": 60,
+      "trophies": 223,
+      "profile": {
+        "level": 41,
+        "trophies": 223,
+        "best": 300,
+        "league": "Skeleton League 2",
+        "warStars": 6,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 8648,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 1.7,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 10,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 9,
+            "need": 10
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 76,
+        "capLoot": 7410,
+        "gold": 27784954,
+        "elixir": 26665542,
+        "capContrib": 8648,
+        "wins": 0
+      }
+    },
+    {
       "name": "threeten",
       "tag": "#R8RVQVPCC",
       "role": "member",
@@ -5742,55 +5791,6 @@
         "gold": 8818088,
         "elixir": 9389071,
         "capContrib": 32034,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 8,
-      "given": 3,
-      "received": 60,
-      "trophies": 203,
-      "profile": {
-        "level": 41,
-        "trophies": 203,
-        "best": 300,
-        "league": "Skeleton League 2",
-        "warStars": 6,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 8648,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 9,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 1.7,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 10,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 10
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 76,
-        "capLoot": 7410,
-        "gold": 27784954,
-        "elixir": 26665542,
-        "capContrib": 8648,
         "wins": 0
       }
     },
