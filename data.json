@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T02:46:00.032Z",
+  "updated": "2026-11-04T03:01:25.323Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -32,20 +32,20 @@
         "played": 1
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 34,
+        "pct": 800,
+        "wins": 1,
+        "played": 1
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
         "stars": 33,
         "pct": 790,
-        "wins": 1,
-        "played": 1
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 31,
-        "pct": 700,
         "wins": 1,
         "played": 1
       },
@@ -524,7 +524,7 @@
             {
               "pos": 11,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 12,
@@ -550,9 +550,9 @@
         },
         "them": {
           "name": "BattlerManipur2",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 3,
+          "pct": 6.67,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -1154,7 +1154,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -1582,7 +1582,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 16,
-      "them": 0,
+      "them": 3,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3165,8 +3165,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|185915558|178721960|2900|20|21235|36648|0|47|80|11",
-      "last": "2026-11-04T02:31:19.521Z",
+      "sig": "0|186528872|179438639|2900|20|21235|36648|0|47|80|11",
+      "last": "2026-11-04T03:01:25.315Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -3320,8 +3320,8 @@
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|33943668|32103991|800|89|7180|25466|0|2|49|9",
-      "last": "2026-11-03T17:16:12.398Z",
+      "sig": "0|34770002|33169847|800|89|7180|25466|0|2|49|9",
+      "last": "2026-11-04T03:01:25.315Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -4876,8 +4876,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 185915558,
-        "elixir": 178721960,
+        "gold": 186528872,
+        "elixir": 179438639,
         "capContrib": 36648,
         "wins": 0
       }
@@ -5374,8 +5374,8 @@
         ]
       },
       "rush": {
-        "pct": 37.3,
-        "troops": 27.3,
+        "pct": 36.3,
+        "troops": 25.5,
         "spells": 47.1,
         "heroes": 50,
         "top": [
@@ -5553,8 +5553,8 @@
         "cg": 800,
         "don": 89,
         "capLoot": 7180,
-        "gold": 33943668,
-        "elixir": 32103991,
+        "gold": 34770002,
+        "elixir": 33169847,
         "capContrib": 25466,
         "wins": 0
       }
@@ -6002,8 +6002,8 @@
         ]
       },
       "rush": {
-        "pct": 16.9,
-        "troops": 19.4,
+        "pct": 15.3,
+        "troops": 16.7,
         "spells": 7.7,
         "heroes": 20,
         "top": [
