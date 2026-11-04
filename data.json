@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T13:16:04.253Z",
+  "updated": "2026-11-04T13:31:14.682Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1172,7 +1172,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3244,8 +3244,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|84563505|92639398|1900|29|0|3150|0|35|39|10",
-      "last": "2026-11-04T13:16:04.240Z",
+      "sig": "0|86582473|94514429|1900|29|0|3150|0|35|39|10",
+      "last": "2026-11-04T13:31:14.669Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -5354,8 +5354,8 @@
         "cg": 1900,
         "don": 29,
         "capLoot": 0,
-        "gold": 84563505,
-        "elixir": 92639398,
+        "gold": 86582473,
+        "elixir": 94514429,
         "capContrib": 3150,
         "wins": 0
       }
@@ -6121,10 +6121,10 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 43,
+      "trophies": 58,
       "profile": {
         "level": 46,
-        "trophies": 43,
+        "trophies": 58,
         "best": 242,
         "league": "Skeleton League 2",
         "warStars": 0,
@@ -6388,7 +6388,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
