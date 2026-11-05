@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T16:46:07.000Z",
+  "updated": "2026-11-05T17:01:31.553Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -23,20 +23,20 @@
         "played": 2
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 70,
+        "pct": 2086,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 69,
         "pct": 2352,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 67,
-        "pct": 1986,
         "wins": 1,
         "played": 2
       },
@@ -3808,8 +3808,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "0|43611895|40262317|10050|68|17945|23865|0|7|45|8",
-      "last": "2026-11-04T21:01:24.524Z",
+      "sig": "0|43611895|40262317|10050|68|17945|23865|0|7|46|8",
+      "last": "2026-11-05T17:01:31.544Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -5484,10 +5484,10 @@
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 173,
+      "trophies": 213,
       "profile": {
         "level": 83,
-        "trophies": 173,
+        "trophies": 213,
         "best": 348,
         "league": "Barbarian League 6",
         "warStars": 47,
@@ -6763,7 +6763,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
@@ -6794,7 +6794,7 @@
       "received": 26,
       "trophies": 40,
       "profile": {
-        "level": 45,
+        "level": 46,
         "trophies": 40,
         "best": 390,
         "league": "Skeleton League 2",
