@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T09:16:16.955Z",
+  "updated": "2026-11-05T09:31:12.126Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -32,6 +32,15 @@
         "played": 2
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 65,
+        "pct": 2067,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
@@ -46,15 +55,6 @@
         "level": 9,
         "stars": 60,
         "pct": 1802,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 59,
-        "pct": 1867,
         "wins": 1,
         "played": 2
       },
@@ -3728,8 +3728,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|198228200|191278450|2900|20|21235|36648|0|47|83|11",
-      "last": "2026-11-05T07:15:58.527Z",
+      "sig": "0|199610603|192748695|2900|20|21235|36648|0|47|83|11",
+      "last": "2026-11-05T09:31:12.113Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -5307,7 +5307,7 @@
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 212,
+      "trophies": 332,
       "profile": {
         "level": 76,
         "trophies": 37,
@@ -5520,8 +5520,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 198228200,
-        "elixir": 191278450,
+        "gold": 199610603,
+        "elixir": 192748695,
         "capContrib": 36648,
         "wins": 0
       }
@@ -5647,8 +5647,8 @@
         ]
       },
       "rush": {
-        "pct": 36.6,
-        "troops": 29.9,
+        "pct": 36.1,
+        "troops": 28.6,
         "spells": 47.8,
         "heroes": 38,
         "top": [
