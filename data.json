@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T21:31:15.055Z",
+  "updated": "2026-11-05T21:45:58.441Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1860,7 +1860,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -4372,8 +4372,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|21133953|20413464|0|22|0|100|0|0|30|9",
-      "last": "2026-11-05T21:16:00.167Z",
+      "sig": "25|22771223|22447452|0|22|0|100|0|0|31|9",
+      "last": "2026-11-05T21:45:58.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -7536,7 +7536,7 @@
       "received": 106,
       "trophies": 240,
       "profile": {
-        "level": 30,
+        "level": 31,
         "trophies": 240,
         "best": 240,
         "league": "Skeleton League 1",
@@ -7559,8 +7559,8 @@
         ]
       },
       "rush": {
-        "pct": 51,
-        "troops": 28.6,
+        "pct": 50,
+        "troops": 26.5,
         "spells": 63.2,
         "heroes": 80,
         "top": [
@@ -7600,8 +7600,8 @@
         "cg": 0,
         "don": 22,
         "capLoot": 0,
-        "gold": 21133953,
-        "elixir": 20413464,
+        "gold": 22771223,
+        "elixir": 22447452,
         "capContrib": 100,
         "wins": 0
       }
