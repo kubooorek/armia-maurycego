@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T04:15:53.940Z",
+  "updated": "2026-11-05T05:01:31.657Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -14,21 +14,21 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 66,
+        "pct": 1572,
+        "wins": 2,
+        "played": 2
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 65,
         "pct": 2148,
         "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 63,
-        "pct": 1472,
-        "wins": 2,
         "played": 2
       },
       {
