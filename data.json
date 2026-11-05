@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T10:46:06.833Z",
+  "updated": "2026-11-05T11:01:31.074Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -81,7 +81,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 48,
-        "pct": 1757,
+        "pct": 1777,
         "wins": 0,
         "played": 2
       }
@@ -3820,8 +3820,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|26831424|25197475|5600|0|0|6070|0|0|40|8",
-      "last": "2026-11-04T21:01:24.524Z",
+      "sig": "0|26831424|25197475|5600|0|0|6070|0|0|41|8",
+      "last": "2026-11-05T11:01:31.061Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -3875,8 +3875,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|19282409|18733088|0|22|0|100|0|0|28|8",
-      "last": "2026-11-04T21:01:24.524Z",
+      "sig": "25|19282409|18733088|0|22|0|100|0|0|30|8",
+      "last": "2026-11-05T11:01:31.061Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -4736,10 +4736,10 @@
       "th": 12,
       "given": 151,
       "received": 216,
-      "trophies": 192,
+      "trophies": 204,
       "profile": {
         "level": 109,
-        "trophies": 192,
+        "trophies": 204,
         "best": 2839,
         "league": "Valkyrie League 14",
         "warStars": 95,
@@ -6334,6 +6334,11 @@
             "name": "Barbarian King",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
           }
         ]
       },
@@ -6485,7 +6490,7 @@
       "received": 0,
       "trophies": 146,
       "profile": {
-        "level": 40,
+        "level": 41,
         "trophies": 146,
         "best": 257,
         "league": "Skeleton League 2",
@@ -6497,7 +6502,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           },
           {
@@ -6508,20 +6513,15 @@
         ]
       },
       "rush": {
-        "pct": 3.2,
+        "pct": 1.6,
         "troops": 2.6,
         "spells": 0,
-        "heroes": 10,
+        "heroes": 0,
         "top": [
           {
             "n": "Minion",
             "lvl": 1,
             "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 10
           }
         ]
       },
@@ -6961,7 +6961,7 @@
       "received": 80,
       "trophies": 240,
       "profile": {
-        "level": 28,
+        "level": 30,
         "trophies": 240,
         "best": 240,
         "league": "Skeleton League 1",
@@ -6984,9 +6984,9 @@
         ]
       },
       "rush": {
-        "pct": 31.7,
+        "pct": 30,
         "troops": 13.9,
-        "spells": 57.1,
+        "spells": 50,
         "heroes": 60,
         "top": [
           {
