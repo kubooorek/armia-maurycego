@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T13:31:15.626Z",
+  "updated": "2026-11-05T13:45:59.866Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
@@ -59,20 +59,20 @@
         "played": 2
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 56,
+        "pct": 1589,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 55,
         "pct": 1987,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 53,
-        "pct": 1489,
         "wins": 1,
         "played": 2
       },
@@ -3796,8 +3796,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|83736182|70602450|3000|27|0|0|0|0|41|9",
-      "last": "2026-11-05T11:31:17.182Z",
+      "sig": "1|83736269|70665918|3000|27|0|0|0|0|41|9",
+      "last": "2026-11-05T13:45:59.848Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -3846,8 +3846,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|21746156|20983506|0|0|0|400|0|14|32|8",
-      "last": "2026-11-05T10:15:53.599Z",
+      "sig": "0|22168589|21444169|0|0|0|400|0|14|32|8",
+      "last": "2026-11-05T13:45:59.848Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -6108,8 +6108,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 83736182,
-        "elixir": 70602450,
+        "gold": 83736269,
+        "elixir": 70665918,
         "capContrib": 0,
         "wins": 0
       }
@@ -6582,8 +6582,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 21746156,
-        "elixir": 20983506,
+        "gold": 22168589,
+        "elixir": 21444169,
         "capContrib": 400,
         "wins": 0
       }
