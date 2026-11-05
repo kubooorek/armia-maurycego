@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T01:45:54.758Z",
+  "updated": "2026-11-05T02:15:52.983Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -4560,10 +4560,10 @@
       "th": 15,
       "given": 476,
       "received": 151,
-      "trophies": 479,
+      "trophies": 507,
       "profile": {
         "level": 205,
-        "trophies": 479,
+        "trophies": 507,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
         "warStars": 1253,
@@ -6111,7 +6111,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 3,
+            "level": 4,
             "max": 95
           }
         ]
