@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T02:15:52.983Z",
+  "updated": "2026-11-05T02:31:25.355Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,15 +10,15 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 4,
+    "place": 5,
     "groupSize": 8,
     "standings": [
       {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 63,
-        "pct": 2062,
+        "stars": 64,
+        "pct": 2071,
         "wins": 1,
         "played": 2
       },
@@ -41,6 +41,15 @@
         "played": 2
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 55,
+        "pct": 1639,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
@@ -55,15 +64,6 @@
         "level": 7,
         "stars": 52,
         "pct": 1577,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 52,
-        "pct": 1539,
         "wins": 1,
         "played": 2
       },
@@ -864,7 +864,7 @@
             {
               "pos": 6,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 7,
@@ -915,9 +915,9 @@
         },
         "them": {
           "name": "Freax",
-          "stars": 11,
-          "pct": 24.33,
-          "attacks": 4,
+          "stars": 14,
+          "pct": 31,
+          "attacks": 5,
           "bases": [
             {
               "pos": 1,
@@ -1973,7 +1973,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 12,
-      "them": 11,
+      "them": 14,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3811,8 +3811,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
-      "sig": "0|11623371|10528310|0|30|0|8470|0|15|33|7",
-      "last": "2026-11-03T20:46:02.885Z",
+      "sig": "0|11623371|10528310|0|30|0|8470|0|15|34|7",
+      "last": "2026-11-05T02:31:25.347Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
@@ -6787,7 +6787,7 @@
       "received": 0,
       "trophies": 29,
       "profile": {
-        "level": 33,
+        "level": 34,
         "trophies": 29,
         "best": 255,
         "league": "Skeleton League 2",
