@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T11:16:00.957Z",
+  "updated": "2026-11-05T11:25:43.340Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1513,7 +1513,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -3695,8 +3695,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "147|258449502|258641627|14450|292|57300|109436|0|61|102|12",
-      "last": "2026-11-04T21:01:24.524Z",
+      "sig": "177|258449502|258641627|14450|292|57300|109436|0|61|102|12",
+      "last": "2026-11-05T11:25:43.327Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -4794,7 +4794,7 @@
       "th": 13,
       "given": 32,
       "received": 0,
-      "trophies": 118,
+      "trophies": 130,
       "profile": {
         "level": 63,
         "trophies": 118,
@@ -4881,7 +4881,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 147,
+      "given": 177,
       "received": 40,
       "trophies": 293,
       "profile": {
@@ -5313,7 +5313,7 @@
       "role": "member",
       "th": 11,
       "given": 0,
-      "received": 0,
+      "received": 30,
       "trophies": 332,
       "profile": {
         "level": 76,
@@ -6242,6 +6242,54 @@
       }
     },
     {
+      "name": "Riczard",
+      "tag": "#R2PCVYQG2",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 293,
+      "profile": {
+        "level": 39,
+        "trophies": 93,
+        "best": 281,
+        "league": "Skeleton League 2",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 33874,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 1500,
+        "don": 175,
+        "capLoot": 24090,
+        "gold": 18472359,
+        "elixir": 16563805,
+        "capContrib": 33874,
+        "wins": 0
+      }
+    },
+    {
       "name": "SHA☆ZAM!",
       "tag": "#GVGRVCQJR",
       "role": "member",
@@ -6404,54 +6452,6 @@
         "gold": 28539232,
         "elixir": 27416205,
         "capContrib": 8648,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Riczard",
-      "tag": "#R2PCVYQG2",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 213,
-      "profile": {
-        "level": 39,
-        "trophies": 93,
-        "best": 281,
-        "league": "Skeleton League 2",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 33874,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 1,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 1500,
-        "don": 175,
-        "capLoot": 24090,
-        "gold": 18472359,
-        "elixir": 16563805,
-        "capContrib": 33874,
         "wins": 0
       }
     },
@@ -6682,7 +6682,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
