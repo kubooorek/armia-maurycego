@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T06:31:07.456Z",
+  "updated": "2026-11-05T07:01:33.416Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -6239,7 +6239,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
@@ -6255,10 +6255,10 @@
         ]
       },
       "rush": {
-        "pct": 2.8,
+        "pct": 1.9,
         "troops": 0,
         "spells": 4.8,
-        "heroes": 6.7,
+        "heroes": 3.3,
         "top": [
           {
             "n": "Zaklęcie skoku",
@@ -6267,7 +6267,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 18,
+            "lvl": 19,
             "need": 20
           }
         ]
