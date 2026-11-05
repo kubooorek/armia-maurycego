@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T06:15:58.366Z",
+  "updated": "2026-11-05T06:31:07.456Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3786,8 +3786,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
-      "sig": "0|27142649|25444905|600|12|5885|13328|0|21|38|8",
-      "last": "2026-11-04T00:45:54.430Z",
+      "sig": "0|27142649|25444905|600|12|5885|13328|0|21|39|8",
+      "last": "2026-11-05T06:31:07.443Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
@@ -6538,8 +6538,8 @@
         ]
       },
       "rush": {
-        "pct": 35.3,
-        "troops": 25,
+        "pct": 34.3,
+        "troops": 23.1,
         "spells": 35,
         "heroes": 53.3,
         "top": [
@@ -6594,7 +6594,7 @@
       "received": 0,
       "trophies": 90,
       "profile": {
-        "level": 38,
+        "level": 39,
         "trophies": 90,
         "best": 309,
         "league": "Skeleton League 2",
@@ -6611,7 +6611,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
