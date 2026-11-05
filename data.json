@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T03:45:52.938Z",
+  "updated": "2026-11-05T04:01:25.744Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 64,
-        "pct": 2071,
+        "stars": 65,
+        "pct": 2148,
         "wins": 1,
         "played": 2
       },
@@ -6101,12 +6101,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 23,
+            "level": 24,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 13,
+            "level": 14,
             "max": 110
           },
           {
