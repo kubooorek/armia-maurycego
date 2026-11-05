@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T13:45:59.866Z",
+  "updated": "2026-11-05T14:01:46.623Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -834,7 +834,7 @@
           "name": "ARMIA MAURYCEGO",
           "stars": 15,
           "pct": 41.27,
-          "attacks": 11,
+          "attacks": 12,
           "bases": [
             {
               "pos": 1,
@@ -1081,7 +1081,13 @@
             "tag": "#QYJUV90JY",
             "pos": 8,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 49,
+                "target": "15. kunal"
+              }
+            ]
           },
           {
             "name": "Cwel123",
@@ -1492,7 +1498,7 @@
       {
         "name": "monte",
         "stars": 3,
-        "attacks": 2,
+        "attacks": 3,
         "wars": 3
       },
       {
@@ -2058,7 +2064,12 @@
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 49
+            }
+          ]
         },
         {
           "name": "Cwel123",
@@ -3746,8 +3757,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|201187849|193979658|2900|20|21235|36648|0|47|83|11",
-      "last": "2026-11-05T13:31:15.613Z",
+      "sig": "0|202961327|195723160|2900|20|21235|36648|0|47|83|11",
+      "last": "2026-11-05T14:01:46.614Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -5538,8 +5549,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 201187849,
-        "elixir": 193979658,
+        "gold": 202961327,
+        "elixir": 195723160,
         "capContrib": 36648,
         "wins": 0
       }
