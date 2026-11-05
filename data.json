@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T20:01:29.059Z",
+  "updated": "2026-11-05T20:16:03.649Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -32,21 +32,21 @@
         "played": 3
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 75,
+        "pct": 2543,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
         "stars": 74,
         "pct": 1939,
         "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 73,
-        "pct": 2460,
-        "wins": 1,
         "played": 3
       },
       {
@@ -4320,8 +4320,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|48|8",
-      "last": "2026-11-05T09:16:16.945Z",
+      "sig": "0|22970257|22337055|0|160|11195|16969|0|0|48|8",
+      "last": "2026-11-05T20:16:03.636Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -6946,6 +6946,54 @@
       }
     },
     {
+      "name": "Darui",
+      "tag": "#LUQJC2JGY",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 218,
+      "profile": {
+        "level": 48,
+        "trophies": 218,
+        "best": 242,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16969,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 14,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 160,
+        "capLoot": 11195,
+        "gold": 22970257,
+        "elixir": 22337055,
+        "capContrib": 16969,
+        "wins": 0
+      }
+    },
+    {
       "name": "threeten",
       "tag": "#R8RVQVPCC",
       "role": "member",
@@ -7064,54 +7112,6 @@
         "gold": 24650707,
         "elixir": 24031450,
         "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Darui",
-      "tag": "#LUQJC2JGY",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 178,
-      "profile": {
-        "level": 48,
-        "trophies": 58,
-        "best": 242,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16969,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 14,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 160,
-        "capLoot": 11195,
-        "gold": 22155257,
-        "elixir": 21522055,
-        "capContrib": 16969,
         "wins": 0
       }
     },
