@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T07:15:58.540Z",
+  "updated": "2026-11-05T07:31:11.156Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -32,20 +32,20 @@
         "played": 2
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 61,
+        "pct": 1839,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
         "stars": 60,
         "pct": 1802,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 58,
-        "pct": 1739,
         "wins": 1,
         "played": 2
       },
@@ -884,7 +884,7 @@
             {
               "pos": 10,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 11,
@@ -915,9 +915,9 @@
         },
         "them": {
           "name": "Freax",
-          "stars": 17,
-          "pct": 37.67,
-          "attacks": 6,
+          "stars": 20,
+          "pct": 44.33,
+          "attacks": 7,
           "bases": [
             {
               "pos": 1,
@@ -1973,7 +1973,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 12,
-      "them": 17,
+      "them": 20,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -3771,8 +3771,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|82902512|69691519|3000|27|0|0|0|0|41|9",
-      "last": "2026-11-04T19:45:55.225Z",
+      "sig": "1|83227760|69951102|3000|27|0|0|0|0|41|9",
+      "last": "2026-11-05T07:31:11.146Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -4668,8 +4668,8 @@
         ]
       },
       "rush": {
-        "pct": 38.3,
-        "troops": 27.6,
+        "pct": 38.2,
+        "troops": 27.1,
         "spells": 44,
         "heroes": 43.6,
         "top": [
@@ -6074,8 +6074,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 82902512,
-        "elixir": 69691519,
+        "gold": 83227760,
+        "elixir": 69951102,
         "capContrib": 0,
         "wins": 0
       }
@@ -6654,7 +6654,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
