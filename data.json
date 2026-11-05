@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T08:31:26.645Z",
+  "updated": "2026-11-05T08:45:59.672Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1682,6 +1682,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-05T08:45:58.789Z",
+      "type": "th",
+      "name": "Cwel123",
+      "from": 10,
+      "to": 11
+    },
     {
       "t": "2026-11-04T21:45:59.655Z",
       "type": "th",
@@ -3711,8 +3718,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|433215966|394998197|10100|244|27320|76825|0|29|76|10",
-      "last": "2026-11-04T22:31:20.011Z",
+      "sig": "0|433215966|394998197|10100|244|27320|76825|0|29|76|11",
+      "last": "2026-11-05T08:45:59.659Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -5297,7 +5304,7 @@
       "name": "Cwel123",
       "tag": "#RPR0L809R",
       "role": "member",
-      "th": 10,
+      "th": 11,
       "given": 0,
       "received": 0,
       "trophies": 37,
@@ -5314,41 +5321,56 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 23,
+            "level": 24,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 23,
+            "level": 24,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 18,
+            "level": 19,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 8.3,
-        "troops": 1.3,
-        "spells": 0,
-        "heroes": 20,
+        "pct": 23.1,
+        "troops": 15.2,
+        "spells": 18.8,
+        "heroes": 33,
         "top": [
           {
+            "n": "Górnik",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie nietoperzy",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Mały smok",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 2,
+            "need": 4
+          },
+          {
             "n": "Król Barbarzyńców",
-            "lvl": 23,
-            "need": 30
+            "lvl": 24,
+            "need": 40
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 23,
-            "need": 30
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 4,
-            "need": 5
+            "lvl": 24,
+            "need": 40
           }
         ]
       },
