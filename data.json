@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T01:16:03.355Z",
+  "updated": "2026-11-05T01:31:08.623Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -14,21 +14,21 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 63,
+        "pct": 2062,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
         "stars": 63,
         "pct": 1472,
         "wins": 2,
-        "played": 2
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 61,
-        "pct": 1990,
-        "wins": 1,
         "played": 2
       },
       {
@@ -3796,8 +3796,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|31542206|30608003|0|0|0|250|0|3|41|9",
-      "last": "2026-11-05T00:31:09.091Z",
+      "sig": "0|32100318|31166139|0|0|0|250|0|3|41|9",
+      "last": "2026-11-05T01:31:08.610Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -3841,8 +3841,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "20|4295725|4280410|0|61|0|100|0|0|24|6",
-      "last": "2026-11-04T09:01:17.393Z",
+      "sig": "20|4615522|4639902|0|61|0|100|0|0|25|6",
+      "last": "2026-11-05T01:31:08.610Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -4987,7 +4987,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 30,
+            "level": 31,
             "max": 95
           }
         ]
@@ -6579,8 +6579,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 31542206,
-        "elixir": 30608003,
+        "gold": 32100318,
+        "elixir": 31166139,
         "capContrib": 250,
         "wins": 0
       }
@@ -7135,7 +7135,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 24,
+        "level": 25,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -7174,8 +7174,8 @@
         "cg": 0,
         "don": 61,
         "capLoot": 0,
-        "gold": 4295725,
-        "elixir": 4280410,
+        "gold": 4615522,
+        "elixir": 4639902,
         "capContrib": 100,
         "wins": 0
       }
