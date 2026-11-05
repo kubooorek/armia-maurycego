@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T07:31:11.156Z",
+  "updated": "2026-11-05T07:45:55.268Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3866,8 +3866,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|3640033|3288658|0|0|0|400|0|0|23|6",
-      "last": "2026-11-04T20:01:24.953Z",
+      "sig": "0|3673399|3384702|0|0|0|400|0|0|23|6",
+      "last": "2026-11-05T07:45:55.261Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -4794,7 +4794,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 7,
+            "level": 8,
             "max": 110
           },
           {
@@ -4815,10 +4815,10 @@
         ]
       },
       "rush": {
-        "pct": 75.3,
+        "pct": 75.1,
         "troops": 58.9,
         "spells": 52.2,
-        "heroes": 91.4,
+        "heroes": 91,
         "top": [
           {
             "n": "Wielki Strażnik",
@@ -4836,14 +4836,14 @@
             "need": 40
           },
           {
-            "n": "Król Barbarzyńców",
-            "lvl": 7,
-            "need": 65
-          },
-          {
             "n": "Golem",
             "lvl": 1,
             "need": 9
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 8,
+            "need": 65
           },
           {
             "n": "Walkiria",
@@ -7415,14 +7415,19 @@
         ]
       },
       "rush": {
-        "pct": 9.1,
+        "pct": 8.3,
         "troops": 0,
-        "spells": 50,
+        "spells": 33.3,
         "heroes": 0,
         "top": [
           {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 2
+          },
+          {
             "n": "Zaklęcie błyskawicy",
-            "lvl": 2,
+            "lvl": 3,
             "need": 4
           }
         ]
@@ -7431,8 +7436,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 3640033,
-        "elixir": 3288658,
+        "gold": 3673399,
+        "elixir": 3384702,
         "capContrib": 400,
         "wins": 0
       }
