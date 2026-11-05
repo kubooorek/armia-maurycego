@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T20:45:58.421Z",
+  "updated": "2026-11-05T21:01:36.501Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -4185,8 +4185,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "177|260471814|260051283|14450|322|57300|109436|0|62|102|12",
-      "last": "2026-11-05T20:01:29.042Z",
+      "sig": "177|260839477|261176299|14450|322|57300|109436|0|62|102|12",
+      "last": "2026-11-05T21:01:36.493Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -4265,8 +4265,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "0|43611895|40262317|10050|68|17945|23865|0|7|46|8",
-      "last": "2026-11-05T17:01:31.544Z",
+      "sig": "0|45506733|42065868|10050|68|17945|23865|0|7|46|8",
+      "last": "2026-11-05T21:01:36.493Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -4350,8 +4350,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "46|15462161|14817059|0|45|0|0|0|0|31|7",
-      "last": "2026-11-05T19:15:59.992Z",
+      "sig": "46|15755161|15124343|0|45|0|0|0|0|31|7",
+      "last": "2026-11-05T21:01:36.493Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -5449,8 +5449,8 @@
         "cg": 14450,
         "don": 322,
         "capLoot": 57300,
-        "gold": 260471814,
-        "elixir": 260051283,
+        "gold": 260839477,
+        "elixir": 261176299,
         "capContrib": 109436,
         "wins": 0
       }
@@ -6960,7 +6960,7 @@
       "trophies": 219,
       "profile": {
         "level": 46,
-        "trophies": 66,
+        "trophies": 219,
         "best": 390,
         "league": "Skeleton League 2",
         "warStars": 7,
@@ -6971,7 +6971,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 16,
+            "level": 17,
             "max": 110
           },
           {
@@ -6992,8 +6992,8 @@
         "cg": 10050,
         "don": 68,
         "capLoot": 17945,
-        "gold": 43611895,
-        "elixir": 40262317,
+        "gold": 45506733,
+        "elixir": 42065868,
         "capContrib": 23865,
         "wins": 0
       }
@@ -7447,6 +7447,80 @@
       }
     },
     {
+      "name": "samurai024",
+      "tag": "#RYUV9V9RC",
+      "role": "member",
+      "th": 7,
+      "given": 46,
+      "received": 0,
+      "trophies": 278,
+      "profile": {
+        "level": 31,
+        "trophies": 278,
+        "best": 278,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 34.3,
+        "troops": 20,
+        "spells": 70,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Barbarzyńca",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Łuczniczka",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Goblin",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 45,
+        "capLoot": 0,
+        "gold": 15755161,
+        "elixir": 15124343,
+        "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
       "name": "TwojaSiora",
       "tag": "#GQR98J880",
       "role": "member",
@@ -7522,80 +7596,6 @@
         "gold": 21133953,
         "elixir": 20413464,
         "capContrib": 100,
-        "wins": 0
-      }
-    },
-    {
-      "name": "samurai024",
-      "tag": "#RYUV9V9RC",
-      "role": "member",
-      "th": 7,
-      "given": 46,
-      "received": 0,
-      "trophies": 208,
-      "profile": {
-        "level": 31,
-        "trophies": 80,
-        "best": 80,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 0,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 5,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 34.3,
-        "troops": 20,
-        "spells": 70,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Barbarzyńca",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Łuczniczka",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Goblin",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 45,
-        "capLoot": 0,
-        "gold": 15462161,
-        "elixir": 14817059,
-        "capContrib": 0,
         "wins": 0
       }
     },
@@ -7873,20 +7873,20 @@
         ]
       },
       "rush": {
-        "pct": 12.5,
+        "pct": 8.3,
         "troops": 0,
-        "spells": 50,
+        "spells": 33.3,
         "heroes": 0,
         "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 2,
-            "need": 4
-          },
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 3,
+            "need": 4
           }
         ]
       },
