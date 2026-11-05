@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T22:01:25.358Z",
+  "updated": "2026-11-05T22:16:00.471Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1866,7 +1866,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -4283,8 +4283,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "0|45506733|42065868|10050|68|17945|23865|0|7|46|8",
-      "last": "2026-11-05T21:01:36.493Z",
+      "sig": "20|45506733|42065868|10050|88|17945|23865|0|7|46|8",
+      "last": "2026-11-05T22:16:00.458Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -6973,7 +6973,7 @@
       "tag": "#RYLR2C92V",
       "role": "member",
       "th": 8,
-      "given": 0,
+      "given": 20,
       "received": 26,
       "trophies": 219,
       "profile": {
@@ -7008,7 +7008,7 @@
       },
       "ach": {
         "cg": 10050,
-        "don": 68,
+        "don": 88,
         "capLoot": 17945,
         "gold": 45506733,
         "elixir": 42065868,
@@ -7470,7 +7470,7 @@
       "role": "member",
       "th": 7,
       "given": 46,
-      "received": 0,
+      "received": 20,
       "trophies": 278,
       "profile": {
         "level": 31,
