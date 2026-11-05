@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T11:46:00.507Z",
+  "updated": "2026-11-05T12:01:27.478Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1519,7 +1519,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3776,8 +3776,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|47899665|45793576|750|0|14130|17129|0|14|57|9",
-      "last": "2026-11-05T10:31:12.266Z",
+      "sig": "0|48199665|46093576|750|0|14130|17129|0|14|57|9",
+      "last": "2026-11-05T12:01:27.470Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
@@ -5767,7 +5767,7 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 80,
+      "trophies": 120,
       "profile": {
         "level": 57,
         "trophies": 80,
@@ -5813,8 +5813,8 @@
         "cg": 750,
         "don": 0,
         "capLoot": 14130,
-        "gold": 47899665,
-        "elixir": 45793576,
+        "gold": 48199665,
+        "elixir": 46093576,
         "capContrib": 17129,
         "wins": 0
       }
@@ -6331,7 +6331,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 3,
+            "level": 4,
             "max": 95
           }
         ]
