@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T15:01:41.986Z",
+  "updated": "2026-11-05T15:16:26.819Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -14,21 +14,21 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 72,
+        "pct": 1772,
+        "wins": 2,
+        "played": 2
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 69,
         "pct": 2352,
         "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 69,
-        "pct": 1672,
-        "wins": 2,
         "played": 2
       },
       {
@@ -1525,7 +1525,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
