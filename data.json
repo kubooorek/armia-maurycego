@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T15:46:04.081Z",
+  "updated": "2026-11-05T16:16:00.264Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -59,20 +59,20 @@
         "played": 2
       },
       {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 57,
+        "pct": 2055,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 56,
         "pct": 1589,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 55,
-        "pct": 1987,
         "wins": 1,
         "played": 2
       },
@@ -832,9 +832,9 @@
         "end": "20261105T181550.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 15,
-          "pct": 41.27,
-          "attacks": 12,
+          "stars": 17,
+          "pct": 45.8,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -972,7 +972,7 @@
             {
               "pos": 11,
               "th": 13,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 12,
@@ -1054,7 +1054,13 @@
             "tag": "#8UCPRGC8",
             "pos": 5,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 68,
+                "target": "11. Virat.kohli"
+              }
+            ]
           },
           {
             "name": "oggsgdjdjbd",
@@ -1478,6 +1484,12 @@
         "wars": 3
       },
       {
+        "name": "MrDefPL",
+        "stars": 4,
+        "attacks": 3,
+        "wars": 3
+      },
+      {
         "name": "oggsgdjdjbd",
         "stars": 4,
         "attacks": 3,
@@ -1505,12 +1517,6 @@
         "name": "tak",
         "stars": 3,
         "attacks": 3,
-        "wars": 3
-      },
-      {
-        "name": "MrDefPL",
-        "stars": 2,
-        "attacks": 2,
         "wars": 3
       },
       {
@@ -1998,7 +2004,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 15,
+      "us": 17,
       "them": 23,
       "members": [
         {
@@ -2044,7 +2050,12 @@
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 68
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -3722,8 +3733,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "0|733752251|764982824|13725|50927|64385|84211|0|506|147|12",
-      "last": "2026-11-04T10:31:22.880Z",
+      "sig": "0|733827249|765096185|13725|50927|64385|94980|0|508|147|12",
+      "last": "2026-11-05T16:16:00.251Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -3817,8 +3828,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|59769372|60119770|2400|614|7665|21209|0|4|51|9",
-      "last": "2026-11-04T21:01:24.524Z",
+      "sig": "161|59769372|60119770|2400|614|7665|22509|0|4|51|9",
+      "last": "2026-11-05T16:16:00.251Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -5147,10 +5158,10 @@
         "trophies": 0,
         "best": 2938,
         "league": "Archer League 9",
-        "warStars": 506,
+        "warStars": 508,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 84211,
+        "capital": 94980,
         "warPref": "out",
         "heroes": [
           {
@@ -5217,9 +5228,9 @@
         "cg": 13725,
         "don": 50927,
         "capLoot": 64385,
-        "gold": 733752251,
-        "elixir": 764982824,
-        "capContrib": 84211,
+        "gold": 733827249,
+        "elixir": 765096185,
+        "capContrib": 94980,
         "wins": 0
       }
     },
@@ -6327,7 +6338,7 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 21209,
+        "capital": 22509,
         "warPref": "in",
         "heroes": [
           {
@@ -6342,7 +6353,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 4,
+            "level": 5,
             "max": 95
           }
         ]
@@ -6371,7 +6382,7 @@
         "capLoot": 7665,
         "gold": 59769372,
         "elixir": 60119770,
-        "capContrib": 21209,
+        "capContrib": 22509,
         "wins": 0
       }
     },
@@ -6620,7 +6631,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           },
           {
@@ -6631,10 +6642,10 @@
         ]
       },
       "rush": {
-        "pct": 34.3,
-        "troops": 23.1,
-        "spells": 35,
-        "heroes": 53.3,
+        "pct": 31.4,
+        "troops": 21.2,
+        "spells": 30,
+        "heroes": 50,
         "top": [
           {
             "n": "P.E.K.K.A",
@@ -6645,11 +6656,6 @@
             "n": "Zaklęcie szału",
             "lvl": 2,
             "need": 5
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 20
           },
           {
             "n": "Minion",
@@ -6665,6 +6671,11 @@
             "n": "Zaklęcie trucizny",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 10,
+            "need": 20
           }
         ]
       },
