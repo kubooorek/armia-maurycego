@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T16:31:10.710Z",
+  "updated": "2026-11-05T16:46:07.000Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -32,6 +32,15 @@
         "played": 2
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 67,
+        "pct": 1986,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
@@ -55,15 +64,6 @@
         "level": 9,
         "stars": 63,
         "pct": 1902,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 62,
-        "pct": 1789,
         "wins": 1,
         "played": 2
       },
@@ -1531,7 +1531,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -5519,16 +5519,11 @@
         ]
       },
       "rush": {
-        "pct": 22,
-        "troops": 5,
+        "pct": 21.6,
+        "troops": 4,
         "spells": 2,
         "heroes": 49,
         "top": [
-          {
-            "n": "Golem",
-            "lvl": 2,
-            "need": 5
-          },
           {
             "n": "Król Barbarzyńców",
             "lvl": 17,
@@ -5538,6 +5533,11 @@
             "n": "Królowa Łuczniczek",
             "lvl": 17,
             "need": 40
+          },
+          {
+            "n": "Golem",
+            "lvl": 3,
+            "need": 5
           },
           {
             "n": "Zaklęcie przyspieszenia",
