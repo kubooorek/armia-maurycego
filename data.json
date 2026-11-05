@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T05:01:31.657Z",
+  "updated": "2026-11-05T05:15:57.439Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 5,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -50,20 +50,20 @@
         "played": 2
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 55,
+        "pct": 1677,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 52,
         "pct": 1887,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 52,
-        "pct": 1577,
         "wins": 1,
         "played": 2
       },
@@ -6659,23 +6659,17 @@
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 1.6,
+        "pct": 0,
         "troops": 0,
-        "spells": 7.1,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 0,
