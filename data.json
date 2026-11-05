@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:31:08.241Z",
+  "updated": "2026-11-05T23:45:55.127Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -4213,8 +4213,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "11|379669318|392058711|12900|642|275915|401040|0|121|122|12",
-      "last": "2026-11-05T09:01:42.263Z",
+      "sig": "11|379669318|392058711|12900|642|275915|401040|0|121|123|12",
+      "last": "2026-11-05T23:45:55.115Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -5488,7 +5488,7 @@
       "received": 0,
       "trophies": 402,
       "profile": {
-        "level": 122,
+        "level": 123,
         "trophies": 402,
         "best": 2224,
         "league": "Archer League 9",
@@ -7630,10 +7630,10 @@
       "th": 7,
       "given": 0,
       "received": 15,
-      "trophies": 28,
+      "trophies": 68,
       "profile": {
         "level": 24,
-        "trophies": 28,
+        "trophies": 68,
         "best": 28,
         "league": "Skeleton League 1",
         "warStars": 0,
