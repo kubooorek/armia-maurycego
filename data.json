@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T11:31:17.195Z",
+  "updated": "2026-11-05T11:46:00.507Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -44,8 +44,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 61,
-        "pct": 1839,
+        "stars": 64,
+        "pct": 1939,
         "wins": 1,
         "played": 2
       },
@@ -59,20 +59,20 @@
         "played": 2
       },
       {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 55,
+        "pct": 1987,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 53,
         "pct": 1489,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 52,
-        "pct": 1887,
         "wins": 1,
         "played": 2
       },
@@ -832,9 +832,9 @@
         "end": "20261105T181550.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 12,
-          "pct": 34.6,
-          "attacks": 10,
+          "stars": 15,
+          "pct": 41.27,
+          "attacks": 11,
           "bases": [
             {
               "pos": 1,
@@ -909,15 +909,15 @@
             {
               "pos": 19,
               "th": 8,
-              "best": 0
+              "best": 3
             }
           ]
         },
         "them": {
           "name": "Freax",
-          "stars": 20,
-          "pct": 44.33,
-          "attacks": 7,
+          "stars": 23,
+          "pct": 51,
+          "attacks": 8,
           "bases": [
             {
               "pos": 1,
@@ -942,7 +942,7 @@
             {
               "pos": 5,
               "th": 13,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 6,
@@ -1015,7 +1015,13 @@
             "tag": "#LUGR0YQY0",
             "pos": 2,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "5. XxAntxX"
+              }
+            ]
           },
           {
             "name": "Albaroon.2",
@@ -1455,8 +1461,8 @@
       },
       {
         "name": "Baku",
-        "stars": 6,
-        "attacks": 2,
+        "stars": 9,
+        "attacks": 3,
         "wars": 3
       },
       {
@@ -1986,8 +1992,8 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 12,
-      "them": 20,
+      "us": 15,
+      "them": 23,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -2002,7 +2008,12 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -3685,8 +3696,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "510|468415765|484611282|42500|93336|246500|453697|0|1213|152|15",
-      "last": "2026-11-05T10:01:23.089Z",
+      "sig": "546|468539765|484735282|42500|93341|246500|453697|0|1216|152|15",
+      "last": "2026-11-05T11:46:00.494Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -3725,8 +3736,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|455111013|416612897|10100|244|27320|76825|0|29|76|11",
-      "last": "2026-11-05T09:46:03.488Z",
+      "sig": "0|459158122|420723682|10100|244|27320|76825|0|29|77|11",
+      "last": "2026-11-05T11:46:00.494Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -3805,8 +3816,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|22204831|19731530|1500|175|24090|33874|0|21|39|8",
-      "last": "2026-11-05T11:31:17.182Z",
+      "sig": "0|22204831|19731530|1500|175|24090|36124|0|21|39|8",
+      "last": "2026-11-05T11:46:00.494Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -3840,8 +3851,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "0|8818088|9389071|300|40|24805|32034|0|15|34|8",
-      "last": "2026-11-05T00:45:54.707Z",
+      "sig": "0|8818088|9389071|300|40|24805|34234|0|15|34|8",
+      "last": "2026-11-05T11:46:00.494Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GLV9998PC": {
@@ -4203,9 +4214,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 110,
-          "stars": 6,
-          "don": 503,
+          "score": 141,
+          "stars": 9,
+          "don": 508,
           "cg": 0,
           "cap": 0
         },
@@ -4640,7 +4651,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 510,
+      "given": 546,
       "received": 54,
       "trophies": 0,
       "profile": {
@@ -4648,7 +4659,7 @@
         "trophies": 0,
         "best": 3270,
         "league": "Witch League 17",
-        "warStars": 1213,
+        "warStars": 1216,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 453697,
@@ -4721,10 +4732,10 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 93336,
+        "don": 93341,
         "capLoot": 246500,
-        "gold": 468415765,
-        "elixir": 484611282,
+        "gold": 468539765,
+        "elixir": 484735282,
         "capContrib": 453697,
         "wins": 0
       }
@@ -5313,10 +5324,10 @@
       "role": "member",
       "th": 11,
       "given": 0,
-      "received": 30,
+      "received": 66,
       "trophies": 332,
       "profile": {
-        "level": 76,
+        "level": 77,
         "trophies": 332,
         "best": 400,
         "league": "Archer League 7",
@@ -5385,8 +5396,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 27320,
-        "gold": 455111013,
-        "elixir": 416612897,
+        "gold": 459158122,
+        "elixir": 420723682,
         "capContrib": 76825,
         "wins": 0
       }
@@ -6257,7 +6268,7 @@
         "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 33874,
+        "capital": 36124,
         "warPref": "in",
         "heroes": [
           {
@@ -6285,7 +6296,7 @@
         "capLoot": 24090,
         "gold": 22204831,
         "elixir": 19731530,
-        "capContrib": 33874,
+        "capContrib": 36124,
         "wins": 0
       }
     },
@@ -6471,7 +6482,7 @@
         "warStars": 15,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 32034,
+        "capital": 34234,
         "warPref": "in",
         "heroes": [
           {
@@ -6494,7 +6505,7 @@
         "capLoot": 24805,
         "gold": 8818088,
         "elixir": 9389071,
-        "capContrib": 32034,
+        "capContrib": 34234,
         "wins": 0
       }
     },
