@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T10:31:12.278Z",
+  "updated": "2026-11-05T10:46:06.833Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3880,8 +3880,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|3673399|3384702|0|0|0|400|0|0|23|7",
-      "last": "2026-11-05T10:01:23.089Z",
+      "sig": "0|3673399|3384702|0|0|0|400|0|0|24|7",
+      "last": "2026-11-05T10:46:06.822Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -6984,8 +6984,8 @@
         ]
       },
       "rush": {
-        "pct": 31,
-        "troops": 11.8,
+        "pct": 31.7,
+        "troops": 13.9,
         "spells": 57.1,
         "heroes": 60,
         "top": [
@@ -7010,12 +7010,12 @@
             "need": 2
           },
           {
-            "n": "Minion",
+            "n": "Smok",
             "lvl": 1,
             "need": 2
           },
           {
-            "n": "Wieprzowy jeździec",
+            "n": "Minion",
             "lvl": 1,
             "need": 2
           }
@@ -7421,7 +7421,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 23,
+        "level": 24,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -7439,20 +7439,15 @@
         ]
       },
       "rush": {
-        "pct": 10.3,
+        "pct": 6.9,
         "troops": 0,
-        "spells": 42.9,
+        "spells": 28.6,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
             "need": 3
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 3,
-            "need": 4
           }
         ]
       },
