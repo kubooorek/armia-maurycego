@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T12:01:27.478Z",
+  "updated": "2026-11-05T12:15:57.605Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1519,7 +1519,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -3736,8 +3736,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|459158122|420723682|10100|244|27320|76825|0|29|77|11",
-      "last": "2026-11-05T11:46:00.494Z",
+      "sig": "0|473257229|435112900|10100|244|27320|76825|0|29|77|11",
+      "last": "2026-11-05T12:15:57.595Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -3776,8 +3776,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|48199665|46093576|750|0|14130|17129|0|14|57|9",
-      "last": "2026-11-05T12:01:27.470Z",
+      "sig": "0|49639665|47533576|750|0|14130|17129|0|14|57|9",
+      "last": "2026-11-05T12:15:57.595Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
@@ -5396,8 +5396,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 27320,
-        "gold": 459158122,
-        "elixir": 420723682,
+        "gold": 473257229,
+        "elixir": 435112900,
         "capContrib": 76825,
         "wins": 0
       }
@@ -5767,10 +5767,10 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 120,
+      "trophies": 200,
       "profile": {
         "level": 57,
-        "trophies": 80,
+        "trophies": 200,
         "best": 787,
         "league": "Barbarian League 4",
         "warStars": 14,
@@ -5813,8 +5813,8 @@
         "cg": 750,
         "don": 0,
         "capLoot": 14130,
-        "gold": 48199665,
-        "elixir": 46093576,
+        "gold": 49639665,
+        "elixir": 47533576,
         "capContrib": 17129,
         "wins": 0
       }
@@ -6042,10 +6042,10 @@
       "th": 9,
       "given": 1,
       "received": 0,
-      "trophies": 78,
+      "trophies": 101,
       "profile": {
         "level": 41,
-        "trophies": 78,
+        "trophies": 101,
         "best": 149,
         "league": "Skeleton League 3",
         "warStars": 0,
