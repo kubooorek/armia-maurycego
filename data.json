@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T09:01:42.275Z",
+  "updated": "2026-11-05T09:16:16.955Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 58,
-        "pct": 1777,
+        "stars": 59,
+        "pct": 1867,
         "wins": 1,
         "played": 2
       },
@@ -1513,7 +1513,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3723,8 +3723,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "32|261941541|261491655|15400|1422|24800|43751|0|11|63|13",
-      "last": "2026-11-05T09:01:42.263Z",
+      "sig": "32|264541692|264042802|15400|1434|24800|43751|0|11|63|13",
+      "last": "2026-11-05T09:16:16.945Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -3823,8 +3823,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|47|8",
-      "last": "2026-11-04T17:46:02.564Z",
+      "sig": "0|22155257|21522055|0|160|11195|16969|0|0|48|8",
+      "last": "2026-11-05T09:16:16.945Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -4861,10 +4861,10 @@
       },
       "ach": {
         "cg": 15400,
-        "don": 1422,
+        "don": 1434,
         "capLoot": 24800,
-        "gold": 261941541,
-        "elixir": 261491655,
+        "gold": 264541692,
+        "elixir": 264042802,
         "capContrib": 43751,
         "wins": 0
       }
@@ -5307,7 +5307,7 @@
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 37,
+      "trophies": 212,
       "profile": {
         "level": 76,
         "trophies": 37,
@@ -6664,7 +6664,7 @@
       "received": 0,
       "trophies": 58,
       "profile": {
-        "level": 47,
+        "level": 48,
         "trophies": 58,
         "best": 242,
         "league": "Skeleton League 2",
@@ -6772,7 +6772,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
