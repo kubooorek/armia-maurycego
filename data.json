@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T01:31:08.623Z",
+  "updated": "2026-11-05T01:45:54.758Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3691,8 +3691,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "11|375426737|387055856|12900|642|275915|401040|0|121|122|12",
-      "last": "2026-11-05T00:45:54.707Z",
+      "sig": "11|377584951|389087492|12900|642|275915|401040|0|121|122|12",
+      "last": "2026-11-05T01:45:54.745Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -5003,8 +5003,8 @@
         "cg": 12900,
         "don": 642,
         "capLoot": 275915,
-        "gold": 375426737,
-        "elixir": 387055856,
+        "gold": 377584951,
+        "elixir": 389087492,
         "capContrib": 401040,
         "wins": 0
       }
@@ -6847,7 +6847,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 8,
+            "level": 9,
             "max": 110
           }
         ]
@@ -7010,6 +7010,80 @@
         "gold": 19282409,
         "elixir": 18733088,
         "capContrib": 100,
+        "wins": 0
+      }
+    },
+    {
+      "name": "samurai024",
+      "tag": "#RYUV9V9RC",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 40,
+      "profile": {
+        "level": 29,
+        "trophies": 40,
+        "best": 0,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 3,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 34.3,
+        "troops": 20,
+        "spells": 70,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Barbarzyńca",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Łuczniczka",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Goblin",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 13004747,
+        "elixir": 12602429,
+        "capContrib": 0,
         "wins": 0
       }
     },
@@ -7177,80 +7251,6 @@
         "gold": 4615522,
         "elixir": 4639902,
         "capContrib": 100,
-        "wins": 0
-      }
-    },
-    {
-      "name": "samurai024",
-      "tag": "#RYUV9V9RC",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 29,
-        "trophies": 0,
-        "best": 0,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 0,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 3,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 34.3,
-        "troops": 20,
-        "spells": 70,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Barbarzyńca",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Łuczniczka",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Goblin",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 13004747,
-        "elixir": 12602429,
-        "capContrib": 0,
         "wins": 0
       }
     },
