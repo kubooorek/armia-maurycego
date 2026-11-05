@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T18:16:02.037Z",
+  "updated": "2026-11-05T18:31:23.464Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,9 +10,27 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 8,
     "groupSize": 8,
     "standings": [
+      {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 75,
+        "pct": 2067,
+        "wins": 2,
+        "played": 3
+      },
+      {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 75,
+        "pct": 1995,
+        "wins": 2,
+        "played": 3
+      },
       {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
@@ -29,7 +47,7 @@
         "stars": 72,
         "pct": 1772,
         "wins": 2,
-        "played": 2
+        "played": 3
       },
       {
         "tag": "#2CC0PJPLY",
@@ -38,7 +56,7 @@
         "stars": 70,
         "pct": 2360,
         "wins": 1,
-        "played": 2
+        "played": 3
       },
       {
         "tag": "#V8PU2P0G",
@@ -47,25 +65,16 @@
         "stars": 70,
         "pct": 2086,
         "wins": 1,
-        "played": 2
+        "played": 3
       },
       {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 65,
-        "pct": 2067,
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 64,
+        "pct": 1936,
         "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 65,
-        "pct": 1995,
-        "wins": 1,
-        "played": 2
+        "played": 3
       },
       {
         "tag": "#2GQQ8RGRL",
@@ -75,15 +84,6 @@
         "pct": 2076,
         "wins": 1,
         "played": 3
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 54,
-        "pct": 1936,
-        "wins": 0,
-        "played": 2
       }
     ],
     "wars": [
@@ -1190,7 +1190,7 @@
       },
       {
         "round": 4,
-        "state": "preparation",
+        "state": "inWar",
         "size": 15,
         "perMember": 1,
         "start": "20261105T182424.000Z",
@@ -1243,7 +1243,7 @@
             },
             {
               "pos": 9,
-              "th": 10,
+              "th": 11,
               "best": 0
             },
             {
@@ -1422,7 +1422,7 @@
             "name": "Cwel123",
             "tag": "#RPR0L809R",
             "pos": 9,
-            "th": 10,
+            "th": 11,
             "attacks": []
           },
           {
@@ -1468,6 +1468,287 @@
             "attacks": []
           }
         ]
+      },
+      {
+        "round": 5,
+        "state": "preparation",
+        "size": 15,
+        "perMember": 1,
+        "start": "20261106T182801.000Z",
+        "end": "20261107T182801.000Z",
+        "us": {
+          "name": "ARMIA MAURYCEGO",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 20,
+              "th": 8,
+              "best": 0
+            }
+          ]
+        },
+        "them": {
+          "name": "سوري",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 2,
+              "th": 16,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 14,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 10,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 10,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 14,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 22,
+              "th": 8,
+              "best": 0
+            }
+          ]
+        },
+        "members": [
+          {
+            "name": "KUBOOOREK",
+            "tag": "#VP9PLGLV",
+            "pos": 1,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Baku",
+            "tag": "#LUGR0YQY0",
+            "pos": 2,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Albaroon.2",
+            "tag": "#GYUJR2URJ",
+            "pos": 3,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MAQOS",
+            "tag": "#LJYR92002",
+            "pos": 4,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MrDefPL",
+            "tag": "#8UCPRGC8",
+            "pos": 5,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "oggsgdjdjbd",
+            "tag": "#Q9CU9P908",
+            "pos": 6,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "monte",
+            "tag": "#QYJUV90JY",
+            "pos": 7,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "VipeR",
+            "tag": "#22R8PLCU8",
+            "pos": 8,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "Cwel123",
+            "tag": "#RPR0L809R",
+            "pos": 9,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "tak",
+            "tag": "#Y02PYY922",
+            "pos": 10,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Kojak",
+            "tag": "#G8VGC2VRL",
+            "pos": 11,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Belaska",
+            "tag": "#GU0R2J8R0",
+            "pos": 12,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Brann",
+            "tag": "#LC8VRR9R2",
+            "pos": 13,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "vvd",
+            "tag": "#GQULCR98R",
+            "pos": 15,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Barnes",
+            "tag": "#LQVRCRUYR",
+            "pos": 20,
+            "th": 8,
+            "attacks": []
+          }
+        ]
       }
     ],
     "top": [
@@ -1475,61 +1756,61 @@
         "name": "KUBOOOREK",
         "stars": 9,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "Baku",
         "stars": 9,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "VipeR",
         "stars": 6,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "Albaroon.2",
         "stars": 5,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "MrDefPL",
         "stars": 4,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "oggsgdjdjbd",
         "stars": 4,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "Brann",
         "stars": 4,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "monte",
         "stars": 3,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "tak",
         "stars": 3,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       },
       {
         "name": "Belaska",
         "stars": 2,
         "attacks": 3,
-        "wars": 3
+        "wars": 4
       }
     ]
   },
@@ -2002,6 +2283,94 @@
     }
   ],
   "warArchive": [
+    {
+      "start": "20261105T182424.000Z",
+      "end": "20261106T182424.000Z",
+      "enemy": "united again",
+      "size": 15,
+      "perMember": 1,
+      "state": "inWar",
+      "cwl": true,
+      "us": 0,
+      "them": 0,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": []
+        },
+        {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": []
+        }
+      ]
+    },
     {
       "start": "20261104T181550.000Z",
       "end": "20261105T181550.000Z",
@@ -3754,8 +4123,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "0|364105059|340903953|15875|9386|10205|55073|0|235|105|11",
-      "last": "2026-11-05T17:31:14.607Z",
+      "sig": "2|364105059|340903953|15875|9386|10205|55073|0|235|105|11",
+      "last": "2026-11-05T18:31:23.451Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -3794,8 +4163,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|399194498|463867734|59470|11803|136585|234074|0|2453|87|8",
-      "last": "2026-11-04T18:46:09.263Z",
+      "sig": "0|399245522|463933343|59470|11803|136585|234074|0|2455|87|8",
+      "last": "2026-11-05T18:31:23.451Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -3904,8 +4273,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "46|14788762|14513826|0|45|0|0|0|0|30|7",
-      "last": "2026-11-05T16:31:10.698Z",
+      "sig": "46|15462161|14817059|0|45|0|0|0|0|30|7",
+      "last": "2026-11-05T18:31:23.451Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -3919,8 +4288,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|20472038|19906868|0|22|0|100|0|0|30|8",
-      "last": "2026-11-05T12:46:03.308Z",
+      "sig": "25|21133953|20413464|0|22|0|100|0|0|30|8",
+      "last": "2026-11-05T18:31:23.451Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -5072,7 +5441,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 0,
+      "given": 2,
       "received": 0,
       "trophies": 46,
       "profile": {
@@ -5751,14 +6120,14 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 77,
+      "received": 79,
       "trophies": 0,
       "profile": {
         "level": 87,
         "trophies": 0,
         "best": 2650,
         "league": "Barbarian League 5",
-        "warStars": 2453,
+        "warStars": 2455,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 234074,
@@ -5787,8 +6156,8 @@
         "cg": 59470,
         "don": 11803,
         "capLoot": 136585,
-        "gold": 399194498,
-        "elixir": 463867734,
+        "gold": 399245522,
+        "elixir": 463933343,
         "capContrib": 234074,
         "wins": 0
       }
@@ -7068,8 +7437,8 @@
         "cg": 0,
         "don": 22,
         "capLoot": 0,
-        "gold": 20472038,
-        "elixir": 19906868,
+        "gold": 21133953,
+        "elixir": 20413464,
         "capContrib": 100,
         "wins": 0
       }
@@ -7095,7 +7464,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
@@ -7142,8 +7511,8 @@
         "cg": 0,
         "don": 45,
         "capLoot": 0,
-        "gold": 14788762,
-        "elixir": 14513826,
+        "gold": 15462161,
+        "elixir": 14817059,
         "capContrib": 0,
         "wins": 0
       }
