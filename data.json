@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T00:45:54.721Z",
+  "updated": "2026-11-05T01:01:19.478Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -50,6 +50,15 @@
         "played": 2
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 52,
+        "pct": 1577,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
@@ -64,15 +73,6 @@
         "level": 5,
         "stars": 47,
         "pct": 1374,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 46,
-        "pct": 1377,
         "wins": 1,
         "played": 2
       },
@@ -3756,8 +3756,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|96834356|80700120|5100|336|0|20770|0|12|52|9",
-      "last": "2026-11-04T18:31:08.606Z",
+      "sig": "31|99669943|83208975|5100|336|0|20770|0|12|52|9",
+      "last": "2026-11-05T01:01:19.466Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -3846,8 +3846,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "0|12874747|12472429|0|0|0|0|0|0|28|7",
-      "last": "2026-11-05T00:31:09.091Z",
+      "sig": "0|12874747|12472429|0|0|0|0|0|0|29|7",
+      "last": "2026-11-05T01:01:19.466Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -5995,8 +5995,8 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 0,
-        "gold": 96834356,
-        "elixir": 80700120,
+        "gold": 99669943,
+        "elixir": 83208975,
         "capContrib": 20770,
         "wins": 0
       }
@@ -7189,7 +7189,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 28,
+        "level": 29,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -7207,8 +7207,8 @@
         ]
       },
       "rush": {
-        "pct": 37.1,
-        "troops": 24,
+        "pct": 34.3,
+        "troops": 20,
         "spells": 70,
         "heroes": 0,
         "top": [
