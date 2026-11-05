@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T12:15:57.605Z",
+  "updated": "2026-11-05T12:31:13.044Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 60,
-        "pct": 1802,
+        "stars": 63,
+        "pct": 1902,
         "wins": 1,
         "played": 2
       },
@@ -3781,8 +3781,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|100135441|83810076|5100|336|0|20770|0|12|52|9",
-      "last": "2026-11-05T01:16:03.345Z",
+      "sig": "31|100135441|83810076|5100|336|0|20770|0|12|53|9",
+      "last": "2026-11-05T12:31:13.036Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -5856,9 +5856,9 @@
         ]
       },
       "rush": {
-        "pct": 31.1,
+        "pct": 30.9,
         "troops": 39,
-        "spells": 26.7,
+        "spells": 25.8,
         "heroes": 24.3,
         "top": [
           {
@@ -5960,7 +5960,7 @@
       "received": 129,
       "trophies": 346,
       "profile": {
-        "level": 52,
+        "level": 53,
         "trophies": 346,
         "best": 346,
         "league": "Skeleton League 3",
@@ -5972,7 +5972,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 14,
+            "level": 15,
             "max": 110
           },
           {
@@ -5988,10 +5988,10 @@
         ]
       },
       "rush": {
-        "pct": 20.6,
-        "troops": 12.1,
-        "spells": 15.8,
-        "heroes": 40,
+        "pct": 18.5,
+        "troops": 11.9,
+        "spells": 10.5,
+        "heroes": 36.7,
         "top": [
           {
             "n": "Wieprzowy jeździec",
@@ -6444,7 +6444,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
