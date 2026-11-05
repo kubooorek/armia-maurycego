@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T08:16:04.458Z",
+  "updated": "2026-11-05T08:31:26.645Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -6745,7 +6745,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 15,
+            "level": 16,
             "max": 110
           },
           {
@@ -7028,7 +7028,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
