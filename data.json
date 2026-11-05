@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T17:01:31.553Z",
+  "updated": "2026-11-05T17:16:03.198Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -50,20 +50,20 @@
         "played": 2
       },
       {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 65,
+        "pct": 1960,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
         "stars": 64,
         "pct": 1939,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 63,
-        "pct": 1902,
         "wins": 1,
         "played": 2
       },
@@ -1527,11 +1527,11 @@
       }
     ]
   },
-  "visits": 72,
+  "visits": 73,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -6738,6 +6738,54 @@
       }
     },
     {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 26,
+      "trophies": 66,
+      "profile": {
+        "level": 46,
+        "trophies": 66,
+        "best": 390,
+        "league": "Skeleton League 2",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 23865,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 16,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 68,
+        "capLoot": 17945,
+        "gold": 43611895,
+        "elixir": 40262317,
+        "capContrib": 23865,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -6782,54 +6830,6 @@
         "gold": 22155257,
         "elixir": 21522055,
         "capContrib": 16969,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 26,
-      "trophies": 40,
-      "profile": {
-        "level": 46,
-        "trophies": 40,
-        "best": 390,
-        "league": "Skeleton League 2",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 23865,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 16,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 68,
-        "capLoot": 17945,
-        "gold": 43611895,
-        "elixir": 40262317,
-        "capContrib": 23865,
         "wins": 0
       }
     },
