@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T18:01:25.633Z",
+  "updated": "2026-11-05T18:16:02.037Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -13,6 +13,15 @@
     "place": 7,
     "groupSize": 8,
     "standings": [
+      {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 74,
+        "pct": 1939,
+        "wins": 2,
+        "played": 3
+      },
       {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
@@ -59,22 +68,13 @@
         "played": 2
       },
       {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 64,
-        "pct": 1939,
-        "wins": 1,
-        "played": 2
-      },
-      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 59,
         "pct": 2076,
         "wins": 1,
-        "played": 2
+        "played": 3
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -825,7 +825,7 @@
       },
       {
         "round": 3,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261104T181550.000Z",
@@ -1537,7 +1537,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2008,7 +2008,7 @@
       "enemy": "Freax",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 19,
       "them": 23,
@@ -3559,10 +3559,10 @@
       "detail": "vs старше 18"
     },
     "tripleStreak": {
-      "value": 6,
+      "value": 7,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
-      "date": "2026-11-04"
+      "date": "2026-11-05"
     },
     "weekWins": {
       "value": 1,
@@ -3724,8 +3724,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "483|2000000000|2000000000|94700|81566|1208549|1610015|0|1253|205|15",
-      "last": "2026-11-05T13:15:57.806Z",
+      "sig": "533|2000000000|2000000000|94700|81616|1208549|1610015|0|1253|205|15",
+      "last": "2026-11-05T18:16:02.025Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -3864,8 +3864,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|28425022|26819452|5600|0|0|6070|0|0|41|8",
-      "last": "2026-11-05T18:01:25.619Z",
+      "sig": "0|29397637|27741502|5600|0|0|6070|0|0|41|8",
+      "last": "2026-11-05T18:16:02.025Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -4616,7 +4616,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 483,
+      "given": 533,
       "received": 151,
       "trophies": 507,
       "profile": {
@@ -4671,7 +4671,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81566,
+        "don": 81616,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -4685,7 +4685,7 @@
       "role": "member",
       "th": 15,
       "given": 576,
-      "received": 56,
+      "received": 106,
       "trophies": 0,
       "profile": {
         "level": 152,
@@ -6445,8 +6445,8 @@
         "cg": 5600,
         "don": 0,
         "capLoot": 0,
-        "gold": 28425022,
-        "elixir": 26819452,
+        "gold": 29397637,
+        "elixir": 27741502,
         "capContrib": 6070,
         "wins": 0
       }
