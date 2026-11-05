@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T17:16:03.198Z",
+  "updated": "2026-11-05T17:31:14.620Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -54,7 +54,7 @@
         "name": "united again",
         "level": 9,
         "stars": 65,
-        "pct": 1960,
+        "pct": 1995,
         "wins": 1,
         "played": 2
       },
@@ -71,8 +71,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 57,
-        "pct": 2055,
+        "stars": 59,
+        "pct": 2076,
         "wins": 1,
         "played": 2
       },
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 51,
-        "pct": 1836,
+        "stars": 54,
+        "pct": 1936,
         "wins": 0,
         "played": 2
       }
@@ -832,9 +832,9 @@
         "end": "20261105T181550.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 17,
-          "pct": 45.8,
-          "attacks": 13,
+          "stars": 19,
+          "pct": 47.2,
+          "attacks": 14,
           "bases": [
             {
               "pos": 1,
@@ -992,7 +992,7 @@
             {
               "pos": 15,
               "th": 12,
-              "best": 1
+              "best": 3
             }
           ]
         },
@@ -1080,7 +1080,13 @@
             "tag": "#22R8PLCU8",
             "pos": 7,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "15. kunal"
+              }
+            ]
           },
           {
             "name": "monte",
@@ -1478,6 +1484,12 @@
         "wars": 3
       },
       {
+        "name": "VipeR",
+        "stars": 6,
+        "attacks": 3,
+        "wars": 3
+      },
+      {
         "name": "Albaroon.2",
         "stars": 5,
         "attacks": 3,
@@ -1499,12 +1511,6 @@
         "name": "Brann",
         "stars": 4,
         "attacks": 3,
-        "wars": 3
-      },
-      {
-        "name": "VipeR",
-        "stars": 3,
-        "attacks": 2,
         "wars": 3
       },
       {
@@ -1531,7 +1537,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -2004,7 +2010,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 17,
+      "us": 19,
       "them": 23,
       "members": [
         {
@@ -2070,7 +2076,12 @@
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "monte",
@@ -3743,8 +3754,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "0|363991059|340789953|15875|9386|10205|55073|0|232|105|11",
-      "last": "2026-11-03T20:46:02.885Z",
+      "sig": "0|364105059|340903953|15875|9386|10205|55073|0|235|105|11",
+      "last": "2026-11-05T17:31:14.607Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -3788,8 +3799,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "0|34302213|33011166|10600|180|24180|44432|0|41|44|9",
-      "last": "2026-11-04T21:46:00.694Z",
+      "sig": "0|35304813|34010044|10600|180|24180|44432|0|41|44|9",
+      "last": "2026-11-05T17:31:14.607Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
@@ -5069,7 +5080,7 @@
         "trophies": 46,
         "best": 2156,
         "league": "Archer League 9",
-        "warStars": 232,
+        "warStars": 235,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 55073,
@@ -5139,8 +5150,8 @@
         "cg": 15875,
         "don": 9386,
         "capLoot": 10205,
-        "gold": 363991059,
-        "elixir": 340789953,
+        "gold": 364105059,
+        "elixir": 340903953,
         "capContrib": 55073,
         "wins": 0
       }
@@ -5842,6 +5853,54 @@
       }
     },
     {
+      "name": "KuN",
+      "tag": "#YLLQL2VUP",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 54,
+      "profile": {
+        "level": 44,
+        "trophies": 54,
+        "best": 348,
+        "league": "Barbarian League 4",
+        "warStars": 41,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 44432,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10600,
+        "don": 180,
+        "capLoot": 24180,
+        "gold": 35304813,
+        "elixir": 34010044,
+        "capContrib": 44432,
+        "wins": 0
+      }
+    },
+    {
       "name": "Mimbosz",
       "tag": "#RY0QPVCCY",
       "role": "member",
@@ -5922,54 +5981,6 @@
         "gold": 93208775,
         "elixir": 100913794,
         "capContrib": 3150,
-        "wins": 0
-      }
-    },
-    {
-      "name": "KuN",
-      "tag": "#YLLQL2VUP",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 44,
-        "trophies": 0,
-        "best": 348,
-        "league": "Barbarian League 4",
-        "warStars": 41,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 44432,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10600,
-        "don": 180,
-        "capLoot": 24180,
-        "gold": 34302213,
-        "elixir": 33011166,
-        "capContrib": 44432,
         "wins": 0
       }
     },
