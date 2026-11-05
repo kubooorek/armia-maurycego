@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T20:16:03.649Z",
+  "updated": "2026-11-05T20:31:16.858Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -6624,7 +6624,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 5,
+            "level": 6,
             "max": 95
           }
         ]
@@ -7621,17 +7621,11 @@
         ]
       },
       "rush": {
-        "pct": 3.4,
+        "pct": 0,
         "troops": 0,
-        "spells": 14.3,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 0,
