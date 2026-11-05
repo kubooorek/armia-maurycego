@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T17:31:14.620Z",
+  "updated": "2026-11-05T17:46:07.784Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -23,20 +23,20 @@
         "played": 2
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 70,
+        "pct": 2360,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 70,
         "pct": 2086,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 69,
-        "pct": 2352,
         "wins": 1,
         "played": 2
       },
@@ -1533,11 +1533,11 @@
       }
     ]
   },
-  "visits": 73,
+  "visits": 74,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -3849,8 +3849,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|22204831|19731530|1500|175|24090|36124|0|21|39|8",
-      "last": "2026-11-05T11:46:00.494Z",
+      "sig": "0|24543938|22093975|1500|175|24090|36124|0|21|39|8",
+      "last": "2026-11-05T17:46:07.772Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -3879,8 +3879,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|22168589|21444169|0|0|0|400|0|14|32|8",
-      "last": "2026-11-05T13:45:59.848Z",
+      "sig": "0|23320164|22333162|0|0|0|400|0|14|32|8",
+      "last": "2026-11-05T17:46:07.772Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -6311,7 +6311,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
@@ -6327,8 +6327,8 @@
         "cg": 1500,
         "don": 175,
         "capLoot": 24090,
-        "gold": 22204831,
-        "elixir": 19731530,
+        "gold": 24543938,
+        "elixir": 22093975,
         "capContrib": 36124,
         "wins": 0
       }
@@ -6615,8 +6615,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 22168589,
-        "elixir": 21444169,
+        "gold": 23320164,
+        "elixir": 22333162,
         "capContrib": 400,
         "wins": 0
       }
