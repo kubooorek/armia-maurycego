@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T16:16:00.264Z",
+  "updated": "2026-11-05T16:31:10.710Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
@@ -59,20 +59,20 @@
         "played": 2
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 62,
+        "pct": 1789,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 57,
         "pct": 2055,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 56,
-        "pct": 1589,
         "wins": 1,
         "played": 2
       },
@@ -3828,8 +3828,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|59769372|60119770|2400|614|7665|22509|0|4|51|9",
-      "last": "2026-11-05T16:16:00.251Z",
+      "sig": "161|60682894|61231275|2400|614|7665|22509|0|4|51|9",
+      "last": "2026-11-05T16:31:10.698Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -3893,8 +3893,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "46|14346747|13962429|0|45|0|0|0|0|30|7",
-      "last": "2026-11-05T15:01:41.973Z",
+      "sig": "46|14788762|14513826|0|45|0|0|0|0|30|7",
+      "last": "2026-11-05T16:31:10.698Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -5024,7 +5024,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 51,
+            "level": 52,
             "max": 110
           },
           {
@@ -6380,8 +6380,8 @@
         "cg": 2400,
         "don": 614,
         "capLoot": 7665,
-        "gold": 59769372,
-        "elixir": 60119770,
+        "gold": 60682894,
+        "elixir": 61231275,
         "capContrib": 22509,
         "wins": 0
       }
@@ -7131,9 +7131,58 @@
         "cg": 0,
         "don": 45,
         "capLoot": 0,
-        "gold": 14346747,
-        "elixir": 13962429,
+        "gold": 14788762,
+        "elixir": 14513826,
         "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
+      "name": "krupnik",
+      "tag": "#R2UJV2VJR",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 15,
+      "trophies": 28,
+      "profile": {
+        "level": 24,
+        "trophies": 28,
+        "best": 28,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 3.4,
+        "troops": 0,
+        "spells": 14.3,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 4079516,
+        "elixir": 3796842,
+        "capContrib": 400,
         "wins": 0
       }
     },
@@ -7440,55 +7489,6 @@
         "capLoot": 0,
         "gold": 3842262,
         "elixir": 3875988,
-        "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
-      "name": "krupnik",
-      "tag": "#R2UJV2VJR",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 15,
-      "trophies": 0,
-      "profile": {
-        "level": 24,
-        "trophies": 0,
-        "best": 0,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 1,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 3.4,
-        "troops": 0,
-        "spells": 14.3,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 4079516,
-        "elixir": 3796842,
         "capContrib": 400,
         "wins": 0
       }
