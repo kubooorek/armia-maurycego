@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T21:45:58.441Z",
+  "updated": "2026-11-05T22:01:25.358Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 5,
     "groupSize": 8,
     "standings": [
       {
@@ -36,7 +36,7 @@
         "name": "kingslayers",
         "level": 5,
         "stars": 77,
-        "pct": 2625,
+        "pct": 2664,
         "wins": 1,
         "played": 3
       },
@@ -47,6 +47,15 @@
         "stars": 74,
         "pct": 1939,
         "wins": 2,
+        "played": 3
+      },
+      {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 72,
+        "pct": 2595,
+        "wins": 1,
         "played": 3
       },
       {
@@ -64,15 +73,6 @@
         "level": 12,
         "stars": 70,
         "pct": 2086,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 69,
-        "pct": 2495,
         "wins": 1,
         "played": 3
       },
@@ -1197,9 +1197,9 @@
         "end": "20261106T182424.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 10,
-          "pct": 27.93,
-          "attacks": 7,
+          "stars": 13,
+          "pct": 34.6,
+          "attacks": 8,
           "bases": [
             {
               "pos": 1,
@@ -1352,7 +1352,7 @@
             {
               "pos": 14,
               "th": 11,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 15,
@@ -1441,7 +1441,13 @@
             "tag": "#RPR0L809R",
             "pos": 9,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "14. AZZU"
+              }
+            ]
           },
           {
             "name": "tak",
@@ -1849,9 +1855,9 @@
         "wars": 4
       },
       {
-        "name": "tak",
+        "name": "Cwel123",
         "stars": 3,
-        "attacks": 4,
+        "attacks": 3,
         "wars": 4
       }
     ]
@@ -1860,7 +1866,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 6,
     "members": 12
   },
   "raids": [
@@ -2340,7 +2346,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 10,
+      "us": 13,
       "them": 9,
       "members": [
         {
@@ -2401,7 +2407,12 @@
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "tak",
@@ -4222,8 +4233,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|473257229|435112900|10100|244|27320|76825|0|29|77|11",
-      "last": "2026-11-05T12:15:57.595Z",
+      "sig": "0|496297802|456084351|10100|244|27320|76825|0|32|77|11",
+      "last": "2026-11-05T22:01:25.346Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -4372,8 +4383,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|22771223|22447452|0|22|0|100|0|0|31|9",
-      "last": "2026-11-05T21:45:58.428Z",
+      "sig": "25|26522623|25716561|0|22|0|100|0|0|31|9",
+      "last": "2026-11-05T22:01:25.346Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -4725,20 +4736,20 @@
           "cap": 0
         },
         {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "score": 81,
+          "stars": 8,
+          "don": 5,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "score": 70,
           "stars": 7,
           "don": 0,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "score": 61,
-          "stars": 6,
-          "don": 10,
           "cg": 0,
           "cap": 0
         }
@@ -5817,7 +5828,7 @@
         "trophies": 361,
         "best": 400,
         "league": "Archer League 7",
-        "warStars": 29,
+        "warStars": 32,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 76825,
@@ -5841,9 +5852,9 @@
         ]
       },
       "rush": {
-        "pct": 23.1,
+        "pct": 22.7,
         "troops": 15.2,
-        "spells": 18.8,
+        "spells": 16.7,
         "heroes": 33,
         "top": [
           {
@@ -5882,8 +5893,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 27320,
-        "gold": 473257229,
-        "elixir": 435112900,
+        "gold": 496297802,
+        "elixir": 456084351,
         "capContrib": 76825,
         "wins": 0
       }
@@ -6474,8 +6485,8 @@
         ]
       },
       "rush": {
-        "pct": 16.7,
-        "troops": 11.9,
+        "pct": 15.7,
+        "troops": 10.2,
         "spells": 0,
         "heroes": 36.7,
         "top": [
@@ -6490,11 +6501,6 @@
             "need": 10
           },
           {
-            "n": "Minion",
-            "lvl": 2,
-            "need": 4
-          },
-          {
             "n": "Walkiria",
             "lvl": 1,
             "need": 2
@@ -6503,6 +6509,11 @@
             "n": "Golem",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Minion",
+            "lvl": 3,
+            "need": 4
           },
           {
             "n": "Król Barbarzyńców",
@@ -7600,8 +7611,8 @@
         "cg": 0,
         "don": 22,
         "capLoot": 0,
-        "gold": 22771223,
-        "elixir": 22447452,
+        "gold": 26522623,
+        "elixir": 25716561,
         "capContrib": 100,
         "wins": 0
       }
