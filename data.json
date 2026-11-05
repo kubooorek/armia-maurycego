@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T19:16:00.006Z",
+  "updated": "2026-11-05T19:31:17.247Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 81,
-        "pct": 2195,
+        "stars": 84,
+        "pct": 2295,
         "wins": 2,
         "played": 3
       },
@@ -26,8 +26,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 78,
-        "pct": 2167,
+        "stars": 81,
+        "pct": 2267,
         "wins": 2,
         "played": 3
       },
@@ -1219,7 +1219,7 @@
             {
               "pos": 4,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 5,
@@ -1280,9 +1280,9 @@
         },
         "them": {
           "name": "united again",
-          "stars": 6,
-          "pct": 13.33,
-          "attacks": 2,
+          "stars": 9,
+          "pct": 20,
+          "attacks": 3,
           "bases": [
             {
               "pos": 1,
@@ -2328,7 +2328,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 9,
-      "them": 6,
+      "them": 9,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -6746,7 +6746,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
