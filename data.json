@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T06:01:24.382Z",
+  "updated": "2026-11-05T06:15:58.366Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,15 +10,15 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 68,
-        "pct": 2248,
+        "stars": 69,
+        "pct": 2303,
         "wins": 1,
         "played": 2
       },
@@ -59,20 +59,20 @@
         "played": 2
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 53,
+        "pct": 1489,
+        "wins": 1,
+        "played": 2
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 52,
         "pct": 1887,
-        "wins": 1,
-        "played": 2
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 51,
-        "pct": 1393,
         "wins": 1,
         "played": 2
       },
