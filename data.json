@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T03:15:59.940Z",
+  "updated": "2026-11-05T03:25:01.962Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -5030,12 +5030,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 39,
+            "level": 40,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 39,
+            "level": 40,
             "max": 110
           },
           {
@@ -5051,10 +5051,10 @@
         ]
       },
       "rush": {
-        "pct": 6.4,
+        "pct": 5.6,
         "troops": 4,
         "spells": 20.4,
-        "heroes": 2,
+        "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie klonowania",
