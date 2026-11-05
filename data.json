@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T18:55:29.992Z",
+  "updated": "2026-11-05T19:01:28.375Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -14,20 +14,20 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 81,
+        "pct": 2195,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
         "stars": 78,
         "pct": 2167,
-        "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 78,
-        "pct": 2095,
         "wins": 2,
         "played": 3
       },
@@ -1214,7 +1214,7 @@
             {
               "pos": 3,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -1280,9 +1280,9 @@
         },
         "them": {
           "name": "united again",
-          "stars": 3,
-          "pct": 6.67,
-          "attacks": 1,
+          "stars": 6,
+          "pct": 13.33,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -2328,7 +2328,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 9,
-      "them": 3,
+      "them": 6,
       "members": [
         {
           "name": "KUBOOOREK",
