@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T03:01:31.251Z",
+  "updated": "2026-11-05T03:15:59.940Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 56,
-        "pct": 1603,
+        "stars": 60,
+        "pct": 1802,
         "wins": 1,
         "played": 2
       },
@@ -44,8 +44,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 55,
-        "pct": 1639,
+        "stars": 58,
+        "pct": 1739,
         "wins": 1,
         "played": 2
       },
@@ -844,7 +844,7 @@
             {
               "pos": 2,
               "th": 15,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 3,
@@ -915,9 +915,9 @@
         },
         "them": {
           "name": "Freax",
-          "stars": 14,
-          "pct": 31,
-          "attacks": 5,
+          "stars": 17,
+          "pct": 37.67,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -1973,7 +1973,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 12,
-      "them": 14,
+      "them": 17,
       "members": [
         {
           "name": "KUBOOOREK",
