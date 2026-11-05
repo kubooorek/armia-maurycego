@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T14:32:10.962Z",
+  "updated": "2026-11-05T14:46:36.998Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 48,
-        "pct": 1777,
+        "stars": 51,
+        "pct": 1836,
         "wins": 0,
         "played": 2
       }
@@ -1525,7 +1525,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -3837,8 +3837,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|28539232|27416205|0|76|7410|8648|0|6|42|8",
-      "last": "2026-11-04T14:15:57.437Z",
+      "sig": "3|28539232|27416205|0|76|7410|8648|0|6|43|8",
+      "last": "2026-11-05T14:46:36.985Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -3882,8 +3882,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "20|14346747|13962429|0|20|0|0|0|0|30|7",
-      "last": "2026-11-05T14:18:24.051Z",
+      "sig": "46|14346747|13962429|0|40|0|0|0|0|30|7",
+      "last": "2026-11-05T14:46:36.985Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -3902,8 +3902,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|3673399|3384702|0|0|0|400|0|0|24|7",
-      "last": "2026-11-05T10:46:06.822Z",
+      "sig": "0|4079516|3796842|0|0|0|400|0|0|24|7",
+      "last": "2026-11-05T14:46:36.985Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -6438,7 +6438,7 @@
       "received": 60,
       "trophies": 223,
       "profile": {
-        "level": 42,
+        "level": 43,
         "trophies": 223,
         "best": 300,
         "league": "Skeleton League 2",
@@ -6455,7 +6455,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
@@ -6979,7 +6979,7 @@
       "role": "member",
       "th": 8,
       "given": 25,
-      "received": 80,
+      "received": 106,
       "trophies": 240,
       "profile": {
         "level": 30,
@@ -7057,7 +7057,7 @@
       "tag": "#RYUV9V9RC",
       "role": "member",
       "th": 7,
-      "given": 20,
+      "given": 46,
       "received": 0,
       "trophies": 80,
       "profile": {
@@ -7118,7 +7118,7 @@
       },
       "ach": {
         "cg": 0,
-        "don": 20,
+        "don": 40,
         "capLoot": 0,
         "gold": 14346747,
         "elixir": 13962429,
@@ -7445,7 +7445,7 @@
         "level": 24,
         "trophies": 0,
         "best": 0,
-        "league": "Unranked",
+        "league": "Skeleton League 1",
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
@@ -7460,14 +7460,14 @@
         ]
       },
       "rush": {
-        "pct": 6.9,
+        "pct": 3.4,
         "troops": 0,
-        "spells": 28.6,
+        "spells": 14.3,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie leczenia",
-            "lvl": 1,
+            "lvl": 2,
             "need": 3
           }
         ]
@@ -7476,8 +7476,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 3673399,
-        "elixir": 3384702,
+        "gold": 4079516,
+        "elixir": 3796842,
         "capContrib": 400,
         "wins": 0
       }
