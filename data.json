@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T18:31:23.464Z",
+  "updated": "2026-11-05T18:46:03.439Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,15 +10,15 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 8,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 75,
-        "pct": 2067,
+        "stars": 78,
+        "pct": 2167,
         "wins": 2,
         "played": 3
       },
@@ -68,20 +68,20 @@
         "played": 3
       },
       {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 68,
+        "pct": 2433,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
         "stars": 64,
         "pct": 1936,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 59,
-        "pct": 2076,
         "wins": 1,
         "played": 3
       }
@@ -1197,9 +1197,9 @@
         "end": "20261106T182424.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 9,
+          "pct": 23.8,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -1297,7 +1297,7 @@
             {
               "pos": 3,
               "th": 14,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -1332,7 +1332,7 @@
             {
               "pos": 10,
               "th": 12,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 11,
@@ -1342,7 +1342,7 @@
             {
               "pos": 12,
               "th": 12,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 13,
@@ -1357,7 +1357,7 @@
             {
               "pos": 15,
               "th": 10,
-              "best": 0
+              "best": 2
             }
           ]
         },
@@ -1367,7 +1367,13 @@
             "tag": "#VP9PLGLV",
             "pos": 1,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "3. mr strange"
+              }
+            ]
           },
           {
             "name": "Baku",
@@ -1381,7 +1387,13 @@
             "tag": "#GYUJR2URJ",
             "pos": 3,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 91,
+                "target": "10. KynethZ"
+              }
+            ]
           },
           {
             "name": "MAQOS",
@@ -1430,7 +1442,13 @@
             "tag": "#Y02PYY922",
             "pos": 10,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 36,
+                "target": "9. shivangi rajput"
+              }
+            ]
           },
           {
             "name": "Kojak",
@@ -1444,14 +1462,26 @@
             "tag": "#GU0R2J8R0",
             "pos": 12,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 47,
+                "target": "12. king Arthur"
+              }
+            ]
           },
           {
             "name": "Brann",
             "tag": "#LC8VRR9R2",
             "pos": 13,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 63,
+                "target": "12. king Arthur"
+              }
+            ]
           },
           {
             "name": "vvd",
@@ -1465,7 +1495,13 @@
             "tag": "#LQVRCRUYR",
             "pos": 19,
             "th": 8,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 67,
+                "target": "15. sussy baka"
+              }
+            ]
           }
         ]
       },
@@ -1754,8 +1790,8 @@
     "top": [
       {
         "name": "KUBOOOREK",
-        "stars": 9,
-        "attacks": 3,
+        "stars": 12,
+        "attacks": 4,
         "wars": 4
       },
       {
@@ -1765,15 +1801,21 @@
         "wars": 4
       },
       {
+        "name": "Albaroon.2",
+        "stars": 7,
+        "attacks": 4,
+        "wars": 4
+      },
+      {
         "name": "VipeR",
         "stars": 6,
         "attacks": 3,
         "wars": 4
       },
       {
-        "name": "Albaroon.2",
-        "stars": 5,
-        "attacks": 3,
+        "name": "Brann",
+        "stars": 6,
+        "attacks": 4,
         "wars": 4
       },
       {
@@ -1789,9 +1831,9 @@
         "wars": 4
       },
       {
-        "name": "Brann",
+        "name": "Barnes",
         "stars": 4,
-        "attacks": 3,
+        "attacks": 4,
         "wars": 4
       },
       {
@@ -1803,13 +1845,7 @@
       {
         "name": "tak",
         "stars": 3,
-        "attacks": 3,
-        "wars": 4
-      },
-      {
-        "name": "Belaska",
-        "stars": 2,
-        "attacks": 3,
+        "attacks": 4,
         "wars": 4
       }
     ]
@@ -1818,7 +1854,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -2291,13 +2327,18 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 0,
+      "us": 9,
       "them": 0,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Baku",
@@ -2307,7 +2348,12 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 91
+            }
+          ]
         },
         {
           "name": "MAQOS",
@@ -2342,7 +2388,12 @@
         {
           "name": "tak",
           "tag": "#Y02PYY922",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 36
+            }
+          ]
         },
         {
           "name": "Kojak",
@@ -2352,12 +2403,22 @@
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 47
+            }
+          ]
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 63
+            }
+          ]
         },
         {
           "name": "vvd",
@@ -2367,7 +2428,12 @@
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 67
+            }
+          ]
         }
       ]
     },
@@ -4093,18 +4159,18 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "533|2000000000|2000000000|94700|81616|1208549|1610015|0|1253|205|15",
-      "last": "2026-11-05T18:16:02.025Z",
+      "sig": "553|2000000000|2000000000|94700|81636|1208549|1610015|0|1256|205|15",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "576|468539765|484735282|42500|93341|246500|453697|0|1216|152|15",
-      "last": "2026-11-05T12:46:03.308Z",
+      "sig": "607|468539765|484735282|42500|93371|246500|453697|0|1216|152|15",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "151|578527145|601496375|38350|7659|531795|666478|0|95|109|12",
-      "last": "2026-11-04T20:01:24.953Z",
+      "sig": "185|578645145|601543778|38350|7693|531795|666478|0|97|109|12",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -4128,13 +4194,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
-      "sig": "0|831306884|890635141|118755|72883|212590|452225|0|3163|134|9",
-      "last": "2026-11-04T19:01:28.773Z",
+      "sig": "0|831346095|890682741|118755|72883|212590|452225|0|3163|134|9",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "0|465519602|511694052|53920|23588|84375|216205|0|2058|102|9",
-      "last": "2026-11-04T21:01:24.524Z",
+      "sig": "0|465586916|511784166|53920|23588|84375|216205|0|2060|102|9",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -4153,8 +4219,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "20|118829056|118425770|16800|534|21725|45188|0|68|57|9",
-      "last": "2026-11-05T15:46:04.068Z",
+      "sig": "20|118851856|118455949|16800|534|21725|45188|0|68|57|9",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -4248,8 +4314,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|23320164|22333162|0|0|0|400|0|14|32|8",
-      "last": "2026-11-05T17:46:07.772Z",
+      "sig": "0|24650707|24031450|0|0|0|400|0|14|32|8",
+      "last": "2026-11-05T18:46:03.428Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -4616,9 +4682,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 141,
+          "score": 144,
           "stars": 9,
-          "don": 508,
+          "don": 538,
           "cg": 0,
           "cap": 0
         },
@@ -4632,20 +4698,20 @@
           "cap": 3935
         },
         {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "score": 88,
+          "stars": 7,
+          "don": 184,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "score": 70,
           "stars": 7,
           "don": 0,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "score": 65,
-          "stars": 5,
-          "don": 150,
           "cg": 0,
           "cap": 0
         },
@@ -4985,7 +5051,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 533,
+      "given": 553,
       "received": 151,
       "trophies": 507,
       "profile": {
@@ -4993,7 +5059,7 @@
         "trophies": 507,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
-        "warStars": 1253,
+        "warStars": 1256,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 1610015,
@@ -5040,7 +5106,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81616,
+        "don": 81636,
         "capLoot": 1208549,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -5053,7 +5119,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 576,
+      "given": 607,
       "received": 106,
       "trophies": 0,
       "profile": {
@@ -5134,7 +5200,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 93341,
+        "don": 93371,
         "capLoot": 246500,
         "gold": 468539765,
         "elixir": 484735282,
@@ -5147,7 +5213,7 @@
       "tag": "#GYUJR2URJ",
       "role": "coLeader",
       "th": 12,
-      "given": 151,
+      "given": 185,
       "received": 216,
       "trophies": 204,
       "profile": {
@@ -5155,7 +5221,7 @@
         "trophies": 204,
         "best": 2839,
         "league": "Valkyrie League 14",
-        "warStars": 95,
+        "warStars": 97,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 666478,
@@ -5192,10 +5258,10 @@
       },
       "ach": {
         "cg": 38350,
-        "don": 7659,
+        "don": 7693,
         "capLoot": 531795,
-        "gold": 578527145,
-        "elixir": 601496375,
+        "gold": 578645145,
+        "elixir": 601543778,
         "capContrib": 666478,
         "wins": 0
       }
@@ -5620,7 +5686,7 @@
       "role": "coLeader",
       "th": 9,
       "given": 0,
-      "received": 123,
+      "received": 154,
       "trophies": 0,
       "profile": {
         "level": 134,
@@ -5661,8 +5727,8 @@
         "cg": 118755,
         "don": 72883,
         "capLoot": 212590,
-        "gold": 831306884,
-        "elixir": 890635141,
+        "gold": 831346095,
+        "elixir": 890682741,
         "capContrib": 452225,
         "wins": 0
       }
@@ -5673,14 +5739,14 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 93,
+      "received": 123,
       "trophies": 0,
       "profile": {
         "level": 102,
         "trophies": 0,
         "best": 2730,
         "league": "Archer League 8",
-        "warStars": 2058,
+        "warStars": 2060,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 216205,
@@ -5714,8 +5780,8 @@
         "cg": 53920,
         "don": 23588,
         "capLoot": 84375,
-        "gold": 465519602,
-        "elixir": 511694052,
+        "gold": 465586916,
+        "elixir": 511784166,
         "capContrib": 216205,
         "wins": 0
       }
@@ -5851,8 +5917,8 @@
         "cg": 16800,
         "don": 534,
         "capLoot": 21725,
-        "gold": 118829056,
-        "elixir": 118425770,
+        "gold": 118851856,
+        "elixir": 118455949,
         "capContrib": 45188,
         "wins": 0
       }
@@ -6120,7 +6186,7 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 79,
+      "received": 103,
       "trophies": 0,
       "profile": {
         "level": 87,
@@ -6984,8 +7050,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 23320164,
-        "elixir": 22333162,
+        "gold": 24650707,
+        "elixir": 24031450,
         "capContrib": 400,
         "wins": 0
       }
