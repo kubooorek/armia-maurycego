@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:01:26.383Z",
+  "updated": "2026-11-05T23:31:08.241Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 5,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -41,6 +41,15 @@
         "played": 3
       },
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 75,
+        "pct": 1872,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
@@ -56,15 +65,6 @@
         "stars": 72,
         "pct": 2595,
         "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 72,
-        "pct": 1772,
-        "wins": 2,
         "played": 3
       },
       {
@@ -4368,8 +4368,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "46|15755161|15124343|0|45|0|0|0|0|31|7",
-      "last": "2026-11-05T21:01:36.493Z",
+      "sig": "46|16762110|16236161|0|45|0|0|0|0|31|7",
+      "last": "2026-11-05T23:31:08.228Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYGL9UUR2": {
@@ -7497,16 +7497,11 @@
         ]
       },
       "rush": {
-        "pct": 34.3,
+        "pct": 31.4,
         "troops": 20,
-        "spells": 70,
+        "spells": 60,
         "heroes": 0,
         "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
-            "need": 4
-          },
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
@@ -7516,6 +7511,11 @@
             "n": "Zaklęcie szału",
             "lvl": 1,
             "need": 3
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 2,
+            "need": 4
           },
           {
             "n": "Barbarzyńca",
@@ -7538,8 +7538,8 @@
         "cg": 0,
         "don": 45,
         "capLoot": 0,
-        "gold": 15755161,
-        "elixir": 15124343,
+        "gold": 16762110,
+        "elixir": 16236161,
         "capContrib": 0,
         "wins": 0
       }
