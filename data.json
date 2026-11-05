@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T22:31:11.374Z",
+  "updated": "2026-11-05T22:46:02.478Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -1866,7 +1866,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -5930,7 +5930,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 9,
+            "level": 10,
             "max": 95
           }
         ]
