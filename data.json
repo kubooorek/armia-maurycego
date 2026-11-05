@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T21:01:36.501Z",
+  "updated": "2026-11-05T21:16:00.180Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 75,
-        "pct": 2543,
+        "stars": 77,
+        "pct": 2625,
         "wins": 1,
         "played": 3
       },
@@ -2029,6 +2029,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-05T21:15:59.338Z",
+      "type": "th",
+      "name": "TwojaSiora",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-05T10:01:22.307Z",
       "type": "th",
@@ -4365,8 +4372,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "25|21133953|20413464|0|22|0|100|0|0|30|8",
-      "last": "2026-11-05T18:31:23.451Z",
+      "sig": "25|21133953|20413464|0|22|0|100|0|0|30|9",
+      "last": "2026-11-05T21:16:00.167Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -5462,10 +5469,10 @@
       "th": 12,
       "given": 11,
       "received": 0,
-      "trophies": 374,
+      "trophies": 402,
       "profile": {
         "level": 122,
-        "trophies": 374,
+        "trophies": 402,
         "best": 2224,
         "league": "Archer League 9",
         "warStars": 121,
@@ -7200,8 +7207,8 @@
         ]
       },
       "rush": {
-        "pct": 31.4,
-        "troops": 21.2,
+        "pct": 31.1,
+        "troops": 20.8,
         "spells": 30,
         "heroes": 50,
         "top": [
@@ -7524,7 +7531,7 @@
       "name": "TwojaSiora",
       "tag": "#GQR98J880",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 25,
       "received": 106,
       "trophies": 240,
@@ -7552,40 +7559,40 @@
         ]
       },
       "rush": {
-        "pct": 30,
-        "troops": 13.9,
-        "spells": 50,
-        "heroes": 60,
+        "pct": 51,
+        "troops": 28.6,
+        "spells": 63.2,
+        "heroes": 80,
         "top": [
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
-            "need": 4
+            "need": 5
           },
           {
             "n": "Zaklęcie szału",
             "lvl": 1,
-            "need": 4
+            "need": 5
           },
           {
             "n": "Król Barbarzyńców",
             "lvl": 4,
+            "need": 20
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 2,
             "need": 10
-          },
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Smok",
-            "lvl": 1,
-            "need": 2
           },
           {
             "n": "Minion",
             "lvl": 1,
-            "need": 2
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
           }
         ]
       },
