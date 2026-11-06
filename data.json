@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T04:31:17.970Z",
+  "updated": "2026-11-06T05:01:33.842Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 84,
-        "pct": 2295,
+        "stars": 87,
+        "pct": 2395,
         "wins": 2,
         "played": 3
       },
@@ -1224,7 +1224,7 @@
             {
               "pos": 5,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 6,
@@ -1280,9 +1280,9 @@
         },
         "them": {
           "name": "united again",
-          "stars": 9,
-          "pct": 20,
-          "attacks": 3,
+          "stars": 12,
+          "pct": 26.67,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -2347,7 +2347,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 13,
-      "them": 9,
+      "them": 12,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -4301,8 +4301,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|84131521|71051930|3000|27|0|0|0|0|41|9",
-      "last": "2026-11-05T20:45:58.410Z",
+      "sig": "1|84683394|71541434|3000|27|0|0|0|0|41|9",
+      "last": "2026-11-06T05:01:33.830Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -6619,8 +6619,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 84131521,
-        "elixir": 71051930,
+        "gold": 84683394,
+        "elixir": 71541434,
         "capContrib": 0,
         "wins": 0
       }
@@ -6832,12 +6832,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 10,
+            "level": 11,
             "max": 110
           },
           {
@@ -6848,20 +6848,15 @@
         ]
       },
       "rush": {
-        "pct": 1.9,
+        "pct": 0.9,
         "troops": 0,
         "spells": 4.8,
-        "heroes": 3.3,
+        "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie skoku",
             "lvl": 1,
             "need": 2
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 19,
-            "need": 20
           }
         ]
       },
@@ -7397,17 +7392,11 @@
         ]
       },
       "rush": {
-        "pct": 1.6,
-        "troops": 2.6,
+        "pct": 0,
+        "troops": 0,
         "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Barbarzyńca",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 0,
