@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T14:55:53.591Z",
+  "updated": "2026-11-06T15:01:28.902Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -7277,7 +7277,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 9,
             "max": 110
           },
           {
@@ -7288,10 +7288,10 @@
         ]
       },
       "rush": {
-        "pct": 15.3,
+        "pct": 13.6,
         "troops": 16.7,
         "spells": 7.7,
-        "heroes": 20,
+        "heroes": 10,
         "top": [
           {
             "n": "Uzdrowicielka",
