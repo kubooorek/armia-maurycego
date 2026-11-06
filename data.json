@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T03:45:59.125Z",
+  "updated": "2026-11-06T04:01:24.546Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -23,6 +23,15 @@
         "played": 3
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 83,
+        "pct": 2239,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
@@ -38,15 +47,6 @@
         "stars": 80,
         "pct": 2763,
         "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 80,
-        "pct": 2139,
-        "wins": 2,
         "played": 3
       },
       {
