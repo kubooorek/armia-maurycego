@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T22:31:10.430Z",
+  "updated": "2026-11-06T22:46:01.076Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2251,10 +2251,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 52227,
+      "loot": 58414,
       "raids": 4,
-      "attacks": 48,
-      "districts": 12,
+      "attacks": 53,
+      "districts": 14,
       "medals": 0,
       "members": [
         {
@@ -2291,6 +2291,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7277
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 6187
         },
         {
           "name": "erykos",
@@ -4740,8 +4747,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|207304192|199401825|2900|20|23720|36648|0|51|84|11",
-      "last": "2026-11-06T19:01:34.553Z",
+      "sig": "0|207304192|199401825|2900|20|23720|36648|0|51|85|11",
+      "last": "2026-11-06T22:46:01.063Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4775,8 +4782,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|102254633|85767426|5100|336|0|20770|0|12|54|9",
-      "last": "2026-11-06T19:01:34.553Z",
+      "sig": "31|102254633|85767426|5100|336|5890|20770|0|12|54|9",
+      "last": "2026-11-06T22:46:01.063Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -6482,7 +6489,7 @@
       "received": 0,
       "trophies": 253,
       "profile": {
-        "level": 84,
+        "level": 85,
         "trophies": 253,
         "best": 348,
         "league": "Barbarian League 6",
@@ -7090,16 +7097,11 @@
         ]
       },
       "rush": {
-        "pct": 10.2,
-        "troops": 5.1,
+        "pct": 9.3,
+        "troops": 3.4,
         "spells": 0,
         "heroes": 26.7,
         "top": [
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
-            "need": 4
-          },
           {
             "n": "Walkiria",
             "lvl": 1,
@@ -7111,6 +7113,11 @@
             "need": 10
           },
           {
+            "n": "Wieprzowy jeździec",
+            "lvl": 3,
+            "need": 4
+          },
+          {
             "n": "Król Barbarzyńców",
             "lvl": 17,
             "need": 20
@@ -7120,7 +7127,7 @@
       "ach": {
         "cg": 5100,
         "don": 336,
-        "capLoot": 0,
+        "capLoot": 5890,
         "gold": 102254633,
         "elixir": 85767426,
         "capContrib": 20770,
