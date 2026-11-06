@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T06:01:33.610Z",
+  "updated": "2026-11-06T06:16:01.194Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -6171,15 +6171,20 @@
         ]
       },
       "rush": {
-        "pct": 36.1,
+        "pct": 36.4,
         "troops": 28.6,
-        "spells": 47.8,
+        "spells": 49,
         "heroes": 38,
         "top": [
           {
             "n": "Książę Minionów",
             "lvl": 2,
             "need": 20
+          },
+          {
+            "n": "Zaklęcie nietoperzy",
+            "lvl": 1,
+            "need": 3
           },
           {
             "n": "Walkiria",
@@ -6200,11 +6205,6 @@
             "n": "Zaklęcie zamrożenia",
             "lvl": 2,
             "need": 5
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 3,
-            "need": 7
           }
         ]
       },
