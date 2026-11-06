@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T10:16:00.958Z",
+  "updated": "2026-11-06T10:31:15.768Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -68,20 +68,20 @@
         "played": 3
       },
       {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 73,
+        "pct": 2307,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 72,
         "pct": 2174,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 71,
-        "pct": 2226,
         "wins": 1,
         "played": 3
       }
@@ -4243,8 +4243,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "189|266865204|266576401|14450|334|57300|109436|0|62|102|12",
-      "last": "2026-11-06T10:16:00.945Z",
+      "sig": "189|267960053|268010445|14450|334|57300|109886|0|62|103|12",
+      "last": "2026-11-06T10:31:15.760Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -4273,8 +4273,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|499429835|458937702|10100|244|27320|76825|0|32|78|11",
-      "last": "2026-11-06T09:16:19.688Z",
+      "sig": "0|499429835|458937702|10100|244|27320|78375|0|32|78|11",
+      "last": "2026-11-06T10:31:15.760Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -5457,14 +5457,14 @@
       "received": 40,
       "trophies": 293,
       "profile": {
-        "level": 102,
+        "level": 103,
         "trophies": 293,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 62,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 109436,
+        "capital": 109886,
         "warPref": "in",
         "heroes": [
           {
@@ -5531,9 +5531,9 @@
         "cg": 14450,
         "don": 334,
         "capLoot": 57300,
-        "gold": 266865204,
-        "elixir": 266576401,
-        "capContrib": 109436,
+        "gold": 267960053,
+        "elixir": 268010445,
+        "capContrib": 109886,
         "wins": 0
       }
     },
@@ -5895,7 +5895,7 @@
         "warStars": 32,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 76825,
+        "capital": 78375,
         "warPref": "in",
         "heroes": [
           {
@@ -5959,7 +5959,7 @@
         "capLoot": 27320,
         "gold": 499429835,
         "elixir": 458937702,
-        "capContrib": 76825,
+        "capContrib": 78375,
         "wins": 0
       }
     },
