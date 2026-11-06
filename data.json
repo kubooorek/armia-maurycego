@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T17:15:56.695Z",
+  "updated": "2026-11-06T17:31:25.424Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -23,6 +23,15 @@
         "played": 3
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 95,
+        "pct": 2838,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
@@ -41,12 +50,12 @@
         "played": 3
       },
       {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 92,
-        "pct": 2738,
-        "wins": 2,
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 87,
+        "pct": 2674,
+        "wins": 1,
         "played": 3
       },
       {
@@ -56,15 +65,6 @@
         "stars": 86,
         "pct": 2232,
         "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 81,
-        "pct": 2474,
-        "wins": 1,
         "played": 3
       },
       {
@@ -1890,7 +1890,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -1898,10 +1898,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 14310,
+      "loot": 18511,
       "raids": 1,
-      "attacks": 11,
-      "districts": 3,
+      "attacks": 15,
+      "districts": 4,
       "medals": 0,
       "members": [
         {
@@ -1914,9 +1914,16 @@
         {
           "name": "SHA☆ZAM!",
           "tag": "#GVGRVCQJR",
-          "attacks": 5,
+          "attacks": 6,
           "limit": 6,
-          "loot": 6382
+          "loot": 7277
+        },
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": 3,
+          "limit": 6,
+          "loot": 3306
         }
       ]
     },
@@ -4135,8 +4142,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "585|2000000000|2000000000|94700|81636|1208549|1610015|0|1256|205|15",
-      "last": "2026-11-06T17:01:32.701Z",
+      "sig": "585|2000000000|2000000000|94700|81636|1211549|1610015|0|1256|205|15",
+      "last": "2026-11-06T17:31:25.413Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -4160,8 +4167,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "11|382753173|394799739|12900|642|283555|401040|0|124|123|12",
-      "last": "2026-11-06T17:15:56.683Z",
+      "sig": "12|382753173|394799739|12900|642|283555|401040|0|124|123|12",
+      "last": "2026-11-06T17:31:25.413Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -4250,8 +4257,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|62695984|62771073|2400|614|13870|22509|0|4|54|9",
-      "last": "2026-11-06T17:15:56.683Z",
+      "sig": "161|62695984|62771073|2400|614|14765|22509|0|4|54|9",
+      "last": "2026-11-06T17:31:25.413Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4290,8 +4297,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|26366401|25774170|0|0|0|400|0|14|32|8",
-      "last": "2026-11-06T17:15:56.683Z",
+      "sig": "0|26980293|26175833|0|0|0|400|0|14|32|8",
+      "last": "2026-11-06T17:31:25.413Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -5052,7 +5059,7 @@
       "role": "coLeader",
       "th": 15,
       "given": 585,
-      "received": 151,
+      "received": 152,
       "trophies": 550,
       "profile": {
         "level": 205,
@@ -5107,7 +5114,7 @@
       "ach": {
         "cg": 94700,
         "don": 81636,
-        "capLoot": 1208549,
+        "capLoot": 1211549,
         "gold": 2000000000,
         "elixir": 2000000000,
         "capContrib": 1610015,
@@ -5449,7 +5456,7 @@
       "tag": "#LJYR92002",
       "role": "member",
       "th": 12,
-      "given": 11,
+      "given": 12,
       "received": 0,
       "trophies": 402,
       "profile": {
@@ -6899,7 +6906,7 @@
       "ach": {
         "cg": 2400,
         "don": 614,
-        "capLoot": 13870,
+        "capLoot": 14765,
         "gold": 62695984,
         "elixir": 62771073,
         "capContrib": 22509,
@@ -7225,8 +7232,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 26366401,
-        "elixir": 25774170,
+        "gold": 26980293,
+        "elixir": 26175833,
         "capContrib": 400,
         "wins": 0
       }
