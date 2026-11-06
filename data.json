@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T21:31:14.448Z",
+  "updated": "2026-11-06T22:01:35.372Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2251,12 +2251,19 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 32681,
-      "raids": 2,
-      "attacks": 30,
-      "districts": 8,
+      "loot": 42621,
+      "raids": 3,
+      "attacks": 37,
+      "districts": 10,
       "medals": 0,
       "members": [
+        {
+          "name": "KuN",
+          "tag": "#YLLQL2VUP",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8450
+        },
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
@@ -2279,6 +2286,13 @@
           "loot": 7277
         },
         {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": 3,
+          "limit": 6,
+          "loot": 4075
+        },
+        {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
           "attacks": 4,
@@ -2291,13 +2305,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 2734
-        },
-        {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "attacks": 2,
-          "limit": 6,
-          "loot": 2585
         }
       ]
     },
@@ -4739,8 +4746,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "0|35304813|34010044|10600|180|24180|44432|0|41|45|9",
-      "last": "2026-11-06T13:45:54.883Z",
+      "sig": "0|35304813|34010044|10600|180|32075|53482|0|41|45|9",
+      "last": "2026-11-06T22:01:35.359Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
@@ -4859,8 +4866,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "45|27562793|26445364|0|42|0|100|0|0|32|9",
-      "last": "2026-11-06T12:31:14.270Z",
+      "sig": "45|30155723|28755918|0|42|0|100|0|0|32|9",
+      "last": "2026-11-06T22:01:35.359Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -6927,10 +6934,10 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 200,
+      "trophies": 213,
       "profile": {
         "level": 57,
-        "trophies": 200,
+        "trophies": 213,
         "best": 787,
         "league": "Barbarian League 4",
         "warStars": 14,
@@ -6995,7 +7002,7 @@
         "warStars": 41,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 44432,
+        "capital": 53482,
         "warPref": "in",
         "heroes": [
           {
@@ -7007,6 +7014,11 @@
             "name": "Archer Queen",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
@@ -7020,10 +7032,10 @@
       "ach": {
         "cg": 10600,
         "don": 180,
-        "capLoot": 24180,
+        "capLoot": 32075,
         "gold": 35304813,
         "elixir": 34010044,
-        "capContrib": 44432,
+        "capContrib": 53482,
         "wins": 0
       }
     },
@@ -8054,20 +8066,15 @@
         ]
       },
       "rush": {
-        "pct": 28.6,
+        "pct": 25.7,
         "troops": 20,
-        "spells": 50,
+        "spells": 40,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
             "need": 3
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 2,
-            "need": 4
           },
           {
             "n": "Barbarzyńca",
@@ -8086,6 +8093,11 @@
           },
           {
             "n": "Gigant",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Burzyciel",
             "lvl": 2,
             "need": 3
           }
@@ -8174,8 +8186,8 @@
         "cg": 0,
         "don": 42,
         "capLoot": 0,
-        "gold": 27562793,
-        "elixir": 26445364,
+        "gold": 30155723,
+        "elixir": 28755918,
         "capContrib": 100,
         "wins": 0
       }
@@ -8201,7 +8213,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
