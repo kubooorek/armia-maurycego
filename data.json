@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T04:01:24.546Z",
+  "updated": "2026-11-06T04:31:17.970Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -4336,8 +4336,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|29397637|27741502|5600|0|0|6070|0|0|41|8",
-      "last": "2026-11-05T18:16:02.025Z",
+      "sig": "0|29397637|27741502|5600|0|0|6070|0|0|42|8",
+      "last": "2026-11-06T04:31:17.957Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -6884,7 +6884,7 @@
       "received": 0,
       "trophies": 236,
       "profile": {
-        "level": 41,
+        "level": 42,
         "trophies": 236,
         "best": 257,
         "league": "Skeleton League 2",
@@ -6901,7 +6901,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
@@ -7227,8 +7227,8 @@
         ]
       },
       "rush": {
-        "pct": 31.1,
-        "troops": 20.8,
+        "pct": 29.1,
+        "troops": 17,
         "spells": 30,
         "heroes": 50,
         "top": [
@@ -7248,11 +7248,6 @@
             "need": 4
           },
           {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
-            "need": 4
-          },
-          {
             "n": "Zaklęcie trucizny",
             "lvl": 1,
             "need": 2
@@ -7261,6 +7256,11 @@
             "n": "Król Barbarzyńców",
             "lvl": 10,
             "need": 20
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 5,
+            "need": 10
           }
         ]
       },
