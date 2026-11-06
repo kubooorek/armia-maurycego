@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T22:46:01.076Z",
+  "updated": "2026-11-06T23:01:26.612Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2251,9 +2251,9 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 58414,
+      "loot": 60334,
       "raids": 4,
-      "attacks": 53,
+      "attacks": 54,
       "districts": 14,
       "medals": 0,
       "members": [
@@ -2279,6 +2279,13 @@
           "loot": 8223
         },
         {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8107
+        },
+        {
           "name": "MAQOS",
           "tag": "#LJYR92002",
           "attacks": 6,
@@ -2291,13 +2298,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7277
-        },
-        {
-          "name": "vvd",
-          "tag": "#GQULCR98R",
-          "attacks": 5,
-          "limit": 6,
-          "loot": 6187
         },
         {
           "name": "erykos",
@@ -4782,8 +4782,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|102254633|85767426|5100|336|5890|20770|0|12|54|9",
-      "last": "2026-11-06T22:46:01.063Z",
+      "sig": "31|102885089|86208027|5100|336|7810|20770|0|12|54|9",
+      "last": "2026-11-06T23:01:26.600Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -5273,89 +5273,89 @@
     }
   },
   "dayBase": {
-    "day": "2026-11-06",
-    "since": "2026-11-05T23:01:26.369Z",
+    "day": "2026-11-07",
+    "since": "2026-11-06T23:01:26.600Z",
     "players": {
       "#VP9PLGLV": {
-        "warStars": 1256,
-        "don": 81636,
+        "warStars": 1257,
+        "don": 81709,
         "cg": 94700,
-        "capLoot": 1208549
+        "capLoot": 1216349
       },
       "#LUGR0YQY0": {
-        "warStars": 1216,
-        "don": 93371,
+        "warStars": 1222,
+        "don": 93566,
         "cg": 42500,
         "capLoot": 246500
       },
       "#GYUJR2URJ": {
-        "warStars": 97,
-        "don": 7723,
+        "warStars": 98,
+        "don": 7733,
         "cg": 38350,
-        "capLoot": 531795
+        "capLoot": 539850
       },
       "#GJJ90QGVQ": {
         "warStars": 11,
         "don": 1434,
         "cg": 15400,
-        "capLoot": 24800
+        "capLoot": 28680
       },
       "#Q9CU9P908": {
-        "warStars": 62,
-        "don": 322,
+        "warStars": 65,
+        "don": 346,
         "cg": 14450,
         "capLoot": 57300
       },
       "#LJYR92002": {
-        "warStars": 121,
+        "warStars": 124,
         "don": 642,
         "cg": 12900,
-        "capLoot": 275915
+        "capLoot": 283555
       },
       "#22R8PLCU8": {
-        "warStars": 235,
-        "don": 9387,
+        "warStars": 238,
+        "don": 9447,
         "cg": 15875,
         "capLoot": 10205
       },
       "#8UCPRGC8": {
         "warStars": 508,
-        "don": 50927,
+        "don": 50945,
         "cg": 13725,
         "capLoot": 64385
       },
       "#Y02PYY922": {
-        "warStars": 3163,
+        "warStars": 3166,
         "don": 72883,
         "cg": 118755,
         "capLoot": 212590
       },
       "#LC8VRR9R2": {
-        "warStars": 2060,
+        "warStars": 2062,
         "don": 23588,
         "cg": 53920,
         "capLoot": 84375
       },
       "#RPR0L809R": {
-        "warStars": 32,
+        "warStars": 35,
         "don": 244,
         "cg": 10100,
         "capLoot": 27320
       },
       "#GU0R2J8R0": {
-        "warStars": 68,
+        "warStars": 71,
         "don": 534,
         "cg": 16800,
         "capLoot": 21725
       },
       "#QYJUV90JY": {
-        "warStars": 47,
+        "warStars": 51,
         "don": 20,
         "cg": 2900,
-        "capLoot": 21235
+        "capLoot": 23720
       },
       "#G8VGC2VRL": {
-        "warStars": 32,
+        "warStars": 33,
         "don": 634,
         "cg": 7600,
         "capLoot": 9310
@@ -5367,10 +5367,22 @@
         "capLoot": 0
       },
       "#LQVRCRUYR": {
-        "warStars": 2455,
+        "warStars": 2458,
         "don": 11803,
         "cg": 59470,
         "capLoot": 136585
+      },
+      "#R0V8QGLJQ": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0
+      },
+      "#RY0QPVCCY": {
+        "warStars": 35,
+        "don": 29,
+        "cg": 1900,
+        "capLoot": 0
       },
       "#QGPC2228Q": {
         "warStars": 14,
@@ -5382,19 +5394,13 @@
         "warStars": 41,
         "don": 180,
         "cg": 10600,
-        "capLoot": 24180
-      },
-      "#RY0QPVCCY": {
-        "warStars": 35,
-        "don": 29,
-        "cg": 1900,
-        "capLoot": 0
+        "capLoot": 32075
       },
       "#GQULCR98R": {
         "warStars": 12,
         "don": 336,
         "cg": 5100,
-        "capLoot": 0
+        "capLoot": 7810
       },
       "#R8V9U9VLJ": {
         "warStars": 0,
@@ -5424,7 +5430,7 @@
         "warStars": 4,
         "don": 614,
         "cg": 2400,
-        "capLoot": 7665
+        "capLoot": 14765
       },
       "#GVG02VV98": {
         "warStars": 0,
@@ -5436,7 +5442,7 @@
         "warStars": 6,
         "don": 76,
         "cg": 0,
-        "capLoot": 7410
+        "capLoot": 12040
       },
       "#RYLR2C92V": {
         "warStars": 7,
@@ -5448,7 +5454,7 @@
         "warStars": 0,
         "don": 160,
         "cg": 0,
-        "capLoot": 11195
+        "capLoot": 11735
       },
       "#R8RVQVPCC": {
         "warStars": 15,
@@ -5500,7 +5506,7 @@
       },
       "#GQR98J880": {
         "warStars": 0,
-        "don": 22,
+        "don": 42,
         "cg": 0,
         "capLoot": 0
       },
@@ -5545,31 +5551,31 @@
         "don": 0,
         "cg": 0,
         "capLoot": 0
-      },
-      "#R0V8QGLJQ": {
-        "warStars": 0,
-        "don": 0,
-        "cg": 0,
-        "capLoot": 0
       }
     }
   },
   "potd": {
-    "day": "2026-11-05",
-    "picked": "2026-11-05T23:01:26.369Z",
-    "name": "Cwel123",
-    "tag": "#RPR0L809R",
-    "th": 11,
+    "day": "2026-11-06",
+    "picked": "2026-11-06T23:01:26.600Z",
+    "name": "Baku",
+    "tag": "#LUGR0YQY0",
+    "th": 15,
     "role": "member",
-    "score": 30,
-    "stars": 3,
-    "don": 0,
+    "score": 80,
+    "stars": 6,
+    "don": 195,
     "cg": 0,
     "cap": 0,
-    "att": 0,
-    "three": 0
+    "att": 1,
+    "three": 1
   },
   "potdHistory": [
+    {
+      "day": "2026-11-06",
+      "name": "Baku",
+      "tag": "#LUGR0YQY0",
+      "score": 80
+    },
     {
       "day": "2026-11-05",
       "name": "Cwel123",
@@ -7127,9 +7133,9 @@
       "ach": {
         "cg": 5100,
         "don": 336,
-        "capLoot": 5890,
-        "gold": 102254633,
-        "elixir": 85767426,
+        "capLoot": 7810,
+        "gold": 102885089,
+        "elixir": 86208027,
         "capContrib": 20770,
         "wins": 0
       }
@@ -7687,7 +7693,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
