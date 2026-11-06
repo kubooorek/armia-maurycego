@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T15:45:57.458Z",
+  "updated": "2026-11-06T16:01:41.810Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1878,7 +1878,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -5897,10 +5897,10 @@
       "th": 11,
       "given": 0,
       "received": 66,
-      "trophies": 361,
+      "trophies": 390,
       "profile": {
         "level": 79,
-        "trophies": 361,
+        "trophies": 390,
         "best": 400,
         "league": "Archer League 7",
         "warStars": 32,
@@ -6034,10 +6034,10 @@
       "th": 11,
       "given": 0,
       "received": 0,
-      "trophies": 213,
+      "trophies": 253,
       "profile": {
         "level": 84,
-        "trophies": 213,
+        "trophies": 253,
         "best": 348,
         "league": "Barbarian League 6",
         "warStars": 48,
