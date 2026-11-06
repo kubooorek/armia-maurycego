@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T15:01:28.902Z",
+  "updated": "2026-11-06T15:15:56.084Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -4394,8 +4394,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|24650707|24031450|0|0|0|400|0|14|32|8",
-      "last": "2026-11-05T18:46:03.428Z",
+      "sig": "0|25246007|24556257|0|0|0|400|0|14|32|8",
+      "last": "2026-11-06T15:15:56.072Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -6216,12 +6216,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 30,
+            "level": 31,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 30,
+            "level": 31,
             "max": 110
           },
           {
@@ -6232,10 +6232,10 @@
         ]
       },
       "rush": {
-        "pct": 36.4,
+        "pct": 35.6,
         "troops": 28.6,
         "spells": 49,
-        "heroes": 38,
+        "heroes": 36,
         "top": [
           {
             "n": "Książę Minionów",
@@ -7329,8 +7329,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 24650707,
-        "elixir": 24031450,
+        "gold": 25246007,
+        "elixir": 24556257,
         "capContrib": 400,
         "wins": 0
       }
