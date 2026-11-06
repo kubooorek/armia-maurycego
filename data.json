@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T05:16:02.064Z",
+  "updated": "2026-11-06T05:31:10.972Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -81,7 +81,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 68,
-        "pct": 2094,
+        "pct": 2126,
         "wins": 1,
         "played": 3
       }
@@ -4246,8 +4246,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "32|267092843|267105869|15400|1434|24800|43751|0|11|63|13",
-      "last": "2026-11-05T11:31:17.182Z",
+      "sig": "32|267872207|267946017|15400|1434|24800|43751|0|11|63|13",
+      "last": "2026-11-06T05:31:10.960Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -5096,10 +5096,10 @@
       "th": 15,
       "given": 553,
       "received": 151,
-      "trophies": 507,
+      "trophies": 536,
       "profile": {
         "level": 205,
-        "trophies": 507,
+        "trophies": 536,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
         "warStars": 1256,
@@ -5392,8 +5392,8 @@
         "cg": 15400,
         "don": 1434,
         "capLoot": 24800,
-        "gold": 267092843,
-        "elixir": 267105869,
+        "gold": 267872207,
+        "elixir": 267946017,
         "capContrib": 43751,
         "wins": 0
       }
@@ -6494,8 +6494,8 @@
         ]
       },
       "rush": {
-        "pct": 14.8,
-        "troops": 10.2,
+        "pct": 13.9,
+        "troops": 8.5,
         "spells": 0,
         "heroes": 33.3,
         "top": [
@@ -6518,11 +6518,6 @@
             "n": "Golem",
             "lvl": 1,
             "need": 2
-          },
-          {
-            "n": "Minion",
-            "lvl": 3,
-            "need": 4
           },
           {
             "n": "Król Barbarzyńców",
@@ -6646,7 +6641,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 25,
+            "level": 26,
             "max": 110
           },
           {
