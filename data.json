@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T13:45:54.896Z",
+  "updated": "2026-11-06T14:01:32.224Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -4464,8 +4464,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|122409941|114827322|0|0|0|6460|0|0|46|10",
-      "last": "2026-11-06T10:16:00.945Z",
+      "sig": "0|124527999|116821300|0|0|0|6460|0|0|46|10",
+      "last": "2026-11-06T14:01:32.210Z",
       "since": "2026-11-06T07:31:14.715Z"
     }
   },
@@ -6364,8 +6364,8 @@
         ]
       },
       "rush": {
-        "pct": 43.1,
-        "troops": 37.3,
+        "pct": 44.1,
+        "troops": 40.3,
         "spells": 29.2,
         "heroes": 52.9,
         "top": [
@@ -6375,9 +6375,14 @@
             "need": 5
           },
           {
-            "n": "Wieprzowy jeździec",
+            "n": "P.E.K.K.A",
             "lvl": 1,
-            "need": 5
+            "need": 4
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 1,
+            "need": 4
           },
           {
             "n": "Zaklęcie trucizny",
@@ -6390,14 +6395,9 @@
             "need": 30
           },
           {
-            "n": "Barbarzyńca",
-            "lvl": 3,
-            "need": 6
-          },
-          {
-            "n": "Łuczniczka",
-            "lvl": 3,
-            "need": 6
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 5
           }
         ]
       },
@@ -6405,8 +6405,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 122409941,
-        "elixir": 114827322,
+        "gold": 124527999,
+        "elixir": 116821300,
         "capContrib": 6460,
         "wins": 0
       }
@@ -6623,7 +6623,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 16,
+            "level": 17,
             "max": 110
           },
           {
@@ -6639,10 +6639,10 @@
         ]
       },
       "rush": {
-        "pct": 13.9,
+        "pct": 13,
         "troops": 8.5,
         "spells": 0,
-        "heroes": 33.3,
+        "heroes": 30,
         "top": [
           {
             "n": "Wieprzowy jeździec",
@@ -6666,7 +6666,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 16,
+            "lvl": 17,
             "need": 20
           }
         ]
