@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T20:16:03.280Z",
+  "updated": "2026-11-06T20:31:14.588Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,9 +10,18 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 2,
+    "place": 1,
     "groupSize": 8,
     "standings": [
+      {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 114,
+        "pct": 3792,
+        "wins": 2,
+        "played": 4
+      },
       {
         "tag": "#2CPJQQVQ9",
         "name": "React",
@@ -20,15 +29,6 @@
         "stars": 112,
         "pct": 3123,
         "wins": 3,
-        "played": 4
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 111,
-        "pct": 3692,
-        "wins": 2,
         "played": 4
       },
       {
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 19,
-          "pct": 49.13,
-          "attacks": 8,
+          "stars": 22,
+          "pct": 55.8,
+          "attacks": 9,
           "bases": [
             {
               "pos": 1,
@@ -1657,7 +1657,7 @@
             {
               "pos": 3,
               "th": 14,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -1745,7 +1745,13 @@
             "tag": "#LUGR0YQY0",
             "pos": 2,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "3. عزوز"
+              }
+            ]
           },
           {
             "name": "Albaroon.2",
@@ -2166,15 +2172,15 @@
     ],
     "top": [
       {
-        "name": "KUBOOOREK",
-        "stars": 13,
+        "name": "Baku",
+        "stars": 15,
         "attacks": 5,
         "wars": 5
       },
       {
-        "name": "Baku",
-        "stars": 12,
-        "attacks": 4,
+        "name": "KUBOOOREK",
+        "stars": 13,
+        "attacks": 5,
         "wars": 5
       },
       {
@@ -2626,7 +2632,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 19,
+      "us": 22,
       "them": 6,
       "members": [
         {
@@ -2642,7 +2648,12 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -4642,13 +4653,13 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "688|2000000000|2000000000|94700|81709|1216349|1619438|0|1257|205|15",
-      "last": "2026-11-06T20:16:03.269Z",
+      "sig": "690|2000000000|2000000000|94700|81709|1216349|1619438|0|1257|205|15",
+      "last": "2026-11-06T20:31:14.576Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "925|468662765|484858282|42500|93566|246500|453697|0|1219|152|15",
-      "last": "2026-11-06T20:01:30.753Z",
+      "sig": "925|468797765|484993282|42500|93566|246500|453697|0|1222|152|15",
+      "last": "2026-11-06T20:31:14.576Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -4862,8 +4873,8 @@
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
-      "sig": "0|1936743|1870311|0|0|0|100|0|0|17|7",
-      "last": "2026-11-06T13:16:05.128Z",
+      "sig": "0|1981435|1983038|0|0|0|100|0|0|17|7",
+      "last": "2026-11-06T20:31:14.576Z",
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
@@ -5177,8 +5188,8 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 193,
-          "stars": 12,
+          "score": 223,
+          "stars": 15,
           "don": 733,
           "cg": 0,
           "cap": 0
@@ -5558,7 +5569,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 688,
+      "given": 690,
       "received": 152,
       "trophies": 550,
       "profile": {
@@ -5627,14 +5638,14 @@
       "role": "member",
       "th": 15,
       "given": 925,
-      "received": 138,
+      "received": 140,
       "trophies": 0,
       "profile": {
         "level": 152,
         "trophies": 0,
         "best": 3270,
         "league": "Witch League 17",
-        "warStars": 1219,
+        "warStars": 1222,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 453697,
@@ -5709,8 +5720,8 @@
         "cg": 42500,
         "don": 93566,
         "capLoot": 246500,
-        "gold": 468662765,
-        "elixir": 484858282,
+        "gold": 468797765,
+        "elixir": 484993282,
         "capContrib": 453697,
         "wins": 0
       }
@@ -8463,8 +8474,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 1936743,
-        "elixir": 1870311,
+        "gold": 1981435,
+        "elixir": 1983038,
         "capContrib": 100,
         "wins": 0
       }
