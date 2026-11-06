@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T20:46:01.801Z",
+  "updated": "2026-11-06T21:01:41.216Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 80,
-        "pct": 2638,
+        "stars": 82,
+        "pct": 2707,
         "wins": 1,
         "played": 4
       }
@@ -1569,7 +1569,7 @@
             {
               "pos": 1,
               "th": 15,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 2,
@@ -1645,9 +1645,9 @@
         },
         "them": {
           "name": "سوري",
-          "stars": 6,
-          "pct": 13.33,
-          "attacks": 2,
+          "stars": 8,
+          "pct": 17.93,
+          "attacks": 3,
           "bases": [
             {
               "pos": 2,
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -2639,7 +2639,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 25,
-      "them": 6,
+      "them": 8,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -6789,8 +6789,8 @@
         ]
       },
       "rush": {
-        "pct": 44.1,
-        "troops": 40.3,
+        "pct": 43.5,
+        "troops": 38.8,
         "spells": 29.2,
         "heroes": 52.9,
         "top": [
@@ -6798,11 +6798,6 @@
             "n": "Minion",
             "lvl": 1,
             "need": 5
-          },
-          {
-            "n": "P.E.K.K.A",
-            "lvl": 1,
-            "need": 4
           },
           {
             "n": "Walkiria",
@@ -6823,6 +6818,11 @@
             "n": "Wieprzowy jeździec",
             "lvl": 2,
             "need": 5
+          },
+          {
+            "n": "Barbarzyńca",
+            "lvl": 3,
+            "need": 6
           }
         ]
       },
