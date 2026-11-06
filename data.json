@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T16:01:41.810Z",
+  "updated": "2026-11-06T16:15:53.732Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 6,
     "groupSize": 8,
     "standings": [
       {
@@ -53,9 +53,18 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 84,
-        "pct": 2172,
+        "stars": 86,
+        "pct": 2232,
         "wins": 2,
+        "played": 3
+      },
+      {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 76,
+        "pct": 2786,
+        "wins": 1,
         "played": 3
       },
       {
@@ -64,15 +73,6 @@
         "level": 4,
         "stars": 74,
         "pct": 2403,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 73,
-        "pct": 2686,
         "wins": 1,
         "played": 3
       },
@@ -1197,9 +1197,9 @@
         "end": "20261106T182424.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 14,
-          "pct": 40.67,
-          "attacks": 10,
+          "stars": 17,
+          "pct": 47.33,
+          "attacks": 11,
           "bases": [
             {
               "pos": 1,
@@ -1322,7 +1322,7 @@
             {
               "pos": 8,
               "th": 13,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 9,
@@ -1380,7 +1380,13 @@
             "tag": "#LUGR0YQY0",
             "pos": 2,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "8. VINNY"
+              }
+            ]
           },
           {
             "name": "Albaroon.2",
@@ -1820,8 +1826,8 @@
       },
       {
         "name": "Baku",
-        "stars": 9,
-        "attacks": 3,
+        "stars": 12,
+        "attacks": 4,
         "wars": 4
       },
       {
@@ -1878,10 +1884,21 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
+    {
+      "state": "ongoing",
+      "start": "20261106T070000.000Z",
+      "end": "20261109T070000.000Z",
+      "loot": 0,
+      "raids": 0,
+      "attacks": 0,
+      "districts": 0,
+      "medals": 0,
+      "members": []
+    },
     {
       "state": "ended",
       "start": "20261030T070000.000Z",
@@ -1891,158 +1908,6 @@
       "attacks": 118,
       "districts": 33,
       "medals": 67,
-      "members": [
-        {
-          "name": "oggsgdjdjbd",
-          "tag": "#Q9CU9P908",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8631
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8434
-        },
-        {
-          "name": "KuN",
-          "tag": "#YLLQL2VUP",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8017
-        },
-        {
-          "name": "wiktor",
-          "tag": "#QGPC2228Q",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7917
-        },
-        {
-          "name": "erykos",
-          "tag": "#R9GPGL0QJ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7548
-        },
-        {
-          "name": "SZAR3",
-          "tag": "#RYLR2C92V",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7462
-        },
-        {
-          "name": "Barnes",
-          "tag": "#LQVRCRUYR",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7308
-        },
-        {
-          "name": "Riczard",
-          "tag": "#R2PCVYQG2",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7182
-        },
-        {
-          "name": "MrDefPL",
-          "tag": "#8UCPRGC8",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7169
-        },
-        {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6654
-        },
-        {
-          "name": "threeten",
-          "tag": "#R8RVQVPCC",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6523
-        },
-        {
-          "name": "KUBOOOREK",
-          "tag": "#VP9PLGLV",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6196
-        },
-        {
-          "name": "Darui",
-          "tag": "#LUQJC2JGY",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6045
-        },
-        {
-          "name": "Belaska",
-          "tag": "#GU0R2J8R0",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6003
-        },
-        {
-          "name": "GoldBelt",
-          "tag": "#R9QQPG9JP",
-          "attacks": 5,
-          "limit": 6,
-          "loot": 5948
-        },
-        {
-          "name": "SHA☆ZAM!",
-          "tag": "#GVGRVCQJR",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5749
-        },
-        {
-          "name": "Brann",
-          "tag": "#LC8VRR9R2",
-          "attacks": 5,
-          "limit": 6,
-          "loot": 5683
-        },
-        {
-          "name": "Toster290",
-          "tag": "#GJJ90QGVQ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5595
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5375
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 4389
-        }
-      ]
-    },
-    {
-      "state": "ended",
-      "start": "20261023T070000.000Z",
-      "end": "20261026T070000.000Z",
-      "loot": 98358,
-      "raids": 10,
-      "attacks": 90,
-      "districts": 32,
-      "medals": 77,
       "members": []
     }
   ],
@@ -2371,7 +2236,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 14,
+      "us": 17,
       "them": 12,
       "members": [
         {
@@ -2387,7 +2252,12 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -4244,8 +4114,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "803|468539765|484735282|42500|93476|246500|453697|0|1216|152|15",
-      "last": "2026-11-06T14:31:28.542Z",
+      "sig": "803|468662765|484858282|42500|93476|246500|453697|0|1219|152|15",
+      "last": "2026-11-06T16:15:53.719Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -4774,8 +4644,8 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 154,
-          "stars": 9,
+          "score": 184,
+          "stars": 12,
           "don": 643,
           "cg": 0,
           "cap": 0
@@ -5231,7 +5101,7 @@
         "trophies": 0,
         "best": 3270,
         "league": "Witch League 17",
-        "warStars": 1216,
+        "warStars": 1219,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 453697,
@@ -5306,8 +5176,8 @@
         "cg": 42500,
         "don": 93476,
         "capLoot": 246500,
-        "gold": 468539765,
-        "elixir": 484735282,
+        "gold": 468662765,
+        "elixir": 484858282,
         "capContrib": 453697,
         "wins": 0
       }
