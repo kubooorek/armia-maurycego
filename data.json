@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T18:46:01.033Z",
+  "updated": "2026-11-06T19:01:34.561Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 4,
+    "place": 3,
     "groupSize": 8,
     "standings": [
       {
@@ -32,20 +32,20 @@
         "played": 4
       },
       {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 98,
-        "pct": 2739,
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 100,
+        "pct": 3308,
         "wins": 2,
         "played": 4
       },
       {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 96,
-        "pct": 3145,
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 100,
+        "pct": 2811,
         "wins": 2,
         "played": 4
       },
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 74,
-        "pct": 2438,
+        "stars": 80,
+        "pct": 2638,
         "wins": 1,
         "played": 4
       }
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 4,
-          "pct": 12.67,
-          "attacks": 2,
+          "stars": 8,
+          "pct": 23.53,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -1629,12 +1629,12 @@
             {
               "pos": 13,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 15,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 20,
@@ -1645,9 +1645,9 @@
         },
         "them": {
           "name": "سوري",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 6,
+          "pct": 13.33,
+          "attacks": 2,
           "bases": [
             {
               "pos": 2,
@@ -1662,7 +1662,7 @@
             {
               "pos": 4,
               "th": 14,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 5,
@@ -1712,7 +1712,7 @@
             {
               "pos": 14,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 15,
@@ -1752,7 +1752,13 @@
             "tag": "#GYUJR2URJ",
             "pos": 3,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 63,
+                "target": "4. الفانوس السحري"
+              }
+            ]
           },
           {
             "name": "MAQOS",
@@ -1780,7 +1786,13 @@
             "tag": "#QYJUV90JY",
             "pos": 7,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "14. سعد سالم"
+              }
+            ]
           },
           {
             "name": "VipeR",
@@ -1868,8 +1880,14 @@
       },
       {
         "name": "Albaroon.2",
+        "stars": 8,
+        "attacks": 5,
+        "wars": 5
+      },
+      {
+        "name": "monte",
         "stars": 7,
-        "attacks": 4,
+        "attacks": 5,
         "wars": 5
       },
       {
@@ -1901,12 +1919,6 @@
         "stars": 4,
         "attacks": 4,
         "wars": 5
-      },
-      {
-        "name": "monte",
-        "stars": 4,
-        "attacks": 4,
-        "wars": 5
       }
     ]
   },
@@ -1922,10 +1934,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 27362,
+      "loot": 30096,
       "raids": 2,
-      "attacks": 22,
-      "districts": 6,
+      "attacks": 28,
+      "districts": 7,
       "medals": 0,
       "members": [
         {
@@ -1955,6 +1967,13 @@
           "attacks": 4,
           "limit": 6,
           "loot": 3934
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 2734
         }
       ]
     },
@@ -2295,8 +2314,8 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 4,
-      "them": 0,
+      "us": 8,
+      "them": 6,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -2316,7 +2335,12 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 63
+            }
+          ]
         },
         {
           "name": "MAQOS",
@@ -2336,7 +2360,12 @@
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "VipeR",
@@ -4291,8 +4320,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "215|578645145|601543778|38350|7723|531795|668928|0|97|109|12",
-      "last": "2026-11-05T22:31:11.361Z",
+      "sig": "215|578699145|601624778|38350|7723|531795|668928|0|98|109|12",
+      "last": "2026-11-06T19:01:34.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -4336,8 +4365,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|207236192|199333825|2900|20|21235|36648|0|48|84|11",
-      "last": "2026-11-06T08:31:10.998Z",
+      "sig": "0|207304192|199401825|2900|20|23720|36648|0|51|84|11",
+      "last": "2026-11-06T19:01:34.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4371,8 +4400,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|102254633|85767426|5100|336|0|20770|0|12|53|9",
-      "last": "2026-11-05T22:31:11.361Z",
+      "sig": "31|102254633|85767426|5100|336|0|20770|0|12|54|9",
+      "last": "2026-11-06T19:01:34.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -4396,8 +4425,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|62695984|62771073|2400|614|14765|22509|0|4|54|9",
-      "last": "2026-11-06T17:31:25.413Z",
+      "sig": "161|62695984|62771073|2400|614|14765|30086|0|4|54|9",
+      "last": "2026-11-06T19:01:34.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4416,8 +4445,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|29454792|28328325|0|76|7410|11348|0|6|43|8",
-      "last": "2026-11-06T08:01:26.270Z",
+      "sig": "3|29454792|28328325|0|76|7410|11348|0|6|44|8",
+      "last": "2026-11-06T19:01:34.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -4823,6 +4852,15 @@
           "cap": 0
         },
         {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "score": 115,
+          "stars": 11,
+          "don": 0,
+          "cg": 0,
+          "cap": 2485
+        },
+        {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
           "score": 110,
@@ -4843,18 +4881,9 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "score": 91,
-          "stars": 7,
-          "don": 214,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "score": 81,
+          "score": 101,
           "stars": 8,
-          "don": 5,
+          "don": 214,
           "cg": 0,
           "cap": 0
         }
@@ -5367,7 +5396,7 @@
         "trophies": 204,
         "best": 2839,
         "league": "Valkyrie League 14",
-        "warStars": 97,
+        "warStars": 98,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 668928,
@@ -5406,8 +5435,8 @@
         "cg": 38350,
         "don": 7723,
         "capLoot": 531795,
-        "gold": 578645145,
-        "elixir": 601543778,
+        "gold": 578699145,
+        "elixir": 601624778,
         "capContrib": 668928,
         "wins": 0
       }
@@ -6082,7 +6111,7 @@
         "trophies": 253,
         "best": 348,
         "league": "Barbarian League 6",
-        "warStars": 48,
+        "warStars": 51,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 36648,
@@ -6151,9 +6180,9 @@
       "ach": {
         "cg": 2900,
         "don": 20,
-        "capLoot": 21235,
-        "gold": 207236192,
-        "elixir": 199333825,
+        "capLoot": 23720,
+        "gold": 207304192,
+        "elixir": 199401825,
         "capContrib": 36648,
         "wins": 0
       }
@@ -6653,7 +6682,7 @@
       "received": 129,
       "trophies": 346,
       "profile": {
-        "level": 53,
+        "level": 54,
         "trophies": 346,
         "best": 346,
         "league": "Skeleton League 3",
@@ -6670,7 +6699,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 4,
+            "level": 5,
             "max": 110
           },
           {
@@ -6681,20 +6710,15 @@
         ]
       },
       "rush": {
-        "pct": 13,
-        "troops": 8.5,
+        "pct": 11.1,
+        "troops": 6.8,
         "spells": 0,
-        "heroes": 30,
+        "heroes": 26.7,
         "top": [
           {
             "n": "Wieprzowy jeździec",
-            "lvl": 1,
+            "lvl": 2,
             "need": 4
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 4,
-            "need": 10
           },
           {
             "n": "Walkiria",
@@ -6705,6 +6729,11 @@
             "n": "Golem",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 5,
+            "need": 10
           },
           {
             "n": "Król Barbarzyńców",
@@ -7009,7 +7038,7 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 22509,
+        "capital": 30086,
         "warPref": "in",
         "heroes": [
           {
@@ -7048,7 +7077,7 @@
         "capLoot": 14765,
         "gold": 62695984,
         "elixir": 62771073,
-        "capContrib": 22509,
+        "capContrib": 30086,
         "wins": 0
       }
     },
@@ -7115,7 +7144,7 @@
       "received": 60,
       "trophies": 223,
       "profile": {
-        "level": 43,
+        "level": 44,
         "trophies": 223,
         "best": 300,
         "league": "Skeleton League 2",
