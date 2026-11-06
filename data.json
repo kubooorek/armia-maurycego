@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T23:45:55.127Z",
+  "updated": "2026-11-06T00:01:34.090Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3557,6 +3557,14 @@
     },
     {
       "d": "2026-11-05",
+      "members": 45,
+      "avgTh": 8.9,
+      "level": 3,
+      "wins": 13,
+      "points": 19300
+    },
+    {
+      "d": "2026-11-06",
       "members": 45,
       "avgTh": 8.9,
       "level": 3,
