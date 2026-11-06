@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-06T18:15:58.921Z",
-  "clanLevel": 3,
+  "updated": "2026-11-06T18:31:29.546Z",
+  "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
   "warWinStreak": 11,
@@ -10,9 +10,27 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 7,
+    "place": 6,
     "groupSize": 8,
     "standings": [
+      {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 109,
+        "pct": 3023,
+        "wins": 3,
+        "played": 4
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 104,
+        "pct": 3242,
+        "wins": 2,
+        "played": 4
+      },
       {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
@@ -20,25 +38,16 @@
         "stars": 98,
         "pct": 2739,
         "wins": 2,
-        "played": 3
+        "played": 4
       },
       {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
         "stars": 96,
-        "pct": 2923,
-        "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 94,
-        "pct": 3242,
-        "wins": 1,
-        "played": 3
+        "pct": 2232,
+        "wins": 3,
+        "played": 4
       },
       {
         "tag": "#2YRR8GPUU",
@@ -47,7 +56,16 @@
         "stars": 93,
         "pct": 2595,
         "wins": 2,
-        "played": 3
+        "played": 4
+      },
+      {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 92,
+        "pct": 2955,
+        "wins": 2,
+        "played": 4
       },
       {
         "tag": "#V8PU2P0G",
@@ -56,25 +74,7 @@
         "stars": 87,
         "pct": 2674,
         "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 86,
-        "pct": 2232,
-        "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 82,
-        "pct": 2955,
-        "wins": 1,
-        "played": 3
+        "played": 4
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -83,7 +83,7 @@
         "stars": 74,
         "pct": 2438,
         "wins": 1,
-        "played": 3
+        "played": 4
       }
     ],
     "wars": [
@@ -1190,7 +1190,7 @@
       },
       {
         "round": 4,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261105T182424.000Z",
@@ -1555,7 +1555,7 @@
       },
       {
         "round": 5,
-        "state": "preparation",
+        "state": "inWar",
         "size": 15,
         "perMember": 1,
         "start": "20261106T182801.000Z",
@@ -1716,7 +1716,7 @@
             },
             {
               "pos": 15,
-              "th": 9,
+              "th": 10,
               "best": 0
             },
             {
@@ -1840,61 +1840,61 @@
         "name": "KUBOOOREK",
         "stars": 12,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "Baku",
         "stars": 12,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "VipeR",
         "stars": 9,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "Albaroon.2",
         "stars": 7,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "Brann",
         "stars": 6,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "oggsgdjdjbd",
         "stars": 5,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "MAQOS",
         "stars": 4,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "MrDefPL",
         "stars": 4,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "monte",
         "stars": 4,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       },
       {
         "name": "Barnes",
         "stars": 4,
         "attacks": 4,
-        "wars": 4
+        "wars": 5
       }
     ]
   },
@@ -1902,7 +1902,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1910,10 +1910,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 23428,
-      "raids": 1,
-      "attacks": 18,
-      "districts": 5,
+      "loot": 24662,
+      "raids": 2,
+      "attacks": 19,
+      "districts": 6,
       "medals": 0,
       "members": [
         {
@@ -1940,9 +1940,9 @@
         {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
-          "attacks": 0,
-          "limit": 5,
-          "loot": 0
+          "attacks": 1,
+          "limit": 6,
+          "loot": 1234
         }
       ]
     },
@@ -2276,12 +2276,100 @@
   ],
   "warArchive": [
     {
+      "start": "20261106T182801.000Z",
+      "end": "20261107T182801.000Z",
+      "enemy": "سوري",
+      "size": 15,
+      "perMember": 1,
+      "state": "inWar",
+      "cwl": true,
+      "us": 0,
+      "them": 0,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": []
+        },
+        {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": []
+        }
+      ]
+    },
+    {
       "start": "20261105T182424.000Z",
       "end": "20261106T182424.000Z",
       "enemy": "united again",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 23,
       "them": 18,
@@ -3534,7 +3622,7 @@
       "d": "2026-11-06",
       "members": 46,
       "avgTh": 9,
-      "level": 3,
+      "level": 4,
       "wins": 13,
       "points": 19500
     }
@@ -4006,10 +4094,10 @@
       "detail": "vs старше 18"
     },
     "tripleStreak": {
-      "value": 7,
+      "value": 8,
       "name": "KUBOOOREK",
       "tag": "#VP9PLGLV",
-      "date": "2026-11-05"
+      "date": "2026-11-06"
     },
     "weekWins": {
       "value": 1,
@@ -4171,8 +4259,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "585|2000000000|2000000000|94700|81636|1216349|1619438|0|1256|205|15",
-      "last": "2026-11-06T17:46:01.702Z",
+      "sig": "603|2000000000|2000000000|94700|81636|1216349|1619438|0|1256|205|15",
+      "last": "2026-11-06T18:31:29.535Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -4186,8 +4274,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "189|267960053|268010445|14450|334|57300|109886|0|62|103|12",
-      "last": "2026-11-06T10:31:15.760Z",
+      "sig": "201|267960053|268010445|14450|346|57300|109886|0|62|103|12",
+      "last": "2026-11-06T18:31:29.535Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -4201,8 +4289,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "33|364219059|341017953|15875|9417|10205|55073|0|238|105|11",
-      "last": "2026-11-06T18:15:58.908Z",
+      "sig": "64|364219059|341017953|15875|9447|10205|55073|0|238|105|11",
+      "last": "2026-11-06T18:31:29.535Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -4221,8 +4309,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "32|270171730|270465829|15400|1434|24800|43751|0|11|64|13",
-      "last": "2026-11-06T09:16:19.688Z",
+      "sig": "32|274647974|274890829|15400|1434|25980|43751|0|11|64|13",
+      "last": "2026-11-06T18:31:29.535Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -4236,8 +4324,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|123795355|114138611|7600|634|9310|29985|0|33|58|9",
-      "last": "2026-11-06T18:15:58.908Z",
+      "sig": "25|124427355|114770611|7600|634|9310|29985|0|33|58|9",
+      "last": "2026-11-06T18:31:29.535Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -4715,9 +4803,9 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "score": 109,
+          "score": 110,
           "stars": 8,
-          "don": 211,
+          "don": 223,
           "cg": 0,
           "cap": 3935
         },
@@ -5087,7 +5175,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 585,
+      "given": 603,
       "received": 152,
       "trophies": 550,
       "profile": {
@@ -5384,9 +5472,9 @@
       "ach": {
         "cg": 15400,
         "don": 1434,
-        "capLoot": 24800,
-        "gold": 270171730,
-        "elixir": 270465829,
+        "capLoot": 25980,
+        "gold": 274647974,
+        "elixir": 274890829,
         "capContrib": 43751,
         "wins": 0
       }
@@ -5396,7 +5484,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 189,
+      "given": 201,
       "received": 40,
       "trophies": 293,
       "profile": {
@@ -5472,7 +5560,7 @@
       },
       "ach": {
         "cg": 14450,
-        "don": 334,
+        "don": 346,
         "capLoot": 57300,
         "gold": 267960053,
         "elixir": 268010445,
@@ -5543,7 +5631,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 33,
+      "given": 64,
       "received": 0,
       "trophies": 55,
       "profile": {
@@ -5619,7 +5707,7 @@
       },
       "ach": {
         "cg": 15875,
-        "don": 9417,
+        "don": 9447,
         "capLoot": 10205,
         "gold": 364219059,
         "elixir": 341017953,
@@ -6054,11 +6142,11 @@
       "role": "admin",
       "th": 9,
       "given": 25,
-      "received": 31,
-      "trophies": 11,
+      "received": 62,
+      "trophies": 102,
       "profile": {
         "level": 58,
-        "trophies": 11,
+        "trophies": 51,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 33,
@@ -6121,8 +6209,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 9310,
-        "gold": 123795355,
-        "elixir": 114138611,
+        "gold": 124427355,
+        "elixir": 114770611,
         "capContrib": 29985,
         "wins": 0
       }
@@ -6889,7 +6977,7 @@
       "role": "member",
       "th": 9,
       "given": 161,
-      "received": 222,
+      "received": 252,
       "trophies": 277,
       "profile": {
         "level": 54,
