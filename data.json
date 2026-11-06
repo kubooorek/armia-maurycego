@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T09:46:02.772Z",
+  "updated": "2026-11-06T10:01:26.046Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 95,
-        "pct": 2639,
+        "stars": 98,
+        "pct": 2739,
         "wins": 2,
         "played": 3
       },
@@ -4358,8 +4358,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|32631034|31698115|0|0|0|250|0|3|41|9",
-      "last": "2026-11-06T08:01:26.270Z",
+      "sig": "0|32631034|31698115|0|0|0|250|0|3|42|9",
+      "last": "2026-11-06T10:01:26.033Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -7328,7 +7328,7 @@
       "received": 52,
       "trophies": 115,
       "profile": {
-        "level": 41,
+        "level": 42,
         "trophies": 115,
         "best": 273,
         "league": "Skeleton League 2",
@@ -7351,8 +7351,8 @@
         ]
       },
       "rush": {
-        "pct": 29.1,
-        "troops": 17,
+        "pct": 28.2,
+        "troops": 15.1,
         "spells": 30,
         "heroes": 50,
         "top": [
@@ -7691,16 +7691,16 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 50,
+        "pct": 49,
         "troops": 26.5,
         "spells": 63.2,
-        "heroes": 80,
+        "heroes": 76.7,
         "top": [
           {
             "n": "Zaklęcie leczenia",
@@ -7718,11 +7718,6 @@
             "need": 20
           },
           {
-            "n": "Królowa Łuczniczek",
-            "lvl": 2,
-            "need": 10
-          },
-          {
             "n": "Minion",
             "lvl": 1,
             "need": 4
@@ -7731,6 +7726,11 @@
             "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 4
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 3,
+            "need": 10
           }
         ]
       },
