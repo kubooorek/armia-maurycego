@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T13:16:05.140Z",
+  "updated": "2026-11-06T13:31:17.350Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -23,6 +23,15 @@
         "played": 3
       },
       {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 91,
+        "pct": 2640,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
@@ -37,15 +46,6 @@
         "level": 9,
         "stars": 87,
         "pct": 2395,
-        "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 85,
-        "pct": 2440,
         "wins": 2,
         "played": 3
       },
