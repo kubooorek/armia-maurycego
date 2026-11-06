@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T03:15:56.593Z",
+  "updated": "2026-11-06T03:45:59.125Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -32,21 +32,21 @@
         "played": 3
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 80,
+        "pct": 2763,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
         "stars": 80,
         "pct": 2139,
         "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 79,
-        "pct": 2721,
-        "wins": 1,
         "played": 3
       },
       {
@@ -4321,8 +4321,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|24543938|22093975|1500|175|24090|36124|0|21|39|8",
-      "last": "2026-11-05T17:46:07.772Z",
+      "sig": "0|24543938|22093975|1500|175|24090|36124|0|21|40|8",
+      "last": "2026-11-06T03:45:59.112Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -6772,7 +6772,7 @@
       "received": 0,
       "trophies": 293,
       "profile": {
-        "level": 39,
+        "level": 40,
         "trophies": 293,
         "best": 293,
         "league": "Skeleton League 2",
@@ -6789,7 +6789,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
