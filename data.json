@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T14:01:32.224Z",
+  "updated": "2026-11-06T14:15:59.765Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -23,21 +23,21 @@
         "played": 3
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 93,
+        "pct": 3197,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
         "stars": 91,
         "pct": 2640,
         "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 90,
-        "pct": 3097,
-        "wins": 1,
         "played": 3
       },
       {
@@ -63,7 +63,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 74,
-        "pct": 2385,
+        "pct": 2403,
         "wins": 1,
         "played": 3
       },
@@ -1878,7 +1878,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -4284,8 +4284,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|507319752|465305150|10100|244|27320|78375|0|32|78|11",
-      "last": "2026-11-06T10:46:01.392Z",
+      "sig": "0|507319752|465305150|10100|244|27320|78375|0|32|79|11",
+      "last": "2026-11-06T14:15:59.751Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -4414,8 +4414,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "20|5338413|5097876|0|61|0|100|0|0|26|6",
-      "last": "2026-11-06T12:31:14.270Z",
+      "sig": "20|5857614|5387005|0|61|0|100|0|0|26|6",
+      "last": "2026-11-06T14:15:59.751Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -5899,7 +5899,7 @@
       "received": 66,
       "trophies": 361,
       "profile": {
-        "level": 78,
+        "level": 79,
         "trophies": 361,
         "best": 400,
         "league": "Archer League 7",
@@ -5927,16 +5927,11 @@
         ]
       },
       "rush": {
-        "pct": 22.3,
+        "pct": 21.9,
         "troops": 14.1,
-        "spells": 16.7,
+        "spells": 14.6,
         "heroes": 33,
         "top": [
-          {
-            "n": "Zaklęcie nietoperzy",
-            "lvl": 1,
-            "need": 3
-          },
           {
             "n": "Mały smok",
             "lvl": 2,
@@ -5959,6 +5954,11 @@
           },
           {
             "n": "P.E.K.K.A",
+            "lvl": 4,
+            "need": 6
+          },
+          {
+            "n": "Wieprzowy jeździec",
             "lvl": 4,
             "need": 6
           }
@@ -7964,8 +7964,8 @@
         "cg": 0,
         "don": 61,
         "capLoot": 0,
-        "gold": 5338413,
-        "elixir": 5097876,
+        "gold": 5857614,
+        "elixir": 5387005,
         "capContrib": 100,
         "wins": 0
       }
