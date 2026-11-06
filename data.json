@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T18:31:29.546Z",
+  "updated": "2026-11-06T18:46:01.033Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 4,
     "groupSize": 8,
     "standings": [
       {
@@ -26,8 +26,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 104,
-        "pct": 3242,
+        "stars": 107,
+        "pct": 3342,
         "wins": 2,
         "played": 4
       },
@@ -37,6 +37,15 @@
         "level": 5,
         "stars": 98,
         "pct": 2739,
+        "wins": 2,
+        "played": 4
+      },
+      {
+        "tag": "#2GQQ8RGRL",
+        "name": "ARMIA MAURYCEGO",
+        "level": 3,
+        "stars": 96,
+        "pct": 3145,
         "wins": 2,
         "played": 4
       },
@@ -55,15 +64,6 @@
         "level": 9,
         "stars": 93,
         "pct": 2595,
-        "wins": 2,
-        "played": 4
-      },
-      {
-        "tag": "#2GQQ8RGRL",
-        "name": "ARMIA MAURYCEGO",
-        "level": 3,
-        "stars": 92,
-        "pct": 2955,
         "wins": 2,
         "played": 4
       },
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 4,
+          "pct": 12.67,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -1652,7 +1652,7 @@
             {
               "pos": 2,
               "th": 16,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 3,
@@ -1707,7 +1707,7 @@
             {
               "pos": 13,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 14,
@@ -1732,7 +1732,13 @@
             "tag": "#VP9PLGLV",
             "pos": 1,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 90,
+                "target": "2. بشير8"
+              }
+            ]
           },
           {
             "name": "Baku",
@@ -1809,7 +1815,13 @@
             "tag": "#GU0R2J8R0",
             "pos": 12,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "13. أحمد"
+              }
+            ]
           },
           {
             "name": "Brann",
@@ -1838,8 +1850,8 @@
     "top": [
       {
         "name": "KUBOOOREK",
-        "stars": 12,
-        "attacks": 4,
+        "stars": 13,
+        "attacks": 5,
         "wars": 5
       },
       {
@@ -1873,6 +1885,12 @@
         "wars": 5
       },
       {
+        "name": "Belaska",
+        "stars": 5,
+        "attacks": 5,
+        "wars": 5
+      },
+      {
         "name": "MAQOS",
         "stars": 4,
         "attacks": 4,
@@ -1889,12 +1907,6 @@
         "stars": 4,
         "attacks": 4,
         "wars": 5
-      },
-      {
-        "name": "Barnes",
-        "stars": 4,
-        "attacks": 4,
-        "wars": 5
       }
     ]
   },
@@ -1902,7 +1914,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -1910,9 +1922,9 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 24662,
+      "loot": 27362,
       "raids": 2,
-      "attacks": 19,
+      "attacks": 22,
       "districts": 6,
       "medals": 0,
       "members": [
@@ -1940,9 +1952,9 @@
         {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
-          "attacks": 1,
+          "attacks": 4,
           "limit": 6,
-          "loot": 1234
+          "loot": 3934
         }
       ]
     },
@@ -2283,13 +2295,18 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 0,
+      "us": 4,
       "them": 0,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 90
+            }
+          ]
         },
         {
           "name": "Baku",
@@ -2344,7 +2361,12 @@
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Brann",
@@ -4259,8 +4281,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "603|2000000000|2000000000|94700|81636|1216349|1619438|0|1256|205|15",
-      "last": "2026-11-06T18:31:29.535Z",
+      "sig": "603|2000000000|2000000000|94700|81654|1216349|1619438|0|1257|205|15",
+      "last": "2026-11-06T18:46:01.025Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -4309,8 +4331,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "32|274647974|274890829|15400|1434|25980|43751|0|11|64|13",
-      "last": "2026-11-06T18:31:29.535Z",
+      "sig": "32|275181307|275424162|15400|1434|28680|45316|0|11|64|13",
+      "last": "2026-11-06T18:46:01.025Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -4319,13 +4341,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "20|118851856|118455949|16800|534|21725|45188|0|68|57|9",
-      "last": "2026-11-05T18:46:03.428Z",
+      "sig": "20|118919856|118523949|16800|534|21725|45188|0|71|57|9",
+      "last": "2026-11-06T18:46:01.025Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|124427355|114770611|7600|634|9310|29985|0|33|58|9",
-      "last": "2026-11-06T18:31:29.535Z",
+      "sig": "25|125360515|115642611|7600|634|9310|29985|0|33|58|9",
+      "last": "2026-11-06T18:46:01.025Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -4459,8 +4481,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|4079516|3796842|0|0|0|400|0|0|24|7",
-      "last": "2026-11-05T14:46:36.985Z",
+      "sig": "0|4079516|3796842|0|0|0|400|0|0|25|7",
+      "last": "2026-11-06T18:46:01.025Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -5183,7 +5205,7 @@
         "trophies": 550,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
-        "warStars": 1256,
+        "warStars": 1257,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 1619438,
@@ -5230,7 +5252,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81636,
+        "don": 81654,
         "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -5406,7 +5428,7 @@
         "warStars": 11,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 43751,
+        "capital": 45316,
         "warPref": "in",
         "heroes": [
           {
@@ -5472,10 +5494,10 @@
       "ach": {
         "cg": 15400,
         "don": 1434,
-        "capLoot": 25980,
-        "gold": 274647974,
-        "elixir": 274890829,
-        "capContrib": 43751,
+        "capLoot": 28680,
+        "gold": 275181307,
+        "elixir": 275424162,
+        "capContrib": 45316,
         "wins": 0
       }
     },
@@ -6007,7 +6029,7 @@
         "trophies": 279,
         "best": 622,
         "league": "Barbarian League 6",
-        "warStars": 68,
+        "warStars": 71,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 45188,
@@ -6041,8 +6063,8 @@
         "cg": 16800,
         "don": 534,
         "capLoot": 21725,
-        "gold": 118851856,
-        "elixir": 118455949,
+        "gold": 118919856,
+        "elixir": 118523949,
         "capContrib": 45188,
         "wins": 0
       }
@@ -6146,7 +6168,7 @@
       "trophies": 102,
       "profile": {
         "level": 58,
-        "trophies": 51,
+        "trophies": 102,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 33,
@@ -6209,8 +6231,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 9310,
-        "gold": 124427355,
-        "elixir": 114770611,
+        "gold": 125360515,
+        "elixir": 115642611,
         "capContrib": 29985,
         "wins": 0
       }
@@ -7201,7 +7223,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 15,
+            "level": 16,
             "max": 110
           },
           {
@@ -7789,7 +7811,7 @@
       "received": 15,
       "trophies": 68,
       "profile": {
-        "level": 24,
+        "level": 25,
         "trophies": 68,
         "best": 68,
         "league": "Skeleton League 1",
