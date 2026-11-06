@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T20:31:14.588Z",
+  "updated": "2026-11-06T20:46:01.801Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 114,
-        "pct": 3792,
+        "stars": 117,
+        "pct": 3892,
         "wins": 2,
         "played": 4
       },
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 22,
-          "pct": 55.8,
-          "attacks": 9,
+          "stars": 25,
+          "pct": 62.47,
+          "attacks": 10,
           "bases": [
             {
               "pos": 1,
@@ -1692,7 +1692,7 @@
             {
               "pos": 10,
               "th": 10,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 11,
@@ -1818,7 +1818,13 @@
             "tag": "#RPR0L809R",
             "pos": 9,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "10. عزوز المحرر"
+              }
+            ]
           },
           {
             "name": "tak",
@@ -2220,14 +2226,14 @@
         "wars": 5
       },
       {
-        "name": "tak",
+        "name": "Cwel123",
         "stars": 6,
-        "attacks": 5,
+        "attacks": 4,
         "wars": 5
       },
       {
-        "name": "Belaska",
-        "stars": 5,
+        "name": "tak",
+        "stars": 6,
         "attacks": 5,
         "wars": 5
       }
@@ -2632,7 +2638,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 22,
+      "us": 25,
       "them": 6,
       "members": [
         {
@@ -2703,7 +2709,12 @@
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "tak",
@@ -4698,8 +4709,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|507319752|465305150|10100|244|27320|78375|0|32|79|11",
-      "last": "2026-11-06T14:15:59.751Z",
+      "sig": "0|507408752|465394150|10100|244|27320|78375|0|35|79|11",
+      "last": "2026-11-06T20:46:01.788Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -5213,6 +5224,15 @@
           "cap": 2485
         },
         {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "score": 111,
+          "stars": 11,
+          "don": 5,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
           "score": 107,
@@ -5220,15 +5240,6 @@
           "don": 224,
           "cg": 0,
           "cap": 2435
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "score": 106,
-          "stars": 9,
-          "don": 10,
-          "cg": 0,
-          "cap": 7640
         }
       ]
     }
@@ -6317,7 +6328,7 @@
         "trophies": 390,
         "best": 400,
         "league": "Archer League 7",
-        "warStars": 32,
+        "warStars": 35,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 78375,
@@ -6382,8 +6393,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 27320,
-        "gold": 507319752,
-        "elixir": 465305150,
+        "gold": 507408752,
+        "elixir": 465394150,
         "capContrib": 78375,
         "wins": 0
       }
