@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T05:01:33.842Z",
+  "updated": "2026-11-06T05:16:02.064Z",
   "clanLevel": 3,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7889,7 +7889,7 @@
         ]
       },
       "rush": {
-        "pct": 8.3,
+        "pct": 8,
         "troops": 0,
         "spells": 33.3,
         "heroes": 0,
