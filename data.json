@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T19:16:00.482Z",
+  "updated": "2026-11-06T19:31:20.678Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2213,7 +2213,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -4667,8 +4667,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|125360515|115642611|7600|634|9310|29985|0|33|58|9",
-      "last": "2026-11-06T18:46:01.025Z",
+      "sig": "25|126445166|116899611|7600|634|9310|29985|0|33|58|9",
+      "last": "2026-11-06T19:31:20.666Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -6486,10 +6486,10 @@
       "th": 9,
       "given": 25,
       "received": 62,
-      "trophies": 153,
+      "trophies": 157,
       "profile": {
         "level": 58,
-        "trophies": 102,
+        "trophies": 157,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 33,
@@ -6552,8 +6552,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 9310,
-        "gold": 125360515,
-        "elixir": 115642611,
+        "gold": 126445166,
+        "elixir": 116899611,
         "capContrib": 29985,
         "wins": 0
       }
