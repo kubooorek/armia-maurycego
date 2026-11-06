@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T08:31:11.006Z",
+  "updated": "2026-11-06T08:46:06.968Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,9 +17,18 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 89,
-        "pct": 2439,
+        "stars": 92,
+        "pct": 2539,
         "wins": 2,
+        "played": 3
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 88,
+        "pct": 3040,
+        "wins": 1,
         "played": 3
       },
       {
@@ -29,15 +38,6 @@
         "stars": 87,
         "pct": 2395,
         "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 83,
-        "pct": 2863,
-        "wins": 1,
         "played": 3
       },
       {
@@ -4323,8 +4323,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|45506733|42065868|10050|88|17945|23865|0|7|46|8",
-      "last": "2026-11-05T22:16:00.458Z",
+      "sig": "20|46206733|42765868|10050|88|17945|23865|0|7|46|8",
+      "last": "2026-11-06T08:46:06.958Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -7143,8 +7143,8 @@
         "cg": 10050,
         "don": 88,
         "capLoot": 17945,
-        "gold": 45506733,
-        "elixir": 42065868,
+        "gold": 46206733,
+        "elixir": 42765868,
         "capContrib": 23865,
         "wins": 0
       }
