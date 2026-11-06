@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T17:46:01.714Z",
+  "updated": "2026-11-06T18:01:30.560Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 95,
-        "pct": 2838,
+        "stars": 96,
+        "pct": 2923,
         "wins": 2,
         "played": 3
       },
@@ -71,8 +71,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 79,
-        "pct": 2886,
+        "stars": 81,
+        "pct": 2932,
         "wins": 1,
         "played": 3
       },
@@ -1197,9 +1197,9 @@
         "end": "20261106T182424.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 20,
-          "pct": 54,
-          "attacks": 12,
+          "stars": 22,
+          "pct": 57.07,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -1347,7 +1347,7 @@
             {
               "pos": 13,
               "th": 12,
-              "best": 1
+              "best": 3
             },
             {
               "pos": 14,
@@ -1458,7 +1458,13 @@
             "tag": "#22R8PLCU8",
             "pos": 8,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "13. uchiha itachi"
+              }
+            ]
           },
           {
             "name": "Cwel123",
@@ -1837,15 +1843,15 @@
         "wars": 4
       },
       {
-        "name": "Albaroon.2",
-        "stars": 7,
+        "name": "VipeR",
+        "stars": 9,
         "attacks": 4,
         "wars": 4
       },
       {
-        "name": "VipeR",
-        "stars": 6,
-        "attacks": 3,
+        "name": "Albaroon.2",
+        "stars": 7,
+        "attacks": 4,
         "wars": 4
       },
       {
@@ -2264,7 +2270,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 20,
+      "us": 22,
       "them": 18,
       "members": [
         {
@@ -2340,7 +2346,12 @@
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Cwel123",
@@ -4172,8 +4183,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "2|364105059|340903953|15875|9387|10205|55073|0|235|105|11",
-      "last": "2026-11-05T18:55:29.979Z",
+      "sig": "2|364219059|341017953|15875|9387|10205|55073|0|238|105|11",
+      "last": "2026-11-06T18:01:30.550Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -4312,8 +4323,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GGU0RJYR9": {
-      "sig": "0|668752|668293|0|1|0|0|0|0|15|5",
-      "last": "2026-11-02T18:15:57.259Z",
+      "sig": "0|668752|668293|0|1|0|0|0|0|16|5",
+      "last": "2026-11-06T18:01:30.550Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
@@ -5522,7 +5533,7 @@
         "trophies": 55,
         "best": 2156,
         "league": "Archer League 9",
-        "warStars": 235,
+        "warStars": 238,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 55073,
@@ -5592,8 +5603,8 @@
         "cg": 15875,
         "don": 9387,
         "capLoot": 10205,
-        "gold": 364105059,
-        "elixir": 340903953,
+        "gold": 364219059,
+        "elixir": 341017953,
         "capContrib": 55073,
         "wins": 0
       }
@@ -7774,7 +7785,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 15,
+        "level": 16,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -7792,11 +7803,16 @@
         ]
       },
       "rush": {
-        "pct": 16.7,
+        "pct": 26.7,
         "troops": 16.7,
-        "spells": 0,
+        "spells": 66.7,
         "heroes": 0,
         "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 1,
+            "need": 3
+          },
           {
             "n": "Burzyciel",
             "lvl": 1,
