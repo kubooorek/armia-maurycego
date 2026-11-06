@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T17:01:32.713Z",
+  "updated": "2026-11-06T17:15:56.695Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -32,20 +32,20 @@
         "played": 3
       },
       {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 93,
+        "pct": 2595,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
         "stars": 92,
         "pct": 2738,
-        "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 90,
-        "pct": 2495,
         "wins": 2,
         "played": 3
       },
@@ -1229,7 +1229,7 @@
             {
               "pos": 6,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 7,
@@ -1280,9 +1280,9 @@
         },
         "them": {
           "name": "united again",
-          "stars": 15,
-          "pct": 33.33,
-          "attacks": 5,
+          "stars": 18,
+          "pct": 40,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -1898,25 +1898,25 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 7617,
-      "raids": 0,
-      "attacks": 6,
-      "districts": 2,
+      "loot": 14310,
+      "raids": 1,
+      "attacks": 11,
+      "districts": 3,
       "medals": 0,
       "members": [
         {
-          "name": "SHA☆ZAM!",
-          "tag": "#GVGRVCQJR",
-          "attacks": 4,
-          "limit": 6,
-          "loot": 5167
-        },
-        {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": 2,
-          "limit": 5,
-          "loot": 2450
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7928
+        },
+        {
+          "name": "SHA☆ZAM!",
+          "tag": "#GVGRVCQJR",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 6382
         }
       ]
     },
@@ -2258,7 +2258,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 20,
-      "them": 15,
+      "them": 18,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -4160,8 +4160,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "11|381696271|393942949|12900|642|278365|401040|0|124|123|12",
-      "last": "2026-11-06T17:01:32.701Z",
+      "sig": "11|382753173|394799739|12900|642|283555|401040|0|124|123|12",
+      "last": "2026-11-06T17:15:56.683Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -4250,8 +4250,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|62695984|62771073|2400|614|11170|22509|0|4|54|9",
-      "last": "2026-11-06T17:01:32.701Z",
+      "sig": "161|62695984|62771073|2400|614|13870|22509|0|4|54|9",
+      "last": "2026-11-06T17:15:56.683Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4290,8 +4290,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|25246007|24556257|0|0|0|400|0|14|32|8",
-      "last": "2026-11-06T15:15:56.072Z",
+      "sig": "0|26366401|25774170|0|0|0|400|0|14|32|8",
+      "last": "2026-11-06T17:15:56.683Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -4688,11 +4688,11 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "score": 96,
+          "score": 106,
           "stars": 9,
           "don": 10,
           "cg": 0,
-          "cap": 2450
+          "cap": 7640
         },
         {
           "name": "Albaroon.2",
@@ -5495,9 +5495,9 @@
       "ach": {
         "cg": 12900,
         "don": 642,
-        "capLoot": 278365,
-        "gold": 381696271,
-        "elixir": 393942949,
+        "capLoot": 283555,
+        "gold": 382753173,
+        "elixir": 394799739,
         "capContrib": 401040,
         "wins": 0
       }
@@ -6899,7 +6899,7 @@
       "ach": {
         "cg": 2400,
         "don": 614,
-        "capLoot": 11170,
+        "capLoot": 13870,
         "gold": 62695984,
         "elixir": 62771073,
         "capContrib": 22509,
@@ -7225,8 +7225,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 25246007,
-        "elixir": 24556257,
+        "gold": 26366401,
+        "elixir": 25774170,
         "capContrib": 400,
         "wins": 0
       }
