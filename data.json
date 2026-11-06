@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T16:46:03.158Z",
+  "updated": "2026-11-06T17:01:32.713Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
@@ -26,8 +26,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 93,
-        "pct": 3197,
+        "stars": 94,
+        "pct": 3242,
         "wins": 1,
         "played": 3
       },
@@ -44,8 +44,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 87,
-        "pct": 2395,
+        "stars": 90,
+        "pct": 2495,
         "wins": 2,
         "played": 3
       },
@@ -59,20 +59,20 @@
         "played": 3
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 81,
+        "pct": 2474,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 79,
         "pct": 2886,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 78,
-        "pct": 2374,
         "wins": 1,
         "played": 3
       },
@@ -1274,15 +1274,15 @@
             {
               "pos": 19,
               "th": 8,
-              "best": 0
+              "best": 3
             }
           ]
         },
         "them": {
           "name": "united again",
-          "stars": 12,
-          "pct": 26.67,
-          "attacks": 4,
+          "stars": 15,
+          "pct": 33.33,
+          "attacks": 5,
           "bases": [
             {
               "pos": 1,
@@ -1890,7 +1890,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -1898,18 +1898,25 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 3583,
+      "loot": 7617,
       "raids": 0,
-      "attacks": 3,
-      "districts": 1,
+      "attacks": 6,
+      "districts": 2,
       "medals": 0,
       "members": [
         {
           "name": "SHA☆ZAM!",
           "tag": "#GVGRVCQJR",
-          "attacks": 3,
+          "attacks": 4,
           "limit": 6,
-          "loot": 3583
+          "loot": 5167
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": 2,
+          "limit": 5,
+          "loot": 2450
         }
       ]
     },
@@ -2251,7 +2258,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 20,
-      "them": 12,
+      "them": 15,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -4128,13 +4135,13 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "555|2000000000|2000000000|94700|81636|1208549|1610015|0|1256|205|15",
-      "last": "2026-11-06T16:46:03.148Z",
+      "sig": "585|2000000000|2000000000|94700|81636|1208549|1610015|0|1256|205|15",
+      "last": "2026-11-06T17:01:32.701Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "803|468662765|484858282|42500|93476|246500|453697|0|1219|152|15",
-      "last": "2026-11-06T16:15:53.719Z",
+      "sig": "868|468662765|484858282|42500|93511|246500|453697|0|1219|152|15",
+      "last": "2026-11-06T17:01:32.701Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -4153,8 +4160,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "11|381696271|393942949|12900|642|275915|401040|0|124|123|12",
-      "last": "2026-11-06T16:31:21.042Z",
+      "sig": "11|381696271|393942949|12900|642|278365|401040|0|124|123|12",
+      "last": "2026-11-06T17:01:32.701Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -4208,8 +4215,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|95789775|103384794|1900|29|0|3150|0|35|40|10",
-      "last": "2026-11-06T14:31:28.542Z",
+      "sig": "0|96335775|103930794|1900|29|0|3150|0|35|40|10",
+      "last": "2026-11-06T17:01:32.701Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -4238,13 +4245,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
-      "sig": "0|70064428|68706422|0|68|0|3870|0|0|42|8",
-      "last": "2026-11-03T16:07:53.185Z",
+      "sig": "0|70064428|68706422|0|68|0|3870|0|0|43|8",
+      "last": "2026-11-06T17:01:32.701Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|62695984|62771073|2400|614|11150|22509|0|4|54|9",
-      "last": "2026-11-06T16:46:03.148Z",
+      "sig": "161|62695984|62771073|2400|614|11170|22509|0|4|54|9",
+      "last": "2026-11-06T17:01:32.701Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4663,9 +4670,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 184,
+          "score": 188,
           "stars": 12,
-          "don": 643,
+          "don": 678,
           "cg": 0,
           "cap": 0
         },
@@ -4679,20 +4686,20 @@
           "cap": 3935
         },
         {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "score": 96,
+          "stars": 9,
+          "don": 10,
+          "cg": 0,
+          "cap": 2450
+        },
+        {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
           "score": 91,
           "stars": 7,
           "don": 214,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "score": 91,
-          "stars": 9,
-          "don": 10,
           "cg": 0,
           "cap": 0
         },
@@ -5044,7 +5051,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 555,
+      "given": 585,
       "received": 151,
       "trophies": 550,
       "profile": {
@@ -5112,8 +5119,8 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 803,
-      "received": 108,
+      "given": 868,
+      "received": 138,
       "trophies": 0,
       "profile": {
         "level": 152,
@@ -5193,7 +5200,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 93476,
+        "don": 93511,
         "capLoot": 246500,
         "gold": 468662765,
         "elixir": 484858282,
@@ -5488,7 +5495,7 @@
       "ach": {
         "cg": 12900,
         "don": 642,
-        "capLoot": 275915,
+        "capLoot": 278365,
         "gold": 381696271,
         "elixir": 393942949,
         "capContrib": 401040,
@@ -6301,75 +6308,16 @@
       }
     },
     {
-      "name": "wiktor",
-      "tag": "#QGPC2228Q",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 200,
-      "profile": {
-        "level": 57,
-        "trophies": 200,
-        "best": 787,
-        "league": "Barbarian League 4",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 17129,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.5,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 750,
-        "don": 0,
-        "capLoot": 14130,
-        "gold": 52134577,
-        "elixir": 49308201,
-        "capContrib": 17129,
-        "wins": 0
-      }
-    },
-    {
       "name": "Mimbosz",
       "tag": "#RY0QPVCCY",
       "role": "member",
       "th": 10,
       "given": 0,
-      "received": 413,
-      "trophies": 180,
+      "received": 478,
+      "trophies": 220,
       "profile": {
         "level": 40,
-        "trophies": 180,
+        "trophies": 220,
         "best": 252,
         "league": "Barbarian League 4",
         "warStars": 35,
@@ -6437,9 +6385,68 @@
         "cg": 1900,
         "don": 29,
         "capLoot": 0,
-        "gold": 95789775,
-        "elixir": 103384794,
+        "gold": 96335775,
+        "elixir": 103930794,
         "capContrib": 3150,
+        "wins": 0
+      }
+    },
+    {
+      "name": "wiktor",
+      "tag": "#QGPC2228Q",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 200,
+      "profile": {
+        "level": 57,
+        "trophies": 200,
+        "best": 787,
+        "league": "Barbarian League 4",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 17129,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.5,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 750,
+        "don": 0,
+        "capLoot": 14130,
+        "gold": 52134577,
+        "elixir": 49308201,
+        "capContrib": 17129,
         "wins": 0
       }
     },
@@ -6871,7 +6878,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 6,
+            "level": 7,
             "max": 95
           }
         ]
@@ -6892,7 +6899,7 @@
       "ach": {
         "cg": 2400,
         "don": 614,
-        "capLoot": 11150,
+        "capLoot": 11170,
         "gold": 62695984,
         "elixir": 62771073,
         "capContrib": 22509,
@@ -7403,7 +7410,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 42,
+        "level": 43,
         "trophies": 0,
         "best": 296,
         "league": "Skeleton League 2",
@@ -7596,16 +7603,16 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 49,
-        "troops": 26.5,
+        "pct": 46.9,
+        "troops": 24.5,
         "spells": 63.2,
-        "heroes": 76.7,
+        "heroes": 73.3,
         "top": [
           {
             "n": "Zaklęcie leczenia",
@@ -7633,9 +7640,9 @@
             "need": 4
           },
           {
-            "n": "Królowa Łuczniczek",
-            "lvl": 3,
-            "need": 10
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 3
           }
         ]
       },
