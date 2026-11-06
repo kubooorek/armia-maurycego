@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T19:45:56.694Z",
+  "updated": "2026-11-06T20:01:30.761Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 109,
-        "pct": 3608,
+        "stars": 111,
+        "pct": 3692,
         "wins": 2,
         "played": 4
       },
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 107,
-        "pct": 3342,
+        "stars": 109,
+        "pct": 3433,
         "wins": 2,
         "played": 4
       },
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 17,
-          "pct": 43.53,
-          "attacks": 7,
+          "stars": 19,
+          "pct": 49.13,
+          "attacks": 8,
           "bases": [
             {
               "pos": 1,
@@ -1682,7 +1682,7 @@
             {
               "pos": 8,
               "th": 11,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 9,
@@ -1852,7 +1852,13 @@
             "tag": "#LC8VRR9R2",
             "pos": 13,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 84,
+                "target": "8. MAAD"
+              }
+            ]
           },
           {
             "name": "vvd",
@@ -2190,6 +2196,12 @@
         "wars": 5
       },
       {
+        "name": "Brann",
+        "stars": 8,
+        "attacks": 5,
+        "wars": 5
+      },
+      {
         "name": "monte",
         "stars": 7,
         "attacks": 5,
@@ -2199,12 +2211,6 @@
         "name": "Barnes",
         "stars": 7,
         "attacks": 5,
-        "wars": 5
-      },
-      {
-        "name": "Brann",
-        "stars": 6,
-        "attacks": 4,
         "wars": 5
       },
       {
@@ -2225,7 +2231,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -2620,7 +2626,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 17,
+      "us": 19,
       "them": 6,
       "members": [
         {
@@ -2716,7 +2722,12 @@
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 84
+            }
+          ]
         },
         {
           "name": "vvd",
@@ -4631,18 +4642,18 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "603|2000000000|2000000000|94700|81654|1216349|1619438|0|1257|205|15",
-      "last": "2026-11-06T18:46:01.025Z",
+      "sig": "688|2000000000|2000000000|94700|81654|1216349|1619438|0|1257|205|15",
+      "last": "2026-11-06T20:01:30.753Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "868|468662765|484858282|42500|93511|246500|453697|0|1219|152|15",
-      "last": "2026-11-06T17:01:32.701Z",
+      "sig": "925|468662765|484858282|42500|93566|246500|453697|0|1219|152|15",
+      "last": "2026-11-06T20:01:30.753Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "215|578699145|601624778|38350|7723|534230|668928|0|98|109|12",
-      "last": "2026-11-06T19:45:56.681Z",
+      "sig": "225|578699145|601624778|38350|7733|534230|668928|0|98|109|12",
+      "last": "2026-11-06T20:01:30.753Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -4666,8 +4677,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
-      "sig": "0|831346095|890682741|118755|72883|212590|452225|0|3163|134|9",
-      "last": "2026-11-05T18:46:03.428Z",
+      "sig": "0|831429095|890765741|118755|72883|212590|452225|0|3166|134|9",
+      "last": "2026-11-06T20:01:30.753Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
@@ -5166,9 +5177,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 188,
+          "score": 193,
           "stars": 12,
-          "don": 678,
+          "don": 733,
           "cg": 0,
           "cap": 0
         },
@@ -5193,9 +5204,9 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "score": 106,
+          "score": 107,
           "stars": 8,
-          "don": 214,
+          "don": 224,
           "cg": 0,
           "cap": 2435
         },
@@ -5547,7 +5558,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 603,
+      "given": 688,
       "received": 152,
       "trophies": 550,
       "profile": {
@@ -5615,7 +5626,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 868,
+      "given": 925,
       "received": 138,
       "trophies": 0,
       "profile": {
@@ -5696,7 +5707,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 93511,
+        "don": 93566,
         "capLoot": 246500,
         "gold": 468662765,
         "elixir": 484858282,
@@ -5709,7 +5720,7 @@
       "tag": "#GYUJR2URJ",
       "role": "coLeader",
       "th": 12,
-      "given": 215,
+      "given": 225,
       "received": 216,
       "trophies": 204,
       "profile": {
@@ -5754,7 +5765,7 @@
       },
       "ach": {
         "cg": 38350,
-        "don": 7723,
+        "don": 7733,
         "capLoot": 534230,
         "gold": 578699145,
         "elixir": 601624778,
@@ -6182,14 +6193,14 @@
       "role": "coLeader",
       "th": 9,
       "given": 0,
-      "received": 154,
+      "received": 185,
       "trophies": 0,
       "profile": {
         "level": 134,
         "trophies": 0,
         "best": 3631,
         "league": "Archer League 8",
-        "warStars": 3163,
+        "warStars": 3166,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 452225,
@@ -6223,8 +6234,8 @@
         "cg": 118755,
         "don": 72883,
         "capLoot": 212590,
-        "gold": 831346095,
-        "elixir": 890682741,
+        "gold": 831429095,
+        "elixir": 890765741,
         "capContrib": 452225,
         "wins": 0
       }
@@ -6235,7 +6246,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 123,
+      "received": 153,
       "trophies": 0,
       "profile": {
         "level": 102,
@@ -6677,7 +6688,7 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 103,
+      "received": 129,
       "trophies": 0,
       "profile": {
         "level": 87,
@@ -6809,7 +6820,7 @@
       "role": "member",
       "th": 10,
       "given": 0,
-      "received": 478,
+      "received": 543,
       "trophies": 220,
       "profile": {
         "level": 40,
