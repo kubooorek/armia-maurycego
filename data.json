@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T15:15:56.084Z",
+  "updated": "2026-11-06T15:31:16.577Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -6450,7 +6450,7 @@
       "rush": {
         "pct": 0.9,
         "troops": 0,
-        "spells": 4.8,
+        "spells": 4.5,
         "heroes": 0,
         "top": [
           {
@@ -7367,16 +7367,11 @@
         ]
       },
       "rush": {
-        "pct": 28.2,
-        "troops": 15.1,
+        "pct": 26.2,
+        "troops": 11.3,
         "spells": 30,
         "heroes": 50,
         "top": [
-          {
-            "n": "P.E.K.K.A",
-            "lvl": 1,
-            "need": 3
-          },
           {
             "n": "Zaklęcie szału",
             "lvl": 2,
@@ -7401,6 +7396,11 @@
             "n": "Królowa Łuczniczek",
             "lvl": 5,
             "need": 10
+          },
+          {
+            "n": "Smok",
+            "lvl": 2,
+            "need": 3
           }
         ]
       },
