@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T23:15:53.646Z",
+  "updated": "2026-11-06T23:31:09.270Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -4744,8 +4744,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|518933060|474177826|10100|244|28750|78375|0|35|79|11",
-      "last": "2026-11-06T23:15:53.636Z",
+      "sig": "0|518933060|474177826|10100|244|28940|78375|0|35|79|11",
+      "last": "2026-11-06T23:31:09.257Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -5270,11 +5270,11 @@
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "score": 113,
+          "score": 114,
           "stars": 11,
           "don": 5,
           "cg": 0,
-          "cap": 1430
+          "cap": 1620
         }
       ]
     }
@@ -6433,7 +6433,7 @@
       "ach": {
         "cg": 10100,
         "don": 244,
-        "capLoot": 28750,
+        "capLoot": 28940,
         "gold": 518933060,
         "elixir": 474177826,
         "capContrib": 78375,
