@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T21:16:02.599Z",
+  "updated": "2026-11-06T21:31:14.448Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -7064,8 +7064,8 @@
         ]
       },
       "rush": {
-        "pct": 11.1,
-        "troops": 6.8,
+        "pct": 10.2,
+        "troops": 5.1,
         "spells": 0,
         "heroes": 26.7,
         "top": [
@@ -7076,11 +7076,6 @@
           },
           {
             "n": "Walkiria",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Golem",
             "lvl": 1,
             "need": 2
           },
