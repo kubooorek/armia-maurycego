@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T18:01:30.560Z",
+  "updated": "2026-11-06T18:15:58.921Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -71,8 +71,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 81,
-        "pct": 2932,
+        "stars": 82,
+        "pct": 2955,
         "wins": 1,
         "played": 3
       },
@@ -1197,9 +1197,9 @@
         "end": "20261106T182424.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 22,
-          "pct": 57.07,
-          "attacks": 13,
+          "stars": 23,
+          "pct": 58.6,
+          "attacks": 14,
           "bases": [
             {
               "pos": 1,
@@ -1327,7 +1327,7 @@
             {
               "pos": 9,
               "th": 13,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 10,
@@ -1497,7 +1497,13 @@
             "tag": "#G8VGC2VRL",
             "pos": 11,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 59,
+                "target": "9. shivangi rajput"
+              }
+            ]
           },
           {
             "name": "Belaska",
@@ -1930,6 +1936,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7277
+        },
+        {
+          "name": "Toster290",
+          "tag": "#GJJ90QGVQ",
+          "attacks": 0,
+          "limit": 5,
+          "loot": 0
         }
       ]
     },
@@ -2270,7 +2283,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 22,
+      "us": 23,
       "them": 18,
       "members": [
         {
@@ -2376,7 +2389,12 @@
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 59
+            }
+          ]
         },
         {
           "name": "Belaska",
@@ -4183,8 +4201,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "2|364219059|341017953|15875|9387|10205|55073|0|238|105|11",
-      "last": "2026-11-06T18:01:30.550Z",
+      "sig": "33|364219059|341017953|15875|9417|10205|55073|0|238|105|11",
+      "last": "2026-11-06T18:15:58.908Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -4218,8 +4236,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|123723955|114078545|7600|634|9310|29985|0|32|58|9",
-      "last": "2026-11-04T21:15:59.465Z",
+      "sig": "25|123795355|114138611|7600|634|9310|29985|0|33|58|9",
+      "last": "2026-11-06T18:15:58.908Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -5525,7 +5543,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 2,
+      "given": 33,
       "received": 0,
       "trophies": 55,
       "profile": {
@@ -5601,7 +5619,7 @@
       },
       "ach": {
         "cg": 15875,
-        "don": 9387,
+        "don": 9417,
         "capLoot": 10205,
         "gold": 364219059,
         "elixir": 341017953,
@@ -5909,12 +5927,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 24,
+            "level": 25,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
@@ -6036,14 +6054,14 @@
       "role": "admin",
       "th": 9,
       "given": 25,
-      "received": 0,
+      "received": 31,
       "trophies": 11,
       "profile": {
         "level": 58,
         "trophies": 11,
         "best": 696,
         "league": "Barbarian League 6",
-        "warStars": 32,
+        "warStars": 33,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 29985,
@@ -6103,8 +6121,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 9310,
-        "gold": 123723955,
-        "elixir": 114078545,
+        "gold": 123795355,
+        "elixir": 114138611,
         "capContrib": 29985,
         "wins": 0
       }
