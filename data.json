@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T17:31:25.424Z",
+  "updated": "2026-11-06T17:46:01.714Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -1898,12 +1898,19 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 18511,
+      "loot": 23428,
       "raids": 1,
-      "attacks": 15,
-      "districts": 4,
+      "attacks": 18,
+      "districts": 5,
       "medals": 0,
       "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8223
+        },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
@@ -1917,13 +1924,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7277
-        },
-        {
-          "name": "KUBOOOREK",
-          "tag": "#VP9PLGLV",
-          "attacks": 3,
-          "limit": 6,
-          "loot": 3306
         }
       ]
     },
@@ -4142,8 +4142,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "585|2000000000|2000000000|94700|81636|1211549|1610015|0|1256|205|15",
-      "last": "2026-11-06T17:31:25.413Z",
+      "sig": "585|2000000000|2000000000|94700|81636|1216349|1619438|0|1256|205|15",
+      "last": "2026-11-06T17:46:01.702Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -4357,8 +4357,8 @@
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
-      "sig": "0|3150969|2826454|0|23|0|0|0|0|98|11",
-      "last": "2026-11-04T22:15:56.533Z",
+      "sig": "0|3150969|2826454|0|23|0|0|0|0|99|11",
+      "last": "2026-11-06T17:46:01.702Z",
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
@@ -5069,7 +5069,7 @@
         "warStars": 1256,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 1610015,
+        "capital": 1619438,
         "warPref": "in",
         "heroes": [
           {
@@ -5114,10 +5114,10 @@
       "ach": {
         "cg": 94700,
         "don": 81636,
-        "capLoot": 1211549,
+        "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
-        "capContrib": 1610015,
+        "capContrib": 1619438,
         "wins": 0
       }
     },
@@ -6107,7 +6107,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 98,
+        "level": 99,
         "trophies": 0,
         "best": 1364,
         "league": "Barbarian League 6",
