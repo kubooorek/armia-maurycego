@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T16:31:21.052Z",
+  "updated": "2026-11-06T16:46:03.158Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -68,20 +68,20 @@
         "played": 3
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 78,
+        "pct": 2374,
+        "wins": 1,
+        "played": 3
+      },
+      {
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
         "stars": 74,
         "pct": 2438,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 72,
-        "pct": 2174,
         "wins": 1,
         "played": 3
       }
@@ -1898,12 +1898,20 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 0,
+      "loot": 3583,
       "raids": 0,
-      "attacks": 0,
-      "districts": 0,
+      "attacks": 3,
+      "districts": 1,
       "medals": 0,
-      "members": []
+      "members": [
+        {
+          "name": "SHA☆ZAM!",
+          "tag": "#GVGRVCQJR",
+          "attacks": 3,
+          "limit": 6,
+          "loot": 3583
+        }
+      ]
     },
     {
       "state": "ended",
@@ -4120,8 +4128,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "553|2000000000|2000000000|94700|81636|1208549|1610015|0|1256|205|15",
-      "last": "2026-11-05T18:46:03.428Z",
+      "sig": "555|2000000000|2000000000|94700|81636|1208549|1610015|0|1256|205|15",
+      "last": "2026-11-06T16:46:03.148Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -4215,8 +4223,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|47416259|44219781|10050|88|17945|23865|0|7|46|8",
-      "last": "2026-11-06T11:15:51.927Z",
+      "sig": "20|47416259|44219781|10050|88|17945|23865|0|7|47|8",
+      "last": "2026-11-06T16:46:03.148Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R90YJUQCQ": {
@@ -4235,8 +4243,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|60682894|61231275|2400|614|7665|22509|0|4|53|9",
-      "last": "2026-11-06T16:31:21.042Z",
+      "sig": "161|62695984|62771073|2400|614|11150|22509|0|4|54|9",
+      "last": "2026-11-06T16:46:03.148Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -5036,7 +5044,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 553,
+      "given": 555,
       "received": 151,
       "trophies": 550,
       "profile": {
@@ -5072,7 +5080,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 68,
+            "level": 69,
             "max": 95
           },
           {
@@ -5105,7 +5113,7 @@
       "role": "member",
       "th": 15,
       "given": 803,
-      "received": 106,
+      "received": 108,
       "trophies": 0,
       "profile": {
         "level": 152,
@@ -6841,7 +6849,7 @@
       "received": 222,
       "trophies": 277,
       "profile": {
-        "level": 53,
+        "level": 54,
         "trophies": 277,
         "best": 349,
         "league": "Skeleton League 2",
@@ -6884,9 +6892,9 @@
       "ach": {
         "cg": 2400,
         "don": 614,
-        "capLoot": 7665,
-        "gold": 60682894,
-        "elixir": 61231275,
+        "capLoot": 11150,
+        "gold": 62695984,
+        "elixir": 62771073,
         "capContrib": 22509,
         "wins": 0
       }
@@ -7002,7 +7010,7 @@
       "received": 26,
       "trophies": 219,
       "profile": {
-        "level": 46,
+        "level": 47,
         "trophies": 219,
         "best": 390,
         "league": "Skeleton League 2",
