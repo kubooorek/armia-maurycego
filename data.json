@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T08:15:51.902Z",
+  "updated": "2026-11-06T08:31:11.006Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -14,6 +14,15 @@
     "groupSize": 8,
     "standings": [
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 89,
+        "pct": 2439,
+        "wins": 2,
+        "played": 3
+      },
+      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
@@ -23,12 +32,12 @@
         "played": 3
       },
       {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
         "level": 5,
-        "stars": 86,
-        "pct": 2339,
-        "wins": 2,
+        "stars": 83,
+        "pct": 2863,
+        "wins": 1,
         "played": 3
       },
       {
@@ -38,15 +47,6 @@
         "stars": 82,
         "pct": 2340,
         "wins": 2,
-        "played": 3
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 80,
-        "pct": 2763,
-        "wins": 1,
         "played": 3
       },
       {
@@ -1872,7 +1872,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -4283,8 +4283,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|204906535|197469046|2900|20|21235|36648|0|48|84|11",
-      "last": "2026-11-06T07:45:54.037Z",
+      "sig": "0|207236192|199333825|2900|20|21235|36648|0|48|84|11",
+      "last": "2026-11-06T08:31:10.998Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4333,8 +4333,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|85342705|72200715|3000|27|0|0|0|0|41|9",
-      "last": "2026-11-06T05:46:02.874Z",
+      "sig": "1|85912502|72500234|3000|27|0|0|0|0|42|9",
+      "last": "2026-11-06T08:31:10.998Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -6099,8 +6099,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 21235,
-        "gold": 204906535,
-        "elixir": 197469046,
+        "gold": 207236192,
+        "elixir": 199333825,
         "capContrib": 36648,
         "wins": 0
       }
@@ -6679,7 +6679,7 @@
       "received": 0,
       "trophies": 101,
       "profile": {
-        "level": 41,
+        "level": 42,
         "trophies": 101,
         "best": 149,
         "league": "Skeleton League 3",
@@ -6691,7 +6691,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 9,
             "max": 110
           },
           {
@@ -6707,10 +6707,10 @@
         ]
       },
       "rush": {
-        "pct": 36.3,
+        "pct": 35.2,
         "troops": 18.4,
         "spells": 41.7,
-        "heroes": 63.3,
+        "heroes": 60,
         "top": [
           {
             "n": "Zaklęcie leczenia",
@@ -6729,7 +6729,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 8,
+            "lvl": 9,
             "need": 20
           },
           {
@@ -6748,8 +6748,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 85342705,
-        "elixir": 72200715,
+        "gold": 85912502,
+        "elixir": 72500234,
         "capContrib": 0,
         "wins": 0
       }
@@ -7612,24 +7612,19 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 6,
+            "level": 7,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 31.4,
+        "pct": 28.6,
         "troops": 20,
-        "spells": 60,
+        "spells": 50,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie szału",
             "lvl": 1,
             "need": 3
           },
@@ -7650,6 +7645,11 @@
           },
           {
             "n": "Goblin",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Gigant",
             "lvl": 2,
             "need": 3
           }
