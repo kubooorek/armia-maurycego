@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T16:15:53.732Z",
+  "updated": "2026-11-06T16:31:21.052Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 76,
-        "pct": 2786,
+        "stars": 79,
+        "pct": 2886,
         "wins": 1,
         "played": 3
       },
@@ -72,7 +72,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 74,
-        "pct": 2403,
+        "pct": 2438,
         "wins": 1,
         "played": 3
       },
@@ -1197,9 +1197,9 @@
         "end": "20261106T182424.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 17,
-          "pct": 47.33,
-          "attacks": 11,
+          "stars": 20,
+          "pct": 54,
+          "attacks": 12,
           "bases": [
             {
               "pos": 1,
@@ -1337,7 +1337,7 @@
             {
               "pos": 11,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 12,
@@ -1406,7 +1406,13 @@
             "tag": "#LJYR92002",
             "pos": 4,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "11. ditchellmennis"
+              }
+            ]
           },
           {
             "name": "MrDefPL",
@@ -1855,6 +1861,12 @@
         "wars": 4
       },
       {
+        "name": "MAQOS",
+        "stars": 4,
+        "attacks": 4,
+        "wars": 4
+      },
+      {
         "name": "MrDefPL",
         "stars": 4,
         "attacks": 4,
@@ -1870,12 +1882,6 @@
         "name": "Barnes",
         "stars": 4,
         "attacks": 4,
-        "wars": 4
-      },
-      {
-        "name": "Cwel123",
-        "stars": 3,
-        "attacks": 3,
         "wars": 4
       }
     ]
@@ -2236,7 +2242,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 17,
+      "us": 20,
       "them": 12,
       "members": [
         {
@@ -2272,7 +2278,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "MrDefPL",
@@ -4134,8 +4145,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "11|379669318|392058711|12900|642|275915|401040|0|121|123|12",
-      "last": "2026-11-05T23:45:55.115Z",
+      "sig": "11|381696271|393942949|12900|642|275915|401040|0|124|123|12",
+      "last": "2026-11-06T16:31:21.042Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -4224,8 +4235,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|60682894|61231275|2400|614|7665|22509|0|4|52|9",
-      "last": "2026-11-05T18:55:29.979Z",
+      "sig": "161|60682894|61231275|2400|614|7665|22509|0|4|53|9",
+      "last": "2026-11-06T16:31:21.042Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4669,20 +4680,20 @@
           "cap": 0
         },
         {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "score": 91,
+          "stars": 9,
+          "don": 10,
+          "cg": 0,
+          "cap": 0
+        },
+        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "score": 81,
           "stars": 8,
           "don": 5,
-          "cg": 0,
-          "cap": 0
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "score": 80,
-          "stars": 8,
-          "don": 0,
           "cg": 0,
           "cap": 0
         }
@@ -5431,7 +5442,7 @@
         "trophies": 402,
         "best": 2224,
         "league": "Archer League 9",
-        "warStars": 121,
+        "warStars": 124,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 401040,
@@ -5470,8 +5481,8 @@
         "cg": 12900,
         "don": 642,
         "capLoot": 275915,
-        "gold": 379669318,
-        "elixir": 392058711,
+        "gold": 381696271,
+        "elixir": 393942949,
         "capContrib": 401040,
         "wins": 0
       }
@@ -6830,7 +6841,7 @@
       "received": 222,
       "trophies": 277,
       "profile": {
-        "level": 52,
+        "level": 53,
         "trophies": 277,
         "best": 349,
         "league": "Skeleton League 2",
@@ -6847,7 +6858,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 11,
+            "level": 12,
             "max": 110
           },
           {
@@ -7802,7 +7813,7 @@
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 100,
+        "capital": 400,
         "warPref": "in",
         "heroes": [
           {
