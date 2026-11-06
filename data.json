@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T12:16:01.652Z",
+  "updated": "2026-11-06T12:31:14.282Z",
   "clanLevel": 3,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10,7 +10,7 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 6,
+    "place": 7,
     "groupSize": 8,
     "standings": [
       {
@@ -53,9 +53,18 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 78,
-        "pct": 1972,
+        "stars": 81,
+        "pct": 2072,
         "wins": 2,
+        "played": 3
+      },
+      {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 74,
+        "pct": 2360,
+        "wins": 1,
         "played": 3
       },
       {
@@ -64,15 +73,6 @@
         "level": 3,
         "stars": 73,
         "pct": 2686,
-        "wins": 1,
-        "played": 3
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 73,
-        "pct": 2307,
         "wins": 1,
         "played": 3
       },
@@ -1874,7 +1874,7 @@
       }
     ]
   },
-  "visits": 74,
+  "visits": 75,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -4414,8 +4414,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "20|4615522|4639902|0|61|0|100|0|0|26|6",
-      "last": "2026-11-06T06:31:14.487Z",
+      "sig": "20|5338413|5097876|0|61|0|100|0|0|26|6",
+      "last": "2026-11-06T12:31:14.270Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -4434,8 +4434,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "45|26522623|25716561|0|42|0|100|0|0|32|9",
-      "last": "2026-11-06T12:16:01.641Z",
+      "sig": "45|27562793|26445364|0|42|0|100|0|0|32|9",
+      "last": "2026-11-06T12:31:14.270Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -6069,8 +6069,8 @@
         ]
       },
       "rush": {
-        "pct": 21.2,
-        "troops": 4,
+        "pct": 20.8,
+        "troops": 3,
         "spells": 0,
         "heroes": 49,
         "top": [
@@ -6085,12 +6085,12 @@
             "need": 40
           },
           {
-            "n": "Golem",
-            "lvl": 3,
+            "n": "Walkiria",
+            "lvl": 4,
             "need": 5
           },
           {
-            "n": "Walkiria",
+            "n": "Golem",
             "lvl": 4,
             "need": 5
           },
@@ -7754,8 +7754,8 @@
         "cg": 0,
         "don": 42,
         "capLoot": 0,
-        "gold": 26522623,
-        "elixir": 25716561,
+        "gold": 27562793,
+        "elixir": 26445364,
         "capContrib": 100,
         "wins": 0
       }
@@ -7964,8 +7964,8 @@
         "cg": 0,
         "don": 61,
         "capLoot": 0,
-        "gold": 4615522,
-        "elixir": 4639902,
+        "gold": 5338413,
+        "elixir": 5097876,
         "capContrib": 100,
         "wins": 0
       }
