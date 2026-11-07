@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T18:16:03.697Z",
+  "updated": "2026-11-07T18:31:16.392Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -17,19 +17,28 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 133,
+        "stars": 143,
         "pct": 3889,
-        "wins": 3,
-        "played": 4
+        "wins": 4,
+        "played": 5
       },
       {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 129,
+        "stars": 139,
         "pct": 4312,
-        "wins": 2,
-        "played": 4
+        "wins": 3,
+        "played": 5
+      },
+      {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 124,
+        "pct": 2832,
+        "wins": 4,
+        "played": 5
       },
       {
         "tag": "#2RVLCPPUR",
@@ -38,7 +47,7 @@
         "stars": 116,
         "pct": 3398,
         "wins": 2,
-        "played": 4
+        "played": 5
       },
       {
         "tag": "#2CC0PJPLY",
@@ -47,16 +56,16 @@
         "stars": 114,
         "pct": 3629,
         "wins": 2,
-        "played": 4
+        "played": 5
       },
       {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 114,
-        "pct": 2832,
-        "wins": 3,
-        "played": 4
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 111,
+        "pct": 3170,
+        "wins": 2,
+        "played": 5
       },
       {
         "tag": "#2YRR8GPUU",
@@ -65,7 +74,7 @@
         "stars": 104,
         "pct": 2982,
         "wins": 2,
-        "played": 4
+        "played": 5
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -74,16 +83,7 @@
         "stars": 101,
         "pct": 3373,
         "wins": 1,
-        "played": 4
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 101,
-        "pct": 3170,
-        "wins": 1,
-        "played": 4
+        "played": 5
       }
     ],
     "wars": [
@@ -1555,7 +1555,7 @@
       },
       {
         "round": 5,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261106T182801.000Z",
@@ -2763,7 +2763,7 @@
       "enemy": "سوري",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 37,
       "them": 27,
@@ -6770,8 +6770,8 @@
         ]
       },
       "rush": {
-        "pct": 4.5,
-        "troops": 8.5,
+        "pct": 3.6,
+        "troops": 6.8,
         "spells": 0,
         "heroes": 0,
         "top": [
@@ -6787,11 +6787,6 @@
           },
           {
             "n": "Łuczniczka",
-            "lvl": 4,
-            "need": 5
-          },
-          {
-            "n": "Gigant",
             "lvl": 4,
             "need": 5
           }
