@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T11:01:34.008Z",
+  "updated": "2026-11-07T11:16:07.280Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 117,
-        "pct": 3892,
+        "stars": 120,
+        "pct": 3992,
         "wins": 2,
         "played": 4
       },
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 25,
-          "pct": 62.47,
-          "attacks": 10,
+          "stars": 28,
+          "pct": 69.13,
+          "attacks": 11,
           "bases": [
             {
               "pos": 1,
@@ -1687,7 +1687,7 @@
             {
               "pos": 9,
               "th": 10,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 10,
@@ -1811,7 +1811,13 @@
             "tag": "#22R8PLCU8",
             "pos": 8,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "9. ضياء عزوز"
+              }
+            ]
           },
           {
             "name": "Cwel123",
@@ -2191,8 +2197,8 @@
       },
       {
         "name": "VipeR",
-        "stars": 9,
-        "attacks": 4,
+        "stars": 12,
+        "attacks": 5,
         "wars": 5
       },
       {
@@ -2243,7 +2249,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2349,6 +2355,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T11:16:06.489Z",
+      "type": "th",
+      "name": "Darui",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-07T09:15:57.906Z",
       "type": "th",
@@ -2686,7 +2699,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 25,
+      "us": 28,
       "them": 27,
       "members": [
         {
@@ -2752,7 +2765,12 @@
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Cwel123",
@@ -4758,8 +4776,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "64|364219059|341017953|15875|9447|10205|55073|0|238|105|11",
-      "last": "2026-11-06T18:31:29.535Z",
+      "sig": "64|364308059|341106953|15875|9447|10205|55073|0|241|105|11",
+      "last": "2026-11-07T11:16:07.267Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -4878,8 +4896,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|25567815|25241411|0|160|14515|25739|0|0|49|8",
-      "last": "2026-11-07T06:46:00.643Z",
+      "sig": "0|25759287|25469727|0|160|14515|25739|0|0|49|9",
+      "last": "2026-11-07T11:16:07.267Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -6132,7 +6150,7 @@
         "trophies": 77,
         "best": 2156,
         "league": "Archer League 9",
-        "warStars": 238,
+        "warStars": 241,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 55073,
@@ -6202,8 +6220,8 @@
         "cg": 15875,
         "don": 9447,
         "capLoot": 10205,
-        "gold": 364219059,
-        "elixir": 341017953,
+        "gold": 364308059,
+        "elixir": 341106953,
         "capContrib": 55073,
         "wins": 0
       }
@@ -7672,7 +7690,7 @@
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 0,
       "received": 0,
       "trophies": 218,
@@ -7689,7 +7707,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 16,
+            "level": 17,
             "max": 110
           },
           {
@@ -7700,18 +7718,24 @@
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 2.9,
         "troops": 0,
         "spells": 0,
-        "heroes": 0,
-        "top": []
+        "heroes": 10,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 17,
+            "need": 20
+          }
+        ]
       },
       "ach": {
         "cg": 0,
         "don": 160,
         "capLoot": 14515,
-        "gold": 25567815,
-        "elixir": 25241411,
+        "gold": 25759287,
+        "elixir": 25469727,
         "capContrib": 25739,
         "wins": 0
       }
@@ -8136,22 +8160,17 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 17.1,
+        "pct": 14.3,
         "troops": 16,
-        "spells": 20,
+        "spells": 10,
         "heroes": 0,
         "top": [
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 3
-          },
           {
             "n": "Barbarzyńca",
             "lvl": 2,
@@ -8169,6 +8188,11 @@
           },
           {
             "n": "Burzyciel",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie leczenia",
             "lvl": 2,
             "need": 3
           }
