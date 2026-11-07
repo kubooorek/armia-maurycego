@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T14:01:26.964Z",
+  "updated": "2026-11-07T14:16:07.488Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -5027,8 +5027,8 @@
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
-      "sig": "0|1981435|1983038|0|0|0|100|0|0|17|7",
-      "last": "2026-11-06T20:31:14.576Z",
+      "sig": "0|1981435|1983038|0|0|0|100|0|0|18|7",
+      "last": "2026-11-07T14:16:07.480Z",
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
@@ -6945,16 +6945,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 6,
+            "level": 7,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 42.2,
+        "pct": 41.4,
         "troops": 37.3,
-        "spells": 29.2,
-        "heroes": 51.4,
+        "spells": 28,
+        "heroes": 50,
         "top": [
           {
             "n": "Minion",
@@ -8689,7 +8689,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 17,
+        "level": 18,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -8707,13 +8707,18 @@
         ]
       },
       "rush": {
-        "pct": 10,
+        "pct": 15.2,
         "troops": 0,
-        "spells": 42.9,
+        "spells": 50,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie szału",
             "lvl": 1,
             "need": 3
           },
