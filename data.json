@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T16:46:06.280Z",
+  "updated": "2026-11-07T17:01:32.878Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -2407,6 +2407,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T17:01:31.987Z",
+      "type": "th",
+      "name": "zuzia",
+      "from": 9,
+      "to": 10
+    },
     {
       "t": "2026-11-07T12:46:07.371Z",
       "type": "th",
@@ -4930,8 +4937,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|86470219|72765230|3000|27|0|0|0|0|42|9",
-      "last": "2026-11-07T07:16:13.902Z",
+      "sig": "1|86470219|72765230|3000|27|0|0|0|0|42|10",
+      "last": "2026-11-07T17:01:32.869Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -7295,7 +7302,7 @@
       "name": "zuzia",
       "tag": "#R8V9U9VLJ",
       "role": "member",
-      "th": 9,
+      "th": 10,
       "given": 1,
       "received": 0,
       "trophies": 101,
@@ -7328,40 +7335,40 @@
         ]
       },
       "rush": {
-        "pct": 35.2,
-        "troops": 18.4,
-        "spells": 41.7,
-        "heroes": 60,
+        "pct": 53.5,
+        "troops": 23.7,
+        "spells": 46.7,
+        "heroes": 80,
         "top": [
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 3,
+            "need": 30
+          },
           {
             "n": "Zaklęcie leczenia",
             "lvl": 1,
-            "need": 5
+            "need": 6
           },
           {
             "n": "Wieprzowy jeździec",
             "lvl": 1,
-            "need": 4
+            "need": 5
           },
           {
-            "n": "Królowa Łuczniczek",
-            "lvl": 3,
+            "n": "Książę Minionów",
+            "lvl": 2,
             "need": 10
           },
           {
             "n": "Król Barbarzyńców",
             "lvl": 9,
-            "need": 20
-          },
-          {
-            "n": "Minion",
-            "lvl": 2,
-            "need": 4
+            "need": 30
           },
           {
             "n": "Zaklęcie trucizny",
             "lvl": 1,
-            "need": 2
+            "need": 3
           }
         ]
       },
