@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T00:01:29.482Z",
+  "updated": "2026-11-07T00:49:42.700Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 82,
-        "pct": 2707,
+        "stars": 85,
+        "pct": 2807,
         "wins": 1,
         "played": 4
       }
@@ -1579,7 +1579,7 @@
             {
               "pos": 3,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -1645,9 +1645,9 @@
         },
         "them": {
           "name": "سوري",
-          "stars": 8,
-          "pct": 17.93,
-          "attacks": 3,
+          "stars": 11,
+          "pct": 24.6,
+          "attacks": 4,
           "bases": [
             {
               "pos": 2,
@@ -2674,7 +2674,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 25,
-      "them": 8,
+      "them": 11,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -7107,21 +7107,21 @@
           },
           {
             "name": "Archer Queen",
-            "level": 5,
+            "level": 6,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 4,
+            "level": 5,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 9.3,
+        "pct": 8.3,
         "troops": 3.4,
         "spells": 0,
-        "heroes": 26.7,
+        "heroes": 23.3,
         "top": [
           {
             "n": "Walkiria",
@@ -7130,7 +7130,7 @@
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 5,
+            "lvl": 6,
             "need": 10
           },
           {
