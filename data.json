@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T19:31:22.677Z",
+  "updated": "2026-11-07T19:45:56.687Z",
   "clanLevel": 4,
   "memberCount": 48,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 139,
-        "pct": 4312,
+        "stars": 141,
+        "pct": 4364,
         "wins": 3,
         "played": 5
       },
@@ -1933,9 +1933,9 @@
         "end": "20261108T191029.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 2,
+          "pct": 3.47,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -2093,7 +2093,7 @@
             {
               "pos": 15,
               "th": 13,
-              "best": 0
+              "best": 2
             }
           ]
         },
@@ -2201,7 +2201,13 @@
             "tag": "#LQVRCRUYR",
             "pos": 21,
             "th": 8,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 2,
+                "pct": 52,
+                "target": "15. Astom.boss"
+              }
+            ]
           }
         ]
       },
@@ -2507,6 +2513,12 @@
         "wars": 6
       },
       {
+        "name": "Barnes",
+        "stars": 9,
+        "attacks": 6,
+        "wars": 6
+      },
+      {
         "name": "Albaroon.2",
         "stars": 8,
         "attacks": 5,
@@ -2532,12 +2544,6 @@
       },
       {
         "name": "monte",
-        "stars": 7,
-        "attacks": 5,
-        "wars": 6
-      },
-      {
-        "name": "Barnes",
         "stars": 7,
         "attacks": 5,
         "wars": 6
@@ -3052,7 +3058,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 0,
+      "us": 2,
       "them": 0,
       "members": [
         {
@@ -3128,7 +3134,12 @@
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 52
+            }
+          ]
         }
       ]
     },
@@ -5215,8 +5226,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "690|2000000000|2000000000|94700|81709|1216349|1619438|0|1257|205|15",
-      "last": "2026-11-06T20:31:14.576Z",
+      "sig": "781|2000000000|2000000000|94700|81709|1216349|1619438|0|1257|205|15",
+      "last": "2026-11-07T19:45:56.674Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -5285,8 +5296,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|399295522|463983343|59470|11803|136585|234074|0|2458|87|8",
-      "last": "2026-11-06T19:45:56.681Z",
+      "sig": "0|399341922|464052943|59470|11803|136585|234074|0|2460|87|8",
+      "last": "2026-11-07T19:45:56.674Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -6173,7 +6184,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 690,
+      "given": 781,
       "received": 152,
       "trophies": 563,
       "profile": {
@@ -6808,7 +6819,7 @@
       "role": "member",
       "th": 12,
       "given": 0,
-      "received": 2,
+      "received": 67,
       "trophies": 0,
       "profile": {
         "level": 127,
@@ -7382,14 +7393,14 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 129,
+      "received": 155,
       "trophies": 0,
       "profile": {
         "level": 87,
         "trophies": 0,
         "best": 2650,
         "league": "Barbarian League 5",
-        "warStars": 2458,
+        "warStars": 2460,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 234074,
@@ -7418,8 +7429,8 @@
         "cg": 59470,
         "don": 11803,
         "capLoot": 136585,
-        "gold": 399295522,
-        "elixir": 463983343,
+        "gold": 399341922,
+        "elixir": 464052943,
         "capContrib": 234074,
         "wins": 0
       }
