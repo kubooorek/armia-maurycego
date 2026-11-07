@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T20:31:22.130Z",
+  "updated": "2026-11-07T20:45:59.191Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 152,
-        "pct": 4189,
+        "stars": 155,
+        "pct": 4289,
         "wins": 4,
         "played": 5
       },
@@ -2713,6 +2713,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T20:45:58.180Z",
+      "type": "th",
+      "name": "TTomson",
+      "from": 10,
+      "to": 11
+    },
     {
       "t": "2026-11-07T20:01:28.158Z",
       "type": "leave",
@@ -5472,8 +5479,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|131303972|124425720|0|0|0|6460|0|0|48|10",
-      "last": "2026-11-07T20:31:22.120Z",
+      "sig": "0|131803972|124925720|0|0|0|6460|0|0|48|11",
+      "last": "2026-11-07T20:45:59.180Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -5482,8 +5489,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|401250475|399148569|25150|1467|632135|726415|0|82|127|12",
-      "last": "2026-11-07T19:31:22.666Z",
+      "sig": "0|401866190|400046880|25150|1467|632135|726415|0|82|127|12",
+      "last": "2026-11-07T20:45:59.180Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -6917,8 +6924,8 @@
         "cg": 25150,
         "don": 1467,
         "capLoot": 632135,
-        "gold": 401250475,
-        "elixir": 399148569,
+        "gold": 401866190,
+        "elixir": 400046880,
         "capContrib": 726415,
         "wins": 0
       }
@@ -7460,7 +7467,7 @@
       "name": "TTomson",
       "tag": "#R0V8QGLJQ",
       "role": "member",
-      "th": 10,
+      "th": 11,
       "given": 0,
       "received": 20,
       "trophies": 275,
@@ -7493,39 +7500,39 @@
         ]
       },
       "rush": {
-        "pct": 40.7,
-        "troops": 35.8,
-        "spells": 28,
-        "heroes": 50,
+        "pct": 54.5,
+        "troops": 44.3,
+        "spells": 47.1,
+        "heroes": 65,
         "top": [
           {
             "n": "Minion",
             "lvl": 1,
-            "need": 5
+            "need": 6
           },
           {
             "n": "Walkiria",
             "lvl": 1,
-            "need": 4
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie zamrożenia",
+            "lvl": 1,
+            "need": 5
           },
           {
             "n": "Zaklęcie trucizny",
             "lvl": 1,
-            "need": 3
+            "need": 4
           },
           {
             "n": "Król Barbarzyńców",
             "lvl": 11,
-            "need": 30
+            "need": 40
           },
           {
             "n": "Wieprzowy jeździec",
             "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Barbarzyńca",
-            "lvl": 3,
             "need": 6
           }
         ]
@@ -7534,8 +7541,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 131303972,
-        "elixir": 124425720,
+        "gold": 131803972,
+        "elixir": 124925720,
         "capContrib": 6460,
         "wins": 0
       }
