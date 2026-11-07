@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T06:59:25.876Z",
+  "updated": "2026-11-07T07:01:33.523Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -6543,8 +6543,8 @@
         ]
       },
       "rush": {
-        "pct": 20.8,
-        "troops": 3,
+        "pct": 20.4,
+        "troops": 2,
         "spells": 0,
         "heroes": 49,
         "top": [
@@ -6557,11 +6557,6 @@
             "n": "Królowa Łuczniczek",
             "lvl": 17,
             "need": 40
-          },
-          {
-            "n": "Walkiria",
-            "lvl": 4,
-            "need": 5
           },
           {
             "n": "Golem",
