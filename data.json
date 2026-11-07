@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T06:01:32.578Z",
+  "updated": "2026-11-07T06:15:56.670Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -71,8 +71,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 94,
-        "pct": 3107,
+        "stars": 98,
+        "pct": 3273,
         "wins": 1,
         "played": 4
       },
@@ -1614,7 +1614,7 @@
             {
               "pos": 10,
               "th": 9,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 11,
@@ -1639,15 +1639,15 @@
             {
               "pos": 20,
               "th": 8,
-              "best": 0
+              "best": 2
             }
           ]
         },
         "them": {
           "name": "سوري",
-          "stars": 20,
-          "pct": 44.6,
-          "attacks": 7,
+          "stars": 24,
+          "pct": 55.67,
+          "attacks": 9,
           "bases": [
             {
               "pos": 2,
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -2674,7 +2674,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 25,
-      "them": 20,
+      "them": 24,
       "members": [
         {
           "name": "KUBOOOREK",
