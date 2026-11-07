@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T21:16:03.553Z",
+  "updated": "2026-11-07T21:31:22.691Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2586,9 +2586,9 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 103805,
+      "loot": 106515,
       "raids": 8,
-      "attacks": 93,
+      "attacks": 95,
       "districts": 25,
       "medals": 0,
       "members": [
@@ -2677,6 +2677,13 @@
           "loot": 4783
         },
         {
+          "name": "To ja",
+          "tag": "#2JGYURUQJ",
+          "attacks": 4,
+          "limit": 5,
+          "loot": 4625
+        },
+        {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
           "attacks": 6,
@@ -2703,13 +2710,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 2734
-        },
-        {
-          "name": "To ja",
-          "tag": "#2JGYURUQJ",
-          "attacks": 2,
-          "limit": 5,
-          "loot": 1915
         }
       ]
     },
@@ -2726,6 +2726,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T21:31:21.877Z",
+      "type": "th",
+      "name": "vvd",
+      "from": 9,
+      "to": 10
+    },
     {
       "t": "2026-11-07T21:16:02.641Z",
       "type": "promote",
@@ -4642,7 +4649,7 @@
     {
       "d": "2026-11-07",
       "members": 46,
-      "avgTh": 9.2,
+      "avgTh": 9.3,
       "level": 4,
       "wins": 13,
       "points": 20100
@@ -5378,8 +5385,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|102934289|86257227|5100|336|7810|20770|0|13|54|9",
-      "last": "2026-11-07T12:01:35.848Z",
+      "sig": "31|102934289|86257227|5100|336|7810|20770|0|13|54|10",
+      "last": "2026-11-07T21:31:22.678Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -5513,8 +5520,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|401959925|400046880|25150|1467|634050|726415|0|82|127|12",
-      "last": "2026-11-07T21:16:03.540Z",
+      "sig": "0|401959925|400046880|25150|1467|636760|726415|0|82|127|12",
+      "last": "2026-11-07T21:31:22.678Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -6947,7 +6954,7 @@
       "ach": {
         "cg": 25150,
         "don": 1467,
-        "capLoot": 634050,
+        "capLoot": 636760,
         "gold": 401959925,
         "elixir": 400046880,
         "capContrib": 726415,
@@ -7771,7 +7778,7 @@
       "name": "vvd",
       "tag": "#GQULCR98R",
       "role": "member",
-      "th": 9,
+      "th": 10,
       "given": 31,
       "received": 155,
       "trophies": 346,
@@ -7798,36 +7805,46 @@
           },
           {
             "name": "Minion Prince",
-            "level": 5,
+            "level": 6,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 5.5,
-        "troops": 1.7,
-        "spells": 4.8,
-        "heroes": 13.3,
+        "pct": 26.4,
+        "troops": 7.8,
+        "spells": 7.4,
+        "heroes": 54.3,
         "top": [
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 8,
+            "need": 30
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Lawowy ogar",
+            "lvl": 1,
+            "need": 2
+          },
           {
             "n": "Zaklęcie skoku",
             "lvl": 1,
             "need": 2
           },
           {
+            "n": "Zaklęcie zamrożenia",
+            "lvl": 1,
+            "need": 2
+          },
+          {
             "n": "Wieprzowy jeździec",
             "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 8,
-            "need": 10
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 18,
-            "need": 20
+            "need": 5
           }
         ]
       },
@@ -7851,7 +7868,7 @@
       "trophies": 117,
       "profile": {
         "level": 42,
-        "trophies": 101,
+        "trophies": 117,
         "best": 149,
         "league": "Skeleton League 3",
         "warStars": 0,
@@ -8063,7 +8080,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 9,
+            "level": 10,
             "max": 95
           }
         ]
