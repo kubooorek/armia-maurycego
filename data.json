@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T23:31:09.270Z",
+  "updated": "2026-11-07T00:01:29.482Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -4065,6 +4065,14 @@
       "level": 4,
       "wins": 13,
       "points": 19500
+    },
+    {
+      "d": "2026-11-07",
+      "members": 46,
+      "avgTh": 9,
+      "level": 4,
+      "wins": 13,
+      "points": 19500
     }
   ],
   "weekBase": {
@@ -7599,7 +7607,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
@@ -8100,9 +8108,9 @@
         ]
       },
       "rush": {
-        "pct": 25.7,
+        "pct": 22.9,
         "troops": 20,
-        "spells": 40,
+        "spells": 30,
         "heroes": 0,
         "top": [
           {
