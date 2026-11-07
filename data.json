@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T11:31:22.450Z",
+  "updated": "2026-11-07T11:45:58.679Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 123,
-        "pct": 4092,
+        "stars": 126,
+        "pct": 4192,
         "wins": 2,
         "played": 4
       },
@@ -26,8 +26,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 116,
-        "pct": 3310,
+        "stars": 119,
+        "pct": 3410,
         "wins": 3,
         "played": 4
       },
@@ -1562,9 +1562,9 @@
         "end": "20261107T182801.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 31,
-          "pct": 75.8,
-          "attacks": 12,
+          "stars": 34,
+          "pct": 82.47,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -1672,7 +1672,7 @@
             {
               "pos": 6,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 7,
@@ -1771,7 +1771,13 @@
             "tag": "#LJYR92002",
             "pos": 4,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "6. افاتار"
+              }
+            ]
           },
           {
             "name": "MrDefPL",
@@ -2226,6 +2232,12 @@
         "wars": 5
       },
       {
+        "name": "MAQOS",
+        "stars": 7,
+        "attacks": 5,
+        "wars": 5
+      },
+      {
         "name": "monte",
         "stars": 7,
         "attacks": 5,
@@ -2242,12 +2254,6 @@
         "stars": 6,
         "attacks": 4,
         "wars": 5
-      },
-      {
-        "name": "tak",
-        "stars": 6,
-        "attacks": 5,
-        "wars": 5
       }
     ]
   },
@@ -2263,10 +2269,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 67093,
-      "raids": 5,
-      "attacks": 60,
-      "districts": 16,
+      "loot": 74656,
+      "raids": 6,
+      "attacks": 66,
+      "districts": 18,
       "medals": 0,
       "members": [
         {
@@ -2319,11 +2325,25 @@
           "loot": 6104
         },
         {
+          "name": "Rico",
+          "tag": "#R92C0U8UU",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 5930
+        },
+        {
           "name": "erykos",
           "tag": "#R9GPGL0QJ",
           "attacks": 6,
           "limit": 6,
           "loot": 4783
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": 2,
+          "limit": 6,
+          "loot": 3442
         },
         {
           "name": "Darui",
@@ -2338,13 +2358,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 2734
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "attacks": 1,
-          "limit": 6,
-          "loot": 1809
         }
       ]
     },
@@ -2705,7 +2718,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 31,
+      "us": 34,
       "them": 27,
       "members": [
         {
@@ -2741,7 +2754,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "MrDefPL",
@@ -4782,8 +4800,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "12|382753173|394799739|12900|642|283555|401040|0|124|123|12",
-      "last": "2026-11-06T17:31:25.413Z",
+      "sig": "12|382870173|394916739|12900|642|283555|401040|0|127|123|12",
+      "last": "2026-11-07T11:45:58.669Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -4802,8 +4820,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|518933060|474177826|10100|244|28940|82984|0|35|80|11",
-      "last": "2026-11-07T10:46:09.091Z",
+      "sig": "0|518933060|474177826|10100|244|30230|82984|0|35|80|11",
+      "last": "2026-11-07T11:45:58.669Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -4902,8 +4920,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
-      "sig": "0|11623371|10528310|0|30|0|8470|0|15|34|7",
-      "last": "2026-11-05T02:31:25.347Z",
+      "sig": "0|11623371|10528310|0|30|5615|8470|0|15|34|7",
+      "last": "2026-11-07T11:45:58.669Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
@@ -4987,8 +5005,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "0|874353|911984|0|0|0|2400|0|0|15|7",
-      "last": "2026-11-07T07:46:03.401Z",
+      "sig": "0|874353|911984|0|0|0|2400|0|0|16|7",
+      "last": "2026-11-07T11:45:58.669Z",
       "since": "2026-11-07T07:46:03.401Z"
     }
   },
@@ -5320,6 +5338,15 @@
           "cap": 3935
         },
         {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "score": 136,
+          "stars": 12,
+          "don": 10,
+          "cg": 0,
+          "cap": 7640
+        },
+        {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
           "score": 119,
@@ -5329,22 +5356,13 @@
           "cap": 8055
         },
         {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "score": 115,
-          "stars": 11,
-          "don": 0,
-          "cg": 0,
-          "cap": 2485
-        },
-        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "score": 114,
+          "score": 116,
           "stars": 11,
           "don": 5,
           "cg": 0,
-          "cap": 1620
+          "cap": 2910
         }
       ]
     }
@@ -6103,7 +6121,7 @@
         "trophies": 402,
         "best": 2224,
         "league": "Archer League 9",
-        "warStars": 124,
+        "warStars": 127,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 401040,
@@ -6142,8 +6160,8 @@
         "cg": 12900,
         "don": 642,
         "capLoot": 283555,
-        "gold": 382753173,
-        "elixir": 394799739,
+        "gold": 382870173,
+        "elixir": 394916739,
         "capContrib": 401040,
         "wins": 0
       }
@@ -6469,8 +6487,8 @@
         ]
       },
       "rush": {
-        "pct": 21.1,
-        "troops": 12.1,
+        "pct": 20.6,
+        "troops": 11.1,
         "spells": 14.6,
         "heroes": 33,
         "top": [
@@ -6509,7 +6527,7 @@
       "ach": {
         "cg": 10100,
         "don": 244,
-        "capLoot": 28940,
+        "capLoot": 30230,
         "gold": 518933060,
         "elixir": 474177826,
         "capContrib": 82984,
@@ -8041,7 +8059,7 @@
       "ach": {
         "cg": 0,
         "don": 30,
-        "capLoot": 0,
+        "capLoot": 5615,
         "gold": 11623371,
         "elixir": 10528310,
         "capContrib": 8470,
@@ -8415,7 +8433,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 15,
+        "level": 16,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -8433,9 +8451,9 @@
         ]
       },
       "rush": {
-        "pct": 18.5,
+        "pct": 14.8,
         "troops": 17.4,
-        "spells": 25,
+        "spells": 0,
         "heroes": 0,
         "top": [
           {
@@ -8457,11 +8475,6 @@
             "n": "Mag",
             "lvl": 2,
             "need": 3
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 3,
-            "need": 4
           }
         ]
       },
