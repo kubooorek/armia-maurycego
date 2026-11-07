@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T05:31:17.012Z",
+  "updated": "2026-11-07T05:46:01.215Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -71,8 +71,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 88,
-        "pct": 2907,
+        "stars": 91,
+        "pct": 3007,
         "wins": 1,
         "played": 4
       },
@@ -1584,7 +1584,7 @@
             {
               "pos": 4,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 5,
@@ -1645,9 +1645,9 @@
         },
         "them": {
           "name": "سوري",
-          "stars": 14,
-          "pct": 31.27,
-          "attacks": 5,
+          "stars": 17,
+          "pct": 37.93,
+          "attacks": 6,
           "bases": [
             {
               "pos": 2,
@@ -2674,7 +2674,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 25,
-      "them": 14,
+      "them": 17,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -4932,8 +4932,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|126666345|119298548|0|0|0|6460|0|0|47|10",
-      "last": "2026-11-07T05:31:17.004Z",
+      "sig": "0|129425255|122415878|0|0|0|6460|0|0|47|10",
+      "last": "2026-11-07T05:46:01.207Z",
       "since": "2026-11-06T07:31:14.715Z"
     }
   },
@@ -5886,9 +5886,9 @@
         ]
       },
       "rush": {
-        "pct": 74.8,
+        "pct": 74.6,
         "troops": 58.2,
-        "spells": 52.2,
+        "spells": 50,
         "heroes": 91,
         "top": [
           {
@@ -6808,11 +6808,11 @@
       "th": 10,
       "given": 0,
       "received": 20,
-      "trophies": 247,
+      "trophies": 275,
       "profile": {
         "level": 47,
-        "trophies": 247,
-        "best": 260,
+        "trophies": 275,
+        "best": 275,
         "league": "Barbarian League 4",
         "warStars": 0,
         "attackWins": 0,
@@ -6879,8 +6879,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 126666345,
-        "elixir": 119298548,
+        "gold": 129425255,
+        "elixir": 122415878,
         "capContrib": 6460,
         "wins": 0
       }
