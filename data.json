@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T07:01:33.523Z",
+  "updated": "2026-11-07T07:16:13.912Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -23,21 +23,21 @@
         "played": 4
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 113,
+        "pct": 3579,
+        "wins": 2,
+        "played": 4
+      },
+      {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
         "stars": 113,
         "pct": 3210,
         "wins": 3,
-        "played": 4
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 110,
-        "pct": 3570,
-        "wins": 2,
         "played": 4
       },
       {
@@ -4812,8 +4812,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|85912502|72500234|3000|27|0|0|0|0|42|9",
-      "last": "2026-11-06T08:31:10.998Z",
+      "sig": "1|86470219|72765230|3000|27|0|0|0|0|42|9",
+      "last": "2026-11-07T07:16:13.902Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -7228,8 +7228,8 @@
         "cg": 3000,
         "don": 27,
         "capLoot": 0,
-        "gold": 85912502,
-        "elixir": 72500234,
+        "gold": 86470219,
+        "elixir": 72765230,
         "capContrib": 0,
         "wins": 0
       }
