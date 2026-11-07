@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T15:31:17.231Z",
+  "updated": "2026-11-07T15:46:12.704Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -2267,7 +2267,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -5037,8 +5037,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "0|874353|911984|0|0|0|2400|0|0|17|8",
-      "last": "2026-11-07T13:01:38.820Z",
+      "sig": "0|874353|911984|0|0|0|2400|0|0|18|8",
+      "last": "2026-11-07T15:46:12.691Z",
       "since": "2026-11-07T07:46:03.401Z"
     }
   },
@@ -8470,7 +8470,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 17,
+        "level": 18,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -8482,21 +8482,26 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 1,
+            "level": 2,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 47.8,
+        "pct": 48,
         "troops": 40.6,
-        "spells": 0,
-        "heroes": 90,
+        "spells": 37.5,
+        "heroes": 80,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 1,
+            "lvl": 2,
             "need": 10
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 4
           },
           {
             "n": "Gigant",
@@ -8517,11 +8522,6 @@
             "n": "Mag",
             "lvl": 2,
             "need": 4
-          },
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
           }
         ]
       },
