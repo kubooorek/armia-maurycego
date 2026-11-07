@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T04:01:28.212Z",
+  "updated": "2026-11-07T04:15:53.037Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -44,8 +44,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 105,
-        "pct": 2965,
+        "stars": 108,
+        "pct": 3065,
         "wins": 2,
         "played": 4
       },
@@ -8422,20 +8422,15 @@
         ]
       },
       "rush": {
-        "pct": 12.5,
+        "pct": 8.3,
         "troops": 0,
-        "spells": 50,
+        "spells": 33.3,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie błyskawicy",
             "lvl": 2,
             "need": 4
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 2
           }
         ]
       },
