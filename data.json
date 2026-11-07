@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T01:31:19.747Z",
+  "updated": "2026-11-07T02:01:23.398Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 96,
-        "pct": 2695,
+        "stars": 98,
+        "pct": 2782,
         "wins": 2,
         "played": 4
       },
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
