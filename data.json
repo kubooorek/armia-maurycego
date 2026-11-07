@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T20:01:28.830Z",
+  "updated": "2026-11-07T20:16:01.954Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2572,7 +2572,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 6,
     "members": 12
   },
   "raids": [
@@ -2580,9 +2580,9 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 90958,
+      "loot": 93798,
       "raids": 7,
-      "attacks": 83,
+      "attacks": 85,
       "districts": 22,
       "medals": 0,
       "members": [
@@ -2683,6 +2683,13 @@
           "attacks": 5,
           "limit": 5,
           "loot": 3320
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": 2,
+          "limit": 5,
+          "loot": 2840
         },
         {
           "name": "monte",
@@ -5265,8 +5272,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "203|271248176|271395249|14450|346|57300|109886|0|65|104|12",
-      "last": "2026-11-07T19:16:04.149Z",
+      "sig": "203|271248176|271395249|14450|346|58370|109886|0|65|104|12",
+      "last": "2026-11-07T20:16:01.941Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -5405,8 +5412,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "0|8818088|9389071|300|40|24805|34234|0|15|34|8",
-      "last": "2026-11-05T11:46:00.494Z",
+      "sig": "0|8818088|9389071|300|40|24805|34234|0|15|35|8",
+      "last": "2026-11-07T20:16:01.941Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GLV9998PC": {
@@ -5808,11 +5815,11 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "score": 140,
+          "score": 142,
           "stars": 11,
           "don": 223,
           "cg": 0,
-          "cap": 3935
+          "cap": 5005
         },
         {
           "name": "MAQOS",
@@ -6584,7 +6591,7 @@
       "ach": {
         "cg": 14450,
         "don": 346,
-        "capLoot": 57300,
+        "capLoot": 58370,
         "gold": 271248176,
         "elixir": 271395249,
         "capContrib": 109886,
@@ -7221,7 +7228,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 21,
+            "level": 22,
             "max": 110
           },
           {
@@ -8266,7 +8273,7 @@
       "received": 0,
       "trophies": 210,
       "profile": {
-        "level": 34,
+        "level": 35,
         "trophies": 210,
         "best": 240,
         "league": "Skeleton League 2",
