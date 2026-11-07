@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T02:46:00.665Z",
+  "updated": "2026-11-07T03:01:28.661Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -41,20 +41,20 @@
         "played": 4
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 103,
+        "pct": 2911,
+        "wins": 2,
+        "played": 4
+      },
+      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
         "stars": 101,
         "pct": 2882,
-        "wins": 2,
-        "played": 4
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 100,
-        "pct": 2811,
         "wins": 2,
         "played": 4
       },
