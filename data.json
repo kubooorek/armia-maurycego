@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T06:31:13.431Z",
+  "updated": "2026-11-07T06:46:00.654Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -2251,9 +2251,9 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 62708,
+      "loot": 64923,
       "raids": 5,
-      "attacks": 56,
+      "attacks": 58,
       "districts": 15,
       "medals": 0,
       "members": [
@@ -2314,6 +2314,13 @@
           "loot": 3934
         },
         {
+          "name": "Darui",
+          "tag": "#LUQJC2JGY",
+          "attacks": 5,
+          "limit": 5,
+          "loot": 3320
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "attacks": 6,
@@ -2326,13 +2333,6 @@
           "attacks": 1,
           "limit": 6,
           "loot": 1809
-        },
-        {
-          "name": "Darui",
-          "tag": "#LUQJC2JGY",
-          "attacks": 3,
-          "limit": 5,
-          "loot": 1105
         }
       ]
     },
@@ -4822,8 +4822,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|62695984|62771073|2400|614|14765|31086|0|4|55|9",
-      "last": "2026-11-07T06:01:32.567Z",
+      "sig": "161|62695984|62771073|2400|614|14765|31386|0|4|55|9",
+      "last": "2026-11-07T06:46:00.643Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -4857,8 +4857,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|25567815|25241411|0|160|12300|22419|0|0|49|8",
-      "last": "2026-11-07T06:31:13.419Z",
+      "sig": "0|25567815|25241411|0|160|14515|25739|0|0|49|8",
+      "last": "2026-11-07T06:46:00.643Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -5793,10 +5793,10 @@
       "th": 12,
       "given": 225,
       "received": 216,
-      "trophies": 204,
+      "trophies": 244,
       "profile": {
         "level": 109,
-        "trophies": 204,
+        "trophies": 244,
         "best": 2839,
         "league": "Valkyrie League 14",
         "warStars": 98,
@@ -7441,7 +7441,7 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 31086,
+        "capital": 31386,
         "warPref": "in",
         "heroes": [
           {
@@ -7480,7 +7480,7 @@
         "capLoot": 14765,
         "gold": 62695984,
         "elixir": 62771073,
-        "capContrib": 31086,
+        "capContrib": 31386,
         "wins": 0
       }
     },
@@ -7545,10 +7545,10 @@
       "th": 8,
       "given": 3,
       "received": 60,
-      "trophies": 223,
+      "trophies": 263,
       "profile": {
         "level": 44,
-        "trophies": 223,
+        "trophies": 263,
         "best": 300,
         "league": "Skeleton League 2",
         "warStars": 6,
@@ -7650,7 +7650,7 @@
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 22419,
+        "capital": 25739,
         "warPref": "in",
         "heroes": [
           {
@@ -7675,10 +7675,10 @@
       "ach": {
         "cg": 0,
         "don": 160,
-        "capLoot": 12300,
+        "capLoot": 14515,
         "gold": 25567815,
         "elixir": 25241411,
-        "capContrib": 22419,
+        "capContrib": 25739,
         "wins": 0
       }
     },
