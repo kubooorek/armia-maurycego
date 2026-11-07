@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T00:49:42.700Z",
+  "updated": "2026-11-07T01:31:19.747Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -68,20 +68,20 @@
         "played": 4
       },
       {
+        "tag": "#2J9QGGG2Q",
+        "name": "سوري",
+        "level": 4,
+        "stars": 88,
+        "pct": 2907,
+        "wins": 1,
+        "played": 4
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 87,
         "pct": 2674,
-        "wins": 1,
-        "played": 4
-      },
-      {
-        "tag": "#2J9QGGG2Q",
-        "name": "سوري",
-        "level": 4,
-        "stars": 85,
-        "pct": 2807,
         "wins": 1,
         "played": 4
       }
@@ -1624,7 +1624,7 @@
             {
               "pos": 12,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 13,
@@ -1645,9 +1645,9 @@
         },
         "them": {
           "name": "سوري",
-          "stars": 11,
-          "pct": 24.6,
-          "attacks": 4,
+          "stars": 14,
+          "pct": 31.27,
+          "attacks": 5,
           "bases": [
             {
               "pos": 2,
@@ -2674,7 +2674,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 25,
-      "them": 11,
+      "them": 14,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -4787,8 +4787,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
-      "sig": "0|96335775|103930794|1900|29|0|3150|0|35|40|10",
-      "last": "2026-11-06T17:01:32.701Z",
+      "sig": "0|96335775|103930794|1900|29|0|3150|0|35|41|10",
+      "last": "2026-11-07T01:31:19.734Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
@@ -4882,8 +4882,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "20|5857614|5387005|0|61|0|100|0|0|26|6",
-      "last": "2026-11-06T14:15:59.751Z",
+      "sig": "20|5857614|5387005|0|61|0|400|0|0|27|6",
+      "last": "2026-11-07T01:31:19.734Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -6894,7 +6894,7 @@
       "received": 543,
       "trophies": 220,
       "profile": {
-        "level": 40,
+        "level": 41,
         "trophies": 220,
         "best": 252,
         "league": "Barbarian League 4",
@@ -6916,7 +6916,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 10,
+            "level": 11,
             "max": 95
           }
         ]
@@ -8404,7 +8404,7 @@
       "received": 20,
       "trophies": 0,
       "profile": {
-        "level": 26,
+        "level": 27,
         "trophies": 0,
         "best": 0,
         "league": "Unranked",
@@ -8445,7 +8445,7 @@
         "capLoot": 0,
         "gold": 5857614,
         "elixir": 5387005,
-        "capContrib": 100,
+        "capContrib": 400,
         "wins": 0
       }
     },
