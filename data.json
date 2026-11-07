@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T14:16:07.488Z",
+  "updated": "2026-11-07T14:31:15.784Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -53,9 +53,18 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 111,
-        "pct": 2732,
+        "stars": 114,
+        "pct": 2832,
         "wins": 3,
+        "played": 4
+      },
+      {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 104,
+        "pct": 2982,
+        "wins": 2,
         "played": 4
       },
       {
@@ -65,15 +74,6 @@
         "stars": 101,
         "pct": 3373,
         "wins": 1,
-        "played": 4
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 101,
-        "pct": 2882,
-        "wins": 2,
         "played": 4
       },
       {
@@ -5002,8 +5002,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "45|31310239|29931284|0|42|0|100|0|0|33|9",
-      "last": "2026-11-07T10:31:27.261Z",
+      "sig": "45|31653910|30257357|0|42|0|100|0|0|33|9",
+      "last": "2026-11-07T14:31:15.772Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -8347,8 +8347,8 @@
         "cg": 0,
         "don": 42,
         "capLoot": 0,
-        "gold": 31310239,
-        "elixir": 29931284,
+        "gold": 31653910,
+        "elixir": 30257357,
         "capContrib": 100,
         "wins": 0
       }
