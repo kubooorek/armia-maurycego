@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T20:16:01.954Z",
+  "updated": "2026-11-07T20:31:22.130Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2572,7 +2572,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -2580,10 +2580,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 93798,
-      "raids": 7,
-      "attacks": 85,
-      "districts": 22,
+      "loot": 99347,
+      "raids": 8,
+      "attacks": 89,
+      "districts": 24,
       "medals": 0,
       "members": [
         {
@@ -2592,6 +2592,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 8450
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 8389
         },
         {
           "name": "Albaroon.2",
@@ -2683,13 +2690,6 @@
           "attacks": 5,
           "limit": 5,
           "loot": 3320
-        },
-        {
-          "name": "oggsgdjdjbd",
-          "tag": "#Q9CU9P908",
-          "attacks": 2,
-          "limit": 5,
-          "loot": 2840
         },
         {
           "name": "monte",
@@ -5272,8 +5272,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "203|271248176|271395249|14450|346|58370|109886|0|65|104|12",
-      "last": "2026-11-07T20:16:01.941Z",
+      "sig": "203|271248176|271395249|14450|346|65320|119175|0|65|104|12",
+      "last": "2026-11-07T20:31:22.120Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -5472,8 +5472,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|129425255|122415878|0|0|0|6460|0|0|48|10",
-      "last": "2026-11-07T16:46:06.272Z",
+      "sig": "0|131303972|124425720|0|0|0|6460|0|0|48|10",
+      "last": "2026-11-07T20:31:22.120Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -5815,11 +5815,11 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "score": 142,
+          "score": 156,
           "stars": 11,
           "don": 223,
           "cg": 0,
-          "cap": 5005
+          "cap": 11955
         },
         {
           "name": "MAQOS",
@@ -6525,7 +6525,7 @@
         "warStars": 65,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 109886,
+        "capital": 119175,
         "warPref": "in",
         "heroes": [
           {
@@ -6591,10 +6591,10 @@
       "ach": {
         "cg": 14450,
         "don": 346,
-        "capLoot": 58370,
+        "capLoot": 65320,
         "gold": 271248176,
         "elixir": 271395249,
-        "capContrib": 109886,
+        "capContrib": 119175,
         "wins": 0
       }
     },
@@ -7493,8 +7493,8 @@
         ]
       },
       "rush": {
-        "pct": 41.4,
-        "troops": 37.3,
+        "pct": 40.7,
+        "troops": 35.8,
         "spells": 28,
         "heroes": 50,
         "top": [
@@ -7534,8 +7534,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 129425255,
-        "elixir": 122415878,
+        "gold": 131303972,
+        "elixir": 124425720,
         "capContrib": 6460,
         "wins": 0
       }
