@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T22:01:29.332Z",
+  "updated": "2026-11-07T22:16:05.608Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 143,
-        "pct": 4498,
+        "stars": 144,
+        "pct": 4546,
         "wins": 3,
         "played": 5
       },
@@ -1933,9 +1933,9 @@
         "end": "20261108T191029.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 4,
-          "pct": 12.4,
-          "attacks": 4,
+          "stars": 5,
+          "pct": 15.6,
+          "attacks": 5,
           "bases": [
             {
               "pos": 1,
@@ -2078,7 +2078,7 @@
             {
               "pos": 12,
               "th": 14,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 13,
@@ -2145,7 +2145,13 @@
             "tag": "#QYJUV90JY",
             "pos": 7,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 48,
+                "target": "12. ster"
+              }
+            ]
           },
           {
             "name": "VipeR",
@@ -2549,6 +2555,12 @@
         "wars": 6
       },
       {
+        "name": "monte",
+        "stars": 8,
+        "attacks": 6,
+        "wars": 6
+      },
+      {
         "name": "Brann",
         "stars": 8,
         "attacks": 6,
@@ -2556,12 +2568,6 @@
       },
       {
         "name": "MAQOS",
-        "stars": 7,
-        "attacks": 5,
-        "wars": 6
-      },
-      {
-        "name": "monte",
         "stars": 7,
         "attacks": 5,
         "wars": 6
@@ -3120,7 +3126,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 4,
+      "us": 5,
       "them": 2,
       "members": [
         {
@@ -3156,7 +3162,12 @@
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 48
+            }
+          ]
         },
         {
           "name": "VipeR",
@@ -5350,8 +5361,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|208004192|200101825|2900|20|23720|42832|0|51|85|12",
-      "last": "2026-11-07T14:01:26.951Z",
+      "sig": "0|208863792|200934025|2900|20|23720|42832|0|52|85|12",
+      "last": "2026-11-07T22:16:05.595Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -5878,13 +5889,13 @@
           "cap": 3130
         },
         {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "score": 119,
-          "stars": 8,
-          "don": 224,
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "score": 125,
+          "stars": 12,
+          "don": 0,
           "cg": 0,
-          "cap": 8055
+          "cap": 2485
         }
       ]
     }
@@ -7164,7 +7175,7 @@
         "trophies": 282,
         "best": 348,
         "league": "Barbarian League 6",
-        "warStars": 51,
+        "warStars": 52,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 42832,
@@ -7193,8 +7204,8 @@
         ]
       },
       "rush": {
-        "pct": 24.6,
-        "troops": 3.2,
+        "pct": 24.3,
+        "troops": 2.4,
         "spells": 0,
         "heroes": 52,
         "top": [
@@ -7209,14 +7220,14 @@
             "need": 50
           },
           {
-            "n": "Golem",
-            "lvl": 4,
-            "need": 7
-          },
-          {
             "n": "Książę Minionów",
             "lvl": 18,
             "need": 30
+          },
+          {
+            "n": "Golem",
+            "lvl": 5,
+            "need": 7
           },
           {
             "n": "Wieprzowy jeździec",
@@ -7234,8 +7245,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 23720,
-        "gold": 208004192,
-        "elixir": 200101825,
+        "gold": 208863792,
+        "elixir": 200934025,
         "capContrib": 42832,
         "wins": 0
       }
