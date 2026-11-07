@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T09:01:39.869Z",
+  "updated": "2026-11-07T09:15:58.893Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -2243,7 +2243,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -2349,6 +2349,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T09:15:57.906Z",
+      "type": "th",
+      "name": "monte",
+      "from": 11,
+      "to": 12
+    },
     {
       "t": "2026-11-07T07:46:02.513Z",
       "type": "join",
@@ -4075,7 +4082,7 @@
     {
       "d": "2026-11-07",
       "members": 47,
-      "avgTh": 8.9,
+      "avgTh": 9,
       "level": 4,
       "wins": 13,
       "points": 19500
@@ -4776,8 +4783,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|207304192|199401825|2900|20|23720|36648|0|51|85|11",
-      "last": "2026-11-06T22:46:01.063Z",
+      "sig": "0|207304192|199401825|2900|20|23720|36648|0|51|85|12",
+      "last": "2026-11-07T09:15:58.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -4806,8 +4813,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|52134577|49308201|750|0|14130|17129|0|14|57|9",
-      "last": "2026-11-06T07:45:54.037Z",
+      "sig": "0|52644577|49818201|750|0|14130|17129|0|14|58|9",
+      "last": "2026-11-07T09:15:58.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
@@ -4846,8 +4853,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|24888711|22642854|1500|175|24090|36124|0|21|40|8",
-      "last": "2026-11-07T05:16:01.784Z",
+      "sig": "0|24888711|22642854|1500|175|24090|36124|0|21|41|8",
+      "last": "2026-11-07T09:15:58.880Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -6537,7 +6544,7 @@
       "name": "monte",
       "tag": "#QYJUV90JY",
       "role": "member",
-      "th": 11,
+      "th": 12,
       "given": 0,
       "received": 0,
       "trophies": 253,
@@ -6575,33 +6582,38 @@
         ]
       },
       "rush": {
-        "pct": 20.4,
-        "troops": 2,
+        "pct": 26.1,
+        "troops": 4,
         "spells": 0,
-        "heroes": 49,
+        "heroes": 54.7,
         "top": [
           {
             "n": "Król Barbarzyńców",
             "lvl": 17,
-            "need": 40
+            "need": 50
           },
           {
             "n": "Królowa Łuczniczek",
             "lvl": 17,
-            "need": 40
+            "need": 50
+          },
+          {
+            "n": "Książę Minionów",
+            "lvl": 17,
+            "need": 30
           },
           {
             "n": "Golem",
             "lvl": 4,
-            "need": 5
+            "need": 7
           },
           {
             "n": "Wieprzowy jeździec",
             "lvl": 5,
-            "need": 6
+            "need": 7
           },
           {
-            "n": "Książę Minionów",
+            "n": "Wielki Strażnik",
             "lvl": 17,
             "need": 20
           }
@@ -6913,6 +6925,65 @@
       }
     },
     {
+      "name": "wiktor",
+      "tag": "#QGPC2228Q",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 253,
+      "profile": {
+        "level": 58,
+        "trophies": 253,
+        "best": 787,
+        "league": "Barbarian League 4",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 17129,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.5,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 750,
+        "don": 0,
+        "capLoot": 14130,
+        "gold": 52644577,
+        "elixir": 49818201,
+        "capContrib": 17129,
+        "wins": 0
+      }
+    },
+    {
       "name": "Mimbosz",
       "tag": "#RY0QPVCCY",
       "role": "member",
@@ -6993,65 +7064,6 @@
         "gold": 96335775,
         "elixir": 103930794,
         "capContrib": 3150,
-        "wins": 0
-      }
-    },
-    {
-      "name": "wiktor",
-      "tag": "#QGPC2228Q",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 213,
-      "profile": {
-        "level": 57,
-        "trophies": 213,
-        "best": 787,
-        "league": "Barbarian League 4",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 17129,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.5,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 750,
-        "don": 0,
-        "capLoot": 14130,
-        "gold": 52134577,
-        "elixir": 49308201,
-        "capContrib": 17129,
         "wins": 0
       }
     },
@@ -7413,7 +7425,7 @@
       "received": 0,
       "trophies": 293,
       "profile": {
-        "level": 40,
+        "level": 41,
         "trophies": 293,
         "best": 293,
         "league": "Skeleton League 2",
