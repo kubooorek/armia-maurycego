@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-07T18:31:16.392Z",
+  "updated": "2026-11-07T19:01:29.060Z",
   "clanLevel": 4,
-  "memberCount": 47,
+  "memberCount": 48,
   "cwlLeague": "Silver League I",
   "warWinStreak": 11,
   "warWins": 13,
@@ -2408,6 +2408,12 @@
   ],
   "events": [
     {
+      "t": "2026-11-07T19:01:28.197Z",
+      "type": "join",
+      "name": "To ja",
+      "th": 12
+    },
+    {
       "t": "2026-11-07T17:01:31.987Z",
       "type": "th",
       "name": "zuzia",
@@ -4185,11 +4191,11 @@
     },
     {
       "d": "2026-11-07",
-      "members": 47,
-      "avgTh": 9,
+      "members": 48,
+      "avgTh": 9.1,
       "level": 4,
       "wins": 13,
-      "points": 19500
+      "points": 20200
     }
   ],
   "weekBase": {
@@ -4435,6 +4441,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 2400
+      },
+      "#2JGYURUQJ": {
+        "given": 0,
+        "warStars": 82,
+        "capital": 723165
       }
     }
   },
@@ -4638,6 +4649,9 @@
     },
     "#R9L08VVCY": {
       "d": "2026-11-07T07:46:03.401Z"
+    },
+    "#2JGYURUQJ": {
+      "d": "2026-11-07T19:01:29.049Z"
     }
   },
   "records": {
@@ -4654,7 +4668,7 @@
       "date": "2026-11-02"
     },
     "members": {
-      "value": 47,
+      "value": 48,
       "name": "Armia Maurycego",
       "tag": "#2GQQ8RGRL",
       "date": "2026-11-07"
@@ -4847,8 +4861,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "201|268811748|268939609|14450|346|57300|109886|0|65|104|12",
-      "last": "2026-11-07T18:16:03.686Z",
+      "sig": "201|271248176|271395249|14450|346|57300|109886|0|65|104|12",
+      "last": "2026-11-07T19:01:29.050Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -4967,8 +4981,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|31256774|29900644|0|76|12040|11348|0|6|44|8",
-      "last": "2026-11-07T12:31:29.511Z",
+      "sig": "3|31256774|29900644|0|76|12040|11348|0|6|45|8",
+      "last": "2026-11-07T19:01:29.050Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -5042,8 +5056,8 @@
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
-      "sig": "0|1099050|1186575|1200|139|6445|14385|0|6|46|8",
-      "last": "2026-11-05T06:01:24.373Z",
+      "sig": "0|1099050|1186575|1200|139|6445|14385|0|6|47|8",
+      "last": "2026-11-07T19:01:29.050Z",
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
@@ -5065,6 +5079,11 @@
       "sig": "0|887687|926809|0|0|0|2400|0|0|18|8",
       "last": "2026-11-07T16:31:27.056Z",
       "since": "2026-11-07T07:46:03.401Z"
+    },
+    "#2JGYURUQJ": {
+      "sig": "0|399888890|396944582|25150|1467|632135|723165|0|82|127|12",
+      "last": "2026-11-07T19:01:29.050Z",
+      "since": "2026-11-07T19:01:29.050Z"
     }
   },
   "clanGames": null,
@@ -5363,6 +5382,13 @@
         "cg": 0,
         "capLoot": 0,
         "joined": "2026-11-07T07:46:03.401Z"
+      },
+      "#2JGYURUQJ": {
+        "warStars": 82,
+        "don": 1467,
+        "cg": 25150,
+        "capLoot": 632135,
+        "joined": "2026-11-07T19:01:29.050Z"
       }
     }
   },
@@ -5709,6 +5735,12 @@
         "don": 0,
         "cg": 0,
         "capLoot": 0
+      },
+      "#2JGYURUQJ": {
+        "warStars": 82,
+        "don": 1467,
+        "cg": 25150,
+        "capLoot": 632135
       }
     }
   },
@@ -6159,8 +6191,8 @@
         "cg": 14450,
         "don": 346,
         "capLoot": 57300,
-        "gold": 268811748,
-        "elixir": 268939609,
+        "gold": 271248176,
+        "elixir": 271395249,
         "capContrib": 109886,
         "wins": 0
       }
@@ -6398,6 +6430,90 @@
         "gold": 739412057,
         "elixir": 769583938,
         "capContrib": 94980,
+        "wins": 0
+      }
+    },
+    {
+      "name": "To ja",
+      "tag": "#2JGYURUQJ",
+      "role": "member",
+      "th": 12,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 127,
+        "trophies": 0,
+        "best": 2562,
+        "league": "Archer League 9",
+        "warStars": 82,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 723165,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 49,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 36,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 20,
+            "max": 85
+          }
+        ]
+      },
+      "rush": {
+        "pct": 14.4,
+        "troops": 9.5,
+        "spells": 28.3,
+        "heroes": 12.5,
+        "top": [
+          {
+            "n": "Zaklęcie klonowania",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie nietoperzy",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Lodowy golem",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie trucizny",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 2,
+            "need": 5
+          }
+        ]
+      },
+      "ach": {
+        "cg": 25150,
+        "don": 1467,
+        "capLoot": 632135,
+        "gold": 399888890,
+        "elixir": 396944582,
+        "capContrib": 723165,
         "wins": 0
       }
     },
@@ -6701,7 +6817,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 25,
+            "level": 26,
             "max": 110
           },
           {
@@ -7240,7 +7356,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           },
           {
@@ -7251,10 +7367,10 @@
         ]
       },
       "rush": {
-        "pct": 7.3,
+        "pct": 6.4,
         "troops": 3.4,
         "spells": 4.8,
-        "heroes": 16.7,
+        "heroes": 13.3,
         "top": [
           {
             "n": "Walkiria",
@@ -7267,14 +7383,14 @@
             "need": 2
           },
           {
-            "n": "Królowa Łuczniczek",
-            "lvl": 7,
-            "need": 10
-          },
-          {
             "n": "Wieprzowy jeździec",
             "lvl": 3,
             "need": 4
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 8,
+            "need": 10
           },
           {
             "n": "Król Barbarzyńców",
@@ -7685,7 +7801,7 @@
       "received": 60,
       "trophies": 263,
       "profile": {
-        "level": 44,
+        "level": 45,
         "trophies": 263,
         "best": 300,
         "league": "Skeleton League 2",
@@ -8254,7 +8370,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 46,
+        "level": 47,
         "trophies": 0,
         "best": 678,
         "league": "Skeleton League 2",
