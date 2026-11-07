@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T23:01:30.214Z",
+  "updated": "2026-11-07T23:15:55.055Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 114,
-        "pct": 3629,
+        "stars": 115,
+        "pct": 3724,
         "wins": 2,
         "played": 5
       },
@@ -5361,8 +5361,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|208863792|200934025|2900|20|23720|42832|0|52|85|12",
-      "last": "2026-11-07T22:16:05.595Z",
+      "sig": "0|208863792|200934025|2900|20|23720|42832|0|52|86|12",
+      "last": "2026-11-07T23:15:55.042Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -7165,7 +7165,7 @@
       "received": 0,
       "trophies": 282,
       "profile": {
-        "level": 85,
+        "level": 86,
         "trophies": 282,
         "best": 348,
         "league": "Barbarian League 6",
