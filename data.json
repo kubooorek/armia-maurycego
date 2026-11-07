@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T19:16:04.162Z",
+  "updated": "2026-11-07T19:31:22.677Z",
   "clanLevel": 4,
   "memberCount": 48,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 143,
-        "pct": 3889,
+        "stars": 152,
+        "pct": 4189,
         "wins": 4,
         "played": 5
       },
@@ -1926,7 +1926,7 @@
       },
       {
         "round": 6,
-        "state": "preparation",
+        "state": "inWar",
         "size": 15,
         "perMember": 1,
         "start": "20261107T191029.000Z",
@@ -1969,7 +1969,7 @@
             },
             {
               "pos": 7,
-              "th": 11,
+              "th": 12,
               "best": 0
             },
             {
@@ -2144,7 +2144,7 @@
             "name": "monte",
             "tag": "#QYJUV90JY",
             "pos": 7,
-            "th": 11,
+            "th": 12,
             "attacks": []
           },
           {
@@ -2204,6 +2204,287 @@
             "attacks": []
           }
         ]
+      },
+      {
+        "round": 7,
+        "state": "preparation",
+        "size": 15,
+        "perMember": 1,
+        "start": "20261108T191646.000Z",
+        "end": "20261109T191646.000Z",
+        "us": {
+          "name": "ARMIA MAURYCEGO",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 2,
+              "th": 15,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 4,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 5,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 6,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 8,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 9,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 16,
+              "th": 9,
+              "best": 0
+            },
+            {
+              "pos": 23,
+              "th": 8,
+              "best": 0
+            }
+          ]
+        },
+        "them": {
+          "name": "kingslayers",
+          "stars": 0,
+          "pct": 0,
+          "attacks": 0,
+          "bases": [
+            {
+              "pos": 1,
+              "th": 16,
+              "best": 0
+            },
+            {
+              "pos": 3,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 7,
+              "th": 13,
+              "best": 0
+            },
+            {
+              "pos": 11,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 12,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 13,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 15,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 16,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 17,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 22,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 23,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 24,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 25,
+              "th": 12,
+              "best": 0
+            },
+            {
+              "pos": 27,
+              "th": 11,
+              "best": 0
+            },
+            {
+              "pos": 33,
+              "th": 11,
+              "best": 0
+            }
+          ]
+        },
+        "members": [
+          {
+            "name": "KUBOOOREK",
+            "tag": "#VP9PLGLV",
+            "pos": 1,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Baku",
+            "tag": "#LUGR0YQY0",
+            "pos": 2,
+            "th": 15,
+            "attacks": []
+          },
+          {
+            "name": "Albaroon.2",
+            "tag": "#GYUJR2URJ",
+            "pos": 3,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MAQOS",
+            "tag": "#LJYR92002",
+            "pos": 4,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "MrDefPL",
+            "tag": "#8UCPRGC8",
+            "pos": 5,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "monte",
+            "tag": "#QYJUV90JY",
+            "pos": 6,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "oggsgdjdjbd",
+            "tag": "#Q9CU9P908",
+            "pos": 7,
+            "th": 12,
+            "attacks": []
+          },
+          {
+            "name": "VipeR",
+            "tag": "#22R8PLCU8",
+            "pos": 8,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "Cwel123",
+            "tag": "#RPR0L809R",
+            "pos": 9,
+            "th": 11,
+            "attacks": []
+          },
+          {
+            "name": "tak",
+            "tag": "#Y02PYY922",
+            "pos": 11,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Kojak",
+            "tag": "#G8VGC2VRL",
+            "pos": 12,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Belaska",
+            "tag": "#GU0R2J8R0",
+            "pos": 13,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "vvd",
+            "tag": "#GQULCR98R",
+            "pos": 15,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Brann",
+            "tag": "#LC8VRR9R2",
+            "pos": 16,
+            "th": 9,
+            "attacks": []
+          },
+          {
+            "name": "Barnes",
+            "tag": "#LQVRCRUYR",
+            "pos": 23,
+            "th": 8,
+            "attacks": []
+          }
+        ]
       }
     ],
     "top": [
@@ -2211,61 +2492,61 @@
         "name": "Baku",
         "stars": 15,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "KUBOOOREK",
         "stars": 13,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "VipeR",
         "stars": 12,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "Albaroon.2",
         "stars": 8,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "oggsgdjdjbd",
         "stars": 8,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "Brann",
         "stars": 8,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "MAQOS",
         "stars": 7,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "monte",
         "stars": 7,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "Barnes",
         "stars": 7,
         "attacks": 5,
-        "wars": 5
+        "wars": 6
       },
       {
         "name": "Cwel123",
         "stars": 6,
         "attacks": 4,
-        "wars": 5
+        "wars": 6
       }
     ]
   },
@@ -2763,6 +3044,94 @@
     }
   ],
   "warArchive": [
+    {
+      "start": "20261107T191029.000Z",
+      "end": "20261108T191029.000Z",
+      "enemy": "Dream Clans",
+      "size": 15,
+      "perMember": 1,
+      "state": "inWar",
+      "cwl": true,
+      "us": 0,
+      "them": 0,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "attacks": []
+        },
+        {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "attacks": []
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "attacks": []
+        }
+      ]
+    },
     {
       "start": "20261106T182801.000Z",
       "end": "20261107T182801.000Z",
@@ -4876,8 +5245,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "71|365115059|341913953|15875|9453|16915|65097|0|241|106|11",
-      "last": "2026-11-07T17:16:06.663Z",
+      "sig": "71|365115059|341913953|15875|9453|16915|65497|0|241|106|11",
+      "last": "2026-11-07T19:31:22.666Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -5081,8 +5450,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|401042540|398800846|25150|1467|632135|723165|0|82|127|12",
-      "last": "2026-11-07T19:16:04.149Z",
+      "sig": "0|401250475|399148569|25150|1467|632135|726415|0|82|127|12",
+      "last": "2026-11-07T19:31:22.666Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -6271,7 +6640,7 @@
         "warStars": 241,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 65097,
+        "capital": 65497,
         "warPref": "in",
         "heroes": [
           {
@@ -6340,7 +6709,7 @@
         "capLoot": 16915,
         "gold": 365115059,
         "elixir": 341913953,
-        "capContrib": 65097,
+        "capContrib": 65497,
         "wins": 0
       }
     },
@@ -6449,7 +6818,7 @@
         "warStars": 82,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 723165,
+        "capital": 726415,
         "warPref": "in",
         "heroes": [
           {
@@ -6516,9 +6885,9 @@
         "cg": 25150,
         "don": 1467,
         "capLoot": 632135,
-        "gold": 401042540,
-        "elixir": 398800846,
-        "capContrib": 723165,
+        "gold": 401250475,
+        "elixir": 399148569,
+        "capContrib": 726415,
         "wins": 0
       }
     },
@@ -7372,16 +7741,11 @@
         ]
       },
       "rush": {
-        "pct": 6.4,
-        "troops": 3.4,
+        "pct": 5.5,
+        "troops": 1.7,
         "spells": 4.8,
         "heroes": 13.3,
         "top": [
-          {
-            "n": "Walkiria",
-            "lvl": 1,
-            "need": 2
-          },
           {
             "n": "Zaklęcie skoku",
             "lvl": 1,
@@ -8208,10 +8572,10 @@
       "th": 7,
       "given": 0,
       "received": 0,
-      "trophies": 29,
+      "trophies": 69,
       "profile": {
         "level": 34,
-        "trophies": 29,
+        "trophies": 69,
         "best": 255,
         "league": "Skeleton League 2",
         "warStars": 15,
