@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T07:46:03.414Z",
+  "updated": "2026-11-07T08:01:30.368Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -4771,8 +4771,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "32|275181307|275424162|15400|1434|30610|45316|0|11|64|13",
-      "last": "2026-11-07T07:46:03.401Z",
+      "sig": "32|277973044|277787227|15400|1434|30610|47819|0|11|64|13",
+      "last": "2026-11-07T08:01:30.361Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -5892,7 +5892,7 @@
         "warStars": 11,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 45316,
+        "capital": 47819,
         "warPref": "in",
         "heroes": [
           {
@@ -5959,9 +5959,9 @@
         "cg": 15400,
         "don": 1434,
         "capLoot": 30610,
-        "gold": 275181307,
-        "elixir": 275424162,
-        "capContrib": 45316,
+        "gold": 277973044,
+        "elixir": 277787227,
+        "capContrib": 47819,
         "wins": 0
       }
     },
@@ -6506,7 +6506,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
@@ -7586,12 +7586,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 11,
+            "level": 12,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
@@ -7735,7 +7735,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
