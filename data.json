@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T18:01:31.672Z",
+  "updated": "2026-11-07T18:16:03.697Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -2273,7 +2273,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -4847,8 +4847,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "201|268811748|268939609|14450|346|57300|109886|0|65|103|12",
-      "last": "2026-11-07T13:16:11.840Z",
+      "sig": "201|268811748|268939609|14450|346|57300|109886|0|65|104|12",
+      "last": "2026-11-07T18:16:03.686Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -6085,7 +6085,7 @@
       "received": 40,
       "trophies": 293,
       "profile": {
-        "level": 103,
+        "level": 104,
         "trophies": 293,
         "best": 1032,
         "league": "Wizard League 10",
@@ -7990,8 +7990,8 @@
         ]
       },
       "rush": {
-        "pct": 25.2,
-        "troops": 11.3,
+        "pct": 24.3,
+        "troops": 9.4,
         "spells": 30,
         "heroes": 46.7,
         "top": [
@@ -8021,7 +8021,7 @@
             "need": 20
           },
           {
-            "n": "Smok",
+            "n": "P.E.K.K.A",
             "lvl": 2,
             "need": 3
           }
