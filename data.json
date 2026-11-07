@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T13:45:53.091Z",
+  "updated": "2026-11-07T14:01:26.964Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -10,9 +10,18 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 1,
+    "place": 2,
     "groupSize": 8,
     "standings": [
+      {
+        "tag": "#2CPJQQVQ9",
+        "name": "React",
+        "level": 7,
+        "stars": 131,
+        "pct": 3810,
+        "wins": 3,
+        "played": 4
+      },
       {
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
@@ -23,12 +32,12 @@
         "played": 4
       },
       {
-        "tag": "#2CPJQQVQ9",
-        "name": "React",
-        "level": 7,
-        "stars": 125,
-        "pct": 3610,
-        "wins": 3,
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 116,
+        "pct": 3398,
+        "wins": 2,
         "played": 4
       },
       {
@@ -37,15 +46,6 @@
         "level": 5,
         "stars": 114,
         "pct": 3588,
-        "wins": 2,
-        "played": 4
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 113,
-        "pct": 3298,
         "wins": 2,
         "played": 4
       },
@@ -4862,8 +4862,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|207304192|199401825|2900|20|23720|42832|0|51|85|12",
-      "last": "2026-11-07T12:16:03.713Z",
+      "sig": "0|208004192|200101825|2900|20|23720|42832|0|51|85|12",
+      "last": "2026-11-07T14:01:26.951Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -6702,8 +6702,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 23720,
-        "gold": 207304192,
-        "elixir": 199401825,
+        "gold": 208004192,
+        "elixir": 200101825,
         "capContrib": 42832,
         "wins": 0
       }
