@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T03:01:28.661Z",
+  "updated": "2026-11-07T03:46:06.381Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -50,21 +50,21 @@
         "played": 4
       },
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 102,
+        "pct": 2432,
+        "wins": 3,
+        "played": 4
+      },
+      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
         "stars": 101,
         "pct": 2882,
         "wins": 2,
-        "played": 4
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 99,
-        "pct": 2332,
-        "wins": 3,
         "played": 4
       },
       {
