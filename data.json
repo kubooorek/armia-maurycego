@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T08:01:30.368Z",
+  "updated": "2026-11-07T08:15:54.121Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 102,
-        "pct": 2432,
+        "stars": 105,
+        "pct": 2532,
         "wins": 3,
         "played": 4
       },
@@ -8209,8 +8209,8 @@
         ]
       },
       "rush": {
-        "pct": 46.9,
-        "troops": 24.5,
+        "pct": 47.5,
+        "troops": 26.9,
         "spells": 63.2,
         "heroes": 73.3,
         "top": [
