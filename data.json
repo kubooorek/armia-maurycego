@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T13:31:17.768Z",
+  "updated": "2026-11-07T13:45:53.091Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 122,
-        "pct": 3510,
+        "stars": 125,
+        "pct": 3610,
         "wins": 3,
         "played": 4
       },
@@ -4947,8 +4947,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|30146873|28634547|5600|0|0|6070|0|0|43|8",
-      "last": "2026-11-06T20:16:03.269Z",
+      "sig": "0|30146873|28634547|5600|0|0|6070|0|0|44|8",
+      "last": "2026-11-07T13:45:53.078Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -7611,7 +7611,7 @@
       "received": 0,
       "trophies": 266,
       "profile": {
-        "level": 43,
+        "level": 44,
         "trophies": 266,
         "best": 266,
         "league": "Skeleton League 2",
@@ -7623,7 +7623,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 10,
+            "level": 11,
             "max": 110
           },
           {
