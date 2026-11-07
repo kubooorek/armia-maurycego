@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T17:46:06.722Z",
+  "updated": "2026-11-07T18:01:31.672Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 131,
-        "pct": 3810,
+        "stars": 133,
+        "pct": 3889,
         "wins": 3,
         "played": 4
       },
@@ -8129,6 +8129,80 @@
       }
     },
     {
+      "name": "smouki",
+      "tag": "#R9L08VVCY",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 18,
+        "trophies": 0,
+        "best": 0,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 2400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 2,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 46,
+        "troops": 40.6,
+        "spells": 25,
+        "heroes": 80,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 2,
+            "need": 10
+          },
+          {
+            "n": "Gigant",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Balon",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Mag",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 887687,
+        "elixir": 926809,
+        "capContrib": 2400,
+        "wins": 0
+      }
+    },
+    {
       "name": "my name billa",
       "tag": "#GQ2QUJRGU",
       "role": "member",
@@ -8483,80 +8557,6 @@
         "gold": 298949,
         "elixir": 298048,
         "capContrib": 0,
-        "wins": 0
-      }
-    },
-    {
-      "name": "smouki",
-      "tag": "#R9L08VVCY",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 18,
-        "trophies": 0,
-        "best": 0,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 2400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 48,
-        "troops": 40.6,
-        "spells": 37.5,
-        "heroes": 80,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 2,
-            "need": 10
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Gigant",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Burzyciel",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Balon",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Mag",
-            "lvl": 2,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 887687,
-        "elixir": 926809,
-        "capContrib": 2400,
         "wins": 0
       }
     },
