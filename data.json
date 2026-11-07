@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-07T07:16:13.912Z",
+  "updated": "2026-11-07T07:46:03.414Z",
   "clanLevel": 4,
-  "memberCount": 46,
+  "memberCount": 47,
   "cwlLeague": "Silver League I",
   "warWinStreak": 11,
   "warWins": 13,
@@ -2251,10 +2251,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 64923,
+      "loot": 67093,
       "raids": 5,
-      "attacks": 58,
-      "districts": 15,
+      "attacks": 60,
+      "districts": 16,
       "medals": 0,
       "members": [
         {
@@ -2300,18 +2300,18 @@
           "loot": 7277
         },
         {
+          "name": "Toster290",
+          "tag": "#GJJ90QGVQ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6104
+        },
+        {
           "name": "erykos",
           "tag": "#R9GPGL0QJ",
           "attacks": 6,
           "limit": 6,
           "loot": 4783
-        },
-        {
-          "name": "Toster290",
-          "tag": "#GJJ90QGVQ",
-          "attacks": 4,
-          "limit": 6,
-          "loot": 3934
         },
         {
           "name": "Darui",
@@ -2349,6 +2349,12 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T07:46:02.513Z",
+      "type": "join",
+      "name": "smouki",
+      "th": 7
+    },
     {
       "t": "2026-11-06T07:31:13.916Z",
       "type": "join",
@@ -4068,8 +4074,8 @@
     },
     {
       "d": "2026-11-07",
-      "members": 46,
-      "avgTh": 9,
+      "members": 47,
+      "avgTh": 8.9,
       "level": 4,
       "wins": 13,
       "points": 19500
@@ -4313,6 +4319,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 0
+      },
+      "#R9L08VVCY": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 2400
       }
     }
   },
@@ -4513,6 +4524,9 @@
     },
     "#R0V8QGLJQ": {
       "d": "2026-11-06T07:31:14.715Z"
+    },
+    "#R9L08VVCY": {
+      "d": "2026-11-07T07:46:03.401Z"
     }
   },
   "records": {
@@ -4529,10 +4543,10 @@
       "date": "2026-11-02"
     },
     "members": {
-      "value": 46,
+      "value": 47,
       "name": "Armia Maurycego",
       "tag": "#2GQQ8RGRL",
-      "date": "2026-11-04"
+      "date": "2026-11-07"
     },
     "warStars": {
       "value": 6,
@@ -4757,8 +4771,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "32|275181307|275424162|15400|1434|28680|45316|0|11|64|13",
-      "last": "2026-11-06T18:46:01.025Z",
+      "sig": "32|275181307|275424162|15400|1434|30610|45316|0|11|64|13",
+      "last": "2026-11-07T07:46:03.401Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -4935,6 +4949,11 @@
       "sig": "0|129425255|122415878|0|0|0|6460|0|0|47|10",
       "last": "2026-11-07T05:46:01.207Z",
       "since": "2026-11-06T07:31:14.715Z"
+    },
+    "#R9L08VVCY": {
+      "sig": "0|874353|911984|0|0|0|2400|0|0|15|7",
+      "last": "2026-11-07T07:46:03.401Z",
+      "since": "2026-11-07T07:46:03.401Z"
     }
   },
   "clanGames": null,
@@ -5226,6 +5245,13 @@
         "cg": 0,
         "capLoot": 0,
         "joined": "2026-11-06T07:31:14.715Z"
+      },
+      "#R9L08VVCY": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0,
+        "joined": "2026-11-07T07:46:03.401Z"
       }
     }
   },
@@ -5562,6 +5588,12 @@
         "capLoot": 0
       },
       "#RY9GPJ822": {
+        "warStars": 0,
+        "don": 0,
+        "cg": 0,
+        "capLoot": 0
+      },
+      "#R9L08VVCY": {
         "warStars": 0,
         "don": 0,
         "cg": 0,
@@ -5926,7 +5958,7 @@
       "ach": {
         "cg": 15400,
         "don": 1434,
-        "capLoot": 28680,
+        "capLoot": 30610,
         "gold": 275181307,
         "elixir": 275424162,
         "capContrib": 45316,
@@ -6111,12 +6143,12 @@
           },
           {
             "name": "Grand Warden",
-            "level": 11,
+            "level": 12,
             "max": 85
           },
           {
             "name": "Minion Prince",
-            "level": 23,
+            "level": 24,
             "max": 95
           }
         ]
@@ -8323,6 +8355,75 @@
         "gold": 298949,
         "elixir": 298048,
         "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
+      "name": "smouki",
+      "tag": "#R9L08VVCY",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 15,
+        "trophies": 0,
+        "best": 0,
+        "league": "Unranked",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 2400,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 18.5,
+        "troops": 17.4,
+        "spells": 25,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Gigant",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Balon",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Mag",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 3,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 874353,
+        "elixir": 911984,
+        "capContrib": 2400,
         "wins": 0
       }
     },
