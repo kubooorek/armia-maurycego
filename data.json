@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T09:15:58.893Z",
+  "updated": "2026-11-07T09:31:16.024Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -6561,46 +6561,41 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
             "name": "Grand Warden",
-            "level": 17,
+            "level": 18,
             "max": 85
           },
           {
             "name": "Minion Prince",
-            "level": 17,
+            "level": 18,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 26.1,
-        "troops": 4,
+        "pct": 24.6,
+        "troops": 3.2,
         "spells": 0,
-        "heroes": 54.7,
+        "heroes": 52,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 17,
+            "lvl": 18,
             "need": 50
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 17,
+            "lvl": 18,
             "need": 50
-          },
-          {
-            "n": "Książę Minionów",
-            "lvl": 17,
-            "need": 30
           },
           {
             "n": "Golem",
@@ -6608,13 +6603,18 @@
             "need": 7
           },
           {
+            "n": "Książę Minionów",
+            "lvl": 18,
+            "need": 30
+          },
+          {
             "n": "Wieprzowy jeździec",
-            "lvl": 5,
+            "lvl": 6,
             "need": 7
           },
           {
             "n": "Wielki Strażnik",
-            "lvl": 17,
+            "lvl": 18,
             "need": 20
           }
         ]
