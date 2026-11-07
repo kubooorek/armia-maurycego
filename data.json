@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T21:01:30.050Z",
+  "updated": "2026-11-07T21:16:03.553Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 142,
-        "pct": 4445,
+        "stars": 143,
+        "pct": 4498,
         "wins": 3,
         "played": 5
       },
@@ -81,7 +81,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 101,
-        "pct": 3373,
+        "pct": 3421,
         "wins": 1,
         "played": 5
       }
@@ -1933,9 +1933,9 @@
         "end": "20261108T191029.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 3,
-          "pct": 8.87,
-          "attacks": 3,
+          "stars": 4,
+          "pct": 12.4,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -2083,7 +2083,7 @@
             {
               "pos": 13,
               "th": 13,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 14,
@@ -2159,7 +2159,13 @@
             "tag": "#RPR0L809R",
             "pos": 9,
             "th": 11,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 53,
+                "target": "13. Zaid"
+              }
+            ]
           },
           {
             "name": "tak",
@@ -2561,18 +2567,18 @@
         "wars": 6
       },
       {
-        "name": "tak",
+        "name": "Cwel123",
         "stars": 7,
-        "attacks": 6,
+        "attacks": 5,
         "wars": 6
       }
     ]
   },
-  "visits": 78,
+  "visits": 79,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2580,10 +2586,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 99347,
+      "loot": 103805,
       "raids": 8,
-      "attacks": 89,
-      "districts": 24,
+      "attacks": 93,
+      "districts": 25,
       "medals": 0,
       "members": [
         {
@@ -2650,6 +2656,13 @@
           "loot": 6824
         },
         {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6565
+        },
+        {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
           "attacks": 6,
@@ -2671,13 +2684,6 @@
           "loot": 4351
         },
         {
-          "name": "Belaska",
-          "tag": "#GU0R2J8R0",
-          "attacks": 4,
-          "limit": 6,
-          "loot": 4022
-        },
-        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "attacks": 2,
@@ -2697,6 +2703,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 2734
+        },
+        {
+          "name": "To ja",
+          "tag": "#2JGYURUQJ",
+          "attacks": 2,
+          "limit": 5,
+          "loot": 1915
         }
       ]
     },
@@ -2713,6 +2726,12 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-07T21:16:02.641Z",
+      "type": "promote",
+      "name": "To ja",
+      "role": "admin"
+    },
     {
       "t": "2026-11-07T20:45:58.180Z",
       "type": "th",
@@ -3094,7 +3113,7 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 3,
+      "us": 4,
       "them": 2,
       "members": [
         {
@@ -3140,7 +3159,12 @@
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 53
+            }
+          ]
         },
         {
           "name": "tak",
@@ -5264,8 +5288,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "842|2000000000|2000000000|94700|81829|1216349|1619438|0|1257|205|15",
-      "last": "2026-11-07T20:01:28.816Z",
+      "sig": "842|2000000000|2000000000|94700|81829|1216349|1620038|0|1257|205|15",
+      "last": "2026-11-07T21:16:03.540Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -5309,8 +5333,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|525760164|481449741|10100|244|30450|84617|0|35|80|11",
-      "last": "2026-11-07T21:01:30.035Z",
+      "sig": "0|525810964|481509683|10100|244|30450|84617|0|36|80|11",
+      "last": "2026-11-07T21:16:03.540Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -5324,8 +5348,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
-      "sig": "20|118919856|118523949|16800|534|25600|45188|0|71|57|9",
-      "last": "2026-11-07T16:31:27.056Z",
+      "sig": "20|118919856|118523949|16800|534|28080|52353|0|71|57|9",
+      "last": "2026-11-07T21:16:03.540Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
@@ -5429,8 +5453,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GGU0RJYR9": {
-      "sig": "0|668752|668293|0|1|0|0|0|0|16|5",
-      "last": "2026-11-06T18:01:30.550Z",
+      "sig": "0|719589|723492|0|1|0|0|0|0|16|5",
+      "last": "2026-11-07T21:16:03.540Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
@@ -5489,8 +5513,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|401959925|400046880|25150|1467|632135|726415|0|82|127|12",
-      "last": "2026-11-07T21:01:30.035Z",
+      "sig": "0|401959925|400046880|25150|1467|634050|726415|0|82|127|12",
+      "last": "2026-11-07T21:16:03.540Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -5838,6 +5862,15 @@
           "cap": 7640
         },
         {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "score": 127,
+          "stars": 12,
+          "don": 5,
+          "cg": 0,
+          "cap": 3130
+        },
+        {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
           "score": 119,
@@ -5845,15 +5878,6 @@
           "don": 224,
           "cg": 0,
           "cap": 8055
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "score": 117,
-          "stars": 11,
-          "don": 5,
-          "cg": 0,
-          "cap": 3130
         }
       ]
     }
@@ -6223,7 +6247,7 @@
         "warStars": 1257,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 1619438,
+        "capital": 1620038,
         "warPref": "in",
         "heroes": [
           {
@@ -6271,7 +6295,7 @@
         "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
-        "capContrib": 1619438,
+        "capContrib": 1620038,
         "wins": 0
       }
     },
@@ -6844,7 +6868,7 @@
     {
       "name": "To ja",
       "tag": "#2JGYURUQJ",
-      "role": "member",
+      "role": "admin",
       "th": 12,
       "given": 0,
       "received": 67,
@@ -6877,16 +6901,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 20,
+            "level": 21,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 16.1,
+        "pct": 15.8,
         "troops": 9.5,
         "spells": 28.3,
-        "heroes": 16.7,
+        "heroes": 16,
         "top": [
           {
             "n": "Zaklęcie klonowania",
@@ -6923,7 +6947,7 @@
       "ach": {
         "cg": 25150,
         "don": 1467,
-        "capLoot": 632135,
+        "capLoot": 634050,
         "gold": 401959925,
         "elixir": 400046880,
         "capContrib": 726415,
@@ -7049,7 +7073,7 @@
         "trophies": 390,
         "best": 400,
         "league": "Archer League 7",
-        "warStars": 35,
+        "warStars": 36,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 84617,
@@ -7114,8 +7138,8 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 30450,
-        "gold": 525760164,
-        "elixir": 481449741,
+        "gold": 525810964,
+        "elixir": 481509683,
         "capContrib": 84617,
         "wins": 0
       }
@@ -7225,7 +7249,7 @@
         "warStars": 71,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 45188,
+        "capital": 52353,
         "warPref": "in",
         "heroes": [
           {
@@ -7255,10 +7279,10 @@
       "ach": {
         "cg": 16800,
         "don": 534,
-        "capLoot": 25600,
+        "capLoot": 28080,
         "gold": 118919856,
         "elixir": 118523949,
-        "capContrib": 45188,
+        "capContrib": 52353,
         "wins": 0
       }
     },
@@ -7824,7 +7848,7 @@
       "th": 10,
       "given": 1,
       "received": 0,
-      "trophies": 101,
+      "trophies": 117,
       "profile": {
         "level": 42,
         "trophies": 101,
@@ -9053,8 +9077,8 @@
         "cg": 0,
         "don": 1,
         "capLoot": 0,
-        "gold": 668752,
-        "elixir": 668293,
+        "gold": 719589,
+        "elixir": 723492,
         "capContrib": 0,
         "wins": 0
       }
