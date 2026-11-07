@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T02:01:23.398Z",
+  "updated": "2026-11-07T02:31:12.953Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -8000,7 +8000,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
@@ -8422,14 +8422,14 @@
         ]
       },
       "rush": {
-        "pct": 16.7,
+        "pct": 12.5,
         "troops": 0,
-        "spells": 66.7,
+        "spells": 50,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie błyskawicy",
-            "lvl": 1,
+            "lvl": 2,
             "need": 4
           },
           {
