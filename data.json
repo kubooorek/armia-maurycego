@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T01:45:25.770Z",
+  "updated": "2026-11-08T02:01:19.716Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -44,8 +44,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 118,
-        "pct": 3454,
+        "stars": 119,
+        "pct": 3535,
         "wins": 2,
         "played": 5
       },
@@ -5419,8 +5419,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
-      "sig": "0|73231341|71444424|0|68|0|3870|0|0|43|8",
-      "last": "2026-11-07T05:16:01.784Z",
+      "sig": "0|73753370|71981196|0|68|0|3870|0|0|43|8",
+      "last": "2026-11-08T02:01:19.704Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
@@ -6738,12 +6738,12 @@
           },
           {
             "name": "Grand Warden",
-            "level": 12,
+            "level": 13,
             "max": 85
           },
           {
             "name": "Minion Prince",
-            "level": 24,
+            "level": 25,
             "max": 95
           }
         ]
@@ -8484,8 +8484,8 @@
         ]
       },
       "rush": {
-        "pct": 24.3,
-        "troops": 9.4,
+        "pct": 23.3,
+        "troops": 7.5,
         "spells": 30,
         "heroes": 46.7,
         "top": [
@@ -8738,8 +8738,8 @@
         "cg": 0,
         "don": 68,
         "capLoot": 0,
-        "gold": 73231341,
-        "elixir": 71444424,
+        "gold": 73753370,
+        "elixir": 71981196,
         "capContrib": 3870,
         "wins": 0
       }
