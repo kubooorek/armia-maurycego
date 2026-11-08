@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T02:01:19.716Z",
+  "updated": "2026-11-08T02:46:00.343Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -41,20 +41,20 @@
         "played": 5
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 120,
+        "pct": 3915,
+        "wins": 2,
+        "played": 5
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
         "stars": 119,
         "pct": 3535,
-        "wins": 2,
-        "played": 5
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 117,
-        "pct": 3815,
         "wins": 2,
         "played": 5
       },
@@ -2592,10 +2592,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 106515,
+      "loot": 110646,
       "raids": 8,
-      "attacks": 95,
-      "districts": 25,
+      "attacks": 101,
+      "districts": 26,
       "medals": 0,
       "members": [
         {
@@ -2695,6 +2695,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 4351
+        },
+        {
+          "name": "CJ Alabama",
+          "tag": "#GV0P9JL8Q",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 4131
         },
         {
           "name": "Cwel123",
@@ -5509,8 +5516,8 @@
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|35022426|33421979|800|89|7180|25466|0|2|50|9",
-      "last": "2026-11-05T15:01:41.973Z",
+      "sig": "0|36648600|35038979|800|89|11020|25466|0|2|51|9",
+      "last": "2026-11-08T02:46:00.334Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -7964,7 +7971,7 @@
       "received": 0,
       "trophies": 40,
       "profile": {
-        "level": 50,
+        "level": 51,
         "trophies": 40,
         "best": 240,
         "league": "Skeleton League 3",
@@ -7981,12 +7988,12 @@
           },
           {
             "name": "Archer Queen",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 8,
+            "level": 9,
             "max": 95
           }
         ]
@@ -8007,9 +8014,9 @@
       "ach": {
         "cg": 800,
         "don": 89,
-        "capLoot": 7180,
-        "gold": 35022426,
-        "elixir": 33421979,
+        "capLoot": 11020,
+        "gold": 36648600,
+        "elixir": 35038979,
         "capContrib": 25466,
         "wins": 0
       }
@@ -8088,7 +8095,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 14,
+            "level": 15,
             "max": 110
           },
           {
