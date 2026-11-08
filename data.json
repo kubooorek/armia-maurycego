@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T14:31:33.919Z",
+  "updated": "2026-11-08T14:46:08.665Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2622,11 +2622,11 @@
       }
     ]
   },
-  "visits": 85,
+  "visits": 86,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2634,10 +2634,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 132296,
-      "raids": 10,
-      "attacks": 119,
-      "districts": 32,
+      "loot": 137963,
+      "raids": 11,
+      "attacks": 125,
+      "districts": 33,
       "medals": 0,
       "members": [
         {
@@ -2737,6 +2737,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 6104
+        },
+        {
+          "name": "TwarógPółtlusty",
+          "tag": "#R9GUJ0ULV",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5667
         },
         {
           "name": "erykos",
@@ -6314,8 +6321,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "70|6054439|5587005|0|111|0|550|0|0|28|7",
-      "last": "2026-11-08T14:31:33.906Z",
+      "sig": "70|6054439|5587005|0|111|5370|550|0|0|28|7",
+      "last": "2026-11-08T14:46:08.652Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -10239,7 +10246,7 @@
       "ach": {
         "cg": 0,
         "don": 111,
-        "capLoot": 0,
+        "capLoot": 5370,
         "gold": 6054439,
         "elixir": 5587005,
         "capContrib": 550,
