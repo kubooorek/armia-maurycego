@@ -978,7 +978,7 @@
   <div class="wrap">
     <div class="eyebrow">Rekrutacja</div>
     <h2 class="sec-title">Wymagania i oferta klanu</h2>
-    <p class="sec-lead">Jesteśmy młodym klanem 3. poziomu. Szukamy aktywnych graczy do wojen, Stolicy Klanu i wspólnego rozwoju. Nie musisz być pro — liczy się aktywność i chęć gry!</p>
+    <p class="sec-lead" id="joinLead">Jesteśmy młodym klanem 4. poziomu. Szukamy aktywnych graczy do wojen, Stolicy Klanu i wspólnego rozwoju. Nie musisz być pro — liczy się aktywność i chęć gry!</p>
     <div class="reqs">
       <div class="req"><div class="num">TH6+</div><h3>Ratusz</h3><p>Przyjmujemy graczy od Ratusza 6 wzwyż — początkujący są mile widziani.</p></div>
       <div class="req"><div class="num">1000</div><h3>Gry Klanowe</h3><p>Minimum 1000 punktów w każdych Grach Klanowych.</p></div>
@@ -1509,11 +1509,14 @@ let MVP = null;   // ustawiane automatycznie (najnowszy MVP)
 
 // Uzupełniaj po sezonie: league np. "Kryształ III", place np. 3, stars = gwiazdki klanu,
 // top = [[nick, gwiazdki, ataki], ...]
+// Plan rund CWL z gry (przeciwnicy w kolejnych rundach) — gra ustala go na początku ligi, API podaje dopiero bieżące rundy
+const CWL_PLAN = {season:"2026-11", rivals:["React","BattlerManipur2","Freax","united again","سوري","Dream Clans","kingslayers"]};
 const CWL = {season:"Listopad 2026", league:null, place:null, groupSize:8, stars:null, top:[]};
 
 // Dodatkowe osiągnięcia wpisywane ręcznie (date: "RRRR-MM-DD" albo null = „teraz”)
 const MILESTONES_EXTRA = [
   {date:null, text:"Klan osiąga 3. poziom"},
+  {date:"2026-11-06", text:"Klan osiąga 4. poziom"},
   {date:"2026-11-01", text:"Pierwszy sezon Ligi Wojen Klanów", future:true}
 ];
 
@@ -1537,7 +1540,7 @@ const BASES = [
 ];
 
 // Ogłoszenie na górze strony (null = brak). link/linkText opcjonalne.
-const ANNOUNCE = {text:"Zapisy do pierwszego sezonu CWL trwają — start 1 listopada!", link:"https://discord.gg/7SquD7SF3", linkText:"Zapisz się na Discordzie"};
+const ANNOUNCE = {text:"Ruszyła nasza pierwsza Liga Wojen Klanów! 7 rund, w każdej 1 atak — każdy obowiązkowy.", link:"#osiagniecia", linkText:"Rundy i tabela"};
 
 // Ogłoszenia zarządu (najnowsze na górze strony). tag: "wazne" | "wojny" | "strona" | "klan"
 const NEWS = [
@@ -1665,6 +1668,8 @@ const fmt = n => n.toLocaleString(LOC());
 
 /* ===== Wersja angielska (PL/EN) ===== */
 const EN = {
+"Następna liga za":"Next league in",
+"Ruszyła nasza pierwsza Liga Wojen Klanów! 7 rund, w każdej 1 atak — każdy obowiązkowy.":"Our first Clan War League has started! 7 rounds, 1 attack in each — every one is mandatory.","Rundy i tabela →":"Rounds and table →",
 "ℹ️ MVP wybierany jest automatycznie 1. dnia każdego miesiąca. Punkty: gwiazdka w wojnie lub CWL = 10, 10 oddanych wojsk = 1, 50 pkt w Grach Klanowych = 1, 500 złota z rajdów = 1. Każda kara za łamanie zasad wojen to −30. Kto wygrał w jednym z 2 ostatnich miesięcy, tym razem odpada, więc nagroda krąży po klanie. Wódz i KUBOOOREK nie biorą udziału.":"ℹ️ The MVP is picked automatically on the 1st of every month. Points: a war or CWL star = 10, 10 donated troops = 1, 50 Clan Games points = 1, 500 raid gold = 1. Each war-rule penalty is −30. Whoever won in one of the last 2 months sits this one out, so the award moves around the clan. The Leader and KUBOOOREK don't take part.","Gwiazdki w wojnach":"War stars","Złoto z rajdów":"Raid gold","Wynik":"Score",
 "Aktualności":"News","Ogłoszenia zarządu":"Leadership announcements","Najważniejsze informacje od Wodza i Współliderów.":"The most important news from the Leader and Co-leaders.","Ogłoszenia":"Announcements","Nasza historia":"Our story","Od pierwszego sztandaru":"Since the first banner","Najważniejsze chwile Armii Maurycego — od założenia klanu do dziś.":"The key moments of Armia Maurycego — from founding to today.","dni od założenia":"days since founding","stoczonych wojen":"wars fought","wygranych wojen":"wars won","średni ratusz":"average Town Hall","Gwiazdki w ostatnich wojnach":"Stars in recent wars","Zniszczenia w ostatnich wojnach":"Destruction in recent wars","Przeciwnik":"Opponent","Kopiuj link do profilu":"Copy profile link","Wojny w Armii":"Wars in the Army","Ostatnie ataki":"Recent attacks","Historia w klanie":"History in the clan","Stolica i Gry Klanowe":"Capital and Clan Games","Odznaki":"Badges","Gracze":"Players","Klan":"Clan","Rajdy Stolicy":"Capital raids","Kadra i sława":"Leaders and fame","Liga Wojen (CWL)":"Clan War League (CWL)","Polski klan Clash of Clans. Wojny, Liga Wojen Klanów, Gry Klanowe i rajdy na Stolicę — dołącz od TH6.":"A Polish Clash of Clans clan. Wars, Clan War League, Clan Games and Capital raids — join from TH6.","Starsze ogłoszenia":"Older announcements","Poziom":"Level","Puchary":"Trophies","Rekord pucharów":"Best trophies","Oddane wojska":"Troops donated","Otrzymane":"Received","Złoto dla Stolicy":"Capital Gold","Ataki":"Attacks","Opuszczone":"Missed","Kary":"Penalties","Śr. zniszczenia":"Avg. destruction","Ataki za 3★":"3★ attacks","Zapisany(a)":"Opted in","Wypisany(a)":"Opted out",
 "Wymagania":"Requirements","Dołącz":"Join","Wydarzenia":"Events","Członkowie":"Members","Wojny":"Wars","Poradnik":"Guide","Bazy":"Bases","Regulamin":"Rules",
@@ -1674,7 +1679,7 @@ const EN = {
 "Młody, ambitny klan Clash of Clans. Wspólnie wojujemy, robimy Gry Klanowe i rajdy na Stolicę — każdy aktywny gracz ma tu swoje miejsce.":"A young, ambitious Clash of Clans clan. We war together, grind Clan Games and Capital raids — every active player has a place here.",
 "Kopiuj tag":"Copy tag","Dołącz do klanu":"Join the clan","Nasz Discord":"Our Discord","Członków":"Members","Wygranych wojen":"Wars won","Minimalny ratusz":"Minimum Town Hall","Dni razem":"Days together","Odwiedzin strony":"Page visits",
 "Rekrutacja":"Recruitment","Wymagania i oferta klanu":"Requirements & what we offer",
-"Jesteśmy młodym klanem 3. poziomu. Szukamy aktywnych graczy do wojen, Stolicy Klanu i wspólnego rozwoju. Nie musisz być pro — liczy się aktywność i chęć gry!":"We're a young level 3 clan looking for active players for wars, Clan Capital and growing together. You don't need to be a pro — activity and motivation are what count!",
+"Jesteśmy młodym klanem 4. poziomu. Szukamy aktywnych graczy do wojen, Stolicy Klanu i wspólnego rozwoju. Nie musisz być pro — liczy się aktywność i chęć gry!":"We're a young level 4 clan looking for active players for wars, Clan Capital and growing together. You don't need to be a pro — activity and motivation are what count!",
 "Ratusz":"Town Hall","Przyjmujemy graczy od Ratusza 6 wzwyż — początkujący są mile widziani.":"We accept players from Town Hall 6 up — beginners are welcome.",
 "Gry Klanowe":"Clan Games","Minimum 1000 punktów w każdych Grach Klanowych.":"At least 1,000 points in every Clan Games.",
 "Ataki w wojnie":"War attacks","Jeśli jesteś w składzie wojennym, oba ataki są obowiązkowe.":"If you're in the war lineup, both attacks are mandatory.",
@@ -1692,9 +1697,9 @@ const EN = {
 "Godziny według stałego harmonogramu gry (czas UTC). Supercell czasem przesuwa wydarzenia — w razie różnic obowiązuje to, co widzisz w grze.":"Times follow the game's regular schedule (UTC). Supercell sometimes shifts events — if in doubt, the game is always right.",
 "Rozwój klanu":"Clan growth","CWL i kamienie milowe":"CWL & milestones","Gdzie jesteśmy w Lidze Wojen Klanów i jak szybko rośniemy.":"Where we stand in Clan War Leagues and how fast we're growing.",
 "Liga Wojen Klanów":"Clan War Leagues","Listopad 2026":"November 2026","Liga":"League","Pierwszy sezon":"First season","Miejsce w grupie":"Group placement","Gwiazdki klanu":"Clan stars","Najwięcej gwiazdek w CWL":"Most CWL stars",
-"Startujemy 1 listopada. Ranking gwiazdek pojawi się po pierwszych dniach wojen ligowych — zapisy na Discordzie.":"We start on November 1. The star ranking will appear after the first league war days — sign up on Discord.",
+"Ranking gwiazdek pojawi się po pierwszej rundzie, gdy ktoś z nas zaatakuje.":"The star ranking will appear after the first round, once we attack.",
 "Jak działa CWL":"How CWL works","dni wojen w grupie 8 klanów":"war days in a group of 8 clans","atak dziennie — każdy obowiązkowy":"attack per day — every one is mandatory","medale ligowe za udział i gwiazdki":"league medals for taking part and stars",
-"Kamienie milowe":"Milestones","teraz":"now","Klan osiąga 3. poziom":"Clan reaches level 3","Pierwszy sezon Ligi Wojen Klanów":"First Clan War League season",
+"Kamienie milowe":"Milestones","teraz":"now","Klan osiąga 3. poziom":"Clan reaches level 3","Klan osiąga 4. poziom":"Clan reaches level 4","Pierwszy sezon Ligi Wojen Klanów":"First Clan War League season",
 "Dowództwo":"Leadership","Struktura i kadra":"Clan leadership","Liderzy i dowództwo dbające o porządek i strategię w grze.":"The leaders keeping order and planning strategy.",
 "Wódz klanu":"Leader","Współliderzy":"Co-leaders","Starszyzna":"Elders","Wyróżnienia":"Awards","Sława klanowa":"Hall of fame","Najlepsi gracze klanu. Wyniki wpisuje lider po podsumowaniach z bota.":"Our best players. Results are entered by the leader after the bot's summaries.",
 "MVP miesiąca":"MVP of the month","Październik 2026":"October 2026","Top 3 donatorów sezonu":"Top 3 donors of the season","Wybór lidera":"Leader's pick","Gracz miesiąca zostanie wyróżniony za gwiazdki w CWL, pomoc klanowi i aktywność.":"The player of the month will be recognised for CWL stars, helping the clan and activity.",
@@ -1839,11 +1844,12 @@ async function loadAuto(){
     if (Array.isArray(d.wars) && d.wars.length){
       WARS = d.wars.map(w=>({date:w.date, enemy:w.enemy, size:w.size, xp:w.xp||0, us:{stars:w.us.stars, pct:w.us.pct}, them:{stars:w.them.stars, pct:w.them.pct}}));
     }
-    if (d.cwlLeague && d.cwlLeague!=="Unranked") CWL.league = d.cwlLeague;
+    if (d.cwlLeague && d.cwlLeague!=="Unranked"){ const LPL={Bronze:"Brązowa",Silver:"Srebrna",Gold:"Złota",Crystal:"Kryształowa",Master:"Mistrzowska",Champion:"Mistrzów"};
+      const [k,,r]=d.cwlLeague.split(" "); CWL.league = (LANG==="en") ? d.cwlLeague : `${LPL[k]||k} ${r||""}`.trim(); }
     if (d.cwl && Array.isArray(d.cwl.standings) && d.cwl.standings.length){
       const [y,mo] = (d.cwl.season||"").split("-").map(Number);
       if (y && mo){ const t=new Date(Date.UTC(y,mo-1,15)).toLocaleDateString("pl-PL",{month:"long",year:"numeric"}); CWL.season = t.charAt(0).toUpperCase()+t.slice(1); }
-      CWL.place = d.cwl.place; CWL.groupSize = d.cwl.groupSize;
+      CWL.place = (d.cwl.standings||[]).some(r=>r.stars>0) ? d.cwl.place : null; CWL.groupSize = d.cwl.groupSize;
       const me = d.cwl.standings.find(r=>r.tag==="#2GQQ8RGRL"); if (me) CWL.stars = me.stars;
       if (Array.isArray(d.cwl.top) && d.cwl.top.length) CWL.top = d.cwl.top.map(t=>[t.name,t.stars,t.attacks]);
     }
@@ -1951,9 +1957,9 @@ function monthly(now, startFn, endFn){
 const EVENTS = [
   {name:"Rajdy Stolicy", sub:"pt 09:00 → pn 09:00 (PL)", color:"#e8b44a",
    icon:'<path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/>', win: raidWindow},
-  {name:"Liga Wojen (CWL)", sub:"od 1. dnia miesiąca", color:"#d9534f", cwl:true,
+  {name:"Liga Wojen (CWL)", sub:"1. dnia każdego miesiąca", color:"#d9534f", cwl:true,
    icon:'<path d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2"/>',
-   win: n => monthly(n,(y,m)=>U(y,m,1,8),(y,m)=>U(y,m,11,8))},
+   win: n => { const nx = U(n.getUTCFullYear(), n.getUTCMonth()+1, 1, 8); return [nx, new Date(+nx+1)]; }},
   {name:"Gry Klanowe", sub:"22. → 28. dnia miesiąca", color:"#4fb477",
    icon:'<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.8 7 20.2 7 22M14 14.7V17c0 .6.5 1 1 1.2 1.2.6 2 2 2 3.8M18 2H6v7a6 6 0 0 0 12 0V2Z"/>',
    win: n => monthly(n,(y,m)=>U(y,m,22,8),(y,m)=>U(y,m,28,8))},
@@ -1973,6 +1979,15 @@ tEl.innerHTML = EVENTS.map((e,i)=>`
   </div>`).join("");
 const pad = n => String(n).padStart(2,"0");
 const dfmt = d => d.toLocaleString(LOC(),{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+// CWL na żywo z danych robota: runda w bitwie, a jeśli brak — runda w przygotowaniach
+function CWL_LIVE(){
+  const ws=((AUTO&&AUTO.cwl&&AUTO.cwl.wars)||[]); if(!ws.length) return null;
+  const pt=t=>t?new Date(Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`)):null;
+  const w=ws.find(x=>x.state==="inWar")||ws.find(x=>x.state==="preparation"); if(!w) return null;
+  const first=ws.reduce((a,x)=>!a||x.round<a.round?x:a,null), fs=pt(first&&first.start);
+  const rounds=(AUTO.cwl.rounds||7);
+  return {round:w.round,state:w.state,start:pt(w.start),end:pt(w.end),them:w.them.name,size:w.size,last:fs?new Date(+fs+rounds*864e5):null};
+}
 function tick(){
   const now = new Date();
   EVENTS.forEach((e,i)=>{
@@ -1981,7 +1996,7 @@ function tick(){
     let target = live ? end : s;
     // CWL: najpierw 48 h zapisów, potem 7 dni wojen ligowych
     let cwlPhase=null;
-    if (e.cwl){ const su=new Date(+s+48*36e5); cwlPhase = !live ? "before" : now<su ? "signup" : "wars"; if(cwlPhase==="signup") target=su; e._su=su; }
+    if (e.cwl) cwlPhase = "next";
     let diff = Math.max(0, target - now)/1000;
     const v = [Math.floor(diff/86400), Math.floor(diff%86400/3600), Math.floor(diff%3600/60), Math.floor(diff%60)];
     const box = document.getElementById("t"+i);
@@ -1993,9 +2008,15 @@ function tick(){
     box.querySelector(".when").textContent = (live?"Koniec: ":(e.endOnly?"Nowy sezon: ":"Start: ")) + dfmt(target);
     if (cwlPhase){
       const W = box.querySelector(".when");
-      if (cwlPhase==="before"){ st.textContent="Zapisy startują za"; W.textContent=`Zapisy: ${dfmt(s)} – ${dfmt(e._su)} (48 h) · potem dzień przygotowań, 1. bitwa ok. ${dfmt(new Date(+e._su+864e5))}`; }
-      if (cwlPhase==="signup"){ st.textContent="● Zapisy trwają — koniec za"; W.textContent=`Dzień przygotowań od ok. ${dfmt(e._su)} · 1. bitwa ok. ${dfmt(new Date(+e._su+864e5))} · koniec ok. ${dfmt(end)}`; }
-      if (cwlPhase==="wars"){ st.textContent="● Wojny ligowe — koniec za"; W.textContent=`7 dni bitewnych · koniec sezonu ok. ${dfmt(end)}`; }
+      if (cwlPhase==="next"){ st.textContent="Następna liga za"; W.textContent=`Start: ${dfmt(s)} · Liga Wojen rusza 1. dnia każdego miesiąca`; }
+      // prawdziwe dane z gry (robot): bieżąca runda
+      const cl=CWL_LIVE();
+      if (cl){ const t=cl.state==="inWar"?cl.end:cl.start, d2=Math.max(0,t-now)/1000;
+        const v2=[Math.floor(d2/86400),Math.floor(d2%86400/3600),Math.floor(d2%3600/60),Math.floor(d2%60)];
+        box.classList.add("is-live"); st.className="status live";
+        st.textContent = cl.state==="inWar" ? `● Runda ${cl.round} · koniec za` : `● Runda ${cl.round} · bitwa za`;
+        box.querySelectorAll(".count b").forEach((b,j)=>b.textContent = pad(v2[j]));
+        W.textContent = `${cl.state==="inWar"?"Dzień bitwy":"Dzień przygotowań"} · vs ${cl.them} · ${cl.size} vs ${cl.size} · 1 atak na gracza${cl.last?` · ostatnia runda kończy się ok. ${dfmt(cl.last)}`:""}`; }
     }
   });
 }
@@ -2238,7 +2259,7 @@ $("#cwlPlace").textContent = CWL.place ? `${CWL.place} / ${CWL.groupSize}` : "�
 $("#cwlStars").textContent = CWL.stars ?? "—";
 $("#cwlTop").innerHTML = CWL.top.length
   ? CWL.top.slice(0,5).map((t,i)=>`<div class="mini-row"><span><em class="medal" style="font-style:normal;margin-right:6px">${["🥇","🥈","🥉","4.","5."][i]}</em>${esc(t[0])}</span><span>⭐ ${t[1]}${t[2]?` <small style="color:var(--muted)">/ ${t[2]} ataków</small>`:""}</span></div>`).join("")
-  : `<div class="empty">Startujemy 1 listopada. Ranking gwiazdek pojawi się po pierwszych dniach wojen ligowych — zapisy na Discordzie.</div>`;
+  : `<div class="empty">Ranking gwiazdek pojawi się po pierwszej rundzie, gdy ktoś z nas zaatakuje.</div>`;
 
 
 
@@ -3034,7 +3055,8 @@ function rushHtml(r){
   const total=(C&&C.rounds)||7, by={}; wars.forEach(w=>by[w.round]=w);
   const known=wars.slice().sort((a,b)=>a.round-b.round); const last=known[known.length-1];
   const card=r=>{ const w=by[r];
-    if(!w){ const est=st(last.start)+(r-last.round)*864e5; return `<div class="rnd wait"><b>Runda ${r}</b><span class="rnd-st">⌛ czeka</span><small>Przeciwnik nieznany</small><small class="rnd-t">ok. ${new Date(est).toLocaleString(LOC(),{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}</small></div>`; }
+    if(!w){ const est=st(last.start)+(r-last.round)*864e5; const pn=(CWL_PLAN&&C&&String(C.season||"").startsWith(CWL_PLAN.season)&&CWL_PLAN.rivals[r-1])||null, lv=pn&&((C.standings||[]).find(x=>x.name===pn)||{}).level;
+      return `<div class="rnd wait"><b>Runda ${r}</b><span class="rnd-st">⌛ czeka</span><small>${pn?`vs <bdi>${esc(pn)}</bdi>${lv?` · poz. ${lv}`:""}`:"Przeciwnik nieznany"}</small><small class="rnd-t">ok. ${new Date(est).toLocaleString(LOC(),{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}</small></div>`; }
     const win=w.us.stars>w.them.stars||(w.us.stars===w.them.stars&&w.us.pct>w.them.pct), draw=w.us.stars===w.them.stars&&w.us.pct===w.them.pct;
     const s=w.state==="preparation"?["prep","🛡️ przygotowania"]:w.state==="inWar"?["live","🔴 trwa"]:draw?["draw","🤝 remis"]:win?["win","✅ wygrana"]:["loss","❌ przegrana"];
     const tgt=w.state==="preparation"?st(w.start):w.state==="inWar"?st(w.end):0;
@@ -3477,6 +3499,9 @@ let AM_USER=null;   // {tags:[...], active:"#TAG", accs:[{tag,name,th}]}
   if(!me&&!LOGIN_API) setTimeout(ask,5000);
   if(LOGIN_API){ const fb=document.querySelector('footer [onclick*="amKto"]'); if(fb){ fb.textContent=AM_USER?"Mój panel":"Zaloguj się"; fb.onclick=()=>AM_USER?(location.hash="#panel"):window.amLogin(false); } }
 })();
+
+/* ===== Poziom klanu w tekście rekrutacji (z gry) ===== */
+(function(){ const el=$("#joinLead"), lv=AUTO&&AUTO.clanLevel; if(el&&lv) el.innerHTML=el.innerHTML.replace(/\d+\. poziomu/,`${lv}. poziomu`); })();
 
 /* ===== Ogłoszenie ===== */
 (function(){
