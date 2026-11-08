@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T06:01:27.594Z",
+  "updated": "2026-11-08T06:16:19.541Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -5466,8 +5466,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "0|25759287|25469727|0|160|14515|25739|0|0|50|9",
-      "last": "2026-11-07T17:31:17.117Z",
+      "sig": "2|25759287|25469727|0|160|14515|25739|0|0|50|9",
+      "last": "2026-11-08T06:16:19.528Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -8278,7 +8278,7 @@
       "tag": "#LUQJC2JGY",
       "role": "member",
       "th": 9,
-      "given": 0,
+      "given": 2,
       "received": 0,
       "trophies": 218,
       "profile": {
@@ -8460,7 +8460,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 52,
+      "received": 54,
       "trophies": 115,
       "profile": {
         "level": 43,
