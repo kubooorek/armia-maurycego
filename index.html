@@ -1476,6 +1476,9 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   .cwl-jump[hidden]{display:none}
   .cwl-jump em{font-style:normal;font-weight:800;color:var(--gold2);white-space:nowrap}
   .cwl-jump:hover{filter:brightness(1.15)}
+  .rank-card .av.av-th{flex:0 0 40px;height:40px;background:none;border:0;border-radius:0}
+  .rank-card .av.av-th img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.45))}
+  .rank-card .av.av-th b{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;font-weight:900;font-size:.9rem;color:#3a1600;background:linear-gradient(180deg,#ffe58a,#e8a020);border:1px solid #7a3d00;box-shadow:0 2px 0 #6a2e00}
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
@@ -2663,7 +2666,7 @@ $("#donors").innerHTML = topD.map((r,i)=>`
 const TITLE = {leader:"Główny Dowódca", co:"Zastępca Lidera", elder:"Starszy"};
 $("#ranks").innerHTML = [["leader","Wódz klanu"],["co","Współliderzy"],["elder","Starszyzna"]].map(([k,h],i)=>`
   <div class="rank-card r${i}"><h3>${h}</h3><ul>${rows.filter(r=>r.role===k).map(r=>`
-    <li><span class="av">${esc([...r.name][0].toUpperCase())}</span><div><b>${esc(r.name)}</b><small>${TITLE[k]} · TH${r.th}</small></div></li>`).join("")}</ul></div>`).join("");
+    <li><span class="av av-th" title="TH${r.th}">${(r.th>=9&&r.th<=17)?`<img src="img/styl/ogien-th${r.th}.png" alt="TH${r.th}" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'${r.th}'}))">`:`<b>${r.th||"?"}</b>`}</span><div><b>${esc(r.name)}</b><small>${TITLE[k]} · TH${r.th}</small></div></li>`).join("")}</ul></div>`).join("");
 
 // ===== Kalkulator ratusza =====
 const TH_TIPS = [
