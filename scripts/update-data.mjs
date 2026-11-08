@@ -230,9 +230,10 @@ if (currentWar && currentWar.state !== "preparation") {
     size: currentWar.size, perMember: currentWar.perMember, state: currentWar.state,
     us: currentWar.us.stars, them: currentWar.them.stars,
     final: currentWar.state === "warEnded",   // robot widział koniec wojny = komplet ataków
+    pct: currentWar.us.pct, themPct: currentWar.them.pct, themBases: currentWar.them.bases,
     members: currentWar.members.map(m => ({
-      name: m.name, tag: m.tag,
-      attacks: m.attacks.map(a => ({ stars: a.stars, pct: a.pct }))
+      name: m.name, tag: m.tag, pos: m.pos, th: m.th,
+      attacks: m.attacks.map(a => ({ stars: a.stars, pct: a.pct, target: a.target, order: a.order }))
     }))
   };
   warArchive = warArchive.filter(x => x.start !== rec.start);
@@ -243,8 +244,8 @@ for (const cw of (cwl?.wars || [])) {
   if (cw.state === "preparation") continue;
   const rec = {
     start: cw.start, end: cw.end, enemy: cw.them.name, size: cw.size, perMember: 1, state: cw.state, cwl: true,
-    us: cw.us.stars, them: cw.them.stars,
-    members: cw.members.map(m => ({ name: m.name, tag: m.tag, attacks: m.attacks.map(a => ({ stars: a.stars, pct: a.pct })) }))
+    us: cw.us.stars, them: cw.them.stars, pct: cw.us.pct, themPct: cw.them.pct, themBases: cw.them.bases, round: cw.round,
+    members: cw.members.map(m => ({ name: m.name, tag: m.tag, pos: m.pos, th: m.th, attacks: m.attacks.map(a => ({ stars: a.stars, pct: a.pct, target: a.target })) }))
   };
   warArchive = warArchive.filter(x => x.start !== rec.start || x.enemy !== rec.enemy);
   warArchive.push(rec);
@@ -255,13 +256,44 @@ const nowStamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/
 warArchive.forEach(x => { if (x.end && x.end < nowStamp) x.state = "warEnded"; });
 warArchive = warArchive.slice(0, 40);
 
+/* ---------- Podsumowanie sezonu CWL (gdy wszystkie rundy się skończą) ---------- */
+let cwlSummary = old?.cwlSummary ?? null;
+if (cwl && Array.isArray(cwl.wars) && cwl.wars.length >= (cwl.rounds || 7) && cwl.wars.every(w => w.state === "warEnded")) {
+  const isWin = w => w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct);
+  const isDraw = w => w.us.stars === w.them.stars && w.us.pct === w.them.pct;
+  const row = (cwl.standings || []).find(r => r.tag === TAG) || {};
+  const miss = {}, three = {};
+  for (const w of cwl.wars) for (const m of w.members) {
+    if (!m.attacks.length) miss[m.name] = (miss[m.name] || 0) + 1;
+    three[m.name] = (three[m.name] || 0) + m.attacks.filter(a => a.stars === 3).length;
+  }
+  const same = cwlSummary && cwlSummary.season === cwl.season;
+  cwlSummary = {
+    season: cwl.season, place: cwl.place, groupSize: cwl.groupSize,
+    wins: cwl.wars.filter(isWin).length, draws: cwl.wars.filter(isDraw).length,
+    losses: cwl.wars.filter(w => !isWin(w) && !isDraw(w)).length,
+    stars: row.stars ?? null, pct: row.pct ?? null,
+    rounds: cwl.wars.map(w => ({ round: w.round, enemy: w.them.name, us: w.us.stars, them: w.them.stars, win: isWin(w), draw: isDraw(w) })),
+    top: (cwl.top || []).slice(0, 5).map(x => ({ ...x, three: three[x.name] || 0 })),
+    missed: Object.entries(miss).map(([name, n]) => ({ name, n })).sort((a, b) => b.n - a.n),
+    posted: same ? !!cwlSummary.posted : false
+  };
+}
+
 /* ---------- Kary za łamanie zasad wojennych (tylko zwykłe wojny, 2 ataki) ---------- */
 // konta zwolnione z kar (lista KARY_ZWOLNIENI w index.html)
 let karyZw = [];
 try { const h = await readFile(new URL("../index.html", import.meta.url), "utf8"); const m = h.match(/const KARY_ZWOLNIENI\s*=\s*\[([\s\S]*?)\n\];/);
   if (m) karyZw = [...m[1].matchAll(/"(#[0-9A-Z]+)"/g)].map(x => x[1]); } catch (e) { console.warn("index.html (zwolnieni z kar) niedostępny:", e.message); }
-let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag));
-const addPen = p => { if (karyZw.includes(p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+// zamiany numerów zgłoszone przez graczy w „Moim panelu” (serwer logowania) — za nie nie ma kary
+const SWAPS_URL = "https://armia-login.fifacz39.workers.dev/swaps";
+let swaps = Array.isArray(old?.swaps) ? old.swaps : [];
+try { const ctl = new AbortController(); const tm = setTimeout(() => ctl.abort(), 8000);
+  const r = await fetch(SWAPS_URL, { signal: ctl.signal }); clearTimeout(tm);
+  if (r.ok) { const j = await r.json(); if (Array.isArray(j.swaps)) swaps = j.swaps; } } catch (e) { console.warn("Zamiany numerów niedostępne:", e.message); }
+const swapped = (war, tag) => swaps.some(s => s.war === war && s.tag === tag);
+let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag) && !((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)));
+const addPen = p => { if (karyZw.includes(p.tag)) return; if ((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
 const WOLNE_PO_H = 12;   // po tylu godzinach od startu bitwy można atakować cudze numery bez kary
 const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
 if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
@@ -297,10 +329,15 @@ if (currentWar && currentWar.state !== "preparation" && currentWar.perMember ===
 // 3) opuszczone ataki — tylko z wojen, których koniec robot widział (pewny komplet ataków), z ostatnich 7 dni
 for (const x of warArchive) {
   if (x.cwl || !x.final || x.perMember !== 2 || Date.now() - stampMs(x.end) > 7 * 864e5) continue;
-  for (const m of x.members) if (m.attacks.length < x.perMember)
+  // wszystkie bazy przeciwnika na 3★ = drugim atakiem nie było już czego bić → brak kary, jeśli 1. atak był zrobiony
+  const allDone = x.size && x.us >= x.size * 3;
+  for (const m of x.members) if (m.attacks.length < x.perMember && !(allDone && m.attacks.length >= 1))
     addPen({ id: `${x.start}:${m.tag}:missed`, type: "missed", detail: `wykorzystane ataki: ${m.attacks.length}/${x.perMember}`,
              tag: m.tag, name: m.name, war: x.start, end: x.end, enemy: x.enemy });
 }
+penalties = penalties.filter(p => { if (p.type !== "missed") return true;
+  const x = warArchive.find(w => w.start === p.war && !w.cwl); if (!x || !(x.size && x.us >= x.size * 3)) return true;
+  const mm = (x.members || []).find(m => m.tag === p.tag); return !(mm && mm.attacks.length >= 1); });
 penalties = penalties.slice(0, 80);
 
 /* ---------- Rajdy Stolicy ---------- */
@@ -580,6 +617,17 @@ if (!dayBase || dayBase.day !== todayPl) {
 }
 
 
+/* ---------- Historia graczy (do wykresów w profilu): 1 wpis dziennie, 60 dni ---------- */
+// wpis: [dzień (dni od 1970), gwiazdki wojenne, oddane wojska (łącznie z osiągnięcia), ratusz]
+const dayNo = Math.floor(Date.parse(plDay(Date.now()) + "T12:00:00Z") / 864e5);
+const playerHistory = {};
+for (const m of members) {
+  const prev = Array.isArray(old?.playerHistory?.[m.tag]) ? old.playerHistory[m.tag] : [];
+  const e = [dayNo, m.profile?.warStars ?? null, m.ach?.don ?? null, m.th ?? null];
+  const arr = prev.filter(x => x[0] !== dayNo); arr.push(e);
+  playerHistory[m.tag] = arr.slice(-60);
+}
+
 /* ---------- Bilans miesiąca (kandydaci na MVP i do awansu) ---------- */
 const monthKey = nowIso.slice(0, 7);
 let monthBase = old?.monthBase;
@@ -678,7 +726,9 @@ const POSTY = {
   startBitwy: true,        // start dnia bitwy + zasada „pierwszy atak na swój numer”
   wolneNumery: true,       // po 12 h: które numery są wolne (zasada 12 h)
   przypomnienia: true,     // 4 h i 1 h przed końcem: kto jeszcze nie zaatakował
-  wynikWojny: false        // wynik i opuszczone ataki — robi ClashPerk (war board + missed attacks)
+  wynikWojny: false,       // stary krótki wynik (zastąpiony podsumowaniem poniżej)
+  podsumowanieWojny: true, // po każdej wojnie i rundzie CWL: wynik, najlepsi, 3★, opuszczone, kary
+  podsumowanieCWL: true    // po ostatniej rundzie CWL: miejsce, bilans, najlepsi gracze sezonu
 };
 if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
   // 1) Ruchy w klanie z tego uruchomienia
@@ -739,6 +789,26 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
         await post(`⏰ **${w.label}** — zostało ok. **${Math.max(1, Math.round(left))}h** do końca! Wynik: ${w.us.stars} ★ ${w.them.stars}.\nBrakujące ataki: ${missing.join(", ")}`);
       }
     }
+    if (w.state === "warEnded" && sinceEnd < 12 && POSTY.podsumowanieWojny) {
+      const win = w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct);
+      const draw = w.us.stars === w.them.stars && w.us.pct === w.them.pct;
+      const atts = w.members.flatMap(m => m.attacks), threes = atts.filter(a => a.stars === 3).length;
+      const best = w.members.map(m => ({ name: m.name, s: m.attacks.reduce((a, x) => a + x.stars, 0), p: m.attacks.reduce((a, x) => a + x.pct, 0), n: m.attacks.length }))
+        .filter(x => x.n).sort((a, b) => b.s - a.s || b.p - a.p).slice(0, 3);
+      const missing = w.members.filter(m => m.attacks.length < w.perMember).map(m => m.name + (w.perMember - m.attacks.length > 1 ? ` ×${w.perMember - m.attacks.length}` : ""));
+      const pens = w.perMember === 2 ? penalties.filter(p => p.war === w.start && (p.type === "own" || p.type === "steal") && !karyAnul.some(a => a.name === p.name && a.date === plDay(stampMs(p.war)))).length : 0;
+      const pl = n => String(n).replace(".", ",");
+      const lines = [
+        `${win ? "🏆 **Wygrana!**" : draw ? "🤝 **Remis**" : "❌ **Przegrana**"} ${w.label} vs **${w.them.name}** — **${w.us.stars} ★ ${w.them.stars}** (${pl(w.us.pct)}% : ${pl(w.them.pct)}%)`,
+        `⭐ Ataki za 3★: **${threes}** z ${atts.length}${atts.length ? ` · średnio ${pl((atts.reduce((a, x) => a + x.stars, 0) / atts.length).toFixed(2))}★ na atak` : ""}`,
+        best.length ? `🎯 Najlepsi: ${best.map(b => `${b.name} (${b.s}★${w.perMember === 1 ? ` ${Math.round(b.p)}%` : ""})`).join(", ")}` : "",
+        missing.length ? `💤 Bez ataku: ${missing.join(", ")}` : "💪 Wszyscy zaatakowali!",
+        pens ? `⚠️ Kary za łamanie zasad: ${pens} (szczegóły na stronie)` : "",
+        w.label.startsWith("CWL") && cwl?.place ? `📊 Tabela grupy: **${cwl.place}. miejsce** z ${cwl.groupSize}` : "",
+        SITE
+      ].filter(Boolean);
+      await once("summary", lines.join("\n"));
+    }
     if (w.state === "warEnded" && sinceEnd < 6 && POSTY.wynikWojny) {
       const res = w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct) ? "🏆 **Wygrana!**"
         : (w.us.stars === w.them.stars && w.us.pct === w.them.pct) ? "🤝 **Remis**" : "❌ **Przegrana**";
@@ -746,6 +816,19 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
       await once("end", `${res} ${w.label} vs **${w.them.name}** — ${w.us.stars} ★ ${w.them.stars} (${w.us.pct}% : ${w.them.pct}%).${missing.length ? `\nOpuszczone ataki: ${missing.join(", ")}` : "\nWszyscy zaatakowali — brawo! 💪"}`);
     }
   }
+}
+// Podsumowanie całego sezonu CWL (raz, po ostatniej rundzie)
+if ((WEBHOOK || WEBHOOK_INFO) && !firstRun && POSTY.podsumowanieCWL && cwlSummary && !cwlSummary.posted) {
+  const s = cwlSummary, medal = ["🥇", "🥈", "🥉"];
+  const msg = [
+    `🏁 **Koniec sezonu Ligi Wojen Klanów!** Armia Maurycego kończy na **${s.place}. miejscu** z ${s.groupSize}.`,
+    `📈 Bilans rund: **${s.wins}** wygranych, ${s.draws ? `${s.draws} remisów, ` : ""}${s.losses} przegranych · ${s.stars ?? "?"} ★ w tabeli`,
+    `🔹 Rundy: ${s.rounds.map(r => `${r.round}. ${r.win ? "✅" : r.draw ? "🤝" : "❌"} ${r.us}:${r.them}`).join(" · ")}`,
+    s.top.length ? `⭐ Najlepsi: ${s.top.slice(0, 3).map((x, i) => `${medal[i]} ${x.name} ${x.stars}★`).join("  ")}` : "",
+    s.missed.length ? `💤 Opuszczone ataki: ${s.missed.map(x => `${x.name}${x.n > 1 ? ` ×${x.n}` : ""}`).join(", ")}` : "💪 Nikt nie opuścił ataku!",
+    `Dzięki wszystkim za walkę! ${SITE}`
+  ].filter(Boolean).join("\n");
+  await post(msg); cwlSummary.posted = true;
 }
 // sprzątanie starych kluczy powiadomień
 notified = Object.fromEntries(Object.entries(notified).slice(-40));
@@ -776,6 +859,9 @@ const data = {
   clanGames,
   monthBase,
   mvp,
+  swaps: swaps.slice(0, 100),
+  playerHistory,
+  cwlSummary,
   dayBase,
   potd,
   potdHistory,
