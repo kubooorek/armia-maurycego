@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T18:01:33.940Z",
+  "updated": "2026-11-08T18:16:01.466Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -32,21 +32,21 @@
         "played": 5
       },
       {
+        "tag": "#2L22CP0U0",
+        "name": "Dream Clans",
+        "level": 21,
+        "stars": 139,
+        "pct": 3404,
+        "wins": 4,
+        "played": 5
+      },
+      {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
         "stars": 137,
         "pct": 4598,
         "wins": 2,
-        "played": 5
-      },
-      {
-        "tag": "#2L22CP0U0",
-        "name": "Dream Clans",
-        "level": 21,
-        "stars": 136,
-        "pct": 3304,
-        "wins": 4,
         "played": 5
       },
       {
@@ -1950,7 +1950,7 @@
             {
               "pos": 3,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 4,
@@ -2016,9 +2016,9 @@
         },
         "them": {
           "name": "Dream Clans",
-          "stars": 12,
-          "pct": 31.47,
-          "attacks": 6,
+          "stars": 15,
+          "pct": 38.13,
+          "attacks": 7,
           "bases": [
             {
               "pos": 1,
@@ -3231,9 +3231,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 15,
-      "them": 12,
+      "them": 15,
       "pct": 37.93,
-      "themPct": 31.47,
+      "themPct": 38.13,
       "themBases": [
         {
           "pos": 1,
@@ -6176,8 +6176,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "1272|2000000000|2000000000|94700|82069|1216349|1620038|0|1260|205|15",
-      "last": "2026-11-08T17:31:27.636Z",
+      "sig": "1303|2000000000|2000000000|94700|82099|1216349|1620038|0|1260|205|15",
+      "last": "2026-11-08T18:16:01.447Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -6776,7 +6776,7 @@
       [
         20765,
         1260,
-        82069,
+        82099,
         15
       ]
     ],
@@ -7490,7 +7490,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 1272,
+      "given": 1303,
       "received": 152,
       "trophies": 563,
       "profile": {
@@ -7545,7 +7545,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 82069,
+        "don": 82099,
         "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -8974,7 +8974,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 0,
+      "received": 31,
       "trophies": 54,
       "profile": {
         "level": 46,
