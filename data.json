@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T13:16:07.868Z",
+  "updated": "2026-11-08T13:31:15.332Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -32,21 +32,21 @@
         "played": 5
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 134,
+        "pct": 4498,
+        "wins": 2,
+        "played": 5
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
         "stars": 133,
         "pct": 3204,
         "wins": 4,
-        "played": 5
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 132,
-        "pct": 4399,
-        "wins": 2,
         "played": 5
       },
       {
@@ -1935,7 +1935,7 @@
           "name": "ARMIA MAURYCEGO",
           "stars": 11,
           "pct": 30.8,
-          "attacks": 10,
+          "attacks": 11,
           "bases": [
             {
               "pos": 1,
@@ -2221,7 +2221,13 @@
             "tag": "#G8VGC2VRL",
             "pos": 11,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 74,
+                "target": "15. Astom.boss"
+              }
+            ]
           },
           {
             "name": "Belaska",
@@ -3404,7 +3410,13 @@
           "tag": "#G8VGC2VRL",
           "pos": 11,
           "th": 9,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 74,
+              "target": "15. Astom.boss"
+            }
+          ]
         },
         {
           "name": "Belaska",
@@ -6150,8 +6162,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "71|365191259|342040953|15875|9453|16915|65497|0|243|106|11",
-      "last": "2026-11-08T10:16:16.397Z",
+      "sig": "71|366760259|343609953|15875|9453|16915|65497|0|243|106|11",
+      "last": "2026-11-08T13:31:15.318Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -6185,8 +6197,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|126514166|116968611|7600|634|13415|38536|0|36|58|9",
-      "last": "2026-11-07T12:46:08.089Z",
+      "sig": "25|126575577|117044621|7600|634|13415|38536|0|36|58|9",
+      "last": "2026-11-08T13:31:15.318Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -7892,10 +7904,10 @@
       "th": 11,
       "given": 71,
       "received": 0,
-      "trophies": 117,
+      "trophies": 188,
       "profile": {
         "level": 106,
-        "trophies": 117,
+        "trophies": 188,
         "best": 2156,
         "league": "Archer League 9",
         "warStars": 243,
@@ -7968,8 +7980,8 @@
         "cg": 15875,
         "don": 9453,
         "capLoot": 16915,
-        "gold": 365191259,
-        "elixir": 342040953,
+        "gold": 366760259,
+        "elixir": 343609953,
         "capContrib": 65497,
         "wins": 0
       }
@@ -8510,12 +8522,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 27,
+            "level": 28,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 26,
+            "level": 27,
             "max": 110
           },
           {
@@ -8547,8 +8559,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 13415,
-        "gold": 126514166,
-        "elixir": 116968611,
+        "gold": 126575577,
+        "elixir": 117044621,
         "capContrib": 38536,
         "wins": 0
       }
