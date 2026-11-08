@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T11:45:54.897Z",
+  "updated": "2026-11-08T12:01:28.887Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 171,
-        "pct": 4867,
+        "stars": 174,
+        "pct": 4967,
         "wins": 4,
         "played": 5
       },
@@ -27,8 +27,17 @@
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 150,
-        "pct": 4763,
+        "pct": 4774,
         "wins": 3,
+        "played": 5
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 132,
+        "pct": 4399,
+        "wins": 2,
         "played": 5
       },
       {
@@ -38,15 +47,6 @@
         "stars": 132,
         "pct": 3107,
         "wins": 4,
-        "played": 5
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 129,
-        "pct": 4299,
-        "wins": 2,
         "played": 5
       },
       {
@@ -1934,8 +1934,8 @@
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 11,
-          "pct": 30.07,
-          "attacks": 9,
+          "pct": 30.8,
+          "attacks": 10,
           "bases": [
             {
               "pos": 1,
@@ -2156,7 +2156,13 @@
             "tag": "#Q9CU9P908",
             "pos": 6,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 49,
+                "target": "11. RAZZAQ"
+              }
+            ]
           },
           {
             "name": "monte",
@@ -2575,7 +2581,7 @@
       {
         "name": "oggsgdjdjbd",
         "stars": 8,
-        "attacks": 5,
+        "attacks": 6,
         "wars": 6
       },
       {
@@ -2604,11 +2610,11 @@
       }
     ]
   },
-  "visits": 83,
+  "visits": 84,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2761,6 +2767,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 2734
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": 0,
+          "limit": 5,
+          "loot": 0
         }
       ]
     },
@@ -3180,7 +3193,7 @@
       "cwl": true,
       "us": 11,
       "them": 8,
-      "pct": 30.07,
+      "pct": 30.8,
       "themPct": 18.33,
       "themBases": [
         {
@@ -3319,7 +3332,13 @@
           "tag": "#Q9CU9P908",
           "pos": 6,
           "th": 12,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 49,
+              "target": "11. RAZZAQ"
+            }
+          ]
         },
         {
           "name": "monte",
@@ -6109,8 +6128,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "239|272727403|273628652|14450|382|65320|120775|0|65|104|12",
-      "last": "2026-11-08T11:45:54.885Z",
+      "sig": "239|273737024|274358809|14450|382|65320|120775|0|65|104|12",
+      "last": "2026-11-08T12:01:28.874Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -6204,8 +6223,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "188|65549884|65076298|2400|614|14765|31386|0|4|55|9",
-      "last": "2026-11-08T11:45:54.885Z",
+      "sig": "188|65549884|65076298|2400|639|14765|32686|0|4|55|9",
+      "last": "2026-11-08T12:01:28.874Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -6224,8 +6243,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|31256774|29900644|0|76|12040|11348|0|6|45|8",
-      "last": "2026-11-07T19:01:29.050Z",
+      "sig": "3|31420510|30081715|0|76|12040|11348|0|6|45|8",
+      "last": "2026-11-08T12:01:28.874Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -6279,8 +6298,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "76|31653910|30257357|0|72|0|100|0|0|34|9",
-      "last": "2026-11-08T03:16:01.031Z",
+      "sig": "76|34398763|32543700|0|72|0|100|0|0|35|9",
+      "last": "2026-11-08T12:01:28.874Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -6886,7 +6905,7 @@
       [
         20765,
         4,
-        614,
+        639,
         9
       ]
     ],
@@ -7795,8 +7814,8 @@
         "cg": 14450,
         "don": 382,
         "capLoot": 65320,
-        "gold": 272727403,
-        "elixir": 273628652,
+        "gold": 273737024,
+        "elixir": 274358809,
         "capContrib": 120775,
         "wins": 0
       }
@@ -9182,7 +9201,7 @@
         "warStars": 4,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 31386,
+        "capital": 32686,
         "warPref": "in",
         "heroes": [
           {
@@ -9205,7 +9224,7 @@
       "rush": {
         "pct": 0.9,
         "troops": 0,
-        "spells": 4.5,
+        "spells": 4.3,
         "heroes": 0,
         "top": [
           {
@@ -9217,11 +9236,11 @@
       },
       "ach": {
         "cg": 2400,
-        "don": 614,
+        "don": 639,
         "capLoot": 14765,
         "gold": 65549884,
         "elixir": 65076298,
-        "capContrib": 31386,
+        "capContrib": 32686,
         "wins": 0
       }
     },
@@ -9369,8 +9388,8 @@
         "cg": 0,
         "don": 76,
         "capLoot": 12040,
-        "gold": 31256774,
-        "elixir": 29900644,
+        "gold": 31420510,
+        "elixir": 30081715,
         "capContrib": 11348,
         "wins": 0
       }
@@ -10018,7 +10037,7 @@
       "received": 132,
       "trophies": 240,
       "profile": {
-        "level": 34,
+        "level": 35,
         "trophies": 240,
         "best": 240,
         "league": "Skeleton League 1",
@@ -10087,8 +10106,8 @@
         "cg": 0,
         "don": 72,
         "capLoot": 0,
-        "gold": 31653910,
-        "elixir": 30257357,
+        "gold": 34398763,
+        "elixir": 32543700,
         "capContrib": 100,
         "wins": 0
       }
