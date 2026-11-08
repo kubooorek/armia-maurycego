@@ -1461,7 +1461,7 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   html.gb[data-motyw="dzien"] footer a{color:#fff3d6}
   html.gb[data-motyw="dzien"] footer a:hover{color:#ffd24a}
   /* Goblin: zero linii — gładkie drewno */
-  html.gb .panel,html.gb .war,html.gb .kara,html.gb .news,html.gb .table-box,html.gb .stat,html.gb .live-war,html.gb .tile,html.gb .rec,html.gb .rank-card,html.gb section>.wrap>details,html.gb .faq details,html.gb .ep-card,html.gb .now-card,html.gb .sk-col,html.gb .dz-c,html.gb .gb-card{background-image:radial-gradient(circle at 10px 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at 10px calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),linear-gradient(180deg,#8f5a2c,#6a3f1b)!important}
+  html.gb .panel,html.gb .war,html.gb .kara,html.gb .news,html.gb .table-box,html.gb .stat,html.gb .live-war,html.gb .tile,html.gb .rec,html.gb .rank-card,html.gb section>.wrap>details,html.gb .faq details,html.gb .ep-card,html.gb .now-card,html.gb .sk-col,html.gb .dz-c{background-image:radial-gradient(circle at 10px 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at 10px calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),linear-gradient(180deg,#8f5a2c,#6a3f1b)!important}
   html.gb[data-motyw="dzien"] footer{background:linear-gradient(180deg,#7a4c24,#4e2e12)!important}
   html.gb[data-motyw="dzien"] body>nav,html.gb[data-motyw="dzien"] .subnav,html.gb[data-motyw="dzien"] .mtab{background:linear-gradient(180deg,#8f5a2c,#6a3f1b)!important}
   html.gb[data-motyw="dzien"] section,html.gb[data-motyw="dzien"] .final,html.gb[data-motyw="dzien"] .page-head{border-top:0!important;border-bottom:0!important}
@@ -4741,6 +4741,20 @@ let saveLayoutState=()=>{};
   d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["goblin","Goblin"],["zloto","Złoto"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
   d.querySelector("button").onclick=()=>{ location.href=location.pathname+"?styl=wyloguj"; }; document.body.appendChild(d); })();
 applyLang();
+/* ===== Bez polskich znaków (BEZ_PL=false przywraca ą, ę, ł itd.) ===== */
+const BEZ_PL=true;
+(function(){ if(!BEZ_PL) return;
+  const MAP={"ą":"a","ć":"c","ę":"e","ł":"l","ń":"n","ó":"o","ś":"s","ź":"z","ż":"z","Ą":"A","Ć":"C","Ę":"E","Ł":"L","Ń":"N","Ó":"O","Ś":"S","Ź":"Z","Ż":"Z"};
+  const RE=/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, fix=t=>t.replace(RE,c=>MAP[c]);
+  const SKIP="script,style,textarea,input,code,pre";
+  const doNode=n=>{ if(n.nodeType===3){ const p=n.parentElement; if(p&&!p.closest(SKIP)&&RE.test(n.nodeValue)){ RE.lastIndex=0; n.nodeValue=fix(n.nodeValue); } RE.lastIndex=0; return; }
+    if(n.nodeType!==1||n.closest(SKIP)) return;
+    ["placeholder","title","aria-label","alt"].forEach(a=>{ const v=n.getAttribute&&n.getAttribute(a); if(v&&RE.test(v)){ RE.lastIndex=0; n.setAttribute(a,fix(v)); } RE.lastIndex=0; });
+    const w=document.createTreeWalker(n,NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT); let x; const list=[]; while(x=w.nextNode()) list.push(x);
+    list.forEach(y=>{ if(y.nodeType===3) doNode(y); else ["placeholder","title","aria-label","alt"].forEach(a=>{ const v=y.getAttribute(a); if(v&&RE.test(v)){ RE.lastIndex=0; y.setAttribute(a,fix(v)); } RE.lastIndex=0; }); }); };
+  document.title=fix(document.title); doNode(document.body);
+  new MutationObserver(ms=>ms.forEach(m=>{ if(m.type==="characterData") doNode(m.target); else m.addedNodes.forEach(doNode); })).observe(document.body,{childList:true,subtree:true,characterData:true});
+})();
 /* ===== Ikony zamiast emoji (jednolity wygląd na każdym telefonie) ===== */
 (function(){
   const M={"👤":"user","🏁":"flag","🔁":"versus","🗳":"clipboard","⚔":"swords","🏆":"trophy","⛔":"ban","👑":"crown","👥":"users","📖":"book","🛡":"shield","➕":"userplus|ic-green","🔥":"flame|ic-orange","⭐":"star","🌟":"star","🎁":"gift","💬":"chat","🏅":"medal","🎖":"medal","🏰":"castle","🗺":"map","❓":"help","📜":"scroll","⏳":"hourglass","⌛":"hourglass","❌":"x|ic-red","💡":"bulb","📋":"clipboard","🏛":"landmark","🆚":"versus","📅":"calendar","🗓":"calendar","📆":"calendar","📢":"megaphone","📣":"megaphone","📊":"chart","📈":"chart","🔴":"live|ic-red","🟡":"live","🟢":"live|ic-green","✅":"check|ic-green","✔":"check|ic-green","⬆":"up|ic-green","🎮":"gamepad","📦":"box","🎯":"target","🔮":"sparkles","✨":"sparkles","🎉":"sparkles","📲":"phone","📱":"phone","ℹ":"info|ic-blue","🔍":"search","🔎":"search","🏠":"home","⏰":"clock","🕒":"clock","⏱":"clock","💰":"coins","🪙":"coins","👁":"eye|ic-muted","🔗":"link","🚪":"leave|ic-red","⚡":"zap","⚠":"warn|ic-orange","🚩":"flag","🥇":"medal","🥈":"medal|ic-silver","🥉":"medal|ic-bronze"};
