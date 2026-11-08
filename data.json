@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T09:32:21.548Z",
+  "updated": "2026-11-08T09:47:06.049Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -27,7 +27,7 @@
         "name": "ARMIA MAURYCEGO",
         "level": 3,
         "stars": 149,
-        "pct": 4698,
+        "pct": 4736,
         "wins": 3,
         "played": 5
       },
@@ -1934,8 +1934,8 @@
         "us": {
           "name": "ARMIA MAURYCEGO",
           "stars": 10,
-          "pct": 25.73,
-          "attacks": 7,
+          "pct": 28.27,
+          "attacks": 8,
           "bases": [
             {
               "pos": 1,
@@ -2136,7 +2136,13 @@
             "tag": "#LJYR92002",
             "pos": 4,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 0,
+                "pct": 38,
+                "target": "11. RAZZAQ"
+              }
+            ]
           },
           {
             "name": "MrDefPL",
@@ -2579,15 +2585,15 @@
         "wars": 6
       },
       {
-        "name": "MAQOS",
+        "name": "Cwel123",
         "stars": 7,
         "attacks": 5,
         "wars": 6
       },
       {
-        "name": "Cwel123",
+        "name": "MAQOS",
         "stars": 7,
-        "attacks": 5,
+        "attacks": 6,
         "wars": 6
       }
     ]
@@ -3190,7 +3196,12 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 38
+            }
+          ]
         },
         {
           "name": "MrDefPL",
@@ -5357,8 +5368,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "842|2000000000|2000000000|94700|81829|1216349|1620038|0|1260|205|15",
-      "last": "2026-11-08T08:01:33.267Z",
+      "sig": "914|2000000000|2000000000|94700|81869|1216349|1620038|0|1260|205|15",
+      "last": "2026-11-08T09:47:06.037Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -5412,8 +5423,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|208863792|200934025|2900|20|23720|42832|0|52|87|13",
-      "last": "2026-11-08T08:31:13.488Z",
+      "sig": "0|210313792|202384025|2900|20|23720|42832|0|52|87|13",
+      "last": "2026-11-08T09:47:06.037Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -6299,7 +6310,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 842,
+      "given": 914,
       "received": 152,
       "trophies": 563,
       "profile": {
@@ -6354,7 +6365,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 81829,
+        "don": 81869,
         "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -6409,9 +6420,9 @@
         ]
       },
       "rush": {
-        "pct": 38,
+        "pct": 37.9,
         "troops": 26.7,
-        "spells": 44,
+        "spells": 42.9,
         "heroes": 43.6,
         "top": [
           {
@@ -6435,14 +6446,14 @@
             "need": 10
           },
           {
-            "n": "Zaklęcie wstrząsu",
+            "n": "Zaklęcie nietoperzy",
             "lvl": 1,
             "need": 5
           },
           {
-            "n": "Zaklęcie nietoperzy",
+            "n": "Zaklęcie niewidzialności",
             "lvl": 1,
-            "need": 5
+            "need": 4
           }
         ]
       },
@@ -6462,7 +6473,7 @@
       "role": "coLeader",
       "th": 12,
       "given": 240,
-      "received": 216,
+      "received": 288,
       "trophies": 244,
       "profile": {
         "level": 109,
@@ -7249,8 +7260,8 @@
         ]
       },
       "rush": {
-        "pct": 40.3,
-        "troops": 17.3,
+        "pct": 40,
+        "troops": 16.7,
         "spells": 11.9,
         "heroes": 65.7,
         "top": [
@@ -7290,8 +7301,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 23720,
-        "gold": 208863792,
-        "elixir": 200934025,
+        "gold": 210313792,
+        "elixir": 202384025,
         "capContrib": 42832,
         "wins": 0
       }
@@ -8923,6 +8934,11 @@
             "name": "Archer Queen",
             "level": 6,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
