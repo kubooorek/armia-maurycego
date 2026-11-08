@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T07:46:00.153Z",
+  "updated": "2026-11-08T08:01:33.279Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 144,
-        "pct": 4546,
+        "stars": 147,
+        "pct": 4646,
         "wins": 3,
         "played": 5
       },
@@ -1933,9 +1933,9 @@
         "end": "20261108T191029.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 5,
-          "pct": 15.6,
-          "attacks": 5,
+          "stars": 8,
+          "pct": 22.27,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -2058,7 +2058,7 @@
             {
               "pos": 8,
               "th": 15,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 9,
@@ -2103,7 +2103,13 @@
             "tag": "#VP9PLGLV",
             "pos": 1,
             "th": 15,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "8. rami 007"
+              }
+            ]
           },
           {
             "name": "Baku",
@@ -2519,14 +2525,14 @@
     ],
     "top": [
       {
-        "name": "Baku",
-        "stars": 15,
-        "attacks": 5,
+        "name": "KUBOOOREK",
+        "stars": 16,
+        "attacks": 6,
         "wars": 6
       },
       {
-        "name": "KUBOOOREK",
-        "stars": 13,
+        "name": "Baku",
+        "stars": 15,
         "attacks": 5,
         "wars": 6
       },
@@ -2584,7 +2590,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3133,13 +3139,18 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 5,
+      "us": 8,
       "them": 8,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100
+            }
+          ]
         },
         {
           "name": "Baku",
@@ -5321,8 +5332,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "842|2000000000|2000000000|94700|81829|1216349|1620038|0|1257|205|15",
-      "last": "2026-11-07T21:16:03.540Z",
+      "sig": "842|2000000000|2000000000|94700|81829|1216349|1620038|0|1260|205|15",
+      "last": "2026-11-08T08:01:33.267Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -5541,8 +5552,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "0|887687|926809|0|0|0|2400|0|0|19|8",
-      "last": "2026-11-08T04:31:10.342Z",
+      "sig": "0|887687|926809|0|0|0|2400|0|0|20|8",
+      "last": "2026-11-08T08:01:33.267Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -6271,7 +6282,7 @@
         "trophies": 563,
         "best": 5066,
         "league": "P.E.K.K.A League 24",
-        "warStars": 1257,
+        "warStars": 1260,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 1620038,
@@ -8633,7 +8644,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 19,
+        "level": 20,
         "trophies": 0,
         "best": 0,
         "league": "Skeleton League 2",
