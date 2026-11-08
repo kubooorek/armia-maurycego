@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T20:16:05.312Z",
+  "updated": "2026-11-08T20:31:23.381Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 187,
-        "pct": 5067,
+        "stars": 188,
+        "pct": 5165,
         "wins": 5,
         "played": 6
       },
@@ -62,8 +62,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 131,
-        "pct": 3984,
+        "stars": 134,
+        "pct": 4084,
         "wins": 2,
         "played": 6
       },
@@ -6384,8 +6384,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
-      "sig": "264|604593633|625600394|38350|7771|539850|678186|0|101|109|12",
-      "last": "2026-11-08T18:01:33.928Z",
+      "sig": "275|604593633|625600394|38350|7781|539850|678186|0|101|109|12",
+      "last": "2026-11-08T20:31:23.371Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
@@ -6404,8 +6404,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "111|369159259|346008953|15875|9493|16915|65497|0|243|106|11",
-      "last": "2026-11-08T20:16:05.303Z",
+      "sig": "131|369159259|346008953|15875|9513|16915|65497|0|243|106|11",
+      "last": "2026-11-08T20:31:23.371Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -6514,8 +6514,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
-      "sig": "0|11991371|10896310|0|30|6720|15905|0|15|35|7",
-      "last": "2026-11-08T20:16:05.303Z",
+      "sig": "0|12608371|11513310|0|30|6720|15905|0|15|35|7",
+      "last": "2026-11-08T20:31:23.371Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
@@ -6599,8 +6599,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "20|426523535|427025466|25150|1487|636760|726415|0|82|127|12",
-      "last": "2026-11-08T20:16:05.303Z",
+      "sig": "20|427625213|428171222|25150|1487|636760|726415|0|82|127|12",
+      "last": "2026-11-08T20:31:23.371Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -6941,9 +6941,9 @@
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
-          "score": 152,
+          "score": 153,
           "stars": 11,
-          "don": 262,
+          "don": 272,
           "cg": 0,
           "cap": 8055
         },
@@ -6990,7 +6990,7 @@
       [
         20765,
         101,
-        7771,
+        7781,
         12
       ]
     ],
@@ -7022,7 +7022,7 @@
       [
         20765,
         243,
-        9493,
+        9513,
         11
       ]
     ],
@@ -7202,6 +7202,14 @@
         8
       ]
     ],
+    "#R92C0U8UU": [
+      [
+        20765,
+        15,
+        30,
+        7
+      ]
+    ],
     "#LUQJC2JGY": [
       [
         20765,
@@ -7224,14 +7232,6 @@
         14,
         0,
         8
-      ]
-    ],
-    "#R92C0U8UU": [
-      [
-        20765,
-        15,
-        30,
-        7
       ]
     ],
     "#R0VLRL292": [
@@ -7850,7 +7850,7 @@
       "tag": "#GYUJR2URJ",
       "role": "coLeader",
       "th": 12,
-      "given": 264,
+      "given": 275,
       "received": 646,
       "trophies": 244,
       "profile": {
@@ -7895,7 +7895,7 @@
       },
       "ach": {
         "cg": 38350,
-        "don": 7771,
+        "don": 7781,
         "capLoot": 539850,
         "gold": 604593633,
         "elixir": 625600394,
@@ -8144,7 +8144,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 111,
+      "given": 131,
       "received": 0,
       "trophies": 298,
       "profile": {
@@ -8220,7 +8220,7 @@
       },
       "ach": {
         "cg": 15875,
-        "don": 9493,
+        "don": 9513,
         "capLoot": 16915,
         "gold": 369159259,
         "elixir": 346008953,
@@ -8400,8 +8400,8 @@
         "cg": 25150,
         "don": 1487,
         "capLoot": 636760,
-        "gold": 426523535,
-        "elixir": 427025466,
+        "gold": 427625213,
+        "elixir": 428171222,
         "capContrib": 726415,
         "wins": 0
       }
@@ -9457,7 +9457,7 @@
       "role": "member",
       "th": 9,
       "given": 208,
-      "received": 351,
+      "received": 362,
       "trophies": 299,
       "profile": {
         "level": 56,
@@ -9709,6 +9709,49 @@
       }
     },
     {
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 80,
+      "trophies": 229,
+      "profile": {
+        "level": 35,
+        "trophies": 229,
+        "best": 255,
+        "league": "Skeleton League 2",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 15905,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 30,
+        "capLoot": 6720,
+        "gold": 12608371,
+        "elixir": 11513310,
+        "capContrib": 15905,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -9890,49 +9933,6 @@
       }
     },
     {
-      "name": "Rico",
-      "tag": "#R92C0U8UU",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 60,
-      "trophies": 149,
-      "profile": {
-        "level": 35,
-        "trophies": 149,
-        "best": 255,
-        "league": "Skeleton League 2",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 15905,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 30,
-        "capLoot": 6720,
-        "gold": 11991371,
-        "elixir": 10896310,
-        "capContrib": 15905,
-        "wins": 0
-      }
-    },
-    {
       "name": "Andrzej",
       "tag": "#R0VLRL292",
       "role": "member",
@@ -10037,7 +10037,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
