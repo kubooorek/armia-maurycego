@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T19:16:08.519Z",
+  "updated": "2026-11-08T19:31:22.184Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -32,21 +32,21 @@
         "played": 6
       },
       {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 149,
+        "pct": 4694,
+        "wins": 3,
+        "played": 6
+      },
+      {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
         "stars": 149,
         "pct": 3404,
         "wins": 5,
-        "played": 6
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 147,
-        "pct": 4598,
-        "wins": 3,
         "played": 6
       },
       {
@@ -2291,7 +2291,7 @@
       },
       {
         "round": 7,
-        "state": "preparation",
+        "state": "inWar",
         "size": 15,
         "perMember": 1,
         "start": "20261108T191646.000Z",
@@ -2329,7 +2329,7 @@
             },
             {
               "pos": 6,
-              "th": 12,
+              "th": 13,
               "best": 0
             },
             {
@@ -2345,7 +2345,7 @@
             {
               "pos": 9,
               "th": 11,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 11,
@@ -2369,7 +2369,7 @@
             },
             {
               "pos": 15,
-              "th": 9,
+              "th": 10,
               "best": 0
             },
             {
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 0,
-          "pct": 0,
-          "attacks": 0,
+          "stars": 2,
+          "pct": 6.4,
+          "attacks": 1,
           "bases": [
             {
               "pos": 1,
@@ -2412,7 +2412,7 @@
             },
             {
               "pos": 12,
-              "th": 12,
+              "th": 13,
               "best": 0
             },
             {
@@ -2502,7 +2502,7 @@
             "name": "monte",
             "tag": "#QYJUV90JY",
             "pos": 6,
-            "th": 12,
+            "th": 13,
             "attacks": []
           },
           {
@@ -2558,7 +2558,7 @@
             "name": "vvd",
             "tag": "#GQULCR98R",
             "pos": 15,
-            "th": 9,
+            "th": 10,
             "attacks": []
           },
           {
@@ -2576,25 +2576,25 @@
         "name": "Baku",
         "stars": 18,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "KUBOOOREK",
         "stars": 16,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "VipeR",
         "stars": 14,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "Albaroon.2",
         "stars": 11,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "Barnes",
@@ -2606,31 +2606,31 @@
         "name": "oggsgdjdjbd",
         "stars": 8,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "monte",
         "stars": 8,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "Brann",
         "stars": 8,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "Cwel123",
         "stars": 7,
         "attacks": 5,
-        "wars": 6
+        "wars": 7
       },
       {
         "name": "MAQOS",
         "stars": 7,
         "attacks": 6,
-        "wars": 6
+        "wars": 7
       }
     ]
   },
@@ -2638,7 +2638,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 6,
     "members": 12
   },
   "raids": [
@@ -3222,6 +3222,204 @@
     }
   ],
   "warArchive": [
+    {
+      "start": "20261108T191646.000Z",
+      "end": "20261109T191646.000Z",
+      "enemy": "kingslayers",
+      "size": 15,
+      "perMember": 1,
+      "state": "inWar",
+      "cwl": true,
+      "us": 0,
+      "them": 2,
+      "pct": 0,
+      "themPct": 6.4,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 16,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 7,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 15,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 17,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 21,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 23,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 24,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 25,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 29,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 31,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 32,
+          "th": 11,
+          "best": 0
+        }
+      ],
+      "round": 7,
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
+          "attacks": []
+        },
+        {
+          "name": "Baku",
+          "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "pos": 6,
+          "th": 13,
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "pos": 7,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "pos": 8,
+          "th": 11,
+          "attacks": []
+        },
+        {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 11,
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "pos": 11,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "pos": 12,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "pos": 13,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "SHA☆ZAM!",
+          "tag": "#GVGRVCQJR",
+          "pos": 14,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "pos": 15,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "pos": 16,
+          "th": 9,
+          "attacks": []
+        }
+      ]
+    },
     {
       "start": "20261107T191029.000Z",
       "end": "20261108T191029.000Z",
@@ -6301,8 +6499,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|35044728|34237490|0|0|0|250|0|3|43|9",
-      "last": "2026-11-08T09:16:58.069Z",
+      "sig": "0|35169702|34366300|0|0|0|250|0|3|43|9",
+      "last": "2026-11-08T19:31:22.169Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -6396,13 +6594,13 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "0|1187687|1078809|0|0|0|2400|0|0|20|8",
-      "last": "2026-11-08T16:31:26.898Z",
+      "sig": "0|1187687|1078809|0|0|0|2400|0|0|21|8",
+      "last": "2026-11-08T19:31:22.169Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|410104163|409330910|25150|1467|636760|726415|0|82|127|12",
-      "last": "2026-11-08T19:16:08.505Z",
+      "sig": "0|414074134|414453174|25150|1467|636760|726415|0|82|127|12",
+      "last": "2026-11-08T19:31:22.169Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8202,8 +8400,8 @@
         "cg": 25150,
         "don": 1467,
         "capLoot": 636760,
-        "gold": 410104163,
-        "elixir": 409330910,
+        "gold": 414074134,
+        "elixir": 414453174,
         "capContrib": 726415,
         "wins": 0
       }
@@ -9764,8 +9962,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 35044728,
-        "elixir": 34237490,
+        "gold": 35169702,
+        "elixir": 34366300,
         "capContrib": 250,
         "wins": 0
       }
@@ -9870,7 +10068,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 20,
+        "level": 21,
         "trophies": 0,
         "best": 0,
         "league": "Skeleton League 2",
