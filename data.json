@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T21:46:13.019Z",
+  "updated": "2026-11-08T22:01:33.121Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 194,
-        "pct": 5365,
+        "stars": 196,
+        "pct": 5435,
         "wins": 5,
         "played": 6
       },
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 170,
-        "pct": 5512,
+        "stars": 171,
+        "pct": 5545,
         "wins": 3,
         "played": 6
       },
@@ -2298,9 +2298,9 @@
         "end": "20261109T191646.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 16,
-          "pct": 42.07,
-          "attacks": 9,
+          "stars": 17,
+          "pct": 44.27,
+          "attacks": 10,
           "bases": [
             {
               "pos": 1,
@@ -2403,7 +2403,7 @@
             {
               "pos": 7,
               "th": 13,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 11,
@@ -2574,7 +2574,13 @@
             "tag": "#G8VGC2VRL",
             "pos": 12,
             "th": 9,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 33,
+                "target": "7. FANG YUAN"
+              }
+            ]
           },
           {
             "name": "Belaska",
@@ -2688,11 +2694,11 @@
       }
     ]
   },
-  "visits": 99,
+  "visits": 100,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3284,9 +3290,9 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 16,
+      "us": 17,
       "them": 7,
-      "pct": 42.07,
+      "pct": 44.27,
       "themPct": 18.47,
       "themBases": [
         {
@@ -3307,7 +3313,7 @@
         {
           "pos": 7,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 11,
@@ -3478,7 +3484,13 @@
           "tag": "#G8VGC2VRL",
           "pos": 12,
           "th": 9,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 33,
+              "target": "7. FANG YUAN"
+            }
+          ]
         },
         {
           "name": "Belaska",
@@ -6547,8 +6559,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|126575577|117044621|7600|634|13415|38536|0|36|58|9",
-      "last": "2026-11-08T13:31:15.318Z",
+      "sig": "25|126647577|117092621|7600|634|13415|38536|0|37|58|9",
+      "last": "2026-11-08T22:01:33.111Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -7193,7 +7205,7 @@
     "#G8VGC2VRL": [
       [
         20765,
-        36,
+        37,
         634,
         9
       ]
@@ -8864,7 +8876,7 @@
         "trophies": 185,
         "best": 696,
         "league": "Barbarian League 6",
-        "warStars": 36,
+        "warStars": 37,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 38536,
@@ -8877,7 +8889,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 27,
+            "level": 28,
             "max": 110
           },
           {
@@ -8909,8 +8921,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 13415,
-        "gold": 126575577,
-        "elixir": 117044621,
+        "gold": 126647577,
+        "elixir": 117092621,
         "capContrib": 38536,
         "wins": 0
       }
