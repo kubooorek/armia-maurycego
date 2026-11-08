@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T18:16:01.466Z",
+  "updated": "2026-11-08T18:31:28.217Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -59,20 +59,20 @@
         "played": 5
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 123,
+        "pct": 3570,
+        "wins": 2,
+        "played": 5
+      },
+      {
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
         "stars": 120,
         "pct": 3562,
-        "wins": 2,
-        "played": 5
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 111,
-        "pct": 3170,
         "wins": 2,
         "played": 5
       },
