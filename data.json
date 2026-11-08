@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T16:46:10.869Z",
+  "updated": "2026-11-08T17:01:36.790Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2622,11 +2622,11 @@
       }
     ]
   },
-  "visits": 94,
+  "visits": 95,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 6,
     "members": 12
   },
   "raids": [
@@ -6247,8 +6247,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|52191318|49673969|10050|88|24505|31950|0|7|48|8",
-      "last": "2026-11-08T15:46:08.947Z",
+      "sig": "20|52191318|49673969|10050|88|24505|31950|0|7|49|8",
+      "last": "2026-11-08T17:01:36.775Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -6337,8 +6337,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "76|34398763|32543700|0|72|0|100|0|0|35|9",
-      "last": "2026-11-08T12:01:28.874Z",
+      "sig": "76|35451629|33314436|0|72|0|100|0|0|35|9",
+      "last": "2026-11-08T17:01:36.775Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -8558,18 +8558,18 @@
         ]
       },
       "rush": {
-        "pct": 2.7,
-        "troops": 5.1,
+        "pct": 1.8,
+        "troops": 3.4,
         "spells": 0,
         "heroes": 0,
         "top": [
           {
-            "n": "Goblin",
-            "lvl": 3,
+            "n": "Barbarzyńca",
+            "lvl": 4,
             "need": 5
           },
           {
-            "n": "Barbarzyńca",
+            "n": "Goblin",
             "lvl": 4,
             "need": 5
           }
@@ -9442,7 +9442,7 @@
       "received": 26,
       "trophies": 259,
       "profile": {
-        "level": 48,
+        "level": 49,
         "trophies": 259,
         "best": 390,
         "league": "Skeleton League 2",
@@ -10119,8 +10119,8 @@
         ]
       },
       "rush": {
-        "pct": 45.5,
-        "troops": 26.9,
+        "pct": 44.6,
+        "troops": 25,
         "spells": 63.2,
         "heroes": 66.7,
         "top": [
@@ -10160,8 +10160,8 @@
         "cg": 0,
         "don": 72,
         "capLoot": 0,
-        "gold": 34398763,
-        "elixir": 32543700,
+        "gold": 35451629,
+        "elixir": 33314436,
         "capContrib": 100,
         "wins": 0
       }
