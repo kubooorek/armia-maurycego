@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T22:01:33.121Z",
+  "updated": "2026-11-08T22:16:02.624Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2590,7 +2590,7 @@
             "attacks": []
           },
           {
-            "name": "SHA☆ZAM!",
+            "name": "♡karo♡lina♡",
             "tag": "#GVGRVCQJR",
             "pos": 14,
             "th": 9,
@@ -2698,7 +2698,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -3500,7 +3500,7 @@
           "attacks": []
         },
         {
-          "name": "SHA☆ZAM!",
+          "name": "♡karo♡lina♡",
           "tag": "#GVGRVCQJR",
           "pos": 14,
           "th": 9,
@@ -6679,8 +6679,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "76|35451629|33314436|0|72|0|100|0|0|36|9",
-      "last": "2026-11-08T21:46:13.003Z",
+      "sig": "76|36123649|33873476|0|72|0|100|0|0|36|9",
+      "last": "2026-11-08T22:16:02.609Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -9572,7 +9572,7 @@
       }
     },
     {
-      "name": "SHA☆ZAM!",
+      "name": "♡karo♡lina♡",
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
@@ -10502,8 +10502,8 @@
         "cg": 0,
         "don": 72,
         "capLoot": 0,
-        "gold": 35451629,
-        "elixir": 33314436,
+        "gold": 36123649,
+        "elixir": 33873476,
         "capContrib": 100,
         "wins": 0
       }
