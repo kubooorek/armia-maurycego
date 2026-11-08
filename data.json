@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T05:45:58.786Z",
+  "updated": "2026-11-08T06:01:27.594Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2018,7 +2018,7 @@
           "name": "Dream Clans",
           "stars": 8,
           "pct": 18.33,
-          "attacks": 3,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -7350,8 +7350,8 @@
         ]
       },
       "rush": {
-        "pct": 3.6,
-        "troops": 6.8,
+        "pct": 2.7,
+        "troops": 5.1,
         "spells": 0,
         "heroes": 0,
         "top": [
@@ -7362,11 +7362,6 @@
           },
           {
             "n": "Barbarzyńca",
-            "lvl": 4,
-            "need": 5
-          },
-          {
-            "n": "Łuczniczka",
             "lvl": 4,
             "need": 5
           }
