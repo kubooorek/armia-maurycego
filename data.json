@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T16:01:36.652Z",
+  "updated": "2026-11-08T16:16:07.465Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -44,8 +44,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 133,
-        "pct": 3204,
+        "stars": 136,
+        "pct": 3304,
         "wins": 4,
         "played": 5
       },
@@ -2010,15 +2010,15 @@
             {
               "pos": 21,
               "th": 8,
-              "best": 0
+              "best": 3
             }
           ]
         },
         "them": {
           "name": "Dream Clans",
-          "stars": 9,
-          "pct": 24.8,
-          "attacks": 5,
+          "stars": 12,
+          "pct": 31.47,
+          "attacks": 6,
           "bases": [
             {
               "pos": 1,
@@ -2622,11 +2622,11 @@
       }
     ]
   },
-  "visits": 92,
+  "visits": 93,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -3219,9 +3219,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 14,
-      "them": 9,
+      "them": 12,
       "pct": 37.47,
-      "themPct": 24.8,
+      "themPct": 31.47,
       "themBases": [
         {
           "pos": 1,
@@ -6262,8 +6262,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "188|65549884|65076298|2400|639|14765|32686|0|4|56|9",
-      "last": "2026-11-08T15:01:40.217Z",
+      "sig": "188|66961113|66407569|2400|639|14765|32686|0|4|56|9",
+      "last": "2026-11-08T16:16:07.453Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -9277,8 +9277,8 @@
         "cg": 2400,
         "don": 639,
         "capLoot": 14765,
-        "gold": 65549884,
-        "elixir": 65076298,
+        "gold": 66961113,
+        "elixir": 66407569,
         "capContrib": 32686,
         "wins": 0
       }
