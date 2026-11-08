@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T01:15:58.457Z",
+  "updated": "2026-11-08T01:31:17.443Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2584,7 +2584,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -5404,8 +5404,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|103391019|86742022|5100|336|7810|20770|0|13|54|10",
-      "last": "2026-11-07T23:45:56.823Z",
+      "sig": "31|105586984|89059345|5100|336|7810|20770|0|13|54|10",
+      "last": "2026-11-08T01:31:17.433Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -7808,7 +7808,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
@@ -7824,10 +7824,10 @@
         ]
       },
       "rush": {
-        "pct": 26.4,
+        "pct": 25.9,
         "troops": 7.8,
         "spells": 7.4,
-        "heroes": 54.3,
+        "heroes": 52.9,
         "top": [
           {
             "n": "Królowa Łuczniczek",
@@ -7865,8 +7865,8 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 7810,
-        "gold": 103391019,
-        "elixir": 86742022,
+        "gold": 105586984,
+        "elixir": 89059345,
         "capContrib": 20770,
         "wins": 0
       }
