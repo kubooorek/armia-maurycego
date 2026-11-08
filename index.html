@@ -1472,6 +1472,10 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   html[data-motyw="epicki"] footer{box-shadow:none!important}
   html[data-motyw="epicki"] footer .foot-bottom,html[data-motyw="epicki"] footer .wrap>div:last-child{border-top:0!important}
   html[data-motyw="epicki"] section+section{border-top:0!important}
+  .cwl-jump{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 0 12px;padding:12px 16px;border:1px solid var(--gold);border-radius:var(--radius);background:linear-gradient(90deg,rgba(232,180,74,.16),rgba(232,180,74,.04));color:var(--text);font-size:.92rem}
+  .cwl-jump[hidden]{display:none}
+  .cwl-jump em{font-style:normal;font-weight:800;color:var(--gold2);white-space:nowrap}
+  .cwl-jump:hover{filter:brightness(1.15)}
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
@@ -1839,6 +1843,7 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
     <h2 class="sec-title">Historia wojen</h2>
     <p class="sec-lead">Od 5 na 5 do 20 na 20 — oto nasza droga od pierwszej bitwy.</p>
     <div class="live-war" id="liveWar" hidden></div>
+    <a class="cwl-jump" id="cwlJump" href="#cwlRounds" hidden><span>🏆 <b>Liga CWL:</b> wszystkie rundy (1–7), tabela grupy i podsumowanie</span><em>Przejdź do zakładki Liga ›</em></a>
     <details class="panel optin" id="optinWrap" hidden><summary><span><span class="fame-label" style="margin:0;display:inline">📋 Zapisani na wojnę</span> <span class="chip" id="optinCount" style="margin-left:6px"></span></span></summary><div id="optin" style="margin-top:12px"></div></details>
     <div class="war-summary">
       <div class="stat"><b id="wW" style="color:var(--green)">–</b><span>Wygrane</span></div>
@@ -4723,7 +4728,11 @@ let saveLayoutState=()=>{};
       dispatchEvent(new CustomEvent("am:page",{detail:page}));
       history.replaceState(null,"",page==="start"?location.pathname+location.search:"#"+(id&&id!==page?id:page));
       document.querySelectorAll("body>section:not(.lay-hide),body>header:not(.lay-hide),body>footer").forEach(el=>{el.classList.remove("pg-in");void el.offsetWidth;el.classList.add("pg-in");});
-      if(id&&id!==page&&!PAGES.some(p=>p[0]===id)) scrollToEl(id); else scrollTo({top:0});
+      const P0=PAGES.find(p=>p[0]===page), firstSec=P0&&P0[3].find(x=>$("#"+x));
+      if(id&&id!==page&&!PAGES.some(p=>p[0]===id)) scrollToEl(id);
+      else if(id&&id===page&&window.__subClick&&firstSec&&firstSec!==id) scrollToEl(id);
+      else scrollTo({top:0});
+      window.__subClick=false;
       setTimeout(spy,60);
     };
     document.addEventListener("click",e=>{ const a=e.target.closest('a[href^="#"]'); if(!a) return; let id=a.getAttribute("href").slice(1); if(id==="top") id="start";
@@ -4746,6 +4755,8 @@ let saveLayoutState=()=>{};
   d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["goblin","Goblin"],["zloto","Złoto"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
   d.querySelector("button").onclick=()=>{ location.href=location.pathname+"?styl=wyloguj"; }; document.body.appendChild(d); })();
 applyLang();
+addEventListener("click",e=>{ window.__subClick=!!(e.target.closest&&e.target.closest(".subnav a")); },true);
+(function(){ const j=document.getElementById("cwlJump"), r=document.getElementById("cwlRounds"); if(!j||!r) return; const chk=()=>{ j.hidden=!(r.textContent.trim().length>0); }; chk(); new MutationObserver(chk).observe(r,{childList:true,subtree:true}); })();
 /* ===== Bez polskich znaków (BEZ_PL=false przywraca ą, ę, ł itd.) ===== */
 const BEZ_PL=true;
 (function(){ if(!BEZ_PL) return;
