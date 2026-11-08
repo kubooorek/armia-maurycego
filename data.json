@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T13:31:15.332Z",
+  "updated": "2026-11-08T13:45:58.796Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 118,
-        "pct": 3463,
+        "stars": 120,
+        "pct": 3562,
         "wins": 2,
         "played": 5
       },
@@ -6162,8 +6162,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "71|366760259|343609953|15875|9453|16915|65497|0|243|106|11",
-      "last": "2026-11-08T13:31:15.318Z",
+      "sig": "71|369159259|346008953|15875|9453|16915|65497|0|243|106|11",
+      "last": "2026-11-08T13:45:58.786Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -7904,10 +7904,10 @@
       "th": 11,
       "given": 71,
       "received": 0,
-      "trophies": 188,
+      "trophies": 298,
       "profile": {
         "level": 106,
-        "trophies": 188,
+        "trophies": 298,
         "best": 2156,
         "league": "Archer League 9",
         "warStars": 243,
@@ -7980,8 +7980,8 @@
         "cg": 15875,
         "don": 9453,
         "capLoot": 16915,
-        "gold": 366760259,
-        "elixir": 343609953,
+        "gold": 369159259,
+        "elixir": 346008953,
         "capContrib": 65497,
         "wins": 0
       }
@@ -10325,7 +10325,7 @@
         ]
       },
       "rush": {
-        "pct": 10.3,
+        "pct": 10,
         "troops": 0,
         "spells": 42.9,
         "heroes": 0,
