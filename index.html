@@ -31,6 +31,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("booting");setTimeout(function(){document.documentElement.classList.remove("booting")},7000);</script>
+<script>/* Motyw strony: "" = obecny (ciemny złoty), "coc" = jak w grze, "jasny" = jasny i czysty, "esport" = neon, "sredniowiecze" = pergamin. Test: ?styl=coc / ?styl=wyloguj (każdy styl to osobna wersja strony — patrz STYLE_TRESC) */
+var MOTYW="";
+(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m){document.documentElement.dataset.motyw=m;}
+var F={coc:"Lilita+One",esport:"Rajdhani:wght@500;600;700",sredniowiecze:"Cinzel+Decorative:wght@700;900"};if(F[m]){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family="+F[m]+"&display=swap";document.head.appendChild(l);}}catch(e){}})();</script>
 <style>
   :root{
     --bg:#0d0f14; --bg2:#141821; --card:#181d28; --card2:#1f2533;
@@ -978,6 +982,124 @@
   .poll-adm{display:flex;gap:6px;margin-top:8px}
   .poll-new{margin-bottom:10px} .poll-new summary{cursor:pointer;color:var(--gold2);font-weight:700} .poll-new form{display:flex;flex-direction:column;gap:8px;margin-top:10px} .poll-new label{font-size:.8rem;color:var(--muted)}
   @media(max-width:640px){.zw-sum{grid-template-columns:repeat(2,1fr)}.zw-grid{grid-template-columns:1fr}.pg-wrap{grid-template-columns:1fr}.poll-o{flex-direction:column;align-items:stretch}}
+
+  /* ================= MOTYW: CLASH OF CLANS ================= */
+  html[data-motyw="coc"]{
+    --bg:#2a1d12; --bg2:#33241a; --card:#3e2c1e; --card2:#4a3524;
+    --line:#6b4a2c; --text:#fbf3e2; --muted:#d6c3a1;
+    --gold:#ffc928; --gold2:#ffe27a; --goldDark:#c98a00;
+    --green:#7bd23a; --red:#ff5a4a; --blue:#4fb3ff; --radius:16px}
+  html[data-motyw="coc"] body{background:#2a1d12 radial-gradient(ellipse at 50% -10%,#4b6fa3 0%,#2e3f5c 25%,transparent 55%) no-repeat;
+    background-image:radial-gradient(ellipse at 50% -10%,rgba(79,140,210,.35),transparent 55%),repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 2px,transparent 2px 120px),linear-gradient(180deg,#2f2015,#241810)}
+  html[data-motyw="coc"] h1,html[data-motyw="coc"] h2,html[data-motyw="coc"] h3,html[data-motyw="coc"] .brand,html[data-motyw="coc"] .sec-title{font-family:"Lilita One",Cinzel,sans-serif;font-weight:400;letter-spacing:.01em;text-shadow:0 2px 0 #1a0f06,0 0 1px #1a0f06}
+  html[data-motyw="coc"] .hero h1{background:none;color:#fff;-webkit-text-fill-color:#fff;text-shadow:0 3px 0 #3a2208,0 -1px 0 #3a2208,2px 0 0 #3a2208,-2px 0 0 #3a2208,0 6px 14px rgba(0,0,0,.5)}
+  html[data-motyw="coc"] .eyebrow{color:var(--gold);text-shadow:0 1px 0 #1a0f06}
+  html[data-motyw="coc"] nav,html[data-motyw="coc"] .subnav,html[data-motyw="coc"] .tabbar,html[data-motyw="coc"] .mtab{background:linear-gradient(180deg,#5a3c22,#3d2815);border-color:#1f1309;box-shadow:0 3px 0 #1f1309}
+  html[data-motyw="coc"] .panel,html[data-motyw="coc"] .now-card,html[data-motyw="coc"] .sk-col,html[data-motyw="coc"] .stat,html[data-motyw="coc"] .timer,html[data-motyw="coc"] .req,html[data-motyw="coc"] .modal-card{
+    background:linear-gradient(180deg,#4a3524,#3a291b);border:2px solid #1f1309;box-shadow:inset 0 1px 0 rgba(255,220,160,.18),0 4px 0 #1f1309}
+  html[data-motyw="coc"] .btn,html[data-motyw="coc"] .nav-links a.nav-cta,html[data-motyw="coc"] .m-join{border:2px solid #1f1309!important;box-shadow:inset 0 -4px 0 rgba(0,0,0,.25),inset 0 2px 0 rgba(255,255,255,.45),0 3px 0 #1f1309!important;font-family:"Lilita One",Inter,sans-serif;font-weight:400;letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,.35)}
+  html[data-motyw="coc"] .btn-gold,html[data-motyw="coc"] .nav-links a.nav-cta,html[data-motyw="coc"] .m-join{background:linear-gradient(180deg,#ffe46b,#ffc21a 55%,#f0a000);color:#3a2208}
+  html[data-motyw="coc"] .btn:active{transform:translateY(2px)}
+  html[data-motyw="coc"] .btn-discord{text-shadow:0 1px 0 rgba(0,0,0,.4)}
+  html[data-motyw="coc"] .subnav a.on{background:linear-gradient(180deg,#9be35b,#5fb021);color:#14300a;border:2px solid #1f1309}
+  html[data-motyw="coc"] .subnav a.on .ic{color:#14300a}
+  html[data-motyw="coc"] .lay-pages .nav-links a.on,html[data-motyw="coc"] .nav-links a.on{background:rgba(0,0,0,.25);color:var(--gold2)}
+  html[data-motyw="coc"] .page-head{background:radial-gradient(ellipse at 50% 0%,rgba(79,140,210,.28),transparent 70%)}
+  html[data-motyw="coc"] .announce{background:linear-gradient(90deg,#7a5a14,#5a4010);border-color:#1f1309}
+  html[data-motyw="coc"] .ticker{background:rgba(0,0,0,.2)}
+  html[data-motyw="coc"] .srch-box,html[data-motyw="coc"] .ms-box{background:#3a291b;border:2px solid #1f1309}
+  html[data-motyw="coc"] footer{background:#1f150c}
+
+  /* ================= MOTYW: JASNY ================= */
+  html[data-motyw="jasny"]{
+    --bg:#f5f6f8; --bg2:#eceef2; --card:#ffffff; --card2:#f3f4f7;
+    --line:#e2e5eb; --text:#171a21; --muted:#5f6675;
+    --gold:#c58a12; --gold2:#a86f00; --goldDark:#8a5a00;
+    --green:#1f9d55; --red:#d03b36; --blue:#2f6fe0}
+  html[data-motyw="jasny"] body{background:var(--bg)}
+  html[data-motyw="jasny"] nav,html[data-motyw="jasny"] .subnav,html[data-motyw="jasny"] .tabbar{background:rgba(255,255,255,.88)}
+  html[data-motyw="jasny"] .mtab{background:rgba(255,255,255,.95)}
+  html[data-motyw="jasny"] .panel,html[data-motyw="jasny"] .now-card,html[data-motyw="jasny"] .sk-col,html[data-motyw="jasny"] .stat,html[data-motyw="jasny"] .req,html[data-motyw="jasny"] .modal-card{box-shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06)}
+  html[data-motyw="jasny"] .hero h1{background:none;color:#171a21;-webkit-text-fill-color:#171a21}
+  html[data-motyw="jasny"] h1,html[data-motyw="jasny"] h2,html[data-motyw="jasny"] h3,html[data-motyw="jasny"] .brand{font-family:Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.02em}
+  html[data-motyw="jasny"] .btn-gold,html[data-motyw="jasny"] .nav-links a.nav-cta,html[data-motyw="jasny"] .m-join{background:#171a21!important;color:#fff!important;box-shadow:none}
+  html[data-motyw="jasny"] .subnav a.on{background:#171a21;color:#fff}
+  html[data-motyw="jasny"] .subnav a.on .ic{color:#fff}
+  html[data-motyw="jasny"] .step,html[data-motyw="jasny"] .dc-live{background:var(--bg2)}
+  html[data-motyw="jasny"] .wch-tip{background:#fff}
+  html[data-motyw="jasny"] .pf2-th,html[data-motyw="jasny"] .pn-num{background:#fff6e0}
+  html[data-motyw="jasny"] .sk{background:linear-gradient(90deg,#eceef2 0%,#f7f8fa 40%,#eceef2 80%);background-size:300% 100%}
+  html[data-motyw="jasny"] .modal,html[data-motyw="jasny"] .srch,html[data-motyw="jasny"] .more-sheet{background:rgba(20,24,32,.35)}
+  html[data-motyw="jasny"] .srch-box,html[data-motyw="jasny"] .ms-box{background:#fff}
+  html[data-motyw="jasny"] .page-head{background:linear-gradient(180deg,#fff,var(--bg))}
+  html[data-motyw="jasny"] .announce{background:#fff7e3}
+  html[data-motyw="jasny"] .ticker{background:#fff}
+  html[data-motyw="jasny"] .brand img{filter:none}
+  html[data-motyw="jasny"] .lay-pages .nav-links a.on{background:var(--bg2);color:var(--text)}
+
+  html[data-motyw="coc"] h1,html[data-motyw="coc"] h2,html[data-motyw="coc"] h3,html[data-motyw="coc"] .brand,html[data-motyw="coc"] .stat b,html[data-motyw="coc"] .jstep .jn,html[data-motyw="coc"] .mvp-name,html[data-motyw="coc"] .donor-row em,html[data-motyw="coc"] .th-big,html[data-motyw="coc"] .mini-row em,html[data-motyw="coc"] .cwl-info b,html[data-motyw="coc"] .rn,html[data-motyw="coc"] .rec b,html[data-motyw="coc"] .lw-mid,html[data-motyw="coc"] .req .num,html[data-motyw="coc"] .pod .medal,html[data-motyw="coc"] .now-card b,html[data-motyw="coc"] .page-head h1,html[data-motyw="coc"] .rush-top b,html[data-motyw="coc"] .rnd b,html[data-motyw="coc"] .rnd-score,html[data-motyw="coc"] .acc-t b,html[data-motyw="coc"] .tile b,html[data-motyw="coc"] .quiz-end b,html[data-motyw="coc"] .lw-pred b,html[data-motyw="coc"] .potd-stats b,html[data-motyw="coc"] .numbers b,html[data-motyw="coc"] .score,html[data-motyw="coc"] .foot-logo b,html[data-motyw="coc"] .hist-stats b,html[data-motyw="coc"] .pf2-th,html[data-motyw="coc"] .sk-col a.sk-head,html[data-motyw="coc"] .pn-card b,html[data-motyw="coc"] .pn-num{font-family:"Lilita One",Cinzel,sans-serif!important;font-weight:400!important}
+  html[data-motyw="jasny"] h1,html[data-motyw="jasny"] h2,html[data-motyw="jasny"] h3,html[data-motyw="jasny"] .brand,html[data-motyw="jasny"] .stat b,html[data-motyw="jasny"] .jstep .jn,html[data-motyw="jasny"] .mvp-name,html[data-motyw="jasny"] .donor-row em,html[data-motyw="jasny"] .th-big,html[data-motyw="jasny"] .mini-row em,html[data-motyw="jasny"] .cwl-info b,html[data-motyw="jasny"] .rn,html[data-motyw="jasny"] .rec b,html[data-motyw="jasny"] .lw-mid,html[data-motyw="jasny"] .req .num,html[data-motyw="jasny"] .pod .medal,html[data-motyw="jasny"] .now-card b,html[data-motyw="jasny"] .page-head h1,html[data-motyw="jasny"] .rush-top b,html[data-motyw="jasny"] .rnd b,html[data-motyw="jasny"] .rnd-score,html[data-motyw="jasny"] .acc-t b,html[data-motyw="jasny"] .tile b,html[data-motyw="jasny"] .quiz-end b,html[data-motyw="jasny"] .lw-pred b,html[data-motyw="jasny"] .potd-stats b,html[data-motyw="jasny"] .numbers b,html[data-motyw="jasny"] .score,html[data-motyw="jasny"] .foot-logo b,html[data-motyw="jasny"] .hist-stats b,html[data-motyw="jasny"] .pf2-th,html[data-motyw="jasny"] .sk-col a.sk-head,html[data-motyw="jasny"] .pn-card b,html[data-motyw="jasny"] .pn-num{font-family:Inter,system-ui,sans-serif!important;font-weight:800!important;letter-spacing:-.01em}
+
+  /* ================= MOTYW: ESPORT / NEON ================= */
+  html[data-motyw="esport"]{
+    --bg:#07080d; --bg2:#0c0e16; --card:#10131d; --card2:#161a27;
+    --line:#232a3d; --text:#eef1f8; --muted:#8a93a8;
+    --gold:#ff2e4d; --gold2:#ff6b81; --goldDark:#b5122b;
+    --green:#22e39a; --red:#ff3b5c; --blue:#2ec5ff; --radius:6px}
+  html[data-motyw="esport"] body{background:#07080d;background-image:radial-gradient(ellipse at 15% -10%,rgba(255,46,77,.18),transparent 45%),radial-gradient(ellipse at 90% 0%,rgba(46,197,255,.14),transparent 45%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,auto,40px 40px,40px 40px;background-attachment:fixed}
+  html[data-motyw="esport"] h1,html[data-motyw="esport"] h2,html[data-motyw="esport"] h3,html[data-motyw="esport"] .brand,html[data-motyw="esport"] .stat b,html[data-motyw="esport"] .jstep .jn,html[data-motyw="esport"] .mvp-name,html[data-motyw="esport"] .donor-row em,html[data-motyw="esport"] .th-big,html[data-motyw="esport"] .mini-row em,html[data-motyw="esport"] .cwl-info b,html[data-motyw="esport"] .rn,html[data-motyw="esport"] .rec b,html[data-motyw="esport"] .lw-mid,html[data-motyw="esport"] .req .num,html[data-motyw="esport"] .pod .medal,html[data-motyw="esport"] .now-card b,html[data-motyw="esport"] .page-head h1,html[data-motyw="esport"] .rush-top b,html[data-motyw="esport"] .rnd b,html[data-motyw="esport"] .rnd-score,html[data-motyw="esport"] .acc-t b,html[data-motyw="esport"] .tile b,html[data-motyw="esport"] .quiz-end b,html[data-motyw="esport"] .lw-pred b,html[data-motyw="esport"] .potd-stats b,html[data-motyw="esport"] .numbers b,html[data-motyw="esport"] .score,html[data-motyw="esport"] .foot-logo b,html[data-motyw="esport"] .hist-stats b,html[data-motyw="esport"] .pf2-th,html[data-motyw="esport"] .sk-col a.sk-head,html[data-motyw="esport"] .pn-card b,html[data-motyw="esport"] .pn-num,html[data-motyw="esport"] .sec-title{font-family:Rajdhani,Inter,sans-serif!important;font-weight:700!important;text-transform:uppercase;letter-spacing:.04em}
+  html[data-motyw="esport"] .hero h1{background:linear-gradient(90deg,#ff2e4d,#ff6b81 45%,#2ec5ff);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(255,46,77,.35))}
+  html[data-motyw="esport"] .eyebrow{color:var(--blue)}
+  html[data-motyw="esport"] nav,html[data-motyw="esport"] .subnav,html[data-motyw="esport"] .tabbar,html[data-motyw="esport"] .mtab{background:rgba(7,8,13,.9);border-color:#1b2130}
+  html[data-motyw="esport"] nav{box-shadow:0 1px 0 rgba(255,46,77,.35)}
+  html[data-motyw="esport"] .panel,html[data-motyw="esport"] .now-card,html[data-motyw="esport"] .sk-col,html[data-motyw="esport"] .stat,html[data-motyw="esport"] .req,html[data-motyw="esport"] .timer{background:linear-gradient(180deg,rgba(22,26,39,.9),rgba(12,14,22,.9));border:1px solid #232a3d;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
+  html[data-motyw="esport"] .now-card:hover,html[data-motyw="esport"] .panel:hover{border-color:rgba(255,46,77,.5)}
+  html[data-motyw="esport"] .btn,html[data-motyw="esport"] .nav-links a.nav-cta,html[data-motyw="esport"] .m-join{border-radius:4px!important;text-transform:uppercase;letter-spacing:.06em;font-family:Rajdhani,Inter,sans-serif;font-weight:700}
+  html[data-motyw="esport"] .btn-gold,html[data-motyw="esport"] .nav-links a.nav-cta,html[data-motyw="esport"] .m-join{background:linear-gradient(90deg,#ff2e4d,#ff5470)!important;color:#fff!important;box-shadow:0 0 22px rgba(255,46,77,.45)!important}
+  html[data-motyw="esport"] .subnav a.on{background:transparent;color:#fff;border:1px solid var(--gold);box-shadow:0 0 14px rgba(255,46,77,.45),inset 0 0 10px rgba(255,46,77,.25);border-radius:4px}
+  html[data-motyw="esport"] .subnav a.on .ic{color:var(--gold2)}
+  html[data-motyw="esport"] .lay-pages .nav-links a.on{background:none;color:#fff;box-shadow:inset 0 -2px 0 var(--gold)}
+  html[data-motyw="esport"] .page-head{background:radial-gradient(ellipse at 20% 0%,rgba(255,46,77,.16),transparent 60%),radial-gradient(ellipse at 85% 0%,rgba(46,197,255,.12),transparent 60%)}
+  html[data-motyw="esport"] .announce{background:linear-gradient(90deg,rgba(255,46,77,.18),rgba(46,197,255,.08));border-color:rgba(255,46,77,.35)}
+  html[data-motyw="esport"] .announce a{color:#fff}
+  html[data-motyw="esport"] .srch-box,html[data-motyw="esport"] .ms-box,html[data-motyw="esport"] .modal-card{background:#0c0e16;border-color:#2a3247}
+
+  /* ================= MOTYW: ŚREDNIOWIECZNY ================= */
+  html[data-motyw="sredniowiecze"]{
+    --bg:#f3e8cc; --bg2:#eadbb8; --card:#efe3c6; --card2:#e6d6b2;
+    --line:#b99b6b; --text:#2b1a10; --muted:#6e5539;
+    --gold:#a0161c; --gold2:#7d0f14; --goldDark:#5e0a0e;
+    --green:#3f6b2a; --red:#a0161c; --blue:#2f4f7a; --radius:4px}
+  html[data-motyw="sredniowiecze"] body{background:#e9dcbc;background-image:radial-gradient(ellipse at 50% 0%,rgba(255,250,235,.7),transparent 60%),radial-gradient(circle at 20% 80%,rgba(140,100,50,.12),transparent 40%),radial-gradient(circle at 85% 60%,rgba(140,100,50,.1),transparent 35%);background-attachment:fixed}
+  html[data-motyw="sredniowiecze"] section{border-color:#c9ae80}
+  html[data-motyw="sredniowiecze"] h1,html[data-motyw="sredniowiecze"] h2,html[data-motyw="sredniowiecze"] h3,html[data-motyw="sredniowiecze"] .brand,html[data-motyw="sredniowiecze"] .stat b,html[data-motyw="sredniowiecze"] .jstep .jn,html[data-motyw="sredniowiecze"] .mvp-name,html[data-motyw="sredniowiecze"] .donor-row em,html[data-motyw="sredniowiecze"] .th-big,html[data-motyw="sredniowiecze"] .mini-row em,html[data-motyw="sredniowiecze"] .cwl-info b,html[data-motyw="sredniowiecze"] .rn,html[data-motyw="sredniowiecze"] .rec b,html[data-motyw="sredniowiecze"] .lw-mid,html[data-motyw="sredniowiecze"] .req .num,html[data-motyw="sredniowiecze"] .pod .medal,html[data-motyw="sredniowiecze"] .now-card b,html[data-motyw="sredniowiecze"] .page-head h1,html[data-motyw="sredniowiecze"] .rush-top b,html[data-motyw="sredniowiecze"] .rnd b,html[data-motyw="sredniowiecze"] .rnd-score,html[data-motyw="sredniowiecze"] .acc-t b,html[data-motyw="sredniowiecze"] .tile b,html[data-motyw="sredniowiecze"] .quiz-end b,html[data-motyw="sredniowiecze"] .lw-pred b,html[data-motyw="sredniowiecze"] .potd-stats b,html[data-motyw="sredniowiecze"] .numbers b,html[data-motyw="sredniowiecze"] .score,html[data-motyw="sredniowiecze"] .foot-logo b,html[data-motyw="sredniowiecze"] .hist-stats b,html[data-motyw="sredniowiecze"] .pf2-th,html[data-motyw="sredniowiecze"] .sk-col a.sk-head,html[data-motyw="sredniowiecze"] .pn-card b,html[data-motyw="sredniowiecze"] .pn-num,html[data-motyw="sredniowiecze"] .sec-title{font-family:"Cinzel Decorative",Cinzel,serif!important;font-weight:900!important;color:#3a1c0e}
+  html[data-motyw="sredniowiecze"] .hero h1{background:none;color:#7d0f14;-webkit-text-fill-color:#7d0f14;text-shadow:0 1px 0 #fff6dc,0 3px 10px rgba(80,30,10,.25)}
+  html[data-motyw="sredniowiecze"] .eyebrow{color:#a0161c}
+  html[data-motyw="sredniowiecze"] nav,html[data-motyw="sredniowiecze"] .subnav,html[data-motyw="sredniowiecze"] .tabbar,html[data-motyw="sredniowiecze"] .mtab{background:linear-gradient(180deg,#5e0a0e,#3f070a);border-color:#2a0507;box-shadow:0 2px 0 #c9a24a}
+  html[data-motyw="sredniowiecze"] nav,html[data-motyw="sredniowiecze"] .subnav,html[data-motyw="sredniowiecze"] .mtab{--text:#f6e7c4;--muted:#e0c58f;--line:#7a2a22;--card:#4a0b0e;--gold:#e9c46a;--gold2:#f6e1a0;color:#f6e7c4}
+  html[data-motyw="sredniowiecze"] nav .brand{color:#f6e7c4}
+  html[data-motyw="sredniowiecze"] .panel,html[data-motyw="sredniowiecze"] .now-card,html[data-motyw="sredniowiecze"] .sk-col,html[data-motyw="sredniowiecze"] .stat,html[data-motyw="sredniowiecze"] .req,html[data-motyw="sredniowiecze"] .timer,html[data-motyw="sredniowiecze"] .modal-card{background:linear-gradient(180deg,#f6ecd2,#ead9b3);border:1px solid #a88758;box-shadow:inset 0 0 0 3px #f6ecd2,inset 0 0 0 4px #c9ae80,0 3px 8px rgba(60,30,10,.18)}
+  html[data-motyw="sredniowiecze"] .btn-gold,html[data-motyw="sredniowiecze"] .nav-links a.nav-cta,html[data-motyw="sredniowiecze"] .m-join{background:linear-gradient(180deg,#c9a24a,#a8822e)!important;color:#2a0507!important;border:1px solid #5e3d0a!important;box-shadow:inset 0 1px 0 rgba(255,240,200,.6),0 2px 0 #5e3d0a!important;font-family:Cinzel,serif;font-weight:800}
+  html[data-motyw="sredniowiecze"] .subnav a.on{background:linear-gradient(180deg,#c9a24a,#a8822e);color:#2a0507}
+  html[data-motyw="sredniowiecze"] .subnav a.on .ic{color:#2a0507}
+  html[data-motyw="sredniowiecze"] .lay-pages .nav-links a.on{background:rgba(0,0,0,.25);color:#f3d27a}
+  html[data-motyw="sredniowiecze"] .nav-links a{color:#e0c58f}
+  html[data-motyw="sredniowiecze"] .page-head{background:linear-gradient(180deg,rgba(125,15,20,.12),transparent)}
+  html[data-motyw="sredniowiecze"] .announce{background:#7d0f14;color:#f6e7c4;border-color:#c9a24a}
+  html[data-motyw="sredniowiecze"] .announce a{color:#f3d27a}
+  html[data-motyw="sredniowiecze"] .ticker{background:#2a0507;color:#f6e7c4;--text:#f6e7c4;--muted:#e0c58f;--line:#5a1a14}
+  html[data-motyw="sredniowiecze"] footer{background:#2a0507;color:#e0c58f;--text:#f6e7c4;--muted:#e0c58f;--line:#5a1a14}
+  html[data-motyw="sredniowiecze"] .srch-box,html[data-motyw="sredniowiecze"] .ms-box{background:#f2e6c9}
+  html[data-motyw="sredniowiecze"] .step,html[data-motyw="sredniowiecze"] .dc-live{background:rgba(255,250,235,.5)}
+  html[data-motyw="sredniowiecze"] .wch-tip{background:#f6ecd2}
+  html[data-motyw="sredniowiecze"] .pf2-th,html[data-motyw="sredniowiecze"] .pn-num{background:#f6ecd2}
+  html[data-motyw="sredniowiecze"] .modal,html[data-motyw="sredniowiecze"] .srch{background:rgba(30,10,5,.5)}
+  /* przełącznik motywów (tylko w trybie testu) */
+  .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+  .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
+  .mot-switch a.on{background:var(--gold);color:#1a1408;font-weight:700}
+  .mot-switch a{white-space:nowrap;flex:none} .mot-switch span{white-space:nowrap;flex:none}
+  @media (max-width:760px){.mot-switch{left:8px;right:8px;overflow-x:auto;scrollbar-width:none}.mot-switch span{display:none}.lay-pages .mot-switch{bottom:calc(76px + env(safe-area-inset-bottom))}}
 </style>
 </head>
 <body>
@@ -3938,23 +4060,85 @@ let saveLayoutState=()=>{};
       ["poradnik","Poradnik","📖",["kalkulator","bazy"],"Poradnik","Strategie ataku na każdy TH, plan ulepszeń, słowniczek, quiz i bazy."],
       ["dolacz","Dołącz","➕",["wymagania","dolacz","faq"],"Rekrutacja","Wymagania, jak dołączyć i najczęstsze pytania."]];
     if($("#panel")) PAGES.push(["panel","Mój panel","👤",["panel"],"",""]);
+    /* ===== STYLE_TRESC: każdy styl to osobna wersja strony (nazwy, opisy, co widać) ===== */
+    const STYLE_TRESC={
+      esport:{ stats:["Graczy w składzie","Wygranych meczów"], hide:["kalkulator","bazy"], titles:{wymagania:["Rekrutacja","Czego szukamy w graczu",null],dolacz:["Rekrutacja","Jak wejść do składu","Klan jest otwarty od TH8 — bez czekania na akceptację. Zajmie Ci to kilka minut."],
+          regulamin:["Zasady","Zasady drużyny",null],wydarzenia:["Terminarz","Najbliższe rozgrywki",null],ogloszenia:["Komunikaty","Komunikaty zarządu",null],
+          liga:["Rozgrywki ligowe","Liga Wojen Klanów",null],osiagniecia:["Statystyki","Statystyki i rekordy","Cele drużyny, wykresy formy, liczby i rekordy wszech czasów."],
+          kadra:["Zarząd","Zarząd i MVP",null],historia:["Od zera","Historia drużyny","Najważniejsze momenty Armii Maurycego — od założenia do dziś."],
+          czlonkowie:["Roster","Skład drużyny",null],wojny:["Mecze","Mecze i wyniki","Od 5 na 5 do 25 na 25 — każdy mecz wojenny drużyny."],
+          kary:["Fair play","Kary za łamanie zasad",null],ranking:["Leaderboard","Najlepsi gracze",null],rajdy:["Stolica","Rajdy i transfery","Wyniki weekendu rajdowego i ruchy w składzie — aktualizowane same z gry."],faq:["FAQ","Pytania i odpowiedzi",null]}, hideSel:["#fact"], tag:"● LIVE", short:{czlonkowie:"Skład",wojny:"Mecze"},
+        pages:{wojny:["Mecze","Mecze","Mecz na żywo, scouting przeciwnika, mapa ataków, wyniki, kary i leaderboard."],
+               liga:["Liga","Rozgrywki ligowe","Tabela grupy, kolejki dzień po dniu, podsumowanie sezonu i medale."],
+               czlonkowie:["Skład","Roster","Cały skład drużyny — kliknij nick, żeby zobaczyć statystyki gracza. Do tego rajdy Stolicy."],
+               klan:["Drużyna","O drużynie","Zarząd i MVP, historia drużyny, statystyki i rekordy, zasady oraz Discord."],
+               dolacz:["Rekrutacja","Rekrutacja","Wymagania, jak dołączyć do składu i najczęstsze pytania."]},
+        sec:{wojny:"Mecze",kary:"Kary",ranking:"Leaderboard",liga:"Liga",czlonkowie:"Roster",rajdy:"Rajdy",kadra:"Zarząd i MVP",historia:"Historia drużyny",osiagniecia:"Statystyki i rekordy",regulamin:"Zasady",wymagania:"Wymagania",dolacz:"Jak dołączyć",faq:"FAQ"},
+        lead:"Polska drużyna Clash of Clans. Gramy na wynik — wojny, Liga Wojen Klanów i rekordy klanu. Szukamy graczy, którzy chcą wygrywać.",
+        cta:"Dołącz do składu", final:["Gotowy do gry?","Wbijaj do składu Armii Maurycego i walcz o wynik z nami."]},
+      sredniowiecze:{ stats:["Rycerzy w Armii","Wygranych bitew"], hide:[], titles:{wymagania:["Werbunek","Warunki wstąpienia",null],dolacz:["Werbunek","Jak wstąpić w szeregi","Bramy Armii stoją otworem dla każdego od TH8 — bez czekania na zgodę. To zajmie chwilę."],
+          regulamin:["Kodeks","Kodeks Armii","Wszystkie prawa Armii w jednym miejscu. Wstępując w nasze szeregi, przysięgasz ich przestrzegać."],
+          wydarzenia:["Kalendarz","Nadchodzące wydarzenia",null],ogloszenia:["Obwieszczenia","Obwieszczenia rady","Najważniejsze wieści od Wodza i jego rady."],ankiety:["Głos Armii","Wiec",null],
+          liga:["Wielki Turniej","Turniej Wojen Klanów","Tabela turnieju, starcia dzień po dniu, podsumowanie i medale."],osiagniecia:["Dokonania","Dokonania Armii","Cele, rozwój, liczby i księga rekordów Armii."],
+          kadra:["Rada","Wódz i rada","Ci, którzy prowadzą Armię i dbają o porządek w szeregach."],historia:["Kronika","Kronika Armii","Najważniejsze chwile Armii Maurycego — od wzniesienia pierwszego sztandaru."],
+          czlonkowie:["Szeregi","Rycerze Armii",null],wojny:["Pole chwały","Kronika bitew","Od potyczek 5 na 5 po wielkie bitwy — oto droga naszej Armii."],
+          kary:["Sąd wojenny","Sąd wojenny","Robot sprawdza każdą bitwę i sam wpisuje tych, którzy złamali kodeks. Kara = przerwa w bitwach."],ranking:["Najdzielniejsi","Najdzielniejsi rycerze",null],
+          rajdy:["Stolica","Najazdy na Stolicę","Łupy z weekendowych najazdów i księga zmian w szeregach — zapisywane same."],
+          kalkulator:["Księga wiedzy","Taktyki natarcia",null],bazy:["Obrona","Plany twierdz","Sprawdzone układy wiosek dla każdego ratusza."],faq:["Pytania","Pytania nowych rycerzy",null]}, hideSel:[], tag:"● WIEŚCI", short:{czlonkowie:"Rycerze",wojny:"Bitwy",liga:"Turniej"},
+        pages:{wojny:["Bitwy","Pole chwały","Trwająca bitwa, zwiad wroga, mapa natarcia, kronika bitew, sąd wojenny i najdzielniejsi."],
+               liga:["Turniej","Wielki Turniej","Turniej Wojen Klanów: tabela, starcia dzień po dniu, podsumowanie i medale."],
+               czlonkowie:["Rycerze","Nasi rycerze","Wszyscy rycerze Armii (kliknij imię, by poznać jego dzieje) i najazdy na Stolicę."],
+               klan:["Twierdza","O Armii","Wódz i rada, kronika Armii, nasze dokonania, kodeks i Discord."],
+               poradnik:["Księga wiedzy","Księga wiedzy","Taktyki natarcia na każdy ratusz, plan rozbudowy twierdzy i plany obronne."],
+               dolacz:["Wstąp","Werbunek","Warunki, jak wstąpić w szeregi Armii i najczęstsze pytania."]},
+        sec:{wojny:"Bitwy",kary:"Sąd wojenny",ranking:"Najdzielniejsi",liga:"Turniej",czlonkowie:"Rycerze",rajdy:"Najazdy na Stolicę",kadra:"Wódz i rada",historia:"Kronika",osiagniecia:"Dokonania",regulamin:"Kodeks",kalkulator:"Taktyki",bazy:"Plany twierdz",wymagania:"Warunki",dolacz:"Jak wstąpić",faq:"Pytania"},
+        lead:"Bractwo wojowników Clash of Clans. Razem stajemy do bitew, turniejów i najazdów na Stolicę — każdy wierny rycerz znajdzie tu swoje miejsce.",
+        cta:"Wstąp do Armii", final:["Gotów stanąć do boju?","Wstąp w szeregi Armii Maurycego — chwała czeka."]},
+      jasny:{ hide:[], titles:{}, hideSel:["#ticker","#fact","#seasonChip",".season-fx"], tag:"",
+        pages:{}, sec:{},
+        lead:"Polski klan Clash of Clans. Wojny, Liga Wojen Klanów, Gry Klanowe i rajdy na Stolicę.",
+        final:["Dołącz do nas","Klan jest otwarty — dołączysz w minutę."]},
+      coc:{ stats:["Klanowiczów","Wygranych wojen"], hide:[], titles:{czlonkowie:["Klanowicze","Wszyscy w klanie",null],rajdy:["Stolica","Rajdy na Stolicę i ruchy w klanie",null],osiagniecia:["Rozwój klanu","Cele i rekordy",null],
+          wojny:["Wojny klanowe","Historia wojen","Od 5 na 5 do 25 na 25 — każda wojna klanu."]}, hideSel:[], tag:"● NA ŻYWO", short:{czlonkowie:"Klanowicze"},
+        pages:{czlonkowie:["Klanowicze","Klanowicze","Wszyscy w klanie — kliknij nick, żeby zobaczyć profil gracza. Do tego rajdy na Stolicę."],
+               klan:["Klan","Nasz klan","MVP i kadra, historia klanu, cele i rekordy, regulamin i Discord."]},
+        sec:{czlonkowie:"Klanowicze",rajdy:"Rajdy na Stolicę",kadra:"MVP i kadra",osiagniecia:"Cele i rekordy"},
+        lead:"Wbijaj do Armii Maurycego! Wojny co kilka dni, Liga Wojen Klanów co miesiąc, Gry Klanowe i rajdy na Stolicę. Donaty lecą szybko!",
+        cta:"Wbijaj do klanu", final:["Gotowy do ataku?","Kliknij, wbijaj do klanu i zbieraj z nami gwiazdki!"]}
+    };
+    const ST=STYLE_TRESC[document.documentElement.dataset.motyw||""];
+    if(ST && (typeof LANG==="undefined"||LANG!=="en")){
+      ST.hide.forEach(id=>{ const el=$("#"+id); if(el){ el.classList.add("styl-off"); el.id="off-"+id; } document.querySelectorAll(`a[href="#${id}"]`).forEach(a=>a.remove()); });
+      PAGES.forEach(p=>{ p[3]=p[3].filter(id=>!ST.hide.includes(id)); const r=ST.pages[p[0]]; if(r){ p[1]=r[0]; p[4]=r[1]; p[5]=r[2]; } });
+      for(let i=PAGES.length-1;i>0;i--) if(!PAGES[i][3].length){ document.querySelectorAll(`a[href="#${PAGES[i][0]}"]`).forEach(a=>a.remove()); PAGES.splice(i,1); }
+      SEC.forEach(x=>{ if(ST.sec[x[0]]) x[2]=ST.sec[x[0]]; });
+      Object.entries(ST.titles||{}).forEach(([id,t])=>{ const sec=$("#"+id); if(!sec) return; const w=sec.querySelector(":scope>.wrap"); if(!w) return;
+        const e=w.querySelector(":scope>.eyebrow"), h=w.querySelector(":scope>.sec-title"), l=w.querySelector(":scope>.sec-lead");
+        if(e&&t[0]) e.textContent=t[0]; if(h&&t[1]) h.textContent=t[1]; if(l&&t[2]) l.textContent=t[2]; });
+      const st=document.createElement("style"); st.textContent=".styl-off{display:none!important}"+ST.hideSel.join(",")+(ST.hideSel.length?"{display:none!important}":""); document.head.appendChild(st);
+      if(ST.stats) document.querySelectorAll(".hero .stats .stat>span").forEach((sp,i)=>{ if(ST.stats[i]) sp.textContent=ST.stats[i]; });
+      const ld=document.querySelector(".hero p.lead"); if(ld&&ST.lead) ld.textContent=ST.lead;
+      if(ST.cta){ const b=document.querySelector(".hero-ctas .btn-gold"); if(b&&b.lastChild) b.lastChild.textContent=" "+ST.cta; }
+      const tg=document.querySelector(".ticker-tag"); if(tg&&ST.tag) tg.textContent=ST.tag;
+      const fn=document.querySelector("section.final"); if(fn&&ST.final){ fn.querySelector("h2").textContent=ST.final[0]; fn.querySelector("p").textContent=ST.final[1]; }
+      window.__STYL=ST;
+    }
+    const SHORT=(ST&&ST.short)||{};
     const ALL=PAGES.flatMap(p=>p[3]);
     // Menu: podstrony + złoty przycisk Dołącz
     const nav=$("#navLinks");
-    nav.innerHTML=PAGES.filter(p=>p[0]!=="dolacz"&&p[0]!=="panel").map(p=>`<a href="#${p[0]}" data-page="${p[0]}">${p[1]}</a>`).join("")+`<a href="#dolacz" data-page="dolacz" class="nav-cta">Dołącz</a>`;
+    nav.innerHTML=PAGES.filter(p=>p[0]!=="dolacz"&&p[0]!=="panel").map(p=>`<a href="#${p[0]}" data-page="${p[0]}">${p[1]}</a>`).join("")+`<a href="#dolacz" data-page="dolacz" class="nav-cta">${(PAGES.find(p=>p[0]==="dolacz")||[0,"Dołącz"])[1]}</a>`;
     // Telefon: dolny pasek jak w aplikacji (Start, Wojny, Liga, Gracze, Więcej)
     const MI={start:"home",wojny:"swords",liga:"trophy",czlonkowie:"users"};
     const mtab=document.createElement("div"); mtab.className="mtab"; mtab.setAttribute("role","navigation");
-    mtab.innerHTML=PAGES.filter(p=>MI[p[0]]).map(p=>`<a href="#${p[0]}" data-page="${p[0]}"><svg class="ic" aria-hidden="true"><use href="#i-${MI[p[0]]}"/></svg><span>${p[0]==="czlonkowie"?"Gracze":p[1]}</span></a>`).join("")
+    mtab.innerHTML=PAGES.filter(p=>MI[p[0]]).map(p=>`<a href="#${p[0]}" data-page="${p[0]}"><svg class="ic" aria-hidden="true"><use href="#i-${MI[p[0]]}"/></svg><span>${SHORT[p[0]]||(p[0]==="czlonkowie"?"Gracze":p[1])}</span></a>`).join("")
       +`<a href="#" class="mt-more" data-more="1"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg><span>Więcej</span></a>`;
     document.body.appendChild(mtab);
     // Arkusz „Więcej” (telefon)
     const more=document.createElement("div"); more.className="more-sheet"; more.hidden=true;
     const moreItem=(href,ico,t,sub,extra="")=>`<a href="${href}" ${extra}><span class="ms-ico"><svg class="ic" aria-hidden="true"><use href="#i-${ico}"/></svg></span><span><b>${t}</b><small>${sub}</small></span></a>`;
     more.innerHTML=`<div class="ms-box" role="dialog" aria-label="Więcej"><div class="ms-grab"></div>
-      ${moreItem("#klan","shield","Klan","MVP, kadra, historia, cele, regulamin, Discord")}
-      ${moreItem("#poradnik","book","Poradnik","Strategie, plan ulepszeń, bazy")}
-      ${moreItem("#dolacz","userplus","Dołącz","Wymagania, jak dołączyć, FAQ")}
+      ${PAGES.filter(p=>["klan","poradnik","dolacz"].includes(p[0])).map(p=>moreItem("#"+p[0],{klan:"shield",poradnik:"book",dolacz:"userplus"}[p[0]],p[1],p[5])).join("")}
       ${$("#panel")?moreItem("#panel","user","Mój panel","Twoje konto, zamiany, ankiety"):""}
       ${moreItem("#","search","Szukaj","Znajdź gracza albo dowolną rzecz na stronie",'data-search="1"')}
     </div>`;
@@ -3962,7 +4146,7 @@ let saveLayoutState=()=>{};
     const closeMore=()=>{ more.hidden=true; };
     more.addEventListener("click",e=>{ if(e.target===more) closeMore(); else if(e.target.closest("a")) setTimeout(closeMore,0); });
     mtab.querySelector(".mt-more").addEventListener("click",e=>{ e.preventDefault(); e.stopPropagation(); more.hidden=!more.hidden; },true);
-    const mj=document.createElement("a"); mj.className="m-join"; mj.href="#dolacz"; mj.dataset.page="dolacz"; mj.textContent="Dołącz";
+    const mj=document.createElement("a"); mj.className="m-join"; mj.href="#dolacz"; mj.dataset.page="dolacz"; mj.textContent=(PAGES.find(p=>p[0]==="dolacz")||[0,"Dołącz"])[1];
     const nr=document.querySelector(".nav-right"); nr&&nr.prepend(mj);
     // Strona główna: „Teraz w klanie” + kalendarz
     const home=document.createElement("section"); home.id="start";
@@ -3979,10 +4163,10 @@ let saveLayoutState=()=>{};
       <div class="now-grid">
         ${card("wojny",cw&&cw.state==="inWar"?"🔴":"⚔️","Wojna",warVal,warSub)}
         ${card("liga","🏆","Liga Wojen (CWL)",esc(sum("liga")),"Rundy, tabela i medale")}
-        ${card("kary","⛔","Kary",esc(sum("kary")),"Kto ma karę i za co")}
+        ${card("kary","⛔",(window.__STYL&&__STYL.sec.kary)||"Kary",esc(sum("kary")),"Kto ma karę i za co")}
         ${card("kadra","👑","MVP miesiąca",MVP?esc(MVP.name):"—","Kadra i sława")}
-        ${card("czlonkowie","👥","Członkowie",`${MEMBERS.length}/50`,(document.getElementById("zarzad")?"Skład, rajdy, zarząd":"Skład i rajdy Stolicy"))}
-        ${card("poradnik","📖","Poradnik","TH3–TH18","Strategie i plan ulepszeń")}
+        ${card("czlonkowie","👥",(PAGES.find(p=>p[0]==="czlonkowie")||[0,"Członkowie"])[1],`${MEMBERS.length}/50`,(document.getElementById("zarzad")?"Skład, rajdy, zarząd":"Skład i rajdy Stolicy"))}
+        ${$("#kalkulator")?card("poradnik","📖",(PAGES.find(p=>p[0]==="poradnik")||[0,"Poradnik"])[1],"TH3–TH18","Strategie i plan ulepszeń"):""}
       </div>
       ${evs.length?`<div class="panel now-feed"><div class="fame-label">Ostatnio w klanie</div>${evs.map(e=>`<div class="mini-row"><span>${evTxt(e)}</span><small>${ago(e.t)}</small></div>`).join("")}</div>`:""}
     </div>`;
@@ -4018,6 +4202,8 @@ let saveLayoutState=()=>{};
       ["poradnik","book","Poradnik",[["#kalkulator","Strategie ataku"],["#kalkulator","Plan ulepszeń i quiz"],["#bazy","Bazy TH4–TH18"]]],
       ["dolacz","userplus","Dołącz",[["#wymagania","Wymagania"],["#dolacz","Jak dołączyć"],["#faq","FAQ — pytania"]]],
       has("panel")&&["panel","user","Mój panel",[["#panel","Moje konto i statystyki"],["#panel","Zgłoś zamianę celu"],has("ankiety")&&["#ankiety","Głosuj w ankietach"]]]].filter(Boolean);
+    MAPA.forEach(g=>{ const P=PAGES.find(p=>p[0]===g[0]); if(P&&g[0]!=="start") g[2]=P[1]+(g[0]==="liga"&&P[1]==="Liga"?" (CWL)":""); g[3]=g[3].filter(x=>x&&has(x[0].slice(1))); });
+    for(let i=MAPA.length-1;i>=0;i--) if(!PAGES.some(p=>p[0]===MAPA[i][0])||!MAPA[i][3].length) MAPA.splice(i,1);
     const sk=document.createElement("section"); sk.id="skroty";
     sk.innerHTML=`<div class="wrap"><div class="eyebrow">Mapa strony</div><h2 class="sec-title">Wszystko na stronie</h2>
       <p class="sec-lead">Każda funkcja w jednym miejscu — kliknij, a przeniesiemy Cię prosto tam. Szybciej: <button class="sk-find" data-search="1"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg> Szukaj</button></p>
@@ -4086,6 +4272,10 @@ let saveLayoutState=()=>{};
   }
 })();
 
+(function(){ let t=null; try{t=localStorage.getItem("am_motyw_test");}catch(e){} if(t===null) return;
+  const cur=document.documentElement.dataset.motyw||""; const d=document.createElement("div"); d.className="mot-switch no-ico";
+  d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["coc","Clash of Clans"],["jasny","Jasny"],["esport","Esport"],["sredniowiecze","Średniowieczny"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
+  d.querySelector("button").onclick=()=>{ location.href=location.pathname+"?styl=wyloguj"; }; document.body.appendChild(d); })();
 applyLang();
 /* ===== Ikony zamiast emoji (jednolity wygląd na każdym telefonie) ===== */
 (function(){
