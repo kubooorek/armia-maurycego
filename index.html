@@ -33,7 +33,7 @@
 <script>document.documentElement.classList.add("booting");setTimeout(function(){document.documentElement.classList.remove("booting")},7000);</script>
 <script>/* Styl strony: "" = obecny, "epicki" = ogień i złoto, "fiolet" = fioletowy mrok, "dzien" = jasny dzień jak w grze, "zloto" = czarno-złoty. Test: ?styl=epicki / ?styl=wyloguj. Na stałe: wpisz nazwę w MOTYW. */
 var MOTYW="epicki";
-(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
+(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m==="goblin"){m="dzien";document.documentElement.classList.add("gb");}if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
 var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+One"};if(F[m]){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family="+F[m]+"&display=swap";document.head.appendChild(l);}}catch(e){}})();</script>
 <style>
   :root{
@@ -1157,7 +1157,7 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   @media (max-width:1100px){.ep-ch{max-width:240px}.ep-chars{opacity:.55}}
   @media (max-width:760px){.ep-chars{display:none}.ep-art-img{width:84px}}
   /* ===== OGIEŃ 1:1 ===== */
-  html[data-motyw="epicki"] #ticker,html[data-motyw="epicki"] .lang-btn,html[data-motyw="epicki"] .srch-btn{display:none!important}
+  html[data-motyw="epicki"] .lang-btn,html[data-motyw="epicki"] .srch-btn{display:none!important}
   html[data-motyw="epicki"] .brand{font-size:0;gap:0}
   html[data-motyw="epicki"] .brand img{height:62px!important;margin:-4px 0 -18px!important;position:relative;z-index:2;filter:drop-shadow(0 4px 10px rgba(0,0,0,.6)) drop-shadow(0 0 12px rgba(255,140,30,.4))}
   html[data-motyw="epicki"] nav .wrap{max-width:1240px}
@@ -1380,6 +1380,72 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   html[data-motyw="epicki"] footer{background:rgba(10,3,2,.9)!important}
   html[data-motyw="epicki"] section:not(.og-hero):not(.page-head):not(#start)>.wrap>.sec-lead,html[data-motyw="epicki"] section>.wrap>.updated{text-shadow:0 2px 6px #000}
   @media (max-width:760px){ html[data-motyw="epicki"] body::before{background-position:30% center} html[data-motyw="epicki"] .og-hero{min-height:0!important;padding:28px 0 22px!important} }
+  /* Ogień — pasek NA ŻYWO w nowym stylu */
+  html[data-motyw="epicki"] .ticker{position:relative;height:42px!important;gap:0;border:0!important;border-bottom:1px solid #8a4a10!important;background:linear-gradient(180deg,rgba(30,8,5,.92),rgba(16,4,3,.92))!important;box-shadow:inset 0 1px 0 rgba(255,190,80,.12),0 4px 14px rgba(0,0,0,.35);font-size:.86rem!important;backdrop-filter:blur(6px)}
+  html[data-motyw="epicki"] .ticker::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,#ffc93a 30%,#ff7a1a 70%,transparent);opacity:.7}
+  html[data-motyw="epicki"] .ticker-tag{position:relative;z-index:1;gap:8px;padding:0 22px 0 18px!important;font-family:"Lilita One",Inter,sans-serif;font-weight:400!important;font-size:.92rem!important;letter-spacing:.06em!important;color:#fff!important;text-shadow:0 2px 0 #3a0804;background:linear-gradient(180deg,#d42a1c,#7d0f0a)!important;border:0!important;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);box-shadow:inset 0 1px 0 rgba(255,200,150,.35)}
+  html[data-motyw="epicki"] .ticker-tag::before{content:"";width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(255,255,255,.8);animation:tkPulse 1.4s infinite}
+  @keyframes tkPulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+  html[data-motyw="epicki"] .ticker-view{mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+  html[data-motyw="epicki"] .tk{display:inline-flex;align-items:center;gap:6px;margin:0 6px;padding:5px 14px!important;border-radius:999px;background:rgba(255,170,40,.08);border:1px solid rgba(255,170,40,.28);color:#f2dcc0!important;white-space:nowrap}
+  html[data-motyw="epicki"] .tk b{color:#ffc93a!important;font-weight:800}
+  html[data-motyw="epicki"] .tk::after{content:"◆"!important;position:absolute;right:-12px!important;font-size:.6rem;color:#ff7a1a!important}
+  html[data-motyw="epicki"] .tk .ic{color:#ffc93a}
+  html[data-motyw="epicki"] .ticker:hover .tk{border-color:rgba(255,190,80,.45)}
+  @media (min-width:761px){ html[data-motyw="epicki"] .ticker{padding-left:calc(1.25vw + clamp(56px,6.2vw,130px) + 14px)} }
+  @media (max-width:760px){ html[data-motyw="epicki"] .ticker{height:36px!important;font-size:.76rem!important} html[data-motyw="epicki"] .ticker-tag{font-size:.78rem!important;padding:0 18px 0 12px!important} }
+  /* ===== STYL GOBLIN (czyste tło + drewniane deski) ===== */
+  @media (min-width:761px){
+    html.gb body::before{content:"";position:fixed;inset:0;z-index:-1;background:#7fbf4a url(img/styl/goblin-tlo.jpg) center bottom/cover no-repeat}
+    html.gb body{background:transparent!important}
+    html.gb.gb-start body>nav,html.gb.gb-start .announce,html.gb.gb-start #ticker{display:none!important}
+    html.gb .gb-hero{background:none!important;min-height:0!important;padding:0!important;display:block!important;border:0!important}
+    html.gb .gb-hero>.wrap,html.gb .gb-hero::before,html.gb .gb-hero::after{display:none!important}
+    html.gb .gb-hero.lay-hide{display:none!important}
+    html.gb .gb-wood{background-color:#7a4c24;background-image:radial-gradient(circle at 10px 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at 10px calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),repeating-linear-gradient(180deg,transparent 0 30px,rgba(30,14,2,.55) 30px 33px,rgba(255,210,150,.12) 33px 34px),repeating-linear-gradient(90deg,rgba(255,220,170,.04) 0 2px,transparent 2px 9px,rgba(0,0,0,.05) 9px 11px,transparent 11px 23px),linear-gradient(180deg,#9b6434,#6e421c);border:3px solid #3a2008;border-radius:10px;box-shadow:inset 0 2px 0 rgba(255,220,160,.35),inset 0 -3px 0 rgba(0,0,0,.25),0 5px 0 #2e1a06,0 12px 22px rgba(0,0,0,.35)}
+    html.gb #start .dz-dash,html.gb #start .dz-strip{display:none!important}
+    html.gb section#start{padding-top:2vw!important}
+    html.gb body section.page-head{background:transparent!important;border-bottom:0!important}
+    html.gb .panel,html.gb .war,html.gb .kara,html.gb .news,html.gb .table-box,html.gb .stat,html.gb .live-war,html.gb .tile,html.gb .rec,html.gb .rank-card,html.gb section>.wrap>details,html.gb .faq details,html.gb .ep-card,html.gb .now-card{background-color:#7a4c24;background-image:radial-gradient(circle at 10px 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) 10px,#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at 10px calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),radial-gradient(circle at calc(100% - 10px) calc(100% - 10px),#d8b070 0 3px,#4a2c0e 3.5px 5px,transparent 5.5px),repeating-linear-gradient(180deg,transparent 0 30px,rgba(30,14,2,.55) 30px 33px,rgba(255,210,150,.12) 33px 34px),repeating-linear-gradient(90deg,rgba(255,220,170,.04) 0 2px,transparent 2px 9px,rgba(0,0,0,.05) 9px 11px,transparent 11px 23px),linear-gradient(180deg,#9b6434,#6e421c);border:3px solid #3a2008;border-radius:10px;box-shadow:inset 0 2px 0 rgba(255,220,160,.35),inset 0 -3px 0 rgba(0,0,0,.25),0 5px 0 #2e1a06,0 12px 22px rgba(0,0,0,.35)!important}
+  .gb-stage{display:none}
+    html.gb .gb-stage::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3.5%;background:linear-gradient(180deg,rgba(62,36,14,0),#4a2c12)}
+    html.gb .gb-stage{display:block;position:relative;width:100%;aspect-ratio:1561/688;background:url(img/styl/goblin.jpg) center/100% 100% no-repeat;font-family:"Lilita One",Inter,sans-serif}
+    html.gb .gb-el{position:absolute;display:flex;text-decoration:none;background:none;border:0;backdrop-filter:none;box-shadow:none}
+    html.gb .gb-logo{flex-direction:column;align-items:center;justify-content:center;line-height:.95;text-transform:uppercase;font-size:1.9vw;color:#ffd24a;text-shadow:0 .2vw 0 #3a2008,.12vw 0 0 #3a2008,-.12vw 0 0 #3a2008,0 -.12vw 0 #3a2008}
+    html.gb .gb-logo span:last-child{font-size:.82em}
+    html.gb .gb-nav{align-items:center;justify-content:space-around;padding:0 .6vw}
+    html.gb .gb-nav a{font-size:.95vw;color:#fff;text-shadow:0 .12vw 0 #2a1404,0 0 .3vw rgba(0,0,0,.5);padding:.3vw .5vw;border-radius:.4vw;white-space:nowrap}
+    html.gb .gb-nav a.on,html.gb .gb-nav a:hover{color:#ffe27a;background:rgba(0,0,0,.22)}
+    html.gb .gb-gold{align-items:center;justify-content:center;font-size:1.25vw;color:#4a2606;text-shadow:0 .08vw 0 rgba(255,240,190,.7)}
+    html.gb .gb-title{flex-direction:column;align-items:center;justify-content:center;gap:.6vw;text-align:center}
+    html.gb .gb-title b{font-weight:400;font-size:3.5vw;line-height:1;text-transform:uppercase;color:#fff;text-shadow:0 .3vw 0 #2a1404,.18vw 0 0 #2a1404,-.18vw 0 0 #2a1404,0 -.18vw 0 #2a1404,.18vw .18vw 0 #2a1404,-.18vw .18vw 0 #2a1404}
+    html.gb .gb-title i{font-style:normal;font-size:2.3vw;color:#ffd24a;text-shadow:0 .22vw 0 #2a1404,.14vw 0 0 #2a1404,-.14vw 0 0 #2a1404,0 -.14vw 0 #2a1404}
+    html.gb .gb-tag{justify-content:center;align-items:center;font-size:1.45vw;color:#fff;text-shadow:0 .16vw 0 #2a1404,.12vw 0 0 #2a1404,-.12vw 0 0 #2a1404,0 -.12vw 0 #2a1404,0 0 1vw rgba(0,0,0,.4)}
+    html.gb .gb-btn{justify-content:center;align-items:center;gap:.8vw;font-size:1.45vw;text-transform:uppercase;color:#fff4d0;text-shadow:0 .16vw 0 #2a1404;background-image:repeating-linear-gradient(180deg,transparent 0 .9vw,rgba(0,0,0,.14) .9vw 1vw),linear-gradient(180deg,#a86d38,#6e431c);border:.2vw solid #3a2008;border-radius:.7vw;box-shadow:inset 0 .15vw 0 rgba(255,220,160,.4),0 .3vw 0 #3a2008,0 .6vw 1.2vw rgba(0,0,0,.3)}
+    html.gb .gb-btn span{font-size:1.4em;line-height:0;color:#ffd24a}
+    html.gb .gb-btn:hover{filter:brightness(1.12)}
+    html.gb .gb-card{flex-direction:column;gap:.25vw;color:#fff;text-shadow:0 .1vw 0 #2a1404}
+    html.gb .gb-card h3{font-family:inherit;font-weight:400;font-size:1.5vw;line-height:1;color:#ffd24a;text-transform:uppercase;text-shadow:0 .16vw 0 #2a1404,.1vw 0 0 #2a1404,-.1vw 0 0 #2a1404;margin-bottom:.2vw}
+    html.gb .gb-card p{font-family:Inter,sans-serif;font-weight:700;font-size:.92vw;line-height:1.35}
+    html.gb .gb-card .gb-big{font-weight:400;font-size:2.3vw;line-height:1.05;color:#fff;text-shadow:0 .18vw 0 #2a1404,.12vw 0 0 #2a1404,-.12vw 0 0 #2a1404}
+    html.gb .gb-card a{margin-top:auto;font-family:Inter,sans-serif;font-weight:800;font-size:.85vw;color:#ffd24a}
+    html.gb .gb-card a:hover{text-decoration:underline}
+    html.gb .gb-stage{position:relative}
+    html.gb .gb-stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9%;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0));pointer-events:none}
+  }
+  @media (min-width:761px){ html.gb[data-motyw="dzien"] body>nav{background:repeating-linear-gradient(180deg,transparent 0 30px,rgba(30,14,2,.5) 30px 32px),linear-gradient(180deg,#9b6434,#6e421c)!important;border-bottom:3px solid #3a2008!important;box-shadow:0 4px 0 #2e1a06!important} }
+  html.gb[data-motyw="dzien"] .mtab{background:linear-gradient(180deg,#9b6434,#6e421c)!important}
+  @media (max-width:760px){ html.gb[data-motyw="dzien"] body{background:#7fbf4a url(img/styl/goblin-tlo.jpg) 12% top/auto 100vh no-repeat!important} html.gb .dz-hero,html.gb[data-motyw="dzien"] section,html.gb[data-motyw="dzien"] .page-head{background:transparent!important} html.gb .dz-hero::before{display:none} html.gb[data-motyw="dzien"] body>nav{background:linear-gradient(180deg,#9b6434,#6e421c)!important} }
+  @media (min-width:761px){
+    html.gb .gb-logo{font-size:2.75vw!important;line-height:.88!important;color:#ffd84a!important;text-shadow:0 .28vw 0 #2a1404,.2vw 0 0 #2a1404,-.2vw 0 0 #2a1404,0 -.2vw 0 #2a1404,.2vw .2vw 0 #2a1404,-.2vw .2vw 0 #2a1404!important}
+    html.gb .gb-logo span:last-child{font-size:.62em!important}
+    html.gb .gb-nav a{display:inline-flex;align-items:center;gap:.3vw}
+    html.gb .gb-nav a .ic{width:1vw;height:1vw;color:#ffd24a}
+    html.gb .gb-title{gap:.9vw!important}
+    html.gb .gb-title b{font-size:3.9vw!important}
+    html.gb .gb-title i{display:inline-block;padding:.35vw 2.2vw .45vw;color:#4a2606!important;text-shadow:0 .08vw 0 rgba(255,240,190,.7)!important;background:repeating-linear-gradient(180deg,transparent 0 1.2vw,rgba(120,70,0,.25) 1.2vw 1.3vw),linear-gradient(180deg,#f6d27a,#d8a040);border:.18vw solid #3a2008;border-radius:.5vw;box-shadow:inset 0 .12vw 0 rgba(255,250,220,.6),0 .25vw 0 #3a2008}
+    html.gb .gb-tag{font-size:1.6vw!important}
+  }
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
@@ -3212,7 +3278,7 @@ function rushHtml(r){
   if(items.length<2) return;
   const html=items.map(t=>`<span class="tk">${t}</span>`).join("");
   const tr=$("#tickerTrack"); tr.innerHTML=html+html; tr.style.animationDuration=Math.max(30,items.length*6)+"s";
-  $("#ticker .ticker-tag").textContent=en?"● LIVE":"● NA ŻYWO";
+  $("#ticker .ticker-tag").textContent=(document.documentElement.dataset.motyw==="epicki"?"":"● ")+(en?"LIVE":"NA ŻYWO");
   $("#ticker").hidden=false;
 })();
 
@@ -4348,7 +4414,7 @@ let saveLayoutState=()=>{};
     if($("#panel")) PAGES.push(["panel","Mój panel","👤",["panel"],"",""]);
     /* ===== STYLE_TRESC: każdy styl to osobna wersja strony (nazwy, opisy, co widać) ===== */
     const STYLE_TRESC={
-      epicki:{ stats:["Członków","Wygranych wojen"], hide:[], hideSel:["#fact"], tag:"● NA ŻYWO", short:{wojny:"War Hub",czlonkowie:"Ranking",start:"Start"},
+      epicki:{ stats:["Członków","Wygranych wojen"], hide:[], hideSel:["#fact"], tag:"NA ŻYWO", short:{wojny:"War Hub",czlonkowie:"Ranking",start:"Start"},
         titles:{wojny:["War Hub","Wojny klanu","Wojna na żywo, zwiad, mapa ataków i cała historia wojen."],czlonkowie:["Ranking","Gracze klanu",null],kadra:["O klanie","Kadra i MVP",null],
           kalkulator:["Poradniki","Poradnik dla każdego TH",null],wymagania:["Rekrutacja","Wymagania",null]},
         pages:{start:["Strona główna","",""],wojny:["War Hub","War Hub","Wojna na żywo, zwiad przeciwnika, mapa ataków, historia, kary i ranking wojowników."],
@@ -4520,6 +4586,27 @@ let saveLayoutState=()=>{};
        +`<div class="ep-card dz-c"><img class="dz-ic" src="${IMG("prezent.png")}" alt=""><div><h3>Oferta</h3><p>Wojny, CWL,<br>Rajdy, poradniki</p></div><a class="dz-link" href="#wojny" aria-label="Oferta"></a></div>`
        +`<div class="ep-card dz-c"><svg class="dz-ic dz-dc" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.6 9-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2.1a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4a12.6 12.6 0 0 1-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7ZM8.3 15.3c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm7.4 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg><div><h3>Discord</h3><p>Dołącz na nasz serwer!</p></div><a class="dz-link" href="https://discord.gg/7SquD7SF3" target="_blank" rel="noopener" aria-label="Discord"></a></div>`;
       strip.className="dz-strip"; strip.innerHTML=`<i></i>${I("crown")}<b>ARMIA MAURYCEGO – Razem silniejsi!</b>${I("crown")}<i></i>`;
+      /* ===== GOBLIN: scena 1:1 z obrazka ===== */
+      if(document.documentElement.classList.contains("gb")){
+        const P=(l,t,w,h)=>`left:${(l/1561*100).toFixed(2)}%;top:${(t/688*100).toFixed(2)}%;width:${(w/1561*100).toFixed(2)}%;height:${(h/688*100).toFixed(2)}%`;
+        const navL=[["start","Strona główna"],["klan","O klanie"],["wojny","War Hub"],["liga","Liga"],["czlonkowie","Ranking"],["poradnik","Poradniki"],["dolacz","Rekrutacja"]].filter(x=>PAGES.some(p=>p[0]===x[0]));
+        const st=document.createElement("div"); st.className="gb-stage";
+        st.innerHTML=`
+          <a class="gb-el gb-logo" href="#start" style="${P(52,62,246,120)}"><span>Armia</span><span>Maurycego</span></a>
+          <div class="gb-el gb-nav" style="${P(380,24,824,56)}">${navL.map(x=>`<a href="#${x[0]}" data-page="${x[0]}">${I({start:"home",klan:"shield",wojny:"swords",liga:"trophy",czlonkowie:"medal",poradnik:"book",dolacz:"users"}[x[0]])}${x[1]}</a>`).join("")}<a href="https://discord.gg/7SquD7SF3" target="_blank" rel="noopener">${I("chat")}Discord</a></div>
+          <a class="gb-el gb-gold" href="${GAME}" style="${P(1284,24,238,62)}">Dołącz do klanu!</a>
+          <div class="gb-el gb-title" style="${P(540,108,570,190)}"><b>Armia Maurycego</b><i>Razem silniejsi!</i></div>
+          <div class="gb-el gb-tag" style="${P(430,318,700,40)}">Twórzmy razem historię naszego klanu!</div>
+          <a class="gb-el gb-btn" href="${GAME}" style="${P(640,366,280,58)}">Dołącz do klanu <span>›</span></a>
+          <div class="gb-el gb-card" style="${P(176,494,262,166)}"><h3>O klanie</h3><p>Rozwijaj się z nami, bierz udział w wojnach i ciesz się grą!</p><a href="#klan">Dowiedz się więcej →</a></div>
+          <div class="gb-el gb-card" style="${P(590,494,210,166)}"><h3>Statystyki</h3><b class="gb-big">${MEMBERS.length} / 50</b><p>Członków</p><a href="#osiagniecia">Dowiedz się →</a></div>
+          <div class="gb-el gb-card" style="${P(948,494,210,166)}"><h3>War Hub</h3><p>${hubLab.replace(/:$/,"")}:</p><b class="gb-big" id="gbHubT">${hubT?"…":"—"}</b><a href="#wojny">Dowiedz się →</a></div>
+          <div class="gb-el gb-card" style="${P(1302,494,200,166)}"><h3>Rekrutacja</h3><p>Min. TH8+<br>Aktywność<br>Dobra atmosfera</p><a href="#wymagania">Wymagania →</a></div>`;
+        hero.classList.add("gb-hero"); hero.prepend(st);
+        if(hubT){ const el=st.querySelector("#gbHubT"); const tk=()=>{ const d=Math.max(0,hubT-Date.now())/1000; const h=Math.floor(d/3600), m=Math.floor(d%3600/60); el.textContent=h>=24?`${Math.floor(h/24)}d ${h%24}h`:`${h}h ${m}m`; }; tk(); setInterval(tk,30000); }
+        const mark=e=>{ const pg=(e&&e.detail)||"start"; document.documentElement.classList.toggle("gb-start",pg==="start"); st.querySelectorAll(".gb-nav a[data-page]").forEach(a=>a.classList.toggle("on",a.dataset.page===pg)); };
+        addEventListener("am:page",mark); mark({detail:(location.hash.slice(1)?null:"start")||"start"});
+      }
     }
     }
     const wyd=$("#wydarzenia"); home.after(wyd); const ank=$("#ankiety"); if(ank) home.after(ank); const ogl=$("#ogloszenia"); if(ogl) home.after(ogl);
@@ -4593,6 +4680,10 @@ let saveLayoutState=()=>{};
     addEventListener("keydown",e=>{ const tag=(e.target.tagName||"").toLowerCase(); if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); pal.hidden?openS():closeS(); }
       else if(e.key==="/"&&pal.hidden&&!["input","textarea","select"].includes(tag)){ e.preventDefault(); openS(); } else if(e.key==="Escape"){ if(!pal.hidden) closeS(); closeMore(); } });
     if(/^(epicki|dzien)$/.test(document.documentElement.dataset.motyw||"")) document.querySelectorAll(".page-head h1").forEach(h=>{ [...h.childNodes].forEach(n=>{ if(n.nodeType===3&&n.nodeValue.trim()){ const sp=document.createElement("span"); sp.className="og-t"; sp.textContent=n.nodeValue.trim(); n.replaceWith(sp); } }); });
+    // Tytuł podstrony = przycisk: przewija do treści
+    document.querySelectorAll(".page-head").forEach(h=>{ const t=h.querySelector("h1"); if(!t) return; const P=PAGES.find(p=>p[0]===h.dataset.page); if(!P) return;
+      t.classList.add("ph-btn"); t.setAttribute("role","button"); t.tabIndex=0; t.title="Przejdź do treści";
+      const go=()=>{ const id=P[3].find(x=>$("#"+x)); if(id) scrollToEl(id); }; t.addEventListener("click",go); t.addEventListener("keydown",e=>{ if(e.key==="Enter") go(); }); });
     const final=document.querySelector("section.final");
     const pageOf=id=>{ if(PAGES.some(p=>p[0]===id)) return id; const sec=secOf(id)||id; if(sec==="wydarzenia"||sec==="ogloszenia"||sec==="ankiety"||sec==="skroty") return "start"; const p=PAGES.find(p=>p[3].includes(sec)); return p?p[0]:null; };
     const show=(page,id)=>{
@@ -4625,8 +4716,8 @@ let saveLayoutState=()=>{};
 })();
 
 (function(){ let t=null; try{t=localStorage.getItem("am_motyw_test");}catch(e){} if(t===null) return;
-  const cur=document.documentElement.dataset.motyw||""; const d=document.createElement("div"); d.className="mot-switch no-ico";
-  d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["zloto","Złoto"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
+  const cur=document.documentElement.classList.contains("gb")?"goblin":(document.documentElement.dataset.motyw||""); const d=document.createElement("div"); d.className="mot-switch no-ico";
+  d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["goblin","Goblin"],["zloto","Złoto"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
   d.querySelector("button").onclick=()=>{ location.href=location.pathname+"?styl=wyloguj"; }; document.body.appendChild(d); })();
 applyLang();
 /* ===== Ikony zamiast emoji (jednolity wygląd na każdym telefonie) ===== */
