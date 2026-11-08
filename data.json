@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T18:46:07.752Z",
+  "updated": "2026-11-08T19:01:25.184Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -6381,8 +6381,8 @@
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
-      "sig": "0|3259903|2973714|0|23|0|0|0|0|99|11",
-      "last": "2026-11-07T05:31:17.004Z",
+      "sig": "0|3677695|3826126|0|23|0|0|0|0|99|11",
+      "last": "2026-11-08T19:01:25.170Z",
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
@@ -8642,6 +8642,11 @@
             "name": "Minion Prince",
             "level": 2,
             "max": 95
+          },
+          {
+            "name": "Grand Warden",
+            "level": 1,
+            "max": 85
           }
         ]
       },
@@ -8687,8 +8692,8 @@
         "cg": 0,
         "don": 23,
         "capLoot": 0,
-        "gold": 3259903,
-        "elixir": 2973714,
+        "gold": 3677695,
+        "elixir": 3826126,
         "capContrib": 0,
         "wins": 0
       }
@@ -9381,7 +9386,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
