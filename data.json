@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T17:31:27.651Z",
+  "updated": "2026-11-08T17:46:07.021Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -53,8 +53,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 126,
-        "pct": 3800,
+        "stars": 128,
+        "pct": 3884,
         "wins": 2,
         "played": 5
       },
@@ -2628,11 +2628,11 @@
       }
     ]
   },
-  "visits": 96,
+  "visits": 98,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 6,
     "members": 12
   },
   "raids": [
@@ -7736,7 +7736,7 @@
       },
       "rush": {
         "pct": 74.6,
-        "troops": 58.2,
+        "troops": 58.6,
         "spells": 50,
         "heroes": 91,
         "top": [
@@ -9514,7 +9514,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
@@ -9525,14 +9525,14 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
+        "pct": 1.9,
         "troops": 0,
         "spells": 0,
-        "heroes": 10,
+        "heroes": 6.7,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 17,
+            "lvl": 18,
             "need": 20
           }
         ]
