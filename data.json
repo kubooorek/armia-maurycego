@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T19:31:22.184Z",
+  "updated": "2026-11-08T19:46:00.422Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 149,
-        "pct": 4694,
+        "stars": 151,
+        "pct": 4775,
         "wins": 3,
         "played": 6
       },
@@ -2330,7 +2330,7 @@
             {
               "pos": 6,
               "th": 13,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 7,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 2,
-          "pct": 6.4,
-          "attacks": 1,
+          "stars": 4,
+          "pct": 11.8,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -3231,9 +3231,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 0,
-      "them": 2,
+      "them": 4,
       "pct": 0,
-      "themPct": 6.4,
+      "themPct": 11.8,
       "themBases": [
         {
           "pos": 1,
@@ -6599,8 +6599,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|414074134|414453174|25150|1467|636760|726415|0|82|127|12",
-      "last": "2026-11-08T19:31:22.169Z",
+      "sig": "0|419455300|419629638|25150|1467|636760|726415|0|82|127|12",
+      "last": "2026-11-08T19:46:00.411Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8400,8 +8400,8 @@
         "cg": 25150,
         "don": 1467,
         "capLoot": 636760,
-        "gold": 414074134,
-        "elixir": 414453174,
+        "gold": 419455300,
+        "elixir": 419629638,
         "capContrib": 726415,
         "wins": 0
       }
