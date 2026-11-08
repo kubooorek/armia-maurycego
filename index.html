@@ -32,7 +32,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("booting");setTimeout(function(){document.documentElement.classList.remove("booting")},7000);</script>
 <script>/* Styl strony: "" = obecny, "epicki" = ogień i złoto, "fiolet" = fioletowy mrok, "dzien" = jasny dzień jak w grze, "zloto" = czarno-złoty. Test: ?styl=epicki / ?styl=wyloguj. Na stałe: wpisz nazwę w MOTYW. */
-var MOTYW="";
+var MOTYW="epicki";
 (function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
 var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+One"};if(F[m]){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family="+F[m]+"&display=swap";document.head.appendChild(l);}}catch(e){}})();</script>
 <style>
@@ -1210,6 +1210,176 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   @media (max-width:760px){ .og-cta{display:none} .og-hero{min-height:340px;background-position:16% center!important} .og-hero::before{background:linear-gradient(180deg,rgba(20,6,4,.35),rgba(20,6,4,.55))!important} .og-hero .hero-ctas{justify-content:center} .og-hero .hero-ctas .btn{width:auto!important}
     html[data-motyw="epicki"] .brand img{height:44px!important;margin:0!important} .og-img{width:84px!important} .og-w .og-img{width:110px!important}
     html[data-motyw="epicki"] .ep-strip{padding-right:0} .og-logo{display:none} html[data-motyw="epicki"] .nav-right .m-join{display:inline-flex!important} }
+  /* ===== OGIEŃ — wszystkie zakładki ===== */
+  .lay-pages section.solo>.wrap>.eyebrow{display:none!important}
+  html[data-motyw="epicki"] .page-head{background:#1a0806 url(img/styl/ogien-hero.jpg) center/cover no-repeat;border-bottom:2px solid #8a4a10;padding:34px 0 26px;text-align:center;min-height:clamp(220px,17vw,300px);display:flex;align-items:center}
+  html[data-motyw="epicki"] .page-head::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,6,4,.5),rgba(20,6,4,.15) 40%,rgba(20,6,4,.65));pointer-events:none}
+  html[data-motyw="epicki"] .page-head .wrap{position:relative;z-index:1;width:100%}
+  html[data-motyw="epicki"] .page-head .eyebrow{color:#ffc93a;text-shadow:0 2px 0 #2a0a04;font-size:.78rem}
+  html[data-motyw="epicki"] .page-head h1{position:relative;display:inline-flex;align-items:center;gap:12px;isolation:isolate;margin:10px auto 10px!important;padding:6px 34px 10px;font-size:clamp(2rem,4.4vw,3.4rem)!important;line-height:1.05;background:none!important;color:#ffc93a!important;-webkit-text-fill-color:initial!important;filter:none!important;text-transform:uppercase}
+  html[data-motyw="epicki"] .page-head h1 .og-t{background-image:linear-gradient(180deg,#fff6c8 0%,#ffd24a 42%,#f0a000 64%,#ffcf4a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 3px 0 #2a0a04) drop-shadow(0 6px 10px rgba(0,0,0,.5))}
+  html[data-motyw="epicki"] .page-head .eyebrow{display:block;text-align:center}
+  html[data-motyw="epicki"] .page-head h1::before{content:"";position:absolute;z-index:-1;inset:4px 0 2px;background:linear-gradient(180deg,#c3241a,#6d0c08);border:3px solid #f0a020;border-radius:6px;box-shadow:0 5px 0 #3a0804,0 0 26px rgba(255,80,20,.4);transform:perspective(400px) rotateX(8deg)}
+  html[data-motyw="epicki"] .page-head h1 .ic{color:#ffc93a;filter:none}
+  html[data-motyw="epicki"] .page-head p{color:#fff;font-weight:600;text-shadow:0 2px 6px rgba(0,0,0,.8);max-width:680px;margin:0 auto}
+  /* sekcje */
+  html[data-motyw="epicki"] section:not(.page-head)>.wrap>.eyebrow{display:flex;align-items:center;gap:10px;color:#ff8a3a}
+  html[data-motyw="epicki"] section:not(.page-head)>.wrap>.eyebrow::before{content:"";width:22px;height:2px;background:#e0302a}
+  html[data-motyw="epicki"] section>.wrap>.sec-title{display:flex;align-items:center;gap:14px;filter:drop-shadow(0 2px 0 #2a0a04)}
+  html[data-motyw="epicki"] section>.wrap>.sec-title::after{content:"";flex:1;height:2px;margin-left:6px;background:linear-gradient(90deg,#ffc93a,rgba(255,150,40,0));opacity:.6}
+  html[data-motyw="epicki"] .panel,html[data-motyw="epicki"] .war,html[data-motyw="epicki"] .kara,html[data-motyw="epicki"] .news,html[data-motyw="epicki"] .table-box,html[data-motyw="epicki"] .rank-card,html[data-motyw="epicki"] .fame-card,html[data-motyw="epicki"] .calc-card,html[data-motyw="epicki"] .base,html[data-motyw="epicki"] .bcard,html[data-motyw="epicki"] .tile,html[data-motyw="epicki"] .pod,html[data-motyw="epicki"] .htl-card,html[data-motyw="epicki"] .pn-card,html[data-motyw="epicki"] .live-war,html[data-motyw="epicki"] section>.wrap>details,html[data-motyw="epicki"] .faq details,html[data-motyw="epicki"] .rec{position:relative;border:1.5px solid #b06a14!important;background:linear-gradient(180deg,rgba(48,16,10,.96),rgba(24,7,5,.96))!important;box-shadow:inset 0 0 0 1px rgba(255,200,90,.08),0 0 0 1px #200704,0 10px 26px rgba(0,0,0,.45)!important}
+  html[data-motyw="epicki"] .panel::after,html[data-motyw="epicki"] .live-war::after,html[data-motyw="epicki"] .table-box::after{content:"";position:absolute;inset:4px;border:1px solid rgba(255,190,80,.12);border-radius:inherit;pointer-events:none}
+  html[data-motyw="epicki"] .panel .panel,html[data-motyw="epicki"] .panel details,html[data-motyw="epicki"] .panel .war,html[data-motyw="epicki"] .panel .tile,html[data-motyw="epicki"] .panel .rec{background:rgba(0,0,0,.22)!important;border:1px solid rgba(176,106,20,.45)!important;box-shadow:none!important}
+  html[data-motyw="epicki"] .panel .panel::after{display:none}
+  html[data-motyw="epicki"] .fame-label{font-family:"Lilita One",Inter,sans-serif;font-weight:400;font-size:.95rem;letter-spacing:.05em;color:#ffc93a}
+  html[data-motyw="epicki"] .stat{border:1.5px solid #b06a14!important}
+  html[data-motyw="epicki"] .subnav{background:linear-gradient(180deg,#2a0d08,#160605)!important;border-bottom:2px solid #8a4a10}
+  html[data-motyw="epicki"] .subnav a{color:#f5e6cc}
+  html[data-motyw="epicki"] .subnav a.on{background:linear-gradient(180deg,#ffe58a,#ffbe2e 50%,#e48b00)!important;color:#3a1600!important;border:1px solid #7a3d00;box-shadow:0 2px 0 #6a2e00}
+  html[data-motyw="epicki"] .btn-ghost,html[data-motyw="epicki"] .more-btn,html[data-motyw="epicki"] .btn-sm:not(.btn-gold){border:1.5px solid #b06a14!important;background:rgba(40,12,8,.8)!important;color:#ffc93a!important}
+  html[data-motyw="epicki"] .final{background:#1a0806 url(img/styl/ogien-hero.jpg) center/cover no-repeat;position:relative;border-top:2px solid #8a4a10}
+  html[data-motyw="epicki"] .final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(20,6,4,.55),rgba(20,6,4,.25) 70%)}
+  html[data-motyw="epicki"] .final .wrap{position:relative}
+  html[data-motyw="epicki"] .final h2{font-family:"Lilita One",Inter,sans-serif;text-transform:uppercase;font-size:clamp(2rem,4vw,3rem);background:linear-gradient(180deg,#fff6c8,#ffd24a 45%,#f0a000);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #2a0a04)}
+  html[data-motyw="epicki"] .final p{color:#fff;text-shadow:0 2px 6px #000}
+  html[data-motyw="epicki"] footer{background:linear-gradient(180deg,#160605,#0a0303)!important}
+  @media (max-width:760px){ html[data-motyw="epicki"] .page-head{min-height:170px;background-position:16% center} html[data-motyw="epicki"] .page-head h1{font-size:1.8rem!important;padding:4px 18px 8px} html[data-motyw="epicki"] section>.wrap>.sec-title::after{display:none} }
+  /* ===== DZIEŃ 1:1 ===== */
+  html[data-motyw="dzien"] #ticker,html[data-motyw="dzien"] .lang-btn,html[data-motyw="dzien"] .srch-btn{display:none!important}
+  html[data-motyw="dzien"] .brand{font-size:0;gap:0}
+  html[data-motyw="dzien"] .brand img{height:62px!important;margin:-4px 0 -18px!important;position:relative;z-index:2;filter:drop-shadow(0 4px 8px rgba(0,0,0,.4))}
+  html[data-motyw="dzien"] nav{background:linear-gradient(180deg,#6fbaf0,#4f9fe0)!important;border-bottom:3px solid #3a2008!important;box-shadow:0 3px 0 rgba(0,0,0,.15)!important}
+  html[data-motyw="dzien"] nav .wrap{max-width:1240px}
+  html[data-motyw="dzien"] .lay-pages .nav-links{gap:4px}
+  html[data-motyw="dzien"] .nav-links a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px!important;font-family:"Lilita One",Inter,sans-serif;font-weight:400;font-size:.88rem!important;color:#fff8ea!important;text-shadow:0 2px 0 #3a2008;background:linear-gradient(180deg,#a86d38,#7a4c22);border:2px solid #3a2008;border-radius:6px;box-shadow:inset 0 2px 0 rgba(255,220,160,.35),0 3px 0 #3a2008;background-image:repeating-linear-gradient(180deg,transparent 0 10px,rgba(0,0,0,.12) 10px 11px),linear-gradient(180deg,#a86d38,#7a4c22)}
+  html[data-motyw="dzien"] .nav-links a .ic{width:17px;height:17px;color:#ffd24a}
+  html[data-motyw="dzien"] .lay-pages .nav-links a.on{color:#ffe27a!important;background-image:repeating-linear-gradient(180deg,transparent 0 10px,rgba(0,0,0,.12) 10px 11px),linear-gradient(180deg,#c48446,#8f5a2a)!important}
+  html[data-motyw="dzien"] .nav-links a.nav-cta{display:none!important}
+  html[data-motyw="dzien"] .lg-btn span{display:none}
+  html[data-motyw="dzien"] .announce{background:#fff7d6!important}
+  .dz-hero{background:#7cc4f5 url(img/styl/dzien-hero.jpg) center/cover no-repeat!important;min-height:clamp(320px,25vw,480px);display:flex;align-items:center;padding:24px 0 30px!important;border-bottom:3px solid #3a2008!important}
+  .dz-hero .crest,.dz-hero .badge-new,.dz-hero .tag-chip,.dz-hero .stats,.dz-hero .fact,.dz-hero .btn-discord,.dz-hero .season-chip,.dz-hero .ep-laur{display:none!important}
+  .dz-hero h1{margin:0 0 4px!important;font-size:clamp(2.4rem,5.6vw,4.6rem)!important;line-height:1!important;background:none!important}
+  .dz-t{text-shadow:none!important;background:linear-gradient(180deg,#fffbe6 0%,#ffe9a0 50%,#ffc93a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(3px 0 0 #3a2008) drop-shadow(-3px 0 0 #3a2008) drop-shadow(0 3px 0 #3a2008) drop-shadow(0 -3px 0 #3a2008) drop-shadow(0 6px 0 #3a2008) drop-shadow(0 10px 14px rgba(0,0,0,.3));text-transform:uppercase}
+  .dz-sign{position:relative;display:table;margin:4px auto 12px;padding:8px 40px 10px;font-family:"Lilita One",Inter,sans-serif;font-size:clamp(1.3rem,2.6vw,2rem);font-style:italic;color:#3a2008;text-shadow:0 1px 0 rgba(255,240,200,.6);background-image:repeating-linear-gradient(180deg,transparent 0 16px,rgba(90,50,10,.18) 16px 18px),linear-gradient(180deg,#f2c46a,#d89a3a);border:3px solid #4a2c0e;border-radius:6px;box-shadow:inset 0 2px 0 rgba(255,250,220,.6),0 4px 0 #3a2008,0 10px 18px rgba(0,0,0,.25)}
+  .dz-sign::before,.dz-sign::after{content:"";position:absolute;top:50%;width:46px;height:18px;margin-top:-9px;background:linear-gradient(180deg,#a86d38,#7a4c22);border:3px solid #4a2c0e;z-index:-1}
+  .dz-sign::before{left:-34px;clip-path:polygon(0 50%,30% 0,100% 0,100% 100%,30% 100%)} .dz-sign::after{right:-34px;clip-path:polygon(0 0,70% 0,100% 50%,70% 100%,0 100%)}
+  .dz-sub{color:#fff;font-weight:800;font-size:clamp(.95rem,1.5vw,1.15rem);text-shadow:0 2px 0 #3a2008,0 0 8px rgba(0,0,0,.5);margin:0 auto 16px;line-height:1.4}
+  .dz-hero .hero-ctas .btn-gold{padding:13px 36px!important;font-size:1.2rem!important;border-radius:12px!important;text-transform:uppercase}
+  .dz-hero .hero-ctas .btn-gold svg{display:none}
+  .dz-hero .hero-ctas .btn-gold::after{content:"›";font-size:1.3em;margin-left:8px}
+  html[data-motyw="dzien"] #start{background:linear-gradient(180deg,#78c04a,#5aa233);border-top:0}
+  .dz-dash{grid-template-columns:repeat(4,1fr)!important}
+  .dz-c{flex-direction:row!important;align-items:center;gap:14px!important;min-height:0!important;padding:16px!important}
+  .dz-c h3{font-size:1.25rem!important;margin-bottom:4px}
+  .dz-c p{max-width:none!important;font-size:.9rem!important;color:#fff8ea!important}
+  .dz-c .ep-check{font-size:.86rem}
+  .dz-ic{width:66px;height:auto;flex:none;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35))}
+  .dz-dc{width:62px;color:#fff;filter:drop-shadow(0 3px 0 #3a2008)}
+  .dz-link{position:absolute;inset:0;z-index:2}
+  .dz-c::before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#c9a04a;box-shadow:0 0 0 2px #3a2008;top:8px;left:8px}
+  .dz-strip{display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0 18px;font-family:"Lilita One",Inter,sans-serif;color:#fff;text-shadow:0 2px 0 #3a2008;font-size:1.15rem}
+  .dz-strip i{flex:1;max-width:200px;height:3px;background:linear-gradient(90deg,transparent,#ffe27a)} .dz-strip i:last-child{transform:scaleX(-1)}
+  .dz-strip .ic{width:26px;height:26px;color:#ffd24a;filter:drop-shadow(0 2px 0 #3a2008)}
+  /* Dzień — pozostałe zakładki */
+  html[data-motyw="dzien"] .page-head{background:#7cc4f5 url(img/styl/dzien-hero.jpg) center/cover no-repeat!important;border-bottom:3px solid #3a2008;padding:34px 0 26px;text-align:center;min-height:clamp(220px,17vw,300px);display:flex;align-items:center}
+  html[data-motyw="dzien"] .page-head .wrap{position:relative;z-index:1;width:100%}
+  html[data-motyw="dzien"] .page-head .eyebrow{display:none}
+  html[data-motyw="dzien"] .page-head h1{position:relative;display:inline-flex;align-items:center;gap:12px;margin:0 auto 10px!important;padding:8px 36px 10px;font-size:clamp(1.8rem,3.8vw,3rem)!important;background-image:repeating-linear-gradient(180deg,transparent 0 16px,rgba(90,50,10,.18) 16px 18px),linear-gradient(180deg,#a86d38,#7a4c22)!important;border:3px solid #3a2008;border-radius:8px;box-shadow:inset 0 2px 0 rgba(255,220,160,.35),0 5px 0 #3a2008,0 10px 18px rgba(0,0,0,.25);color:#ffe27a!important;text-shadow:0 3px 0 #3a2008!important;-webkit-text-fill-color:initial!important}
+  html[data-motyw="dzien"] .page-head h1 .og-t{color:#fff3c8;text-transform:uppercase}
+  html[data-motyw="dzien"] .page-head h1 .ic{color:#ffd24a}
+  html[data-motyw="dzien"] .page-head p{color:#fff!important;font-weight:800;text-shadow:0 2px 0 #3a2008,0 0 8px rgba(0,0,0,.5);max-width:680px;margin:0 auto}
+  html[data-motyw="dzien"] .subnav{background:linear-gradient(180deg,#9b6634,#6e431c)!important}
+  html[data-motyw="dzien"] .final{background:#7cc4f5 url(img/styl/dzien-hero.jpg) center/cover no-repeat}
+  @media (max-width:1100px){ html[data-motyw="dzien"] .nav-links a{padding:7px 9px!important;font-size:.78rem!important} html[data-motyw="dzien"] .nav-links a .ic{display:none} }
+  @media (max-width:900px){ .dz-dash{grid-template-columns:1fr 1fr!important} }
+  @media (max-width:760px){ .dz-hero{min-height:360px;background-position:12% center!important} .dz-hero::before{content:"";position:absolute;inset:0;background:rgba(80,140,200,.35)} .dz-dash{grid-template-columns:1fr!important} html[data-motyw="dzien"] .brand img{height:44px!important;margin:0!important} html[data-motyw="dzien"] .page-head{min-height:170px;background-position:12% center!important} .dz-strip{font-size:.95rem} .dz-hero .hero-ctas .btn{width:auto!important} .dz-hero .hero-ctas{justify-content:center} }
+  /* Dzień — bliżej obrazka */
+  html[data-motyw="dzien"] .announce{display:none!important}
+  html[data-motyw="dzien"] nav{background:linear-gradient(180deg,#4f8fdc,#5699e0)!important;border-bottom:0!important;box-shadow:none!important}
+  html[data-motyw="dzien"] .brand img{height:62px!important;margin:-4px 0 -14px!important}
+  .dz-hero{min-height:clamp(340px,31vw,560px)!important;padding:10px 0 90px!important;background-position:center top!important;border-bottom:0!important}
+  html[data-motyw="dzien"] #start{background:linear-gradient(180deg,#6dbb3c 0%,#5aa233 40%,#3f7d24 100%)!important;padding-top:0!important}
+  html[data-motyw="dzien"] .dz-dash{margin-top:-78px;position:relative;z-index:2}
+  .dz-c{border:3px solid #3a2008!important;background-image:repeating-linear-gradient(180deg,transparent 0 30px,rgba(0,0,0,.16) 30px 32px),linear-gradient(180deg,#8a5a2e,#6a4220)!important}
+  .dz-c::after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#c9a04a;box-shadow:0 0 0 2px #3a2008,  0 0 0 0 transparent;top:8px;right:8px}
+  .dz-c h3{color:#ffd24a!important;text-transform:uppercase}
+  .dz-ic{width:74px;border-radius:12px}
+  .dz-strip{background:linear-gradient(180deg,#2f6b1e,#24561a);margin:16px -100vw 18px;padding:12px 100vw;border-top:2px solid #1d4214;border-bottom:2px solid #1d4214}
+  @media (max-width:760px){ html[data-motyw="dzien"] .brand img{height:52px!important;margin:0!important} html[data-motyw="dzien"] .dz-dash{margin-top:-50px} .dz-strip{margin:16px 0 18px;padding:12px} }
+  /* ===== tło z obrazkiem na całej stronie ===== */
+  html[data-motyw="epicki"] body{background:#140606 url(img/styl/ogien-bg.jpg) center bottom/cover no-repeat fixed!important}
+  html[data-motyw="epicki"] section:not(.hero):not(.page-head):not(.final){background:linear-gradient(180deg,rgba(18,6,4,.72),rgba(18,6,4,.55))!important}
+  html[data-motyw="dzien"] body{background:#78b8ec url(img/styl/dzien-bg.jpg) center bottom/cover no-repeat fixed!important}
+  html[data-motyw="dzien"] section:not(.hero):not(.page-head):not(.final){background:linear-gradient(180deg,rgba(90,150,210,.28),rgba(70,130,50,.22))!important}
+  html[data-motyw="dzien"] #start{background:transparent!important}
+  html[data-motyw="dzien"] section>.wrap>.sec-lead,html[data-motyw="dzien"] section>.wrap>p,html[data-motyw="dzien"] section>.wrap>.eyebrow,html[data-motyw="dzien"] .updated{color:#fff!important;text-shadow:0 2px 0 #3a2008,0 0 6px rgba(0,0,0,.5)}
+  @media (max-width:760px){ html[data-motyw="epicki"] body,html[data-motyw="dzien"] body{background-attachment:scroll!important;background-size:auto 100vh!important;background-position:center top!important} }
+  /* Ogień — układ 1:1 z projektem: cała szerokość ekranu */
+  @media (min-width:761px){
+    html[data-motyw="epicki"] nav .wrap,html[data-motyw="epicki"] .og-hero .wrap,html[data-motyw="epicki"] #start>.wrap{max-width:min(1640px,96vw)}
+    html[data-motyw="epicki"] .og-hero{background:#1c0806 url(img/styl/ogien-hero.jpg) center bottom/cover no-repeat!important;min-height:max(380px,46vh)!important;padding:20px 0 26px!important;border-bottom:0!important}
+    html[data-motyw="epicki"] .og-hero::before{background:linear-gradient(180deg,rgba(20,6,4,.25),transparent 30%,transparent 80%,rgba(28,8,6,.9))!important}
+    html[data-motyw="epicki"] section#start{background:#1c0806 url(img/styl/ogien-dol.jpg) center top/100% auto repeat-y!important;padding-top:4px!important}
+    html[data-motyw="epicki"] #start .ep-dash{gap:16px}
+    html[data-motyw="epicki"] #start .ep-card{min-height:210px}
+  }
+  /* Ogień: pod kafelkami jednolite ciemne, żarzące się tło (bez rozmazanych postaci) */
+  html[data-motyw="epicki"] body{background:#1c0806 url(img/styl/ogien-dol.jpg) center top/100% auto repeat-y!important;background-attachment:scroll!important}
+  html[data-motyw="epicki"] section:not(.og-hero):not(.page-head):not(.final){background:transparent!important}
+  html[data-motyw="epicki"] section#start{background:transparent!important}
+  /* Ogień — 1:1 z projektem (proporcje liczone od szerokości ekranu) */
+  @media (min-width:761px){
+    html[data-motyw="epicki"] .announce{display:none!important}
+    html[data-motyw="epicki"] body{background:#170606 url(img/styl/ogien-dol.jpg) center top/100% auto repeat-y!important;background-attachment:scroll!important}
+    html[data-motyw="epicki"] section#start,html[data-motyw="epicki"] section:not(.og-hero):not(.page-head):not(.final){background:transparent!important}
+    html[data-motyw="epicki"] nav .wrap,html[data-motyw="epicki"] #start>.wrap{max-width:97.5vw!important;padding-left:0;padding-right:0}
+    html[data-motyw="epicki"] .brand img{height:clamp(56px,6.2vw,130px)!important;margin:-6px 0 calc(-1 * clamp(20px,3.4vw,72px))!important}
+    html[data-motyw="epicki"] .og-hero{background:#1c0806 url(img/styl/ogien-hero.jpg) center top/100% auto no-repeat!important;height:21.2vw!important;min-height:0!important;padding:0!important;display:flex!important;align-items:center}
+    html[data-motyw="epicki"] .og-hero::before{background:linear-gradient(180deg,transparent 70%,rgba(23,6,6,.95))!important}
+    html[data-motyw="epicki"] .og-hero h1{font-size:clamp(30px,3.7vw,80px)!important;margin:clamp(14px,1.6vw,34px) auto 0!important}
+    html[data-motyw="epicki"] .og-motto{font-size:clamp(13px,1.3vw,26px)!important;margin:.2vw 0 .7vw!important}
+    html[data-motyw="epicki"] .og-motto i{width:5vw}
+    html[data-motyw="epicki"] .og-hero .hero-ctas .btn-gold{padding:clamp(8px,0.75vw,16px) clamp(18px,2.2vw,44px)!important;font-size:clamp(13px,1.1vw,22px)!important}
+    html[data-motyw="epicki"] section#start{padding:.6vw 0 2vw!important}
+    html[data-motyw="epicki"] #start .ep-dash{gap:.9vw!important;margin-bottom:.9vw!important}
+    html[data-motyw="epicki"] #start .ep-card{min-height:10.2vw!important;padding:clamp(10px,0.9vw,18px) clamp(12px,1.2vw,24px)!important;gap:.5vw!important}
+    html[data-motyw="epicki"] #start .ep-card h3{font-size:clamp(14px,1.15vw,22px)!important}
+    html[data-motyw="epicki"] #start .ep-card p,html[data-motyw="epicki"] #start .ep-check,html[data-motyw="epicki"] #start .ep-list small{font-size:clamp(11px,0.78vw,15px)!important}
+    html[data-motyw="epicki"] #start .ep-list b{font-size:clamp(13px,0.95vw,18px)!important}
+    html[data-motyw="epicki"] #start .ep-list{gap:.3vw!important}
+    html[data-motyw="epicki"] #start .ep-btn{font-size:clamp(10px,0.7vw,14px)!important;padding:clamp(5px,0.45vw,9px) clamp(10px,0.9vw,18px)!important}
+    html[data-motyw="epicki"] #start .ep-btn.ep-green{font-size:clamp(12px,0.9vw,18px)!important;padding:clamp(7px,0.6vw,12px) clamp(18px,1.8vw,36px)!important}
+    html[data-motyw="epicki"] #start .og-img{width:7.5vw!important} html[data-motyw="epicki"] #start .og-w .og-img{width:11vw!important} html[data-motyw="epicki"] #start .og-j .og-img{width:8.5vw!important} html[data-motyw="epicki"] #start .og-r .og-img{width:8vw!important}
+    html[data-motyw="epicki"] #start .og-w .ep-hub b{font-size:clamp(22px,2.1vw,44px)!important}
+    html[data-motyw="epicki"] #start .og-ths img{max-width:3vw!important} html[data-motyw="epicki"] #start .og-ths a{font-size:clamp(9px,0.6vw,13px)!important}
+    html[data-motyw="epicki"] #start .ep-strip{max-width:none!important;padding:0 6vw 0 0!important}
+    html[data-motyw="epicki"] #start .ep-strip a{padding:.6vw 1.2vw!important}
+    html[data-motyw="epicki"] #start .og-logo{width:6vw!important}
+  }
+  @media (min-width:761px){
+    html[data-motyw="epicki"] .og-hero h1{font-size:clamp(36px,4.9vw,104px)!important;margin-top:clamp(10px,1.2vw,26px)!important}
+    html[data-motyw="epicki"] #start .ep-card{min-height:8.8vw!important;padding:clamp(8px,.75vw,16px) clamp(12px,1.1vw,22px)!important}
+    html[data-motyw="epicki"] #start .og-img{width:9vw!important} html[data-motyw="epicki"] #start .og-w .og-img{width:13vw!important} html[data-motyw="epicki"] #start .og-j .og-img{width:9.5vw!important} html[data-motyw="epicki"] #start .og-r .og-img{width:9.5vw!important}
+    html[data-motyw="epicki"] #start .og-ths img{max-width:3.4vw!important}
+  }
+  /* ===== Ogień — JEDNO TŁO NA CAŁĄ STRONĘ (obrazek od Kubooorka) ===== */
+  html[data-motyw="epicki"]{background:#120606}
+  html[data-motyw="epicki"] body{background:transparent!important}
+  html[data-motyw="epicki"] body::before{content:"";position:fixed;inset:0;z-index:-1;background:#120606 url(img/styl/ogien-tlo.jpg) center center/cover no-repeat;pointer-events:none}
+  html[data-motyw="epicki"] body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 30%,rgba(10,3,2,.25),transparent 60%),linear-gradient(180deg,rgba(10,3,2,0) 40%,rgba(10,3,2,.35))}
+  html[data-motyw="epicki"] .og-hero,html[data-motyw="epicki"] section,html[data-motyw="epicki"] section#start,html[data-motyw="epicki"] .page-head,html[data-motyw="epicki"] .final{background:transparent!important}
+  html[data-motyw="epicki"] .og-hero::before,html[data-motyw="epicki"] .page-head::before,html[data-motyw="epicki"] .final::before{background:none!important}
+  html[data-motyw="epicki"] .og-hero{height:auto!important;min-height:calc(46vh - 64px)!important;padding:3vh 0 2vh!important;border-bottom:0!important}
+  html[data-motyw="epicki"] .og-hero h1{filter:drop-shadow(0 6px 18px rgba(0,0,0,.6))}
+  html[data-motyw="epicki"] section#start{padding:0 0 3vh!important}
+  html[data-motyw="epicki"] .ep-card,html[data-motyw="epicki"] .ep-strip,html[data-motyw="epicki"] .panel,html[data-motyw="epicki"] .war,html[data-motyw="epicki"] .kara,html[data-motyw="epicki"] .news,html[data-motyw="epicki"] .table-box,html[data-motyw="epicki"] .stat,html[data-motyw="epicki"] .live-war,html[data-motyw="epicki"] section>.wrap>details,html[data-motyw="epicki"] .faq details,html[data-motyw="epicki"] .rec,html[data-motyw="epicki"] .tile{background:linear-gradient(180deg,rgba(40,13,8,.86),rgba(18,6,4,.9))!important}
+  html[data-motyw="epicki"] .panel .panel,html[data-motyw="epicki"] .panel details,html[data-motyw="epicki"] .panel .war,html[data-motyw="epicki"] .panel .tile,html[data-motyw="epicki"] .panel .rec{background:rgba(0,0,0,.28)!important}
+  html[data-motyw="epicki"] .page-head{min-height:0!important;padding:6vh 0 4vh!important;border-bottom:0!important}
+  html[data-motyw="epicki"] .subnav{background:rgba(22,6,5,.85)!important}
+  html[data-motyw="epicki"] footer{background:rgba(10,3,2,.9)!important}
+  html[data-motyw="epicki"] section:not(.og-hero):not(.page-head):not(#start)>.wrap>.sec-lead,html[data-motyw="epicki"] section>.wrap>.updated{text-shadow:0 2px 6px #000}
+  @media (max-width:760px){ html[data-motyw="epicki"] body::before{background-position:30% center} html[data-motyw="epicki"] .og-hero{min-height:0!important;padding:28px 0 22px!important} }
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
@@ -4324,10 +4494,32 @@ let saveLayoutState=()=>{};
        +`<div class="ep-card og-j"><h3>${I("users")}Rekrutacja</h3><p>Dołącz do naszego klanu i stań się częścią naszej społeczności!</p><a class="ep-btn ep-green" href="${GAME}">Dołącz teraz</a><img class="og-img" src="${IMG("skrzydloburz.png")}" alt=""></div>`;
       dash.querySelectorAll(".og-ths a").forEach(a=>a.addEventListener("click",()=>{ setTimeout(()=>{ const r=$("#thRange"); if(r){ r.value=a.dataset.th; r.dispatchEvent(new Event("input")); } },80); }));
       if(hubT){ const el=dash.querySelector("#epHubT"); const tk=()=>{ const d=Math.max(0,hubT-Date.now())/1000; const h=Math.floor(d/3600), m=Math.floor(d%3600/60); el.textContent=h>=24?`${Math.floor(h/24)}d ${h%24}h ${m}m`:`${h}h ${m}m`; }; tk(); setInterval(tk,30000); }
+      const setH=()=>document.documentElement.style.setProperty("--heroH",hero.offsetHeight+"px"); setH(); addEventListener("resize",setH); addEventListener("am:page",()=>setTimeout(setH,30)); if(window.ResizeObserver) new ResizeObserver(setH).observe(hero);
       strip.innerHTML=`<a href="https://discord.gg/7SquD7SF3" target="_blank" rel="noopener"><svg class="og-dc" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.6 9-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2.1a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4a12.6 12.6 0 0 1-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7ZM8.3 15.3c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm7.4 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg><span>Dołącz na Discord<small>discord.gg/7SquD7SF3</small></span></a>`
         +`<a href="#ranking">${I("trophy")}<span>Nasze osiągnięcia<small>Zobacz ranking ›</small></span></a>`
         +`<a href="#historia"><svg class="og-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.6 4.5c2.1 0 3.6 1.2 4.4 2.6.8-1.4 2.3-2.6 4.4-2.6 3.6 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21Z"/></svg><span>Dziękujemy, że jesteście z nami!<small>ARMIA MAURYCEGO &lt;3</small></span></a>`;
       if(!strip.querySelector(".og-logo")){ const lg=document.createElement("img"); lg.className="og-logo herb-img"; lg.alt=""; const hh=$("#heroHerb"); if(hh&&hh.src) lg.src=hh.src; else if(hh) hh.addEventListener("load",()=>lg.src=hh.src); strip.appendChild(lg); }
+    }
+    /* ===== DZIEŃ 1:1 według projektu ===== */
+    if(ST&&ST.ep&&document.documentElement.dataset.motyw==="dzien"&&(typeof LANG==="undefined"||LANG!=="en")){
+      const IMG=n=>`img/styl/dzien-${n}`, GAME="https://link.clashofclans.com/pl?action=OpenClanProfile&tag=%232GQQ8RGRL";
+      const I=n=>`<svg class="ic" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+      document.querySelectorAll(".ep-chars,.ep-art-img,.ep-ribbon,.ep-sub,.ep-kicker").forEach(x=>x.remove());
+      const nv=$("#navLinks");
+      nv.innerHTML=[["start","home","Strona główna"],["klan","","O klanie"],["wojny","","War Hub"],["liga","","Liga"],["czlonkowie","","Ranking"],["poradnik","","Poradniki"],["dolacz","","Rekrutacja"]]
+        .filter(x=>PAGES.some(p=>p[0]===x[0])).map(x=>`<a href="#${x[0]}" data-page="${x[0]}">${x[1]?I(x[1]):""}${x[2]}</a>`).join("")
+        +`<a href="https://discord.gg/7SquD7SF3" target="_blank" rel="noopener">${I("chat")}Discord</a>`;
+      const hero=document.querySelector(".hero"); hero.classList.add("dz-hero");
+      const h1=hero.querySelector("h1"); if(h1) h1.innerHTML=`<span class="dz-t">Armia Maurycego</span>`;
+      if(h1&&!hero.querySelector(".dz-sign")){ const sg=document.createElement("div"); sg.className="dz-sign"; sg.innerHTML="<span>Razem silniejsi!</span>"; const p=document.createElement("p"); p.className="dz-sub"; p.innerHTML="Dołącz do naszego klanu i twórz z nami<br>silną społeczność w Clash of Clans!"; h1.after(sg); sg.after(p); }
+      const jb=hero.querySelector(".hero-ctas .btn-gold"); if(jb) jb.innerHTML="Dołącz do klanu";
+      dash.className="ep-dash dz-dash";
+      dash.innerHTML=
+        `<div class="ep-card dz-c"><img class="dz-ic" src="${IMG("tarcza.png")}" alt=""><div><h3>O klanie</h3><p>Ambitny klan<br>z wielkimi planami!</p></div><a class="dz-link" href="#klan" aria-label="O klanie"></a></div>`
+       +`<div class="ep-card dz-c"><img class="dz-ic" src="${IMG("puchar.png")}" alt=""><div><h3>Wymagania</h3><ul class="ep-check"><li>Min. TH8</li><li>Aktywność w grze</li><li>Dobra atmosfera</li></ul></div><a class="dz-link" href="#wymagania" aria-label="Wymagania"></a></div>`
+       +`<div class="ep-card dz-c"><img class="dz-ic" src="${IMG("prezent.png")}" alt=""><div><h3>Oferta</h3><p>Wojny, CWL,<br>Rajdy, poradniki</p></div><a class="dz-link" href="#wojny" aria-label="Oferta"></a></div>`
+       +`<div class="ep-card dz-c"><svg class="dz-ic dz-dc" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.6 9-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2.1a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4a12.6 12.6 0 0 1-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7ZM8.3 15.3c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm7.4 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg><div><h3>Discord</h3><p>Dołącz na nasz serwer!</p></div><a class="dz-link" href="https://discord.gg/7SquD7SF3" target="_blank" rel="noopener" aria-label="Discord"></a></div>`;
+      strip.className="dz-strip"; strip.innerHTML=`<i></i>${I("crown")}<b>ARMIA MAURYCEGO – Razem silniejsi!</b>${I("crown")}<i></i>`;
     }
     }
     const wyd=$("#wydarzenia"); home.after(wyd); const ank=$("#ankiety"); if(ank) home.after(ank); const ogl=$("#ogloszenia"); if(ogl) home.after(ogl);
@@ -4400,6 +4592,7 @@ let saveLayoutState=()=>{};
     document.addEventListener("click",e=>{ const t=e.target.closest("[data-search]"); if(t){ e.preventDefault(); e.stopPropagation(); openS(); } },true);
     addEventListener("keydown",e=>{ const tag=(e.target.tagName||"").toLowerCase(); if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){ e.preventDefault(); pal.hidden?openS():closeS(); }
       else if(e.key==="/"&&pal.hidden&&!["input","textarea","select"].includes(tag)){ e.preventDefault(); openS(); } else if(e.key==="Escape"){ if(!pal.hidden) closeS(); closeMore(); } });
+    if(/^(epicki|dzien)$/.test(document.documentElement.dataset.motyw||"")) document.querySelectorAll(".page-head h1").forEach(h=>{ [...h.childNodes].forEach(n=>{ if(n.nodeType===3&&n.nodeValue.trim()){ const sp=document.createElement("span"); sp.className="og-t"; sp.textContent=n.nodeValue.trim(); n.replaceWith(sp); } }); });
     const final=document.querySelector("section.final");
     const pageOf=id=>{ if(PAGES.some(p=>p[0]===id)) return id; const sec=secOf(id)||id; if(sec==="wydarzenia"||sec==="ogloszenia"||sec==="ankiety"||sec==="skroty") return "start"; const p=PAGES.find(p=>p[3].includes(sec)); return p?p[0]:null; };
     const show=(page,id)=>{
