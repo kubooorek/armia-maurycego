@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T14:46:08.665Z",
+  "updated": "2026-11-08T15:01:40.231Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 134,
-        "pct": 4498,
+        "stars": 137,
+        "pct": 4598,
         "wins": 2,
         "played": 5
       },
@@ -2622,11 +2622,11 @@
       }
     ]
   },
-  "visits": 86,
+  "visits": 87,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -6246,8 +6246,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|50265265|47738181|10050|88|24505|31950|0|7|48|8",
-      "last": "2026-11-08T11:31:16.313Z",
+      "sig": "20|51657985|49140636|10050|88|24505|31950|0|7|48|8",
+      "last": "2026-11-08T15:01:40.217Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -6261,8 +6261,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "188|65549884|65076298|2400|639|14765|32686|0|4|55|9",
-      "last": "2026-11-08T12:01:28.874Z",
+      "sig": "188|65549884|65076298|2400|639|14765|32686|0|4|56|9",
+      "last": "2026-11-08T15:01:40.217Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -6321,8 +6321,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "70|6054439|5587005|0|111|5370|550|0|0|28|7",
-      "last": "2026-11-08T14:46:08.652Z",
+      "sig": "70|6054439|5587005|0|111|5370|6217|0|0|29|7",
+      "last": "2026-11-08T15:01:40.217Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -9232,7 +9232,7 @@
       "received": 306,
       "trophies": 299,
       "profile": {
-        "level": 55,
+        "level": 56,
         "trophies": 299,
         "best": 349,
         "league": "Skeleton League 2",
@@ -9474,8 +9474,8 @@
         "cg": 10050,
         "don": 88,
         "capLoot": 24505,
-        "gold": 50265265,
-        "elixir": 47738181,
+        "gold": 51657985,
+        "elixir": 49140636,
         "capContrib": 31950,
         "wins": 0
       }
@@ -10208,14 +10208,14 @@
       "received": 20,
       "trophies": 0,
       "profile": {
-        "level": 28,
+        "level": 29,
         "trophies": 0,
         "best": 0,
         "league": "Skeleton League 1",
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 550,
+        "capital": 6217,
         "warPref": "in",
         "heroes": [
           {
@@ -10249,7 +10249,7 @@
         "capLoot": 5370,
         "gold": 6054439,
         "elixir": 5587005,
-        "capContrib": 550,
+        "capContrib": 6217,
         "wins": 0
       }
     },
