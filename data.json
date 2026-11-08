@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T17:01:36.790Z",
+  "updated": "2026-11-08T17:16:01.888Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 153,
-        "pct": 4874,
+        "stars": 154,
+        "pct": 4881,
         "wins": 3,
         "played": 5
       },
@@ -1933,9 +1933,9 @@
         "end": "20261108T191029.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 14,
-          "pct": 37.47,
-          "attacks": 12,
+          "stars": 15,
+          "pct": 37.93,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -2068,7 +2068,7 @@
             {
               "pos": 10,
               "th": 15,
-              "best": 0
+              "best": 1
             },
             {
               "pos": 11,
@@ -2155,7 +2155,13 @@
             "tag": "#8UCPRGC8",
             "pos": 5,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 1,
+                "pct": 40,
+                "target": "10. ARTANIEL"
+              }
+            ]
           },
           {
             "name": "oggsgdjdjbd",
@@ -2622,11 +2628,11 @@
       }
     ]
   },
-  "visits": 95,
+  "visits": 96,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -2634,10 +2640,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 137963,
+      "loot": 140779,
       "raids": 11,
-      "attacks": 125,
-      "districts": 33,
+      "attacks": 128,
+      "districts": 34,
       "medals": 0,
       "members": [
         {
@@ -2746,6 +2752,13 @@
           "loot": 5667
         },
         {
+          "name": "MrDefPL",
+          "tag": "#8UCPRGC8",
+          "attacks": 5,
+          "limit": 6,
+          "loot": 5421
+        },
+        {
           "name": "erykos",
           "tag": "#R9GPGL0QJ",
           "attacks": 6,
@@ -2786,13 +2799,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 2734
-        },
-        {
-          "name": "MrDefPL",
-          "tag": "#8UCPRGC8",
-          "attacks": 2,
-          "limit": 5,
-          "loot": 2605
         }
       ]
     },
@@ -3218,9 +3224,9 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 14,
+      "us": 15,
       "them": 12,
-      "pct": 37.47,
+      "pct": 37.93,
       "themPct": 31.47,
       "themBases": [
         {
@@ -3271,7 +3277,7 @@
         {
           "pos": 10,
           "th": 15,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 11,
@@ -3358,7 +3364,13 @@
           "tag": "#8UCPRGC8",
           "pos": 5,
           "th": 12,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 40,
+              "target": "10. ARTANIEL"
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -6172,8 +6184,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "42|739412057|769583938|13725|50969|66990|94980|0|510|147|12",
-      "last": "2026-11-08T12:16:01.152Z",
+      "sig": "42|740005432|770415557|13725|50969|69205|94980|0|511|147|12",
+      "last": "2026-11-08T17:16:01.876Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -6807,7 +6819,7 @@
     "#8UCPRGC8": [
       [
         20765,
-        510,
+        511,
         50969,
         12
       ]
@@ -8019,7 +8031,7 @@
         "trophies": 0,
         "best": 2938,
         "league": "Archer League 9",
-        "warStars": 510,
+        "warStars": 511,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 94980,
@@ -8088,9 +8100,9 @@
       "ach": {
         "cg": 13725,
         "don": 50969,
-        "capLoot": 66990,
-        "gold": 739412057,
-        "elixir": 769583938,
+        "capLoot": 69205,
+        "gold": 740005432,
+        "elixir": 770415557,
         "capContrib": 94980,
         "wins": 0
       }
@@ -9561,7 +9573,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
