@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T19:46:00.422Z",
+  "updated": "2026-11-08T19:54:40.650Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2638,7 +2638,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -6404,8 +6404,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "71|369159259|346008953|15875|9453|16915|65497|0|243|106|11",
-      "last": "2026-11-08T13:45:58.786Z",
+      "sig": "91|369159259|346008953|15875|9473|16915|65497|0|243|106|11",
+      "last": "2026-11-08T19:54:40.641Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -6509,8 +6509,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|30146873|28634547|5600|0|0|6070|0|0|44|8",
-      "last": "2026-11-07T13:45:53.078Z",
+      "sig": "0|30146873|28634547|5600|0|0|6070|0|0|45|8",
+      "last": "2026-11-08T19:54:40.641Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -6599,8 +6599,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|419455300|419629638|25150|1467|636760|726415|0|82|127|12",
-      "last": "2026-11-08T19:46:00.411Z",
+      "sig": "0|421875027|422122202|25150|1467|636760|726415|0|82|127|12",
+      "last": "2026-11-08T19:54:40.641Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -7022,7 +7022,7 @@
       [
         20765,
         243,
-        9453,
+        9473,
         11
       ]
     ],
@@ -7234,20 +7234,20 @@
         9
       ]
     ],
-    "#R9QQPG9JP": [
-      [
-        20765,
-        21,
-        12,
-        8
-      ]
-    ],
     "#R92C0U8UU": [
       [
         20765,
         15,
         30,
         7
+      ]
+    ],
+    "#R9QQPG9JP": [
+      [
+        20765,
+        21,
+        12,
+        8
       ]
     ],
     "#R9L08VVCY": [
@@ -8144,7 +8144,7 @@
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
-      "given": 71,
+      "given": 91,
       "received": 0,
       "trophies": 298,
       "profile": {
@@ -8220,7 +8220,7 @@
       },
       "ach": {
         "cg": 15875,
-        "don": 9453,
+        "don": 9473,
         "capLoot": 16915,
         "gold": 369159259,
         "elixir": 346008953,
@@ -8400,8 +8400,8 @@
         "cg": 25150,
         "don": 1467,
         "capLoot": 636760,
-        "gold": 419455300,
-        "elixir": 419629638,
+        "gold": 421875027,
+        "elixir": 422122202,
         "capContrib": 726415,
         "wins": 0
       }
@@ -9567,7 +9567,7 @@
       "received": 0,
       "trophies": 266,
       "profile": {
-        "level": 44,
+        "level": 45,
         "trophies": 266,
         "best": 266,
         "league": "Skeleton League 2",
@@ -9969,6 +9969,49 @@
       }
     },
     {
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 20,
+      "trophies": 109,
+      "profile": {
+        "level": 35,
+        "trophies": 69,
+        "best": 255,
+        "league": "Skeleton League 2",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 15905,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 30,
+        "capLoot": 6720,
+        "gold": 11623371,
+        "elixir": 10528310,
+        "capContrib": 15905,
+        "wins": 0
+      }
+    },
+    {
       "name": "GoldBelt",
       "tag": "#R9QQPG9JP",
       "role": "member",
@@ -10013,49 +10056,6 @@
         "gold": 27392649,
         "elixir": 25694905,
         "capContrib": 13328,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Rico",
-      "tag": "#R92C0U8UU",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 0,
-      "trophies": 69,
-      "profile": {
-        "level": 35,
-        "trophies": 69,
-        "best": 255,
-        "league": "Skeleton League 2",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 15905,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 30,
-        "capLoot": 6720,
-        "gold": 11623371,
-        "elixir": 10528310,
-        "capContrib": 15905,
         "wins": 0
       }
     },
