@@ -893,6 +893,41 @@
   .pn-soon{font-size:.8rem;color:var(--muted);margin-top:4px}
   @media(max-width:900px){.pn-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:640px){.lg-nm{display:none}.lg-me{padding:2px}.lg-btn span{display:none}.lg-btn{padding:6px 8px}.pn-card b{font-size:1.05rem}.pn-card{padding:12px}}
+  /* ===== Mapa ataków, zwiad, podsumowanie CWL, kalendarz, wykresy, zamiany, ankiety ===== */
+  .has-map{cursor:pointer} .war.has-map:hover,.rnd.has-map:hover{border-color:rgba(232,180,74,.55)}
+  .wm-list{display:flex;flex-direction:column;gap:4px}
+  .wm-row{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:6px 8px;border-radius:8px;background:var(--bg);border:1px solid var(--line);font-size:.84rem}
+  .wm-row.miss{border-color:rgba(217,83,79,.45)} .wm-me small{color:var(--muted)}
+  .wm-atts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end} .wm-a{white-space:nowrap;color:var(--text)} .wm-a.none{color:#ff9b97;font-size:.78rem}
+  .wm-st{color:var(--gold2);letter-spacing:-1px} .wm-st i{font-style:normal;color:#3a4152}
+  .wm-bases{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}
+  .wm-b{border-radius:9px;padding:6px 4px;text-align:center;border:1px solid var(--line);background:rgba(217,83,79,.12)} .wm-b b{display:block;font-size:.9rem} .wm-b small{display:block;color:var(--muted);font-size:.66rem} .wm-b span{font-size:.72rem;color:var(--gold2)}
+  .wm-b.s1,.wm-b.s2{background:rgba(240,163,92,.12);border-color:rgba(240,163,92,.4)} .wm-b.s3{background:rgba(79,180,119,.14);border-color:rgba(79,180,119,.45)}
+  #zwiad,#cwlSummary{margin-bottom:14px} .panel-head .chip{white-space:nowrap}
+  .zw-sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}
+  .zw-sum div{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 10px} .zw-sum small{display:block;color:var(--muted);font-size:.64rem;text-transform:uppercase;letter-spacing:.06em} .zw-sum b{font-size:1rem} .zw-sum i{font-style:normal;color:var(--muted);font-size:.8rem}
+  .zw-sum .pos,.pos{color:var(--green)} .zw-sum .neg,.neg{color:var(--red)}
+  .zw-tip{font-size:.88rem;margin:0 0 8px;color:var(--gold2)}
+  .zw-more summary{cursor:pointer;color:var(--muted);font-size:.82rem}
+  .zw-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 14px;margin-top:8px}
+  .zw-row{display:grid;grid-template-columns:28px 1fr 46px 18px 46px;gap:6px;align-items:center;font-size:.8rem;padding:4px 6px;border-radius:7px;background:var(--bg)}
+  .zw-row.up .zw-vs{color:var(--green)} .zw-row.down .zw-vs{color:var(--red)} .zw-p{color:var(--muted)} .zw-n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .zw-th{font-weight:700;text-align:center}
+  .cs-rounds{display:flex;gap:6px;flex-wrap:wrap} .cs-rounds span{padding:6px 10px;border-radius:9px;font-weight:700;font-size:.82rem;border:1px solid var(--line);background:var(--bg)} .cs-rounds small{display:block;font-weight:500;color:var(--muted);font-size:.66rem;max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cs-rounds .w{border-color:rgba(79,180,119,.5)} .cs-rounds .l{border-color:rgba(217,83,79,.5)}
+  #icsBtn{margin:0 0 12px}
+  .pg-wrap{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .pg-ch{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 10px} .pg-h{display:flex;justify-content:space-between;gap:6px;font-size:.72rem;color:var(--muted);margin-bottom:4px} .pg-h b{color:var(--gold2);font-size:.82rem} .pg-h small{color:var(--muted);font-weight:500}
+  .pg-ch svg{display:block;width:100%;height:56px}
+  .pn-swap{margin-bottom:10px} .pn-swap-f{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap}
+  .pn-swap-f label{display:flex;flex-direction:column;gap:4px;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)} .pn-swap-f label.grow{flex:1;min-width:180px}
+  .pn-swap-f select,.pn-swap-f input,.poll-new input,.poll-new textarea,.poll-new select{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:8px 10px;font:inherit;font-size:.88rem}
+  #ankiety{padding-top:10px}
+  .poll{margin-bottom:10px} .poll-h{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:10px} .poll-h b{font-size:1rem}
+  .poll-o{display:flex;gap:8px;align-items:center;margin-bottom:6px} .poll-bar{position:relative;flex:1;min-height:36px;border-radius:9px;background:var(--bg);border:1px solid var(--line);overflow:hidden;display:flex;align-items:center;justify-content:space-between;padding:0 10px;gap:8px}
+  .poll-bar i{position:absolute;left:0;top:0;bottom:0;background:rgba(232,180,74,.18)} .poll-bar span,.poll-bar b{position:relative;font-size:.86rem} .poll-bar b{color:var(--gold2);white-space:nowrap}
+  .poll-adm{display:flex;gap:6px;margin-top:8px}
+  .poll-new{margin-bottom:10px} .poll-new summary{cursor:pointer;color:var(--gold2);font-weight:700} .poll-new form{display:flex;flex-direction:column;gap:8px;margin-top:10px} .poll-new label{font-size:.8rem;color:var(--muted)}
+  @media(max-width:640px){.zw-sum{grid-template-columns:repeat(2,1fr)}.zw-grid{grid-template-columns:1fr}.pg-wrap{grid-template-columns:1fr}.poll-o{flex-direction:column;align-items:stretch}}
 </style>
 </head>
 <body>
@@ -1087,6 +1122,15 @@
   </div>
 </section>
 
+<section id="ankiety" hidden>
+  <div class="wrap">
+    <div class="eyebrow">Głos klanu</div>
+    <h2 class="sec-title">Ankiety</h2>
+    <p class="sec-lead">Zarząd pyta, klan decyduje. Głosujesz swoim kontem z gry — jedno konto, jeden głos.</p>
+    <div id="pollsBox"></div>
+  </div>
+</section>
+
 <section id="osiagniecia">
   <div class="wrap">
     <div class="eyebrow">Rozwój klanu</div>
@@ -1116,6 +1160,7 @@
       </div>
     </div>
     <div class="panel" id="cwlRounds" style="margin-top:12px"></div>
+    <div class="panel" id="cwlSummary" style="margin-top:12px"></div>
     <div class="panel" id="cwlMedals" style="margin-top:12px" hidden></div>
     <div class="duo" style="margin-top:12px">
       <div class="panel"><div class="fame-label">Cele klanu</div><div id="goals"></div></div>
@@ -1246,6 +1291,7 @@
       <div class="stat"><b id="wRate">–</b><span>Skuteczność</span></div>
     </div>
     <p class="updated auto-upd" hidden style="margin:-4px 0 10px"></p>
+    <div class="panel" id="zwiad"></div>
     <div class="wch" id="warCharts"></div>
     <div class="records" id="records"></div>
     <div class="wars" id="wars"></div>
@@ -1427,7 +1473,7 @@
 
 <script>
 /* ====== DANE KLANU — tu podmieniasz informacje ====== */
-const FOUNDED = "2026-09-26"; // data założenia klanu (RRRR-MM-DD)
+const FOUNDED = "2026-09-24"; // data założenia klanu (RRRR-MM-DD)
 
 // [nick, ratusz, rola, przekazane, otrzymane, nowy?]
 // rola: leader (Wódz) | co (Współlider) | elder (Starszy) | member (Członek)
@@ -1515,7 +1561,7 @@ const CWL = {season:"Listopad 2026", league:null, place:null, groupSize:8, stars
 
 // Dodatkowe osiągnięcia wpisywane ręcznie (date: "RRRR-MM-DD" albo null = „teraz”)
 const MILESTONES_EXTRA = [
-  {date:null, text:"Klan osiąga 3. poziom"},
+  {date:"2026-10-20", text:"Klan osiąga 3. poziom"},
   {date:"2026-11-06", text:"Klan osiąga 4. poziom"},
   {date:"2026-11-01", text:"Pierwszy sezon Ligi Wojen Klanów", future:true}
 ];
@@ -2896,7 +2942,7 @@ function rushHtml(r){
 /* ===== Kamienie milowe ===== */
 (function(){
   const asc = [...WARS].reverse(), ms = [];
-  if (asc.length) ms.push({date:asc[0].date, text:`Pierwsza wojna — ${asc[0].size} vs ${asc[0].size}`});
+  if (asc.length) ms.push({date:"2026-09-25", text:`Pierwsza wojna — ${asc[0].size} vs ${asc[0].size}`});   // data startu pierwszej wojny (w historii gry jest data końca)
   const firstWin = asc.find(w=>w.us.stars>w.them.stars);
   if (firstWin && firstWin!==asc[0]) ms.push({date:firstWin.date, text:"Pierwsze zwycięstwo"});
   [10,15,20,25,30,40,50].forEach(n=>{const w=asc.find(x=>x.size===n); if(w) ms.push({date:w.date,text:`Pierwsza wojna ${n} vs ${n}`});});
@@ -3503,6 +3549,202 @@ let AM_USER=null;   // {tags:[...], active:"#TAG", accs:[{tag,name,th}]}
 /* ===== Poziom klanu w tekście rekrutacji (z gry) ===== */
 (function(){ const el=$("#joinLead"), lv=AUTO&&AUTO.clanLevel; if(el&&lv) el.innerHTML=el.innerHTML.replace(/\d+\. poziomu/,`${lv}. poziomu`); })();
 
+/* ===== Pomocnicze: czas z API ===== */
+const apiT=t=>t?Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`):0;
+
+/* ===== Mapa ataków wojny (okno) ===== */
+let openWarMap=()=>{};
+(function(){
+  const modal=$("#modal"), body=$("#modalBody"), card=modal.querySelector(".modal-card");
+  const stars=n=>`<span class="wm-st">${"★".repeat(n)}<i>${"★".repeat(3-n)}</i></span>`;
+  openWarMap=(w)=>{
+    if(!w) return;
+    const ms=(w.members||[]).slice().sort((a,b)=>(a.pos||99)-(b.pos||99));
+    const hasMap=ms.some(m=>m.pos)&&ms.some(m=>m.attacks.some(a=>a.target));
+    const bases=(w.themBases||w.them&&w.them.bases||[]).slice().sort((a,b)=>a.pos-b.pos);
+    const hits={}; ms.forEach(m=>m.attacks.forEach(a=>{ const p=parseInt(a.target,10); if(p) (hits[p]=hits[p]||[]).push({name:m.name,stars:a.stars,pct:a.pct}); }));
+    const usS=typeof w.us==="number"?w.us:w.us.stars, thS=typeof w.them==="number"?w.them:w.them.stars;
+    const enemy=w.enemy||(w.them&&w.them.name)||"";
+    const per=w.perMember||2;
+    body.innerHTML=`<div class="pf2-hero"><div class="pf2-th" style="font-size:1rem"><small>${w.cwl||w.round?"CWL":"WOJNA"}</small>${w.round?"R"+w.round:(w.size||"")}</div><div style="min-width:0">
+        <h3>Mapa ataków · vs <bdi>${esc(enemy)}</bdi></h3><div class="pf2-sub"><span>${usS} ★ ${thS}</span><span>${w.size||ms.length} vs ${w.size||ms.length}</span><span>${per===1?"1 atak":"2 ataki"} na gracza</span></div></div></div>
+      <div class="pf2-body">
+        ${hasMap?"":`<p class="updated" style="margin:0 0 10px">Dla tej wojny robot nie zapisał jeszcze celów ataków (zapisuje je od 8 listopada). Poniżej same wyniki graczy.</p>`}
+        <div class="fame-label" style="margin-bottom:6px">Nasze ataki</div>
+        <div class="wm-list">${ms.map(m=>`<div class="wm-row${m.attacks.length<per?" miss":""}"><span class="wm-me">${m.pos?`<b>${m.pos}.</b> `:""}${esc(m.name)}${m.th?` <small>TH${m.th}</small>`:""}</span>
+          <span class="wm-atts">${m.attacks.length?m.attacks.map(a=>`<span class="wm-a">${a.target?`→ ${parseInt(a.target,10)||"?"} `:""}${stars(a.stars)} ${Math.round(a.pct)}%</span>`).join(""):`<span class="wm-a none">brak ataku</span>`}${m.attacks.length&&m.attacks.length<per?`<span class="wm-a none">1 bez ataku</span>`:""}</span></div>`).join("")}</div>
+        ${bases.length?`<div class="fame-label" style="margin:14px 0 6px">Bazy przeciwnika</div><div class="wm-bases">${bases.map(b=>{ const best=Math.max(b.best||0,...(hits[b.pos]||[]).map(h=>h.stars),0);
+          return `<div class="wm-b s${best}" title="${(hits[b.pos]||[]).map(h=>`${h.name}: ${h.stars}★ ${h.pct}%`).join("\n")||"nikt nie atakował"}"><b>${b.pos}</b><small>TH${b.th}</small><span>${best?"★".repeat(best):"—"}</span></div>`; }).join("")}</div>
+          <p class="updated" style="margin:8px 0 0">Zielone = 3★, żółte = 1–2★, czerwone = bez gwiazdki. Najedź / przytrzymaj bazę, żeby zobaczyć, kto ją bił.</p>`:""}
+      </div>`;
+    card.classList.add("wide"); modal.hidden=false; card.scrollTop=0;
+  };
+  // historia wojen: kliknięcie wojny → mapa (jeśli robot ma jej zapis)
+  const arch=((AUTO&&AUTO.warArchive)||[]).filter(x=>!x.cwl);
+  $("#wars").querySelectorAll(".war").forEach((el,i)=>{ const w=WARS[i]; if(!w) return;
+    const end=Date.parse(w.date); const rec=arch.find(x=>x.enemy===w.enemy&&Math.abs(apiT(x.end)-end)<2*864e5);
+    if(!rec) return; el.classList.add("has-map"); el.title="Kliknij, żeby zobaczyć mapę ataków";
+    el.addEventListener("click",()=>openWarMap(rec)); });
+  // rundy CWL: kliknięcie rundy → mapa
+  const cw=((AUTO&&AUTO.cwl&&AUTO.cwl.wars)||[]);
+  $("#cwlRounds")&&$("#cwlRounds").querySelectorAll(".rnd").forEach((el,i)=>{ const w=cw.find(x=>x.round===i+1); if(!w||w.state==="preparation") return;
+    el.classList.add("has-map"); el.title="Kliknij, żeby zobaczyć mapę ataków"; el.addEventListener("click",()=>openWarMap({...w,cwl:true,enemy:w.them.name})); });
+  // bieżąca wojna: przycisk w panelu „na żywo”
+  const lw=$("#liveWar"), cur=AUTO&&AUTO.currentWar;
+  if(lw&&cur&&cur.state!=="preparation"&&!lw.hidden){ const b=document.createElement("button"); b.className="btn btn-ghost btn-sm"; b.style.marginTop="10px"; b.textContent="🗺️ Mapa ataków";
+    b.onclick=()=>openWarMap({...cur,enemy:cur.them.name,themBases:cur.them.bases}); lw.appendChild(b); }
+})();
+
+/* ===== Zwiad przed wojną / rundą CWL ===== */
+(function(){
+  const host=$("#zwiad"); if(!host) return;
+  const C=AUTO&&AUTO.cwl, cw=(C&&C.wars)||[], cur=AUTO&&AUTO.currentWar;
+  const w=cw.find(x=>x.state==="preparation")||(cur&&cur.state==="preparation"?cur:null)||cw.find(x=>x.state==="inWar")||(cur&&cur.state==="inWar"?cur:null);
+  if(!w||!w.them||!(w.them.bases||[]).length){ host.remove(); return; }
+  const ours=(w.members||[]).slice().sort((a,b)=>a.pos-b.pos), theirs=(w.them.bases||[]).slice().sort((a,b)=>a.pos-b.pos);
+  const n=Math.min(ours.length,theirs.length); if(!n){ host.remove(); return; }
+  const avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:0, f=v=>v.toFixed(1).replace(".",",");
+  const uT=ours.slice(0,n).map(m=>m.th), tT=theirs.slice(0,n).map(b=>b.th);
+  const k=Math.max(3,Math.round(n/3));
+  const dTop=avg(uT.slice(0,k))-avg(tT.slice(0,k)), dBot=avg(uT.slice(-k))-avg(tT.slice(-k)), dAll=avg(uT)-avg(tT);
+  let better=0,worse=0; for(let i=0;i<n;i++){ if(uT[i]>tT[i]) better++; else if(uT[i]<tT[i]) worse++; }
+  const tip=[];
+  if(dTop<=-0.7&&dBot>=0.3) tip.push("Ich góra jest mocniejsza, a my mamy przewagę na dole. Na górze grajcie bezpiecznie na 1–2★, dół trzeba zrobić na 3★.");
+  else if(dTop>=0.7&&dBot<=-0.3) tip.push("Nasza góra jest mocniejsza, ich dół trochę lepszy. Góra może dobijać niżej, jeśli swoje numery zrobi szybko.");
+  else if(dAll>=0.7) tip.push("Na papierze jesteśmy mocniejsi. Spokojne, przemyślane ataki i ta runda powinna być nasza.");
+  else if(dAll<=-0.7) tip.push("Przeciwnik ma wyższe ratusze. Liczy się każda gwiazdka — lepiej pewne 2★ niż ryzykowne 3★.");
+  else tip.push("Wyrównane składy. O wyniku zdecydują procenty i to, czy wszyscy zaatakują.");
+  const maxTh=Math.max(...tT); if(maxTh>Math.max(...uT)) tip.push(`Uwaga: mają TH${maxTh}, wyższy niż nasz najwyższy — na nią najlepiej wysłać pewny atak na 1–2★.`);
+  const label=w.round?`CWL · Runda ${w.round}`:"Wojna";
+  const stTxt=w.state==="preparation"?"dzień przygotowań":"trwa";
+  host.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">🔍 Zwiad · ${label} vs <bdi>${esc(w.them.name)}</bdi></span><span class="chip">${stTxt}</span></div>
+    <div class="zw-sum"><div><small>Średni TH</small><b>${f(avg(uT))} <i>vs</i> ${f(avg(tT))}</b></div><div><small>Góra (${k})</small><b class="${dTop>0?"pos":dTop<0?"neg":""}">${dTop>0?"+":""}${f(dTop)}</b></div><div><small>Dół (${k})</small><b class="${dBot>0?"pos":dBot<0?"neg":""}">${dBot>0?"+":""}${f(dBot)}</b></div><div><small>Pozycje</small><b><span class="pos">${better} lepiej</span> · <span class="neg">${worse} gorzej</span></b></div></div>
+    <p class="zw-tip">💡 ${tip.join(" ")}</p>
+    <details class="zw-more"><summary>Pokaż składy pozycja po pozycji</summary><div class="zw-grid">${Array.from({length:n},(_,i)=>{ const d=uT[i]-tT[i];
+      return `<div class="zw-row ${d>0?"up":d<0?"down":""}"><span class="zw-p">${i+1}.</span><span class="zw-n">${esc(ours[i].name)}</span><span class="zw-th">TH${uT[i]}</span><span class="zw-vs">${d>0?"▲":d<0?"▼":"="}</span><span class="zw-th">TH${tT[i]}</span></div>`; }).join("")}</div></details>`;
+})();
+
+/* ===== Podsumowanie sezonu CWL ===== */
+(function(){
+  const S=AUTO&&AUTO.cwlSummary, host=$("#cwlSummary"); if(!host) return; if(!S){ host.remove(); return; }
+  const y=String(S.season).slice(0,4), mo=+String(S.season).slice(5,7);
+  const MP=["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
+  const medal=["🥇","🥈","🥉"];
+  const txt=[`🏁 Sezon CWL ${MP[mo-1]} ${y}: ${S.place}. miejsce z ${S.groupSize}`,`Bilans: ${S.wins} W · ${S.draws} R · ${S.losses} P${S.stars!=null?` · ${S.stars}★ w tabeli`:""}`,
+    `Rundy: ${S.rounds.map(r=>`${r.round}. ${r.win?"✅":r.draw?"🤝":"❌"} ${r.us}:${r.them} ${r.enemy}`).join(" | ")}`,
+    S.top.length?`Najlepsi: ${S.top.slice(0,3).map((x,i)=>`${medal[i]} ${x.name} ${x.stars}★`).join("  ")}`:"",
+    S.missed.length?`Opuszczone ataki: ${S.missed.map(x=>x.name+(x.n>1?` ×${x.n}`:"")).join(", ")}`:"Nikt nie opuścił ataku 💪"].filter(Boolean).join("\n");
+  host.innerHTML=`<div class="panel-head"><span class="fame-label" style="margin:0">🏁 Podsumowanie sezonu CWL · ${MP[mo-1]} ${y}</span><span class="chip">${S.place}. miejsce z ${S.groupSize}</span></div>
+    <div class="zw-sum"><div><small>Wygrane rundy</small><b class="pos">${S.wins}</b></div><div><small>Przegrane</small><b class="neg">${S.losses}</b></div><div><small>Remisy</small><b>${S.draws}</b></div><div><small>Gwiazdki w tabeli</small><b>${S.stars??"—"}</b></div></div>
+    <div class="cs-rounds">${S.rounds.map(r=>`<span class="${r.win?"w":r.draw?"d":"l"}">R${r.round} ${r.us}:${r.them}<small>${esc(r.enemy)}</small></span>`).join("")}</div>
+    <div class="duo" style="margin-top:12px"><div><div class="fame-label" style="margin-bottom:6px">Najlepsi gracze sezonu</div>${S.top.map((x,i)=>`<div class="mini-row"><span>${medal[i]||(i+1)+"."} ${esc(x.name)}</span><b>${x.stars}★ · ${x.attacks} ${x.attacks===1?"atak":"ataki"}</b></div>`).join("")}</div>
+      <div><div class="fame-label" style="margin-bottom:6px">Opuszczone ataki</div>${S.missed.length?S.missed.map(x=>`<div class="mini-row"><span>${esc(x.name)}</span><b class="neg">${x.n}×</b></div>`).join(""):`<p class="updated" style="margin:0">Nikt nie opuścił ataku 💪</p>`}</div></div>
+    <button class="btn btn-ghost btn-sm" id="csCopy" style="margin-top:12px">📋 Kopiuj na Discorda</button>`;
+  $("#csCopy").onclick=()=>{ (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast("Skopiowano ✓")).catch(()=>prompt("Skopiuj:",txt)); };
+})();
+
+/* ===== Dodaj do kalendarza (.ics) ===== */
+(function(){
+  const sec=$("#wydarzenia .wrap"); if(!sec) return;
+  const b=document.createElement("button"); b.className="btn btn-ghost btn-sm"; b.id="icsBtn"; b.innerHTML="📅 Dodaj wydarzenia do kalendarza";
+  sec.insertBefore(b,$("#timers"));
+  const ics=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d+Z$/,"Z");
+  const esc2=s=>String(s).replace(/[\\,;]/g,m=>"\\"+m).replace(/\n/g,"\\n");
+  b.onclick=()=>{
+    const now=new Date(), until=+now+92*864e5, out=[];
+    EVENTS.forEach(e=>{ let t=now, guard=0;
+      while(guard++<20){ const [s,en]=e.win(t); if(+s>until) break; if(+en>+now&&!e.endOnly) out.push({name:e.name,s,en:(+en-+s<6e4)?new Date(+s+36e5):en}); else if(e.endOnly&&+s>+now) out.push({name:e.name,s,en:new Date(+s+36e5)}); t=new Date(+en+6e4); } });
+    ((AUTO&&AUTO.cwl&&AUTO.cwl.wars)||[]).forEach(w=>{ if(w.state!=="warEnded"&&apiT(w.end)>+now) out.push({name:`CWL · Runda ${w.round} vs ${w.them.name}`,s:new Date(apiT(w.start)),en:new Date(apiT(w.end))}); });
+    const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Armia Maurycego//Kalendarz klanu//PL","CALSCALE:GREGORIAN","X-WR-CALNAME:Armia Maurycego"];
+    out.forEach((x,i)=>lines.push("BEGIN:VEVENT",`UID:am-${+x.s}-${i}@armia-maurycego`,`DTSTAMP:${ics(now)}`,`DTSTART:${ics(x.s)}`,`DTEND:${ics(x.en)}`,
+      `SUMMARY:${esc2("⚔️ "+x.name+" — Armia Maurycego")}`,`DESCRIPTION:${esc2("Szczegóły: https://kubooorek.github.io/armia-maurycego/")}`,
+      "BEGIN:VALARM","TRIGGER:-PT1H","ACTION:DISPLAY",`DESCRIPTION:${esc2(x.name+" za godzinę")}`,"END:VALARM","END:VEVENT"));
+    lines.push("END:VCALENDAR");
+    const blob=new Blob([lines.join("\r\n")],{type:"text/calendar;charset=utf-8"}), a=document.createElement("a");
+    a.href=URL.createObjectURL(blob); a.download="armia-maurycego-kalendarz.ics"; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},500);
+    toast(`Pobrano ${out.length} wydarzeń — otwórz plik, żeby dodać je do kalendarza`);
+  };
+})();
+
+/* ===== Wykres postępu w profilu gracza ===== */
+(function(){
+  const H=(AUTO&&AUTO.playerHistory)||{}; const base=openProfile;
+  const spark=(pts,label,unit)=>{ const v=pts.filter(p=>p[1]!=null); if(v.length<2) return "";
+    const W=280,Hh=56,min=Math.min(...v.map(p=>p[1])),max=Math.max(...v.map(p=>p[1])),x0=v[0][0],x1=v[v.length-1][0]||x0+1;
+    const X=d=>8+(d-x0)/Math.max(1,x1-x0)*(W-16), Y=val=>Hh-6-(max===min?0.5:(val-min)/(max-min))*(Hh-14);
+    const path=v.map((p,i)=>(i?"L":"M")+X(p[0]).toFixed(1)+" "+Y(p[1]).toFixed(1)).join(" ");
+    const gain=v[v.length-1][1]-v[0][1], days=v[v.length-1][0]-v[0][0];
+    return `<div class="pg-ch"><div class="pg-h"><span>${label}</span><b>${gain>0?"+":""}${fmt(gain)}${unit} <small>w ${days} ${days===1?"dzień":"dni"}</small></b></div>
+      <svg viewBox="0 0 ${W} ${Hh}" preserveAspectRatio="none"><path d="${path} L${X(v[v.length-1][0]).toFixed(1)} ${Hh} L${X(v[0][0]).toFixed(1)} ${Hh} Z" fill="rgba(232,180,74,.12)"/><path d="${path}" fill="none" stroke="#e8b44a" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      ${v.map(p=>`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="2.5" fill="#e8b44a"><title>${new Date(p[0]*864e5).toLocaleDateString(LOC(),{day:"numeric",month:"short"})}: ${fmt(p[1])}</title></circle>`).join("")}</svg></div>`; };
+  openProfile=r=>{ base(r); if(!r||!r.tag) return;
+    const h=H[r.tag]||[], body=$("#modalBody .pf2-body"); if(!body) return;
+    const ths=h.filter(x=>x[3]!=null); let up=""; for(let i=1;i<ths.length;i++) if(ths[i][3]>ths[i-1][3]) up=`🏰 TH${ths[i][3]} od ${new Date(ths[i][0]*864e5).toLocaleDateString(LOC(),{day:"numeric",month:"short"})}`;
+    const html=h.length>=2?`<div class="pf2-sec"><div class="fame-label">Postęp w klanie</div><div class="pg-wrap">${spark(h.map(x=>[x[0],x[1]]),"Gwiazdki wojenne","★")}${spark(h.map(x=>[x[0],x[2]]),"Oddane wojska (łącznie)","")}</div>${up?`<p class="updated" style="margin:6px 0 0">${up}</p>`:""}</div>`
+      :`<div class="pf2-sec"><div class="fame-label">Postęp w klanie</div><p class="updated" style="margin:0">Wykres pojawi się po 2–3 dniach — robot zapisuje postęp codziennie.</p></div>`;
+    const grid=body.querySelector(".pf2-grid"); if(grid) grid.insertAdjacentHTML("afterend",html); };
+})();
+
+/* ===== Zamiany numerów (Mój panel) + lista zamian ===== */
+(function(){
+  if(!LOGIN_API) return;
+  const API=LOGIN_API.replace(/\/$/,""), sess=(()=>{try{return localStorage.getItem("am_sess");}catch(e){return null;}})();
+  const cur=AUTO&&AUTO.currentWar;
+  const list=(AUTO&&AUTO.swaps||[]).filter(s=>cur&&s.war===cur.start);
+  // pokaż zgłoszone zamiany w zakładce Kary
+  const kr=$("#kary .wrap"); if(kr&&list.length){ const d=document.createElement("div"); d.className="panel"; d.style.marginTop="12px";
+    d.innerHTML=`<div class="fame-label">🔁 Zgłoszone zamiany numerów (bez kary)</div>${list.map(s=>`<div class="mini-row"><span>${esc(s.name)}${s.target?` → nr ${s.target}`:""}</span><small>${esc(s.note||"")}</small></div>`).join("")}`; kr.appendChild(d); }
+  // formularz w Moim panelu
+  const pn=$("#panel"); if(!pn||!AM_USER||!cur||cur.perMember!==2||cur.state==="warEnded") return;
+  const me=(cur.members||[]).find(m=>m.tag===AM_USER.active); if(!me) return;
+  const mine=list.find(s=>s.tag===me.tag);
+  const box=document.createElement("div"); box.className="panel pn-swap";
+  box.innerHTML=`<div class="fame-label">🔁 Zamiana numeru</div>
+    <p class="updated" style="margin:0 0 10px">Umówiłeś(-aś) się z kimś na zamianę albo zarząd kazał Ci bić inny numer? Zgłoś to tutaj, a robot nie da za to kary.</p>
+    ${mine?`<div class="mini-row"><span>Zgłoszone: biję nr <b>${mine.target||"?"}</b>${mine.note?` · ${esc(mine.note)}`:""}</span><button class="btn btn-ghost btn-sm" data-del="${esc(mine.id)}">Usuń</button></div>`:""}
+    <form class="pn-swap-f"><label>Biję numer<select name="target">${Array.from({length:cur.size},(_,i)=>`<option value="${i+1}"${i+1===me.pos?" disabled":""}>${i+1}${i+1===me.pos?" (mój)":""}</option>`).join("")}</select></label>
+      <label class="grow">Powód<input name="note" maxlength="120" placeholder="np. zamiana z Riczardem / kazał VipeR"></label>
+      <button class="btn btn-gold btn-sm" type="submit">${mine?"Zmień zgłoszenie":"Zgłoś zamianę"}</button></form><p class="lg-err" hidden></p>`;
+  const anchor=pn.querySelector(".pn-duo"); anchor.parentNode.insertBefore(box,anchor.nextSibling);
+  const err=box.querySelector(".lg-err");
+  const send=async(path,payload)=>{ err.hidden=true; try{ const r=await fetch(API+path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({session:sess,tag:me.tag,...payload})}); const d=await r.json().catch(()=>({}));
+    if(!r.ok) throw new Error(d.error||"Nie udało się."); toast("Zapisane ✓ — robot uwzględni to przy kolejnym sprawdzeniu (do 15 min)"); setTimeout(()=>location.reload(),1500); }catch(e){ err.textContent=e.message; err.hidden=false; } };
+  box.querySelector("form").onsubmit=e=>{ e.preventDefault(); const f=e.target; send("/swaps",{war:cur.start,target:+f.target.value,note:f.note.value.trim()}); };
+  const del=box.querySelector("[data-del]"); if(del) del.onclick=()=>send("/swaps/delete",{id:del.dataset.del});
+})();
+
+/* ===== Ankiety klanu ===== */
+(function(){
+  const sec=$("#ankiety"); if(!sec) return; if(!LOGIN_API){ sec.remove(); return; }
+  const API=LOGIN_API.replace(/\/$/,""), box=$("#pollsBox");
+  const sess=(()=>{try{return localStorage.getItem("am_sess");}catch(e){return null;}})();
+  const myTags=AM_USER?AM_USER.tags:[], active=AM_USER&&AM_USER.active;
+  const leaderTag=myTags.find(t=>{ const m=MEMBERS.find(x=>x.tag===t); return m&&(m.role==="leader"||m.role==="co"); });
+  const call=async(path,payload)=>{ const r=await fetch(API+path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({session:sess,...payload})}); const d=await r.json().catch(()=>({})); if(!r.ok) throw new Error(d.error||"Nie udało się."); return d; };
+  const render=polls=>{
+    if(!polls.length&&!leaderTag){ sec.hidden=true; return; } sec.hidden=false;
+    box.innerHTML=(leaderTag?`<details class="panel poll-new"><summary>Utwórz nową ankietę</summary><form><input name="q" maxlength="140" placeholder="Pytanie, np. Wojny 15 vs 15 czy 20 vs 20?" required>
+      <textarea name="o" rows="3" placeholder="Odpowiedzi — każda w nowej linii" required></textarea><label>Czas na głosowanie <select name="d"><option value="1">1 dzień</option><option value="3" selected>3 dni</option><option value="7">7 dni</option></select></label>
+      <button class="btn btn-gold btn-sm">Opublikuj ankietę</button><p class="lg-err" hidden></p></form></details>`:"")+
+      (polls.length?polls.map(p=>{ const tot=p.counts.reduce((a,b)=>a+b,0), voted=active&&p.voters.includes(active), open=!p.closed;
+        return `<div class="panel poll" data-id="${esc(p.id)}"><div class="poll-h"><b>${esc(p.q)}</b><span class="chip">${open?`do ${new Date(p.ends).toLocaleDateString(LOC(),{day:"numeric",month:"short"})}`:"zakończona"}</span></div>
+          ${p.options.map((o,i)=>{ const c=p.counts[i], pc=tot?Math.round(c/tot*100):0;
+            return `<div class="poll-o"><div class="poll-bar"><i style="width:${pc}%"></i><span>${esc(o)}</span><b>${pc}% · ${c}</b></div>${open&&AM_USER?`<button class="btn btn-ghost btn-sm" data-vote="${i}">${voted?"Zmień na to":"Głosuj"}</button>`:""}</div>`; }).join("")}
+          <p class="updated" style="margin:6px 0 0">${tot} ${tot===1?"głos":tot<5?"głosy":"głosów"} · dodał(a) ${esc(p.by)}${voted?" · ✓ Twój głos jest zapisany":""}${!AM_USER&&open?` · <a href="#" class="poll-login">Zaloguj się, żeby zagłosować</a>`:""}</p>
+          ${leaderTag?`<div class="poll-adm">${open?`<button class="btn btn-ghost btn-sm" data-close>Zakończ</button>`:""}<button class="btn btn-ghost btn-sm" data-remove>Usuń</button></div>`:""}</div>`; }).join("")
+      :`<p class="updated">Nie ma jeszcze żadnej ankiety.</p>`);
+    const f=box.querySelector(".poll-new form"); if(f) f.onsubmit=async e=>{ e.preventDefault(); const er=f.querySelector(".lg-err"); er.hidden=true;
+      try{ await call("/polls",{tag:leaderTag,q:f.q.value.trim(),options:f.o.value.split("\n").map(s=>s.trim()).filter(Boolean),days:+f.d.value}); toast("Ankieta opublikowana ✓"); load(); }catch(x){ er.textContent=x.message; er.hidden=false; } };
+    box.querySelectorAll(".poll").forEach(el=>{ const id=el.dataset.id;
+      el.querySelectorAll("[data-vote]").forEach(b=>b.onclick=async()=>{ try{ await call("/vote",{tag:active,id,option:+b.dataset.vote}); toast("Głos zapisany ✓"); load(); }catch(x){ toast(x.message); } });
+      const c=el.querySelector("[data-close]"); if(c) c.onclick=async()=>{ try{ await call("/polls/close",{tag:leaderTag,id}); load(); }catch(x){ toast(x.message); } };
+      const rm=el.querySelector("[data-remove]"); if(rm) rm.onclick=async()=>{ if(!confirm("Usunąć ankietę?")) return; try{ await call("/polls/close",{tag:leaderTag,id,remove:true}); load(); }catch(x){ toast(x.message); } };
+      const lg=el.querySelector(".poll-login"); if(lg) lg.onclick=e=>{ e.preventDefault(); window.amLogin&&amLogin(false); }; });
+  };
+  const load=()=>fetch(API+"/polls").then(r=>r.json()).then(d=>render(d.polls||[])).catch(()=>{ sec.hidden=true; });
+  sec.hidden=true; load();
+})();
+
 /* ===== Ogłoszenie ===== */
 (function(){
   const el=$("#announce"); if(!ANNOUNCE||!ANNOUNCE.text) return;
@@ -3545,7 +3787,7 @@ let saveLayoutState=()=>{};
   const testing=(()=>{try{return !!localStorage.getItem("am_uklad_test");}catch(e){return false;}})();
   const SEC=[["wymagania","📋","Wymagania"],["dolacz","➕","Jak dołączyć"],["regulamin","📜","Regulamin"],["wydarzenia","⏳","Wydarzenia"],
     ["wojny","⚔️","Wojny"],["kary","⛔","Kary"],["osiagniecia","🏆","CWL i rozwój"],["ranking","🎖️","Ranking"],
-    ["panel","👤","Mój panel"],["ogloszenia","📢","Ogłoszenia"],["historia","📜","Nasza historia"],["kadra","👑","Kadra i sława"],["czlonkowie","👥","Członkowie"],["rajdy","🏰","Rajdy i skład"],["zarzad","🛡️","Zarząd"],
+    ["panel","👤","Mój panel"],["ogloszenia","📢","Ogłoszenia"],["ankiety","🗳️","Ankiety"],["historia","📜","Nasza historia"],["kadra","👑","Kadra i sława"],["czlonkowie","👥","Członkowie"],["rajdy","🏰","Rajdy i skład"],["zarzad","🛡️","Zarząd"],
     ["kalkulator","📖","Poradnik"],["bazy","🗺️","Bazy"],["discord","💬","Discord"],["faq","❓","FAQ"]].filter(x=>$("#"+x[0]));
   const A=AUTO||{};
   const sum=id=>{ try{
@@ -3670,7 +3912,7 @@ let saveLayoutState=()=>{};
       ${evs.length?`<div class="panel now-feed"><div class="fame-label">Ostatnio w klanie</div>${evs.map(e=>`<div class="mini-row"><span>${evTxt(e)}</span><small>${ago(e.t)}</small></div>`).join("")}</div>`:""}
     </div>`;
     $("#top").after(home);
-    const wyd=$("#wydarzenia"); home.after(wyd); const ogl=$("#ogloszenia"); if(ogl) home.after(ogl);
+    const wyd=$("#wydarzenia"); home.after(wyd); const ank=$("#ankiety"); if(ank) home.after(ank); const ogl=$("#ogloszenia"); if(ogl) home.after(ogl);
     // Nagłówki podstron
     PAGES.slice(1).forEach(p=>{ if(p[0]==="panel") return; const first=$("#"+p[3][0]); if(!first) return;
       const h=document.createElement("section"); h.className="page-head"; h.dataset.page=p[0];
@@ -3680,11 +3922,11 @@ let saveLayoutState=()=>{};
       p[3].slice(1).forEach((id,i)=>{ const prev=$("#"+p[3][i]); const el=$("#"+id); if(prev&&el) prev.after(el); });
     });
     const final=document.querySelector("section.final");
-    const pageOf=id=>{ if(PAGES.some(p=>p[0]===id)) return id; const sec=secOf(id)||id; if(sec==="wydarzenia"||sec==="ogloszenia") return "start"; const p=PAGES.find(p=>p[3].includes(sec)); return p?p[0]:null; };
+    const pageOf=id=>{ if(PAGES.some(p=>p[0]===id)) return id; const sec=secOf(id)||id; if(sec==="wydarzenia"||sec==="ogloszenia"||sec==="ankiety") return "start"; const p=PAGES.find(p=>p[3].includes(sec)); return p?p[0]:null; };
     const show=(page,id)=>{
       PAGES.forEach(p=>p[3].forEach(x=>$("#"+x)&&$("#"+x).classList.toggle("lay-hide",p[0]!==page)));
       document.querySelectorAll(".page-head").forEach(h=>h.classList.toggle("lay-hide",h.dataset.page!==page));
-      ["#top","#start","#ogloszenia","#wydarzenia"].forEach(q=>$(q)&&$(q).classList.toggle("lay-hide",page!=="start"));
+      ["#top","#start","#ogloszenia","#ankiety","#wydarzenia"].forEach(q=>$(q)&&$(q).classList.toggle("lay-hide",page!=="start"));
       final&&final.classList.toggle("lay-hide",!(page==="start"||page==="klan"));
       nav.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
       mtab.querySelectorAll("a").forEach(a=>a.classList.toggle("on",a.dataset.page===page));
@@ -3711,7 +3953,7 @@ let saveLayoutState=()=>{};
 applyLang();
 /* ===== Ikony zamiast emoji (jednolity wygląd na każdym telefonie) ===== */
 (function(){
-  const M={"👤":"user","⚔":"swords","🏆":"trophy","⛔":"ban","👑":"crown","👥":"users","📖":"book","🛡":"shield","➕":"userplus|ic-green","🔥":"flame|ic-orange","⭐":"star","🌟":"star","🎁":"gift","💬":"chat","🏅":"medal","🎖":"medal","🏰":"castle","🗺":"map","❓":"help","📜":"scroll","⏳":"hourglass","⌛":"hourglass","❌":"x|ic-red","💡":"bulb","📋":"clipboard","🏛":"landmark","🆚":"versus","📅":"calendar","🗓":"calendar","📆":"calendar","📢":"megaphone","📣":"megaphone","📊":"chart","📈":"chart","🔴":"live|ic-red","🟡":"live","🟢":"live|ic-green","✅":"check|ic-green","✔":"check|ic-green","⬆":"up|ic-green","🎮":"gamepad","📦":"box","🎯":"target","🔮":"sparkles","✨":"sparkles","🎉":"sparkles","📲":"phone","📱":"phone","ℹ":"info|ic-blue","🔍":"search","🔎":"search","🏠":"home","⏰":"clock","🕒":"clock","⏱":"clock","💰":"coins","🪙":"coins","👁":"eye|ic-muted","🔗":"link","🚪":"leave|ic-red","⚡":"zap","⚠":"warn|ic-orange","🚩":"flag","🥇":"medal","🥈":"medal|ic-silver","🥉":"medal|ic-bronze"};
+  const M={"👤":"user","🏁":"flag","🔁":"versus","🗳":"clipboard","⚔":"swords","🏆":"trophy","⛔":"ban","👑":"crown","👥":"users","📖":"book","🛡":"shield","➕":"userplus|ic-green","🔥":"flame|ic-orange","⭐":"star","🌟":"star","🎁":"gift","💬":"chat","🏅":"medal","🎖":"medal","🏰":"castle","🗺":"map","❓":"help","📜":"scroll","⏳":"hourglass","⌛":"hourglass","❌":"x|ic-red","💡":"bulb","📋":"clipboard","🏛":"landmark","🆚":"versus","📅":"calendar","🗓":"calendar","📆":"calendar","📢":"megaphone","📣":"megaphone","📊":"chart","📈":"chart","🔴":"live|ic-red","🟡":"live","🟢":"live|ic-green","✅":"check|ic-green","✔":"check|ic-green","⬆":"up|ic-green","🎮":"gamepad","📦":"box","🎯":"target","🔮":"sparkles","✨":"sparkles","🎉":"sparkles","📲":"phone","📱":"phone","ℹ":"info|ic-blue","🔍":"search","🔎":"search","🏠":"home","⏰":"clock","🕒":"clock","⏱":"clock","💰":"coins","🪙":"coins","👁":"eye|ic-muted","🔗":"link","🚪":"leave|ic-red","⚡":"zap","⚠":"warn|ic-orange","🚩":"flag","🥇":"medal","🥈":"medal|ic-silver","🥉":"medal|ic-bronze"};
   const keys=Object.keys(M).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
   const RE=new RegExp("("+keys.join("|")+")\\uFE0F?","gu");
   const SKIP="script,style,textarea,option,select,pre,code,svg,title,input,.no-ico,.lay-switch";
