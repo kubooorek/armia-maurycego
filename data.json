@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T21:31:15.058Z",
+  "updated": "2026-11-08T21:46:13.019Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 188,
-        "pct": 5165,
+        "stars": 194,
+        "pct": 5365,
         "wins": 5,
         "played": 6
       },
@@ -80,8 +80,8 @@
         "tag": "#2J9QGGG2Q",
         "name": "سوري",
         "level": 4,
-        "stars": 106,
-        "pct": 3642,
+        "stars": 109,
+        "pct": 3742,
         "wins": 1,
         "played": 6
       }
@@ -2692,7 +2692,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -6667,8 +6667,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "76|35451629|33314436|0|72|0|100|0|0|35|9",
-      "last": "2026-11-08T17:01:36.775Z",
+      "sig": "76|35451629|33314436|0|72|0|100|0|0|36|9",
+      "last": "2026-11-08T21:46:13.003Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -10421,7 +10421,7 @@
       "received": 157,
       "trophies": 240,
       "profile": {
-        "level": 35,
+        "level": 36,
         "trophies": 240,
         "best": 240,
         "league": "Skeleton League 1",
