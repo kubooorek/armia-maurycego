@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T05:15:58.338Z",
+  "updated": "2026-11-08T05:31:17.268Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 129,
-        "pct": 3007,
+        "stars": 132,
+        "pct": 3107,
         "wins": 4,
         "played": 5
       },
@@ -44,8 +44,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 123,
-        "pct": 4015,
+        "stars": 126,
+        "pct": 4115,
         "wins": 2,
         "played": 5
       },
@@ -81,7 +81,7 @@
         "name": "سوري",
         "level": 4,
         "stars": 101,
-        "pct": 3421,
+        "pct": 3441,
         "wins": 1,
         "played": 5
       }
@@ -1960,7 +1960,7 @@
             {
               "pos": 5,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 6,
@@ -2016,9 +2016,9 @@
         },
         "them": {
           "name": "Dream Clans",
-          "stars": 5,
-          "pct": 11.67,
-          "attacks": 2,
+          "stars": 8,
+          "pct": 18.33,
+          "attacks": 3,
           "bases": [
             {
               "pos": 1,
@@ -3134,7 +3134,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 5,
-      "them": 5,
+      "them": 8,
       "members": [
         {
           "name": "KUBOOOREK",
@@ -5446,8 +5446,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|33984708|33564689|0|0|0|250|0|3|43|9",
-      "last": "2026-11-07T19:16:04.149Z",
+      "sig": "0|34332573|33765131|0|0|0|250|0|3|43|9",
+      "last": "2026-11-08T05:31:17.258Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -8022,64 +8022,16 @@
       }
     },
     {
-      "name": "Riczard",
-      "tag": "#R2PCVYQG2",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 293,
-      "profile": {
-        "level": 41,
-        "trophies": 293,
-        "best": 293,
-        "league": "Skeleton League 2",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 36124,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 6,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 1500,
-        "don": 175,
-        "capLoot": 24090,
-        "gold": 24888711,
-        "elixir": 22642854,
-        "capContrib": 36124,
-        "wins": 0
-      }
-    },
-    {
       "name": "SHA☆ZAM!",
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
       "given": 161,
       "received": 282,
-      "trophies": 277,
+      "trophies": 299,
       "profile": {
         "level": 55,
-        "trophies": 277,
+        "trophies": 299,
         "best": 349,
         "league": "Skeleton League 2",
         "warStars": 4,
@@ -8125,6 +8077,54 @@
         "gold": 64800300,
         "elixir": 64306908,
         "capContrib": 31386,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Riczard",
+      "tag": "#R2PCVYQG2",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 293,
+      "profile": {
+        "level": 41,
+        "trophies": 293,
+        "best": 293,
+        "league": "Skeleton League 2",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 36124,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 6,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 1500,
+        "don": 175,
+        "capLoot": 24090,
+        "gold": 24888711,
+        "elixir": 22642854,
+        "capContrib": 36124,
         "wins": 0
       }
     },
@@ -8480,7 +8480,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 11,
+            "level": 12,
             "max": 110
           },
           {
@@ -8491,10 +8491,10 @@
         ]
       },
       "rush": {
-        "pct": 22.3,
+        "pct": 21.4,
         "troops": 5.7,
         "spells": 30,
-        "heroes": 46.7,
+        "heroes": 43.3,
         "top": [
           {
             "n": "Zaklęcie szału",
@@ -8518,7 +8518,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 11,
+            "lvl": 12,
             "need": 20
           },
           {
@@ -8532,8 +8532,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 33984708,
-        "elixir": 33564689,
+        "gold": 34332573,
+        "elixir": 33765131,
         "capContrib": 250,
         "wins": 0
       }
