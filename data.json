@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T08:46:08.577Z",
+  "updated": "2026-11-08T09:02:20.889Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2604,10 +2604,10 @@
       "state": "ongoing",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
-      "loot": 110646,
-      "raids": 8,
-      "attacks": 101,
-      "districts": 26,
+      "loot": 117337,
+      "raids": 9,
+      "attacks": 107,
+      "districts": 28,
       "medals": 0,
       "members": [
         {
@@ -2672,6 +2672,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 6824
+        },
+        {
+          "name": "Riczard",
+          "tag": "#R2PCVYQG2",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6691
         },
         {
           "name": "Belaska",
@@ -5470,8 +5477,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|24888711|22642854|1500|175|24090|36124|0|21|41|8",
-      "last": "2026-11-07T09:15:58.880Z",
+      "sig": "0|24888711|22642854|1500|175|30430|43065|0|21|41|8",
+      "last": "2026-11-08T09:02:20.878Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -8120,7 +8127,7 @@
         "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 36124,
+        "capital": 43065,
         "warPref": "in",
         "heroes": [
           {
@@ -8145,10 +8152,10 @@
       "ach": {
         "cg": 1500,
         "don": 175,
-        "capLoot": 24090,
+        "capLoot": 30430,
         "gold": 24888711,
         "elixir": 22642854,
-        "capContrib": 36124,
+        "capContrib": 43065,
         "wins": 0
       }
     },
@@ -8227,12 +8234,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
