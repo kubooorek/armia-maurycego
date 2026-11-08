@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T19:01:25.184Z",
+  "updated": "2026-11-08T19:16:08.519Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,10 +17,10 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 174,
+        "stars": 184,
         "pct": 4967,
-        "wins": 4,
-        "played": 5
+        "wins": 5,
+        "played": 6
       },
       {
         "tag": "#2GQQ8RGRL",
@@ -29,25 +29,34 @@
         "stars": 154,
         "pct": 4881,
         "wins": 3,
-        "played": 5
+        "played": 6
       },
       {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 139,
+        "stars": 149,
         "pct": 3404,
-        "wins": 4,
-        "played": 5
+        "wins": 5,
+        "played": 6
       },
       {
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 137,
+        "stars": 147,
         "pct": 4598,
-        "wins": 2,
-        "played": 5
+        "wins": 3,
+        "played": 6
+      },
+      {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 136,
+        "pct": 3670,
+        "wins": 3,
+        "played": 6
       },
       {
         "tag": "#2RVLCPPUR",
@@ -56,16 +65,7 @@
         "stars": 128,
         "pct": 3884,
         "wins": 2,
-        "played": 5
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 126,
-        "pct": 3670,
-        "wins": 2,
-        "played": 5
+        "played": 6
       },
       {
         "tag": "#2YRR8GPUU",
@@ -74,7 +74,7 @@
         "stars": 120,
         "pct": 3562,
         "wins": 2,
-        "played": 5
+        "played": 6
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -83,7 +83,7 @@
         "stars": 106,
         "pct": 3642,
         "wins": 1,
-        "played": 5
+        "played": 6
       }
     ],
     "wars": [
@@ -1926,7 +1926,7 @@
       },
       {
         "round": 6,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261107T191029.000Z",
@@ -3228,7 +3228,7 @@
       "enemy": "Dream Clans",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 15,
       "them": 15,
@@ -6401,8 +6401,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "0|407891520|406673500|25150|1467|636760|726415|0|82|127|12",
-      "last": "2026-11-08T14:01:31.357Z",
+      "sig": "0|410104163|409330910|25150|1467|636760|726415|0|82|127|12",
+      "last": "2026-11-08T19:16:08.505Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8202,8 +8202,8 @@
         "cg": 25150,
         "don": 1467,
         "capLoot": 636760,
-        "gold": 407891520,
-        "elixir": 406673500,
+        "gold": 410104163,
+        "elixir": 409330910,
         "capContrib": 726415,
         "wins": 0
       }
