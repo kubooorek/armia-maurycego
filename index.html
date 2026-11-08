@@ -1467,6 +1467,11 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   html.gb[data-motyw="dzien"] section,html.gb[data-motyw="dzien"] .final,html.gb[data-motyw="dzien"] .page-head{border-top:0!important;border-bottom:0!important}
   html.gb .panel *,html.gb .war *,html.gb .table-box *,html.gb .live-war *{border-color:rgba(40,20,5,.35)}
   html.gb .mini-row,html.gb .panel li,html.gb .sk-col a{border-bottom-color:transparent!important}
+  /* Ogień: bez poziomych linii między sekcjami */
+  html[data-motyw="epicki"] section,html[data-motyw="epicki"] .final,html[data-motyw="epicki"] .page-head,html[data-motyw="epicki"] .og-hero,html[data-motyw="epicki"] footer,html[data-motyw="epicki"] section#start{border-top:0!important;border-bottom:0!important}
+  html[data-motyw="epicki"] footer{box-shadow:none!important}
+  html[data-motyw="epicki"] footer .foot-bottom,html[data-motyw="epicki"] footer .wrap>div:last-child{border-top:0!important}
+  html[data-motyw="epicki"] section+section{border-top:0!important}
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
