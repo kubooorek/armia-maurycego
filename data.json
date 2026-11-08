@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T11:31:16.323Z",
+  "updated": "2026-11-08T11:45:54.897Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2604,7 +2604,7 @@
       }
     ]
   },
-  "visits": 82,
+  "visits": 83,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -3180,124 +3180,243 @@
       "cwl": true,
       "us": 11,
       "them": 8,
+      "pct": 30.07,
+      "themPct": 18.33,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 18,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 18,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 17,
+          "best": 0
+        },
+        {
+          "pos": 4,
+          "th": 17,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 17,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 16,
+          "best": 0
+        },
+        {
+          "pos": 7,
+          "th": 16,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 15,
+          "best": 3
+        },
+        {
+          "pos": 9,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 14,
+          "best": 1
+        },
+        {
+          "pos": 13,
+          "th": 13,
+          "best": 2
+        },
+        {
+          "pos": 14,
+          "th": 14,
+          "best": 3
+        },
+        {
+          "pos": 15,
+          "th": 13,
+          "best": 2
+        }
+      ],
+      "round": 6,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "8. rami 007"
             }
           ]
         },
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
           "attacks": []
         },
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "14. QMD881"
             }
           ]
         },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
           "attacks": [
             {
               "stars": 0,
-              "pct": 38
+              "pct": 38,
+              "target": "11. RAZZAQ"
             }
           ]
         },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
           "attacks": []
         },
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
           "attacks": []
         },
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
+          "pos": 7,
+          "th": 12,
           "attacks": [
             {
               "stars": 1,
-              "pct": 48
+              "pct": 48,
+              "target": "12. ster"
             }
           ]
         },
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
+          "pos": 8,
+          "th": 11,
           "attacks": [
             {
               "stars": 2,
-              "pct": 80
+              "pct": 80,
+              "target": "13. Zaid"
             }
           ]
         },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 11,
           "attacks": [
             {
               "stars": 1,
-              "pct": 53
+              "pct": 53,
+              "target": "13. Zaid"
             }
           ]
         },
         {
           "name": "tak",
           "tag": "#Y02PYY922",
+          "pos": 10,
+          "th": 9,
           "attacks": [
             {
               "stars": 1,
-              "pct": 48
+              "pct": 48,
+              "target": "14. QMD881"
             }
           ]
         },
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 9,
           "attacks": []
         },
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
+          "pos": 12,
+          "th": 9,
           "attacks": []
         },
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
+          "pos": 14,
+          "th": 9,
           "attacks": []
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
+          "pos": 15,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 33
+              "pct": 33,
+              "target": "10. ARTANIEL"
             }
           ]
         },
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
+          "pos": 21,
+          "th": 8,
           "attacks": [
             {
               "stars": 2,
-              "pct": 52
+              "pct": 52,
+              "target": "15. Astom.boss"
             }
           ]
         }
@@ -3313,154 +3432,279 @@
       "cwl": true,
       "us": 37,
       "them": 27,
+      "pct": 90.47,
+      "themPct": 62.33,
+      "themBases": [
+        {
+          "pos": 2,
+          "th": 16,
+          "best": 1
+        },
+        {
+          "pos": 3,
+          "th": 14,
+          "best": 3
+        },
+        {
+          "pos": 4,
+          "th": 14,
+          "best": 1
+        },
+        {
+          "pos": 5,
+          "th": 12,
+          "best": 2
+        },
+        {
+          "pos": 6,
+          "th": 12,
+          "best": 3
+        },
+        {
+          "pos": 7,
+          "th": 12,
+          "best": 3
+        },
+        {
+          "pos": 8,
+          "th": 11,
+          "best": 2
+        },
+        {
+          "pos": 9,
+          "th": 10,
+          "best": 3
+        },
+        {
+          "pos": 10,
+          "th": 10,
+          "best": 3
+        },
+        {
+          "pos": 11,
+          "th": 10,
+          "best": 3
+        },
+        {
+          "pos": 12,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 13,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 14,
+          "th": 9,
+          "best": 3
+        },
+        {
+          "pos": 15,
+          "th": 10,
+          "best": 1
+        },
+        {
+          "pos": 22,
+          "th": 8,
+          "best": 3
+        }
+      ],
+      "round": 5,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
           "attacks": [
             {
               "stars": 1,
-              "pct": 90
+              "pct": 90,
+              "target": "2. بشير8"
             }
           ]
         },
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "3. عزوز"
             }
           ]
         },
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
           "attacks": [
             {
               "stars": 1,
-              "pct": 63
+              "pct": 63,
+              "target": "4. الفانوس السحري"
             }
           ]
         },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "6. افاتار"
             }
           ]
         },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
           "attacks": [
             {
               "stars": 2,
-              "pct": 66
+              "pct": 66,
+              "target": "5. محمد قصوده"
             }
           ]
         },
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "7. ابو الوفاء"
             }
           ]
         },
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
+          "pos": 7,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "14. سعد سالم"
             }
           ]
         },
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
+          "pos": 8,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "9. ضياء عزوز"
             }
           ]
         },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "10. عزوز المحرر"
             }
           ]
         },
         {
           "name": "tak",
           "tag": "#Y02PYY922",
+          "pos": 10,
+          "th": 9,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "11. عمر"
             }
           ]
         },
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 9,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "12. الملك"
             }
           ]
         },
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
+          "pos": 12,
+          "th": 9,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "13. أحمد"
             }
           ]
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
+          "pos": 13,
+          "th": 9,
           "attacks": [
             {
               "stars": 2,
-              "pct": 84
+              "pct": 84,
+              "target": "8. MAAD"
             }
           ]
         },
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
+          "pos": 15,
+          "th": 9,
           "attacks": [
             {
               "stars": 1,
-              "pct": 54
+              "pct": 54,
+              "target": "15. azez"
             }
           ]
         },
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
+          "pos": 20,
+          "th": 8,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "22. عزوز الفاتح"
             }
           ]
         }
@@ -3476,149 +3720,273 @@
       "cwl": true,
       "us": 23,
       "them": 18,
+      "pct": 58.6,
+      "themPct": 40,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 14,
+          "best": 3
+        },
+        {
+          "pos": 4,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 13,
+          "best": 1
+        },
+        {
+          "pos": 7,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 13,
+          "best": 3
+        },
+        {
+          "pos": 9,
+          "th": 13,
+          "best": 1
+        },
+        {
+          "pos": 10,
+          "th": 12,
+          "best": 2
+        },
+        {
+          "pos": 11,
+          "th": 12,
+          "best": 3
+        },
+        {
+          "pos": 12,
+          "th": 12,
+          "best": 2
+        },
+        {
+          "pos": 13,
+          "th": 12,
+          "best": 3
+        },
+        {
+          "pos": 14,
+          "th": 11,
+          "best": 3
+        },
+        {
+          "pos": 15,
+          "th": 10,
+          "best": 2
+        }
+      ],
+      "round": 4,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "3. mr strange"
             }
           ]
         },
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "8. VINNY"
             }
           ]
         },
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
           "attacks": [
             {
               "stars": 2,
-              "pct": 91
+              "pct": 91,
+              "target": "10. KynethZ"
             }
           ]
         },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "11. ditchellmennis"
             }
           ]
         },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
           "attacks": [
             {
               "stars": 0,
-              "pct": 37
+              "pct": 37,
+              "target": "7. itz me sohel"
             }
           ]
         },
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
           "attacks": [
             {
               "stars": 1,
-              "pct": 62
+              "pct": 62,
+              "target": "6. MR.DEVIL"
             }
           ]
         },
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
+          "pos": 7,
+          "th": 11,
           "attacks": [
             {
               "stars": 1,
-              "pct": 54
+              "pct": 54,
+              "target": "13. uchiha itachi"
             }
           ]
         },
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
+          "pos": 8,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "13. uchiha itachi"
             }
           ]
         },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "14. AZZU"
             }
           ]
         },
         {
           "name": "tak",
           "tag": "#Y02PYY922",
+          "pos": 10,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 36
+              "pct": 36,
+              "target": "9. shivangi rajput"
             }
           ]
         },
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 9,
           "attacks": [
             {
               "stars": 1,
-              "pct": 59
+              "pct": 59,
+              "target": "9. shivangi rajput"
             }
           ]
         },
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
+          "pos": 12,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 47
+              "pct": 47,
+              "target": "12. king Arthur"
             }
           ]
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
+          "pos": 13,
+          "th": 9,
           "attacks": [
             {
               "stars": 2,
-              "pct": 63
+              "pct": 63,
+              "target": "12. king Arthur"
             }
           ]
         },
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
+          "pos": 14,
+          "th": 9,
           "attacks": []
         },
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
+          "pos": 19,
+          "th": 8,
           "attacks": [
             {
               "stars": 2,
-              "pct": 67
+              "pct": 67,
+              "target": "15. sussy baka"
             }
           ]
         }
@@ -3634,149 +4002,273 @@
       "cwl": true,
       "us": 19,
       "them": 23,
+      "pct": 47.2,
+      "themPct": 51,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 13,
+          "best": 3
+        },
+        {
+          "pos": 4,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 13,
+          "best": 3
+        },
+        {
+          "pos": 6,
+          "th": 13,
+          "best": 1
+        },
+        {
+          "pos": 7,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 12,
+          "best": 3
+        },
+        {
+          "pos": 11,
+          "th": 13,
+          "best": 2
+        },
+        {
+          "pos": 12,
+          "th": 12,
+          "best": 2
+        },
+        {
+          "pos": 13,
+          "th": 12,
+          "best": 1
+        },
+        {
+          "pos": 14,
+          "th": 12,
+          "best": 1
+        },
+        {
+          "pos": 15,
+          "th": 12,
+          "best": 3
+        }
+      ],
+      "round": 3,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "3. Minny"
             }
           ]
         },
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "5. XxAntxX"
             }
           ]
         },
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "10. RefriedB3anz"
             }
           ]
         },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
           "attacks": [
             {
               "stars": 1,
-              "pct": 79
+              "pct": 79,
+              "target": "15. kunal"
             }
           ]
         },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
           "attacks": [
             {
               "stars": 2,
-              "pct": 68
+              "pct": 68,
+              "target": "11. Virat.kohli"
             }
           ]
         },
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
           "attacks": [
             {
               "stars": 1,
-              "pct": 79
+              "pct": 79,
+              "target": "6. sohelkhan1432"
             }
           ]
         },
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
+          "pos": 7,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "15. kunal"
             }
           ]
         },
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
+          "pos": 8,
+          "th": 11,
           "attacks": [
             {
               "stars": 0,
-              "pct": 49
+              "pct": 49,
+              "target": "15. kunal"
             }
           ]
         },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 10,
           "attacks": []
         },
         {
           "name": "tak",
           "tag": "#Y02PYY922",
+          "pos": 10,
+          "th": 9,
           "attacks": [
             {
               "stars": 1,
-              "pct": 48
+              "pct": 48,
+              "target": "13. captain jon"
             }
           ]
         },
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 9,
           "attacks": [
             {
               "stars": 1,
-              "pct": 53
+              "pct": 53,
+              "target": "14. Twilight"
             }
           ]
         },
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
+          "pos": 12,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 39
+              "pct": 39,
+              "target": "14. Twilight"
             }
           ]
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
+          "pos": 13,
+          "th": 9,
           "attacks": [
             {
               "stars": 2,
-              "pct": 60
+              "pct": 60,
+              "target": "12. zama"
             }
           ]
         },
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
+          "pos": 14,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 37
+              "pct": 37,
+              "target": "14. Twilight"
             }
           ]
         },
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
+          "pos": 19,
+          "th": 8,
           "attacks": [
             {
               "stars": 1,
-              "pct": 33
+              "pct": 33,
+              "target": "14. Twilight"
             }
           ]
         }
@@ -3792,149 +4284,273 @@
       "cwl": true,
       "us": 20,
       "them": 20,
+      "pct": 53.8,
+      "themPct": 46.2,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 17,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 17,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 15,
+          "best": 3
+        },
+        {
+          "pos": 4,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 14,
+          "best": 3
+        },
+        {
+          "pos": 6,
+          "th": 13,
+          "best": 2
+        },
+        {
+          "pos": 7,
+          "th": 13,
+          "best": 1
+        },
+        {
+          "pos": 8,
+          "th": 13,
+          "best": 2
+        },
+        {
+          "pos": 9,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 13,
+          "best": 2
+        },
+        {
+          "pos": 13,
+          "th": 12,
+          "best": 2
+        },
+        {
+          "pos": 14,
+          "th": 11,
+          "best": 2
+        },
+        {
+          "pos": 15,
+          "th": 9,
+          "best": 3
+        }
+      ],
+      "round": 2,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "3. A.B.MEITEI"
             }
           ]
         },
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "5. DEMON SLAYER"
             }
           ]
         },
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
           "attacks": [
             {
               "stars": 2,
-              "pct": 69
+              "pct": 69,
+              "target": "12. Mim"
             }
           ]
         },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
           "attacks": [
             {
               "stars": 0,
-              "pct": 31
+              "pct": 31,
+              "target": "9. palin sorai"
             }
           ]
         },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
           "attacks": [
             {
               "stars": 2,
-              "pct": 50
+              "pct": 50,
+              "target": "8. Gliders"
             }
           ]
         },
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
           "attacks": [
             {
               "stars": 2,
-              "pct": 80
+              "pct": 80,
+              "target": "6. Panther"
             }
           ]
         },
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
+          "pos": 7,
+          "th": 11,
           "attacks": [
             {
               "stars": 1,
-              "pct": 63
+              "pct": 63,
+              "target": "7. Ta tomba"
             }
           ]
         },
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
+          "pos": 8,
+          "th": 11,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "15. Lillll"
             }
           ]
         },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 10,
           "attacks": [
             {
               "stars": 0,
-              "pct": 47
+              "pct": 47,
+              "target": "10. Frengky"
             }
           ]
         },
         {
           "name": "tak",
           "tag": "#Y02PYY922",
+          "pos": 10,
+          "th": 9,
           "attacks": [
             {
               "stars": 2,
-              "pct": 84
+              "pct": 84,
+              "target": "14. Pritsm√"
             }
           ]
         },
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 33
+              "pct": 33,
+              "target": "11. Ronex"
             }
           ]
         },
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
+          "pos": 12,
+          "th": 9,
           "attacks": [
             {
               "stars": 2,
-              "pct": 57
+              "pct": 57,
+              "target": "14. Pritsm√"
             }
           ]
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
+          "pos": 13,
+          "th": 9,
           "attacks": [
             {
               "stars": 2,
-              "pct": 50
+              "pct": 50,
+              "target": "13. Shiwarex"
             }
           ]
         },
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
+          "pos": 14,
+          "th": 9,
           "attacks": []
         },
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
+          "pos": 18,
+          "th": 8,
           "attacks": [
             {
               "stars": 0,
-              "pct": 20
+              "pct": 20,
+              "target": "10. Frengky"
             }
           ]
         }
@@ -3950,154 +4566,279 @@
       "cwl": true,
       "us": 10,
       "them": 21,
+      "pct": 37.4,
+      "themPct": 50.47,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 16,
+          "best": 3
+        },
+        {
+          "pos": 2,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 4,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 14,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 14,
+          "best": 1
+        },
+        {
+          "pos": 7,
+          "th": 14,
+          "best": 2
+        },
+        {
+          "pos": 8,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 13,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 14,
+          "th": 13,
+          "best": 3
+        },
+        {
+          "pos": 15,
+          "th": 12,
+          "best": 1
+        }
+      ],
+      "round": 1,
       "members": [
         {
           "name": "KUBOOOREK",
           "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "1. зомбезия"
             }
           ]
         },
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
+          "pos": 2,
+          "th": 15,
           "attacks": [
             {
               "stars": 3,
-              "pct": 100
+              "pct": 100,
+              "target": "14. midnight"
             }
           ]
         },
         {
           "name": "Albaroon.2",
           "tag": "#GYUJR2URJ",
+          "pos": 3,
+          "th": 12,
           "attacks": [
             {
               "stars": 0,
-              "pct": 38
+              "pct": 38,
+              "target": "3. КРУТОЙ ПРИЗРАК"
             }
           ]
         },
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
+          "pos": 4,
+          "th": 12,
           "attacks": [
             {
               "stars": 0,
-              "pct": 35
+              "pct": 35,
+              "target": "4. bodya Top1"
             }
           ]
         },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
+          "pos": 5,
+          "th": 12,
           "attacks": [
             {
               "stars": 0,
-              "pct": 31
+              "pct": 31,
+              "target": "5. ahaha"
             }
           ]
         },
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
           "attacks": [
             {
               "stars": 1,
-              "pct": 51
+              "pct": 51,
+              "target": "6. Jason"
             }
           ]
         },
         {
           "name": "VipeR",
           "tag": "#22R8PLCU8",
+          "pos": 7,
+          "th": 11,
           "attacks": [
             {
               "stars": 2,
-              "pct": 57
+              "pct": 57,
+              "target": "7. Marshal"
             }
           ]
         },
         {
           "name": "monte",
           "tag": "#QYJUV90JY",
+          "pos": 8,
+          "th": 11,
           "attacks": [
             {
               "stars": 0,
-              "pct": 40
+              "pct": 40,
+              "target": "15. lil buda"
             }
           ]
         },
         {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 10,
           "attacks": [
             {
               "stars": 0,
-              "pct": 23
+              "pct": 23,
+              "target": "9. no name"
             }
           ]
         },
         {
           "name": "tak",
           "tag": "#Y02PYY922",
+          "pos": 10,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 41
+              "pct": 41,
+              "target": "9. no name"
             }
           ]
         },
         {
           "name": "Kojak",
           "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 27
+              "pct": 27,
+              "target": "11. АРТУР ТН ДОВЛЕТ"
             }
           ]
         },
         {
           "name": "Belaska",
           "tag": "#GU0R2J8R0",
+          "pos": 12,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 18
+              "pct": 18,
+              "target": "12. dimak"
             }
           ]
         },
         {
           "name": "Brann",
           "tag": "#LC8VRR9R2",
+          "pos": 13,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 39
+              "pct": 39,
+              "target": "13. ★THE_BOMBERMEN★"
             }
           ]
         },
         {
           "name": "vvd",
           "tag": "#GQULCR98R",
+          "pos": 14,
+          "th": 9,
           "attacks": [
             {
               "stars": 0,
-              "pct": 24
+              "pct": 24,
+              "target": "14. midnight"
             }
           ]
         },
         {
           "name": "Barnes",
           "tag": "#LQVRCRUYR",
+          "pos": 17,
+          "th": 8,
           "attacks": [
             {
               "stars": 1,
-              "pct": 24
+              "pct": 24,
+              "target": "15. lil buda"
             }
           ]
         }
@@ -5263,44 +6004,11 @@
       "t": "2026-11-01T17:15:47.615Z"
     },
     {
-      "id": "20261031T171000.000Z:#R2PCVYQG2:missed",
-      "type": "missed",
-      "detail": "wykorzystane ataki: 1/2",
-      "tag": "#R2PCVYQG2",
-      "name": "Riczard",
-      "war": "20261031T171000.000Z",
-      "end": "20261101T171000.000Z",
-      "enemy": "بچهای لارج",
-      "t": "2026-11-01T17:15:47.615Z"
-    },
-    {
-      "id": "20261031T171000.000Z:#R9GPGL0QJ:missed",
-      "type": "missed",
-      "detail": "wykorzystane ataki: 1/2",
-      "tag": "#R9GPGL0QJ",
-      "name": "erykos",
-      "war": "20261031T171000.000Z",
-      "end": "20261101T171000.000Z",
-      "enemy": "بچهای لارج",
-      "t": "2026-11-01T17:15:47.615Z"
-    },
-    {
       "id": "20261031T171000.000Z:#LUQJC2JGY:missed",
       "type": "missed",
       "detail": "wykorzystane ataki: 0/2",
       "tag": "#LUQJC2JGY",
       "name": "Darui",
-      "war": "20261031T171000.000Z",
-      "end": "20261101T171000.000Z",
-      "enemy": "بچهای لارج",
-      "t": "2026-11-01T17:15:47.615Z"
-    },
-    {
-      "id": "20261031T171000.000Z:#RYLR2C92V:missed",
-      "type": "missed",
-      "detail": "wykorzystane ataki: 1/2",
-      "tag": "#RYLR2C92V",
-      "name": "SZAR3",
       "war": "20261031T171000.000Z",
       "end": "20261101T171000.000Z",
       "enemy": "بچهای لارج",
@@ -5401,8 +6109,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "239|271248176|271395249|14450|382|65320|120775|0|65|104|12",
-      "last": "2026-11-08T08:04:33.746Z",
+      "sig": "239|272727403|273628652|14450|382|65320|120775|0|65|104|12",
+      "last": "2026-11-08T11:45:54.885Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -5496,8 +6204,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "162|65549884|65076298|2400|614|14765|31386|0|4|55|9",
-      "last": "2026-11-08T07:01:29.429Z",
+      "sig": "188|65549884|65076298|2400|614|14765|31386|0|4|55|9",
+      "last": "2026-11-08T11:45:54.885Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -5980,6 +6688,378 @@
       ]
     }
   },
+  "swaps": [],
+  "playerHistory": {
+    "#VP9PLGLV": [
+      [
+        20765,
+        1260,
+        81949,
+        15
+      ]
+    ],
+    "#LUGR0YQY0": [
+      [
+        20765,
+        1222,
+        93591,
+        15
+      ]
+    ],
+    "#GYUJR2URJ": [
+      [
+        20765,
+        101,
+        7747,
+        12
+      ]
+    ],
+    "#GJJ90QGVQ": [
+      [
+        20765,
+        11,
+        1434,
+        13
+      ]
+    ],
+    "#Q9CU9P908": [
+      [
+        20765,
+        65,
+        382,
+        12
+      ]
+    ],
+    "#LJYR92002": [
+      [
+        20765,
+        127,
+        642,
+        12
+      ]
+    ],
+    "#22R8PLCU8": [
+      [
+        20765,
+        243,
+        9453,
+        11
+      ]
+    ],
+    "#8UCPRGC8": [
+      [
+        20765,
+        510,
+        50969,
+        12
+      ]
+    ],
+    "#2JGYURUQJ": [
+      [
+        20765,
+        82,
+        1467,
+        12
+      ]
+    ],
+    "#Y02PYY922": [
+      [
+        20765,
+        3167,
+        72883,
+        9
+      ]
+    ],
+    "#LC8VRR9R2": [
+      [
+        20765,
+        2062,
+        23588,
+        9
+      ]
+    ],
+    "#RPR0L809R": [
+      [
+        20765,
+        36,
+        244,
+        11
+      ]
+    ],
+    "#QYJUV90JY": [
+      [
+        20765,
+        52,
+        20,
+        13
+      ]
+    ],
+    "#GU0R2J8R0": [
+      [
+        20765,
+        71,
+        534,
+        9
+      ]
+    ],
+    "#G8VGC2VRL": [
+      [
+        20765,
+        36,
+        634,
+        9
+      ]
+    ],
+    "#YQ0RPRP88": [
+      [
+        20765,
+        0,
+        23,
+        11
+      ]
+    ],
+    "#LQVRCRUYR": [
+      [
+        20765,
+        2460,
+        11803,
+        8
+      ]
+    ],
+    "#R0V8QGLJQ": [
+      [
+        20765,
+        0,
+        0,
+        11
+      ]
+    ],
+    "#QGPC2228Q": [
+      [
+        20765,
+        14,
+        0,
+        9
+      ]
+    ],
+    "#RY0QPVCCY": [
+      [
+        20765,
+        35,
+        29,
+        10
+      ]
+    ],
+    "#YLLQL2VUP": [
+      [
+        20765,
+        41,
+        180,
+        9
+      ]
+    ],
+    "#GQULCR98R": [
+      [
+        20765,
+        13,
+        336,
+        10
+      ]
+    ],
+    "#R8V9U9VLJ": [
+      [
+        20765,
+        0,
+        27,
+        10
+      ]
+    ],
+    "#GV0P9JL8Q": [
+      [
+        20765,
+        2,
+        89,
+        9
+      ]
+    ],
+    "#GVGRVCQJR": [
+      [
+        20765,
+        4,
+        614,
+        9
+      ]
+    ],
+    "#R2PCVYQG2": [
+      [
+        20765,
+        21,
+        175,
+        8
+      ]
+    ],
+    "#GVG02VV98": [
+      [
+        20765,
+        0,
+        0,
+        8
+      ]
+    ],
+    "#R9GPGL0QJ": [
+      [
+        20765,
+        6,
+        76,
+        8
+      ]
+    ],
+    "#RYLR2C92V": [
+      [
+        20765,
+        7,
+        88,
+        8
+      ]
+    ],
+    "#LUQJC2JGY": [
+      [
+        20765,
+        0,
+        162,
+        9
+      ]
+    ],
+    "#R8RVQVPCC": [
+      [
+        20765,
+        15,
+        40,
+        8
+      ]
+    ],
+    "#R0VJLRGQ0": [
+      [
+        20765,
+        14,
+        0,
+        8
+      ]
+    ],
+    "#R0VLRL292": [
+      [
+        20765,
+        3,
+        0,
+        9
+      ]
+    ],
+    "#R9QQPG9JP": [
+      [
+        20765,
+        21,
+        12,
+        8
+      ]
+    ],
+    "#R92C0U8UU": [
+      [
+        20765,
+        15,
+        30,
+        7
+      ]
+    ],
+    "#R9L08VVCY": [
+      [
+        20765,
+        0,
+        0,
+        8
+      ]
+    ],
+    "#GQ2QUJRGU": [
+      [
+        20765,
+        0,
+        68,
+        8
+      ]
+    ],
+    "#LYUQYCU9G": [
+      [
+        20765,
+        6,
+        139,
+        8
+      ]
+    ],
+    "#RYUV9V9RC": [
+      [
+        20765,
+        0,
+        45,
+        7
+      ]
+    ],
+    "#GQR98J880": [
+      [
+        20765,
+        0,
+        72,
+        9
+      ]
+    ],
+    "#R2UJV2VJR": [
+      [
+        20765,
+        0,
+        0,
+        7
+      ]
+    ],
+    "#GLV9998PC": [
+      [
+        20765,
+        0,
+        0,
+        5
+      ]
+    ],
+    "#GGU0RJYR9": [
+      [
+        20765,
+        0,
+        1,
+        5
+      ]
+    ],
+    "#R9GUJ0ULV": [
+      [
+        20765,
+        0,
+        61,
+        6
+      ]
+    ],
+    "#RYPRPQUQJ": [
+      [
+        20765,
+        0,
+        0,
+        7
+      ]
+    ],
+    "#RY9GPJ822": [
+      [
+        20765,
+        0,
+        0,
+        6
+      ]
+    ]
+  },
+  "cwlSummary": null,
   "dayBase": {
     "day": "2026-11-08",
     "since": "2026-11-07T23:01:30.199Z",
@@ -6715,8 +7795,8 @@
         "cg": 14450,
         "don": 382,
         "capLoot": 65320,
-        "gold": 271248176,
-        "elixir": 271395249,
+        "gold": 272727403,
+        "elixir": 273628652,
         "capContrib": 120775,
         "wins": 0
       }
@@ -7870,7 +8950,7 @@
       "profile": {
         "level": 54,
         "trophies": 386,
-        "best": 346,
+        "best": 386,
         "league": "Skeleton League 3",
         "warStars": 13,
         "attackWins": 0,
@@ -8091,7 +9171,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 162,
+      "given": 188,
       "received": 306,
       "trophies": 299,
       "profile": {
@@ -8935,7 +10015,7 @@
       "role": "member",
       "th": 9,
       "given": 76,
-      "received": 106,
+      "received": 132,
       "trophies": 240,
       "profile": {
         "level": 34,
