@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T09:16:58.082Z",
+  "updated": "2026-11-08T09:32:21.548Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -7940,16 +7940,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 53.5,
+        "pct": 52.8,
         "troops": 23.7,
         "spells": 46.7,
-        "heroes": 80,
+        "heroes": 78.6,
         "top": [
           {
             "n": "Królowa Łuczniczek",
@@ -7967,14 +7967,14 @@
             "need": 5
           },
           {
-            "n": "Książę Minionów",
-            "lvl": 2,
-            "need": 10
-          },
-          {
             "n": "Król Barbarzyńców",
             "lvl": 9,
             "need": 30
+          },
+          {
+            "n": "Książę Minionów",
+            "lvl": 3,
+            "need": 10
           },
           {
             "n": "Zaklęcie trucizny",
