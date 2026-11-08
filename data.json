@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T02:46:00.343Z",
+  "updated": "2026-11-08T03:01:25.911Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -5396,8 +5396,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "0|35304813|34010044|10600|180|32075|53482|0|41|45|9",
-      "last": "2026-11-06T22:01:35.359Z",
+      "sig": "0|35304813|34010044|10600|180|32075|53482|0|41|46|9",
+      "last": "2026-11-08T03:01:25.900Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
@@ -5506,8 +5506,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "45|31653910|30257357|0|42|0|100|0|0|34|9",
-      "last": "2026-11-07T16:01:27.731Z",
+      "sig": "76|31653910|30257357|0|42|0|100|0|0|34|9",
+      "last": "2026-11-08T03:01:25.900Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -7320,10 +7320,10 @@
       "th": 9,
       "given": 25,
       "received": 62,
-      "trophies": 157,
+      "trophies": 185,
       "profile": {
         "level": 58,
-        "trophies": 157,
+        "trophies": 185,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 36,
@@ -7750,7 +7750,7 @@
       "received": 0,
       "trophies": 54,
       "profile": {
-        "level": 45,
+        "level": 46,
         "trophies": 54,
         "best": 348,
         "league": "Barbarian League 4",
@@ -7968,7 +7968,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 0,
+      "received": 31,
       "trophies": 40,
       "profile": {
         "level": 51,
@@ -8874,7 +8874,7 @@
       "tag": "#GQR98J880",
       "role": "member",
       "th": 9,
-      "given": 45,
+      "given": 76,
       "received": 106,
       "trophies": 240,
       "profile": {
