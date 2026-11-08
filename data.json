@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T12:46:05.416Z",
+  "updated": "2026-11-08T13:16:07.868Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2790,6 +2790,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-08T13:16:07.093Z",
+      "type": "th",
+      "name": "TwarógPółtlusty",
+      "from": 6,
+      "to": 7
+    },
     {
       "t": "2026-11-08T08:16:00.612Z",
       "type": "th",
@@ -6283,8 +6290,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "20|5857614|5387005|0|61|0|400|0|0|27|6",
-      "last": "2026-11-07T01:31:19.734Z",
+      "sig": "20|5857614|5387005|0|61|0|400|0|0|27|7",
+      "last": "2026-11-08T13:16:07.854Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -7058,7 +7065,7 @@
         20765,
         0,
         61,
-        6
+        7
       ]
     ],
     "#RYPRPQUQJ": [
@@ -8371,7 +8378,7 @@
           },
           {
             "name": "Royal Champion",
-            "level": 8,
+            "level": 9,
             "max": 55
           },
           {
@@ -9990,7 +9997,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 8,
+            "level": 9,
             "max": 110
           }
         ]
@@ -10283,7 +10290,7 @@
       "name": "TwarógPółtlusty",
       "tag": "#R9GUJ0ULV",
       "role": "member",
-      "th": 6,
+      "th": 7,
       "given": 20,
       "received": 20,
       "trophies": 0,
@@ -10306,15 +10313,20 @@
         ]
       },
       "rush": {
-        "pct": 8.3,
+        "pct": 10.3,
         "troops": 0,
-        "spells": 33.3,
+        "spells": 42.9,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie błyskawicy",
             "lvl": 2,
             "need": 4
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 2,
+            "need": 3
           }
         ]
       },
