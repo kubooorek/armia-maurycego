@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T06:31:21.451Z",
+  "updated": "2026-11-08T06:45:52.698Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 164,
-        "pct": 4589,
+        "stars": 167,
+        "pct": 4689,
         "wins": 4,
         "played": 5
       },
@@ -53,8 +53,17 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 119,
-        "pct": 3535,
+        "stars": 121,
+        "pct": 3634,
+        "wins": 2,
+        "played": 5
+      },
+      {
+        "tag": "#2YRR8GPUU",
+        "name": "united again",
+        "level": 9,
+        "stars": 112,
+        "pct": 3263,
         "wins": 2,
         "played": 5
       },
@@ -64,15 +73,6 @@
         "level": 12,
         "stars": 111,
         "pct": 3170,
-        "wins": 2,
-        "played": 5
-      },
-      {
-        "tag": "#2YRR8GPUU",
-        "name": "united again",
-        "level": 9,
-        "stars": 107,
-        "pct": 3082,
         "wins": 2,
         "played": 5
       },
@@ -5431,8 +5431,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "161|64800300|64306908|2400|614|14765|31386|0|4|55|9",
-      "last": "2026-11-07T16:31:27.056Z",
+      "sig": "162|64800300|64306908|2400|614|14765|31386|0|4|55|9",
+      "last": "2026-11-08T06:45:52.686Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -8021,7 +8021,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 161,
+      "given": 162,
       "received": 282,
       "trophies": 299,
       "profile": {
@@ -8037,7 +8037,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
@@ -8460,7 +8460,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 54,
+      "received": 55,
       "trophies": 115,
       "profile": {
         "level": 43,
