@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T08:16:01.706Z",
+  "updated": "2026-11-08T08:31:13.501Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#2YRR8GPUU",
         "name": "united again",
         "level": 9,
-        "stars": 112,
-        "pct": 3263,
+        "stars": 115,
+        "pct": 3363,
         "wins": 2,
         "played": 5
       },
@@ -2596,7 +2596,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -5405,8 +5405,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|208863792|200934025|2900|20|23720|42832|0|52|86|13",
-      "last": "2026-11-08T08:16:01.693Z",
+      "sig": "0|208863792|200934025|2900|20|23720|42832|0|52|87|13",
+      "last": "2026-11-08T08:31:13.488Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -5565,8 +5565,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|133454131|127187956|0|0|0|6460|0|0|48|11",
-      "last": "2026-11-08T05:15:58.324Z",
+      "sig": "0|135547471|129052402|0|0|0|6460|0|0|49|11",
+      "last": "2026-11-08T08:31:13.488Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -7209,7 +7209,7 @@
       "received": 0,
       "trophies": 282,
       "profile": {
-        "level": 86,
+        "level": 87,
         "trophies": 282,
         "best": 348,
         "league": "Barbarian League 6",
@@ -7547,7 +7547,7 @@
       "received": 20,
       "trophies": 275,
       "profile": {
-        "level": 48,
+        "level": 49,
         "trophies": 275,
         "best": 275,
         "league": "Barbarian League 4",
@@ -7616,8 +7616,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 133454131,
-        "elixir": 127187956,
+        "gold": 135547471,
+        "elixir": 129052402,
         "capContrib": 6460,
         "wins": 0
       }
@@ -7702,26 +7702,26 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 23,
+            "level": 24,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 11,
+            "level": 12,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 30.9,
+        "pct": 29.8,
         "troops": 39,
         "spells": 25.8,
-        "heroes": 24.3,
+        "heroes": 21.4,
         "top": [
           {
             "n": "Minion",
