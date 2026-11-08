@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T15:31:22.924Z",
+  "updated": "2026-11-08T15:46:08.961Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2622,7 +2622,7 @@
       }
     ]
   },
-  "visits": 89,
+  "visits": 90,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -6247,8 +6247,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|51657985|49140636|10050|88|24505|31950|0|7|48|8",
-      "last": "2026-11-08T15:01:40.217Z",
+      "sig": "20|52191318|49673969|10050|88|24505|31950|0|7|48|8",
+      "last": "2026-11-08T15:46:08.947Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -8748,16 +8748,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 7,
+            "level": 8,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 54,
+        "pct": 53.5,
         "troops": 44.3,
         "spells": 44.1,
-        "heroes": 65,
+        "heroes": 64,
         "top": [
           {
             "n": "Minion",
@@ -9250,7 +9250,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 15,
+            "level": 16,
             "max": 110
           },
           {
@@ -9475,8 +9475,8 @@
         "cg": 10050,
         "don": 88,
         "capLoot": 24505,
-        "gold": 51657985,
-        "elixir": 49140636,
+        "gold": 52191318,
+        "elixir": 49673969,
         "capContrib": 31950,
         "wins": 0
       }
