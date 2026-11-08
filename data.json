@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T14:16:07.956Z",
+  "updated": "2026-11-08T14:31:33.919Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2626,7 +2626,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -6169,8 +6169,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "38|389201524|399621965|12900|642|283555|414718|0|127|123|12",
-      "last": "2026-11-08T14:16:07.943Z",
+      "sig": "38|393786539|404236165|12900|667|283555|414718|0|127|123|12",
+      "last": "2026-11-08T14:31:33.906Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -6199,8 +6199,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|210313792|202384025|2900|20|23720|42832|0|52|87|13",
-      "last": "2026-11-08T09:47:06.037Z",
+      "sig": "0|211913792|203984025|2900|20|23720|42832|0|52|87|13",
+      "last": "2026-11-08T14:31:33.906Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -6314,8 +6314,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "70|6054439|5587005|0|111|0|400|0|0|28|7",
-      "last": "2026-11-08T14:16:07.943Z",
+      "sig": "70|6054439|5587005|0|111|0|550|0|0|28|7",
+      "last": "2026-11-08T14:31:33.906Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -6718,6 +6718,15 @@
           "cap": 8055
         },
         {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "score": 139,
+          "stars": 12,
+          "don": 35,
+          "cg": 0,
+          "cap": 7640
+        },
+        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "score": 137,
@@ -6725,15 +6734,6 @@
           "don": 5,
           "cg": 0,
           "cap": 8030
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "score": 136,
-          "stars": 12,
-          "don": 10,
-          "cg": 0,
-          "cap": 7640
         }
       ]
     }
@@ -6784,7 +6784,7 @@
       [
         20765,
         127,
-        642,
+        667,
         12
       ]
     ],
@@ -7068,6 +7068,14 @@
         7
       ]
     ],
+    "#R9GUJ0ULV": [
+      [
+        20765,
+        0,
+        111,
+        7
+      ]
+    ],
     "#GLV9998PC": [
       [
         20765,
@@ -7082,14 +7090,6 @@
         0,
         1,
         5
-      ]
-    ],
-    "#R9GUJ0ULV": [
-      [
-        20765,
-        0,
-        111,
-        7
       ]
     ],
     "#RYPRPQUQJ": [
@@ -7901,10 +7901,10 @@
       },
       "ach": {
         "cg": 12900,
-        "don": 642,
+        "don": 667,
         "capLoot": 283555,
-        "gold": 389201524,
-        "elixir": 399621965,
+        "gold": 393786539,
+        "elixir": 404236165,
         "capContrib": 414718,
         "wins": 0
       }
@@ -8454,8 +8454,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 23720,
-        "gold": 210313792,
-        "elixir": 202384025,
+        "gold": 211913792,
+        "elixir": 203984025,
         "capContrib": 42832,
         "wins": 0
       }
@@ -9919,7 +9919,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 14,
+            "level": 15,
             "max": 110
           },
           {
@@ -10193,6 +10193,60 @@
       }
     },
     {
+      "name": "TwarógPółtlusty",
+      "tag": "#R9GUJ0ULV",
+      "role": "member",
+      "th": 7,
+      "given": 70,
+      "received": 20,
+      "trophies": 0,
+      "profile": {
+        "level": 28,
+        "trophies": 0,
+        "best": 0,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 550,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 3,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 9.7,
+        "troops": 0,
+        "spells": 42.9,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 111,
+        "capLoot": 0,
+        "gold": 6054439,
+        "elixir": 5587005,
+        "capContrib": 550,
+        "wins": 0
+      }
+    },
+    {
       "name": "maati",
       "tag": "#GLV9998PC",
       "role": "member",
@@ -10307,60 +10361,6 @@
         "gold": 719589,
         "elixir": 723492,
         "capContrib": 0,
-        "wins": 0
-      }
-    },
-    {
-      "name": "TwarógPółtlusty",
-      "tag": "#R9GUJ0ULV",
-      "role": "member",
-      "th": 7,
-      "given": 70,
-      "received": 20,
-      "trophies": 0,
-      "profile": {
-        "level": 28,
-        "trophies": 0,
-        "best": 0,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 2,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 9.7,
-        "troops": 0,
-        "spells": 42.9,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 111,
-        "capLoot": 0,
-        "gold": 6054439,
-        "elixir": 5587005,
-        "capContrib": 400,
         "wins": 0
       }
     },
