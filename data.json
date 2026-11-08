@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T22:16:02.624Z",
+  "updated": "2026-11-08T22:31:15.862Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 171,
-        "pct": 5545,
+        "stars": 174,
+        "pct": 5608,
         "wins": 3,
         "played": 6
       },
@@ -2298,9 +2298,9 @@
         "end": "20261109T191646.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 17,
-          "pct": 44.27,
-          "attacks": 10,
+          "stars": 20,
+          "pct": 48.47,
+          "attacks": 11,
           "bases": [
             {
               "pos": 1,
@@ -2448,7 +2448,7 @@
             {
               "pos": 29,
               "th": 11,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 31,
@@ -2515,7 +2515,13 @@
             "tag": "#QYJUV90JY",
             "pos": 6,
             "th": 13,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "29. leBron"
+              }
+            ]
           },
           {
             "name": "oggsgdjdjbd",
@@ -2657,6 +2663,12 @@
         "wars": 7
       },
       {
+        "name": "monte",
+        "stars": 11,
+        "attacks": 7,
+        "wars": 7
+      },
+      {
         "name": "oggsgdjdjbd",
         "stars": 10,
         "attacks": 7,
@@ -2681,12 +2693,6 @@
         "wars": 7
       },
       {
-        "name": "monte",
-        "stars": 8,
-        "attacks": 6,
-        "wars": 7
-      },
-      {
         "name": "Cwel123",
         "stars": 8,
         "attacks": 6,
@@ -2694,11 +2700,11 @@
       }
     ]
   },
-  "visits": 100,
+  "visits": 101,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -3290,9 +3296,9 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 17,
+      "us": 20,
       "them": 7,
-      "pct": 44.27,
+      "pct": 48.47,
       "themPct": 18.47,
       "themBases": [
         {
@@ -3358,7 +3364,7 @@
         {
           "pos": 29,
           "th": 11,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 31,
@@ -3425,7 +3431,13 @@
           "tag": "#QYJUV90JY",
           "pos": 6,
           "th": 13,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "29. leBron"
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -6549,8 +6561,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|211913792|203984025|2900|20|23720|44832|0|52|88|13",
-      "last": "2026-11-08T21:16:02.458Z",
+      "sig": "0|215122792|207193025|2900|20|23720|44832|0|55|88|13",
+      "last": "2026-11-08T22:31:15.850Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -6594,8 +6606,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "1|88953523|74737745|3000|27|0|0|0|0|42|10",
-      "last": "2026-11-08T18:46:07.737Z",
+      "sig": "1|88953523|74737745|3000|27|0|0|0|0|43|10",
+      "last": "2026-11-08T22:31:15.850Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -7068,6 +7080,15 @@
           "cap": 11955
         },
         {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "score": 155,
+          "stars": 15,
+          "don": 0,
+          "cg": 0,
+          "cap": 2485
+        },
+        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "score": 147,
@@ -7075,15 +7096,6 @@
           "don": 5,
           "cg": 0,
           "cap": 8030
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "score": 139,
-          "stars": 12,
-          "don": 35,
-          "cg": 0,
-          "cap": 7640
         }
       ]
     }
@@ -7189,7 +7201,7 @@
     "#QYJUV90JY": [
       [
         20765,
-        52,
+        55,
         20,
         13
       ]
@@ -8729,7 +8741,7 @@
         "trophies": 282,
         "best": 348,
         "league": "Barbarian League 6",
-        "warStars": 52,
+        "warStars": 55,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 44832,
@@ -8804,8 +8816,8 @@
         "cg": 2900,
         "don": 20,
         "capLoot": 23720,
-        "gold": 211913792,
-        "elixir": 203984025,
+        "gold": 215122792,
+        "elixir": 207193025,
         "capContrib": 44832,
         "wins": 0
       }
@@ -9437,7 +9449,7 @@
       "received": 0,
       "trophies": 117,
       "profile": {
-        "level": 42,
+        "level": 43,
         "trophies": 117,
         "best": 149,
         "league": "Skeleton League 3",
