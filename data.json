@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T15:01:40.231Z",
+  "updated": "2026-11-08T15:16:12.349Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2622,11 +2622,11 @@
       }
     ]
   },
-  "visits": 87,
+  "visits": 88,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 12
   },
   "raids": [
@@ -2809,6 +2809,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-08T15:16:11.388Z",
+      "type": "th",
+      "name": "samurai024",
+      "from": 7,
+      "to": 8
+    },
     {
       "t": "2026-11-08T13:16:07.093Z",
       "type": "th",
@@ -3199,12 +3206,6 @@
       "t": "2026-10-29T20:58:21.760Z",
       "type": "join",
       "name": "TwojaSiora",
-      "th": 3
-    },
-    {
-      "t": "2026-10-29T18:37:15.767Z",
-      "type": "join",
-      "name": "maati",
       "th": 3
     }
   ],
@@ -6326,8 +6327,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "46|18471793|17788481|0|45|0|0|0|0|34|7",
-      "last": "2026-11-08T03:16:01.031Z",
+      "sig": "46|18471793|17788481|0|45|0|0|0|0|34|8",
+      "last": "2026-11-08T15:16:12.335Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY9GPJ822": {
@@ -7056,7 +7057,7 @@
         20765,
         0,
         45,
-        7
+        8
       ]
     ],
     "#GQR98J880": [
@@ -10011,7 +10012,7 @@
       "name": "samurai024",
       "tag": "#RYUV9V9RC",
       "role": "member",
-      "th": 7,
+      "th": 8,
       "given": 46,
       "received": 20,
       "trophies": 278,
@@ -10034,25 +10035,40 @@
         ]
       },
       "rush": {
-        "pct": 8.6,
-        "troops": 12,
+        "pct": 17.2,
+        "troops": 25,
         "spells": 0,
-        "heroes": 0,
+        "heroes": 10,
         "top": [
           {
             "n": "Barbarzyńca",
             "lvl": 2,
-            "need": 3
+            "need": 4
           },
           {
             "n": "Łuczniczka",
             "lvl": 2,
-            "need": 3
+            "need": 4
           },
           {
             "n": "Goblin",
             "lvl": 2,
-            "need": 3
+            "need": 4
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 3,
+            "need": 4
           }
         ]
       },
