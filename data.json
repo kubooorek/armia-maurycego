@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T03:16:01.044Z",
+  "updated": "2026-11-08T03:31:16.509Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 126,
-        "pct": 2907,
+        "stars": 129,
+        "pct": 3007,
         "wins": 4,
         "played": 5
       },
@@ -1980,7 +1980,7 @@
             {
               "pos": 9,
               "th": 11,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 10,
@@ -2016,9 +2016,9 @@
         },
         "them": {
           "name": "Dream Clans",
-          "stars": 2,
-          "pct": 5,
-          "attacks": 1,
+          "stars": 5,
+          "pct": 11.67,
+          "attacks": 2,
           "bases": [
             {
               "pos": 1,
@@ -3134,7 +3134,7 @@
       "state": "inWar",
       "cwl": true,
       "us": 5,
-      "them": 2,
+      "them": 5,
       "members": [
         {
           "name": "KUBOOOREK",
