@@ -8,11 +8,18 @@ on:
 permissions:
   contents: write
 
+# nigdy dwa uruchomienia naraz (inaczej robot wysłałby coś podwójnie)
+concurrency:
+  group: aktualizacja-danych
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # zawsze najświeższe dane (po poprzednim uruchomieniu)
       - uses: actions/setup-node@v4
         with:
           node-version: 20
