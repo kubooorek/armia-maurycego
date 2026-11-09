@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T08:31:28.342Z",
+  "updated": "2026-11-09T08:46:03.893Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -26,8 +26,8 @@
         "tag": "#2GQQ8RGRL",
         "name": "ARMIA MAURYCEGO",
         "level": 3,
-        "stars": 177,
-        "pct": 5708,
+        "stars": 180,
+        "pct": 5808,
         "wins": 3,
         "played": 6
       },
@@ -53,8 +53,8 @@
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 139,
-        "pct": 4278,
+        "stars": 142,
+        "pct": 4378,
         "wins": 2,
         "played": 6
       },
@@ -2298,9 +2298,9 @@
         "end": "20261109T191646.000Z",
         "us": {
           "name": "ARMIA MAURYCEGO",
-          "stars": 23,
-          "pct": 55.13,
-          "attacks": 12,
+          "stars": 26,
+          "pct": 61.8,
+          "attacks": 13,
           "bases": [
             {
               "pos": 1,
@@ -2443,7 +2443,7 @@
             {
               "pos": 25,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 29,
@@ -2514,7 +2514,13 @@
             "tag": "#8UCPRGC8",
             "pos": 5,
             "th": 12,
-            "attacks": []
+            "attacks": [
+              {
+                "stars": 3,
+                "pct": 100,
+                "target": "25. J. Clum Art"
+              }
+            ]
           },
           {
             "name": "monte",
@@ -2675,6 +2681,12 @@
         "wars": 7
       },
       {
+        "name": "MrDefPL",
+        "stars": 10,
+        "attacks": 7,
+        "wars": 7
+      },
+      {
         "name": "oggsgdjdjbd",
         "stars": 10,
         "attacks": 7,
@@ -2696,12 +2708,6 @@
         "name": "tak",
         "stars": 9,
         "attacks": 7,
-        "wars": 7
-      },
-      {
-        "name": "Cwel123",
-        "stars": 8,
-        "attacks": 6,
         "wars": 7
       }
     ]
@@ -3303,9 +3309,9 @@
       "perMember": 1,
       "state": "inWar",
       "cwl": true,
-      "us": 23,
+      "us": 26,
       "them": 23,
-      "pct": 55.13,
+      "pct": 61.8,
       "themPct": 55.27,
       "themBases": [
         {
@@ -3366,7 +3372,7 @@
         {
           "pos": 25,
           "th": 12,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 29,
@@ -3437,7 +3443,13 @@
           "tag": "#8UCPRGC8",
           "pos": 5,
           "th": 12,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "25. J. Clum Art"
+            }
+          ]
         },
         {
           "name": "monte",
@@ -6536,8 +6548,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "42|740005432|770415557|13725|50969|70605|94980|0|511|147|12",
-      "last": "2026-11-08T17:31:27.636Z",
+      "sig": "42|740117432|770527557|13725|50969|70605|94980|0|514|147|12",
+      "last": "2026-11-09T08:46:03.879Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -7233,7 +7245,7 @@
       ],
       [
         20766,
-        511,
+        514,
         50969,
         12
       ]
@@ -8541,7 +8553,7 @@
           },
           {
             "name": "Grand Warden",
-            "level": 20,
+            "level": 21,
             "max": 85
           },
           {
@@ -8759,7 +8771,7 @@
         "trophies": 0,
         "best": 2938,
         "league": "Archer League 9",
-        "warStars": 511,
+        "warStars": 514,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 94980,
@@ -8829,8 +8841,8 @@
         "cg": 13725,
         "don": 50969,
         "capLoot": 70605,
-        "gold": 740005432,
-        "elixir": 770415557,
+        "gold": 740117432,
+        "elixir": 770527557,
         "capContrib": 94980,
         "wins": 0
       }
@@ -10153,7 +10165,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
@@ -10764,7 +10776,7 @@
         ]
       },
       "rush": {
-        "pct": 13.8,
+        "pct": 13.6,
         "troops": 22.2,
         "spells": 0,
         "heroes": 0,
