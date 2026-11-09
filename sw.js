@@ -1,6 +1,6 @@
 // Prosty service worker: strona zawsze pobierana z sieci (świeże dane),
 // a gdy nie ma internetu — pokazywana ostatnia zapisana wersja.
-const CACHE = "armia-v3";
+const CACHE = "armia-v4";
 self.addEventListener("install", e => self.skipWaiting());
 self.addEventListener("activate", e => e.waitUntil(
   caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())

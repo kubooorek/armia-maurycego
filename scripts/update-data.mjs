@@ -310,8 +310,16 @@ try { const ctl = new AbortController(); const tm = setTimeout(() => ctl.abort()
   const r = await fetch(SWAPS_URL, { signal: ctl.signal }); clearTimeout(tm);
   if (r.ok) { const j = await r.json(); if (Array.isArray(j.swaps)) swaps = j.swaps; } } catch (e) { console.warn("Zamiany numerów niedostępne:", e.message); }
 const swapped = (war, tag) => swaps.some(s => s.war === war && s.tag === tag);
-let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag) && !((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)));
-const addPen = p => { if (karyZw.includes(p.tag)) return; if ((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
+// wypisania z wojny (Mój panel) — za opuszczony atak w tym czasie nie ma kary; historia trzymana 30 dni
+let optHist = Array.isArray(old?.optHist) ? old.optHist : [];
+try { const ctl = new AbortController(); const tm = setTimeout(() => ctl.abort(), 8000);
+  const r = await fetch("https://armia-login.fifacz39.workers.dev/optouts", { signal: ctl.signal }); clearTimeout(tm);
+  if (r.ok) { const j = await r.json(); for (const o of (j.optouts || [])) { const i = optHist.findIndex(x => x.id === o.id); if (i >= 0) optHist[i] = o; else optHist.push(o); } } } catch (e) { console.warn("Wypisania niedostępne:", e.message); }
+optHist = optHist.filter(o => Date.now() - o.until < 30 * 864e5);
+const optedOut = (war, end, tag) => { const a = Date.parse(`${war.slice(0,4)}-${war.slice(4,6)}-${war.slice(6,8)}T${war.slice(9,11)}:${war.slice(11,13)}:${war.slice(13,15)}Z`), b = end ? Date.parse(`${end.slice(0,4)}-${end.slice(4,6)}-${end.slice(6,8)}T${end.slice(9,11)}:${end.slice(11,13)}:${end.slice(13,15)}Z`) : a + 2 * 864e5;
+  return optHist.some(o => o.tag === tag && o.t < b && o.until > a); };
+let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p => !karyZw.includes(p.tag) && !((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)) && !(p.type === "missed" && optedOut(p.war, p.end, p.tag)));
+const addPen = p => { if (karyZw.includes(p.tag)) return; if (p.type === "missed" && optedOut(p.war, p.end, p.tag)) return; if ((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
 const WOLNE_PO_H = 12;   // po tylu godzinach od startu bitwy można atakować cudze numery bez kary
 const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
 if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
@@ -848,6 +856,52 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun && POSTY.podsumowanieCWL && cwlSummar
   ].filter(Boolean).join("\n");
   await post(msg); cwlSummary.posted = true;
 }
+/* ---------- Prywatne przypomnienia na Discordzie (DM) ----------
+   Gracze łączą Discorda w „Moim panelu” na stronie. Robot pobiera listę z serwera logowania
+   i 4 h / 1 h przed końcem wojny pisze prywatnie do tych, którzy mają jeszcze ataki.
+   Sekrety w GitHubie: DISCORD_BOT_TOKEN, ROBOT_KEY. */
+const BOT = process.env.DISCORD_BOT_TOKEN, ROBOT_KEY = process.env.ROBOT_KEY;
+const LOGIN_API = "https://armia-login.fifacz39.workers.dev";
+let srv = null;
+if (ROBOT_KEY) {
+  try { const r = await fetch(LOGIN_API + "/robot", { headers: { "X-Robot-Key": ROBOT_KEY } }); if (r.ok) srv = await r.json(); else console.warn("Serwer logowania:", r.status); }
+  catch (e) { console.warn("Serwer logowania niedostępny:", e.message); }
+}
+async function dm(userId, content) {
+  try {
+    const h = { Authorization: `Bot ${BOT}`, "Content-Type": "application/json" };
+    const ch = await (await fetch("https://discord.com/api/v10/users/@me/channels", { method: "POST", headers: h, body: JSON.stringify({ recipient_id: userId }) })).json();
+    if (!ch.id) { console.warn("DM: brak kanału", JSON.stringify(ch).slice(0, 120)); return false; }
+    const r = await fetch(`https://discord.com/api/v10/channels/${ch.id}/messages`, { method: "POST", headers: h, body: JSON.stringify({ content, allowed_mentions: { parse: [] } }) });
+    if (!r.ok) console.warn("DM:", r.status, (await r.text()).slice(0, 120));
+    await new Promise(res => setTimeout(res, 700));
+    return r.ok;
+  } catch (e) { console.warn("DM niedostępny:", e.message); return false; }
+}
+if (BOT && srv && srv.discord && !firstRun) {
+  const ids = srv.discord;
+  const wars = [];
+  if (currentWar) wars.push({ ...currentWar, key: `w:${currentWar.start}`, label: "Wojna" });
+  for (const cw of (cwl?.wars || [])) wars.push({ ...cw, key: `c:${cw.start}:${cw.them.name}`, label: `CWL · Runda ${cw.round}` });
+  for (const w of wars) {
+    if (w.state !== "inWar") continue;
+    const left = (parseT(w.end) - Date.now()) / 3600e3;
+    const hit = [1, 4].find(h => left <= h && left > 0); if (!hit) continue;
+    const sent = notified["dm:" + w.key] || (notified["dm:" + w.key] = []);
+    for (const m of w.members) {
+      const uid = ids[m.tag]; const leftAtt = w.perMember - m.attacks.length;
+      if (!uid || leftAtt <= 0 || sent.includes(`${m.tag}:${hit}`)) continue;
+      for (const h of [4, 1]) if (h >= hit) sent.push(`${m.tag}:${h}`);
+      const base = (w.them.bases || []).find(b => b.pos === m.pos);
+      await dm(uid, `⏰ Hej **${m.name}**! ${w.label} vs **${w.them.name}** kończy się za ok. **${Math.max(1, Math.round(left))} h**, a masz jeszcze **${leftAtt} ${leftAtt > 1 ? "ataki" : "atak"}**.` +
+        (m.pos && m.attacks.length === 0 ? `\nTwój numer: **${m.pos}**${base ? ` (TH${base.th}${base.best ? `, ma już ${base.best}★` : ""})` : ""}.` : "") +
+        `\nWynik teraz: ${w.us.stars} ★ ${w.them.stars} · ${SITE}#wojny`);
+    }
+  }
+}
+// zapisy do CWL i wypisania z wojny — widoczne na stronie (zarząd)
+const requests = srv ? { optouts: srv.optouts || [], cwl: srv.cwl || null } : (old?.requests || null);
+
 // sprzątanie starych kluczy powiadomień
 notified = Object.fromEntries(Object.entries(notified).slice(-40));
 
@@ -881,6 +935,8 @@ const data = {
   playerHistory,
   cwlSummary,
   cwlHistory,
+  requests,
+  optHist,
   dayBase,
   potd,
   potdHistory,

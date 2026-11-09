@@ -1505,6 +1505,13 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   .cg-stats .pos{color:var(--green)} .cg-stats .neg{color:var(--red)}
   .cg-best{display:flex;align-items:center;gap:8px;font-size:.84rem;padding-top:8px;border-top:1px solid rgba(255,255,255,.08)}
   .cg-best .ic{width:16px;height:16px;color:var(--gold)}
+  .pn-quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin:12px 0}
+  .pn-quick .panel{margin:0}
+  .cs-btns{display:flex;gap:8px;flex-wrap:wrap}
+  .cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px} @media (max-width:640px){.cs-grid{grid-template-columns:1fr}}
+  .cs-col{background:rgba(0,0,0,.2);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:5px}
+  .cs-h{font-weight:800;font-size:.85rem;margin-bottom:2px} .cs-h b{color:var(--text);margin-left:4px}
+  .cs-p{font-size:.85rem} .cs-p small{color:var(--muted)}
   /* ===== Smaczki ===== */
   ::selection{background:rgba(255,190,50,.85);color:#1a0806}
   html{scrollbar-color:#c98a1a #140606;scrollbar-width:thin}
@@ -4102,7 +4109,6 @@ let AM_USER=null;   // {tags:[...], active:"#TAG", accs:[{tag,name,th}]}
           ${pf.heroes&&pf.heroes.length?pf.heroes.map(h=>`<div class="hbar"><div class="hero-row"><b>${esc((en?{}:HN)[h.name]||h.name)}</b><span>${h.level} / ${h.max}</span></div><div class="dbar"><u style="width:${h.level/h.max*100}%"></u></div></div>`).join(""):""}
           ${bs.length?`<div class="fame-label" style="margin:12px 0 6px">Twoje odznaki</div><div class="pf-badges">${bs.map(b=>`<span title="${esc(b.t)}">${b.i} ${esc(b.t.split(" — ")[0])}</span>`).join("")}</div>`:""}</div>
       </div>
-      <p class="pn-soon">${ic("sparkles")} Wkrótce w panelu: prywatne przypomnienia na Discordzie i szybkie akcje (wypisanie z wojny, zapis do CWL, zgłoszenie zamiany numerów).</p>
     </div>`;
     sec.querySelector('[data-go="strat"]').onclick=()=>{ const s=$("#thRange"); if(s){ s.value=Math.min(18,Math.max(3,r.th)); s.dispatchEvent(new Event("input")); } location.hash="#kalkulator"; };
     sec.querySelector('[data-go="profil"]').onclick=()=>openProfile(r);
@@ -4348,6 +4354,68 @@ let openWarMap=()=>{};
     if(!r.ok) throw new Error(d.error||"Nie udało się."); toast("Zapisane ✓ — robot uwzględni to przy kolejnym sprawdzeniu (do 15 min)"); setTimeout(()=>location.reload(),1500); }catch(e){ err.textContent=e.message; err.hidden=false; } };
   box.querySelector("form").onsubmit=e=>{ e.preventDefault(); const f=e.target; send("/swaps",{war:cur.start,target:+f.target.value,note:f.note.value.trim()}); };
   const del=box.querySelector("[data-del]"); if(del) del.onclick=()=>send("/swaps/delete",{id:del.dataset.del});
+})();
+
+/* ===== Szybkie akcje w Moim panelu: wypisanie z wojny, zapis do CWL, przypomnienia na Discordzie ===== */
+(function(){
+  if(!LOGIN_API) return;
+  const API=LOGIN_API.replace(/\/$/,""), sess=(()=>{try{return localStorage.getItem("am_sess");}catch(e){return null;}})();
+  const call=async(path,payload)=>{ const r=await fetch(API+path,payload?{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({session:sess,...payload})}:{}); const d=await r.json().catch(()=>({})); if(!r.ok) throw new Error(d.error||"Nie udało się."); return d; };
+  const MP=["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
+  const seasonName=s=>{ const [y,m]=String(s||"").split("-"); return m?`${MP[+m-1]} ${y}`:""; };
+  const dd=t=>new Date(t).toLocaleDateString(LOC(),{day:"numeric",month:"short"});
+  const isLead=AM_USER&&AM_USER.tags.some(t=>{ const m=MEMBERS.find(x=>x.tag===t); return m&&(m.role==="leader"||m.role==="co"); });
+  // --- publiczne listy: wypisani (War Hub) i zapisy CWL (Liga) ---
+  const showLists=(opt,cw)=>{
+    const wh=$("#wojny .wrap"), lw=$("#liveWar");
+    let o=$("#optList"); if(o) o.remove();
+    if(opt.length&&wh){ o=document.createElement("div"); o.id="optList"; o.className="panel"; o.style.margin="0 0 12px";
+      o.innerHTML=`<div class="fame-label">🚫 Wypisani z wojen</div>${opt.map(x=>`<div class="mini-row"><span><b>${esc(x.name)}</b> <small>TH${x.th||"?"}</small>${x.note?` · <small>${esc(x.note)}</small>`:""}</span><small>do ${dd(x.until)}</small></div>`).join("")}<p class="updated" style="margin:6px 0 0">Zarząd: nie bierzcie tych graczy do składu najbliższej wojny.</p>`;
+      (lw&&lw.nextSibling)?wh.insertBefore(o,lw.nextSibling):wh.prepend(o); }
+    let c=$("#cwlSignList"); if(c) c.remove(); const lg=$("#liga .wrap");
+    if(cw&&lg){ const L=cw.list||[], by=k=>L.filter(x=>x.status===k).sort((a,b)=>(b.th||0)-(a.th||0));
+      c=document.createElement("div"); c.id="cwlSignList"; c.className="panel"; c.style.marginTop="12px";
+      const grp=(k,t,col)=>`<div class="cs-col"><div class="cs-h" style="color:${col}">${t} <b>${by(k).length}</b></div>${by(k).map(x=>`<span class="cs-p">${esc(x.name)} <small>TH${x.th||"?"}</small></span>`).join("")||`<small class="updated">—</small>`}</div>`;
+      c.innerHTML=`<div class="fame-label">📝 Zapisy na CWL — ${esc(seasonName(cw.season))}</div><p class="updated" style="margin:0 0 10px">Zapisujesz się w „Moim panelu” (po zalogowaniu). Zarząd układa skład z listy „Gram”.</p><div class="cs-grid">${grp("in","✅ Gram","var(--green)")}${grp("maybe","🤔 Może","var(--gold2)")}${grp("out","❌ Nie gram","var(--red)")}</div>`;
+      const sum=$("#cwlSummary"); (sum&&sum.parentNode===lg)?lg.insertBefore(c,sum):lg.appendChild(c); }
+  };
+  Promise.all([fetch(API+"/optouts").then(r=>r.json()).catch(()=>({})),fetch(API+"/cwl").then(r=>r.json()).catch(()=>({}))]).then(([a,b])=>{
+    const opt=(a.optouts||[]), cw=b&&b.season?b:null; showLists(opt,cw); panel(opt,cw); });
+  // --- Mój panel ---
+  function panel(opt,cw){
+    const pn=$("#panel"); if(!pn||!AM_USER) return; const tag=AM_USER.active; const me=MEMBERS.find(m=>m.tag===tag); if(!me) return;
+    let box=$("#pnQuick"); if(box) box.remove();
+    box=document.createElement("div"); box.id="pnQuick"; box.className="pn-quick";
+    const myOpt=opt.find(x=>x.tag===tag), mySign=cw&&(cw.list||[]).find(x=>x.tag===tag);
+    box.innerHTML=`
+      <div class="panel"><div class="fame-label">🚫 Wypisz się z wojny</div>
+        <p class="updated" style="margin:0 0 10px">Wyjazd, brak czasu? Daj znać — zarząd nie weźmie Cię do składu i nie dostaniesz kary za opuszczony atak.</p>
+        ${myOpt?`<div class="mini-row"><span>Jesteś wypisany(-a) do <b>${dd(myOpt.until)}</b>${myOpt.note?` · ${esc(myOpt.note)}`:""}</span><button class="btn btn-ghost btn-sm" data-optdel="${esc(myOpt.id)}">Wracam</button></div>`
+        :`<form class="pn-swap-f" data-opt><label>Na ile<select name="days"><option value="1">1 dzień</option><option value="2" selected>2 dni (1 wojna)</option><option value="4">4 dni</option><option value="7">tydzień</option><option value="14">2 tygodnie</option></select></label>
+          <label class="grow">Powód (opcjonalnie)<input name="note" maxlength="120" placeholder="np. wyjazd, praca"></label><button class="btn btn-gold btn-sm">Wypisz mnie</button></form>`}
+        <p class="lg-err" hidden></p></div>
+      ${cw?`<div class="panel"><div class="fame-label">📝 Zapis na CWL — ${esc(seasonName(cw.season))}</div>
+        <p class="updated" style="margin:0 0 10px">Liga startuje 1. dnia miesiąca. Zaznacz, czy grasz — zarząd ułoży skład.</p>
+        <div class="cs-btns">${[["in","✅ Gram"],["maybe","🤔 Może"],["out","❌ Nie gram"]].map(([k,t])=>`<button class="btn btn-sm ${mySign&&mySign.status===k?"btn-gold":"btn-ghost"}" data-cwl="${k}">${t}</button>`).join("")}</div>
+        <p class="lg-err" hidden></p></div>`:""}
+      <div class="panel" id="pnDc"><div class="fame-label">🔔 Prywatne przypomnienia na Discordzie</div><p class="updated" style="margin:0">Sprawdzam…</p></div>`;
+    const anchor=pn.querySelector(".pn-duo"); anchor?anchor.parentNode.insertBefore(box,anchor.nextSibling):pn.querySelector(".wrap").appendChild(box);
+    const errOf=el=>el.closest(".panel").querySelector(".lg-err");
+    const run=async(el,path,payload,msg)=>{ const er=errOf(el); er.hidden=true; try{ await call(path,{tag,...payload}); toast(msg); reload(); }catch(x){ er.textContent=x.message; er.hidden=false; } };
+    const f=box.querySelector("[data-opt]"); if(f) f.onsubmit=e=>{ e.preventDefault(); run(f,"/optouts",{days:+f.days.value,note:f.note.value.trim()},"Wypisane ✓ — zarząd to zobaczy"); };
+    const od=box.querySelector("[data-optdel]"); if(od) od.onclick=()=>run(od,"/optouts/delete",{id:od.dataset.optdel},"Witaj z powrotem ✓");
+    box.querySelectorAll("[data-cwl]").forEach(b=>b.onclick=()=>run(b,"/cwl",{status:b.dataset.cwl},"Zapisane ✓"));
+    // Discord
+    call("/discord/me",{}).then(d=>{ const el=$("#pnDc"); if(!el) return; const lk=d.linked&&d.linked[tag];
+      el.innerHTML=`<div class="fame-label">🔔 Prywatne przypomnienia na Discordzie</div>`+(!d.ready?`<p class="updated" style="margin:0">Już wkrótce — zarząd kończy konfigurację bota.</p>`
+        :lk?`<div class="mini-row"><span>✅ Połączono z <b>${esc(lk)}</b> — dostaniesz prywatną wiadomość 4 h i 1 h przed końcem wojny, jeśli zostaną Ci ataki.</span><button class="btn btn-ghost btn-sm" data-dcun>Odłącz</button></div>`
+        :`<p class="updated" style="margin:0 0 10px">Połącz Discorda, a bot napisze do Ciebie prywatnie, gdy zostaną Ci ataki (4 h i 1 h przed końcem wojny i rundy CWL). Musisz być na serwerze klanu.</p><a class="btn btn-gold btn-sm" href="${API}/discord/start?s=${encodeURIComponent(sess||"")}">Połącz z Discordem</a>`);
+      const u=el.querySelector("[data-dcun]"); if(u) u.onclick=async()=>{ try{ await call("/discord/unlink",{}); toast("Odłączono"); reload(); }catch(x){ toast(x.message); } };
+    }).catch(()=>{ const el=$("#pnDc"); if(el) el.remove(); });
+  }
+  const reload=()=>Promise.all([fetch(API+"/optouts").then(r=>r.json()).catch(()=>({})),fetch(API+"/cwl").then(r=>r.json()).catch(()=>({}))]).then(([a,b])=>{ const opt=a.optouts||[], cw=b&&b.season?b:null; showLists(opt,cw); panel(opt,cw); });
+  // powrót z Discorda
+  const q=new URLSearchParams(location.search).get("dc"); if(q){ setTimeout(()=>toast(q==="ok"?"Discord połączony ✓ — przypomnienia włączone":"Nie udało się połączyć Discorda. Spróbuj jeszcze raz."),900); history.replaceState(null,"",location.pathname+location.hash); }
 })();
 
 /* ===== Ankiety klanu ===== */
