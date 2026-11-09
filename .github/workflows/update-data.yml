@@ -21,6 +21,7 @@ jobs:
           COC_TOKEN: ${{ secrets.COC_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_WEBHOOK_INFO: ${{ secrets.DISCORD_WEBHOOK_INFO }}
+          DISCORD_WEBHOOK_RUCHY: ${{ secrets.DISCORD_WEBHOOK_RUCHY }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           ROBOT_KEY: ${{ secrets.ROBOT_KEY }}
         run: node scripts/update-data.mjs
