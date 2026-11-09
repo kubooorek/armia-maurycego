@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T13:01:39.168Z",
+  "updated": "2026-11-09T13:16:01.565Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -50,21 +50,21 @@
         "played": 6
       },
       {
+        "tag": "#V8PU2P0G",
+        "name": "BattlerManipur2",
+        "level": 12,
+        "stars": 149,
+        "pct": 4131,
+        "wins": 3,
+        "played": 6
+      },
+      {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
         "stars": 142,
         "pct": 4378,
         "wins": 2,
-        "played": 6
-      },
-      {
-        "tag": "#V8PU2P0G",
-        "name": "BattlerManipur2",
-        "level": 12,
-        "stars": 142,
-        "pct": 3870,
-        "wins": 3,
         "played": 6
       },
       {
