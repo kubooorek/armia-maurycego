@@ -18,11 +18,11 @@
 <meta property="og:title" content="Armia Maurycego — Klan Clash of Clans">
 <meta property="og:description" content="Polski klan Clash of Clans · Rekrutacja otwarta od TH8 · Wojny, CWL, Gry Klanowe i rajdy na Stolicę · Dołącz: #2GQQ8RGRL">
 <meta property="og:url" content="https://kubooorek.github.io/armia-maurycego/">
-<meta property="og:image" content="https://kubooorek.github.io/armia-maurycego/og.png?v=2">
+<meta property="og:image" content="https://kubooorek.github.io/armia-maurycego/og.png?v=3">
 <meta property="og:image:alt" content="Herb i nazwa klanu Armia Maurycego">
 <meta name="twitter:title" content="Armia Maurycego — Klan Clash of Clans">
 <meta name="twitter:description" content="Rekrutacja otwarta od TH8 · Wojny, CWL, Gry Klanowe · #2GQQ8RGRL">
-<meta name="twitter:image" content="https://kubooorek.github.io/armia-maurycego/og.png?v=2">
+<meta name="twitter:image" content="https://kubooorek.github.io/armia-maurycego/og.png?v=3">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="pl_PL">
@@ -1487,6 +1487,25 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   html[data-motyw="epicki"] .kary-head>span{color:#fff;font-weight:800;text-shadow:0 1px 2px #000,0 2px 10px rgba(0,0,0,.9)}
   html[data-motyw="epicki"] .updated,html[data-motyw="epicki"] .auto-upd{color:#f2dcc0!important;text-shadow:0 1px 2px #000}
   html[data-motyw="epicki"] body::after{background:linear-gradient(180deg,rgba(10,3,2,.25),rgba(10,3,2,.45))!important}
+  /* ===== Smaczki ===== */
+  ::selection{background:rgba(255,190,50,.85);color:#1a0806}
+  html{scrollbar-color:#c98a1a #140606;scrollbar-width:thin}
+  ::-webkit-scrollbar{width:11px;height:11px} ::-webkit-scrollbar-track{background:#140606}
+  ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#ffd76a,#c98a1a);border-radius:8px;border:2px solid #140606}
+  .to-top{position:fixed;right:18px;bottom:22px;z-index:118;width:46px;height:46px;border-radius:50%;border:1px solid #7a3d00;cursor:pointer;display:grid;place-items:center;
+    background:linear-gradient(180deg,#ffe58a,#ffbe2e 50%,#e48b00);color:#3a1600;box-shadow:0 3px 0 #6a2e00,0 6px 18px rgba(0,0,0,.45);opacity:0;transform:translateY(14px) scale(.9);pointer-events:none;transition:.25s}
+  .to-top.show{opacity:1;transform:none;pointer-events:auto} .to-top:hover{filter:brightness(1.08)} .to-top svg{width:22px;height:22px}
+  @media (max-width:760px){.to-top{bottom:calc(84px + env(safe-area-inset-bottom));right:12px;width:42px;height:42px}}
+  .btn-gold,.og-cta,.ep-btn:not(.ep-green),.nav-links a.nav-cta,.m-join{position:relative;overflow:hidden}
+  .btn-gold::before,.og-cta::before,.ep-btn:not(.ep-green)::before,.nav-links a.nav-cta::before,.m-join::before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;pointer-events:none;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg);animation:shine 5.5s ease-in-out infinite}
+  @keyframes shine{0%,72%{left:-60%}88%,100%{left:130%}}
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+  .embers{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+  .embers i{position:absolute;bottom:-10px;width:4px;height:4px;border-radius:50%;background:#ffb030;box-shadow:0 0 8px 2px rgba(255,140,30,.8);opacity:0;animation:ember linear infinite}
+  @keyframes ember{0%{transform:translate(0,0);opacity:0}10%{opacity:.85}80%{opacity:.5}100%{transform:translate(var(--dx),-105vh);opacity:0}}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.embers{display:none}.btn-gold::before,.og-cta::before,.ep-btn::before,.nav-links a.nav-cta::before,.m-join::before{animation:none;display:none}}
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
@@ -4769,6 +4788,34 @@ let saveLayoutState=()=>{};
   d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["goblin","Goblin"],["zloto","Złoto"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
   d.querySelector("button").onclick=()=>{ location.href=location.pathname+"?styl=wyloguj"; }; document.body.appendChild(d); })();
 applyLang();
+/* ===== Smaczki: liczniki, wjeżdżanie, iskry, „do góry” ===== */
+(function(){
+  const RM=matchMedia("(prefers-reduced-motion: reduce)").matches, mob=innerWidth<761;
+  // przycisk do góry
+  const t=document.createElement("button"); t.className="to-top"; t.setAttribute("aria-label","Do góry"); t.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg>';
+  t.onclick=()=>scrollTo({top:0,behavior:RM?"auto":"smooth"}); document.body.appendChild(t);
+  addEventListener("scroll",()=>t.classList.toggle("show",scrollY>700),{passive:true});
+  // iskry (tylko styl Ogień)
+  if(!RM&&document.documentElement.dataset.motyw==="epicki"){ const e=document.createElement("div"); e.className="embers"; const n=mob?10:22;
+    for(let k=0;k<n;k++){ const i=document.createElement("i"); const sz=2+Math.random()*3; i.style.cssText=`left:${Math.random()*100}%;width:${sz}px;height:${sz}px;--dx:${(Math.random()*120-60).toFixed(0)}px;animation-duration:${(9+Math.random()*10).toFixed(1)}s;animation-delay:${(-Math.random()*18).toFixed(1)}s`; e.appendChild(i); }
+    document.body.prepend(e); }
+  if(RM||!("IntersectionObserver" in window)) return;
+  // liczniki
+  const NUMSEL=".stat b,.hist-stats b,.ep-list b,.gb-big,.ep-hub b span,.zw-sum b";
+  const run=el=>{ if(el.dataset.cnt) return; const txt=el.textContent; const m=txt.match(/^(\D*?)(\d+(?:[.,]\d+)?)(.*)$/s); if(!m||/\d+h|\dd |\dm/.test(txt)) return;
+    el.dataset.cnt=1; const end=parseFloat(m[2].replace(",",".")), dec=(m[2].split(/[.,]/)[1]||"").length, sep=m[2].includes(",")?",":"."; if(!isFinite(end)||end===0) return;
+    const t0=performance.now(), D=900; const step=n=>{ const p=Math.min(1,(n-t0)/D), v=end*(1-Math.pow(1-p,3)); el.textContent=m[1]+(dec?v.toFixed(dec).replace(".",sep):Math.round(v))+m[3]; if(p<1) requestAnimationFrame(step); else el.textContent=txt; }; requestAnimationFrame(step); };
+  const io=new IntersectionObserver(es=>es.forEach(x=>{ if(!x.isIntersecting) return; const el=x.target; io.unobserve(el);
+    if(el.classList.contains("rv")) el.classList.add("in"); else run(el); }),{threshold:.15,rootMargin:"0px 0px -40px 0px"});
+  // wjeżdżanie kafelków
+  const RVSEL=".panel,.ep-card,.gb-card,.news,.war,.kara,.rank-card,.stat,.htl-item,.sk-col,.now-card,.dz-c,.table-box";
+  const scan=root=>{ (root.querySelectorAll?root:document).querySelectorAll(RVSEL).forEach(el=>{ if(el.dataset.rv||el.closest(".modal,.srch,.more-sheet,.gb-stage")) return; el.dataset.rv=1;
+      const r=el.getBoundingClientRect(); if(r.top<innerHeight&&r.bottom>0) return; el.classList.add("rv"); io.observe(el); });
+    (root.querySelectorAll?root:document).querySelectorAll(NUMSEL).forEach(el=>{ if(!el.dataset.obs){ el.dataset.obs=1; io.observe(el);} }); };
+  setTimeout(()=>scan(document),300);
+  let tm=null; new MutationObserver(()=>{ clearTimeout(tm); tm=setTimeout(()=>scan(document),250); }).observe(document.body,{childList:true,subtree:true});
+  addEventListener("am:page",()=>setTimeout(()=>{ document.querySelectorAll(".rv:not(.in)").forEach(el=>{ const r=el.getBoundingClientRect(); if(r.top<innerHeight) el.classList.add("in"); }); },80));
+})();
 addEventListener("click",e=>{ window.__subClick=!!(e.target.closest&&e.target.closest(".subnav a")); },true);
 (function(){ const j=document.getElementById("cwlJump"), r=document.getElementById("cwlRounds"); if(!j||!r) return; const chk=()=>{ j.hidden=!(r.textContent.trim().length>0); }; chk(); new MutationObserver(chk).observe(r,{childList:true,subtree:true}); })();
 /* ===== Bez polskich znaków (BEZ_PL=false przywraca ą, ę, ł itd.) ===== */
