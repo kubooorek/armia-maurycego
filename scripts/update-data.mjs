@@ -750,11 +750,11 @@ const WEBHOOK_REKRUTACJA = process.env.DISCORD_WEBHOOK_REKRUTACJA || "";  // #re
 const WEBHOOK_WYMAGANIA = process.env.DISCORD_WEBHOOK_WYMAGANIA || "";    // #wymagania-klanu: jedna wiadomość, aktualizowana
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
-async function post(content, url = WEBHOOK, ping = false) {
+async function post(content, url = WEBHOOK, ping = false, embed = false) {
   if (!url) return false;
   try {
     const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username: "Armia Maurycego", avatar_url: SITE + "icon-512.png", content, allowed_mentions: { parse: ping ? ["everyone"] : [] }, flags: 4 }) });
+      body: JSON.stringify({ username: "Armia Maurycego", avatar_url: SITE + "icon-512.png", content, allowed_mentions: { parse: ping ? ["everyone"] : [] }, flags: embed ? 0 : 4 }) });
     if (!r.ok) console.warn("Webhook:", r.status, await r.text());
     await new Promise(res => setTimeout(res, 1200));
     return r.ok;
@@ -1192,39 +1192,50 @@ if (!firstRun && clan) {
   const czas = !rekrutacjaWeek || (now.getUTCDay() === 6 && now.getUTCHours() >= 11 && rekrutacjaWeek !== wk);
   if (WEBHOOK_REKRUTACJA && POSTY.rekrutacja && wolne > 0 && czas) {
     const ok = await post([
-      `📣 **ARMIA MAURYCEGO REKRUTUJE!** 🔥`,
-      `Wolnych miejsc: **${wolne}** · w klanie **${ile}/50** graczy`,
+      `# 📣 ARMIA MAURYCEGO REKRUTUJE!`,
+      `-# Polski klan Clash of Clans · klan otwarty, wchodzisz od razu`,
       ``,
-      `🏰 Poziom klanu: **${clan.clanLevel}**`,
-      `⚔️ Liga CWL: **${LIGA(clan.warLeague?.name)}**${clan.warWins != null ? ` · wygrane wojny: **${clan.warWins}**` : ""}`,
-      `🏛️ Liga Stolicy: **${LIGA(clan.capitalLeague?.name)}**`,
+      `> 👥 Wolne miejsca: **${wolne}** (w klanie ${ile}/50)`,
+      `> ✅ Przyjmujemy od **TH8**, początkujący mile widziani`,
+      `> 🏰 Poziom klanu **${clan.clanLevel}** · ⚔️ CWL **${LIGA(clan.warLeague?.name)}** · 🏛️ Stolica **${LIGA(clan.capitalLeague?.name)}**`,
+      clan.warWins != null ? `> 🏆 Wygrane wojny: **${clan.warWins}**${(clan.warWinStreak ?? 0) > 1 ? ` · seria **${clan.warWinStreak}** z rzędu 🔥` : ""}` : null,
       ``,
-      `✅ Przyjmujemy od **TH8**, klan otwarty, nie czekasz na akceptację`,
-      `🎁 Wojny i CWL non-stop, bogate donacje, awanse za aktywność, zgrany Discord`,
+      `## 🎁 Co dajemy`,
+      `> ⚔️ Wojny i CWL non-stop`,
+      `> 🎁 Bogate donacje i pomoc nowym graczom`,
+      `> ⬆️ Awanse za aktywność, Wojownik Tygodnia i MVP miesiąca`,
+      `> 🤖 Robot z wojną na żywo i przypomnieniami o ataku`,
+      `> 💬 Zgrany Discord`,
       ``,
-      `Tag klanu: **${TAG}**`,
-      `Wszystko o klanie: ${SITE}`,
-      `Znasz kogoś, kto szuka klanu? Podeślij mu tę wiadomość! 💪`
-    ].join("\n"), WEBHOOK_REKRUTACJA);
+      `**Tag klanu:** \`${TAG}\``,
+      `🌐 ${SITE}`,
+      `-# Znasz kogoś, kto szuka klanu? Podeślij mu tę wiadomość! 💪`
+    ].filter(x => x !== null).join("\n"), WEBHOOK_REKRUTACJA, false, true);
     if (ok) rekrutacjaWeek = wk;
   }
   // 2) #wymagania-klanu — jedna wiadomość, którą robot edytuje, gdy coś się zmieni
   if (WEBHOOK_WYMAGANIA && POSTY.wymagania) {
+    const cw = currentWar, lastCwl = cwl?.place ? cwl : null;
+    const medal = p => p === 1 ? " 🥇" : p === 2 ? " 🥈" : p === 3 ? " 🥉" : "";
+    const teraz = !cw ? "brak wojny, czekamy na kolejną"
+      : cw.state === "preparation" ? `dzień przygotowań z **${cw.them.name}** · bitwa ${TS(cw.start)}`
+      : cw.state === "inWar" ? `wojna z **${cw.them.name}** · **${cw.us.stars} ★ ${cw.them.stars}** · koniec ${TS(cw.end)}`
+      : `ostatnia wojna z **${cw.them.name}**: ${cw.us.stars} ★ ${cw.them.stars}`;
+    const avgTh = Math.round(members.reduce((a, m) => a + m.th, 0) / (members.length || 1) * 10) / 10;
     const tresc = [
-      `📜 **WYMAGANIA I ZASADY KLANU ARMIA MAURYCEGO**`,
+      `## 📊 ARMIA MAURYCEGO · NA ŻYWO`,
+      `-# Ta wiadomość aktualizuje się sama co kilka minut`,
       ``,
-      `🏰 **Ratusz:** od **TH8** wzwyż (początkujący mile widziani)`,
-      `🎯 **Gry Klanowe:** minimum **1000 pkt** w każdych Grach`,
-      `⚔️ **Wojny:** jeśli jesteś w składzie, **oba ataki** są obowiązkowe (pierwszy na swój numer, po 12 h numery wolne)`,
-      `🏆 **CWL:** zapisy w **Moim panelu** na stronie`,
-      `💤 **Aktywność:** 7 dni nieaktywności bez uprzedzenia = usunięcie z klanu`,
-      `🛑 Nie możesz grać wojny? Zgłoś to w **Moim panelu**, wtedy nie dostaniesz minusa`,
+      `> 🏰 Poziom klanu: **${clan.clanLevel}**`,
+      `> 👥 Gracze: **${ile}/50** · ${wolne > 0 ? `wolne miejsca: **${wolne}** ✅` : "klan pełny 🔒"}`,
+      `> 📈 Średni ratusz: **TH${String(avgTh).replace(".", ",")}**`,
+      `> ⚔️ Liga CWL: **${LIGA(clan.warLeague?.name)}**${lastCwl ? ` · ostatni sezon: **${lastCwl.place}. miejsce**${medal(lastCwl.place)}` : ""}`,
+      `> 🏛️ Liga Stolicy: **${LIGA(clan.capitalLeague?.name)}**`,
+      clan.warWins != null ? `> 🏆 Wygrane wojny: **${clan.warWins}**${(clan.warWinStreak ?? 0) > 1 ? ` · seria **${clan.warWinStreak}** 🔥` : ""}` : null,
+      `> 🔥 Teraz: ${teraz}`,
       ``,
-      `📊 **Klan teraz:** poziom **${clan.clanLevel}** · **${ile}/50** graczy · Liga CWL: **${LIGA(clan.warLeague?.name)}** · Stolica: **${LIGA(clan.capitalLeague?.name)}**`,
-      `🏷️ Tag: **${TAG}** · Strona: ${SITE}`,
-      ``,
-      `_Wiadomość aktualizuje się sama._`
-    ].join("\n");
+      `-# 🏷️ Tag **${TAG}** · 🌐 ${SITE}`
+    ].filter(x => x !== null).join("\n");
     const hash = tresc.length + ":" + [...tresc].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
     try {
       let done = false;
