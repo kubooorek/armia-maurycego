@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T23:46:03.551Z",
+  "updated": "2026-11-09T00:01:41.455Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -5909,121 +5909,199 @@
       "level": 4,
       "wins": 13,
       "points": 20100
+    },
+    {
+      "d": "2026-11-09",
+      "members": 46,
+      "avgTh": 9.3,
+      "level": 4,
+      "wins": 13,
+      "points": 20100
     }
   ],
   "weekBase": {
-    "week": "2026-11-02",
-    "metric": "donations",
+    "week": "2026-11-09",
+    "metric": "capital",
     "players": {
       "#VP9PLGLV": {
-        "given": 8584,
-        "warStars": 1244,
-        "capital": 1606215
+        "given": 1498,
+        "warStars": 1263,
+        "capital": 1620038
       },
       "#LUGR0YQY0": {
-        "given": 908,
-        "warStars": 1207,
-        "capital": 448497
+        "given": 1210,
+        "warStars": 1228,
+        "capital": 453697
       },
       "#GYUJR2URJ": {
-        "given": 3988,
-        "warStars": 90,
-        "capital": 665128
+        "given": 275,
+        "warStars": 104,
+        "capital": 678186
+      },
+      "#GJJ90QGVQ": {
+        "given": 32,
+        "warStars": 11,
+        "capital": 50855
       },
       "#Q9CU9P908": {
-        "given": 128,
-        "warStars": 57,
-        "capital": 106086
-      },
-      "#8UCPRGC8": {
-        "given": 186,
-        "warStars": 504,
-        "capital": 84211
+        "given": 239,
+        "warStars": 67,
+        "capital": 120775
       },
       "#LJYR92002": {
-        "given": 302,
-        "warStars": 120,
-        "capital": 401040
+        "given": 38,
+        "warStars": 127,
+        "capital": 414718
       },
       "#22R8PLCU8": {
-        "given": 2441,
-        "warStars": 229,
-        "capital": 52473
+        "given": 201,
+        "warStars": 246,
+        "capital": 65497
+      },
+      "#8UCPRGC8": {
+        "given": 42,
+        "warStars": 511,
+        "capital": 94980
+      },
+      "#2JGYURUQJ": {
+        "given": 20,
+        "warStars": 82,
+        "capital": 726415
       },
       "#Y02PYY922": {
         "given": 0,
-        "warStars": 3160,
+        "warStars": 3169,
         "capital": 452225
       },
       "#LC8VRR9R2": {
-        "given": 15,
-        "warStars": 2054,
+        "given": 0,
+        "warStars": 2064,
         "capital": 216205
       },
       "#RPR0L809R": {
-        "given": 70,
-        "warStars": 29,
-        "capital": 69255
-      },
-      "#GJJ90QGVQ": {
-        "given": 160,
-        "warStars": 11,
-        "capital": 41251
+        "given": 0,
+        "warStars": 37,
+        "capital": 92086
       },
       "#QYJUV90JY": {
-        "given": 20,
-        "warStars": 44,
-        "capital": 28873
-      },
-      "#G8VGC2VRL": {
-        "given": 374,
-        "warStars": 32,
-        "capital": 29985
+        "given": 0,
+        "warStars": 55,
+        "capital": 44832
       },
       "#GU0R2J8R0": {
-        "given": 357,
-        "warStars": 68,
-        "capital": 42288
+        "given": 20,
+        "warStars": 71,
+        "capital": 52353
+      },
+      "#G8VGC2VRL": {
+        "given": 25,
+        "warStars": 37,
+        "capital": 38536
+      },
+      "#YQ0RPRP88": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 0
       },
       "#LQVRCRUYR": {
         "given": 0,
-        "warStars": 2451,
+        "warStars": 2460,
         "capital": 234074
       },
-      "#YLLQL2VUP": {
-        "given": 169,
-        "warStars": 41,
-        "capital": 41182
-      },
-      "#RY0QPVCCY": {
-        "given": 29,
-        "warStars": 35,
-        "capital": 3150
+      "#R0V8QGLJQ": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 9510
       },
       "#QGPC2228Q": {
         "given": 0,
         "warStars": 14,
         "capital": 17129
       },
-      "#GQULCR98R": {
-        "given": 308,
-        "warStars": 12,
-        "capital": 19170
-      },
-      "#RYLR2C92V": {
-        "given": 69,
-        "warStars": 7,
-        "capital": 22915
-      },
-      "#R90YJUQCQ": {
+      "#RY0QPVCCY": {
         "given": 0,
-        "warStars": 4,
-        "capital": 13078
+        "warStars": 35,
+        "capital": 3150
+      },
+      "#YLLQL2VUP": {
+        "given": 0,
+        "warStars": 41,
+        "capital": 53482
+      },
+      "#GQULCR98R": {
+        "given": 31,
+        "warStars": 13,
+        "capital": 20770
       },
       "#R8V9U9VLJ": {
-        "given": 27,
+        "given": 1,
         "warStars": 0,
         "capital": 0
+      },
+      "#GV0P9JL8Q": {
+        "given": 0,
+        "warStars": 2,
+        "capital": 25466
+      },
+      "#GVGRVCQJR": {
+        "given": 208,
+        "warStars": 4,
+        "capital": 32686
+      },
+      "#R92C0U8UU": {
+        "given": 0,
+        "warStars": 15,
+        "capital": 15905
+      },
+      "#R2PCVYQG2": {
+        "given": 0,
+        "warStars": 21,
+        "capital": 43065
+      },
+      "#GVG02VV98": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 6070
+      },
+      "#R9GPGL0QJ": {
+        "given": 3,
+        "warStars": 6,
+        "capital": 11348
+      },
+      "#RYLR2C92V": {
+        "given": 20,
+        "warStars": 7,
+        "capital": 31950
+      },
+      "#LUQJC2JGY": {
+        "given": 2,
+        "warStars": 0,
+        "capital": 25739
+      },
+      "#R8RVQVPCC": {
+        "given": 0,
+        "warStars": 15,
+        "capital": 34234
+      },
+      "#R0VJLRGQ0": {
+        "given": 0,
+        "warStars": 14,
+        "capital": 400
+      },
+      "#R0VLRL292": {
+        "given": 0,
+        "warStars": 3,
+        "capital": 250
+      },
+      "#R9QQPG9JP": {
+        "given": 0,
+        "warStars": 21,
+        "capital": 13328
+      },
+      "#R9L08VVCY": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 2400
       },
       "#GQ2QUJRGU": {
         "given": 0,
@@ -6033,62 +6111,27 @@
       "#LYUQYCU9G": {
         "given": 0,
         "warStars": 6,
-        "capital": 13885
+        "capital": 14385
       },
-      "#GVGRVCQJR": {
-        "given": 363,
-        "warStars": 4,
-        "capital": 16159
+      "#RYUV9V9RC": {
+        "given": 46,
+        "warStars": 0,
+        "capital": 0
       },
-      "#R9QQPG9JP": {
-        "given": 12,
-        "warStars": 21,
-        "capital": 9125
+      "#GQR98J880": {
+        "given": 76,
+        "warStars": 0,
+        "capital": 100
       },
-      "#R9GPGL0QJ": {
-        "given": 75,
-        "warStars": 6,
-        "capital": 700
-      },
-      "#R2PCVYQG2": {
-        "given": 180,
-        "warStars": 21,
-        "capital": 33274
-      },
-      "#R0VLRL292": {
-        "given": 0,
-        "warStars": 3,
-        "capital": 250
-      },
-      "#GVG02VV98": {
+      "#R2UJV2VJR": {
         "given": 0,
         "warStars": 0,
-        "capital": 6070
+        "capital": 1550
       },
-      "#R92C0U8UU": {
-        "given": 30,
-        "warStars": 15,
-        "capital": 7670
-      },
-      "#R0VJLRGQ0": {
-        "given": 1,
-        "warStars": 14,
-        "capital": 400
-      },
-      "#LUQJC2JGY": {
-        "given": 148,
+      "#R9GUJ0ULV": {
+        "given": 70,
         "warStars": 0,
-        "capital": 16969
-      },
-      "#R8RVQVPCC": {
-        "given": 40,
-        "warStars": 15,
-        "capital": 31434
-      },
-      "#GVRY000P2": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 2510
+        "capital": 6217
       },
       "#GLV9998PC": {
         "given": 0,
@@ -6096,46 +6139,6 @@
         "capital": 0
       },
       "#GGU0RJYR9": {
-        "given": 1,
-        "warStars": 0,
-        "capital": 0
-      },
-      "#GV0P9JL8Q": {
-        "given": 0,
-        "warStars": 2,
-        "capital": 16616
-      },
-      "#R9GUJ0ULV": {
-        "given": 41,
-        "warStars": 0,
-        "capital": 0
-      },
-      "#RYUV9V9RC": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 0
-      },
-      "#RYGL9UUR2": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 0
-      },
-      "#RY9GPJ822": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 400
-      },
-      "#R2UJV2VJR": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 0
-      },
-      "#GQR98J880": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 100
-      },
-      "#YQ0RPRP88": {
         "given": 0,
         "warStars": 0,
         "capital": 0
@@ -6145,41 +6148,31 @@
         "warStars": 0,
         "capital": 100
       },
-      "#R0V8QGLJQ": {
+      "#RY9GPJ822": {
         "given": 0,
         "warStars": 0,
-        "capital": 0
-      },
-      "#R9L08VVCY": {
-        "given": 0,
-        "warStars": 0,
-        "capital": 2400
-      },
-      "#2JGYURUQJ": {
-        "given": 0,
-        "warStars": 82,
-        "capital": 723165
+        "capital": 400
       }
     }
   },
   "lastWeek": {
-    "week": "2026-10-26",
-    "metric": "warStars",
+    "week": "2026-11-02",
+    "metric": "donations",
     "winners": [
-      {
-        "name": "MAQOS",
-        "tag": "#LJYR92002",
-        "d": 8
-      },
       {
         "name": "KUBOOOREK",
         "tag": "#VP9PLGLV",
-        "d": 6
+        "d": 1498
+      },
+      {
+        "name": "Baku",
+        "tag": "#LUGR0YQY0",
+        "d": 302
       },
       {
         "name": "Albaroon.2",
         "tag": "#GYUJR2URJ",
-        "d": 6
+        "d": 275
       }
     ]
   },
@@ -6402,6 +6395,10 @@
     "#LJYR92002": {
       "name": "MAQOS",
       "n": 1
+    },
+    "#VP9PLGLV": {
+      "name": "KUBOOOREK",
+      "n": 1
     }
   },
   "penalties": [
@@ -6548,8 +6545,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
-      "sig": "201|370084259|346933953|15875|9583|16915|65497|0|246|106|11",
-      "last": "2026-11-08T23:01:31.280Z",
+      "sig": "201|370909259|347758953|15875|9583|16915|65497|0|246|106|11",
+      "last": "2026-11-09T00:01:41.443Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Y02PYY922": {
@@ -8575,7 +8572,7 @@
       "trophies": 378,
       "profile": {
         "level": 106,
-        "trophies": 338,
+        "trophies": 378,
         "best": 2156,
         "league": "Archer League 9",
         "warStars": 246,
@@ -8648,8 +8645,8 @@
         "cg": 15875,
         "don": 9583,
         "capLoot": 16915,
-        "gold": 370084259,
-        "elixir": 346933953,
+        "gold": 370909259,
+        "elixir": 347758953,
         "capContrib": 65497,
         "wins": 0
       }
@@ -10672,16 +10669,16 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 17.2,
-        "troops": 25,
+        "pct": 13.8,
+        "troops": 22.2,
         "spells": 0,
-        "heroes": 10,
+        "heroes": 0,
         "top": [
           {
             "n": "Barbarzyńca",
@@ -10707,11 +10704,6 @@
             "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 2
-          },
-          {
-            "n": "Burzyciel",
-            "lvl": 3,
-            "need": 4
           }
         ]
       },
