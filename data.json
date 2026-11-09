@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T19:16:09.593Z",
+  "updated": "2026-11-09T19:31:23.723Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10,17 +10,26 @@
     "season": "2026-11-01",
     "state": "inWar",
     "rounds": 7,
-    "place": 2,
+    "place": 3,
     "groupSize": 8,
     "standings": [
       {
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 207,
+        "stars": 217,
         "pct": 5842,
-        "wins": 5,
-        "played": 6
+        "wins": 6,
+        "played": 7
+      },
+      {
+        "tag": "#2CC0PJPLY",
+        "name": "kingslayers",
+        "level": 5,
+        "stars": 188,
+        "pct": 5723,
+        "wins": 4,
+        "played": 7
       },
       {
         "tag": "#2GQQ8RGRL",
@@ -29,34 +38,25 @@
         "stars": 183,
         "pct": 5914,
         "wins": 3,
-        "played": 6
-      },
-      {
-        "tag": "#2CC0PJPLY",
-        "name": "kingslayers",
-        "level": 5,
-        "stars": 178,
-        "pct": 5723,
-        "wins": 3,
-        "played": 6
+        "played": 7
       },
       {
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 163,
+        "stars": 173,
         "pct": 3873,
-        "wins": 5,
-        "played": 6
+        "wins": 6,
+        "played": 7
       },
       {
         "tag": "#2RVLCPPUR",
         "name": "Freax",
         "level": 5,
-        "stars": 151,
+        "stars": 161,
         "pct": 4678,
-        "wins": 2,
-        "played": 6
+        "wins": 3,
+        "played": 7
       },
       {
         "tag": "#V8PU2P0G",
@@ -65,7 +65,7 @@
         "stars": 149,
         "pct": 4131,
         "wins": 3,
-        "played": 6
+        "played": 7
       },
       {
         "tag": "#2YRR8GPUU",
@@ -74,7 +74,7 @@
         "stars": 131,
         "pct": 4011,
         "wins": 2,
-        "played": 6
+        "played": 7
       },
       {
         "tag": "#2J9QGGG2Q",
@@ -83,7 +83,7 @@
         "stars": 119,
         "pct": 4172,
         "wins": 1,
-        "played": 6
+        "played": 7
       }
     ],
     "wars": [
@@ -2291,7 +2291,7 @@
       },
       {
         "round": 7,
-        "state": "inWar",
+        "state": "warEnded",
         "size": 15,
         "perMember": 1,
         "start": "20261108T191646.000Z",
@@ -3318,7 +3318,7 @@
       "enemy": "kingslayers",
       "size": 15,
       "perMember": 1,
-      "state": "inWar",
+      "state": "warEnded",
       "cwl": true,
       "us": 29,
       "them": 31,
@@ -6547,8 +6547,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "1622|2000000000|2000000000|94700|82349|1216349|1620638|0|1263|205|15",
-      "last": "2026-11-09T18:46:10.166Z",
+      "sig": "1622|2000000000|2000000000|94700|82349|1216349|1620638|0|1263|206|15",
+      "last": "2026-11-09T19:31:23.707Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -7769,7 +7769,122 @@
       ]
     ]
   },
-  "cwlSummary": null,
+  "cwlSummary": {
+    "season": "2026-11-01",
+    "place": 3,
+    "groupSize": 8,
+    "wins": 3,
+    "draws": 0,
+    "losses": 4,
+    "stars": 183,
+    "pct": 5914,
+    "rounds": [
+      {
+        "round": 1,
+        "enemy": "React",
+        "us": 10,
+        "them": 21,
+        "win": false,
+        "draw": false
+      },
+      {
+        "round": 2,
+        "enemy": "BattlerManipur2",
+        "us": 20,
+        "them": 20,
+        "win": true,
+        "draw": false
+      },
+      {
+        "round": 3,
+        "enemy": "Freax",
+        "us": 19,
+        "them": 23,
+        "win": false,
+        "draw": false
+      },
+      {
+        "round": 4,
+        "enemy": "united again",
+        "us": 23,
+        "them": 18,
+        "win": true,
+        "draw": false
+      },
+      {
+        "round": 5,
+        "enemy": "سوري",
+        "us": 37,
+        "them": 27,
+        "win": true,
+        "draw": false
+      },
+      {
+        "round": 6,
+        "enemy": "Dream Clans",
+        "us": 15,
+        "them": 15,
+        "win": false,
+        "draw": false
+      },
+      {
+        "round": 7,
+        "enemy": "kingslayers",
+        "us": 29,
+        "them": 31,
+        "win": false,
+        "draw": false
+      }
+    ],
+    "top": [
+      {
+        "name": "Baku",
+        "stars": 21,
+        "attacks": 7,
+        "wars": 7,
+        "three": 7
+      },
+      {
+        "name": "KUBOOOREK",
+        "stars": 19,
+        "attacks": 7,
+        "wars": 7,
+        "three": 6
+      },
+      {
+        "name": "VipeR",
+        "stars": 17,
+        "attacks": 7,
+        "wars": 7,
+        "three": 4
+      },
+      {
+        "name": "Albaroon.2",
+        "stars": 14,
+        "attacks": 7,
+        "wars": 7,
+        "three": 3
+      },
+      {
+        "name": "monte",
+        "stars": 11,
+        "attacks": 7,
+        "wars": 7,
+        "three": 3
+      }
+    ],
+    "missed": [
+      {
+        "name": "vvd",
+        "n": 3
+      },
+      {
+        "name": "Cwel123",
+        "n": 1
+      }
+    ],
+    "posted": false
+  },
   "dayBase": {
     "day": "2026-11-09",
     "since": "2026-11-08T23:01:31.280Z",
@@ -8128,7 +8243,7 @@
       "received": 203,
       "trophies": 0,
       "profile": {
-        "level": 205,
+        "level": 206,
         "trophies": 0,
         "best": 5066,
         "league": "Titan League 25",
@@ -9368,9 +9483,9 @@
         ]
       },
       "rush": {
-        "pct": 51.2,
+        "pct": 50.7,
         "troops": 41.8,
-        "spells": 44.1,
+        "spells": 41.2,
         "heroes": 61,
         "top": [
           {
