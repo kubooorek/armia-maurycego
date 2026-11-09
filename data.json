@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-09T16:31:41.594Z",
+  "updated": "2026-11-09T16:46:04.055Z",
   "clanLevel": 4,
-  "memberCount": 46,
+  "memberCount": 45,
   "cwlLeague": "Silver League I",
   "warWinStreak": 11,
   "warWins": 13,
@@ -2728,7 +2728,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -2911,6 +2911,11 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-09T16:46:03.299Z",
+      "type": "leave",
+      "name": "kwiatek"
+    },
     {
       "t": "2026-11-09T14:01:39.040Z",
       "type": "th",
@@ -3304,12 +3309,6 @@
       "name": "Toster290",
       "from": 11,
       "to": 12
-    },
-    {
-      "t": "2026-10-29T23:31:02.008Z",
-      "type": "join",
-      "name": "krupnik",
-      "th": 3
     }
   ],
   "warArchive": [
@@ -5949,8 +5948,8 @@
     },
     {
       "d": "2026-11-09",
-      "members": 46,
-      "avgTh": 9.4,
+      "members": 45,
+      "avgTh": 9.5,
       "level": 4,
       "wins": 13,
       "points": 22400
@@ -6357,10 +6356,6 @@
       "d": "2026-10-29T22:59:49.907Z",
       "orig": true
     },
-    "#RY9GPJ822": {
-      "d": "2026-10-29T22:59:49.907Z",
-      "orig": true
-    },
     "#GQR98J880": {
       "d": "2026-10-29T20:58:21.760Z"
     },
@@ -6729,11 +6724,6 @@
     "#RYUV9V9RC": {
       "sig": "46|19384610|18657192|0|45|0|0|0|0|35|8",
       "last": "2026-11-08T16:01:36.638Z",
-      "since": "2026-10-29T22:15:49.037Z"
-    },
-    "#RY9GPJ822": {
-      "sig": "0|3842262|3875988|0|0|0|400|0|0|23|6",
-      "last": "2026-11-01T23:45:58.231Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
@@ -7777,20 +7767,6 @@
         0,
         7
       ]
-    ],
-    "#RY9GPJ822": [
-      [
-        20765,
-        0,
-        0,
-        6
-      ],
-      [
-        20766,
-        0,
-        0,
-        6
-      ]
     ]
   },
   "cwlSummary": null,
@@ -8625,7 +8601,7 @@
         "warStars": 67,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 121225,
+        "capital": 122825,
         "warPref": "in",
         "heroes": [
           {
@@ -11124,55 +11100,6 @@
         "gold": 1981435,
         "elixir": 1983038,
         "capContrib": 100,
-        "wins": 0
-      }
-    },
-    {
-      "name": "kwiatek",
-      "tag": "#RY9GPJ822",
-      "role": "member",
-      "th": 6,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 23,
-        "trophies": 0,
-        "best": 0,
-        "league": "Unranked",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 1,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 8.7,
-        "troops": 0,
-        "spells": 33.3,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 2,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 3842262,
-        "elixir": 3875988,
-        "capContrib": 400,
         "wins": 0
       }
     }
