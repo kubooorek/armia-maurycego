@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T19:31:23.723Z",
+  "updated": "2026-11-09T19:46:01.336Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -6547,8 +6547,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "1622|2000000000|2000000000|94700|82349|1216349|1620638|0|1263|206|15",
-      "last": "2026-11-09T19:31:23.707Z",
+      "sig": "1689|2000000000|2000000000|94700|82384|1216349|1620638|0|1263|206|15",
+      "last": "2026-11-09T19:46:01.324Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -7148,7 +7148,7 @@
       [
         20766,
         1263,
-        82349,
+        82384,
         15
       ]
     ],
@@ -7222,6 +7222,20 @@
         13
       ]
     ],
+    "#22R8PLCU8": [
+      [
+        20765,
+        246,
+        9583,
+        11
+      ],
+      [
+        20766,
+        246,
+        9603,
+        11
+      ]
+    ],
     "#Q9CU9P908": [
       [
         20765,
@@ -7248,20 +7262,6 @@
         130,
         677,
         12
-      ]
-    ],
-    "#22R8PLCU8": [
-      [
-        20765,
-        246,
-        9583,
-        11
-      ],
-      [
-        20766,
-        246,
-        9603,
-        11
       ]
     ],
     "#2JGYURUQJ": [
@@ -7502,6 +7502,20 @@
         9
       ]
     ],
+    "#R9GPGL0QJ": [
+      [
+        20765,
+        6,
+        76,
+        8
+      ],
+      [
+        20766,
+        6,
+        76,
+        8
+      ]
+    ],
     "#GVG02VV98": [
       [
         20765,
@@ -7555,20 +7569,6 @@
         20766,
         15,
         30,
-        8
-      ]
-    ],
-    "#R9GPGL0QJ": [
-      [
-        20765,
-        6,
-        76,
-        8
-      ],
-      [
-        20766,
-        6,
-        76,
         8
       ]
     ],
@@ -8239,7 +8239,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 1622,
+      "given": 1689,
       "received": 203,
       "trophies": 0,
       "profile": {
@@ -8294,7 +8294,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 82349,
+        "don": 82384,
         "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -8732,6 +8732,95 @@
       }
     },
     {
+      "name": "VipeR",
+      "tag": "#22R8PLCU8",
+      "role": "leader",
+      "th": 11,
+      "given": 221,
+      "received": 230,
+      "trophies": 40,
+      "profile": {
+        "level": 106,
+        "trophies": 0,
+        "best": 2156,
+        "league": "Wizard League 10",
+        "warStars": 246,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 65497,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 40,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 40,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 13,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 25,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 5.6,
+        "troops": 4,
+        "spells": 20.4,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie klonowania",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie szkieletów",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie nietoperzy",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Górnik",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 15875,
+        "don": 9603,
+        "capLoot": 16915,
+        "gold": 410690590,
+        "elixir": 389600817,
+        "capContrib": 65497,
+        "wins": 0
+      }
+    },
+    {
       "name": "oggsgdjdjbd",
       "tag": "#Q9CU9P908",
       "role": "member",
@@ -8875,95 +8964,6 @@
         "gold": 404313529,
         "elixir": 413280053,
         "capContrib": 414718,
-        "wins": 0
-      }
-    },
-    {
-      "name": "VipeR",
-      "tag": "#22R8PLCU8",
-      "role": "leader",
-      "th": 11,
-      "given": 221,
-      "received": 163,
-      "trophies": 0,
-      "profile": {
-        "level": 106,
-        "trophies": 0,
-        "best": 2156,
-        "league": "Wizard League 10",
-        "warStars": 246,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 65497,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 40,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 40,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 13,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 25,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 5.6,
-        "troops": 4,
-        "spells": 20.4,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie klonowania",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie szkieletów",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie nietoperzy",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie przyspieszenia",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Górnik",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 15875,
-        "don": 9603,
-        "capLoot": 16915,
-        "gold": 410690590,
-        "elixir": 389600817,
-        "capContrib": 65497,
         "wins": 0
       }
     },
@@ -10056,10 +10056,10 @@
       "th": 9,
       "given": 2,
       "received": 0,
-      "trophies": 0,
+      "trophies": 40,
       "profile": {
         "level": 51,
-        "trophies": 0,
+        "trophies": 40,
         "best": 242,
         "league": "Skeleton League 3",
         "warStars": 0,
@@ -10100,6 +10100,54 @@
         "gold": 25759287,
         "elixir": 25469727,
         "capContrib": 25739,
+        "wins": 0
+      }
+    },
+    {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 8,
+      "given": 3,
+      "received": 60,
+      "trophies": 11,
+      "profile": {
+        "level": 46,
+        "trophies": 11,
+        "best": 300,
+        "league": "Skeleton League 3",
+        "warStars": 6,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16881,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 15,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 76,
+        "capLoot": 12040,
+        "gold": 32341126,
+        "elixir": 31153363,
+        "capContrib": 16881,
         "wins": 0
       }
     },
@@ -10308,54 +10356,6 @@
       }
     },
     {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 8,
-      "given": 3,
-      "received": 60,
-      "trophies": 0,
-      "profile": {
-        "level": 46,
-        "trophies": 0,
-        "best": 300,
-        "league": "Skeleton League 3",
-        "warStars": 6,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16881,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 15,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 76,
-        "capLoot": 12040,
-        "gold": 32341126,
-        "elixir": 31153363,
-        "capContrib": 16881,
-        "wins": 0
-      }
-    },
-    {
       "name": "SZAR3",
       "tag": "#RYLR2C92V",
       "role": "member",
@@ -10424,7 +10424,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
@@ -10440,10 +10440,10 @@
         ]
       },
       "rush": {
-        "pct": 17.5,
+        "pct": 16.3,
         "troops": 0,
-        "spells": 25,
-        "heroes": 43.3,
+        "spells": 23.8,
+        "heroes": 40,
         "top": [
           {
             "n": "Zaklęcie szału",
@@ -10457,7 +10457,7 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 12,
+            "lvl": 13,
             "need": 20
           },
           {
