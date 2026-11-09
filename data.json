@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T10:31:27.695Z",
+  "updated": "2026-11-09T10:46:05.829Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 203,
-        "pct": 5691,
+        "stars": 205,
+        "pct": 5768,
         "wins": 5,
         "played": 6
       },
@@ -44,8 +44,8 @@
         "tag": "#2L22CP0U0",
         "name": "Dream Clans",
         "level": 21,
-        "stars": 152,
-        "pct": 3504,
+        "stars": 155,
+        "pct": 3604,
         "wins": 5,
         "played": 6
       },
@@ -2722,7 +2722,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -10856,7 +10856,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 4,
+            "level": 5,
             "max": 110
           }
         ]
