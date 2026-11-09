@@ -1487,6 +1487,24 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   html[data-motyw="epicki"] .kary-head>span{color:#fff;font-weight:800;text-shadow:0 1px 2px #000,0 2px 10px rgba(0,0,0,.9)}
   html[data-motyw="epicki"] .updated,html[data-motyw="epicki"] .auto-upd{color:#f2dcc0!important;text-shadow:0 1px 2px #000}
   html[data-motyw="epicki"] body::after{background:linear-gradient(180deg,rgba(10,3,2,.25),rgba(10,3,2,.45))!important}
+  .cwl-gal{margin-top:16px}
+  .cg-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 2px 10px}
+  .cg-title small{color:var(--muted)}
+  .cg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .cg-card{position:relative;border:1.5px solid var(--lc);border-radius:var(--radius);padding:14px 16px;background:linear-gradient(180deg,rgba(48,16,10,.92),rgba(20,6,4,.94));box-shadow:0 8px 22px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.04);overflow:hidden}
+  .cg-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 100% 0,color-mix(in srgb,var(--lc) 22%,transparent),transparent 60%);pointer-events:none}
+  .cg-head{display:flex;justify-content:space-between;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .cg-nr{color:var(--lc)}
+  .cg-place{display:flex;align-items:center;gap:12px;margin:8px 0 6px}
+  .cg-place b{font-family:"Lilita One",Inter,sans-serif;font-weight:400;font-size:3.2rem;line-height:1;color:var(--lc);text-shadow:0 3px 0 rgba(0,0,0,.5)}
+  .cg-place span{font-weight:800;font-size:1.05rem;line-height:1.2} .cg-place small{font-weight:600;color:var(--muted);font-size:.78rem}
+  .cg-league{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:.8rem;font-weight:800;border:1px solid var(--lc);color:var(--lc);background:rgba(0,0,0,.25)}
+  .cg-league .ic{width:15px;height:15px}
+  .cg-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0 10px;text-align:center}
+  .cg-stats div{background:rgba(0,0,0,.25);border-radius:8px;padding:6px 2px} .cg-stats b{display:block;font-size:1.15rem} .cg-stats small{font-size:.66rem;color:var(--muted)}
+  .cg-stats .pos{color:var(--green)} .cg-stats .neg{color:var(--red)}
+  .cg-best{display:flex;align-items:center;gap:8px;font-size:.84rem;padding-top:8px;border-top:1px solid rgba(255,255,255,.08)}
+  .cg-best .ic{width:16px;height:16px;color:var(--gold)}
   /* ===== Smaczki ===== */
   ::selection{background:rgba(255,190,50,.85);color:#1a0806}
   html{scrollbar-color:#c98a1a #140606;scrollbar-width:thin}
@@ -1739,6 +1757,7 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
     </div>
     <div class="panel" id="cwlRounds" style="margin-top:12px"></div>
     <div class="panel" id="cwlSummary" style="margin-top:12px"></div>
+    <div class="cwl-gal" id="cwlSeasons"></div>
     <div class="panel" id="cwlMedals" style="margin-top:12px" hidden></div>
   </div>
 </section>
@@ -4219,6 +4238,29 @@ let openWarMap=()=>{};
       return `<div class="zw-row ${d>0?"up":d<0?"down":""}"><span class="zw-p">${i+1}.</span><span class="zw-n">${esc(ours[i].name)}</span><span class="zw-th">TH${uT[i]}</span><span class="zw-vs">${d>0?"▲":d<0?"▼":"="}</span><span class="zw-th">TH${tT[i]}</span></div>`; }).join("")}</div></details>`;
 })();
 
+/* ===== Galeria sezonów CWL ===== */
+(function(){
+  const host=$("#cwlSeasons"); if(!host) return;
+  let H=(AUTO&&Array.isArray(AUTO.cwlHistory)&&AUTO.cwlHistory.length)?AUTO.cwlHistory.slice():[];
+  const S=AUTO&&AUTO.cwlSummary;
+  if(S&&!H.some(x=>x.season===S.season)) H.push({season:S.season,league:AUTO.cwlLeague,place:S.place,groupSize:S.groupSize,wins:S.wins,draws:S.draws,losses:S.losses,stars:S.stars,best:S.top&&S.top[0]?{name:S.top[0].name,stars:S.top[0].stars,three:S.top[0].three}:null});
+  if(!H.length){ host.remove(); return; }
+  H.sort((a,b)=>String(b.season).localeCompare(String(a.season)));
+  const LP={Bronze:"Brązowa",Silver:"Srebrna",Gold:"Złota",Crystal:"Kryształowa",Master:"Mistrzowska",Champion:"Mistrzów"};
+  const lg=n=>{ if(!n) return "—"; const [k,,r]=String(n).split(" "); return `${LP[k]||k} ${r||""}`.trim(); };
+  const lgCol=n=>({Bronze:"#c07a3a",Silver:"#c9d2dc",Gold:"#ffc93a",Crystal:"#b06aff",Master:"#e8e8f0",Champion:"#ff5a4a"})[String(n||"").split(" ")[0]]||"#ffc93a";
+  const MP=["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"];
+  const medal=p=>p===1?"🥇":p===2?"🥈":p===3?"🥉":"";
+  const card=(x,i)=>{ const mo=+String(x.season).slice(5,7), y=String(x.season).slice(0,4); const nr=H.length-i;
+    return `<div class="cg-card${x.place<=3?" cg-top":""}" style="--lc:${lgCol(x.league)}">
+      <div class="cg-head"><span class="cg-nr">Sezon ${nr}</span><span class="cg-date">${MP[mo-1]} ${y}</span></div>
+      <div class="cg-place"><b>${x.place||"?"}.</b><span>${medal(x.place)} miejsce<br><small>na ${x.groupSize||8} klanów</small></span></div>
+      <div class="cg-league"><svg class="ic"><use href="#i-trophy"/></svg>${esc(lg(x.league))}</div>
+      <div class="cg-stats"><div><b class="pos">${x.wins??"–"}</b><small>wygrane</small></div><div><b>${x.draws??0}</b><small>remisy</small></div><div><b class="neg">${x.losses??"–"}</b><small>przegrane</small></div><div><b>${x.stars??"–"}</b><small>gwiazdki</small></div></div>
+      ${x.best?`<div class="cg-best"><svg class="ic"><use href="#i-star"/></svg><span>Najlepszy: <b>${esc(x.best.name)}</b> · ${x.best.stars}★${x.best.three?` · ${x.best.three}× 3★`:""}</span></div>`:""}
+    </div>`; };
+  host.innerHTML=`<div class="cg-title"><span class="fame-label" style="margin:0">🏆 Nasze sezony CWL</span><small>${H.length===1?"Pierwszy sezon za nami — kolejne będą się dopisywać same.":`${H.length} sezonów w historii klanu`}</small></div><div class="cg-grid">${H.map(card).join("")}</div>`;
+})();
 /* ===== Podsumowanie sezonu CWL ===== */
 (function(){
   const S=AUTO&&AUTO.cwlSummary, host=$("#cwlSummary"); if(!host) return; if(!S){ host.remove(); return; }
@@ -4698,7 +4740,7 @@ let saveLayoutState=()=>{};
     const MAPA=[
       ["start","home","Start",[["#ogloszenia","Ogłoszenia"],has("ankiety")&&["#ankiety","Ankiety"],["#wydarzenia","Wydarzenia i odliczania"],has("icsBtn")&&["#wydarzenia","Dodaj do kalendarza"]]],
       ["wojny","swords","Wojny",[["#wojny","Wojna na żywo"],["#zwiad","Zwiad przeciwnika"],["#wars","Mapa ataków (kliknij wojnę)"],["#warCharts","Wykresy wojen"],["#wars","Historia wojen"],["#kary","Kary"],["#ranking","Ranking wojowników"]]],
-      ["liga","trophy","Liga (CWL)",[["#liga","Tabela grupy"],["#cwlRounds","Rundy dzień po dniu"],["#cwlSummary","Podsumowanie sezonu"],["#cwlMedals","Medale ligowe"]]],
+      ["liga","trophy","Liga (CWL)",[["#liga","Tabela grupy"],["#cwlRounds","Rundy dzień po dniu"],["#cwlSummary","Podsumowanie sezonu"],["#cwlSeasons","Nasze sezony CWL"],["#cwlMedals","Medale ligowe"]]],
       ["czlonkowie","users","Członkowie",[["#czlonkowie","Lista graczy"],["#czlonkowie","Profil gracza (kliknij nick)"],["#rajdy","Rajdy Stolicy"],has("zarzad")&&["#zarzad","Panel zarządu"]]],
       ["klan","shield","Klan",[["#kadra","MVP miesiąca i kadra"],["#historia","Nasza historia"],["#osiagniecia","Cele, wykresy, rekordy"],["#regulamin","Regulamin"],["#discord","Discord"]]],
       ["poradnik","book","Poradnik",[["#kalkulator","Strategie ataku"],["#kalkulator","Plan ulepszeń i quiz"],["#bazy","Bazy TH4–TH18"]]],
@@ -4713,7 +4755,7 @@ let saveLayoutState=()=>{};
     $("#wydarzenia").after(sk);
     // Szukaj (Ctrl+K lub „/”): gracze + każda funkcja strony
     const KW={"#zwiad":"przeciwnik rywal wróg skan","#wars":"mapa ataki kto kogo bił lista wojen","#warCharts":"wykres statystyki","#kary":"kara ostrzeżenie zamiana regulamin wojenny","#ranking":"najlepsi top gwiazdki",
-      "#liga":"cwl liga tabela grupa miejsce","#cwlRounds":"cwl runda dzień","#cwlSummary":"cwl sezon wynik","#cwlMedals":"medale cwl","#czlonkowie":"gracze lista nicki th ratusz donaty","#rajdy":"stolica raid weekend złoto",
+      "#liga":"cwl liga tabela grupa miejsce","#cwlRounds":"cwl runda dzień","#cwlSummary":"cwl sezon wynik","#cwlSeasons":"sezony historia cwl galeria miejsce","#cwlMedals":"medale cwl","#czlonkowie":"gracze lista nicki th ratusz donaty","#rajdy":"stolica raid weekend złoto",
       "#zarzad":"zarząd lider kandydaci nieaktywni","#kadra":"mvp lider kadra wyróżnienia gracz dnia","#historia":"historia założenie poziom","#osiagniecia":"cele rekordy liczby rozwój","#regulamin":"zasady reguły",
       "#discord":"dc czat","#kalkulator":"strategia atak ulepszenia quiz słowniczek armia","#bazy":"baza układ layout","#wymagania":"wymagania th8 ratusz","#dolacz":"dołącz tag rekrutacja","#faq":"pytania pomoc",
       "#ogloszenia":"news ogłoszenia","#ankiety":"głosowanie ankieta","#wydarzenia":"wydarzenia gry klanowe odliczanie kalendarz ics","#panel":"konto logowanie zamiana profil"};

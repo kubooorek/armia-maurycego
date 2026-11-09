@@ -280,6 +280,24 @@ if (cwl && Array.isArray(cwl.wars) && cwl.wars.length >= (cwl.rounds || 7) && cw
   };
 }
 
+/* ---------- Galeria sezonów CWL (każdy zakończony sezon zostaje na zawsze) ---------- */
+const cwlHistory = Array.isArray(old?.cwlHistory) ? old.cwlHistory.slice() : [];
+if (cwlSummary && cwlSummary.season) {
+  const best = (cwlSummary.top || [])[0] || null;
+  const prev = cwlHistory.find(x => x.season === cwlSummary.season);
+  const entry = {
+    season: cwlSummary.season,
+    league: prev?.league || data_cwlLeagueAtSeason(),
+    place: cwlSummary.place, groupSize: cwlSummary.groupSize,
+    wins: cwlSummary.wins, draws: cwlSummary.draws, losses: cwlSummary.losses,
+    stars: cwlSummary.stars, pct: cwlSummary.pct,
+    best: best ? { name: best.name, stars: best.stars, three: best.three } : null
+  };
+  if (prev) Object.assign(prev, entry); else cwlHistory.push(entry);
+  cwlHistory.sort((a, b) => b.season.localeCompare(a.season));
+}
+function data_cwlLeagueAtSeason() { return clan?.warLeague?.name || old?.cwlLeague || null; }
+
 /* ---------- Kary za łamanie zasad wojennych (tylko zwykłe wojny, 2 ataki) ---------- */
 // konta zwolnione z kar (lista KARY_ZWOLNIENI w index.html)
 let karyZw = [];
@@ -862,6 +880,7 @@ const data = {
   swaps: swaps.slice(0, 100),
   playerHistory,
   cwlSummary,
+  cwlHistory,
   dayBase,
   potd,
   potdHistory,
