@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T00:01:41.455Z",
+  "updated": "2026-11-09T00:31:19.143Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2710,7 +2710,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -6560,8 +6560,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|535947708|491963929|10100|244|35350|92086|0|37|80|11",
-      "last": "2026-11-08T21:16:02.458Z",
+      "sig": "0|535947708|491963929|10100|244|35350|92086|0|37|81|11",
+      "last": "2026-11-09T00:31:19.129Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -8944,7 +8944,7 @@
       "received": 132,
       "trophies": 390,
       "profile": {
-        "level": 80,
+        "level": 81,
         "trophies": 390,
         "best": 400,
         "league": "Archer League 7",
@@ -8972,8 +8972,8 @@
         ]
       },
       "rush": {
-        "pct": 18.6,
-        "troops": 8.1,
+        "pct": 18.5,
+        "troops": 8,
         "spells": 10.4,
         "heroes": 33,
         "top": [
