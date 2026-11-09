@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T01:01:29.369Z",
+  "updated": "2026-11-09T01:16:00.140Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -2710,7 +2710,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -9992,7 +9992,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 10,
+            "level": 11,
             "max": 110
           },
           {
