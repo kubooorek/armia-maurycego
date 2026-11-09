@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T15:31:28.330Z",
+  "updated": "2026-11-09T15:46:04.968Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -50,21 +50,21 @@
         "played": 6
       },
       {
+        "tag": "#2RVLCPPUR",
+        "name": "Freax",
+        "level": 5,
+        "stars": 151,
+        "pct": 4678,
+        "wins": 2,
+        "played": 6
+      },
+      {
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
         "stars": 149,
         "pct": 4131,
         "wins": 3,
-        "played": 6
-      },
-      {
-        "tag": "#2RVLCPPUR",
-        "name": "Freax",
-        "level": 5,
-        "stars": 148,
-        "pct": 4578,
-        "wins": 2,
         "played": 6
       },
       {
@@ -2728,7 +2728,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 12
   },
   "raids": [
@@ -6777,8 +6777,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "20|478287130|477867931|25150|1487|636760|726415|0|82|128|13",
-      "last": "2026-11-09T15:16:10.622Z",
+      "sig": "20|481057600|480718675|25150|1487|636760|726415|0|82|128|13",
+      "last": "2026-11-09T15:46:04.953Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8959,8 +8959,8 @@
         "cg": 25150,
         "don": 1487,
         "capLoot": 636760,
-        "gold": 478287130,
-        "elixir": 477867931,
+        "gold": 481057600,
+        "elixir": 480718675,
         "capContrib": 726415,
         "wins": 0
       }
@@ -9381,7 +9381,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
@@ -9392,10 +9392,10 @@
         ]
       },
       "rush": {
-        "pct": 51.6,
+        "pct": 51.2,
         "troops": 41.8,
         "spells": 44.1,
-        "heroes": 62,
+        "heroes": 61,
         "top": [
           {
             "n": "Minion",
