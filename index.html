@@ -1479,6 +1479,14 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   .rank-card .av.av-th{flex:0 0 40px;height:40px;background:none;border:0;border-radius:0}
   .rank-card .av.av-th img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.45))}
   .rank-card .av.av-th b{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;font-weight:900;font-size:.9rem;color:#3a1600;background:linear-gradient(180deg,#ffe58a,#e8a020);border:1px solid #7a3d00;box-shadow:0 2px 0 #6a2e00}
+  /* Ogień: czytelniejszy tekst na tle z obrazkiem */
+  html[data-motyw="epicki"] section>.wrap>.sec-lead,html[data-motyw="epicki"] section>.wrap>p:not(.updated){color:#fff!important;font-weight:600;text-shadow:0 1px 2px #000,0 2px 10px rgba(0,0,0,.9)}
+  html[data-motyw="epicki"] section>.wrap>.eyebrow{text-shadow:0 1px 2px #000,0 0 8px rgba(0,0,0,.8)}
+  html[data-motyw="epicki"] section>.wrap>.sec-title{filter:drop-shadow(0 2px 0 #2a0a04) drop-shadow(0 0 12px rgba(0,0,0,.85))}
+  html[data-motyw="epicki"] .kary-rules span{background:rgba(20,6,4,.85)!important;border:1px solid #b06a14!important;color:#fff!important;font-weight:700;backdrop-filter:blur(3px)}
+  html[data-motyw="epicki"] .kary-head>span{color:#fff;font-weight:800;text-shadow:0 1px 2px #000,0 2px 10px rgba(0,0,0,.9)}
+  html[data-motyw="epicki"] .updated,html[data-motyw="epicki"] .auto-upd{color:#f2dcc0!important;text-shadow:0 1px 2px #000}
+  html[data-motyw="epicki"] body::after{background:linear-gradient(180deg,rgba(10,3,2,.25),rgba(10,3,2,.45))!important}
   /* przełącznik motywów (tylko w trybie testu) */
   .mot-switch{position:fixed;right:12px;bottom:12px;z-index:121;display:flex;gap:4px;align-items:center;padding:6px 8px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:.74rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
   .mot-switch a,.mot-switch button{padding:4px 9px;border-radius:8px;color:var(--muted);background:none;border:0;font:inherit;cursor:pointer}
