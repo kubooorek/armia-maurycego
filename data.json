@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T05:31:44.569Z",
+  "updated": "2026-11-09T06:01:49.328Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -5916,7 +5916,7 @@
       "avgTh": 9.3,
       "level": 4,
       "wins": 13,
-      "points": 20400
+      "points": 20500
     }
   ],
   "weekBase": {
@@ -8275,12 +8275,12 @@
       "th": 12,
       "given": 275,
       "received": 646,
-      "trophies": 244,
+      "trophies": 0,
       "profile": {
         "level": 109,
-        "trophies": 244,
+        "trophies": 0,
         "best": 2839,
-        "league": "Valkyrie League 14",
+        "league": "Valkyrie League 15",
         "warStars": 104,
         "attackWins": 0,
         "defenseWins": 0,
