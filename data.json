@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T21:50:48.609Z",
+  "updated": "2026-11-09T22:01:36.696Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -2724,11 +2724,11 @@
       }
     ]
   },
-  "visits": 113,
+  "visits": 114,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 6,
     "members": 13
   },
   "raids": [
@@ -8266,6 +8266,9 @@
     "c:20261107T191029.000Z:Dream Clans": [],
     "c:20261108T191646.000Z:kingslayers": [
       "summary"
+    ],
+    "raid:20261106T070000.000Z": [
+      "summary"
     ]
   },
   "oneShots": [
@@ -9349,10 +9352,10 @@
       "th": 9,
       "given": 25,
       "received": 62,
-      "trophies": 0,
+      "trophies": 9,
       "profile": {
         "level": 58,
-        "trophies": 0,
+        "trophies": 9,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 37,
