@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T10:16:07.684Z",
+  "updated": "2026-11-09T10:31:27.695Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 173,
-        "pct": 5527,
+        "stars": 175,
+        "pct": 5623,
         "wins": 3,
         "played": 6
       },
@@ -2305,7 +2305,7 @@
             {
               "pos": 1,
               "th": 15,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 2,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 26,
-          "pct": 61.93,
-          "attacks": 10,
+          "stars": 28,
+          "pct": 68.33,
+          "attacks": 11,
           "bases": [
             {
               "pos": 1,
@@ -2722,7 +2722,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3316,9 +3316,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 29,
-      "them": 26,
+      "them": 28,
       "pct": 68.47,
-      "themPct": 61.93,
+      "themPct": 68.33,
       "themBases": [
         {
           "pos": 1,
@@ -6555,8 +6555,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "239|283634532|283307288|14450|382|65320|121225|0|67|104|12",
-      "last": "2026-11-09T10:16:07.671Z",
+      "sig": "239|285336568|285014129|14450|382|65320|121225|0|67|104|12",
+      "last": "2026-11-09T10:31:27.678Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -8680,8 +8680,8 @@
         "cg": 14450,
         "don": 382,
         "capLoot": 65320,
-        "gold": 283634532,
-        "elixir": 283307288,
+        "gold": 285336568,
+        "elixir": 285014129,
         "capContrib": 121225,
         "wins": 0
       }
@@ -9101,8 +9101,8 @@
         ]
       },
       "rush": {
-        "pct": 18.5,
-        "troops": 8,
+        "pct": 18.1,
+        "troops": 7,
         "spells": 10.4,
         "heroes": 33,
         "top": [
