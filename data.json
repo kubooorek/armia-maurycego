@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T05:01:47.872Z",
+  "updated": "2026-11-09T05:17:09.020Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -5916,7 +5916,7 @@
       "avgTh": 9.3,
       "level": 4,
       "wins": 13,
-      "points": 20100
+      "points": 20200
     }
   ],
   "weekBase": {
@@ -8113,12 +8113,12 @@
       "th": 15,
       "given": 1498,
       "received": 203,
-      "trophies": 572,
+      "trophies": 0,
       "profile": {
         "level": 205,
-        "trophies": 572,
+        "trophies": 0,
         "best": 5066,
-        "league": "P.E.K.K.A League 24",
+        "league": "Titan League 25",
         "warStars": 1263,
         "attackWins": 0,
         "defenseWins": 0,
@@ -8968,6 +8968,11 @@
             "name": "Minion Prince",
             "level": 19,
             "max": 95
+          },
+          {
+            "name": "Grand Warden",
+            "level": 1,
+            "max": 85
           }
         ]
       },
