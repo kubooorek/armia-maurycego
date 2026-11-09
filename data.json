@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T01:46:06.733Z",
+  "updated": "2026-11-09T02:16:09.928Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 157,
-        "pct": 4975,
+        "stars": 159,
+        "pct": 5049,
         "wins": 3,
         "played": 6
       },
@@ -2315,7 +2315,7 @@
             {
               "pos": 3,
               "th": 12,
-              "best": 0
+              "best": 2
             },
             {
               "pos": 4,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 10,
-          "pct": 25.13,
-          "attacks": 4,
+          "stars": 12,
+          "pct": 30.07,
+          "attacks": 5,
           "bases": [
             {
               "pos": 1,
@@ -2710,7 +2710,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 12
   },
   "raids": [
@@ -3303,9 +3303,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 23,
-      "them": 10,
+      "them": 12,
       "pct": 55.13,
-      "themPct": 25.13,
+      "themPct": 30.07,
       "themBases": [
         {
           "pos": 1,
