@@ -729,13 +729,16 @@ const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // #ogło
 const WEBHOOK_RUCHY = process.env.DISCORD_WEBHOOK_RUCHY || "";         // #ruchy-w-klanie: dołączenia, odejścia, ratusze, awanse
 const WEBHOOK_WOJNY = process.env.DISCORD_WEBHOOK_WOJNY || WEBHOOK;    // #wojny-klanu: wszystko o wojnach i CWL
 const WEBHOOK_RAJDY = process.env.DISCORD_WEBHOOK_RAJDY || "";         // #rajdy-stolica: rajdy na Stolicę
+const WEBHOOK_POWITANIA = process.env.DISCORD_WEBHOOK_POWITANIA || WEBHOOK_INFO; // #powitania: nowi gracze
+const WEBHOOK_REKRUTACJA = process.env.DISCORD_WEBHOOK_REKRUTACJA || "";  // #rekrutacja: post co tydzień
+const WEBHOOK_WYMAGANIA = process.env.DISCORD_WEBHOOK_WYMAGANIA || "";    // #wymagania-klanu: jedna wiadomość, aktualizowana
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
 async function post(content, url = WEBHOOK, ping = false) {
   if (!url) return false;
   try {
     const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: ping ? ["everyone"] : [] }, flags: 4 }) });
+      body: JSON.stringify({ username: "Armia Maurycego", avatar_url: SITE + "icon-512.png", content, allowed_mentions: { parse: ping ? ["everyone"] : [] }, flags: 4 }) });
     if (!r.ok) console.warn("Webhook:", r.status, await r.text());
     await new Promise(res => setTimeout(res, 1200));
     return r.ok;
@@ -785,14 +788,20 @@ const POSTY = {
   wynikWojny: false,       // stary krótki wynik (zastąpiony podsumowaniem poniżej)
   podsumowanieWojny: true, // po każdej wojnie i rundzie CWL: wynik, najlepsi, 3★, opuszczone, kary
   podsumowanieCWL: true,   // po ostatniej rundzie CWL: miejsce, bilans, najlepsi gracze sezonu
-  rajdy: true              // rajdy na Stolicę: start, przypomnienia, podsumowanie (#rajdy-stolica)
+  rajdy: true,             // rajdy na Stolicę: start, przypomnienia, podsumowanie (#rajdy-stolica)
+  rekrutacja: true,        // post rekrutacyjny raz w tygodniu (#rekrutacja)
+  wymagania: true          // stała, aktualizowana wiadomość z wymaganiami (#wymagania-klanu)
 };
-if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY) && !firstRun) {
+if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY || WEBHOOK_POWITANIA) && !firstRun) {
   // 1) Ruchy w klanie z tego uruchomienia
   const RN = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
   const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
   for (const e of freshEvents.reverse()) {
-    if (e.type === "join" && POSTY.dolaczenie) await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️ Zajrzyj na kanał z regulaminem i połącz konto komendą \`/link create\`.`, WEBHOOK_INFO);
+    if (e.type === "join" && POSTY.dolaczenie) await post(`👋 **Witamy w Armii Maurycego, ${e.name}!** (TH${e.th}) 🛡️\n` +
+      `• Przeczytaj <#1564012902996770886> i **#wymagania-klanu**\n` +
+      `• Połącz konto z Discordem komendą \`/link create\`\n` +
+      `• Na stronie klanu zaloguj się i w **Moim panelu** kliknij **Połącz Discord**, to robot przypomni Ci na priv o ataku w wojnie\n` +
+      `Powodzenia i do zobaczenia na wojnach! ⚔️ ${SITE}`, WEBHOOK_POWITANIA);
     if (e.type === "join" && WEBHOOK_RUCHY) await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}).`, WEBHOOK_RUCHY);
     if (e.type === "th" && POSTY.ratusz && WEBHOOK_RUCHY) await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_RUCHY);
     if (e.type === "leave" && POSTY.odejscie && WEBHOOK_RUCHY) await post(`➖ **${e.name}** opuścił(a) klan.`, WEBHOOK_RUCHY);
@@ -930,6 +939,71 @@ if (WEBHOOK_RAJDY && !firstRun && POSTY.rajdy) {
     }
   }
 }
+/* ---------- Rekrutacja i wymagania ---------- */
+const LIGA = n => !n ? "brak" : n.replace("Unranked", "Bez ligi").replace("Bronze", "Brąz").replace("Silver", "Srebro").replace("Gold", "Złoto")
+  .replace("Crystal", "Kryształ").replace("Master", "Mistrz").replace("Champion", "Czempion").replace(" League", "");
+let rekrutacjaWeek = old?.rekrutacjaWeek || null;
+let wymaganiaMsg = old?.wymaganiaMsg || null;
+if (!firstRun && clan) {
+  const ile = clan.members ?? members.length, wolne = Math.max(0, 50 - ile);
+  // 1) #rekrutacja — raz w tygodniu (sobota od 12:00), tylko gdy są wolne miejsca
+  const now = new Date(), wk = (() => { const d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())); const day = d.getUTCDay() || 7; d.setUTCDate(d.getUTCDate() + 4 - day); const y = new Date(Date.UTC(d.getUTCFullYear(), 0, 1)); return d.getUTCFullYear() + "-" + Math.ceil(((d - y) / 864e5 + 1) / 7); })();
+  const czas = !rekrutacjaWeek || (now.getUTCDay() === 6 && now.getUTCHours() >= 11 && rekrutacjaWeek !== wk);
+  if (WEBHOOK_REKRUTACJA && POSTY.rekrutacja && wolne > 0 && czas) {
+    const ok = await post([
+      `📣 **ARMIA MAURYCEGO REKRUTUJE!** 🔥`,
+      `Wolnych miejsc: **${wolne}** · w klanie **${ile}/50** graczy`,
+      ``,
+      `🏰 Poziom klanu: **${clan.clanLevel}**`,
+      `⚔️ Liga CWL: **${LIGA(clan.warLeague?.name)}**${clan.warWins != null ? ` · wygrane wojny: **${clan.warWins}**` : ""}`,
+      `🏛️ Liga Stolicy: **${LIGA(clan.capitalLeague?.name)}**`,
+      ``,
+      `✅ Przyjmujemy od **TH8**, klan otwarty, nie czekasz na akceptację`,
+      `🎁 Wojny i CWL non-stop, bogate donacje, awanse za aktywność, zgrany Discord`,
+      ``,
+      `Tag klanu: **${TAG}**`,
+      `Wszystko o klanie: ${SITE}`,
+      `Znasz kogoś, kto szuka klanu? Podeślij mu tę wiadomość! 💪`
+    ].join("\n"), WEBHOOK_REKRUTACJA);
+    if (ok) rekrutacjaWeek = wk;
+  }
+  // 2) #wymagania-klanu — jedna wiadomość, którą robot edytuje, gdy coś się zmieni
+  if (WEBHOOK_WYMAGANIA && POSTY.wymagania) {
+    const tresc = [
+      `📜 **WYMAGANIA I ZASADY KLANU ARMIA MAURYCEGO**`,
+      ``,
+      `🏰 **Ratusz:** od **TH8** wzwyż (początkujący mile widziani)`,
+      `🎯 **Gry Klanowe:** minimum **1000 pkt** w każdych Grach`,
+      `⚔️ **Wojny:** jeśli jesteś w składzie, **oba ataki** są obowiązkowe (pierwszy na swój numer, po 12 h numery wolne)`,
+      `🏆 **CWL:** zapisy w **Moim panelu** na stronie`,
+      `💤 **Aktywność:** 7 dni nieaktywności bez uprzedzenia = usunięcie z klanu`,
+      `🛑 Nie możesz grać wojny? Zgłoś to w **Moim panelu**, wtedy nie dostaniesz minusa`,
+      ``,
+      `📊 **Klan teraz:** poziom **${clan.clanLevel}** · **${ile}/50** graczy · Liga CWL: **${LIGA(clan.warLeague?.name)}** · Stolica: **${LIGA(clan.capitalLeague?.name)}**`,
+      `🏷️ Tag: **${TAG}** · Strona: ${SITE}`,
+      ``,
+      `_Wiadomość aktualizuje się sama._`
+    ].join("\n");
+    const hash = tresc.length + ":" + [...tresc].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+    try {
+      let done = false;
+      if (wymaganiaMsg?.id) {
+        if (wymaganiaMsg.hash === hash) done = true;
+        else {
+          const r = await fetch(`${WEBHOOK_WYMAGANIA}/messages/${wymaganiaMsg.id}`, { method: "PATCH", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ content: tresc, allowed_mentions: { parse: [] }, flags: 4 }) });
+          if (r.ok) { wymaganiaMsg.hash = hash; done = true; } else if (r.status !== 404) { console.warn("Wymagania (edycja):", r.status); done = true; }
+        }
+      }
+      if (!done) {
+        const r = await fetch(`${WEBHOOK_WYMAGANIA}?wait=true`, { method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username: "Armia Maurycego", avatar_url: SITE + "icon-512.png", content: tresc, allowed_mentions: { parse: [] }, flags: 4 }) });
+        if (r.ok) { const m = await r.json(); wymaganiaMsg = { id: m.id, hash }; } else console.warn("Wymagania:", r.status, await r.text());
+      }
+    } catch (e) { console.warn("Wymagania niedostępne:", e.message); }
+  }
+}
+
 /* ---------- Prywatne przypomnienia na Discordzie (DM) ----------
    Gracze łączą Discorda w „Moim panelu” na stronie. Robot pobiera listę z serwera logowania
    i 4 h / 1 h przed końcem wojny pisze prywatnie do tych, którzy mają jeszcze ataki.
@@ -1016,6 +1090,8 @@ const data = {
   potdHistory,
   notified,
   oneShots,
+  rekrutacjaWeek,
+  wymaganiaMsg,
   members,
   wars
 };
