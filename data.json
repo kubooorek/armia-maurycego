@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T20:46:02.257Z",
+  "updated": "2026-11-09T21:01:35.256Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -2724,11 +2724,11 @@
       }
     ]
   },
-  "visits": 111,
+  "visits": 113,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 12
   },
   "raids": [
@@ -6561,13 +6561,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "273|285412568|285142400|14450|382|65320|122825|0|67|105|12",
-      "last": "2026-11-09T17:16:17.833Z",
+      "sig": "273|288096107|288112315|14450|382|65320|122825|0|67|106|12",
+      "last": "2026-11-09T21:01:35.242Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "47|797241522|826377944|13725|50974|70605|94980|0|514|148|13",
-      "last": "2026-11-09T20:46:02.242Z",
+      "sig": "47|798996425|829994351|13725|50974|70605|94980|0|514|148|13",
+      "last": "2026-11-09T21:01:35.242Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -6591,8 +6591,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|542852535|498641954|10100|244|35350|92486|0|37|81|11",
-      "last": "2026-11-09T20:31:27.005Z",
+      "sig": "0|548024601|503794291|10100|244|35350|92486|0|37|81|11",
+      "last": "2026-11-09T21:01:35.242Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -7221,20 +7221,6 @@
         13
       ]
     ],
-    "#22R8PLCU8": [
-      [
-        20765,
-        246,
-        9583,
-        11
-      ],
-      [
-        20766,
-        246,
-        9603,
-        11
-      ]
-    ],
     "#Q9CU9P908": [
       [
         20765,
@@ -7247,6 +7233,20 @@
         67,
         382,
         12
+      ]
+    ],
+    "#22R8PLCU8": [
+      [
+        20765,
+        246,
+        9583,
+        11
+      ],
+      [
+        20766,
+        246,
+        9603,
+        11
       ]
     ],
     "#LJYR92002": [
@@ -7277,6 +7277,20 @@
         13
       ]
     ],
+    "#RPR0L809R": [
+      [
+        20765,
+        37,
+        244,
+        11
+      ],
+      [
+        20766,
+        37,
+        244,
+        11
+      ]
+    ],
     "#Y02PYY922": [
       [
         20765,
@@ -7303,20 +7317,6 @@
         2064,
         23588,
         9
-      ]
-    ],
-    "#RPR0L809R": [
-      [
-        20765,
-        37,
-        244,
-        11
-      ],
-      [
-        20766,
-        37,
-        244,
-        11
       ]
     ],
     "#GU0R2J8R0": [
@@ -7884,6 +7884,24 @@
     ],
     "posted": false
   },
+  "cwlHistory": [
+    {
+      "season": "2026-11-01",
+      "league": "Silver League I",
+      "place": 3,
+      "groupSize": 8,
+      "wins": 3,
+      "draws": 0,
+      "losses": 4,
+      "stars": 183,
+      "pct": 5914,
+      "best": {
+        "name": "Baku",
+        "stars": 21,
+        "three": 7
+      }
+    }
+  ],
   "dayBase": {
     "day": "2026-11-09",
     "since": "2026-11-08T23:01:31.280Z",
@@ -8724,9 +8742,98 @@
         "cg": 13725,
         "don": 50974,
         "capLoot": 70605,
-        "gold": 797241522,
-        "elixir": 826377944,
+        "gold": 798996425,
+        "elixir": 829994351,
         "capContrib": 94980,
+        "wins": 0
+      }
+    },
+    {
+      "name": "oggsgdjdjbd",
+      "tag": "#Q9CU9P908",
+      "role": "member",
+      "th": 12,
+      "given": 273,
+      "received": 40,
+      "trophies": 132,
+      "profile": {
+        "level": 106,
+        "trophies": 132,
+        "best": 1032,
+        "league": "Wizard League 10",
+        "warStars": 67,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 122825,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 35,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 19,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 10,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 3,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 41,
+        "troops": 30.1,
+        "spells": 27.1,
+        "heroes": 55.3,
+        "top": [
+          {
+            "n": "Książę Minionów",
+            "lvl": 3,
+            "need": 30
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 7
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 1,
+            "need": 6
+          },
+          {
+            "n": "Mały smok",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Górnik",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie klonowania",
+            "lvl": 1,
+            "need": 5
+          }
+        ]
+      },
+      "ach": {
+        "cg": 14450,
+        "don": 382,
+        "capLoot": 65320,
+        "gold": 288096107,
+        "elixir": 288112315,
+        "capContrib": 122825,
         "wins": 0
       }
     },
@@ -8816,95 +8923,6 @@
         "gold": 412012390,
         "elixir": 390864134,
         "capContrib": 65497,
-        "wins": 0
-      }
-    },
-    {
-      "name": "oggsgdjdjbd",
-      "tag": "#Q9CU9P908",
-      "role": "member",
-      "th": 12,
-      "given": 273,
-      "received": 40,
-      "trophies": 14,
-      "profile": {
-        "level": 105,
-        "trophies": 14,
-        "best": 1032,
-        "league": "Wizard League 10",
-        "warStars": 67,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 122825,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 35,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 19,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 10,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 3,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 41,
-        "troops": 30.1,
-        "spells": 27.1,
-        "heroes": 55.3,
-        "top": [
-          {
-            "n": "Książę Minionów",
-            "lvl": 3,
-            "need": 30
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 7
-          },
-          {
-            "n": "Walkiria",
-            "lvl": 1,
-            "need": 6
-          },
-          {
-            "n": "Mały smok",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Górnik",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie klonowania",
-            "lvl": 1,
-            "need": 5
-          }
-        ]
-      },
-      "ach": {
-        "cg": 14450,
-        "don": 382,
-        "capLoot": 65320,
-        "gold": 285412568,
-        "elixir": 285142400,
-        "capContrib": 122825,
         "wins": 0
       }
     },
@@ -9056,6 +9074,95 @@
       }
     },
     {
+      "name": "Cwel123",
+      "tag": "#RPR0L809R",
+      "role": "admin",
+      "th": 11,
+      "given": 0,
+      "received": 132,
+      "trophies": 240,
+      "profile": {
+        "level": 81,
+        "trophies": 240,
+        "best": 400,
+        "league": "Archer League 8",
+        "warStars": 37,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 92486,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 24,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 24,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 2,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 19,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 18.1,
+        "troops": 7,
+        "spells": 10.4,
+        "heroes": 33,
+        "top": [
+          {
+            "n": "Zaklęcie przyspieszenia",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 24,
+            "need": 40
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 24,
+            "need": 40
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 4,
+            "need": 6
+          },
+          {
+            "n": "Lawowy ogar",
+            "lvl": 2,
+            "need": 3
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 2,
+            "need": 3
+          }
+        ]
+      },
+      "ach": {
+        "cg": 10100,
+        "don": 244,
+        "capLoot": 35350,
+        "gold": 548024601,
+        "elixir": 503794291,
+        "capContrib": 92486,
+        "wins": 0
+      }
+    },
+    {
       "name": "tak",
       "tag": "#Y02PYY922",
       "role": "coLeader",
@@ -9158,95 +9265,6 @@
         "gold": 465818156,
         "elixir": 511984185,
         "capContrib": 216205,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Cwel123",
-      "tag": "#RPR0L809R",
-      "role": "admin",
-      "th": 11,
-      "given": 0,
-      "received": 132,
-      "trophies": 0,
-      "profile": {
-        "level": 81,
-        "trophies": 0,
-        "best": 400,
-        "league": "Archer League 8",
-        "warStars": 37,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 92486,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 24,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 24,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 2,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 19,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 18.1,
-        "troops": 7,
-        "spells": 10.4,
-        "heroes": 33,
-        "top": [
-          {
-            "n": "Zaklęcie przyspieszenia",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 24,
-            "need": 40
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 24,
-            "need": 40
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 4,
-            "need": 6
-          },
-          {
-            "n": "Lawowy ogar",
-            "lvl": 2,
-            "need": 3
-          },
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 10100,
-        "don": 244,
-        "capLoot": 35350,
-        "gold": 542852535,
-        "elixir": 498641954,
-        "capContrib": 92486,
         "wins": 0
       }
     },
@@ -11126,8 +11144,8 @@
         ]
       },
       "rush": {
-        "pct": 26.7,
-        "troops": 16.7,
+        "pct": 20,
+        "troops": 8.3,
         "spells": 66.7,
         "heroes": 0,
         "top": [
@@ -11138,11 +11156,6 @@
           },
           {
             "n": "Burzyciel",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Balon",
             "lvl": 1,
             "need": 2
           }
