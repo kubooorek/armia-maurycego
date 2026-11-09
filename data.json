@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T12:46:13.212Z",
+  "updated": "2026-11-09T13:01:39.168Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,8 +62,8 @@
         "tag": "#V8PU2P0G",
         "name": "BattlerManipur2",
         "level": 12,
-        "stars": 136,
-        "pct": 3670,
+        "stars": 142,
+        "pct": 3870,
         "wins": 3,
         "played": 6
       },
@@ -2724,7 +2724,7 @@
       }
     ]
   },
-  "visits": 104,
+  "visits": 105,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -9661,16 +9661,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 3,
+            "level": 4,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 52.1,
+        "pct": 51.4,
         "troops": 23.7,
         "spells": 46.7,
-        "heroes": 77.1,
+        "heroes": 75.7,
         "top": [
           {
             "n": "Królowa Łuczniczek",
@@ -9693,14 +9693,14 @@
             "need": 30
           },
           {
-            "n": "Książę Minionów",
-            "lvl": 3,
-            "need": 10
-          },
-          {
             "n": "Zaklęcie trucizny",
             "lvl": 1,
             "need": 3
+          },
+          {
+            "n": "Minion",
+            "lvl": 2,
+            "need": 5
           }
         ]
       },
