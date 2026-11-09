@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:01:49.328Z",
+  "updated": "2026-11-09T06:16:26.509Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 164,
-        "pct": 5227,
+        "stars": 167,
+        "pct": 5327,
         "wins": 3,
         "played": 6
       },
@@ -2325,7 +2325,7 @@
             {
               "pos": 5,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 6,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 17,
-          "pct": 41.93,
-          "attacks": 7,
+          "stars": 20,
+          "pct": 48.6,
+          "attacks": 8,
           "bases": [
             {
               "pos": 1,
@@ -3303,9 +3303,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 23,
-      "them": 17,
+      "them": 20,
       "pct": 55.13,
-      "themPct": 41.93,
+      "themPct": 48.6,
       "themBases": [
         {
           "pos": 1,
@@ -5916,7 +5916,7 @@
       "avgTh": 9.3,
       "level": 4,
       "wins": 13,
-      "points": 20500
+      "points": 22200
     }
   ],
   "weekBase": {
@@ -6560,8 +6560,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "0|535947708|491963929|10100|244|35350|92086|0|37|81|11",
-      "last": "2026-11-09T00:31:19.129Z",
+      "sig": "0|538134788|494241384|10100|244|35350|92086|0|37|81|11",
+      "last": "2026-11-09T06:16:26.494Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -7167,18 +7167,18 @@
         13
       ]
     ],
-    "#Q9CU9P908": [
+    "#QYJUV90JY": [
       [
         20765,
-        67,
-        382,
-        12
+        55,
+        20,
+        13
       ],
       [
         20766,
-        67,
-        382,
-        12
+        55,
+        20,
+        13
       ]
     ],
     "#LJYR92002": [
@@ -7192,6 +7192,20 @@
         20766,
         127,
         667,
+        12
+      ]
+    ],
+    "#Q9CU9P908": [
+      [
+        20765,
+        67,
+        382,
+        12
+      ],
+      [
+        20766,
+        67,
+        382,
         12
       ]
     ],
@@ -7279,20 +7293,6 @@
         11
       ]
     ],
-    "#QYJUV90JY": [
-      [
-        20765,
-        55,
-        20,
-        13
-      ],
-      [
-        20766,
-        55,
-        20,
-        13
-      ]
-    ],
     "#GU0R2J8R0": [
       [
         20765,
@@ -7335,20 +7335,6 @@
         11
       ]
     ],
-    "#LQVRCRUYR": [
-      [
-        20765,
-        2460,
-        11803,
-        8
-      ],
-      [
-        20766,
-        2460,
-        11803,
-        8
-      ]
-    ],
     "#R0V8QGLJQ": [
       [
         20765,
@@ -7363,20 +7349,6 @@
         11
       ]
     ],
-    "#QGPC2228Q": [
-      [
-        20765,
-        14,
-        0,
-        9
-      ],
-      [
-        20766,
-        14,
-        0,
-        9
-      ]
-    ],
     "#RY0QPVCCY": [
       [
         20765,
@@ -7389,6 +7361,34 @@
         35,
         29,
         10
+      ]
+    ],
+    "#LQVRCRUYR": [
+      [
+        20765,
+        2460,
+        11803,
+        8
+      ],
+      [
+        20766,
+        2460,
+        11803,
+        8
+      ]
+    ],
+    "#QGPC2228Q": [
+      [
+        20765,
+        14,
+        0,
+        9
+      ],
+      [
+        20766,
+        14,
+        0,
+        9
       ]
     ],
     "#YLLQL2VUP": [
@@ -7433,88 +7433,18 @@
         10
       ]
     ],
-    "#GV0P9JL8Q": [
+    "#LUQJC2JGY": [
       [
         20765,
-        2,
-        89,
-        9
-      ],
-      [
-        20766,
-        2,
-        89,
-        9
-      ]
-    ],
-    "#R9GPGL0QJ": [
-      [
-        20765,
-        6,
-        76,
-        8
-      ],
-      [
-        20766,
-        6,
-        76,
-        8
-      ]
-    ],
-    "#R0VLRL292": [
-      [
-        20765,
-        3,
         0,
+        162,
         9
       ],
       [
         20766,
-        3,
         0,
+        162,
         9
-      ]
-    ],
-    "#GVGRVCQJR": [
-      [
-        20765,
-        4,
-        659,
-        9
-      ],
-      [
-        20766,
-        4,
-        659,
-        9
-      ]
-    ],
-    "#R92C0U8UU": [
-      [
-        20765,
-        15,
-        30,
-        7
-      ],
-      [
-        20766,
-        15,
-        30,
-        7
-      ]
-    ],
-    "#R2PCVYQG2": [
-      [
-        20765,
-        21,
-        175,
-        8
-      ],
-      [
-        20766,
-        21,
-        175,
-        8
       ]
     ],
     "#GVG02VV98": [
@@ -7531,31 +7461,31 @@
         8
       ]
     ],
-    "#RYLR2C92V": [
+    "#GVGRVCQJR": [
       [
         20765,
-        7,
-        88,
-        8
-      ],
-      [
-        20766,
-        7,
-        88,
-        8
-      ]
-    ],
-    "#LUQJC2JGY": [
-      [
-        20765,
-        0,
-        162,
+        4,
+        659,
         9
       ],
       [
         20766,
-        0,
-        162,
+        4,
+        659,
+        9
+      ]
+    ],
+    "#GV0P9JL8Q": [
+      [
+        20765,
+        2,
+        89,
+        9
+      ],
+      [
+        20766,
+        2,
+        89,
         9
       ]
     ],
@@ -7573,6 +7503,76 @@
         8
       ]
     ],
+    "#R9GPGL0QJ": [
+      [
+        20765,
+        6,
+        76,
+        8
+      ],
+      [
+        20766,
+        6,
+        76,
+        8
+      ]
+    ],
+    "#RYLR2C92V": [
+      [
+        20765,
+        7,
+        88,
+        8
+      ],
+      [
+        20766,
+        7,
+        88,
+        8
+      ]
+    ],
+    "#R0VLRL292": [
+      [
+        20765,
+        3,
+        0,
+        9
+      ],
+      [
+        20766,
+        3,
+        0,
+        9
+      ]
+    ],
+    "#GQR98J880": [
+      [
+        20765,
+        0,
+        72,
+        9
+      ],
+      [
+        20766,
+        0,
+        72,
+        9
+      ]
+    ],
+    "#R2PCVYQG2": [
+      [
+        20765,
+        21,
+        175,
+        8
+      ],
+      [
+        20766,
+        21,
+        175,
+        8
+      ]
+    ],
     "#R0VJLRGQ0": [
       [
         20765,
@@ -7585,6 +7585,20 @@
         14,
         0,
         8
+      ]
+    ],
+    "#R92C0U8UU": [
+      [
+        20765,
+        15,
+        30,
+        7
+      ],
+      [
+        20766,
+        15,
+        30,
+        7
       ]
     ],
     "#R9QQPG9JP": [
@@ -7655,20 +7669,6 @@
         0,
         45,
         8
-      ]
-    ],
-    "#GQR98J880": [
-      [
-        20765,
-        0,
-        72,
-        9
-      ],
-      [
-        20766,
-        0,
-        72,
-        9
       ]
     ],
     "#R9GUJ0ULV": [
@@ -8333,10 +8333,10 @@
       "th": 13,
       "given": 32,
       "received": 0,
-      "trophies": 170,
+      "trophies": 0,
       "profile": {
         "level": 64,
-        "trophies": 170,
+        "trophies": 0,
         "best": 327,
         "league": "Wizard League 11",
         "warStars": 11,
@@ -8368,8 +8368,8 @@
         ]
       },
       "rush": {
-        "pct": 74.6,
-        "troops": 58.6,
+        "pct": 74.4,
+        "troops": 58.5,
         "spells": 50,
         "heroes": 91,
         "top": [
@@ -8416,16 +8416,168 @@
       }
     },
     {
+      "name": "monte",
+      "tag": "#QYJUV90JY",
+      "role": "member",
+      "th": 13,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 88,
+        "trophies": 0,
+        "best": 348,
+        "league": "Wizard League 11",
+        "warStars": 55,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 44832,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 18,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 18,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 18,
+            "max": 85
+          },
+          {
+            "name": "Royal Champion",
+            "level": 9,
+            "max": 55
+          },
+          {
+            "name": "Minion Prince",
+            "level": 18,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 39.1,
+        "troops": 14,
+        "spells": 11.9,
+        "heroes": 65.7,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 18,
+            "need": 65
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 18,
+            "need": 65
+          },
+          {
+            "n": "Niszczyciel murów",
+            "lvl": 1,
+            "need": 3
+          },
+          {
+            "n": "Wielki Strażnik",
+            "lvl": 18,
+            "need": 40
+          },
+          {
+            "n": "Książę Minionów",
+            "lvl": 18,
+            "need": 40
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 6,
+            "need": 9
+          }
+        ]
+      },
+      "ach": {
+        "cg": 2900,
+        "don": 20,
+        "capLoot": 23720,
+        "gold": 224465505,
+        "elixir": 218012928,
+        "capContrib": 44832,
+        "wins": 0
+      }
+    },
+    {
+      "name": "MAQOS",
+      "tag": "#LJYR92002",
+      "role": "member",
+      "th": 12,
+      "given": 38,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 124,
+        "trophies": 0,
+        "best": 2224,
+        "league": "Wizard League 10",
+        "warStars": 127,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 414718,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 51,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 52,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 20,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 31,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 12900,
+        "don": 667,
+        "capLoot": 283555,
+        "gold": 393786539,
+        "elixir": 404236165,
+        "capContrib": 414718,
+        "wins": 0
+      }
+    },
+    {
       "name": "oggsgdjdjbd",
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
       "given": 239,
       "received": 40,
-      "trophies": 311,
+      "trophies": 0,
       "profile": {
         "level": 104,
-        "trophies": 311,
+        "trophies": 0,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 67,
@@ -8505,76 +8657,18 @@
       }
     },
     {
-      "name": "MAQOS",
-      "tag": "#LJYR92002",
-      "role": "member",
-      "th": 12,
-      "given": 38,
-      "received": 0,
-      "trophies": 402,
-      "profile": {
-        "level": 124,
-        "trophies": 402,
-        "best": 2224,
-        "league": "Archer League 9",
-        "warStars": 127,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 414718,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 51,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 52,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 20,
-            "max": 85
-          },
-          {
-            "name": "Minion Prince",
-            "level": 31,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 12900,
-        "don": 667,
-        "capLoot": 283555,
-        "gold": 393786539,
-        "elixir": 404236165,
-        "capContrib": 414718,
-        "wins": 0
-      }
-    },
-    {
       "name": "VipeR",
       "tag": "#22R8PLCU8",
       "role": "leader",
       "th": 11,
       "given": 201,
       "received": 163,
-      "trophies": 378,
+      "trophies": 0,
       "profile": {
         "level": 106,
-        "trophies": 378,
+        "trophies": 0,
         "best": 2156,
-        "league": "Archer League 9",
+        "league": "Wizard League 10",
         "warStars": 246,
         "attackWins": 0,
         "defenseWins": 0,
@@ -8942,12 +9036,12 @@
       "th": 11,
       "given": 0,
       "received": 132,
-      "trophies": 390,
+      "trophies": 0,
       "profile": {
         "level": 81,
-        "trophies": 390,
+        "trophies": 0,
         "best": 400,
-        "league": "Archer League 7",
+        "league": "Archer League 8",
         "warStars": 37,
         "attackWins": 0,
         "defenseWins": 0,
@@ -8965,14 +9059,14 @@
             "max": 110
           },
           {
+            "name": "Grand Warden",
+            "level": 2,
+            "max": 85
+          },
+          {
             "name": "Minion Prince",
             "level": 19,
             "max": 95
-          },
-          {
-            "name": "Grand Warden",
-            "level": 1,
-            "max": 85
           }
         ]
       },
@@ -9018,103 +9112,9 @@
         "cg": 10100,
         "don": 244,
         "capLoot": 35350,
-        "gold": 535947708,
-        "elixir": 491963929,
+        "gold": 538134788,
+        "elixir": 494241384,
         "capContrib": 92086,
-        "wins": 0
-      }
-    },
-    {
-      "name": "monte",
-      "tag": "#QYJUV90JY",
-      "role": "member",
-      "th": 13,
-      "given": 0,
-      "received": 0,
-      "trophies": 282,
-      "profile": {
-        "level": 88,
-        "trophies": 282,
-        "best": 348,
-        "league": "Barbarian League 6",
-        "warStars": 55,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 44832,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 18,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 18,
-            "max": 110
-          },
-          {
-            "name": "Grand Warden",
-            "level": 18,
-            "max": 85
-          },
-          {
-            "name": "Royal Champion",
-            "level": 9,
-            "max": 55
-          },
-          {
-            "name": "Minion Prince",
-            "level": 18,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 39.1,
-        "troops": 14,
-        "spells": 11.9,
-        "heroes": 65.7,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 18,
-            "need": 65
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 18,
-            "need": 65
-          },
-          {
-            "n": "Niszczyciel murów",
-            "lvl": 1,
-            "need": 3
-          },
-          {
-            "n": "Wielki Strażnik",
-            "lvl": 18,
-            "need": 40
-          },
-          {
-            "n": "Książę Minionów",
-            "lvl": 18,
-            "need": 40
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 6,
-            "need": 9
-          }
-        ]
-      },
-      "ach": {
-        "cg": 2900,
-        "don": 20,
-        "capLoot": 23720,
-        "gold": 224465505,
-        "elixir": 218012928,
-        "capContrib": 44832,
         "wins": 0
       }
     },
@@ -9125,12 +9125,12 @@
       "th": 9,
       "given": 20,
       "received": 93,
-      "trophies": 279,
+      "trophies": 0,
       "profile": {
         "level": 57,
-        "trophies": 279,
+        "trophies": 0,
         "best": 622,
-        "league": "Barbarian League 6",
+        "league": "Archer League 7",
         "warStars": 71,
         "attackWins": 0,
         "defenseWins": 0,
@@ -9178,10 +9178,10 @@
       "th": 9,
       "given": 25,
       "received": 62,
-      "trophies": 185,
+      "trophies": 0,
       "profile": {
         "level": 58,
-        "trophies": 185,
+        "trophies": 0,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 37,
@@ -9314,66 +9314,18 @@
       }
     },
     {
-      "name": "Barnes",
-      "tag": "#LQVRCRUYR",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 155,
-      "trophies": 0,
-      "profile": {
-        "level": 87,
-        "trophies": 0,
-        "best": 2650,
-        "league": "Barbarian League 5",
-        "warStars": 2460,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 234074,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 59470,
-        "don": 11803,
-        "capLoot": 136585,
-        "gold": 399341922,
-        "elixir": 464052943,
-        "capContrib": 234074,
-        "wins": 0
-      }
-    },
-    {
       "name": "TTomson",
       "tag": "#R0V8QGLJQ",
       "role": "member",
       "th": 11,
       "given": 0,
       "received": 20,
-      "trophies": 275,
+      "trophies": 0,
       "profile": {
         "level": 49,
-        "trophies": 275,
+        "trophies": 0,
         "best": 275,
-        "league": "Barbarian League 4",
+        "league": "Barbarian League 6",
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
@@ -9446,77 +9398,18 @@
       }
     },
     {
-      "name": "wiktor",
-      "tag": "#QGPC2228Q",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 253,
-      "profile": {
-        "level": 58,
-        "trophies": 253,
-        "best": 787,
-        "league": "Barbarian League 4",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 17129,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 2,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.5,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 750,
-        "don": 0,
-        "capLoot": 14130,
-        "gold": 52644577,
-        "elixir": 49818201,
-        "capContrib": 17129,
-        "wins": 0
-      }
-    },
-    {
       "name": "Mimbosz",
       "tag": "#RY0QPVCCY",
       "role": "member",
       "th": 10,
       "given": 0,
       "received": 543,
-      "trophies": 220,
+      "trophies": 0,
       "profile": {
         "level": 41,
-        "trophies": 220,
+        "trophies": 0,
         "best": 252,
-        "league": "Barbarian League 4",
+        "league": "Barbarian League 5",
         "warStars": 35,
         "attackWins": 0,
         "defenseWins": 0,
@@ -9589,16 +9482,123 @@
       }
     },
     {
+      "name": "Barnes",
+      "tag": "#LQVRCRUYR",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 155,
+      "trophies": 0,
+      "profile": {
+        "level": 87,
+        "trophies": 0,
+        "best": 2650,
+        "league": "Barbarian League 5",
+        "warStars": 2460,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 234074,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 59470,
+        "don": 11803,
+        "capLoot": 136585,
+        "gold": 399341922,
+        "elixir": 464052943,
+        "capContrib": 234074,
+        "wins": 0
+      }
+    },
+    {
+      "name": "wiktor",
+      "tag": "#QGPC2228Q",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 253,
+      "profile": {
+        "level": 58,
+        "trophies": 253,
+        "best": 787,
+        "league": "Barbarian League 4",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 17129,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 2,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.5,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 750,
+        "don": 0,
+        "capLoot": 14130,
+        "gold": 52644577,
+        "elixir": 49818201,
+        "capContrib": 17129,
+        "wins": 0
+      }
+    },
+    {
       "name": "KuN",
       "tag": "#YLLQL2VUP",
       "role": "member",
       "th": 9,
       "given": 0,
       "received": 31,
-      "trophies": 54,
+      "trophies": 0,
       "profile": {
         "level": 46,
-        "trophies": 54,
+        "trophies": 0,
         "best": 348,
         "league": "Barbarian League 4",
         "warStars": 41,
@@ -9648,12 +9648,12 @@
       "th": 10,
       "given": 31,
       "received": 186,
-      "trophies": 386,
+      "trophies": 0,
       "profile": {
         "level": 55,
-        "trophies": 386,
+        "trophies": 0,
         "best": 386,
-        "league": "Skeleton League 3",
+        "league": "Barbarian League 4",
         "warStars": 13,
         "attackWins": 0,
         "defenseWins": 0,
@@ -9810,16 +9810,183 @@
       }
     },
     {
+      "name": "Darui",
+      "tag": "#LUQJC2JGY",
+      "role": "member",
+      "th": 9,
+      "given": 2,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 51,
+        "trophies": 0,
+        "best": 242,
+        "league": "Skeleton League 3",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 25739,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 18,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 1.9,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 6.7,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 18,
+            "need": 20
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 162,
+        "capLoot": 14515,
+        "gold": 25759287,
+        "elixir": 25469727,
+        "capContrib": 25739,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 45,
+        "trophies": 0,
+        "best": 266,
+        "league": "Skeleton League 3",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6070,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 12,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 9,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 1.6,
+        "troops": 2.6,
+        "spells": 0,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5600,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 31610672,
+        "elixir": 30078135,
+        "capContrib": 6070,
+        "wins": 0
+      }
+    },
+    {
+      "name": "♡karo♡lina♡",
+      "tag": "#GVGRVCQJR",
+      "role": "member",
+      "th": 9,
+      "given": 208,
+      "received": 392,
+      "trophies": 0,
+      "profile": {
+        "level": 56,
+        "trophies": 0,
+        "best": 349,
+        "league": "Skeleton League 3",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 32686,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 22,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 16,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.3,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 2400,
+        "don": 659,
+        "capLoot": 14765,
+        "gold": 67744170,
+        "elixir": 67158251,
+        "capContrib": 32686,
+        "wins": 0
+      }
+    },
+    {
       "name": "CJ Alabama",
       "tag": "#GV0P9JL8Q",
       "role": "member",
       "th": 9,
       "given": 0,
       "received": 31,
-      "trophies": 40,
+      "trophies": 0,
       "profile": {
         "level": 51,
-        "trophies": 40,
+        "trophies": 0,
         "best": 240,
         "league": "Skeleton League 3",
         "warStars": 2,
@@ -9869,6 +10036,54 @@
       }
     },
     {
+      "name": "threeten",
+      "tag": "#R8RVQVPCC",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 36,
+        "trophies": 0,
+        "best": 240,
+        "league": "Skeleton League 3",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 34234,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 11,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 300,
+        "don": 40,
+        "capLoot": 24805,
+        "gold": 8818088,
+        "elixir": 9389071,
+        "capContrib": 34234,
+        "wins": 0
+      }
+    },
+    {
       "name": "erykos",
       "tag": "#R9GPGL0QJ",
       "role": "member",
@@ -9913,6 +10128,54 @@
         "gold": 31420510,
         "elixir": 30081715,
         "capContrib": 11348,
+        "wins": 0
+      }
+    },
+    {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 8,
+      "given": 20,
+      "received": 26,
+      "trophies": 0,
+      "profile": {
+        "level": 49,
+        "trophies": 0,
+        "best": 390,
+        "league": "Skeleton League 3",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 31950,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 88,
+        "capLoot": 24505,
+        "gold": 52191318,
+        "elixir": 49673969,
+        "capContrib": 31950,
         "wins": 0
       }
     },
@@ -9991,104 +10254,86 @@
       }
     },
     {
-      "name": "♡karo♡lina♡",
-      "tag": "#GVGRVCQJR",
+      "name": "TwojaSiora",
+      "tag": "#GQR98J880",
       "role": "member",
       "th": 9,
-      "given": 208,
-      "received": 392,
-      "trophies": 299,
+      "given": 76,
+      "received": 157,
+      "trophies": 0,
       "profile": {
-        "level": 56,
-        "trophies": 299,
-        "best": 349,
-        "league": "Skeleton League 2",
-        "warStars": 4,
+        "level": 36,
+        "trophies": 0,
+        "best": 240,
+        "league": "Skeleton League 3",
+        "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 32686,
+        "capital": 100,
         "warPref": "in",
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 22,
+            "level": 4,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 16,
+            "level": 6,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 10,
+            "level": 1,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.3,
-        "heroes": 0,
+        "pct": 44.6,
+        "troops": 25,
+        "spells": 63.2,
+        "heroes": 66.7,
         "top": [
           {
-            "n": "Zaklęcie skoku",
+            "n": "Zaklęcie leczenia",
             "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 2400,
-        "don": 659,
-        "capLoot": 14765,
-        "gold": 67744170,
-        "elixir": 67158251,
-        "capContrib": 32686,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Rico",
-      "tag": "#R92C0U8UU",
-      "role": "member",
-      "th": 7,
-      "given": 0,
-      "received": 120,
-      "trophies": 296,
-      "profile": {
-        "level": 35,
-        "trophies": 296,
-        "best": 296,
-        "league": "Skeleton League 2",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 15905,
-        "warPref": "in",
-        "heroes": [
+            "need": 5
+          },
           {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 4,
+            "need": 20
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 3
           }
         ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
       },
       "ach": {
         "cg": 0,
-        "don": 30,
-        "capLoot": 6720,
-        "gold": 13200371,
-        "elixir": 12105310,
-        "capContrib": 15905,
+        "don": 72,
+        "capLoot": 0,
+        "gold": 36123649,
+        "elixir": 33873476,
+        "capContrib": 100,
         "wins": 0
       }
     },
@@ -10099,12 +10344,12 @@
       "th": 8,
       "given": 0,
       "received": 0,
-      "trophies": 293,
+      "trophies": 0,
       "profile": {
         "level": 41,
-        "trophies": 293,
+        "trophies": 0,
         "best": 293,
-        "league": "Skeleton League 2",
+        "league": "Skeleton League 3",
         "warStars": 21,
         "attackWins": 0,
         "defenseWins": 0,
@@ -10141,222 +10386,18 @@
       }
     },
     {
-      "name": "Martini",
-      "tag": "#GVG02VV98",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 266,
-      "profile": {
-        "level": 45,
-        "trophies": 266,
-        "best": 266,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 6070,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 12,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 9,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 1.6,
-        "troops": 2.6,
-        "spells": 0,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 5600,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 31610672,
-        "elixir": 30078135,
-        "capContrib": 6070,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 8,
-      "given": 20,
-      "received": 26,
-      "trophies": 259,
-      "profile": {
-        "level": 49,
-        "trophies": 259,
-        "best": 390,
-        "league": "Skeleton League 2",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 31950,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 88,
-        "capLoot": 24505,
-        "gold": 52191318,
-        "elixir": 49673969,
-        "capContrib": 31950,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Darui",
-      "tag": "#LUQJC2JGY",
-      "role": "member",
-      "th": 9,
-      "given": 2,
-      "received": 0,
-      "trophies": 218,
-      "profile": {
-        "level": 51,
-        "trophies": 218,
-        "best": 242,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 25739,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 18,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 1.9,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 6.7,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 18,
-            "need": 20
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 162,
-        "capLoot": 14515,
-        "gold": 25759287,
-        "elixir": 25469727,
-        "capContrib": 25739,
-        "wins": 0
-      }
-    },
-    {
-      "name": "threeten",
-      "tag": "#R8RVQVPCC",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 210,
-      "profile": {
-        "level": 36,
-        "trophies": 210,
-        "best": 240,
-        "league": "Skeleton League 2",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 34234,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 11,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 300,
-        "don": 40,
-        "capLoot": 24805,
-        "gold": 8818088,
-        "elixir": 9389071,
-        "capContrib": 34234,
-        "wins": 0
-      }
-    },
-    {
       "name": "Marsyllia",
       "tag": "#R0VJLRGQ0",
       "role": "member",
       "th": 8,
       "given": 0,
       "received": 60,
-      "trophies": 197,
+      "trophies": 0,
       "profile": {
         "level": 33,
-        "trophies": 197,
+        "trophies": 0,
         "best": 244,
-        "league": "Skeleton League 2",
+        "league": "Skeleton League 3",
         "warStars": 14,
         "attackWins": 0,
         "defenseWins": 0,
@@ -10420,6 +10461,49 @@
         "gold": 26980293,
         "elixir": 26175833,
         "capContrib": 400,
+        "wins": 0
+      }
+    },
+    {
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
+      "role": "member",
+      "th": 7,
+      "given": 0,
+      "received": 120,
+      "trophies": 296,
+      "profile": {
+        "level": 35,
+        "trophies": 296,
+        "best": 296,
+        "league": "Skeleton League 2",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 15905,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 30,
+        "capLoot": 6720,
+        "gold": 13200371,
+        "elixir": 12105310,
+        "capContrib": 15905,
         "wins": 0
       }
     },
@@ -10654,12 +10738,12 @@
       "th": 8,
       "given": 46,
       "received": 20,
-      "trophies": 278,
+      "trophies": 0,
       "profile": {
         "level": 35,
-        "trophies": 278,
+        "trophies": 0,
         "best": 278,
-        "league": "Skeleton League 1",
+        "league": "Skeleton League 2",
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
@@ -10713,90 +10797,6 @@
         "gold": 19384610,
         "elixir": 18657192,
         "capContrib": 0,
-        "wins": 0
-      }
-    },
-    {
-      "name": "TwojaSiora",
-      "tag": "#GQR98J880",
-      "role": "member",
-      "th": 9,
-      "given": 76,
-      "received": 157,
-      "trophies": 240,
-      "profile": {
-        "level": 36,
-        "trophies": 240,
-        "best": 240,
-        "league": "Skeleton League 1",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 100,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 4,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 6,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 44.6,
-        "troops": 25,
-        "spells": 63.2,
-        "heroes": 66.7,
-        "top": [
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 4,
-            "need": 20
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 3
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 72,
-        "capLoot": 0,
-        "gold": 36123649,
-        "elixir": 33873476,
-        "capContrib": 100,
         "wins": 0
       }
     },
