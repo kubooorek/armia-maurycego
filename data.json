@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T00:31:19.143Z",
+  "updated": "2026-11-09T00:46:09.975Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 154,
-        "pct": 4875,
+        "stars": 157,
+        "pct": 4975,
         "wins": 3,
         "played": 6
       },
@@ -2360,7 +2360,7 @@
             {
               "pos": 13,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 14,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 7,
-          "pct": 18.47,
-          "attacks": 3,
+          "stars": 10,
+          "pct": 25.13,
+          "attacks": 4,
           "bases": [
             {
               "pos": 1,
@@ -3303,9 +3303,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 23,
-      "them": 7,
+      "them": 10,
       "pct": 55.13,
-      "themPct": 18.47,
+      "themPct": 25.13,
       "themBases": [
         {
           "pos": 1,
