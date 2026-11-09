@@ -727,6 +727,8 @@ setRec("members", clan.members, "Armia Maurycego", TAG, today);
 const WEBHOOK = process.env.DISCORD_WEBHOOK;                         // kanał wojenny: przypomnienia, wyniki, Gry Klanowe
 const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // #ogłoszenia: powitania, MVP, Wojownik Tygodnia
 const WEBHOOK_RUCHY = process.env.DISCORD_WEBHOOK_RUCHY || "";         // #ruchy-w-klanie: dołączenia, odejścia, ratusze, awanse
+const WEBHOOK_WOJNY = process.env.DISCORD_WEBHOOK_WOJNY || WEBHOOK;    // #wojny-klanu: wszystko o wojnach i CWL
+const WEBHOOK_RAJDY = process.env.DISCORD_WEBHOOK_RAJDY || "";         // #rajdy-stolica: rajdy na Stolicę
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
 async function post(content, url = WEBHOOK, ping = false) {
@@ -782,9 +784,10 @@ const POSTY = {
   przypomnienia: true,     // 4 h i 1 h przed końcem: kto jeszcze nie zaatakował
   wynikWojny: false,       // stary krótki wynik (zastąpiony podsumowaniem poniżej)
   podsumowanieWojny: true, // po każdej wojnie i rundzie CWL: wynik, najlepsi, 3★, opuszczone, kary
-  podsumowanieCWL: true    // po ostatniej rundzie CWL: miejsce, bilans, najlepsi gracze sezonu
+  podsumowanieCWL: true,   // po ostatniej rundzie CWL: miejsce, bilans, najlepsi gracze sezonu
+  rajdy: true              // rajdy na Stolicę: start, przypomnienia, podsumowanie (#rajdy-stolica)
 };
-if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY) && !firstRun) {
+if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY) && !firstRun) {
   // 1) Ruchy w klanie z tego uruchomienia
   const RN = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
   const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
@@ -822,7 +825,7 @@ if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY) && !firstRun) {
   for (const cw of (cwl?.wars || [])) liveWars.push({ ...cw, key: `c:${cw.start}:${cw.them.name}`, label: `CWL · Runda ${cw.round}` });
   for (const w of liveWars) {
     const sent = notified[w.key] || (notified[w.key] = []);
-    const once = async (id, msg) => { if (!sent.includes(id)) { sent.push(id); await post(msg); } };
+    const once = async (id, msg) => { if (!sent.includes(id)) { sent.push(id); await post(msg, WEBHOOK_WOJNY); } };
     const sinceStart = (Date.now() - parseT(w.start)) / 3600e3, sinceEnd = (Date.now() - parseT(w.end)) / 3600e3;
     if (w.state === "preparation" && POSTY.przygotowania) {
       await once("prep", `🛡️ **${w.label}** rozpoczyna się! Przeciwnik: **${w.them.name}** (${w.size} vs ${w.size}). Dzień przygotowań — wyślijcie wojska do zamków obronnych!`);
@@ -842,7 +845,7 @@ if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY) && !firstRun) {
       const hit = [1, 4].find(h => left <= h && left > 0);
       if (POSTY.przypomnienia && hit && missing.length && !sent.includes(`r${hit}`)) {
         for (const h of [4, 1]) if (h >= hit && !sent.includes(`r${h}`)) sent.push(`r${h}`);
-        await post(`⏰ **${w.label}** — zostało ok. **${Math.max(1, Math.round(left))}h** do końca! Wynik: ${w.us.stars} ★ ${w.them.stars}.\nBrakujące ataki: ${missing.join(", ")}`);
+        await post(`⏰ **${w.label}** — zostało ok. **${Math.max(1, Math.round(left))}h** do końca! Wynik: ${w.us.stars} ★ ${w.them.stars}.\nBrakujące ataki: ${missing.join(", ")}`, WEBHOOK_WOJNY);
       }
     }
     if (w.state === "warEnded" && sinceEnd < 12 && POSTY.podsumowanieWojny) {
@@ -874,7 +877,7 @@ if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY) && !firstRun) {
   }
 }
 // Podsumowanie całego sezonu CWL (raz, po ostatniej rundzie)
-if ((WEBHOOK || WEBHOOK_INFO) && !firstRun && POSTY.podsumowanieCWL && cwlSummary && !cwlSummary.posted) {
+if (WEBHOOK_WOJNY && !firstRun && POSTY.podsumowanieCWL && cwlSummary && !cwlSummary.posted) {
   const s = cwlSummary, medal = ["🥇", "🥈", "🥉"];
   const msg = [
     `🏁 **Koniec sezonu Ligi Wojen Klanów!** Armia Maurycego kończy na **${s.place}. miejscu** z ${s.groupSize}.`,
@@ -884,7 +887,48 @@ if ((WEBHOOK || WEBHOOK_INFO) && !firstRun && POSTY.podsumowanieCWL && cwlSummar
     s.missed.length ? `💤 Opuszczone ataki: ${s.missed.map(x => `${x.name}${x.n > 1 ? ` ×${x.n}` : ""}`).join(", ")}` : "💪 Nikt nie opuścił ataku!",
     `Dzięki wszystkim za walkę! ${SITE}`
   ].filter(Boolean).join("\n");
-  await post(msg); cwlSummary.posted = true;
+  await post(msg, WEBHOOK_WOJNY); cwlSummary.posted = true;
+}
+
+/* ---------- Rajdy na Stolicę (#rajdy-stolica) ----------
+   start weekendu, przypomnienia 12 h i 3 h przed końcem, podsumowanie po zakończeniu */
+if (WEBHOOK_RAJDY && !firstRun && POSTY.rajdy) {
+  const fmt = n => Number(n || 0).toLocaleString("pl-PL");
+  for (const r of raids.slice(0, 1)) {
+    const key = `raid:${r.start}`;
+    const sent = notified[key] || (notified[key] = []);
+    const once = async (id, msg) => { if (!sent.includes(id)) { sent.push(id); await post(msg, WEBHOOK_RAJDY); } };
+    const sinceStart = (Date.now() - parseT(r.start)) / 3600e3, left = (parseT(r.end) - Date.now()) / 3600e3;
+    const inRaid = Object.fromEntries((r.members || []).map(m => [m.tag, m]));
+    const nobody = members.filter(m => !inRaid[m.tag]).map(m => m.name);
+    const partial = (r.members || []).filter(m => m.attacks < m.limit).map(m => `${m.name} (${m.attacks}/${m.limit})`);
+    if (r.state === "ongoing") {
+      if (sinceStart < 6) await once("start", `🏰 **Weekend rajdów na Stolicę ruszył!** Każdy ma **5 ataków** (+1 bonusowy za zniszczenie dzielnicy). Wbijajcie i zbierajcie złoto dla klanu! 💰\nKoniec w poniedziałek o 8:00. ${SITE}`);
+      const hit = [3, 12].find(h => left <= h && left > 0);
+      if (hit && !sent.includes(`r${hit}`) && (nobody.length || partial.length)) {
+        for (const h of [12, 3]) if (h >= hit && !sent.includes(`r${h}`)) sent.push(`r${h}`);
+        await post([
+          `⏰ **Rajdy na Stolicę** — zostało ok. **${Math.max(1, Math.round(left))} h** do końca! Zebrane złoto: **${fmt(r.loot)}** 💰`,
+          nobody.length ? `💤 Jeszcze nie zaatakowali: ${nobody.join(", ")}` : "",
+          partial.length ? `🔸 Mają jeszcze ataki: ${partial.join(", ")}` : ""
+        ].filter(Boolean).join("\n"), WEBHOOK_RAJDY);
+      }
+    }
+    if (r.state === "ended" && (Date.now() - parseT(r.end)) / 3600e3 < 24) {
+      const medal = ["🥇", "🥈", "🥉"];
+      const top = (r.members || []).slice(0, 3);
+      const full = (r.members || []).filter(m => m.attacks >= m.limit).length;
+      await once("summary", [
+        `🏁 **Koniec weekendu rajdów na Stolicę!**`,
+        `💰 Zdobyte złoto: **${fmt(r.loot)}** · ⚔️ ataki: **${r.attacks}** · 🏚️ zniszczone dzielnice: **${r.districts}** · ✅ ukończone rajdy: **${r.raids}**`,
+        top.length ? `⭐ Najlepsi: ${top.map((m, i) => `${medal[i]} ${m.name} ${fmt(m.loot)}`).join("  ")}` : "",
+        `👥 Wykorzystali wszystkie ataki: **${full}/${(r.members || []).length}** graczy`,
+        partial.length ? `🔸 Niewykorzystane ataki: ${partial.join(", ")}` : "",
+        nobody.length ? `💤 Nie zaatakowali wcale: ${nobody.join(", ")}` : "",
+        `Dzięki za rajdy! ${SITE}`
+      ].filter(Boolean).join("\n"));
+    }
+  }
 }
 /* ---------- Prywatne przypomnienia na Discordzie (DM) ----------
    Gracze łączą Discorda w „Moim panelu” na stronie. Robot pobiera listę z serwera logowania
