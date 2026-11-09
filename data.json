@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:46:11.502Z",
+  "updated": "2026-11-09T07:01:51.517Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -17,8 +17,8 @@
         "tag": "#2CPJQQVQ9",
         "name": "React",
         "level": 7,
-        "stars": 199,
-        "pct": 5535,
+        "stars": 200,
+        "pct": 5591,
         "wins": 5,
         "played": 6
       },
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 167,
-        "pct": 5327,
+        "stars": 170,
+        "pct": 5427,
         "wins": 3,
         "played": 6
       },
@@ -2355,7 +2355,7 @@
             {
               "pos": 12,
               "th": 9,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 13,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 20,
-          "pct": 48.6,
-          "attacks": 8,
+          "stars": 23,
+          "pct": 55.27,
+          "attacks": 9,
           "bases": [
             {
               "pos": 1,
@@ -2706,7 +2706,7 @@
       }
     ]
   },
-  "visits": 101,
+  "visits": 104,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -2715,14 +2715,14 @@
   },
   "raids": [
     {
-      "state": "ongoing",
+      "state": "ended",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
       "loot": 141869,
       "raids": 11,
       "attacks": 129,
       "districts": 34,
-      "medals": 0,
+      "medals": 63,
       "members": [
         {
           "name": "Cwel123",
@@ -3303,9 +3303,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 23,
-      "them": 20,
+      "them": 23,
       "pct": 55.13,
-      "themPct": 48.6,
+      "themPct": 55.27,
       "themBases": [
         {
           "pos": 1,
@@ -6354,10 +6354,10 @@
   },
   "records": {
     "raidLoot": {
-      "value": 8631,
-      "name": "oggsgdjdjbd",
-      "tag": "#Q9CU9P908",
-      "date": "2026-11-02"
+      "value": 8711,
+      "name": "Cwel123",
+      "tag": "#RPR0L809R",
+      "date": "2026-11-09"
     },
     "donSeason": {
       "value": 8656,
@@ -6530,8 +6530,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "239|276525847|277165671|14450|382|65320|120775|0|67|104|12",
-      "last": "2026-11-08T20:45:59.440Z",
+      "sig": "239|280133051|280506957|14450|382|65320|120775|0|67|104|12",
+      "last": "2026-11-09T07:01:51.505Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -6625,8 +6625,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "208|67744170|67158251|2400|659|14765|32686|0|4|56|9",
-      "last": "2026-11-08T21:16:02.458Z",
+      "sig": "208|67744170|67158251|2400|659|14765|32686|0|4|57|9",
+      "last": "2026-11-09T07:01:51.505Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -6640,8 +6640,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|35169702|34366300|0|0|0|250|0|3|43|9",
-      "last": "2026-11-08T19:31:22.169Z",
+      "sig": "0|35169702|34366300|0|0|0|250|0|3|44|9",
+      "last": "2026-11-09T07:01:51.505Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -8583,7 +8583,7 @@
         "warStars": 67,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 120775,
+        "capital": 121225,
         "warPref": "in",
         "heroes": [
           {
@@ -8650,8 +8650,8 @@
         "cg": 14450,
         "don": 382,
         "capLoot": 65320,
-        "gold": 276525847,
-        "elixir": 277165671,
+        "gold": 280133051,
+        "elixir": 280506957,
         "capContrib": 120775,
         "wins": 0
       }
@@ -9926,7 +9926,7 @@
       "received": 392,
       "trophies": 0,
       "profile": {
-        "level": 56,
+        "level": 57,
         "trophies": 0,
         "best": 349,
         "league": "Skeleton League 3",
@@ -10231,7 +10231,7 @@
       "received": 82,
       "trophies": 0,
       "profile": {
-        "level": 43,
+        "level": 44,
         "trophies": 0,
         "best": 273,
         "league": "Skeleton League 3",
