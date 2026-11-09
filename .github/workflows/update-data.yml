@@ -2,8 +2,8 @@ name: Aktualizacja danych klanu
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # co 15 minut (główny wyzwalacz to budzik cron-job.org)
-  workflow_dispatch:          # przycisk „Run workflow” / budzik cron-job.org
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,6 +22,8 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_WEBHOOK_INFO: ${{ secrets.DISCORD_WEBHOOK_INFO }}
           DISCORD_WEBHOOK_RUCHY: ${{ secrets.DISCORD_WEBHOOK_RUCHY }}
+          DISCORD_WEBHOOK_WOJNY: ${{ secrets.DISCORD_WEBHOOK_WOJNY }}
+          DISCORD_WEBHOOK_RAJDY: ${{ secrets.DISCORD_WEBHOOK_RAJDY }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           ROBOT_KEY: ${{ secrets.ROBOT_KEY }}
         run: node scripts/update-data.mjs
