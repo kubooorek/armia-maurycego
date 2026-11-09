@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T15:46:04.968Z",
+  "updated": "2026-11-09T16:01:49.175Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -10453,7 +10453,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           }
         ]
@@ -10581,8 +10581,8 @@
         ]
       },
       "rush": {
-        "pct": 41.1,
-        "troops": 41.7,
+        "pct": 38.6,
+        "troops": 37.8,
         "spells": 10,
         "heroes": 70,
         "top": [
@@ -10607,12 +10607,12 @@
             "need": 4
           },
           {
-            "n": "Mag",
-            "lvl": 2,
-            "need": 4
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 2
           },
           {
-            "n": "Uzdrowicielka",
+            "n": "Smok",
             "lvl": 1,
             "need": 2
           }
