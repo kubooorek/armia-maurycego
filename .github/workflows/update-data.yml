@@ -2,8 +2,8 @@ name: Aktualizacja danych klanu
 
 on:
   schedule:
-        - cron: "*/15 * * * *"     # co godzinę
-  workflow_dispatch:          # przycisk „Run workflow” do ręcznego uruchomienia
+    - cron: "*/15 * * * *"   # co 15 minut (główny wyzwalacz to budzik cron-job.org)
+  workflow_dispatch:          # przycisk „Run workflow” / budzik cron-job.org
 
 permissions:
   contents: write
@@ -19,6 +19,10 @@ jobs:
       - name: Pobierz dane z API Clash of Clans
         env:
           COC_TOKEN: ${{ secrets.COC_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_WEBHOOK_INFO: ${{ secrets.DISCORD_WEBHOOK_INFO }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          ROBOT_KEY: ${{ secrets.ROBOT_KEY }}
         run: node scripts/update-data.mjs
       - name: Zapisz zmiany
         run: |
