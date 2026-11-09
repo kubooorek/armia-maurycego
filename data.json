@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T21:31:14.111Z",
+  "updated": "2026-11-09T21:39:25.866Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7882,7 +7882,7 @@
         "n": 1
       }
     ],
-    "posted": false
+    "posted": true
   },
   "cwlHistory": [
     {
@@ -8257,7 +8257,17 @@
       "score": 5
     }
   ],
-  "notified": {},
+  "notified": {
+    "c:20261102T173507.000Z:React": [],
+    "c:20261103T173512.000Z:BattlerManipur2": [],
+    "c:20261104T181550.000Z:Freax": [],
+    "c:20261105T182424.000Z:united again": [],
+    "c:20261106T182801.000Z:سوري": [],
+    "c:20261107T191029.000Z:Dream Clans": [],
+    "c:20261108T191646.000Z:kingslayers": [
+      "summary"
+    ]
+  },
   "members": [
     {
       "name": "KUBOOOREK",
