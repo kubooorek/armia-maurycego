@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T22:15:57.167Z",
+  "updated": "2026-11-09T22:17:27.092Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -8726,6 +8726,11 @@
   "oneShots": [
     "discord-dm-2026-11"
   ],
+  "rekrutacjaWeek": "2026-46",
+  "wymaganiaMsg": {
+    "id": "1569476036620455956",
+    "hash": "702:1229922303"
+  },
   "members": [
     {
       "name": "KUBOOOREK",
