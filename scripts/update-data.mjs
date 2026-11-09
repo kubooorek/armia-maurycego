@@ -733,7 +733,7 @@ async function post(content, url = WEBHOOK) {
   if (!url) return;
   try {
     const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: [] } }) });
+      body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: [] }, flags: 4 }) });
     if (!r.ok) console.warn("Webhook:", r.status, await r.text());
     await new Promise(res => setTimeout(res, 1200));
   } catch (e) { console.warn("Webhook niedostępny:", e.message); }
@@ -876,7 +876,7 @@ async function dm(userId, content) {
     const h = { Authorization: `Bot ${BOT}`, "Content-Type": "application/json" };
     const ch = await (await fetch("https://discord.com/api/v10/users/@me/channels", { method: "POST", headers: h, body: JSON.stringify({ recipient_id: userId }) })).json();
     if (!ch.id) { console.warn("DM: brak kanału", JSON.stringify(ch).slice(0, 120)); return false; }
-    const r = await fetch(`https://discord.com/api/v10/channels/${ch.id}/messages`, { method: "POST", headers: h, body: JSON.stringify({ content, allowed_mentions: { parse: [] } }) });
+    const r = await fetch(`https://discord.com/api/v10/channels/${ch.id}/messages`, { method: "POST", headers: h, body: JSON.stringify({ content, allowed_mentions: { parse: [] }, flags: 4 }) });
     if (!r.ok) console.warn("DM:", r.status, (await r.text()).slice(0, 120));
     await new Promise(res => setTimeout(res, 700));
     return r.ok;
