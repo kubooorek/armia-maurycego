@@ -725,7 +725,8 @@ if (weekWinners && weekWinners[0]) {
 setRec("members", clan.members, "Armia Maurycego", TAG, today);
 
 const WEBHOOK = process.env.DISCORD_WEBHOOK;                         // kanał wojenny: przypomnienia, wyniki, Gry Klanowe
-const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // kanał ogólny: powitania, awanse, Wojownik Tygodnia
+const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // #ogłoszenia: powitania, MVP, Wojownik Tygodnia
+const WEBHOOK_RUCHY = process.env.DISCORD_WEBHOOK_RUCHY || "";         // #ruchy-w-klanie: dołączenia, odejścia, ratusze, awanse
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
 async function post(content, url = WEBHOOK) {
@@ -743,8 +744,9 @@ const firstRun = !old;   // przy pierwszym uruchomieniu nic nie wysyłamy (brak 
 // Które wiadomości robot wysyła na Discorda (false = wyłączone, bo robi to ClashPerk)
 const POSTY = {
   dolaczenie: true,        // powitanie nowego gracza z instrukcją /link (ClashPerk pisze tylko „dołączył”)
-  ratusz: false,           // nowy ratusz — robi ClashPerk (#ruchy-w-klanie)
-  awans: false,            // awans w grze — robi ClashPerk (#ruchy-w-klanie)
+  ratusz: true,            // nowy ratusz (#ruchy-w-klanie)
+  awans: true,             // awans w grze
+  odejscie: true,          // ktoś opuścił klan
   mvp: true,               // MVP miesiąca
   wojownikTygodnia: true,  // Wojownik Tygodnia
   gryKlanowe: true,        // kto zrobił normę 1000 pkt w Grach Klanowych
@@ -756,14 +758,16 @@ const POSTY = {
   podsumowanieWojny: true, // po każdej wojnie i rundzie CWL: wynik, najlepsi, 3★, opuszczone, kary
   podsumowanieCWL: true    // po ostatniej rundzie CWL: miejsce, bilans, najlepsi gracze sezonu
 };
-if ((WEBHOOK || WEBHOOK_INFO) && !firstRun) {
+if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY) && !firstRun) {
   // 1) Ruchy w klanie z tego uruchomienia
   const RN = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
   const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
   for (const e of freshEvents.reverse()) {
     if (e.type === "join" && POSTY.dolaczenie) await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}). Witamy w Armii! 🛡️ Zajrzyj na kanał z regulaminem i połącz konto komendą \`/link create\`.`, WEBHOOK_INFO);
-    if (e.type === "th" && POSTY.ratusz) await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_INFO);
-    if (e.type === "promote" && POSTY.awans) await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`, WEBHOOK_INFO);
+    if (e.type === "join" && WEBHOOK_RUCHY) await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}).`, WEBHOOK_RUCHY);
+    if (e.type === "th" && POSTY.ratusz && WEBHOOK_RUCHY) await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_RUCHY);
+    if (e.type === "leave" && POSTY.odejscie && WEBHOOK_RUCHY) await post(`➖ **${e.name}** opuścił(a) klan.`, WEBHOOK_RUCHY);
+    if (e.type === "promote" && POSTY.awans && WEBHOOK_RUCHY) await post(`⬆️ **${e.name}** awansował(a) na ${RN[e.role] || e.role}! 👏`, WEBHOOK_RUCHY);
   }
 
   // Nowy MVP miesiąca (wybrany w tym uruchomieniu)
