@@ -126,11 +126,19 @@ const wars = (warlog.items || [])
 // Bazy jednej strony: pozycja na mapie, TH i ile gwiazdek już z niej zdjęto (do prognozy wojny)
 const basesOf = side => (side?.members || []).slice().sort((a, b) => a.mapPosition - b.mapPosition)
   .map(m => ({ pos: m.mapPosition, th: m.townhallLevel, best: m.bestOpponentAttack?.stars ?? 0 }));
+// ataki przeciwnika na nasze bazy (do relacji na żywo na Discordzie)
+function defsOf(enemy, ourByTag) {
+  return (enemy.members || []).flatMap(om => (om.attacks || []).map(a => {
+    const d = ourByTag[a.defenderTag];
+    return { by: om.name, bpos: om.mapPosition, th: om.townhallLevel, tpos: d?.mapPosition ?? null, tname: d?.name ?? "", stars: a.stars, pct: a.destructionPercentage, order: a.order };
+  })).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+}
 let currentWar = null;
 const w = await safe("Bieżąca wojna", () => api(`/clans/${enc(TAG)}/currentwar`));
 if (w && w.state && w.state !== "notInWar") {
   const side = c => ({ name: c.name, stars: c.stars ?? 0, pct: round2(c.destructionPercentage), attacks: c.attacks ?? 0 });
   const oppByTag = Object.fromEntries((w.opponent.members || []).map(m => [m.tag, m]));
+  const ourByTag = Object.fromEntries((w.clan.members || []).map(m => [m.tag, m]));
   currentWar = {
     state: w.state,                       // preparation | inWar | warEnded
     size: w.teamSize, perMember: w.attacksPerMember ?? 2,
@@ -140,9 +148,10 @@ if (w && w.state && w.state !== "notInWar") {
       name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
       attacks: (m.attacks || []).map(a => {
         const d = oppByTag[a.defenderTag];
-        return { stars: a.stars, pct: a.destructionPercentage, order: a.order, target: d ? `${d.mapPosition}. ${d.name}` : "" };
+        return { stars: a.stars, pct: a.destructionPercentage, order: a.order, target: d ? `${d.mapPosition}. ${d.name}` : "", tpos: d?.mapPosition ?? null, tname: d?.name ?? "" };
       })
-    }))
+    })),
+    defs: defsOf(w.opponent, ourByTag)
   };
 }
 
@@ -196,9 +205,10 @@ if (group && group.state && group.state !== "notInWar" && Array.isArray(group.ro
             name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
             attacks: (m.attacks || []).map(at => {
               const d = oppByTag[at.defenderTag];
-              return { stars: at.stars, pct: at.destructionPercentage, target: d ? `${d.mapPosition}. ${d.name}` : "" };
+              return { stars: at.stars, pct: at.destructionPercentage, order: at.order, target: d ? `${d.mapPosition}. ${d.name}` : "", tpos: d?.mapPosition ?? null, tname: d?.name ?? "" };
             })
-          }))
+          })),
+          defs: defsOf(them, Object.fromEntries((us.members || []).map(m => [m.tag, m])))
         });
       }
     }
@@ -452,8 +462,14 @@ const valOf = (m, metric) => metric === "donations" ? (m.given ?? 0) : metric ==
 const baseOf = (b, metric) => metric === "donations" ? b.given : metric === "capital" ? b.capital : b.warStars;
 // Zwycięzcy kończącego się tygodnia (liczone przed wyzerowaniem)
 let weekWinners = null;
+let donWeek = null;   // donacje zakończonego tygodnia (post w poniedziałek)
 let lastWeek = old?.lastWeek ?? null;
 if (weekBase && weekBase.week !== wk) {
+  donWeek = { week: weekBase.week, list: members.map(m => {
+    const b = weekBase.players[m.tag]; let d = b ? (m.given ?? 0) - (b.given ?? 0) : 0;
+    if (d < 0) d = m.given ?? 0;                          // reset sezonu donacji w trakcie tygodnia
+    return { name: m.name, d };
+  }).sort((a, b) => b.d - a.d) };
   const metric = weekBase.metric || metricFor(weekBase.week);
   weekWinners = members.map(m => {
     const b = weekBase.players[m.tag];
@@ -790,6 +806,10 @@ const POSTY = {
   podsumowanieCWL: true,   // po ostatniej rundzie CWL: miejsce, bilans, najlepsi gracze sezonu
   rajdy: true,             // rajdy na Stolicę: start, przypomnienia, podsumowanie (#rajdy-stolica)
   rekrutacja: true,        // post rekrutacyjny raz w tygodniu (#rekrutacja)
+  atakiNaZywo: true,       // każdy atak w wojnie/CWL + tablica wojny (#wojny-klanu)
+  aktywnosc: true,         // tablica aktywności graczy (#statystyki-klanu)
+  donacje: true,           // donacje tygodnia (pon.) i miesiąca (#statystyki-klanu)
+  osiagniecia: true,       // poziom klanu, ligi, serie wygranych (#ogłoszenia)
   wymagania: true          // stała, aktualizowana wiadomość z wymaganiami (#wymagania-klanu)
 };
 if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY || WEBHOOK_POWITANIA) && !firstRun) {
@@ -939,9 +959,230 @@ if (WEBHOOK_RAJDY && !firstRun && POSTY.rajdy) {
     }
   }
 }
-/* ---------- Rekrutacja i wymagania ---------- */
 const LIGA = n => !n ? "brak" : n.replace("Unranked", "Bez ligi").replace("Bronze", "Brąz").replace("Silver", "Srebro").replace("Gold", "Złoto")
   .replace("Crystal", "Kryształ").replace("Master", "Mistrz").replace("Champion", "Czempion").replace(" League", "");
+/* ---------- Na żywo jak ClashPerk, tylko czytelniej ----------
+   ataki wojenne, tablice (wojna, rajdy, Gry Klanowe, aktywność), donacje, osiągnięcia klanu, nicki */
+let feed = old?.feed && typeof old.feed === "object" ? old.feed : {};
+let boards = old?.boards && typeof old.boards === "object" ? old.boards : {};
+const STAR = n => "★".repeat(n) + "☆".repeat(Math.max(0, 3 - n));
+const PCT = p => String(Math.round((p ?? 0) * 10) / 10).replace(".", ",") + "%";
+const TS = (t, f = "R") => `<t:${Math.floor((typeof t === "number" ? t : (parseT(t) || new Date(t))) / 1000)}:${f}>`;
+const hashOf = c => c.length + ":" + [...c].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) >>> 0, 7);
+const fit = (lines, max = 1950) => { let out = lines.filter(x => x !== null && x !== undefined && x !== false).join("\n"); return out.length > max ? out.slice(0, max - 1) + "…" : out; };
+const listFit = (arr, max = 700) => { let s = ""; for (let i = 0; i < arr.length; i++) { const nx = (s ? s + ", " : "") + arr[i]; if (nx.length > max) return s + ` …i ${arr.length - i} więcej`; s = nx; } return s; };
+async function board(slot, url, content) {
+  if (!url || !content) return;
+  const hash = hashOf(content), b = boards[slot];
+  try {
+    if (b?.id) {
+      if (b.hash === hash) return;
+      const r = await fetch(`${url}/messages/${b.id}`, { method: "PATCH", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content, allowed_mentions: { parse: [] }, flags: 4 }) });
+      if (r.ok) { b.hash = hash; b.t = nowIso; await new Promise(res => setTimeout(res, 700)); return; }
+      if (r.status !== 404) { console.warn("Tablica", slot, r.status); return; }
+    }
+    const r = await fetch(`${url}?wait=true`, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: "Armia Maurycego", avatar_url: SITE + "icon-512.png", content, allowed_mentions: { parse: [] }, flags: 4 }) });
+    if (r.ok) { const m = await r.json(); boards[slot] = { id: m.id, hash, t: nowIso }; } else console.warn("Tablica", slot, r.status, await r.text());
+    await new Promise(res => setTimeout(res, 1200));
+  } catch (e) { console.warn("Tablica niedostępna:", e.message); }
+}
+const chunks = (head, lines, max = 1900) => { const out = []; let cur = head; for (const l of lines) { if ((cur + "\n" + l).length > max) { out.push(cur); cur = head + " (cd.)"; } cur += "\n" + l; } out.push(cur); return out; };
+
+if (!firstRun) {
+  // --- 1) Wojny: relacja atak po ataku + tablica wojny (#wojny-klanu) ---
+  if (WEBHOOK_WOJNY && POSTY.atakiNaZywo !== false) {
+    const lw = [];
+    if (currentWar) lw.push({ ...currentWar, key: `w:${currentWar.start}`, label: "Wojna" });
+    for (const cw of (cwl?.wars || [])) lw.push({ ...cw, key: `c:${cw.start}:${cw.them.name}`, label: `CWL · Runda ${cw.round}` });
+    for (const w of lw) {
+      if ((Date.now() - parseT(w.end)) / 3600e3 > 6) continue;
+      const cwlW = w.label.startsWith("CWL");
+      if (w.state === "preparation" && cwlW) continue;          // w CWL przygotowania nakładają się z bitwą poprzedniej rundy
+      const per = w.perMember || (cwlW ? 1 : 2);
+      // relacja: nowe ataki od ostatniego sprawdzenia (nasze 🗡️ i przeciwnika 🛡️)
+      const all = [
+        ...w.members.flatMap(m => m.attacks.map(a => ({ our: true, who: m.name, wpos: m.pos, ...a }))),
+        ...(w.defs || []).map(a => ({ our: false, who: a.by, wpos: a.bpos, ...a }))
+      ].filter(a => a.order != null).sort((a, b) => a.order - b.order);
+      const best = {}, fresh = new Map();
+      for (const a of all) { const k = (a.our ? "u" : "t") + a.tpos; const nw = Math.max(0, a.stars - (best[k] || 0)); best[k] = Math.max(best[k] || 0, a.stars); fresh.set(a, nw); }
+      const maxOrder = all.length ? all[all.length - 1].order : 0;
+      if (feed[w.key] === undefined)   // pierwszy raz widzimy tę wojnę: bez zaległości (chyba że bitwa dopiero ruszyła)
+        feed[w.key] = (w.state === "preparation" || (w.state === "inWar" && (Date.now() - parseT(w.start)) / 3600e3 < 0.5)) ? 0 : maxOrder;
+      const nowe = all.filter(a => a.order > feed[w.key]);
+      if (nowe.length) {
+        const head = `⚔️ **${w.label}** vs **${w.them.name}** · teraz **${w.us.stars} ★ ${w.them.stars}** · ${PCT(w.us.pct)} : ${PCT(w.them.pct)}`;
+        const lines = nowe.map(a => {
+          const f = fresh.get(a), plus = f > 0 ? ` · **+${f}★**` : " · +0★";
+          return a.our
+            ? `🗡️ \`${String(a.wpos).padStart(2)}\` **${a.who}** ➜ \`${String(a.tpos ?? "?").padStart(2)}\` ${a.tname} · ${STAR(a.stars)} ${PCT(a.pct)}${plus}${a.stars === 3 ? " 🔥" : ""}`
+            : `🛡️ \`${String(a.wpos).padStart(2)}\` ${a.who} ➜ \`${String(a.tpos ?? "?").padStart(2)}\` **${a.tname}** · ${STAR(a.stars)} ${PCT(a.pct)}${plus}`;
+        });
+        for (const msg of chunks(head, lines)) await post(msg, WEBHOOK_WOJNY);
+        feed[w.key] = maxOrder;
+      }
+      // tablica wojny (jedna wiadomość, aktualizowana)
+      const win = w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct);
+      const draw = w.us.stars === w.them.stars && w.us.pct === w.them.pct;
+      const stan = w.state === "preparation" ? `🛡️ Dzień przygotowań · bitwa rusza ${TS(w.start)}`
+        : w.state === "inWar" ? `🟢 Trwa bitwa · koniec ${TS(w.end)}`
+        : `🏁 Zakończona · ${win ? "🏆 **WYGRANA**" : draw ? "🤝 **REMIS**" : "❌ **PRZEGRANA**"}`;
+      const open = (w.them.bases || []).filter(b => b.best < 3).map(b => b.pos);
+      const rows = w.members.map(m => {
+        const tok = w.state === "preparation" ? "" : " · " + [...m.attacks.map(a => STAR(a.stars)), ...Array(Math.max(0, per - m.attacks.length)).fill(w.state === "warEnded" ? "❌" : "⏳")].join("  ");
+        return { left: per - m.attacks.length, txt: `\`${String(m.pos).padStart(2)}\` ${m.name} · TH${m.th}${tok}` };
+      });
+      const zostalo = w.members.reduce((a, m) => a + Math.max(0, per - m.attacks.length), 0);
+      const top = [
+        `📋 **TABLICA · ${w.label.toUpperCase()}** · ${w.size} vs ${w.size}`,
+        stan,
+        ``,
+        `**${w.us.name}**  ${w.us.stars} ★ ${w.them.stars}  **${w.them.name}**`,
+        w.state !== "preparation" ? `💥 Zniszczenia: **${PCT(w.us.pct)}** : ${PCT(w.them.pct)}` : null,
+        w.state !== "preparation" ? `⚔️ Ataki: **${w.us.attacks ?? 0}/${w.size * per}** : ${w.them.attacks ?? 0}/${w.size * per}${w.state === "inWar" && zostalo ? ` · zostało nam **${zostalo}**` : ""}` : null,
+        w.state !== "preparation" ? (open.length ? `🎯 Bez 3★ u przeciwnika: ${open.join(", ")}` : `🎯 Wszystkie bazy przeciwnika zbite na 3★! 🔥`) : null,
+        ``,
+        `**Nasz skład:**`
+      ];
+      let tresc = fit([...top, ...rows.map(r => r.txt), ``, `_Aktualizuje się sama co kilka minut · ${SITE}#wojny_`], 4000);
+      if (tresc.length > 1950) {   // duża wojna: pokaż tylko graczy z atakami do zrobienia
+        const left = rows.filter(r => r.left > 0);
+        tresc = fit([...top.slice(0, -1), `**Jeszcze atakują (${left.length}):**`, ...left.map(r => r.txt), ``, `✅ Pozostali (${rows.length - left.length}) zrobili już wszystkie ataki.`]);
+      }
+      if (w.state !== "warEnded" || boards[`war:${w.key}`]) await board(`war:${w.key}`, WEBHOOK_WOJNY, tresc);   // nie zakładamy tablicy dla wojny, która już się skończyła
+    }
+    for (const k of Object.keys(feed)) if (!lw.some(w => w.key === k)) delete feed[k];
+  }
+
+  // --- 2) Rajdy: tablica na żywo (#rajdy-stolica) ---
+  const r0 = raids[0];
+  if (WEBHOOK_RAJDY && POSTY.rajdy && r0 && (r0.state === "ongoing" || ((Date.now() - parseT(r0.end)) / 3600e3 < 24 && boards[`raid:${r0.start}`]))) {
+    const fmt = n => Number(n || 0).toLocaleString("pl-PL");
+    const inRaid = Object.fromEntries((r0.members || []).map(m => [m.tag, m]));
+    const nobody = members.filter(m => !inRaid[m.tag]).map(m => m.name);
+    const partial = (r0.members || []).filter(m => m.attacks < m.limit).map(m => `${m.name} (${m.attacks}/${m.limit})`);
+    const md = ["🥇", "🥈", "🥉", "4.", "5."];
+    await board(`raid:${r0.start}`, WEBHOOK_RAJDY, fit([
+      `🏰 **RAJDY NA STOLICĘ** · ${r0.state === "ongoing" ? `koniec ${TS(r0.end)}` : "🏁 zakończone"}`,
+      ``,
+      `💰 Złoto: **${fmt(r0.loot)}** · ⚔️ Ataki: **${r0.attacks}** · 🏚️ Dzielnice: **${r0.districts}** · ✅ Rajdy: **${r0.raids}**`,
+      `👥 Zaatakowało **${(r0.members || []).length}** z ${members.length} graczy`,
+      ``,
+      (r0.members || []).length ? `**Najlepsi:**\n` + (r0.members || []).slice(0, 5).map((m, i) => `${md[i]} ${m.name} · ${fmt(m.loot)} · ${m.attacks}/${m.limit}`).join("\n") : null,
+      partial.length ? `\n🔸 **Mają jeszcze ataki:** ${listFit(partial)}` : null,
+      nobody.length ? `💤 **${r0.state === "ongoing" ? "Jeszcze nie zaatakowali" : "Nie zaatakowali"}:** ${listFit(nobody)}` : null,
+      ``,
+      `_Aktualizuje się sama co kilka minut_`
+    ]));
+  }
+
+  // --- 3) Gry Klanowe: tablica na żywo (#statystyki-klanu) ---
+  if (WEBHOOK && POSTY.gryKlanowe && clanGames && (clanGames.state === "ongoing" || (prevCgState === "ongoing" && boards[`cg:${clanGames.key}`]))) {
+    const rows = Object.values(clanGames.points || {}).sort((a, b) => b.pts - a.pts);
+    const sum = rows.reduce((a, r) => a + r.pts, 0), done = rows.filter(r => r.pts >= 1000).length;
+    const md = ["🥇", "🥈", "🥉"];
+    const low = rows.filter(r => r.pts > 0 && r.pts < 1000).map(r => `${r.name} (${r.pts})`), zero = rows.filter(r => r.pts === 0).map(r => r.name);
+    await board(`cg:${clanGames.key}`, WEBHOOK, fit([
+      `🎯 **GRY KLANOWE** · ${clanGames.state === "ongoing" ? `koniec ${TS(Date.parse(clanGames.end))}` : "🏁 zakończone"}`,
+      ``,
+      `Razem: **${nf(sum)} pkt** · normę 1000 pkt ma **${done}/${rows.length}**`,
+      ``,
+      `**Top 10:**`,
+      ...rows.slice(0, 10).map((r, i) => `${md[i] || `\`${String(i + 1).padStart(2)}\``} ${r.name} · ${nf(r.pts)}${r.pts >= 1000 ? " ✅" : ""}`),
+      low.length ? `\n⏳ **Przed normą:** ${listFit(low)}` : null,
+      zero.length ? `💤 **Jeszcze 0 pkt:** ${listFit(zero)}` : null,
+      ``,
+      `_Aktualizuje się sama co kilka minut_`
+    ]));
+  }
+
+  // --- 4) Aktywność graczy (#statystyki-klanu) ---
+  if (WEBHOOK && POSTY.aktywnosc !== false) {
+    const L = members.map(m => ({ name: m.name, t: Date.parse(activity[m.tag]?.last || nowIso) })).sort((a, b) => b.t - a.t);
+    const h = x => (Date.now() - x.t) / 3600e3;
+    const g1 = L.filter(x => h(x) < 24), g2 = L.filter(x => h(x) >= 24 && h(x) < 72), g3 = L.filter(x => h(x) >= 72 && h(x) < 168), g4 = L.filter(x => h(x) >= 168);
+    const withT = arr => listFit(arr.map(x => `${x.name} ${TS(x.t)}`), 900);
+    await board("aktywnosc", WEBHOOK, fit([
+      `👀 **AKTYWNOŚĆ GRACZY** · ${members.length}/50`,
+      ``,
+      `🟢 **Ostatnie 24 h** (${g1.length}): ${listFit(g1.map(x => x.name), 900) || "—"}`,
+      g2.length ? `🟡 **1–3 dni** (${g2.length}): ${withT(g2)}` : null,
+      g3.length ? `🟠 **3–7 dni** (${g3.length}): ${withT(g3)}` : null,
+      g4.length ? `🔴 **Ponad 7 dni** (${g4.length}): ${withT(g4)}` : `🔴 **Ponad 7 dni:** nikt 💪`,
+      ``,
+      `_Aktywność = robot widzi, że gracz coś zrobił w grze (donacje, ataki, Gry, Stolica). Aktualizuje się sama._`
+    ]));
+  }
+
+  // --- 5) Donacje: tydzień (w poniedziałek) i miesiąc (#statystyki-klanu) ---
+  const md5 = ["🥇", "🥈", "🥉", "4.", "5."];
+  if (WEBHOOK && POSTY.donacje !== false && donWeek && donWeek.list.length) {
+    const L = donWeek.list, sum = L.reduce((a, x) => a + x.d, 0), zero = L.filter(x => x.d === 0).length;
+    const od = new Date(donWeek.week + "T12:00:00Z"), doD = new Date(+od + 6 * 864e5);
+    const dz = d => `${d.getUTCDate()} ${MIES_D[d.getUTCMonth()].slice(0, 3)}`;
+    await post(fit([
+      `🎁 **DONACJE TYGODNIA** · ${dz(od)} – ${dz(doD)}`,
+      `Razem oddaliśmy **${nf(sum)}** wojsk 💪`,
+      ``,
+      ...L.filter(x => x.d > 0).slice(0, 5).map((x, i) => `${md5[i]} ${x.name} · **${nf(x.d)}**`),
+      zero ? `\n💤 Bez donacji w tym tygodniu: **${zero}** ${plural(zero, "gracz", "graczy", "graczy")}` : `\n✅ Każdy coś oddał!`
+    ]), WEBHOOK);
+  }
+  if (WEBHOOK && POSTY.donacje !== false && old?.monthBase?.month && old.monthBase.month !== monthBase.month) {
+    const L = members.map(m => { const b = old.monthBase.players?.[m.tag]?.don, c = m.ach?.don; return { name: m.name, d: (b != null && c != null) ? Math.max(0, c - b) : 0 }; }).sort((a, b) => b.d - a.d);
+    const sum = L.reduce((a, x) => a + x.d, 0);
+    if (sum > 0) await post(fit([
+      `🎁 **DONACJE MIESIĄCA** · ${MIES[Number(old.monthBase.month.slice(5, 7)) - 1]}`,
+      `Razem oddaliśmy **${nf(sum)}** wojsk`,
+      ``,
+      ...L.filter(x => x.d > 0).slice(0, 5).map((x, i) => `${md5[i]} ${x.name} · **${nf(x.d)}**`)
+    ]), WEBHOOK);
+  }
+
+  // --- 6) Osiągnięcia klanu (#ogłoszenia) ---
+  if (WEBHOOK_INFO && POSTY.osiagniecia !== false && old) {
+    const TIER = ["Unranked", "Bronze", "Silver", "Gold", "Crystal", "Master", "Champion"];
+    const rank = n => { if (!n) return -1; const t = TIER.findIndex(x => n.startsWith(x)); const r = { I: 3, II: 2, III: 1 }[(n.split(" ").pop() || "")] || 0; return t * 10 + r; };
+    if (old.clanLevel != null && clan.clanLevel > old.clanLevel)
+      await post(`🎉 **Klan awansował na poziom ${clan.clanLevel}!** Dzięki za każdą wojnę, Grę Klanową i rajd. Lecimy dalej! 🛡️`, WEBHOOK_INFO);
+    const nowCwl = clan.warLeague?.name ?? null;
+    if (old.cwlLeague && nowCwl && old.cwlLeague !== nowCwl)
+      await post(rank(nowCwl) > rank(old.cwlLeague)
+        ? `🏆 **Awans w Lidze Wojen Klanów!** ${LIGA(old.cwlLeague)} ➜ **${LIGA(nowCwl)}**. Brawo wszyscy! 🔥`
+        : `📉 Liga Wojen Klanów: ${LIGA(old.cwlLeague)} ➜ **${LIGA(nowCwl)}**. Odbijemy się w następnym sezonie! 💪`, WEBHOOK_INFO);
+    const nowCap = clan.capitalLeague?.name ?? null;
+    if (old.capitalLeague && nowCap && old.capitalLeague !== nowCap)
+      await post(rank(nowCap) > rank(old.capitalLeague)
+        ? `🏰 **Awans Stolicy Klanu!** ${LIGA(old.capitalLeague)} ➜ **${LIGA(nowCap)}**. Dzięki za rajdy! 💰`
+        : `🏰 Liga Stolicy: ${LIGA(old.capitalLeague)} ➜ **${LIGA(nowCap)}**. W ten weekend odrabiamy! 💪`, WEBHOOK_INFO);
+    const ws = clan.warWinStreak ?? 0;
+    if (old.warWinStreak != null && ws > old.warWinStreak && ws >= 3)
+      await post(`🔥 **Seria ${ws} ${plural(ws, "wygranej wojny", "wygranych wojen", "wygranych wojen")} z rzędu!** Nie zwalniamy! ⚔️`, WEBHOOK_INFO);
+    const ww = clan.warWins ?? null;
+    if (old.warWins != null && ww != null && Math.floor(ww / 10) > Math.floor(old.warWins / 10))
+      await post(`🏅 **${Math.floor(ww / 10) * 10} wygranych wojen** na koncie klanu! Kolejna dziesiątka zaliczona 💪`, WEBHOOK_INFO);
+  }
+
+  // --- 7) Nicki, ranga w dół, udział w wojnach (#ruchy-w-klanie) ---
+  if (WEBHOOK_RUCHY && Array.isArray(old?.members)) {
+    const RNd = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
+    const byTag = Object.fromEntries(old.members.map(m => [m.tag, m]));
+    for (const m of members) {
+      const o = byTag[m.tag]; if (!o) continue;
+      if (o.name && o.name !== m.name) await post(`✏️ **${o.name}** zmienił(a) nick na **${m.name}**`, WEBHOOK_RUCHY);
+      const RANK = { member: 0, admin: 1, coLeader: 2, leader: 3 };
+      if (o.role && m.role && RANK[m.role] < RANK[o.role]) await post(`⬇️ **${m.name}** ma teraz rangę ${RNd[m.role] || m.role}`, WEBHOOK_RUCHY);
+      const a = o.profile?.warPref, b = m.profile?.warPref;
+      if (a && b && a !== b) await post(b === "in" ? `🟢 **${m.name}** zapisał(a) się do wojen ⚔️` : `🔴 **${m.name}** wypisał(a) się z wojen`, WEBHOOK_RUCHY);
+    }
+  }
+}
+// sprzątanie starych tablic (po 10 dniach)
+boards = Object.fromEntries(Object.entries(boards).filter(([k, v]) => k === "aktywnosc" || Date.now() - Date.parse(v.t || 0) < 10 * 864e5));
+
+/* ---------- Rekrutacja i wymagania ---------- */
 let rekrutacjaWeek = old?.rekrutacjaWeek || null;
 let wymaganiaMsg = old?.wymaganiaMsg || null;
 if (!firstRun && clan) {
@@ -1059,6 +1300,7 @@ const data = {
   clanLevel: clan.clanLevel,
   memberCount: clan.members,
   cwlLeague: clan.warLeague?.name ?? null,
+  capitalLeague: clan.capitalLeague?.name ?? null,
   warWinStreak: clan.warWinStreak,
   warWins: clan.warWins ?? null,
   currentWar,
@@ -1090,6 +1332,8 @@ const data = {
   potdHistory,
   notified,
   oneShots,
+  feed,
+  boards,
   rekrutacjaWeek,
   wymaganiaMsg,
   members,
