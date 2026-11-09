@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T17:46:00.326Z",
+  "updated": "2026-11-09T18:01:47.641Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -35,8 +35,8 @@
         "tag": "#2CC0PJPLY",
         "name": "kingslayers",
         "level": 5,
-        "stars": 175,
-        "pct": 5623,
+        "stars": 178,
+        "pct": 5723,
         "wins": 3,
         "played": 6
       },
@@ -2320,7 +2320,7 @@
             {
               "pos": 4,
               "th": 12,
-              "best": 0
+              "best": 3
             },
             {
               "pos": 5,
@@ -2381,9 +2381,9 @@
         },
         "them": {
           "name": "kingslayers",
-          "stars": 28,
-          "pct": 68.33,
-          "attacks": 11,
+          "stars": 31,
+          "pct": 75,
+          "attacks": 12,
           "bases": [
             {
               "pos": 1,
@@ -3321,9 +3321,9 @@
       "state": "inWar",
       "cwl": true,
       "us": 29,
-      "them": 28,
+      "them": 31,
       "pct": 68.87,
-      "themPct": 68.33,
+      "themPct": 75,
       "themBases": [
         {
           "pos": 1,
@@ -6547,8 +6547,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "1539|2000000000|2000000000|94700|82269|1216349|1620638|0|1263|205|15",
-      "last": "2026-11-09T17:46:00.311Z",
+      "sig": "1565|2000000000|2000000000|94700|82269|1216349|1620638|0|1263|205|15",
+      "last": "2026-11-09T18:01:47.624Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -6642,8 +6642,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|53792360|51810759|10050|88|24505|31950|0|7|50|9",
-      "last": "2026-11-09T14:01:39.962Z",
+      "sig": "20|56567616|54670321|10050|88|24505|31950|0|7|50|9",
+      "last": "2026-11-09T18:01:47.624Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -6667,8 +6667,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|24888711|22642854|1500|175|30430|43065|0|21|41|8",
-      "last": "2026-11-08T09:02:20.878Z",
+      "sig": "0|25285711|23039854|1500|175|30430|43065|0|21|41|8",
+      "last": "2026-11-09T18:01:47.624Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -7474,6 +7474,20 @@
         9
       ]
     ],
+    "#R2PCVYQG2": [
+      [
+        20765,
+        21,
+        175,
+        8
+      ],
+      [
+        20766,
+        21,
+        175,
+        8
+      ]
+    ],
     "#LUQJC2JGY": [
       [
         20765,
@@ -7598,20 +7612,6 @@
         0,
         72,
         9
-      ]
-    ],
-    "#R2PCVYQG2": [
-      [
-        20765,
-        21,
-        175,
-        8
-      ],
-      [
-        20766,
-        21,
-        175,
-        8
       ]
     ],
     "#R0VJLRGQ0": [
@@ -8124,7 +8124,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 1539,
+      "given": 1565,
       "received": 203,
       "trophies": 0,
       "profile": {
@@ -8194,10 +8194,10 @@
       "th": 15,
       "given": 1262,
       "received": 274,
-      "trophies": 0,
+      "trophies": 12,
       "profile": {
         "level": 152,
-        "trophies": 0,
+        "trophies": 12,
         "best": 3270,
         "league": "Witch League 17",
         "warStars": 1228,
@@ -9887,6 +9887,54 @@
       }
     },
     {
+      "name": "Riczard",
+      "tag": "#R2PCVYQG2",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 40,
+      "profile": {
+        "level": 41,
+        "trophies": 40,
+        "best": 293,
+        "league": "Skeleton League 3",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 43065,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 11,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 8,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 1500,
+        "don": 175,
+        "capLoot": 30430,
+        "gold": 25285711,
+        "elixir": 23039854,
+        "capContrib": 43065,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -10198,7 +10246,7 @@
       "role": "member",
       "th": 9,
       "given": 20,
-      "received": 26,
+      "received": 52,
       "trophies": 0,
       "profile": {
         "level": 50,
@@ -10234,8 +10282,8 @@
         "cg": 10050,
         "don": 88,
         "capLoot": 24505,
-        "gold": 53792360,
-        "elixir": 51810759,
+        "gold": 56567616,
+        "elixir": 54670321,
         "capContrib": 31950,
         "wins": 0
       }
@@ -10400,54 +10448,6 @@
         "gold": 37934489,
         "elixir": 34851437,
         "capContrib": 100,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Riczard",
-      "tag": "#R2PCVYQG2",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 41,
-        "trophies": 0,
-        "best": 293,
-        "league": "Skeleton League 3",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 43065,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 11,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 8,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 1500,
-        "don": 175,
-        "capLoot": 30430,
-        "gold": 24888711,
-        "elixir": 22642854,
-        "capContrib": 43065,
         "wins": 0
       }
     },
