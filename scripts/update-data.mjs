@@ -729,14 +729,40 @@ const WEBHOOK_INFO = process.env.DISCORD_WEBHOOK_INFO || WEBHOOK;      // #ogło
 const WEBHOOK_RUCHY = process.env.DISCORD_WEBHOOK_RUCHY || "";         // #ruchy-w-klanie: dołączenia, odejścia, ratusze, awanse
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
-async function post(content, url = WEBHOOK) {
-  if (!url) return;
+async function post(content, url = WEBHOOK, ping = false) {
+  if (!url) return false;
   try {
     const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: [] }, flags: 4 }) });
+      body: JSON.stringify({ username: "Armia Maurycego", content, allowed_mentions: { parse: ping ? ["everyone"] : [] }, flags: 4 }) });
     if (!r.ok) console.warn("Webhook:", r.status, await r.text());
     await new Promise(res => setTimeout(res, 1200));
-  } catch (e) { console.warn("Webhook niedostępny:", e.message); }
+    return r.ok;
+  } catch (e) { console.warn("Webhook niedostępny:", e.message); return false; }
+}
+
+// Jednorazowe ogłoszenia — każde wysyłane tylko raz (zapamiętywane w data.json -> oneShots)
+const oneShots = Array.isArray(old?.oneShots) ? old.oneShots : [];
+const OGLOSZENIA = [
+  { id: "discord-dm-2026-11", text:
+`📢 **Nowość na stronie klanu!** @everyone
+
+Od teraz robot klanu może Wam przypominać **na priv na Discordzie**, kiedy macie jeszcze nieużyty atak na wojnie albo w CWL. Koniec z zapominaniem! ⚔️
+
+**Jak to włączyć (zajmie 1 minutę):**
+1️⃣ Wejdź na stronę: ${"https://kubooorek.github.io/armia-maurycego/"}
+2️⃣ Zaloguj się swoim tagiem gracza i tokenem z gry (w grze: Ustawienia → Więcej ustawień → Token API)
+3️⃣ Otwórz **Mój panel** i kliknij **Połącz Discord**
+4️⃣ Zatwierdź w okienku Discorda i gotowe ✅
+
+W **Moim panelu** możecie też:
+🛑 zgłosić, że nie gracie w najbliższej wojnie (nie dostaniecie wtedy minusa za brak ataku)
+🏆 zapisać się na kolejny sezon CWL
+
+Pytania? Piszcie śmiało! 🔥` }
+];
+for (const o of OGLOSZENIA) {
+  if (oneShots.includes(o.id) || !WEBHOOK_INFO) continue;
+  if (await post(o.text, WEBHOOK_INFO, true)) oneShots.push(o.id);
 }
 const parseT = t => t ? new Date(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : null;
 const firstRun = !old;   // przy pierwszym uruchomieniu nic nie wysyłamy (brak historii)
@@ -945,6 +971,7 @@ const data = {
   potd,
   potdHistory,
   notified,
+  oneShots,
   members,
   wars
 };
