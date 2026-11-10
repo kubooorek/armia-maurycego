@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T16:31:17.414Z",
+  "updated": "2026-11-10T16:46:04.685Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3179,8 +3179,8 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
-    "members": 14
+    "online": 6,
+    "members": 15
   },
   "raids": [
     {
@@ -7117,8 +7117,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "287|76076804|74827669|2400|734|14765|35286|0|4|58|9",
-      "last": "2026-11-10T15:01:36.175Z",
+      "sig": "307|76768308|75347831|2400|754|14765|35286|0|4|58|9",
+      "last": "2026-11-10T16:46:03.452Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -7157,8 +7157,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|27846263|27161051|0|0|0|400|0|14|33|8",
-      "last": "2026-11-10T15:01:36.175Z",
+      "sig": "0|27935063|27249851|0|0|0|400|0|14|33|8",
+      "last": "2026-11-10T16:46:03.452Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -7227,8 +7227,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "58|600600602|601167928|25150|1522|636760|726415|0|82|129|13",
-      "last": "2026-11-10T16:31:16.023Z",
+      "sig": "88|600600602|601167928|25150|1522|636760|726415|0|82|129|13",
+      "last": "2026-11-10T16:46:03.452Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8078,6 +8078,26 @@
         8
       ]
     ],
+    "#GVGRVCQJR": [
+      [
+        20765,
+        4,
+        659,
+        9
+      ],
+      [
+        20766,
+        4,
+        689,
+        9
+      ],
+      [
+        20767,
+        4,
+        754,
+        9
+      ]
+    ],
     "#R92C0U8UU": [
       [
         20765,
@@ -8116,26 +8136,6 @@
         6,
         76,
         8
-      ]
-    ],
-    "#GVGRVCQJR": [
-      [
-        20765,
-        4,
-        659,
-        9
-      ],
-      [
-        20766,
-        4,
-        689,
-        9
-      ],
-      [
-        20767,
-        4,
-        734,
-        9
       ]
     ],
     "#LUQJC2JGY": [
@@ -9020,8 +9020,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:1332640097",
-      "t": "2026-11-10T16:31:16.023Z"
+      "hash": "819:2914818961",
+      "t": "2026-11-10T16:46:03.452Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9768,7 +9768,7 @@
       "tag": "#2JGYURUQJ",
       "role": "admin",
       "th": 13,
-      "given": 58,
+      "given": 88,
       "received": 405,
       "trophies": 233,
       "profile": {
@@ -10495,7 +10495,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
@@ -10799,6 +10799,59 @@
       }
     },
     {
+      "name": "♡karo♡lina♡",
+      "tag": "#GVGRVCQJR",
+      "role": "member",
+      "th": 9,
+      "given": 307,
+      "received": 574,
+      "trophies": 240,
+      "profile": {
+        "level": 58,
+        "trophies": 240,
+        "best": 349,
+        "league": "Skeleton League 3",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 35286,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 25,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 2400,
+        "don": 754,
+        "capLoot": 14765,
+        "gold": 76768308,
+        "elixir": 75347831,
+        "capContrib": 35286,
+        "wins": 0
+      }
+    },
+    {
       "name": "Rico",
       "tag": "#R92C0U8UU",
       "role": "member",
@@ -10891,59 +10944,6 @@
         "gold": 35850829,
         "elixir": 34679610,
         "capContrib": 16881,
-        "wins": 0
-      }
-    },
-    {
-      "name": "♡karo♡lina♡",
-      "tag": "#GVGRVCQJR",
-      "role": "member",
-      "th": 9,
-      "given": 287,
-      "received": 544,
-      "trophies": 200,
-      "profile": {
-        "level": 58,
-        "trophies": 200,
-        "best": 349,
-        "league": "Skeleton League 3",
-        "warStars": 4,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 35286,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 25,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 10,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 2400,
-        "don": 734,
-        "capLoot": 14765,
-        "gold": 76076804,
-        "elixir": 74827669,
-        "capContrib": 35286,
         "wins": 0
       }
     },
@@ -11139,11 +11139,11 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 80,
-      "trophies": 40,
+      "received": 100,
+      "trophies": 42,
       "profile": {
         "level": 33,
-        "trophies": 40,
+        "trophies": 42,
         "best": 244,
         "league": "Skeleton League 3",
         "warStars": 14,
@@ -11206,8 +11206,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 27846263,
-        "elixir": 27161051,
+        "gold": 27935063,
+        "elixir": 27249851,
         "capContrib": 400,
         "wins": 0
       }
