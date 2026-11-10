@@ -34,6 +34,7 @@ jobs:
           DISCORD_WEBHOOK_POWITANIA: ${{ secrets.DISCORD_WEBHOOK_POWITANIA }}
           DISCORD_WEBHOOK_REKRUTACJA: ${{ secrets.DISCORD_WEBHOOK_REKRUTACJA }}
           DISCORD_WEBHOOK_WYMAGANIA: ${{ secrets.DISCORD_WEBHOOK_WYMAGANIA }}
+          DISCORD_WEBHOOK_KARY: ${{ secrets.DISCORD_WEBHOOK_KARY }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           ROBOT_KEY: ${{ secrets.ROBOT_KEY }}
         run: node scripts/update-data.mjs
