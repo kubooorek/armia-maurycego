@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T05:46:03.479Z",
+  "updated": "2026-11-10T06:01:33.178Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7225,8 +7225,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "58|539919841|539972550|25150|1522|636760|726415|0|82|128|13",
-      "last": "2026-11-10T05:46:02.297Z",
+      "sig": "58|554557363|553975056|25150|1522|636760|726415|0|82|128|13",
+      "last": "2026-11-10T06:01:32.952Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -9132,7 +9132,7 @@
           },
           {
             "name": "Royal Champion",
-            "level": 21,
+            "level": 22,
             "max": 55
           },
           {
@@ -9143,10 +9143,10 @@
         ]
       },
       "rush": {
-        "pct": 37.6,
+        "pct": 37.4,
         "troops": 26.2,
         "spells": 42.9,
-        "heroes": 43.3,
+        "heroes": 43.1,
         "top": [
           {
             "n": "Górnik",
@@ -9532,10 +9532,10 @@
       "th": 12,
       "given": 273,
       "received": 40,
-      "trophies": 132,
+      "trophies": 161,
       "profile": {
         "level": 106,
-        "trophies": 132,
+        "trophies": 161,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 67,
@@ -9782,7 +9782,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 50,
+            "level": 51,
             "max": 110
           },
           {
@@ -9803,10 +9803,10 @@
         ]
       },
       "rush": {
-        "pct": 31,
-        "troops": 19.6,
+        "pct": 30.6,
+        "troops": 19,
         "spells": 34.8,
-        "heroes": 38.1,
+        "heroes": 37.6,
         "top": [
           {
             "n": "Lodowy golem",
@@ -9844,8 +9844,8 @@
         "cg": 25150,
         "don": 1522,
         "capLoot": 636760,
-        "gold": 539919841,
-        "elixir": 539972550,
+        "gold": 554557363,
+        "elixir": 553975056,
         "capContrib": 726415,
         "wins": 0
       }
