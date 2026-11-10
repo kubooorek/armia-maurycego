@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T12:16:03.192Z",
+  "updated": "2026-11-10T12:27:10.350Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10205,7 +10205,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 29,
+            "level": 30,
             "max": 110
           },
           {
@@ -10221,16 +10221,11 @@
         ]
       },
       "rush": {
-        "pct": 1.1,
+        "pct": 0.6,
         "troops": 0,
         "spells": 0,
-        "heroes": 2.9,
+        "heroes": 1.4,
         "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 29,
-            "need": 30
-          },
           {
             "n": "Królowa Łuczniczek",
             "lvl": 29,
