@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T02:31:28.201Z",
+  "updated": "2026-11-10T04:31:22.116Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -9018,8 +9018,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "766:434373584",
-      "t": "2026-11-10T01:45:54.979Z"
+      "hash": "801:3297645516",
+      "t": "2026-11-10T04:31:20.800Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9284,7 +9284,7 @@
           },
           {
             "name": "Royal Champion",
-            "level": 3,
+            "level": 4,
             "max": 55
           },
           {
