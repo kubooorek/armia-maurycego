@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T11:16:08.633Z",
+  "updated": "2026-11-10T11:31:17.342Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3179,7 +3179,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 1,
     "members": 13
   },
   "raids": [
@@ -7152,8 +7152,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "2|25759287|25469727|0|162|14515|25739|0|0|51|9",
-      "last": "2026-11-09T05:01:47.860Z",
+      "sig": "2|26059287|25769727|0|162|14515|25739|0|0|51|9",
+      "last": "2026-11-10T11:31:16.319Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -9020,8 +9020,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "854:3631477683",
-      "t": "2026-11-10T11:16:07.420Z"
+      "hash": "837:3362666778",
+      "t": "2026-11-10T11:31:16.319Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9647,7 +9647,7 @@
           },
           {
             "name": "Grand Warden",
-            "level": 13,
+            "level": 14,
             "max": 85
           },
           {
@@ -10594,10 +10594,10 @@
       "th": 10,
       "given": 21,
       "received": 0,
-      "trophies": 114,
+      "trophies": 128,
       "profile": {
         "level": 45,
-        "trophies": 114,
+        "trophies": 128,
         "best": 149,
         "league": "Barbarian League 4",
         "warStars": 0,
@@ -11048,8 +11048,8 @@
         "cg": 0,
         "don": 162,
         "capLoot": 14515,
-        "gold": 25759287,
-        "elixir": 25469727,
+        "gold": 26059287,
+        "elixir": 25769727,
         "capContrib": 25739,
         "wins": 0
       }
