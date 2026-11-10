@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T19:31:16.185Z",
+  "updated": "2026-11-10T19:46:09.514Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3179,8 +3179,8 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
-    "members": 15
+    "online": 5,
+    "members": 14
   },
   "raids": [
     {
@@ -7142,8 +7142,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|35864079|34051258|5600|0|0|6070|0|0|46|9",
-      "last": "2026-11-10T19:31:15.015Z",
+      "sig": "0|39975487|38216364|5600|0|0|6070|0|0|46|9",
+      "last": "2026-11-10T19:46:07.433Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -7227,8 +7227,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "88|609035032|609213590|25150|1552|636760|742040|0|82|129|13",
-      "last": "2026-11-10T19:16:05.017Z",
+      "sig": "88|610160985|610040097|25150|1552|636760|742040|0|82|129|13",
+      "last": "2026-11-10T19:46:07.433Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -9006,7 +9006,8 @@
     ]
   },
   "oneShots": [
-    "discord-dm-2026-11"
+    "discord-dm-2026-11",
+    "cmds-v1"
   ],
   "feed": {
     "w:20261110T211034.000Z": 0,
@@ -9020,8 +9021,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:3312719792",
-      "t": "2026-11-10T19:31:15.015Z"
+      "hash": "819:4144843440",
+      "t": "2026-11-10T19:46:07.433Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9048,6 +9049,9 @@
         "defenseWins": 0,
         "capital": 1620638,
         "warPref": "in",
+        "bh": 8,
+        "bTrophies": 2883,
+        "bLeague": "Iron League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9116,6 +9120,9 @@
         "defenseWins": 0,
         "capital": 457297,
         "warPref": "out",
+        "bh": 6,
+        "bTrophies": 1291,
+        "bLeague": "Stone League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9210,6 +9217,9 @@
         "defenseWins": 0,
         "capital": 678186,
         "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1675,
+        "bLeague": "Copper League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9268,6 +9278,9 @@
         "defenseWins": 0,
         "capital": 44832,
         "warPref": "in",
+        "bh": 9,
+        "bTrophies": 2118,
+        "bLeague": "Brass League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9362,6 +9375,9 @@
         "defenseWins": 0,
         "capital": 50855,
         "warPref": "in",
+        "bh": 7,
+        "bTrophies": 2047,
+        "bLeague": "Brass League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9456,6 +9472,9 @@
         "defenseWins": 0,
         "capital": 104841,
         "warPref": "out",
+        "bh": 7,
+        "bTrophies": 2338,
+        "bLeague": "Brass League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9545,6 +9564,9 @@
         "defenseWins": 0,
         "capital": 122825,
         "warPref": "in",
+        "bh": 8,
+        "bTrophies": 2469,
+        "bLeague": "Brass League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9634,6 +9656,9 @@
         "defenseWins": 0,
         "capital": 65497,
         "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1617,
+        "bLeague": "Copper League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9723,6 +9748,9 @@
         "defenseWins": 0,
         "capital": 414718,
         "warPref": "in",
+        "bh": 6,
+        "bTrophies": 1938,
+        "bLeague": "Copper League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9781,6 +9809,9 @@
         "defenseWins": 0,
         "capital": 742040,
         "warPref": "in",
+        "bh": 8,
+        "bTrophies": 2643,
+        "bLeague": "Iron League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9846,8 +9877,8 @@
         "cg": 25150,
         "don": 1552,
         "capLoot": 636760,
-        "gold": 609035032,
-        "elixir": 609213590,
+        "gold": 610160985,
+        "elixir": 610040097,
         "capContrib": 742040,
         "wins": 0
       }
@@ -9870,6 +9901,9 @@
         "defenseWins": 0,
         "capital": 92486,
         "warPref": "in",
+        "bh": 7,
+        "bTrophies": 2145,
+        "bLeague": "Brass League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -9959,6 +9993,9 @@
         "defenseWins": 0,
         "capital": 452225,
         "warPref": "in",
+        "bh": 9,
+        "bTrophies": 2789,
+        "bLeague": "Iron League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10012,6 +10049,9 @@
         "defenseWins": 0,
         "capital": 216205,
         "warPref": "in",
+        "bh": 7,
+        "bTrophies": 1786,
+        "bLeague": "Copper League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10065,6 +10105,9 @@
         "defenseWins": 0,
         "capital": 53953,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 949,
+        "bLeague": "Clay League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10118,6 +10161,9 @@
         "defenseWins": 0,
         "capital": 9510,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1094,
+        "bLeague": "Stone League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10202,6 +10248,9 @@
         "defenseWins": 0,
         "capital": 38536,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 887,
+        "bLeague": "Clay League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10255,6 +10304,9 @@
         "defenseWins": 0,
         "capital": 0,
         "warPref": "in",
+        "bh": 8,
+        "bTrophies": 2400,
+        "bLeague": "Brass League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10344,6 +10396,9 @@
         "defenseWins": 0,
         "capital": 3150,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 796,
+        "bLeague": "Clay League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10428,6 +10483,9 @@
         "defenseWins": 0,
         "capital": 234074,
         "warPref": "in",
+        "bh": 7,
+        "bTrophies": 1780,
+        "bLeague": "Copper League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10476,6 +10534,9 @@
         "defenseWins": 0,
         "capital": 17129,
         "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1690,
+        "bLeague": "Copper League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10535,6 +10596,9 @@
         "defenseWins": 0,
         "capital": 53482,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 341,
+        "bLeague": "Wood League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10594,6 +10658,9 @@
         "defenseWins": 0,
         "capital": 0,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 619,
+        "bLeague": "Clay League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10678,6 +10745,9 @@
         "defenseWins": 0,
         "capital": 20770,
         "warPref": "in",
+        "bh": 6,
+        "bTrophies": 1636,
+        "bLeague": "Copper League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10762,6 +10832,9 @@
         "defenseWins": 0,
         "capital": 35286,
         "warPref": "in",
+        "bh": 6,
+        "bTrophies": 1236,
+        "bLeague": "Stone League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10815,6 +10888,9 @@
         "defenseWins": 0,
         "capital": 43065,
         "warPref": "in",
+        "bh": 2,
+        "bTrophies": 40,
+        "bLeague": "Wood League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10863,6 +10939,9 @@
         "defenseWins": 0,
         "capital": 15905,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 471,
+        "bLeague": "Wood League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10911,6 +10990,9 @@
         "defenseWins": 0,
         "capital": 16881,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1224,
+        "bLeague": "Stone League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -10959,6 +11041,9 @@
         "defenseWins": 0,
         "capital": 25739,
         "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1357,
+        "bLeague": "Stone League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11018,6 +11103,9 @@
         "defenseWins": 0,
         "capital": 6070,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1011,
+        "bLeague": "Stone League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11073,8 +11161,8 @@
         "cg": 5600,
         "don": 0,
         "capLoot": 0,
-        "gold": 35864079,
-        "elixir": 34051258,
+        "gold": 39975487,
+        "elixir": 38216364,
         "capContrib": 6070,
         "wins": 0
       }
@@ -11097,6 +11185,9 @@
         "defenseWins": 0,
         "capital": 32450,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1368,
+        "bLeague": "Stone League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11145,6 +11236,9 @@
         "defenseWins": 0,
         "capital": 400,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 378,
+        "bLeague": "Wood League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11224,6 +11318,9 @@
         "defenseWins": 0,
         "capital": 250,
         "warPref": "in",
+        "bh": 6,
+        "bTrophies": 1432,
+        "bLeague": "Stone League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11303,6 +11400,9 @@
         "defenseWins": 0,
         "capital": 25466,
         "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1116,
+        "bLeague": "Stone League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11362,6 +11462,9 @@
         "defenseWins": 0,
         "capital": 34234,
         "warPref": "in",
+        "bh": 2,
+        "bTrophies": 40,
+        "bLeague": "Wood League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11410,6 +11513,9 @@
         "defenseWins": 0,
         "capital": 100,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1112,
+        "bLeague": "Stone League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11494,6 +11600,9 @@
         "defenseWins": 0,
         "capital": 0,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 810,
+        "bLeague": "Clay League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11563,6 +11672,9 @@
         "defenseWins": 0,
         "capital": 2400,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1107,
+        "bLeague": "Stone League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11637,6 +11749,9 @@
         "defenseWins": 0,
         "capital": 3870,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 234,
+        "bLeague": "Wood League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11685,6 +11800,9 @@
         "defenseWins": 0,
         "capital": 14385,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1264,
+        "bLeague": "Stone League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11739,6 +11857,9 @@
         "defenseWins": 0,
         "capital": 13328,
         "warPref": "in",
+        "bh": 4,
+        "bTrophies": 851,
+        "bLeague": "Clay League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11787,6 +11908,9 @@
         "defenseWins": 0,
         "capital": 8217,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 810,
+        "bLeague": "Clay League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11841,6 +11965,9 @@
         "defenseWins": 0,
         "capital": 1550,
         "warPref": "in",
+        "bh": 3,
+        "bTrophies": 237,
+        "bLeague": "Wood League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11890,6 +12017,9 @@
         "defenseWins": 0,
         "capital": 0,
         "warPref": "in",
+        "bh": null,
+        "bTrophies": 0,
+        "bLeague": null,
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11949,6 +12079,9 @@
         "defenseWins": 0,
         "capital": 100,
         "warPref": "in",
+        "bh": 2,
+        "bTrophies": 40,
+        "bLeague": "Wood League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12013,6 +12146,9 @@
         "defenseWins": 0,
         "capital": 100,
         "warPref": "in",
+        "bh": 2,
+        "bTrophies": 40,
+        "bLeague": "Wood League V",
         "heroes": [
           {
             "name": "Barbarian King",
