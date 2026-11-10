@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T17:01:30.714Z",
+  "updated": "2026-11-10T17:16:18.623Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3179,7 +3179,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 5,
     "members": 15
   },
   "raids": [
@@ -7007,8 +7007,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "1994|2000000000|2000000000|94700|82594|1216349|1620638|0|1263|206|15",
-      "last": "2026-11-10T16:15:55.641Z",
+      "sig": "1995|2000000000|2000000000|94700|82594|1216349|1620638|0|1263|206|15",
+      "last": "2026-11-10T17:16:17.453Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -7127,8 +7127,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2PCVYQG2": {
-      "sig": "0|27106711|24860854|1500|175|30430|43065|0|21|41|8",
-      "last": "2026-11-09T18:31:29.487Z",
+      "sig": "0|27106711|24860854|1500|175|30430|43065|0|21|42|8",
+      "last": "2026-11-10T17:16:17.453Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
@@ -9020,8 +9020,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:2914818961",
-      "t": "2026-11-10T16:46:03.452Z"
+      "hash": "819:455744737",
+      "t": "2026-11-10T17:16:17.453Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9035,7 +9035,7 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 1994,
+      "given": 1995,
       "received": 203,
       "trophies": 63,
       "profile": {
@@ -10759,7 +10759,7 @@
       "received": 26,
       "trophies": 257,
       "profile": {
-        "level": 41,
+        "level": 42,
         "trophies": 257,
         "best": 293,
         "league": "Skeleton League 3",
@@ -10771,12 +10771,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 11,
+            "level": 12,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 8,
+            "level": 9,
             "max": 110
           }
         ]
@@ -10804,7 +10804,7 @@
       "role": "member",
       "th": 9,
       "given": 307,
-      "received": 574,
+      "received": 575,
       "trophies": 240,
       "profile": {
         "level": 58,
