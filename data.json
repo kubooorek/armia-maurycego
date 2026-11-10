@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T11:46:02.142Z",
+  "updated": "2026-11-10T12:01:30.628Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7227,8 +7227,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "58|579394423|577839165|25150|1522|636760|726415|0|82|128|13",
-      "last": "2026-11-10T11:46:01.012Z",
+      "sig": "58|581406424|579718177|25150|1522|636760|726415|0|82|128|13",
+      "last": "2026-11-10T12:01:30.395Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -9846,8 +9846,8 @@
         "cg": 25150,
         "don": 1522,
         "capLoot": 636760,
-        "gold": 579394423,
-        "elixir": 577839165,
+        "gold": 581406424,
+        "elixir": 579718177,
         "capContrib": 726415,
         "wins": 0
       }
@@ -11028,6 +11028,11 @@
             "name": "Archer Queen",
             "level": 11,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
@@ -11410,8 +11415,8 @@
         ]
       },
       "rush": {
-        "pct": 13.6,
-        "troops": 16.7,
+        "pct": 11.9,
+        "troops": 13.9,
         "spells": 7.7,
         "heroes": 10,
         "top": [
@@ -11436,12 +11441,12 @@
             "need": 4
           },
           {
-            "n": "Gigant",
+            "n": "Burzyciel",
             "lvl": 3,
             "need": 4
           },
           {
-            "n": "Burzyciel",
+            "n": "Zaklęcie szału",
             "lvl": 3,
             "need": 4
           }
@@ -11489,8 +11494,8 @@
         ]
       },
       "rush": {
-        "pct": 13.3,
-        "troops": 21.6,
+        "pct": 11.7,
+        "troops": 18.9,
         "spells": 0,
         "heroes": 0,
         "top": [
@@ -11511,11 +11516,6 @@
           },
           {
             "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 2
           }
@@ -11762,10 +11762,10 @@
       "th": 7,
       "given": 70,
       "received": 40,
-      "trophies": 0,
+      "trophies": 29,
       "profile": {
         "level": 30,
-        "trophies": 0,
+        "trophies": 29,
         "best": 0,
         "league": "Skeleton League 1",
         "warStars": 0,
