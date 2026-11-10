@@ -1,0 +1,27 @@
+name: Uprawnienia Discorda
+
+on:
+  workflow_dispatch:
+    inputs:
+      tryb:
+        description: "podglad = tylko pokaż zmiany, zastosuj = ustaw uprawnienia"
+        required: true
+        default: podglad
+        type: choice
+        options:
+          - podglad
+          - zastosuj
+
+jobs:
+  ustaw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Ustaw uprawnienia kanałów
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          TRYB: ${{ inputs.tryb }}
+        run: node scripts/discord-setup.mjs
