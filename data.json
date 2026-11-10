@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T15:01:37.462Z",
+  "updated": "2026-11-10T15:16:02.314Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3179,7 +3179,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 13
   },
   "raids": [
@@ -7022,8 +7022,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "274|296292955|295746759|14450|382|65320|122825|0|67|106|12",
-      "last": "2026-11-10T14:01:35.577Z",
+      "sig": "276|296292955|295746759|14450|382|65320|122825|0|67|106|12",
+      "last": "2026-11-10T15:16:01.028Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -7207,8 +7207,8 @@
       "since": "2026-10-31T20:31:00.210Z"
     },
     "#YQ0RPRP88": {
-      "sig": "0|4498337|4696255|0|23|0|0|0|0|99|11",
-      "last": "2026-11-09T09:16:18.328Z",
+      "sig": "0|4762484|4838050|0|23|0|0|0|0|99|11",
+      "last": "2026-11-10T15:16:01.028Z",
       "since": "2026-11-03T23:01:23.781Z"
     },
     "#RYPRPQUQJ": {
@@ -8158,6 +8158,26 @@
         9
       ]
     ],
+    "#GVG02VV98": [
+      [
+        20765,
+        0,
+        0,
+        8
+      ],
+      [
+        20766,
+        0,
+        0,
+        8
+      ],
+      [
+        20767,
+        0,
+        0,
+        8
+      ]
+    ],
     "#RYLR2C92V": [
       [
         20765,
@@ -8194,26 +8214,6 @@
       [
         20767,
         14,
-        0,
-        8
-      ]
-    ],
-    "#GVG02VV98": [
-      [
-        20765,
-        0,
-        0,
-        8
-      ],
-      [
-        20766,
-        0,
-        0,
-        8
-      ],
-      [
-        20767,
-        0,
         0,
         8
       ]
@@ -9020,8 +9020,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "837:3105487893",
-      "t": "2026-11-10T15:01:36.175Z"
+      "hash": "819:4228959145",
+      "t": "2026-11-10T15:16:01.028Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9532,7 +9532,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 274,
+      "given": 276,
       "received": 40,
       "trophies": 271,
       "profile": {
@@ -9769,8 +9769,8 @@
       "role": "admin",
       "th": 13,
       "given": 58,
-      "received": 363,
-      "trophies": 182,
+      "received": 365,
+      "trophies": 193,
       "profile": {
         "level": 129,
         "trophies": 182,
@@ -10326,8 +10326,8 @@
         "cg": 0,
         "don": 23,
         "capLoot": 0,
-        "gold": 4498337,
-        "elixir": 4696255,
+        "gold": 4762484,
+        "elixir": 4838050,
         "capContrib": 0,
         "wins": 0
       }
@@ -11007,6 +11007,60 @@
       }
     },
     {
+      "name": "Martini",
+      "tag": "#GVG02VV98",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 59,
+      "profile": {
+        "level": 46,
+        "trophies": 59,
+        "best": 266,
+        "league": "Skeleton League 3",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 6070,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 13,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 1.6,
+        "troops": 2.6,
+        "spells": 0,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 5600,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 34443386,
+        "elixir": 32430178,
+        "capContrib": 6070,
+        "wins": 0
+      }
+    },
+    {
       "name": "SZAR3",
       "tag": "#RYLR2C92V",
       "role": "member",
@@ -11130,60 +11184,6 @@
         "gold": 27846263,
         "elixir": 27161051,
         "capContrib": 400,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Martini",
-      "tag": "#GVG02VV98",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 29,
-      "profile": {
-        "level": 46,
-        "trophies": 29,
-        "best": 266,
-        "league": "Skeleton League 3",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 6070,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 13,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 1.6,
-        "troops": 2.6,
-        "spells": 0,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 5600,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 34443386,
-        "elixir": 32430178,
-        "capContrib": 6070,
         "wins": 0
       }
     },
@@ -11483,7 +11483,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
