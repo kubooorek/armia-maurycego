@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T12:31:16.327Z",
+  "updated": "2026-11-10T12:46:00.107Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -8138,26 +8138,6 @@
         9
       ]
     ],
-    "#RYLR2C92V": [
-      [
-        20765,
-        7,
-        88,
-        8
-      ],
-      [
-        20766,
-        7,
-        88,
-        9
-      ],
-      [
-        20767,
-        7,
-        88,
-        9
-      ]
-    ],
     "#LUQJC2JGY": [
       [
         20765,
@@ -8175,6 +8155,26 @@
         20767,
         0,
         162,
+        9
+      ]
+    ],
+    "#RYLR2C92V": [
+      [
+        20765,
+        7,
+        88,
+        8
+      ],
+      [
+        20766,
+        7,
+        88,
+        9
+      ],
+      [
+        20767,
+        7,
+        88,
         9
       ]
     ],
@@ -9020,8 +9020,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "854:1864815280",
-      "t": "2026-11-10T12:31:15.202Z"
+      "hash": "871:3964848213",
+      "t": "2026-11-10T12:45:59.035Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9257,10 +9257,10 @@
       "th": 13,
       "given": 0,
       "received": 0,
-      "trophies": 67,
+      "trophies": 89,
       "profile": {
         "level": 89,
-        "trophies": 67,
+        "trophies": 89,
         "best": 348,
         "league": "Wizard League 11",
         "warStars": 55,
@@ -10948,64 +10948,16 @@
       }
     },
     {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 9,
-      "given": 20,
-      "received": 52,
-      "trophies": 52,
-      "profile": {
-        "level": 51,
-        "trophies": 52,
-        "best": 390,
-        "league": "Skeleton League 3",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 32450,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 88,
-        "capLoot": 24505,
-        "gold": 68439258,
-        "elixir": 65880127,
-        "capContrib": 32450,
-        "wins": 0
-      }
-    },
-    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
       "th": 9,
       "given": 2,
       "received": 0,
-      "trophies": 40,
+      "trophies": 59,
       "profile": {
         "level": 51,
-        "trophies": 40,
+        "trophies": 59,
         "best": 242,
         "league": "Skeleton League 3",
         "warStars": 0,
@@ -11051,6 +11003,54 @@
         "gold": 26059287,
         "elixir": 25769727,
         "capContrib": 25739,
+        "wins": 0
+      }
+    },
+    {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 9,
+      "given": 20,
+      "received": 52,
+      "trophies": 52,
+      "profile": {
+        "level": 51,
+        "trophies": 52,
+        "best": 390,
+        "league": "Skeleton League 3",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 32450,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 88,
+        "capLoot": 24505,
+        "gold": 68439258,
+        "elixir": 65880127,
+        "capContrib": 32450,
         "wins": 0
       }
     },
