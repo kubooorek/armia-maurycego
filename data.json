@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T02:01:26.511Z",
+  "updated": "2026-11-10T02:15:55.617Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7180,8 +7180,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
-      "sig": "46|21805036|20466481|0|45|0|0|0|0|36|8",
-      "last": "2026-11-10T02:01:26.260Z",
+      "sig": "46|22161499|20872086|0|45|0|0|0|0|36|8",
+      "last": "2026-11-10T02:15:55.376Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
@@ -8296,6 +8296,26 @@
         8
       ]
     ],
+    "#RYUV9V9RC": [
+      [
+        20765,
+        0,
+        45,
+        8
+      ],
+      [
+        20766,
+        0,
+        45,
+        8
+      ],
+      [
+        20767,
+        0,
+        45,
+        8
+      ]
+    ],
     "#R9L08VVCY": [
       [
         20765,
@@ -8373,26 +8393,6 @@
         20767,
         21,
         12,
-        8
-      ]
-    ],
-    "#RYUV9V9RC": [
-      [
-        20765,
-        0,
-        45,
-        8
-      ],
-      [
-        20766,
-        0,
-        45,
-        8
-      ],
-      [
-        20767,
-        0,
-        45,
         8
       ]
     ],
@@ -10581,10 +10581,10 @@
       "th": 10,
       "given": 21,
       "received": 0,
-      "trophies": 0,
+      "trophies": 9,
       "profile": {
         "level": 45,
-        "trophies": 0,
+        "trophies": 9,
         "best": 149,
         "league": "Barbarian League 4",
         "warStars": 0,
@@ -11434,6 +11434,80 @@
       }
     },
     {
+      "name": "samurai024",
+      "tag": "#RYUV9V9RC",
+      "role": "member",
+      "th": 8,
+      "given": 46,
+      "received": 20,
+      "trophies": 25,
+      "profile": {
+        "level": 36,
+        "trophies": 25,
+        "best": 278,
+        "league": "Skeleton League 2",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 0,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 13.3,
+        "troops": 21.6,
+        "spells": 0,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Barbarzyńca",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Łuczniczka",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Goblin",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 45,
+        "capLoot": 0,
+        "gold": 22161499,
+        "elixir": 20872086,
+        "capContrib": 0,
+        "wins": 0
+      }
+    },
+    {
       "name": "smouki",
       "tag": "#R9L08VVCY",
       "role": "member",
@@ -11654,80 +11728,6 @@
         "gold": 27392649,
         "elixir": 25694905,
         "capContrib": 13328,
-        "wins": 0
-      }
-    },
-    {
-      "name": "samurai024",
-      "tag": "#RYUV9V9RC",
-      "role": "member",
-      "th": 8,
-      "given": 46,
-      "received": 20,
-      "trophies": 0,
-      "profile": {
-        "level": 36,
-        "trophies": 0,
-        "best": 278,
-        "league": "Skeleton League 2",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 0,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 1,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 13.6,
-        "troops": 22.2,
-        "spells": 0,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Barbarzyńca",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Łuczniczka",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Goblin",
-            "lvl": 2,
-            "need": 4
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 45,
-        "capLoot": 0,
-        "gold": 21805036,
-        "elixir": 20466481,
-        "capContrib": 0,
         "wins": 0
       }
     },
