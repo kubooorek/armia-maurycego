@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T17:16:18.623Z",
+  "updated": "2026-11-10T17:31:18.077Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7117,8 +7117,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "307|78018531|76492574|2400|754|14765|35286|0|4|58|9",
-      "last": "2026-11-10T17:01:30.474Z",
+      "sig": "307|78440531|76914574|2400|754|14765|35286|0|4|59|9",
+      "last": "2026-11-10T17:31:16.867Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -8058,26 +8058,6 @@
         10
       ]
     ],
-    "#R2PCVYQG2": [
-      [
-        20765,
-        21,
-        175,
-        8
-      ],
-      [
-        20766,
-        21,
-        175,
-        8
-      ],
-      [
-        20767,
-        21,
-        175,
-        8
-      ]
-    ],
     "#GVGRVCQJR": [
       [
         20765,
@@ -8096,6 +8076,26 @@
         4,
         754,
         9
+      ]
+    ],
+    "#R2PCVYQG2": [
+      [
+        20765,
+        21,
+        175,
+        8
+      ],
+      [
+        20766,
+        21,
+        175,
+        8
+      ],
+      [
+        20767,
+        21,
+        175,
+        8
       ]
     ],
     "#R92C0U8UU": [
@@ -9020,8 +9020,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:455744737",
-      "t": "2026-11-10T17:16:17.453Z"
+      "hash": "819:874595257",
+      "t": "2026-11-10T17:31:16.867Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10068,7 +10068,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 27,
+            "level": 28,
             "max": 110
           },
           {
@@ -10751,6 +10751,59 @@
       }
     },
     {
+      "name": "♡karo♡lina♡",
+      "tag": "#GVGRVCQJR",
+      "role": "member",
+      "th": 9,
+      "given": 307,
+      "received": 575,
+      "trophies": 320,
+      "profile": {
+        "level": 59,
+        "trophies": 320,
+        "best": 349,
+        "league": "Skeleton League 3",
+        "warStars": 4,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 35286,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 25,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 2400,
+        "don": 754,
+        "capLoot": 14765,
+        "gold": 78440531,
+        "elixir": 76914574,
+        "capContrib": 35286,
+        "wins": 0
+      }
+    },
+    {
       "name": "Riczard",
       "tag": "#R2PCVYQG2",
       "role": "member",
@@ -10795,59 +10848,6 @@
         "gold": 27106711,
         "elixir": 24860854,
         "capContrib": 43065,
-        "wins": 0
-      }
-    },
-    {
-      "name": "♡karo♡lina♡",
-      "tag": "#GVGRVCQJR",
-      "role": "member",
-      "th": 9,
-      "given": 307,
-      "received": 575,
-      "trophies": 240,
-      "profile": {
-        "level": 58,
-        "trophies": 240,
-        "best": 349,
-        "league": "Skeleton League 3",
-        "warStars": 4,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 35286,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 25,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 10,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 2400,
-        "don": 754,
-        "capLoot": 14765,
-        "gold": 78018531,
-        "elixir": 76492574,
-        "capContrib": 35286,
         "wins": 0
       }
     },
@@ -11435,9 +11435,9 @@
         ]
       },
       "rush": {
-        "pct": 41.6,
+        "pct": 41.7,
         "troops": 21.2,
-        "spells": 63.2,
+        "spells": 61.9,
         "heroes": 63.3,
         "top": [
           {
@@ -11466,7 +11466,7 @@
             "need": 4
           },
           {
-            "n": "Zaklęcie trucizny",
+            "n": "Zaklęcie skoku",
             "lvl": 1,
             "need": 2
           }
