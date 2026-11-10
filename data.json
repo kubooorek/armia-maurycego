@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T00:16:11.322Z",
+  "updated": "2026-11-10T00:45:58.595Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -8076,6 +8076,26 @@
         8
       ]
     ],
+    "#R9GPGL0QJ": [
+      [
+        20765,
+        6,
+        76,
+        8
+      ],
+      [
+        20766,
+        6,
+        76,
+        8
+      ],
+      [
+        20767,
+        6,
+        76,
+        8
+      ]
+    ],
     "#GVGRVCQJR": [
       [
         20765,
@@ -8113,26 +8133,6 @@
         20767,
         15,
         30,
-        8
-      ]
-    ],
-    "#R9GPGL0QJ": [
-      [
-        20765,
-        6,
-        76,
-        8
-      ],
-      [
-        20766,
-        6,
-        76,
-        8
-      ],
-      [
-        20767,
-        6,
-        76,
         8
       ]
     ],
@@ -10791,6 +10791,54 @@
       }
     },
     {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 8,
+      "given": 3,
+      "received": 86,
+      "trophies": 205,
+      "profile": {
+        "level": 47,
+        "trophies": 205,
+        "best": 300,
+        "league": "Skeleton League 3",
+        "warStars": 6,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16881,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 16,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 76,
+        "capLoot": 12040,
+        "gold": 34354882,
+        "elixir": 33268392,
+        "capContrib": 16881,
+        "wins": 0
+      }
+    },
+    {
       "name": "♡karo♡lina♡",
       "tag": "#GVGRVCQJR",
       "role": "member",
@@ -10883,54 +10931,6 @@
         "gold": 15853998,
         "elixir": 14964493,
         "capContrib": 15905,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 8,
-      "given": 3,
-      "received": 86,
-      "trophies": 165,
-      "profile": {
-        "level": 47,
-        "trophies": 165,
-        "best": 300,
-        "league": "Skeleton League 3",
-        "warStars": 6,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16881,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 16,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 76,
-        "capLoot": 12040,
-        "gold": 34354882,
-        "elixir": 33268392,
-        "capContrib": 16881,
         "wins": 0
       }
     },
