@@ -95,6 +95,7 @@ for (const m of members) {
     attackWins: p.attackWins, defenseWins: p.defenseWins,
     capital: p.clanCapitalContributions ?? 0,
     warPref: p.warPreference ?? null,
+    bh: p.builderHallLevel ?? null, bTrophies: p.builderBaseTrophies ?? null, bLeague: p.builderBaseLeague?.name ?? null,
     heroes: (p.heroes || []).filter(h => h.village === "home")
       .map(h => ({ name: h.name, level: h.level, max: h.maxLevel }))
   };
@@ -1339,7 +1340,30 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
         const x = app.id ? await call(`/applications/${app.id}/guilds/${g.id}/commands`, { method: "PUT", body: JSON.stringify(cmds) }) : null;
         if (x?.ok) { oneShots.push("cmds-v1"); console.log("Komendy /link i /unlink zarejestrowane."); } else console.warn("Komendy:", x?.status, x && (await x.text()).slice(0, 200));
       }
-      const slabe = new Set(srv.slabe || []);   // połączone samym tagiem (bez tokenu) – maksymalnie Member
+      const slabe = new Set(srv.slabe || []);
+      // role „z gry” (dawniej od ClashPerka): TH 12, BH 5, „Valkyrie League”, liga bazy budowniczego (Copper…), zakres trofeów
+      const BLIGI = ["wood", "clay", "stone", "copper", "brass", "iron", "steel", "titanium", "platinum", "emerald", "ruby", "diamond"];
+      const liczba = x => Number(String(x).replace(/[^\d]/g, ""));
+      const LIGI = /^(skeleton|barbarian|archer|wizard|valkyrie|witch|golem|p\.?e\.?k\.?k\.?a|titan|dragon|electro|legend|unranked)( \d)?$/i;
+      let bazyLig = new Set();
+      // liga gracza: "Legend League 2" → "legend 2" (jeśli jest taka rola), inaczej "legend"; brak ligi → "unranked"
+      const ligaGracza = p => {
+        if (!p?.league || /^unranked/i.test(p.league)) return "unranked";
+        const full = p.league.replace(/ League/i, "").trim().toLowerCase(), first = full.replace(/ \d+$/, "");
+        return bazyLig.has(full) ? full : first;
+      };
+      const gra = [];
+      for (const r of roles) {
+        if (r.managed) continue;
+        const n = r.name.replace(/[^\p{L}\p{N}.,+\-–— ]/gu, "").trim(); let x;
+        if ((x = n.match(/^TH ?(\d{1,2})$/i))) gra.push({ id: r.id, name: r.name, test: (m, p) => m.th === +x[1] });
+        else if ((x = n.match(/^BH ?(\d{1,2})$/i))) gra.push({ id: r.id, name: r.name, test: (m, p) => p?.bh === +x[1] });
+        else if (/ League$/i.test(n) || LIGI.test(n)) { const base = n.replace(/ League$/i, "").toLowerCase(); gra.push({ id: r.id, name: r.name, liga: base, test: (m, p) => ligaGracza(p) === base }); }
+        else if (BLIGI.includes(n.toLowerCase())) { const base = n.toLowerCase(); gra.push({ id: r.id, name: r.name, test: (m, p) => !!p?.bLeague && p.bLeague.split(" ")[0].toLowerCase() === base }); }
+        else if ((x = n.match(/^([\d.,\s]+?)\s*[–—-]\s*([\d.,\s]+)$/))) { const lo = liczba(x[1]), hi = liczba(x[2]); gra.push({ id: r.id, name: r.name, test: (m, p) => (p?.trophies ?? -1) >= lo && (p?.trophies ?? -1) <= hi }); }
+        else if ((x = n.match(/^([\d.,\s]+)\+$/))) { const lo = liczba(x[1]); gra.push({ id: r.id, name: r.name, test: (m, p) => (p?.trophies ?? -1) >= lo }); }
+      }
+      bazyLig = new Set(gra.filter(x => x.liga).map(x => x.liga));   // połączone samym tagiem (bez tokenu) – maksymalnie Member
       const RANK = { member: 0, admin: 1, coLeader: 2, leader: 3 };
       // jeden Discord może mieć kilka kont w klanie: bierzemy najwyższą rangę, nick z najwyższego TH
       const byUser = {};
@@ -1363,6 +1387,13 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
             const x = await call(`/guilds/${g.id}/members/${uid}/roles/${rid}`, { method: "DELETE" });
             if (x.ok) rangiLog.push(`- ${name}: ${roles.find(q => q.id === rid).name}`); else console.warn("Ranga -", name, x.status);
           }
+        }
+        // role z gry – według głównego konta (najwyższy ratusz)
+        const main = [...inClan].sort((a, b) => b.th - a.th)[0];
+        for (const gr of gra) {
+          const chce = !!main && gr.test(main, main.profile);
+          if (chce && !has.has(gr.id)) { const x = await call(`/guilds/${g.id}/members/${uid}/roles/${gr.id}`, { method: "PUT" }); if (x.ok) rangiLog.push(`+ ${name}: ${gr.name}`); }
+          else if (!chce && has.has(gr.id)) { const x = await call(`/guilds/${g.id}/members/${uid}/roles/${gr.id}`, { method: "DELETE" }); if (x.ok) rangiLog.push(`- ${name}: ${gr.name}`); }
         }
         // nick z gry (właścicielowi serwera Discord nie pozwala zmienić nicku)
         const nick = inClan.sort((a, b) => b.th - a.th)[0]?.name;
