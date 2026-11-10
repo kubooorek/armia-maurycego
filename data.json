@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T07:46:00.374Z",
+  "updated": "2026-11-10T08:01:27.126Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7225,8 +7225,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "58|566201003|564443246|25150|1522|636760|726415|0|82|128|13",
-      "last": "2026-11-10T07:45:59.160Z",
+      "sig": "58|575801058|573954592|25150|1522|636760|726415|0|82|128|13",
+      "last": "2026-11-10T08:01:26.972Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -9787,7 +9787,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 38,
+            "level": 39,
             "max": 110
           },
           {
@@ -9803,10 +9803,10 @@
         ]
       },
       "rush": {
-        "pct": 30.6,
+        "pct": 30.3,
         "troops": 19,
         "spells": 34.8,
-        "heroes": 37.6,
+        "heroes": 37.1,
         "top": [
           {
             "n": "Lodowy golem",
@@ -9844,8 +9844,8 @@
         "cg": 25150,
         "don": 1522,
         "capLoot": 636760,
-        "gold": 566201003,
-        "elixir": 564443246,
+        "gold": 575801058,
+        "elixir": 573954592,
         "capContrib": 726415,
         "wins": 0
       }
@@ -11445,10 +11445,10 @@
       "th": 8,
       "given": 46,
       "received": 20,
-      "trophies": 25,
+      "trophies": 55,
       "profile": {
         "level": 36,
-        "trophies": 25,
+        "trophies": 55,
         "best": 278,
         "league": "Skeleton League 2",
         "warStars": 0,
