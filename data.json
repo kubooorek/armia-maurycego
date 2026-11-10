@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T22:31:35.367Z",
+  "updated": "2026-11-10T22:45:56.931Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7669,17 +7669,6 @@
       "t": "2026-11-10T21:45:56.453Z"
     },
     {
-      "id": "20261110T211034.000Z:#LQVRCRUYR:steal",
-      "type": "steal",
-      "detail": "nr 18, zanim Mimbosz zaatakował(a) swój numer",
-      "tag": "#LQVRCRUYR",
-      "name": "Barnes",
-      "war": "20261110T211034.000Z",
-      "end": "20261111T211034.000Z",
-      "enemy": "kalmado team",
-      "t": "2026-11-10T21:31:21.084Z"
-    },
-    {
       "id": "20261110T211034.000Z:#2JGYURUQJ:own",
       "type": "own",
       "detail": "nr 6 zamiast nr 2",
@@ -7766,28 +7755,6 @@
       "end": "20261101T171000.000Z",
       "enemy": "بچهای لارج",
       "t": "2026-10-31T21:01:14.472Z"
-    },
-    {
-      "id": "20261031T171000.000Z:#RY0QPVCCY:own",
-      "type": "own",
-      "detail": "nr 14 zamiast nr 17",
-      "tag": "#RY0QPVCCY",
-      "name": "Mimbosz",
-      "war": "20261031T171000.000Z",
-      "end": "20261101T171000.000Z",
-      "enemy": "بچهای لارج",
-      "t": "2026-10-31T18:31:05.092Z"
-    },
-    {
-      "id": "20261031T171000.000Z:#LQVRCRUYR:own",
-      "type": "own",
-      "detail": "nr 17 zamiast nr 14",
-      "tag": "#LQVRCRUYR",
-      "name": "Barnes",
-      "war": "20261031T171000.000Z",
-      "end": "20261101T171000.000Z",
-      "enemy": "بچهای لارج",
-      "t": "2026-10-31T18:31:05.092Z"
     },
     {
       "id": "20261031T171000.000Z:#R0VJLRGQ0:own",
@@ -9813,8 +9780,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1589:51615687",
-      "t": "2026-11-10T22:31:30.044Z"
+      "hash": "1589:1650521644",
+      "t": "2026-11-10T22:45:54.890Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10699,7 +10666,7 @@
         "capital": 92486,
         "warPref": "in",
         "bh": 7,
-        "bTrophies": 2145,
+        "bTrophies": 2199,
         "bLeague": "Brass League III",
         "heroes": [
           {
@@ -10725,8 +10692,8 @@
         ]
       },
       "rush": {
-        "pct": 18.1,
-        "troops": 7,
+        "pct": 18,
+        "troops": 6.9,
         "spells": 10.2,
         "heroes": 33,
         "top": [
@@ -11844,7 +11811,7 @@
         "capital": 16881,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1224,
+        "bTrophies": 1228,
         "bLeague": "Stone League III",
         "heroes": [
           {
