@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T00:45:58.595Z",
+  "updated": "2026-11-10T01:01:26.537Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7220,8 +7220,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "0|2370778|2133072|0|0|0|2400|0|0|23|8",
-      "last": "2026-11-09T21:16:02.851Z",
+      "sig": "0|2370778|2133072|0|0|0|2400|0|0|24|8",
+      "last": "2026-11-10T01:01:25.342Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -9018,8 +9018,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "766:3486373496",
-      "t": "2026-11-10T00:01:41.891Z"
+      "hash": "766:618655636",
+      "t": "2026-11-10T01:01:25.342Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10345,7 +10345,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
@@ -10355,16 +10355,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 13,
+            "level": 14,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 27.9,
+        "pct": 27.4,
         "troops": 37.2,
         "spells": 25.8,
-        "heroes": 18.6,
+        "heroes": 17.1,
         "top": [
           {
             "n": "Minion",
@@ -11442,7 +11442,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 23,
+        "level": 24,
         "trophies": 0,
         "best": 0,
         "league": "Skeleton League 2",
@@ -11460,8 +11460,8 @@
         ]
       },
       "rush": {
-        "pct": 38.6,
-        "troops": 37.8,
+        "pct": 36.8,
+        "troops": 35.1,
         "spells": 10,
         "heroes": 70,
         "top": [
@@ -11481,17 +11481,17 @@
             "need": 4
           },
           {
-            "n": "Balon",
-            "lvl": 2,
-            "need": 4
-          },
-          {
             "n": "Uzdrowicielka",
             "lvl": 1,
             "need": 2
           },
           {
             "n": "Smok",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Minion",
             "lvl": 1,
             "need": 2
           }
