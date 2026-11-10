@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T22:45:56.931Z",
+  "updated": "2026-11-10T22:51:36.324Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -47,7 +47,7 @@
         {
           "pos": 6,
           "th": 11,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 7,
@@ -97,7 +97,7 @@
         {
           "pos": 16,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 17,
@@ -127,7 +127,7 @@
         {
           "pos": 22,
           "th": 8,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 23,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 3,
-      "pct": 4,
-      "attacks": 1,
+      "stars": 10,
+      "pct": 14.12,
+      "attacks": 4,
       "bases": [
         {
           "pos": 1,
@@ -710,6 +710,36 @@
         "stars": 3,
         "pct": 100,
         "order": 15
+      },
+      {
+        "by": "DRAZUU3",
+        "bpos": 16,
+        "th": 8,
+        "tpos": 16,
+        "tname": "Barnes",
+        "stars": 3,
+        "pct": 100,
+        "order": 27
+      },
+      {
+        "by": "♍ʏᴀsʜɪʀᴏ♍",
+        "bpos": 6,
+        "th": 12,
+        "tpos": 6,
+        "tname": "VipeR",
+        "stars": 3,
+        "pct": 100,
+        "order": 28
+      },
+      {
+        "by": "DRAZUU'5",
+        "bpos": 22,
+        "th": 6,
+        "tpos": 22,
+        "tname": "threeten",
+        "stars": 1,
+        "pct": 53,
+        "order": 29
       }
     ]
   },
@@ -4028,10 +4058,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 57,
-      "them": 3,
+      "them": 10,
       "final": false,
       "pct": 78.36,
-      "themPct": 4,
+      "themPct": 14.12,
       "themBases": [
         {
           "pos": 1,
@@ -8321,6 +8351,15 @@
           "cap": 0
         },
         {
+          "name": "Cwel123",
+          "tag": "#RPR0L809R",
+          "score": 207,
+          "stars": 19,
+          "don": 5,
+          "cg": 0,
+          "cap": 8030
+        },
+        {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
           "score": 203,
@@ -8337,15 +8376,6 @@
           "don": 282,
           "cg": 0,
           "cap": 8055
-        },
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "score": 177,
-          "stars": 19,
-          "don": 5,
-          "cg": 0,
-          "cap": 8030
         },
         {
           "name": "MAQOS",
@@ -9774,14 +9804,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 26,
+    "w:20261110T211034.000Z": 29,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1589:1650521644",
-      "t": "2026-11-10T22:45:54.890Z"
+      "hash": "1593:1959900199",
+      "t": "2026-11-10T22:51:27.917Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -9790,9 +9820,56 @@
     }
   },
   "rekrutacjaWeek": "2026-46",
+  "karyPosted": {
+    "20261031T171000.000Z:#GLV9998PC:missed": {
+      "name": "maati",
+      "war": "20261031T171000.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261031T171000.000Z:#RYUV9V9RC:missed": {
+      "name": "samurai024",
+      "war": "20261031T171000.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261031T171000.000Z:#LUQJC2JGY:missed": {
+      "name": "Darui",
+      "war": "20261031T171000.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261031T171000.000Z:#R8V9U9VLJ:missed": {
+      "name": "zuzia",
+      "war": "20261031T171000.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261031T171000.000Z:#R9QQPG9JP:steal": {
+      "name": "GoldBelt",
+      "war": "20261031T171000.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261031T171000.000Z:#R0VJLRGQ0:own": {
+      "name": "Marsyllia",
+      "war": "20261031T171000.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261110T211034.000Z:#GJJ90QGVQ:steal": {
+      "name": "Toster290",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261110T211034.000Z:#R9GPGL0QJ:steal": {
+      "name": "erykos",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261110T211034.000Z:#2JGYURUQJ:own": {
+      "name": "To ja",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-10T22:51:27.917Z"
+    }
+  },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "483:2719726962"
+    "hash": "484:1842984274"
   },
   "members": [
     {
@@ -11811,7 +11888,7 @@
         "capital": 16881,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1228,
+        "bTrophies": 1252,
         "bLeague": "Stone League III",
         "heroes": [
           {
