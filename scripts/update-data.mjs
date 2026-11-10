@@ -1326,6 +1326,7 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
       const find = (...k) => roles.find(r => !r.managed && k.includes(nrm(r.name)));
       const RR = { leader: find("leader", "lider", "wodz"), coLeader: find("co-leader", "co leader", "wspollider"), admin: find("elder", "starszy"), member: find("member", "czlonek") };
       const klanowe = Object.values(RR).filter(Boolean).map(r => r.id);
+      const GOSC = find("guest", "gosc");   // połączony, ale konto spoza klanu
       // jednorazowo: rejestracja komend /link i /unlink na serwerze
       if (!oneShots.includes("cmds-v1")) {
         const app = await (await call("/oauth2/applications/@me")).json();
@@ -1387,6 +1388,11 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
             const x = await call(`/guilds/${g.id}/members/${uid}/roles/${rid}`, { method: "DELETE" });
             if (x.ok) rangiLog.push(`- ${name}: ${roles.find(q => q.id === rid).name}`); else console.warn("Ranga -", name, x.status);
           }
+        }
+        // Guest: połączył konto, ale żadnego nie ma w klanie
+        if (GOSC) {
+          if (!top && !has.has(GOSC.id)) { const x = await call(`/guilds/${g.id}/members/${uid}/roles/${GOSC.id}`, { method: "PUT" }); if (x.ok) rangiLog.push(`+ ${name}: ${GOSC.name}`); }
+          else if (top && has.has(GOSC.id)) { const x = await call(`/guilds/${g.id}/members/${uid}/roles/${GOSC.id}`, { method: "DELETE" }); if (x.ok) rangiLog.push(`- ${name}: ${GOSC.name}`); }
         }
         // role z gry – według głównego konta (najwyższy ratusz)
         const main = [...inClan].sort((a, b) => b.th - a.th)[0];
