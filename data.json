@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T19:48:10.672Z",
+  "updated": "2026-11-10T19:58:19.154Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7097,13 +7097,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|108534106|91976362|5100|336|7810|20770|0|13|55|10",
-      "last": "2026-11-10T15:01:36.175Z",
+      "sig": "31|108534106|91976362|5100|336|7810|20770|0|13|56|10",
+      "last": "2026-11-10T19:58:14.044Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|68439258|65880127|10050|88|24505|32450|0|7|51|9",
-      "last": "2026-11-10T12:31:15.202Z",
+      "sig": "20|69205258|66646127|10050|88|24505|32450|0|7|51|9",
+      "last": "2026-11-10T19:58:14.044Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -7142,8 +7142,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|39975487|38216364|5600|0|0|6070|0|0|46|9",
-      "last": "2026-11-10T19:46:07.433Z",
+      "sig": "0|41697839|39829841|5600|0|0|6070|0|0|46|9",
+      "last": "2026-11-10T19:58:14.044Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -7192,8 +7192,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|5709095|5496417|0|0|0|1550|0|0|27|7",
-      "last": "2026-11-10T15:31:23.297Z",
+      "sig": "0|6009508|6094447|0|0|0|1550|0|0|27|7",
+      "last": "2026-11-10T19:58:14.044Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -7227,8 +7227,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "88|610179402|610112097|25150|1552|636760|742040|0|82|129|13",
-      "last": "2026-11-10T19:48:08.665Z",
+      "sig": "88|610201506|610140897|25150|1552|636760|742040|0|82|129|13",
+      "last": "2026-11-10T19:58:14.044Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8138,6 +8138,26 @@
         8
       ]
     ],
+    "#RYLR2C92V": [
+      [
+        20765,
+        7,
+        88,
+        8
+      ],
+      [
+        20766,
+        7,
+        88,
+        9
+      ],
+      [
+        20767,
+        7,
+        88,
+        9
+      ]
+    ],
     "#LUQJC2JGY": [
       [
         20765,
@@ -8175,26 +8195,6 @@
         20767,
         0,
         0,
-        9
-      ]
-    ],
-    "#RYLR2C92V": [
-      [
-        20765,
-        7,
-        88,
-        8
-      ],
-      [
-        20766,
-        7,
-        88,
-        9
-      ],
-      [
-        20767,
-        7,
-        88,
         9
       ]
     ],
@@ -9021,8 +9021,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:4275558828",
-      "t": "2026-11-10T19:48:08.665Z"
+      "hash": "819:3441480954",
+      "t": "2026-11-10T19:58:14.044Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9038,10 +9038,10 @@
       "th": 15,
       "given": 2026,
       "received": 203,
-      "trophies": 63,
+      "trophies": 72,
       "profile": {
         "level": 206,
-        "trophies": 63,
+        "trophies": 72,
         "best": 5066,
         "league": "Titan League 25",
         "warStars": 1263,
@@ -9877,8 +9877,8 @@
         "cg": 25150,
         "don": 1552,
         "capLoot": 636760,
-        "gold": 610179402,
-        "elixir": 610112097,
+        "gold": 610201506,
+        "elixir": 610140897,
         "capContrib": 742040,
         "wins": 0
       }
@@ -10736,7 +10736,7 @@
       "received": 186,
       "trophies": 8,
       "profile": {
-        "level": 55,
+        "level": 56,
         "trophies": 8,
         "best": 386,
         "league": "Barbarian League 4",
@@ -10767,8 +10767,8 @@
         ]
       },
       "rush": {
-        "pct": 24.7,
-        "troops": 5.2,
+        "pct": 24.1,
+        "troops": 3.9,
         "spells": 7.4,
         "heroes": 52.9,
         "top": [
@@ -10776,11 +10776,6 @@
             "n": "Królowa Łuczniczek",
             "lvl": 8,
             "need": 30
-          },
-          {
-            "n": "Walkiria",
-            "lvl": 2,
-            "need": 4
           },
           {
             "n": "Lawowy ogar",
@@ -10801,6 +10796,11 @@
             "n": "Książę Minionów",
             "lvl": 6,
             "need": 10
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 19,
+            "need": 30
           }
         ]
       },
@@ -11024,6 +11024,57 @@
       }
     },
     {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 9,
+      "given": 20,
+      "received": 52,
+      "trophies": 132,
+      "profile": {
+        "level": 51,
+        "trophies": 132,
+        "best": 390,
+        "league": "Skeleton League 3",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 32450,
+        "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1368,
+        "bLeague": "Stone League II",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 88,
+        "capLoot": 24505,
+        "gold": 69205258,
+        "elixir": 66646127,
+        "capContrib": 32450,
+        "wins": 0
+      }
+    },
+    {
       "name": "Darui",
       "tag": "#LUQJC2JGY",
       "role": "member",
@@ -11120,8 +11171,8 @@
         ]
       },
       "rush": {
-        "pct": 21,
-        "troops": 21.4,
+        "pct": 20,
+        "troops": 19.6,
         "spells": 15.8,
         "heroes": 23.3,
         "top": [
@@ -11161,60 +11212,9 @@
         "cg": 5600,
         "don": 0,
         "capLoot": 0,
-        "gold": 39975487,
-        "elixir": 38216364,
+        "gold": 41697839,
+        "elixir": 39829841,
         "capContrib": 6070,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 9,
-      "given": 20,
-      "received": 52,
-      "trophies": 52,
-      "profile": {
-        "level": 51,
-        "trophies": 52,
-        "best": 390,
-        "league": "Skeleton League 3",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 32450,
-        "warPref": "in",
-        "bh": 4,
-        "bTrophies": 1368,
-        "bLeague": "Stone League II",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 88,
-        "capLoot": 24505,
-        "gold": 68439258,
-        "elixir": 65880127,
-        "capContrib": 32450,
         "wins": 0
       }
     },
@@ -11247,7 +11247,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 2,
+            "level": 3,
             "max": 110
           }
         ]
@@ -11966,7 +11966,7 @@
         "capital": 1550,
         "warPref": "in",
         "bh": 3,
-        "bTrophies": 237,
+        "bTrophies": 277,
         "bLeague": "Wood League III",
         "heroes": [
           {
@@ -11977,14 +11977,14 @@
         ]
       },
       "rush": {
-        "pct": 6.3,
+        "pct": 3.1,
         "troops": 0,
-        "spells": 20,
+        "spells": 10,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie szału",
-            "lvl": 1,
+            "lvl": 2,
             "need": 3
           }
         ]
@@ -11993,8 +11993,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 5709095,
-        "elixir": 5496417,
+        "gold": 6009508,
+        "elixir": 6094447,
         "capContrib": 1550,
         "wins": 0
       }
