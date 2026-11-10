@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T08:01:27.126Z",
+  "updated": "2026-11-10T08:15:58.783Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7215,8 +7215,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|140347541|134881807|0|0|0|9510|0|0|50|11",
-      "last": "2026-11-10T07:45:59.160Z",
+      "sig": "0|141832551|136262851|0|0|0|9510|0|0|50|11",
+      "last": "2026-11-10T08:15:57.685Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -7876,6 +7876,26 @@
         9
       ]
     ],
+    "#R0V8QGLJQ": [
+      [
+        20765,
+        0,
+        0,
+        11
+      ],
+      [
+        20766,
+        0,
+        0,
+        11
+      ],
+      [
+        20767,
+        0,
+        0,
+        11
+      ]
+    ],
     "#G8VGC2VRL": [
       [
         20765,
@@ -7913,26 +7933,6 @@
         20767,
         0,
         23,
-        11
-      ]
-    ],
-    "#R0V8QGLJQ": [
-      [
-        20765,
-        0,
-        0,
-        11
-      ],
-      [
-        20766,
-        0,
-        0,
-        11
-      ],
-      [
-        20767,
-        0,
-        0,
         11
       ]
     ],
@@ -9018,8 +9018,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "801:821253384",
-      "t": "2026-11-10T07:45:59.160Z"
+      "hash": "801:2435395616",
+      "t": "2026-11-10T08:15:57.685Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10099,6 +10099,90 @@
       }
     },
     {
+      "name": "TTomson",
+      "tag": "#R0V8QGLJQ",
+      "role": "member",
+      "th": 11,
+      "given": 0,
+      "received": 20,
+      "trophies": 21,
+      "profile": {
+        "level": 50,
+        "trophies": 21,
+        "best": 275,
+        "league": "Barbarian League 6",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 9510,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 13,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 18,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 10,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 49.8,
+        "troops": 41.8,
+        "spells": 41.2,
+        "heroes": 59,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 6
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie zamrożenia",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie trucizny",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 13,
+            "need": 40
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 6
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 141832551,
+        "elixir": 136262851,
+        "capContrib": 9510,
+        "wins": 0
+      }
+    },
+    {
       "name": "Kojak",
       "tag": "#G8VGC2VRL",
       "role": "admin",
@@ -10237,90 +10321,6 @@
         "gold": 4498337,
         "elixir": 4696255,
         "capContrib": 0,
-        "wins": 0
-      }
-    },
-    {
-      "name": "TTomson",
-      "tag": "#R0V8QGLJQ",
-      "role": "member",
-      "th": 11,
-      "given": 0,
-      "received": 20,
-      "trophies": 0,
-      "profile": {
-        "level": 50,
-        "trophies": 0,
-        "best": 275,
-        "league": "Barbarian League 6",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 9510,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 13,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 18,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 10,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 49.8,
-        "troops": 41.8,
-        "spells": 41.2,
-        "heroes": 59,
-        "top": [
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 6
-          },
-          {
-            "n": "Walkiria",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie zamrożenia",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie trucizny",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 13,
-            "need": 40
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
-            "need": 6
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 140347541,
-        "elixir": 134881807,
-        "capContrib": 9510,
         "wins": 0
       }
     },
