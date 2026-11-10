@@ -810,6 +810,7 @@ const POSTY = {
   aktywnosc: true,         // tablica aktywności graczy (#statystyki-klanu)
   donacje: true,           // donacje tygodnia (pon.) i miesiąca (#statystyki-klanu)
   osiagniecia: true,       // poziom klanu, ligi, serie wygranych (#ogłoszenia)
+  rangiDiscord: true,      // role Leader/Co-Leader/Elder/Member i nick z gry dla połączonych przez stronę
   wymagania: true          // stała, aktualizowana wiadomość z wymaganiami (#wymagania-klanu)
 };
 if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY || WEBHOOK_POWITANIA) && !firstRun) {
@@ -818,9 +819,9 @@ if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY || WEBHOOK_POWITA
   const freshEvents = events.filter(e => e.t === events[0]?.t && !(old.events || []).some(o => o.t === e.t && o.name === e.name && o.type === e.type));
   for (const e of freshEvents.reverse()) {
     if (e.type === "join" && POSTY.dolaczenie) await post(`👋 **Witamy w Armii Maurycego, ${e.name}!** (TH${e.th}) 🛡️\n` +
-      `• Przeczytaj <#1564012902996770886> i **#wymagania-klanu**\n` +
-      `• Połącz konto z Discordem komendą \`/link create\`\n` +
-      `• Na stronie klanu zaloguj się i w **Moim panelu** kliknij **Połącz Discord**, to robot przypomni Ci na priv o ataku w wojnie\n` +
+      `• Przeczytaj <#1564012902996770886> i <#1564015161419767818>\n` +
+      `• **Odblokuj serwer:** wpisz na <#1564035430817730570> komendę \`/link\` i swój tag z gry. Dostaniesz rangę z klanu i nick z gry, ` +
+      `a robot przypomni Ci na priv o ataku w wojnie 🔔\n` +
       `Powodzenia i do zobaczenia na wojnach! ⚔️ ${SITE}`, WEBHOOK_POWITANIA);
     if (e.type === "join" && WEBHOOK_RUCHY) await post(`➕ **${e.name}** dołączył(a) do klanu (TH${e.th}).`, WEBHOOK_RUCHY);
     if (e.type === "th" && POSTY.ratusz && WEBHOOK_RUCHY) await post(`🏰 **${e.name}** ulepszył(a) ratusz: TH${e.from} → **TH${e.to}**! Gratulacje! 🎉`, WEBHOOK_RUCHY);
@@ -1299,6 +1300,82 @@ if (BOT && srv && srv.discord && !firstRun) {
     }
   }
 }
+/* ---------- Rangi i nicki na Discordzie (zamiast ClashPerka) ----------
+   Kto połączył Discorda w „Moim panelu” na stronie (logowanie tokenem z gry = konto na pewno jego),
+   dostaje rolę według rangi w klanie (Leader / Co-Leader / Elder / Member) i nick z gry.
+   Kto wyjdzie z klanu, traci role klanowe. Dotyczy tylko osób połączonych przez stronę. */
+let rangiLog = [];
+if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
+  const DAPI = "https://discord.com/api/v10", H = { Authorization: `Bot ${BOT}`, "Content-Type": "application/json", "X-Audit-Log-Reason": "Ranga z klanu (robot)" };
+  const call = async (path, opt = {}) => {
+    for (let i = 0; i < 4; i++) {
+      const r = await fetch(DAPI + path, { ...opt, headers: H });
+      if (r.status === 429) { const j = await r.json().catch(() => ({})); await new Promise(res => setTimeout(res, (j.retry_after || 1) * 1000 + 200)); continue; }
+      return r;
+    }
+    return { ok: false, status: 429, json: async () => ({}), text: async () => "" };
+  };
+  try {
+    const gs = await (await call("/users/@me/guilds")).json();
+    const g = Array.isArray(gs) && (gs.find(x => /armia/i.test(x.name)) || gs[0]);
+    if (g) {
+      const guild = await (await call(`/guilds/${g.id}`)).json();
+      const roles = guild.roles || [];
+      const nrm = x => (x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, "l").replace(/[^a-z -]+/g, "").trim();
+      const find = (...k) => roles.find(r => !r.managed && k.includes(nrm(r.name)));
+      const RR = { leader: find("leader", "lider", "wodz"), coLeader: find("co-leader", "co leader", "wspollider"), admin: find("elder", "starszy"), member: find("member", "czlonek") };
+      const klanowe = Object.values(RR).filter(Boolean).map(r => r.id);
+      // jednorazowo: rejestracja komend /link i /unlink na serwerze
+      if (!oneShots.includes("cmds-v1")) {
+        const app = await (await call("/oauth2/applications/@me")).json();
+        const cmds = [
+          { name: "link", description: "Połącz Discorda z kontem w Clash of Clans i dostań rangę z klanu", dm_permission: false, options: [
+            { type: 3, name: "tag", description: "Tag gracza, np. #ABC123 (profil w grze, pod nickiem)", required: true },
+            { type: 3, name: "token", description: "Token API z gry (Ustawienia → Więcej ustawień). Potwierdza konto i daje pełną rangę", required: false },
+            { type: 6, name: "uzytkownik", description: "(Zarząd) połącz za kogoś innego", required: false } ] },
+          { name: "unlink", description: "Odłącz swoje konta z gry od Discorda", dm_permission: false, options: [
+            { type: 6, name: "uzytkownik", description: "(Zarząd) odłącz kogoś innego", required: false } ] }
+        ];
+        const x = app.id ? await call(`/applications/${app.id}/guilds/${g.id}/commands`, { method: "PUT", body: JSON.stringify(cmds) }) : null;
+        if (x?.ok) { oneShots.push("cmds-v1"); console.log("Komendy /link i /unlink zarejestrowane."); } else console.warn("Komendy:", x?.status, x && (await x.text()).slice(0, 200));
+      }
+      const slabe = new Set(srv.slabe || []);   // połączone samym tagiem (bez tokenu) – maksymalnie Member
+      const RANK = { member: 0, admin: 1, coLeader: 2, leader: 3 };
+      // jeden Discord może mieć kilka kont w klanie: bierzemy najwyższą rangę, nick z najwyższego TH
+      const byUser = {};
+      for (const [tag, uid] of Object.entries(srv.discord)) {
+        const m = members.find(x => x.tag === tag);
+        (byUser[uid] ||= []).push(m && slabe.has(tag) && RANK[m.role] > 0 ? { ...m, role: "member" } : m);
+      }
+      for (const [uid, accs] of Object.entries(byUser)) {
+        const inClan = accs.filter(Boolean);
+        const r = await call(`/guilds/${g.id}/members/${uid}`);
+        if (!r.ok) continue;                       // nie ma go na serwerze
+        const mem = await r.json(), has = new Set(mem.roles || []);
+        const top = inClan.sort((a, b) => RANK[b.role] - RANK[a.role] || b.th - a.th)[0];
+        const want = top ? (RR[top.role] || RR.member)?.id : null;
+        const name = mem.user?.username || uid;
+        for (const rid of klanowe) {
+          if (rid === want && !has.has(rid)) {
+            const x = await call(`/guilds/${g.id}/members/${uid}/roles/${rid}`, { method: "PUT" });
+            if (x.ok) rangiLog.push(`+ ${name}: ${roles.find(q => q.id === rid).name}`); else console.warn("Ranga +", name, x.status);
+          } else if (rid !== want && has.has(rid)) {
+            const x = await call(`/guilds/${g.id}/members/${uid}/roles/${rid}`, { method: "DELETE" });
+            if (x.ok) rangiLog.push(`- ${name}: ${roles.find(q => q.id === rid).name}`); else console.warn("Ranga -", name, x.status);
+          }
+        }
+        // nick z gry (właścicielowi serwera Discord nie pozwala zmienić nicku)
+        const nick = inClan.sort((a, b) => b.th - a.th)[0]?.name;
+        if (nick && uid !== guild.owner_id && (mem.nick || mem.user?.global_name || mem.user?.username) !== nick) {
+          const x = await call(`/guilds/${g.id}/members/${uid}`, { method: "PATCH", body: JSON.stringify({ nick: nick.slice(0, 32) }) });
+          if (x.ok) rangiLog.push(`✏️ ${name} → ${nick}`);
+        }
+      }
+      if (rangiLog.length) console.log("Rangi Discord:\n" + rangiLog.join("\n"));
+    }
+  } catch (e) { console.warn("Rangi Discord niedostępne:", e.message); }
+}
+
 // zapisy do CWL i wypisania z wojny — widoczne na stronie (zarząd)
 const requests = srv ? { optouts: srv.optouts || [], cwl: srv.cwl || null } : (old?.requests || null);
 
