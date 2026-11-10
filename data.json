@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T05:31:14.959Z",
+  "updated": "2026-11-10T05:46:03.479Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7145,8 +7145,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
-      "sig": "0|15853998|14964493|0|30|6720|15905|0|15|36|8",
-      "last": "2026-11-09T23:01:37.135Z",
+      "sig": "0|15853998|14964493|0|30|6720|15905|0|15|37|8",
+      "last": "2026-11-10T05:46:02.297Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
@@ -7225,8 +7225,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "58|533319894|532605217|25150|1522|636760|726415|0|82|128|13",
-      "last": "2026-11-10T05:31:13.939Z",
+      "sig": "58|539919841|539972550|25150|1522|636760|726415|0|82|128|13",
+      "last": "2026-11-10T05:46:02.297Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8076,6 +8076,26 @@
         8
       ]
     ],
+    "#R92C0U8UU": [
+      [
+        20765,
+        15,
+        30,
+        7
+      ],
+      [
+        20766,
+        15,
+        30,
+        8
+      ],
+      [
+        20767,
+        15,
+        30,
+        8
+      ]
+    ],
     "#R9GPGL0QJ": [
       [
         20765,
@@ -8114,26 +8134,6 @@
         4,
         689,
         9
-      ]
-    ],
-    "#R92C0U8UU": [
-      [
-        20765,
-        15,
-        30,
-        7
-      ],
-      [
-        20766,
-        15,
-        30,
-        8
-      ],
-      [
-        20767,
-        15,
-        30,
-        8
       ]
     ],
     "#LUQJC2JGY": [
@@ -9018,8 +9018,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "818:515992381",
-      "t": "2026-11-10T05:31:13.939Z"
+      "hash": "818:3067401731",
+      "t": "2026-11-10T05:46:02.297Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9844,8 +9844,8 @@
         "cg": 25150,
         "don": 1522,
         "capLoot": 636760,
-        "gold": 533319894,
-        "elixir": 532605217,
+        "gold": 539919841,
+        "elixir": 539972550,
         "capContrib": 726415,
         "wins": 0
       }
@@ -10172,35 +10172,35 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 31,
+            "level": 32,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 31,
+            "level": 32,
             "max": 110
           },
           {
             "name": "Grand Warden",
-            "level": 2,
+            "level": 3,
             "max": 85
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 35.6,
+        "pct": 34.4,
         "troops": 28.6,
         "spells": 49,
-        "heroes": 36,
+        "heroes": 33,
         "top": [
           {
             "n": "Książę Minionów",
-            "lvl": 2,
+            "lvl": 3,
             "need": 20
           },
           {
@@ -10665,10 +10665,10 @@
       "th": 10,
       "given": 31,
       "received": 186,
-      "trophies": 0,
+      "trophies": 8,
       "profile": {
         "level": 55,
-        "trophies": 0,
+        "trophies": 8,
         "best": 386,
         "league": "Barbarian League 4",
         "warStars": 13,
@@ -10791,6 +10791,49 @@
       }
     },
     {
+      "name": "Rico",
+      "tag": "#R92C0U8UU",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 140,
+      "trophies": 226,
+      "profile": {
+        "level": 37,
+        "trophies": 226,
+        "best": 296,
+        "league": "Skeleton League 3",
+        "warStars": 15,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 15905,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 30,
+        "capLoot": 6720,
+        "gold": 15853998,
+        "elixir": 14964493,
+        "capContrib": 15905,
+        "wins": 0
+      }
+    },
+    {
       "name": "erykos",
       "tag": "#R9GPGL0QJ",
       "role": "member",
@@ -10888,49 +10931,6 @@
         "gold": 71005791,
         "elixir": 70150854,
         "capContrib": 33986,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Rico",
-      "tag": "#R92C0U8UU",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 140,
-      "trophies": 186,
-      "profile": {
-        "level": 36,
-        "trophies": 186,
-        "best": 296,
-        "league": "Skeleton League 3",
-        "warStars": 15,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 15905,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 30,
-        "capLoot": 6720,
-        "gold": 15853998,
-        "elixir": 14964493,
-        "capContrib": 15905,
         "wins": 0
       }
     },
@@ -11130,12 +11130,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
