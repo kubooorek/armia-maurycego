@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T20:01:29.303Z",
+  "updated": "2026-11-10T20:12:32.898Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -14,6 +14,7 @@
     "end": "20261111T211034.000Z",
     "us": {
       "name": "ARMIA MAURYCEGO",
+      "level": 4,
       "stars": 0,
       "pct": 0,
       "attacks": 0,
@@ -147,6 +148,7 @@
     },
     "them": {
       "name": "kalmado team",
+      "level": 3,
       "stars": 0,
       "pct": 0,
       "attacks": 0,
@@ -7102,8 +7104,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|69205258|66646127|10050|88|24505|32450|0|7|51|9",
-      "last": "2026-11-10T19:58:14.044Z",
+      "sig": "20|69527758|67061127|10050|88|24505|32450|0|7|51|9",
+      "last": "2026-11-10T20:12:17.180Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -7142,13 +7144,13 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|41697839|39829841|5600|0|0|6070|0|0|46|9",
-      "last": "2026-11-10T19:58:14.044Z",
+      "sig": "0|42608271|40686321|5600|0|0|6070|0|0|46|9",
+      "last": "2026-11-10T20:12:17.180Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
-      "sig": "0|15853998|14964493|0|30|6720|15905|0|15|37|8",
-      "last": "2026-11-10T05:46:02.297Z",
+      "sig": "0|17012074|16027232|0|30|6720|15905|0|15|38|8",
+      "last": "2026-11-10T20:12:17.180Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
@@ -7187,8 +7189,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "76|43349948|39459545|0|72|0|100|0|0|37|9",
-      "last": "2026-11-10T18:31:22.765Z",
+      "sig": "76|43349948|39459545|0|72|0|100|0|0|38|9",
+      "last": "2026-11-10T20:12:17.180Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -7227,8 +7229,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "88|610201506|610140897|25150|1552|636760|742040|0|82|129|13",
-      "last": "2026-11-10T19:58:14.044Z",
+      "sig": "88|613533235|613554676|25150|1552|636760|742040|0|82|129|13",
+      "last": "2026-11-10T20:12:17.180Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -8098,6 +8100,26 @@
         8
       ]
     ],
+    "#RYLR2C92V": [
+      [
+        20765,
+        7,
+        88,
+        8
+      ],
+      [
+        20766,
+        7,
+        88,
+        9
+      ],
+      [
+        20767,
+        7,
+        88,
+        9
+      ]
+    ],
     "#R92C0U8UU": [
       [
         20765,
@@ -8136,26 +8158,6 @@
         6,
         76,
         8
-      ]
-    ],
-    "#RYLR2C92V": [
-      [
-        20765,
-        7,
-        88,
-        8
-      ],
-      [
-        20766,
-        7,
-        88,
-        9
-      ],
-      [
-        20767,
-        7,
-        88,
-        9
       ]
     ],
     "#LUQJC2JGY": [
@@ -9015,14 +9017,14 @@
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
-      "id": "1569480088225976413",
-      "hash": "720:1534846169",
-      "t": "2026-11-09T22:33:32.406Z"
+      "id": "1569806929197273259",
+      "hash": "1249:2690459012",
+      "t": "2026-11-10T20:12:17.180Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:3441480954",
-      "t": "2026-11-10T19:58:14.044Z"
+      "hash": "819:3708721426",
+      "t": "2026-11-10T20:12:17.180Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9473,7 +9475,7 @@
         "capital": 104841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2338,
+        "bTrophies": 2348,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -9877,8 +9879,8 @@
         "cg": 25150,
         "don": 1552,
         "capLoot": 636760,
-        "gold": 610201506,
-        "elixir": 610140897,
+        "gold": 613533235,
+        "elixir": 613554676,
         "capContrib": 742040,
         "wins": 0
       }
@@ -10150,7 +10152,7 @@
       "th": 11,
       "given": 0,
       "received": 20,
-      "trophies": 121,
+      "trophies": 161,
       "profile": {
         "level": 50,
         "trophies": 121,
@@ -10922,6 +10924,57 @@
       }
     },
     {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 9,
+      "given": 20,
+      "received": 52,
+      "trophies": 239,
+      "profile": {
+        "level": 51,
+        "trophies": 159,
+        "best": 390,
+        "league": "Skeleton League 3",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 32450,
+        "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1368,
+        "bLeague": "Stone League II",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 88,
+        "capLoot": 24505,
+        "gold": 69527758,
+        "elixir": 67061127,
+        "capContrib": 32450,
+        "wins": 0
+      }
+    },
+    {
       "name": "Rico",
       "tag": "#R92C0U8UU",
       "role": "member",
@@ -10930,7 +10983,7 @@
       "received": 140,
       "trophies": 226,
       "profile": {
-        "level": 37,
+        "level": 38,
         "trophies": 226,
         "best": 296,
         "league": "Skeleton League 3",
@@ -10966,8 +11019,8 @@
         "cg": 0,
         "don": 30,
         "capLoot": 6720,
-        "gold": 15853998,
-        "elixir": 14964493,
+        "gold": 17012074,
+        "elixir": 16027232,
         "capContrib": 15905,
         "wins": 0
       }
@@ -11020,57 +11073,6 @@
         "gold": 35850829,
         "elixir": 34679610,
         "capContrib": 16881,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 9,
-      "given": 20,
-      "received": 52,
-      "trophies": 132,
-      "profile": {
-        "level": 51,
-        "trophies": 132,
-        "best": 390,
-        "league": "Skeleton League 3",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 32450,
-        "warPref": "in",
-        "bh": 4,
-        "bTrophies": 1368,
-        "bLeague": "Stone League II",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 88,
-        "capLoot": 24505,
-        "gold": 69205258,
-        "elixir": 66646127,
-        "capContrib": 32450,
         "wins": 0
       }
     },
@@ -11212,8 +11214,8 @@
         "cg": 5600,
         "don": 0,
         "capLoot": 0,
-        "gold": 41697839,
-        "elixir": 39829841,
+        "gold": 42608271,
+        "elixir": 40686321,
         "capContrib": 6070,
         "wins": 0
       }
@@ -11504,7 +11506,7 @@
       "received": 209,
       "trophies": 0,
       "profile": {
-        "level": 37,
+        "level": 38,
         "trophies": 0,
         "best": 240,
         "league": "Skeleton League 3",
@@ -11966,8 +11968,8 @@
         "capital": 1550,
         "warPref": "in",
         "bh": 3,
-        "bTrophies": 293,
-        "bLeague": "Wood League III",
+        "bTrophies": 303,
+        "bLeague": "Wood League II",
         "heroes": [
           {
             "name": "Barbarian King",
