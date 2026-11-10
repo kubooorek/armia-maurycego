@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T23:16:07.533Z",
+  "updated": "2026-11-10T23:31:23.514Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -122,7 +122,7 @@
         {
           "pos": 21,
           "th": 8,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 22,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 24,
-      "pct": 32.52,
-      "attacks": 9,
+      "stars": 26,
+      "pct": 37.72,
+      "attacks": 11,
       "bases": [
         {
           "pos": 1,
@@ -790,6 +790,26 @@
         "stars": 3,
         "pct": 100,
         "order": 34
+      },
+      {
+        "by": "IJN Takao",
+        "bpos": 21,
+        "th": 7,
+        "tpos": 21,
+        "tname": "samurai024",
+        "stars": 2,
+        "pct": 91,
+        "order": 35
+      },
+      {
+        "by": "IJN Atago",
+        "bpos": 17,
+        "th": 8,
+        "tpos": 17,
+        "tname": "erykos",
+        "stars": 0,
+        "pct": 39,
+        "order": 36
       }
     ]
   },
@@ -3515,7 +3535,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 15
   },
   "raids": [
@@ -4108,10 +4128,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 57,
-      "them": 24,
+      "them": 26,
       "final": false,
       "pct": 78.36,
-      "themPct": 32.52,
+      "themPct": 37.72,
       "themBases": [
         {
           "pos": 1,
@@ -10130,14 +10150,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 34,
+    "w:20261110T211034.000Z": 36,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1593:3340291923",
-      "t": "2026-11-10T23:16:01.934Z"
+      "hash": "1595:1080973666",
+      "t": "2026-11-10T23:31:19.000Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10195,7 +10215,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:385825743"
+    "hash": "484:1775119757"
   },
   "members": [
     {
