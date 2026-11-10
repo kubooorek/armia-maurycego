@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T20:16:01.435Z",
+  "updated": "2026-11-10T20:31:24.625Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3181,8 +3181,8 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
-    "members": 14
+    "online": 6,
+    "members": 15
   },
   "raids": [
     {
@@ -7029,8 +7029,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "47|903197672|940186035|13725|50974|70605|104841|0|514|148|13",
-      "last": "2026-11-10T18:01:33.805Z",
+      "sig": "47|903197672|940186035|13725|50974|70605|104841|0|514|149|13",
+      "last": "2026-11-10T20:31:18.819Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -7154,8 +7154,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "2|26059287|25769727|0|162|14515|25739|0|0|51|9",
-      "last": "2026-11-10T11:31:16.319Z",
+      "sig": "2|26059287|25769727|0|162|14515|25739|0|0|52|9",
+      "last": "2026-11-10T20:31:18.819Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -7219,8 +7219,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|143146551|137576851|0|0|0|9510|0|0|50|11",
-      "last": "2026-11-10T14:46:07.695Z",
+      "sig": "0|145105551|139535851|0|0|0|9510|0|0|50|11",
+      "last": "2026-11-10T20:31:18.819Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -9018,13 +9018,13 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1250:3204089258",
-      "t": "2026-11-10T20:15:58.774Z"
+      "hash": "1250:2218800034",
+      "t": "2026-11-10T20:31:18.819Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:3509866160",
-      "t": "2026-11-10T20:15:58.774Z"
+      "hash": "819:2864071090",
+      "t": "2026-11-10T20:31:18.819Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9465,7 +9465,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 148,
+        "level": 149,
         "trophies": 0,
         "best": 2938,
         "league": "Wizard League 11",
@@ -9475,7 +9475,7 @@
         "capital": 104841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2307,
+        "bTrophies": 2357,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -10152,10 +10152,10 @@
       "th": 11,
       "given": 0,
       "received": 20,
-      "trophies": 201,
+      "trophies": 241,
       "profile": {
         "level": 50,
-        "trophies": 121,
+        "trophies": 241,
         "best": 275,
         "league": "Barbarian League 6",
         "warStars": 0,
@@ -10179,16 +10179,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 10,
+            "level": 11,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 49.3,
+        "pct": 48.4,
         "troops": 41.8,
-        "spells": 38.2,
-        "heroes": 59,
+        "spells": 35.3,
+        "heroes": 58,
         "top": [
           {
             "n": "Minion",
@@ -10226,8 +10226,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 143146551,
-        "elixir": 137576851,
+        "gold": 145105551,
+        "elixir": 139535851,
         "capContrib": 9510,
         "wins": 0
       }
@@ -10903,6 +10903,11 @@
             "name": "Archer Queen",
             "level": 10,
             "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
           }
         ]
       },
@@ -11085,7 +11090,7 @@
       "received": 0,
       "trophies": 59,
       "profile": {
-        "level": 51,
+        "level": 52,
         "trophies": 59,
         "best": 242,
         "league": "Skeleton League 3",
@@ -11681,6 +11686,11 @@
           {
             "name": "Barbarian King",
             "level": 3,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
             "max": 110
           }
         ]
