@@ -748,7 +748,8 @@ const WEBHOOK_WOJNY = process.env.DISCORD_WEBHOOK_WOJNY || WEBHOOK;    // #wojny
 const WEBHOOK_RAJDY = process.env.DISCORD_WEBHOOK_RAJDY || "";         // #rajdy-stolica: rajdy na Stolicę
 const WEBHOOK_POWITANIA = process.env.DISCORD_WEBHOOK_POWITANIA || WEBHOOK_INFO; // #powitania: nowi gracze
 const WEBHOOK_REKRUTACJA = process.env.DISCORD_WEBHOOK_REKRUTACJA || "";  // #rekrutacja: post co tydzień
-const WEBHOOK_WYMAGANIA = process.env.DISCORD_WEBHOOK_WYMAGANIA || "";    // #wymagania-klanu: jedna wiadomość, aktualizowana
+const WEBHOOK_WYMAGANIA = process.env.DISCORD_WEBHOOK_WYMAGANIA || "";
+const WEBHOOK_KARY = process.env.DISCORD_WEBHOOK_KARY || "";              // #kary: kary za łamanie zasad wojen (jak zakładka Kary na stronie)    // #wymagania-klanu: jedna wiadomość, aktualizowana
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
 async function post(content, url = WEBHOOK, ping = false, embed = false) {
@@ -811,6 +812,7 @@ const POSTY = {
   aktywnosc: true,         // tablica aktywności graczy (#statystyki-klanu)
   donacje: true,           // donacje tygodnia (pon.) i miesiąca (#statystyki-klanu)
   osiagniecia: true,       // poziom klanu, ligi, serie wygranych (#ogłoszenia)
+  kary: true,              // #kary: automatyczne ogłaszanie kar za łamanie zasad wojen
   rangiDiscord: true,      // role Leader/Co-Leader/Elder/Member i nick z gry dla połączonych przez stronę
   wymagania: true          // stała, aktualizowana wiadomość z wymaganiami (#wymagania-klanu)
 };
@@ -1428,6 +1430,50 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
   } catch (e) { console.warn("Rangi Discord niedostępne:", e.message); }
 }
 
+/* ---------- #kary: automatyczne ogłaszanie kar (te same zasady co zakładka „Kary” na stronie) ---------- */
+let karyPosted = old?.karyPosted && typeof old.karyPosted === "object" ? old.karyPosted : null;
+if (WEBHOOK_KARY && !firstRun && POSTY.kary !== false) {
+  const REASON = { own: p => `pierwszy atak nie na swój numer (${p.detail})`, steal: p => `drugi atak na cudzy numer (${p.detail})`, missed: p => `opuszczony atak (${p.detail})` };
+  const RULE = { own: "Pierwszy atak zawsze na swój numer. Cudze numery są wolne dopiero po 12 h od startu bitwy.",
+                 steal: "Drugim atakiem czekamy albo poprawiamy bazy bez 3★. Cudze numery są wolne dopiero po 12 h od startu bitwy.",
+                 missed: "Każdy w składzie wykorzystuje oba ataki. Nie możesz grać? Wypisz się w Moim panelu na stronie." };
+  const anul = p => karyAnul.some(a => a.name === p.name && (a.date === plDay(stampMs(p.war)) || a.date === plDay(stampMs(p.end || p.war))));
+  const aktualne = penalties.filter(p => REASON[p.type] && !anul(p));
+  const kto = p => { const id = srv?.discord?.[p.tag]; return id ? `<@${id}> (**${p.name}**)` : `**${p.name}**`; };
+  const dzien = w => { const d = new Date(stampMs(w)); return `${String(d.getUTCDate()).padStart(2, "0")}.${String(d.getUTCMonth() + 1).padStart(2, "0")}`; };
+  if (!karyPosted) {   // pierwsze uruchomienie: ogłaszamy tylko kary z ostatniej wojny, starsze uznajemy za ogłoszone
+    karyPosted = {};
+    const last = aktualne.reduce((m, p) => String(p.war) > m ? String(p.war) : m, "");
+    for (const p of aktualne) if (String(p.war) !== last) karyPosted[p.id] = { name: p.name, war: p.war, t: nowIso };
+  }
+  // nowe kary, zgrupowane: gracz + wojna
+  const G = {};
+  for (const p of aktualne) if (!karyPosted[p.id]) (G[(p.tag || p.name) + "|" + p.war] ||= []).push(p);
+  for (const list of Object.values(G)) {
+    const p0 = list[0];
+    const ok = await post([
+      `## ⛔ Przerwa od CW · ${p0.name}`,
+      `> 👤 Gracz: ${kto(p0)}`,
+      `> ⚔️ Wojna z **${p0.enemy || "?"}** · ${dzien(p0.war)}`,
+      ...list.map(p => `> 📌 Powód: ${REASON[p.type](p)}`),
+      `> 🔁 Wraca od **kolejnej wojny**`,
+      `-# 📖 ${[...new Set(list.map(p => RULE[p.type]))].join(" ")}`,
+      `-# Pomyłka? Zgłoszona zamiana numerów albo wypisanie w Moim panelu anuluje karę automatycznie. Pytania: Wódz lub Co-Leader.`
+    ].join("\n"), WEBHOOK_KARY);
+    if (ok) for (const p of list) karyPosted[p.id] = { name: p.name, war: p.war, t: nowIso };
+  }
+  // anulowane (zamiana numerów, wypisanie, atak po 12 h, ręczne anulowanie na stronie)
+  const ids = new Set(aktualne.map(p => p.id)), doAnul = {};
+  for (const [id, v] of Object.entries(karyPosted)) if (!v.anul && !ids.has(id) && Date.now() - stampMs(v.war) < 10 * 864e5) (doAnul[v.name + "|" + v.war] ||= []).push(id);
+  for (const [k, list] of Object.entries(doAnul)) {
+    const v = karyPosted[list[0]];
+    if (aktualne.some(p => p.name === v.name && p.war === v.war)) { for (const id of list) karyPosted[id].anul = true; continue; }   // inna kara z tej wojny dalej aktywna
+    const ok = await post(`✅ **Kara anulowana** · ${v.name} · wojna ${dzien(v.war)}\n-# Zgłoszona zamiana numerów, wypisanie albo decyzja zarządu.`, WEBHOOK_KARY);
+    if (ok) for (const id of list) karyPosted[id].anul = true;
+  }
+  karyPosted = Object.fromEntries(Object.entries(karyPosted).filter(([, v]) => Date.now() - Date.parse(v.t || 0) < 45 * 864e5));
+}
+
 // zapisy do CWL i wypisania z wojny — widoczne na stronie (zarząd)
 const requests = srv ? { optouts: srv.optouts || [], cwl: srv.cwl || null } : (old?.requests || null);
 
@@ -1475,6 +1521,7 @@ const data = {
   feed,
   boards,
   rekrutacjaWeek,
+  karyPosted,
   wymaganiaMsg,
   members,
   wars
