@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T01:01:26.537Z",
+  "updated": "2026-11-10T01:31:16.699Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -11679,6 +11679,11 @@
           {
             "name": "Barbarian King",
             "level": 10,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 1,
             "max": 110
           }
         ]
