@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T16:01:42.746Z",
+  "updated": "2026-11-10T16:15:55.905Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3179,8 +3179,8 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
-    "members": 13
+    "online": 5,
+    "members": 14
   },
   "raids": [
     {
@@ -7007,8 +7007,8 @@
   ],
   "activity": {
     "#VP9PLGLV": {
-      "sig": "1984|2000000000|2000000000|94700|82584|1216349|1620638|0|1263|206|15",
-      "last": "2026-11-10T16:01:41.197Z",
+      "sig": "1994|2000000000|2000000000|94700|82594|1216349|1620638|0|1263|206|15",
+      "last": "2026-11-10T16:15:55.641Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
@@ -7614,7 +7614,7 @@
       [
         20767,
         1263,
-        82584,
+        82594,
         15
       ]
     ],
@@ -9035,12 +9035,12 @@
       "tag": "#VP9PLGLV",
       "role": "coLeader",
       "th": 15,
-      "given": 1984,
+      "given": 1994,
       "received": 203,
-      "trophies": 23,
+      "trophies": 63,
       "profile": {
         "level": 206,
-        "trophies": 23,
+        "trophies": 63,
         "best": 5066,
         "league": "Titan League 25",
         "warStars": 1263,
@@ -9090,7 +9090,7 @@
       },
       "ach": {
         "cg": 94700,
-        "don": 82584,
+        "don": 82594,
         "capLoot": 1216349,
         "gold": 2000000000,
         "elixir": 2000000000,
@@ -10900,7 +10900,7 @@
       "role": "member",
       "th": 9,
       "given": 287,
-      "received": 534,
+      "received": 544,
       "trophies": 200,
       "profile": {
         "level": 58,
