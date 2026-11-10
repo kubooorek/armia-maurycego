@@ -137,7 +137,7 @@ function defsOf(enemy, ourByTag) {
 let currentWar = null;
 const w = await safe("Bieżąca wojna", () => api(`/clans/${enc(TAG)}/currentwar`));
 if (w && w.state && w.state !== "notInWar") {
-  const side = c => ({ name: c.name, stars: c.stars ?? 0, pct: round2(c.destructionPercentage), attacks: c.attacks ?? 0 });
+  const side = c => ({ name: c.name, level: c.clanLevel ?? null, stars: c.stars ?? 0, pct: round2(c.destructionPercentage), attacks: c.attacks ?? 0 });
   const oppByTag = Object.fromEntries((w.opponent.members || []).map(m => [m.tag, m]));
   const ourByTag = Object.fromEntries((w.clan.members || []).map(m => [m.tag, m]));
   currentWar = {
@@ -200,8 +200,8 @@ if (group && group.state && group.state !== "notInWar" && Array.isArray(group.ro
         ours.push({
           round: i + 1, state: war.state, size: war.teamSize, perMember: 1,
           start: war.startTime, end: war.endTime,
-          us:   { name: us.name,   stars: us.stars ?? 0,   pct: round2(us.destructionPercentage),   attacks: us.attacks ?? 0, bases: basesOf(us) },
-          them: { name: them.name, stars: them.stars ?? 0, pct: round2(them.destructionPercentage), attacks: them.attacks ?? 0, bases: basesOf(them) },
+          us:   { name: us.name, level: us.clanLevel ?? null,   stars: us.stars ?? 0,   pct: round2(us.destructionPercentage),   attacks: us.attacks ?? 0, bases: basesOf(us) },
+          them: { name: them.name, level: them.clanLevel ?? null, stars: them.stars ?? 0, pct: round2(them.destructionPercentage), attacks: them.attacks ?? 0, bases: basesOf(them) },
           members: (us.members || []).sort((a, b) => a.mapPosition - b.mapPosition).map(m => ({
             name: m.name, tag: m.tag, pos: m.mapPosition, th: m.townhallLevel,
             attacks: (m.attacks || []).map(at => {
@@ -1053,7 +1053,7 @@ if (!firstRun) {
         `## 📋 ${w.label.toUpperCase()} · ${w.size} vs ${w.size}`,
         stan,
         ``,
-        `**${w.us.name}**  \` ${w.us.stars} ★ ${w.them.stars} \`  **${w.them.name}**`,
+        `**${w.us.name}**${w.us.level ? ` 🛡️${w.us.level}` : ""}  \` ${w.us.stars} ★ ${w.them.stars} \`  ${w.them.level ? `🛡️${w.them.level} ` : ""}**${w.them.name}**`,
         w.state !== "preparation" ? `💥 Zniszczenia: **${PCT(w.us.pct)}** : ${PCT(w.them.pct)}` : null,
         w.state !== "preparation" ? `⚔️ Ataki: **${w.us.attacks ?? 0}/${w.size * per}** : ${w.them.attacks ?? 0}/${w.size * per}${w.state === "inWar" && zostalo ? ` · zostało nam **${zostalo}**` : ""}` : null,
         w.state !== "preparation" ? (open.length ? `🎯 Bez 3★ u przeciwnika: ${open.join(", ")}` : `🎯 Wszystkie bazy przeciwnika zbite na 3★! 🔥`) : null,
