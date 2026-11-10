@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T04:45:58.334Z",
+  "updated": "2026-11-10T05:01:39.169Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7130,8 +7130,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VLRL292": {
-      "sig": "0|35519083|34840249|0|0|0|250|0|3|44|9",
-      "last": "2026-11-09T14:46:14.997Z",
+      "sig": "0|35520123|34872927|0|0|0|250|0|3|44|9",
+      "last": "2026-11-10T05:01:35.624Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
@@ -7215,8 +7215,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|139118421|133528984|0|0|0|9510|0|0|49|11",
-      "last": "2026-11-09T20:16:10.893Z",
+      "sig": "0|140347541|134881807|0|0|0|9510|0|0|49|11",
+      "last": "2026-11-10T05:01:35.624Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -8176,6 +8176,26 @@
         9
       ]
     ],
+    "#R0VLRL292": [
+      [
+        20765,
+        3,
+        0,
+        9
+      ],
+      [
+        20766,
+        3,
+        0,
+        9
+      ],
+      [
+        20767,
+        3,
+        0,
+        9
+      ]
+    ],
     "#GVG02VV98": [
       [
         20765,
@@ -8234,26 +8254,6 @@
         15,
         40,
         8
-      ]
-    ],
-    "#R0VLRL292": [
-      [
-        20765,
-        3,
-        0,
-        9
-      ],
-      [
-        20766,
-        3,
-        0,
-        9
-      ],
-      [
-        20767,
-        3,
-        0,
-        9
       ]
     ],
     "#GQR98J880": [
@@ -9018,8 +9018,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "801:3297645516",
-      "t": "2026-11-10T04:31:20.800Z"
+      "hash": "801:63294954",
+      "t": "2026-11-10T05:01:35.624Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9724,17 +9724,17 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 51,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
             "level": 52,
             "max": 110
           },
           {
+            "name": "Archer Queen",
+            "level": 53,
+            "max": 110
+          },
+          {
             "name": "Grand Warden",
-            "level": 22,
+            "level": 23,
             "max": 85
           },
           {
@@ -10318,8 +10318,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 139118421,
-        "elixir": 133528984,
+        "gold": 140347541,
+        "elixir": 134881807,
         "capContrib": 9510,
         "wins": 0
       }
@@ -11031,6 +11031,85 @@
       }
     },
     {
+      "name": "Andrzej",
+      "tag": "#R0VLRL292",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 82,
+      "trophies": 4,
+      "profile": {
+        "level": 44,
+        "trophies": 4,
+        "best": 273,
+        "league": "Skeleton League 3",
+        "warStars": 3,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 250,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 13,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 16.3,
+        "troops": 0,
+        "spells": 23.8,
+        "heroes": 40,
+        "top": [
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 2,
+            "need": 5
+          },
+          {
+            "n": "Królowa Łuczniczek",
+            "lvl": 5,
+            "need": 10
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 13,
+            "need": 20
+          },
+          {
+            "n": "Zaklęcie błyskawicy",
+            "lvl": 4,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 4,
+            "need": 5
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 35520123,
+        "elixir": 34872927,
+        "capContrib": 250,
+        "wins": 0
+      }
+    },
+    {
       "name": "Martini",
       "tag": "#GVG02VV98",
       "role": "member",
@@ -11188,85 +11267,6 @@
         "gold": 8818088,
         "elixir": 9389071,
         "capContrib": 34234,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Andrzej",
-      "tag": "#R0VLRL292",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 82,
-      "trophies": 0,
-      "profile": {
-        "level": 44,
-        "trophies": 0,
-        "best": 273,
-        "league": "Skeleton League 3",
-        "warStars": 3,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 250,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 13,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 5,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 16.3,
-        "troops": 0,
-        "spells": 23.8,
-        "heroes": 40,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 5
-          },
-          {
-            "n": "Królowa Łuczniczek",
-            "lvl": 5,
-            "need": 10
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 13,
-            "need": 20
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 4,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 4,
-            "need": 5
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 35519083,
-        "elixir": 34840249,
-        "capContrib": 250,
         "wins": 0
       }
     },
