@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T06:01:33.178Z",
+  "updated": "2026-11-10T06:31:21.785Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7055,8 +7055,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
-      "sig": "52|280175691|280174914|15400|1454|30610|50855|0|11|65|13",
-      "last": "2026-11-10T05:31:13.939Z",
+      "sig": "72|280175691|280174914|15400|1474|30610|50855|0|11|65|13",
+      "last": "2026-11-10T06:31:20.511Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
@@ -7672,7 +7672,7 @@
       [
         20767,
         11,
-        1454,
+        1474,
         13
       ]
     ],
@@ -8136,26 +8136,6 @@
         9
       ]
     ],
-    "#LUQJC2JGY": [
-      [
-        20765,
-        0,
-        162,
-        9
-      ],
-      [
-        20766,
-        0,
-        162,
-        9
-      ],
-      [
-        20767,
-        0,
-        162,
-        9
-      ]
-    ],
     "#RYLR2C92V": [
       [
         20765,
@@ -8173,6 +8153,26 @@
         20767,
         7,
         88,
+        9
+      ]
+    ],
+    "#LUQJC2JGY": [
+      [
+        20765,
+        0,
+        162,
+        9
+      ],
+      [
+        20766,
+        0,
+        162,
+        9
+      ],
+      [
+        20767,
+        0,
+        162,
         9
       ]
     ],
@@ -9018,8 +9018,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "818:3067401731",
-      "t": "2026-11-10T05:46:02.297Z"
+      "hash": "818:1204359357",
+      "t": "2026-11-10T06:31:20.511Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9253,7 +9253,7 @@
       "tag": "#GJJ90QGVQ",
       "role": "member",
       "th": 13,
-      "given": 52,
+      "given": 72,
       "received": 0,
       "trophies": 26,
       "profile": {
@@ -9334,7 +9334,7 @@
       },
       "ach": {
         "cg": 15400,
-        "don": 1454,
+        "don": 1474,
         "capLoot": 30610,
         "gold": 280175691,
         "elixir": 280174914,
@@ -10887,7 +10887,7 @@
       "role": "member",
       "th": 9,
       "given": 241,
-      "received": 484,
+      "received": 504,
       "trophies": 200,
       "profile": {
         "level": 58,
@@ -10931,6 +10931,54 @@
         "gold": 71005791,
         "elixir": 70150854,
         "capContrib": 33986,
+        "wins": 0
+      }
+    },
+    {
+      "name": "SZAR3",
+      "tag": "#RYLR2C92V",
+      "role": "member",
+      "th": 9,
+      "given": 20,
+      "received": 52,
+      "trophies": 52,
+      "profile": {
+        "level": 50,
+        "trophies": 52,
+        "best": 390,
+        "league": "Skeleton League 3",
+        "warStars": 7,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 32450,
+        "warPref": "in",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 10050,
+        "don": 88,
+        "capLoot": 24505,
+        "gold": 57167616,
+        "elixir": 55270321,
+        "capContrib": 32450,
         "wins": 0
       }
     },
@@ -10979,54 +11027,6 @@
         "gold": 25759287,
         "elixir": 25469727,
         "capContrib": 25739,
-        "wins": 0
-      }
-    },
-    {
-      "name": "SZAR3",
-      "tag": "#RYLR2C92V",
-      "role": "member",
-      "th": 9,
-      "given": 20,
-      "received": 52,
-      "trophies": 12,
-      "profile": {
-        "level": 50,
-        "trophies": 12,
-        "best": 390,
-        "league": "Skeleton League 3",
-        "warStars": 7,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 32450,
-        "warPref": "in",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 10050,
-        "don": 88,
-        "capLoot": 24505,
-        "gold": 57167616,
-        "elixir": 55270321,
-        "capContrib": 32450,
         "wins": 0
       }
     },
