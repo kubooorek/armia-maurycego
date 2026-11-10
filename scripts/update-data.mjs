@@ -1417,7 +1417,7 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
           else if (!chce && has.has(gr.id)) { const x = await call(`/guilds/${g.id}/members/${uid}/roles/${gr.id}`, { method: "DELETE" }); if (x.ok) rangiLog.push(`- ${name}: ${gr.name}`); }
         }
         // nick z gry (właścicielowi serwera Discord nie pozwala zmienić nicku)
-        const nick = inClan.sort((a, b) => b.th - a.th)[0]?.name;
+        const glowne = inClan.sort((a, b) => b.th - a.th)[0], nick = glowne ? `${glowne.name} ${glowne.th}` : null;   // jak dawniej: "Nazwa 12"
         if (nick && uid !== guild.owner_id && (mem.nick || mem.user?.global_name || mem.user?.username) !== nick) {
           const x = await call(`/guilds/${g.id}/members/${uid}`, { method: "PATCH", body: JSON.stringify({ nick: nick.slice(0, 32) }) });
           if (x.ok) rangiLog.push(`✏️ ${name} → ${nick}`);
