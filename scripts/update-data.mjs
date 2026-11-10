@@ -970,6 +970,13 @@ let boards = old?.boards && typeof old.boards === "object" ? old.boards : {};
 const STAR = n => "★".repeat(n) + "☆".repeat(Math.max(0, 3 - n));
 const PCT = p => String(Math.round((p ?? 0) * 10) / 10).replace(".", ",") + "%";
 const TS = (t, f = "R") => `<t:${Math.floor((typeof t === "number" ? t : (parseT(t) || new Date(t))) / 1000)}:${f}>`;
+// odliczanie: tekst "5 h 12 min" + pasek postępu (odświeżane przy każdym uruchomieniu robota)
+const LICZ = (cel, total, kolor = "🟥") => {
+  const ms = Math.max(0, cel - Date.now()), h = Math.floor(ms / 3600e3), m = Math.floor(ms % 3600e3 / 60e3);
+  const txt = h >= 24 ? `${Math.floor(h / 24)} d ${h % 24} h` : h ? `${h} h ${String(m).padStart(2, "0")} min` : `${m} min`;
+  const done = total ? Math.min(1, Math.max(0, 1 - ms / total)) : 0, n = 12, f = Math.round(done * n);
+  return { txt, bar: kolor.repeat(f) + "⬛".repeat(n - f) + ` **${Math.round(done * 100)}%**` };
+};
 const hashOf = c => c.length + ":" + [...c].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) >>> 0, 7);
 const fit = (lines, max = 1950) => { let out = lines.filter(x => x !== null && x !== undefined && x !== false).join("\n"); return out.length > max ? out.slice(0, max - 1) + "…" : out; };
 const listFit = (arr, max = 700) => { let s = ""; for (let i = 0; i < arr.length; i++) { const nx = (s ? s + ", " : "") + arr[i]; if (nx.length > max) return s + ` …i ${arr.length - i} więcej`; s = nx; } return s; };
@@ -1028,30 +1035,36 @@ if (!firstRun) {
       // tablica wojny (jedna wiadomość, aktualizowana)
       const win = w.us.stars > w.them.stars || (w.us.stars === w.them.stars && w.us.pct > w.them.pct);
       const draw = w.us.stars === w.them.stars && w.us.pct === w.them.pct;
-      const stan = w.state === "preparation" ? `🛡️ Dzień przygotowań · bitwa rusza ${TS(w.start)}`
-        : w.state === "inWar" ? `🟢 Trwa bitwa · koniec ${TS(w.end)}`
-        : `🏁 Zakończona · ${win ? "🏆 **WYGRANA**" : draw ? "🤝 **REMIS**" : "❌ **PRZEGRANA**"}`;
+      const tS = +parseT(w.start), tE = +parseT(w.end);
+      const cP = LICZ(tS, 23 * 3600e3, "🟨"), cB = LICZ(tE, tE - tS, "🟥");
+      const stan = w.state === "preparation" ? [`### 🛡️ Dzień przygotowań`, `⏳ Bitwa za **${cP.txt}** · start o **${TS(w.start, "t")}** (${TS(w.start)})`, cP.bar].join("\n")
+        : w.state === "inWar" ? [`### ⚔️ Trwa bitwa`, `⏳ Koniec za **${cB.txt}** · o **${TS(w.end, "t")}** (${TS(w.end)})`, cB.bar].join("\n")
+        : `### 🏁 Koniec wojny · ${win ? "🏆 WYGRANA" : draw ? "🤝 REMIS" : "❌ PRZEGRANA"}`;
       const open = (w.them.bases || []).filter(b => b.best < 3).map(b => b.pos);
+      const thWroga = Object.fromEntries((w.them.bases || []).map(b => [b.pos, b.th]));
       const rows = w.members.map(m => {
-        const tok = w.state === "preparation" ? "" : " · " + [...m.attacks.map(a => STAR(a.stars)), ...Array(Math.max(0, per - m.attacks.length)).fill(w.state === "warEnded" ? "❌" : "⏳")].join("  ");
-        return { left: per - m.attacks.length, txt: `\`${String(m.pos).padStart(2)}\` ${m.name} · TH${m.th}${tok}` };
+        const left = Math.max(0, per - m.attacks.length);
+        const ik = w.state === "preparation" ? "▫️" : left === 0 ? "✅" : m.attacks.length ? "🟡" : w.state === "warEnded" ? "❌" : "🔴";
+        const tok = w.state === "preparation" ? "" : "  " + [...m.attacks.map(a => STAR(a.stars)), ...Array(left).fill(w.state === "warEnded" ? "✖" : "⏳")].join(" ");
+        return { left, txt: `${ik} \`${String(m.pos).padStart(2, "0")}\` **${m.name}** · TH${m.th} ⚔️ TH${thWroga[m.pos] ?? "?"}${tok}` };
       });
       const zostalo = w.members.reduce((a, m) => a + Math.max(0, per - m.attacks.length), 0);
       const top = [
-        `📋 **TABLICA · ${w.label.toUpperCase()}** · ${w.size} vs ${w.size}`,
+        `## 📋 ${w.label.toUpperCase()} · ${w.size} vs ${w.size}`,
         stan,
         ``,
-        `**${w.us.name}**  ${w.us.stars} ★ ${w.them.stars}  **${w.them.name}**`,
+        `**${w.us.name}**  \` ${w.us.stars} ★ ${w.them.stars} \`  **${w.them.name}**`,
         w.state !== "preparation" ? `💥 Zniszczenia: **${PCT(w.us.pct)}** : ${PCT(w.them.pct)}` : null,
         w.state !== "preparation" ? `⚔️ Ataki: **${w.us.attacks ?? 0}/${w.size * per}** : ${w.them.attacks ?? 0}/${w.size * per}${w.state === "inWar" && zostalo ? ` · zostało nam **${zostalo}**` : ""}` : null,
         w.state !== "preparation" ? (open.length ? `🎯 Bez 3★ u przeciwnika: ${open.join(", ")}` : `🎯 Wszystkie bazy przeciwnika zbite na 3★! 🔥`) : null,
-        ``,
-        `**Nasz skład:**`
+        `━━━━━━━━━━━━━━━━━━`,
+        `**Nasz skład** · nasz TH ⚔️ TH przeciwnika na tym samym numerze`
       ];
-      let tresc = fit([...top, ...rows.map(r => r.txt), ``, `_Aktualizuje się sama co kilka minut · ${SITE}#wojny_`], 4000);
+      const stopka = [`━━━━━━━━━━━━━━━━━━`, w.state === "inWar" ? `-# ✅ wszystkie ataki · 🟡 został 1 · 🔴 jeszcze nie atakował` : null, `-# 🔄 Aktualizuje się sama co kilka minut · ${SITE}#wojny`];
+      let tresc = fit([...top, ...rows.map(r => r.txt), ...stopka], 4000);
       if (tresc.length > 1950) {   // duża wojna: pokaż tylko graczy z atakami do zrobienia
         const left = rows.filter(r => r.left > 0);
-        tresc = fit([...top.slice(0, -1), `**Jeszcze atakują (${left.length}):**`, ...left.map(r => r.txt), ``, `✅ Pozostali (${rows.length - left.length}) zrobili już wszystkie ataki.`]);
+        tresc = fit([...top.slice(0, -1), `**Jeszcze atakują (${left.length}):**`, ...left.map(r => r.txt), ``, `✅ Pozostali (${rows.length - left.length}) zrobili już wszystkie ataki.`, ...stopka]);
       }
       if (w.state !== "warEnded" || boards[`war:${w.key}`]) await board(`war:${w.key}`, WEBHOOK_WOJNY, tresc);   // nie zakładamy tablicy dla wojny, która już się skończyła
     }
@@ -1067,7 +1080,8 @@ if (!firstRun) {
     const partial = (r0.members || []).filter(m => m.attacks < m.limit).map(m => `${m.name} (${m.attacks}/${m.limit})`);
     const md = ["🥇", "🥈", "🥉", "4.", "5."];
     await board(`raid:${r0.start}`, WEBHOOK_RAJDY, fit([
-      `🏰 **RAJDY NA STOLICĘ** · ${r0.state === "ongoing" ? `koniec ${TS(r0.end)}` : "🏁 zakończone"}`,
+      `## 🏰 RAJDY NA STOLICĘ`,
+      r0.state === "ongoing" ? (c => `⏳ Koniec za **${c.txt}** · ${TS(r0.end, "f")}\n${c.bar}`)(LICZ(+parseT(r0.end), 72 * 3600e3, "🟦")) : "### 🏁 Weekend zakończony",
       ``,
       `💰 Złoto: **${fmt(r0.loot)}** · ⚔️ Ataki: **${r0.attacks}** · 🏚️ Dzielnice: **${r0.districts}** · ✅ Rajdy: **${r0.raids}**`,
       `👥 Zaatakowało **${(r0.members || []).length}** z ${members.length} graczy`,
@@ -1087,7 +1101,8 @@ if (!firstRun) {
     const md = ["🥇", "🥈", "🥉"];
     const low = rows.filter(r => r.pts > 0 && r.pts < 1000).map(r => `${r.name} (${r.pts})`), zero = rows.filter(r => r.pts === 0).map(r => r.name);
     await board(`cg:${clanGames.key}`, WEBHOOK, fit([
-      `🎯 **GRY KLANOWE** · ${clanGames.state === "ongoing" ? `koniec ${TS(Date.parse(clanGames.end))}` : "🏁 zakończone"}`,
+      `## 🎯 GRY KLANOWE`,
+      clanGames.state === "ongoing" ? (c => `⏳ Koniec za **${c.txt}** · ${TS(Date.parse(clanGames.end), "f")}\n${c.bar}`)(LICZ(Date.parse(clanGames.end), 6 * 864e5, "🟩")) : "### 🏁 Gry zakończone",
       ``,
       `Razem: **${nf(sum)} pkt** · normę 1000 pkt ma **${done}/${rows.length}**`,
       ``,
@@ -1364,13 +1379,13 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
         else if ((x = n.match(/^([\d.,\s]+?)\s*[–—-]\s*([\d.,\s]+)$/))) { const lo = liczba(x[1]), hi = liczba(x[2]); gra.push({ id: r.id, name: r.name, test: (m, p) => (p?.trophies ?? -1) >= lo && (p?.trophies ?? -1) <= hi }); }
         else if ((x = n.match(/^([\d.,\s]+)\+$/))) { const lo = liczba(x[1]); gra.push({ id: r.id, name: r.name, test: (m, p) => (p?.trophies ?? -1) >= lo }); }
       }
-      bazyLig = new Set(gra.filter(x => x.liga).map(x => x.liga));   // połączone samym tagiem (bez tokenu) – maksymalnie Member
+      bazyLig = new Set(gra.filter(x => x.liga).map(x => x.liga));   // połączone samym tagiem (bez tokenu) – maksymalnie Elder
       const RANK = { member: 0, admin: 1, coLeader: 2, leader: 3 };
       // jeden Discord może mieć kilka kont w klanie: bierzemy najwyższą rangę, nick z najwyższego TH
       const byUser = {};
       for (const [tag, uid] of Object.entries(srv.discord)) {
         const m = members.find(x => x.tag === tag);
-        (byUser[uid] ||= []).push(m && slabe.has(tag) && RANK[m.role] > 0 ? { ...m, role: "member" } : m);
+        (byUser[uid] ||= []).push(m && slabe.has(tag) && RANK[m.role] > 1 ? { ...m, role: "admin" } : m);
       }
       for (const [uid, accs] of Object.entries(byUser)) {
         const inClan = accs.filter(Boolean);
