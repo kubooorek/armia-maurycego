@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T01:45:57.255Z",
+  "updated": "2026-11-11T02:16:09.211Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -150,8 +150,8 @@
       "name": "kalmado team",
       "level": 3,
       "stars": 42,
-      "pct": 58.6,
-      "attacks": 18,
+      "pct": 59.8,
+      "attacks": 19,
       "bases": [
         {
           "pos": 1,
@@ -890,6 +890,16 @@
         "stars": 3,
         "pct": 100,
         "order": 44
+      },
+      {
+        "by": "REDDISH",
+        "bpos": 19,
+        "th": 8,
+        "tpos": 22,
+        "tname": "threeten",
+        "stars": 1,
+        "pct": 83,
+        "order": 45
       }
     ]
   },
@@ -4211,7 +4221,7 @@
       "them": 42,
       "final": false,
       "pct": 82.36,
-      "themPct": 58.6,
+      "themPct": 59.8,
       "themBases": [
         {
           "pos": 1,
@@ -10245,14 +10255,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 44,
+    "w:20261110T211034.000Z": 45,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1594:4060303328",
-      "t": "2026-11-11T01:45:54.999Z"
+      "hash": "1595:3634546893",
+      "t": "2026-11-11T02:16:05.302Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
