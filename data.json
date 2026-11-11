@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T06:31:17.524Z",
+  "updated": "2026-11-11T06:46:02.159Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -112,7 +112,7 @@
         {
           "pos": 19,
           "th": 8,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 20,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 63,
-      "pct": 83.64,
-      "attacks": 32,
+      "stars": 64,
+      "pct": 84.68,
+      "attacks": 33,
       "bases": [
         {
           "pos": 1,
@@ -1030,6 +1030,16 @@
         "stars": 3,
         "pct": 100,
         "order": 58
+      },
+      {
+        "by": "♠DH3NVH3R♠",
+        "bpos": 12,
+        "th": 10,
+        "tpos": 19,
+        "tname": "Riczard",
+        "stars": 3,
+        "pct": 100,
+        "order": 59
       }
     ]
   },
@@ -4348,10 +4358,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 63,
+      "them": 64,
       "final": false,
       "pct": 82.36,
-      "themPct": 83.64,
+      "themPct": 84.68,
       "themBases": [
         {
           "pos": 1,
@@ -10385,14 +10395,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 58,
+    "w:20261110T211034.000Z": 59,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:3957429606",
-      "t": "2026-11-11T06:31:14.217Z"
+      "hash": "1597:2078809528",
+      "t": "2026-11-11T06:45:58.325Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10450,7 +10460,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:349948684"
+    "hash": "484:1044595691"
   },
   "members": [
     {
@@ -12520,8 +12530,8 @@
         "capital": 25739,
         "warPref": "in",
         "bh": 5,
-        "bTrophies": 1372,
-        "bLeague": "Stone League II",
+        "bTrophies": 1405,
+        "bLeague": "Stone League I",
         "heroes": [
           {
             "name": "Barbarian King",
