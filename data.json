@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T06:01:49.338Z",
+  "updated": "2026-11-11T06:16:03.921Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3751,7 +3751,7 @@
       }
     ]
   },
-  "visits": null,
+  "visits": 116,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -10391,8 +10391,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1596:200190185",
-      "t": "2026-11-11T06:01:45.763Z"
+      "hash": "1597:1168333998",
+      "t": "2026-11-11T06:16:01.243Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -12377,7 +12377,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 9,
+            "level": 10,
             "max": 110
           }
         ]
@@ -12543,7 +12543,7 @@
       "rush": {
         "pct": 0.9,
         "troops": 0,
-        "spells": 4.8,
+        "spells": 4.5,
         "heroes": 0,
         "top": [
           {
