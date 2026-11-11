@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T11:45:55.788Z",
+  "updated": "2026-11-11T12:01:25.037Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3843,7 +3843,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 15
   },
   "raids": [
@@ -8357,8 +8357,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUQJC2JGY": {
-      "sig": "2|27919287|27629727|0|162|14515|25739|0|0|52|9",
-      "last": "2026-11-11T11:45:52.593Z",
+      "sig": "2|28719287|28377459|0|162|14515|25739|0|0|52|9",
+      "last": "2026-11-11T12:01:22.768Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
@@ -10499,8 +10499,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1598:4116903800",
-      "t": "2026-11-11T11:45:52.593Z"
+      "hash": "1598:83223088",
+      "t": "2026-11-11T12:01:22.768Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -11432,8 +11432,8 @@
         "capital": 95286,
         "warPref": "in",
         "bh": 7,
-        "bTrophies": 2199,
-        "bLeague": "Brass League III",
+        "bTrophies": 2217,
+        "bLeague": "Brass League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12665,8 +12665,8 @@
         "cg": 0,
         "don": 162,
         "capLoot": 14515,
-        "gold": 27919287,
-        "elixir": 27629727,
+        "gold": 28719287,
+        "elixir": 28377459,
         "capContrib": 25739,
         "wins": 0
       }
