@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T17:01:31.327Z",
+  "updated": "2026-11-11T17:31:19.231Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10572,8 +10572,10 @@
     "w:20261110T211034.000Z": [
       "prep",
       "start",
-      "free12"
-    ]
+      "free12",
+      "r4"
+    ],
+    "dm:w:20261110T211034.000Z": []
   },
   "oneShots": [
     "discord-dm-2026-11",
@@ -10586,8 +10588,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1599:3989758124",
-      "t": "2026-11-11T17:01:27.174Z"
+      "hash": "1599:98226156",
+      "t": "2026-11-11T17:31:14.873Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -12957,8 +12959,8 @@
         "capital": 250,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1374,
-        "bLeague": "Stone League II",
+        "bTrophies": 1440,
+        "bLeague": "Stone League I",
         "heroes": [
           {
             "name": "Barbarian King",
