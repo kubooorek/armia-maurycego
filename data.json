@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T00:16:07.917Z",
+  "updated": "2026-11-11T00:31:14.645Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -92,7 +92,7 @@
         {
           "pos": 15,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 16,
@@ -102,7 +102,7 @@
         {
           "pos": 17,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 18,
@@ -122,7 +122,7 @@
         {
           "pos": 21,
           "th": 8,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 22,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 28,
-      "pct": 40.68,
-      "attacks": 12,
+      "stars": 35,
+      "pct": 47.48,
+      "attacks": 15,
       "bases": [
         {
           "pos": 1,
@@ -830,6 +830,36 @@
         "stars": 2,
         "pct": 74,
         "order": 38
+      },
+      {
+        "by": "IJN HIRYU",
+        "bpos": 15,
+        "th": 9,
+        "tpos": 15,
+        "tname": "KuN",
+        "stars": 3,
+        "pct": 100,
+        "order": 39
+      },
+      {
+        "by": "IJN HIRYU",
+        "bpos": 15,
+        "th": 9,
+        "tpos": 17,
+        "tname": "erykos",
+        "stars": 3,
+        "pct": 100,
+        "order": 40
+      },
+      {
+        "by": "IJN Atago",
+        "bpos": 17,
+        "th": 8,
+        "tpos": 21,
+        "tname": "samurai024",
+        "stars": 3,
+        "pct": 100,
+        "order": 41
       }
     ]
   },
@@ -4148,10 +4178,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 28,
+      "them": 35,
       "final": false,
       "pct": 82.36,
-      "themPct": 40.68,
+      "themPct": 47.48,
       "themBases": [
         {
           "pos": 1,
@@ -10185,14 +10215,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 38,
+    "w:20261110T211034.000Z": 41,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1594:2697466331",
-      "t": "2026-11-11T00:16:03.053Z"
+      "hash": "1594:3884906423",
+      "t": "2026-11-11T00:31:11.031Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10250,7 +10280,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:3586300771"
+    "hash": "484:1561580487"
   },
   "members": [
     {
@@ -12269,7 +12299,7 @@
         "capital": 16881,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1267,
+        "bTrophies": 1274,
         "bLeague": "Stone League III",
         "heroes": [
           {
