@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T22:31:13.977Z",
+  "updated": "2026-11-11T22:44:23.788Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -2725,7 +2725,7 @@
       }
     ]
   },
-  "visits": 125,
+  "visits": 127,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -7252,8 +7252,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "57|909151115|946922105|13725|50984|70605|105841|0|514|149|13",
-      "last": "2026-11-11T21:46:03.606Z",
+      "sig": "57|911247389|949170499|13725|50984|70605|105841|0|514|149|13",
+      "last": "2026-11-11T22:44:20.019Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -7367,8 +7367,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
-      "sig": "0|44686838|42233312|5600|0|0|6070|0|0|46|9",
-      "last": "2026-11-10T21:45:57.499Z",
+      "sig": "0|44686838|42233312|5600|0|0|6070|0|0|47|9",
+      "last": "2026-11-11T22:44:20.019Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R92C0U8UU": {
@@ -9535,8 +9535,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "871:279565153",
-      "t": "2026-11-11T22:01:32.588Z"
+      "hash": "854:541281987",
+      "t": "2026-11-11T22:44:20.019Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9621,7 +9621,17 @@
     "id": "1569476036620455956",
     "hash": "432:3392136836"
   },
-  "galeria": [],
+  "galeria": [
+    {
+      "id": "1570203532643139584",
+      "file": "img/galeria/1570203532643139584.png",
+      "autor": "Albaroon.2",
+      "t": "2026-11-11T22:28:15.222000+00:00",
+      "opis": "CWL listopad: 3. miejsce w Srebrnej I, 183 gwiazdki 🥉",
+      "w": 956,
+      "h": 203
+    }
+  ],
   "members": [
     {
       "name": "KUBOOOREK",
@@ -10065,7 +10075,7 @@
         "capital": 105841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2396,
+        "bTrophies": 2366,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -10132,8 +10142,8 @@
         "cg": 13725,
         "don": 50984,
         "capLoot": 70605,
-        "gold": 909151115,
-        "elixir": 946922105,
+        "gold": 911247389,
+        "elixir": 949170499,
         "capContrib": 105841,
         "wins": 0
       }
@@ -11856,7 +11866,7 @@
       "received": 0,
       "trophies": 59,
       "profile": {
-        "level": 46,
+        "level": 47,
         "trophies": 59,
         "best": 266,
         "league": "Skeleton League 3",
@@ -11882,9 +11892,9 @@
         ]
       },
       "rush": {
-        "pct": 18.1,
+        "pct": 18.7,
         "troops": 17.9,
-        "spells": 15.8,
+        "spells": 19,
         "heroes": 20,
         "top": [
           {
@@ -11908,12 +11918,12 @@
             "need": 2
           },
           {
-            "n": "Zaklęcie trucizny",
+            "n": "Zaklęcie skoku",
             "lvl": 1,
             "need": 2
           },
           {
-            "n": "Zaklęcie wstrząsu",
+            "n": "Zaklęcie trucizny",
             "lvl": 1,
             "need": 2
           }
