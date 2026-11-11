@@ -368,13 +368,15 @@ for (const x of warArchive) {
   if (x.cwl || !x.final || x.perMember !== 2 || Date.now() - stampMs(x.end) > 7 * 864e5) continue;
   // wszystkie bazy przeciwnika na 3★ = drugim atakiem nie było już czego bić → brak kary, jeśli 1. atak był zrobiony
   const allDone = x.size && x.us >= x.size * 3;
-  for (const m of x.members) if (m.attacks.length < x.perMember && !(allDone && m.attacks.length >= 1))
+  // kara tylko za wojnę bez żadnego ataku (0/2); jeden wykorzystany atak (1/2) nie jest karany
+  for (const m of x.members) if (m.attacks.length === 0)
     addPen({ id: `${x.start}:${m.tag}:missed`, type: "missed", detail: `wykorzystane ataki: ${m.attacks.length}/${x.perMember}`,
              tag: m.tag, name: m.name, war: x.start, end: x.end, enemy: x.enemy });
 }
 penalties = penalties.filter(p => { if (p.type !== "missed") return true;
   const x = warArchive.find(w => w.start === p.war && !w.cwl); if (!x || !(x.size && x.us >= x.size * 3)) return true;
   const mm = (x.members || []).find(m => m.tag === p.tag); return !(mm && mm.attacks.length >= 1); });
+penalties = penalties.filter(p => !(p.type === "missed" && /: [1-9]\d*\//.test(p.detail || "")));   // stare kary za 1/2 znikają
 penalties = penalties.slice(0, 80);
 
 /* ---------- Rajdy Stolicy ---------- */
