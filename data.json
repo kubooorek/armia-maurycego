@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T17:31:19.231Z",
+  "updated": "2026-11-11T17:46:05.048Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 70,
-      "pct": 94.24,
-      "attacks": 34,
+      "stars": 72,
+      "pct": 97.28,
+      "attacks": 38,
       "bases": [
         {
           "pos": 1,
@@ -166,12 +166,12 @@
         {
           "pos": 3,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 4,
           "th": 12,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 5,
@@ -338,7 +338,26 @@
         "tag": "#LJYR92002",
         "pos": 3,
         "th": 12,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 75,
+            "order": 74,
+            "target": "3. DRAZUU'2",
+            "tpos": 3,
+            "tname": "DRAZUU'2",
+            "seen": "2026-11-11T17:45:58.502Z"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 76,
+            "target": "4. Jasper Rico",
+            "tpos": 4,
+            "tname": "Jasper Rico",
+            "seen": "2026-11-11T17:45:58.502Z"
+          }
+        ]
       },
       {
         "name": "oggsgdjdjbd",
@@ -354,6 +373,15 @@
             "tpos": 4,
             "tname": "Jasper Rico",
             "seen": "2026-11-10T22:01:29.810Z"
+          },
+          {
+            "stars": 1,
+            "pct": 69,
+            "order": 77,
+            "target": "6. ♍ʏᴀsʜɪʀᴏ♍",
+            "tpos": 6,
+            "tname": "♍ʏᴀsʜɪʀᴏ♍",
+            "seen": "2026-11-11T17:45:58.502Z"
           }
         ]
       },
@@ -542,6 +570,15 @@
             "tpos": 13,
             "tname": "ACE",
             "seen": "2026-11-10T23:45:54.690Z"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 75,
+            "target": "12. ♠DH3NVH3R♠",
+            "tpos": 12,
+            "tname": "♠DH3NVH3R♠",
+            "seen": "2026-11-11T17:45:58.502Z"
           }
         ]
       },
@@ -3899,7 +3936,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -4491,10 +4528,10 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 70,
+      "us": 72,
       "them": 74,
       "final": false,
-      "pct": 94.24,
+      "pct": 97.28,
       "themPct": 98.28,
       "themBases": [
         {
@@ -4510,12 +4547,12 @@
         {
           "pos": 3,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 4,
           "th": 12,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 5,
@@ -4669,7 +4706,20 @@
           "tag": "#LJYR92002",
           "pos": 3,
           "th": 12,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 75,
+              "target": "3. DRAZUU'2",
+              "order": 74
+            },
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "4. Jasper Rico",
+              "order": 76
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -4682,6 +4732,12 @@
               "pct": 80,
               "target": "4. Jasper Rico",
               "order": 24
+            },
+            {
+              "stars": 1,
+              "pct": 69,
+              "target": "6. ♍ʏᴀsʜɪʀᴏ♍",
+              "order": 77
             }
           ]
         },
@@ -4831,6 +4887,12 @@
               "pct": 100,
               "target": "13. ACE",
               "order": 37
+            },
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "12. ♠DH3NVH3R♠",
+              "order": 75
             }
           ]
         },
@@ -8314,8 +8376,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "309|345696068|341999477|14450|412|65320|122825|0|69|107|12",
-      "last": "2026-11-11T14:31:19.842Z",
+      "sig": "309|345742666|342055889|14450|412|65320|122825|0|69|107|12",
+      "last": "2026-11-11T17:45:59.845Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -8389,8 +8451,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|110923473|94572823|5100|336|7810|34127|0|16|56|10",
-      "last": "2026-11-11T12:31:09.540Z",
+      "sig": "31|110991473|94640823|5100|336|7810|34127|0|16|56|10",
+      "last": "2026-11-11T17:45:59.845Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -8409,8 +8471,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "334|78833531|77304024|2400|779|14765|36586|0|6|59|9",
-      "last": "2026-11-11T10:01:17.386Z",
+      "sig": "360|78833531|77304024|2400|779|14765|36586|0|6|59|9",
+      "last": "2026-11-11T17:45:59.845Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -8514,8 +8576,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "0|4854247|3966546|0|0|0|2400|0|3|27|9",
-      "last": "2026-11-11T14:15:51.346Z",
+      "sig": "20|5747920|4937500|0|20|0|2400|0|3|27|9",
+      "last": "2026-11-11T17:45:59.845Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -9848,7 +9910,7 @@
       [
         20768,
         3,
-        0,
+        20,
         9
       ]
     ],
@@ -10582,19 +10644,19 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 73,
+    "w:20261110T211034.000Z": 77,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1599:98226156",
-      "t": "2026-11-11T17:31:14.873Z"
+      "hash": "1601:3918542509",
+      "t": "2026-11-11T17:45:59.845Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "785:437107108",
-      "t": "2026-11-11T17:01:27.174Z"
+      "hash": "785:3484469334",
+      "t": "2026-11-11T17:45:59.845Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10647,7 +10709,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:2185624715"
+    "hash": "484:1147040141"
   },
   "members": [
     {
@@ -10929,8 +10991,8 @@
         ]
       },
       "rush": {
-        "pct": 39,
-        "troops": 15.5,
+        "pct": 39.1,
+        "troops": 15.9,
         "spells": 10.3,
         "heroes": 65.7,
         "top": [
@@ -11251,8 +11313,8 @@
         "cg": 14450,
         "don": 412,
         "capLoot": 65320,
-        "gold": 345696068,
-        "elixir": 341999477,
+        "gold": 345742666,
+        "elixir": 342055889,
         "capContrib": 122825,
         "wins": 0
       }
@@ -12427,8 +12489,8 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 7810,
-        "gold": 110923473,
-        "elixir": 94572823,
+        "gold": 110991473,
+        "elixir": 94640823,
         "capContrib": 34127,
         "wins": 0
       }
@@ -12438,7 +12500,7 @@
       "tag": "#GVGRVCQJR",
       "role": "member",
       "th": 9,
-      "given": 334,
+      "given": 360,
       "received": 667,
       "trophies": 320,
       "profile": {
@@ -12864,7 +12926,7 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 120,
+      "received": 140,
       "trophies": 58,
       "profile": {
         "level": 34,
@@ -12959,8 +13021,8 @@
         "capital": 250,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1440,
-        "bLeague": "Stone League I",
+        "bTrophies": 1332,
+        "bLeague": "Stone League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -13141,7 +13203,7 @@
       "role": "member",
       "th": 9,
       "given": 76,
-      "received": 209,
+      "received": 235,
       "trophies": 0,
       "profile": {
         "level": 38,
@@ -13154,8 +13216,8 @@
         "capital": 100,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1156,
-        "bLeague": "Stone League IV",
+        "bTrophies": 1206,
+        "bLeague": "Stone League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -13299,7 +13361,7 @@
       "tag": "#R9L08VVCY",
       "role": "member",
       "th": 9,
-      "given": 0,
+      "given": 20,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -13329,8 +13391,8 @@
         ]
       },
       "rush": {
-        "pct": 57.3,
-        "troops": 48.1,
+        "pct": 56.3,
+        "troops": 46.2,
         "spells": 35.7,
         "heroes": 83.3,
         "top": [
@@ -13368,10 +13430,10 @@
       },
       "ach": {
         "cg": 0,
-        "don": 0,
+        "don": 20,
         "capLoot": 0,
-        "gold": 4854247,
-        "elixir": 3966546,
+        "gold": 5747920,
+        "elixir": 4937500,
         "capContrib": 2400,
         "wins": 0
       }
