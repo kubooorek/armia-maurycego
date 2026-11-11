@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T03:31:26.046Z",
+  "updated": "2026-11-11T03:46:02.901Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -151,7 +151,7 @@
       "level": 3,
       "stars": 47,
       "pct": 66.44,
-      "attacks": 22,
+      "attacks": 23,
       "bases": [
         {
           "pos": 1,
@@ -930,6 +930,16 @@
         "stars": 0,
         "pct": 16,
         "order": 48
+      },
+      {
+        "by": "Kyloooo",
+        "bpos": 23,
+        "th": 5,
+        "tpos": 24,
+        "tname": "smouki",
+        "stars": 0,
+        "pct": 28,
+        "order": 49
       }
     ]
   },
@@ -3655,7 +3665,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 15
   },
   "raids": [
@@ -10285,14 +10295,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 48,
+    "w:20261110T211034.000Z": 49,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1595:2211477045",
-      "t": "2026-11-11T03:31:22.932Z"
+      "hash": "1595:2544144633",
+      "t": "2026-11-11T03:45:59.038Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10632,9 +10642,9 @@
         ]
       },
       "rush": {
-        "pct": 39.3,
+        "pct": 39.1,
         "troops": 15,
-        "spells": 11.9,
+        "spells": 10.4,
         "heroes": 65.7,
         "top": [
           {
@@ -10875,10 +10885,10 @@
       "th": 12,
       "given": 308,
       "received": 40,
-      "trophies": 271,
+      "trophies": 311,
       "profile": {
         "level": 107,
-        "trophies": 271,
+        "trophies": 311,
         "best": 1032,
         "league": "Wizard League 10",
         "warStars": 69,
