@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T02:16:09.211Z",
+  "updated": "2026-11-11T02:46:03.299Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -22,7 +22,7 @@
         {
           "pos": 1,
           "th": 15,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 2,
@@ -52,7 +52,7 @@
         {
           "pos": 7,
           "th": 11,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 8,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 42,
-      "pct": 59.8,
-      "attacks": 19,
+      "stars": 47,
+      "pct": 65.8,
+      "attacks": 21,
       "bases": [
         {
           "pos": 1,
@@ -900,6 +900,26 @@
         "stars": 1,
         "pct": 83,
         "order": 45
+      },
+      {
+        "by": "♍ʏᴀsʜɪʀᴏ♍",
+        "bpos": 6,
+        "th": 12,
+        "tpos": 7,
+        "tname": "Cwel123",
+        "stars": 3,
+        "pct": 100,
+        "order": 46
+      },
+      {
+        "by": "♋JHOEKER♋",
+        "bpos": 1,
+        "th": 14,
+        "tpos": 1,
+        "tname": "KUBOOOREK",
+        "stars": 2,
+        "pct": 50,
+        "order": 47
       }
     ]
   },
@@ -4218,10 +4238,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 42,
+      "them": 47,
       "final": false,
       "pct": 82.36,
-      "themPct": 59.8,
+      "themPct": 65.8,
       "themBases": [
         {
           "pos": 1,
@@ -10255,14 +10275,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 45,
+    "w:20261110T211034.000Z": 47,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1595:3634546893",
-      "t": "2026-11-11T02:16:05.302Z"
+      "hash": "1595:3439211455",
+      "t": "2026-11-11T02:45:59.038Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10320,7 +10340,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:3831827499"
+    "hash": "484:3010095238"
   },
   "members": [
     {
