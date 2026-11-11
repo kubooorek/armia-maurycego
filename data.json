@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T21:46:06.451Z",
+  "updated": "2026-11-11T22:01:35.552Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -2725,7 +2725,7 @@
       }
     ]
   },
-  "visits": 119,
+  "visits": 122,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -7297,8 +7297,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|127249377|117827621|7600|634|13415|38536|0|40|59|10",
-      "last": "2026-11-11T21:46:03.606Z",
+      "sig": "25|129809721|120362092|7600|634|13415|38536|0|40|59|10",
+      "last": "2026-11-11T22:01:32.588Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -9535,8 +9535,8 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "871:756006399",
-      "t": "2026-11-11T21:46:03.606Z"
+      "hash": "871:279565153",
+      "t": "2026-11-11T22:01:32.588Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9890,7 +9890,7 @@
           },
           {
             "name": "Royal Champion",
-            "level": 9,
+            "level": 10,
             "max": 55
           },
           {
@@ -10493,7 +10493,7 @@
         "capital": 95286,
         "warPref": "in",
         "bh": 7,
-        "bTrophies": 2214,
+        "bTrophies": 2236,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -10828,10 +10828,10 @@
       "th": 10,
       "given": 25,
       "received": 124,
-      "trophies": 47,
+      "trophies": 178,
       "profile": {
         "level": 59,
-        "trophies": 34,
+        "trophies": 178,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 40,
@@ -10871,8 +10871,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 13415,
-        "gold": 127249377,
-        "elixir": 117827621,
+        "gold": 129809721,
+        "elixir": 120362092,
         "capContrib": 38536,
         "wins": 0
       }
