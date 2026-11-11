@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T05:31:23.348Z",
+  "updated": "2026-11-11T05:46:03.625Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10391,8 +10391,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1596:3591275789",
-      "t": "2026-11-11T05:31:19.218Z"
+      "hash": "1596:2331339856",
+      "t": "2026-11-11T05:46:01.283Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10921,8 +10921,8 @@
         ]
       },
       "rush": {
-        "pct": 26.7,
-        "troops": 21.9,
+        "pct": 26.4,
+        "troops": 21.3,
         "spells": 27.5,
         "heroes": 30,
         "top": [
@@ -13403,23 +13403,17 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 3.1,
+        "pct": 0,
         "troops": 0,
-        "spells": 10,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 0,
