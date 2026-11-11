@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T22:01:35.552Z",
+  "updated": "2026-11-11T22:12:51.643Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -2725,11 +2725,11 @@
       }
     ]
   },
-  "visits": 122,
+  "visits": 124,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -9967,8 +9967,8 @@
         "capital": 53355,
         "warPref": "in",
         "bh": 7,
-        "bTrophies": 2013,
-        "bLeague": "Brass League III",
+        "bTrophies": 1978,
+        "bLeague": "Copper League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -11496,7 +11496,7 @@
         "capital": 25739,
         "warPref": "in",
         "bh": 5,
-        "bTrophies": 1450,
+        "bTrophies": 1482,
         "bLeague": "Stone League I",
         "heroes": [
           {
