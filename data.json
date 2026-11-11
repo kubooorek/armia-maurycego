@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T03:01:29.559Z",
+  "updated": "2026-11-11T03:16:09.441Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -150,8 +150,8 @@
       "name": "kalmado team",
       "level": 3,
       "stars": 47,
-      "pct": 65.8,
-      "attacks": 21,
+      "pct": 66.44,
+      "attacks": 22,
       "bases": [
         {
           "pos": 1,
@@ -920,6 +920,16 @@
         "stars": 2,
         "pct": 50,
         "order": 47
+      },
+      {
+        "by": "Kyloooo",
+        "bpos": 23,
+        "th": 5,
+        "tpos": 25,
+        "tname": "krupnik",
+        "stars": 0,
+        "pct": 16,
+        "order": 48
       }
     ]
   },
@@ -4241,7 +4251,7 @@
       "them": 47,
       "final": false,
       "pct": 82.36,
-      "themPct": 65.8,
+      "themPct": 66.44,
       "themBases": [
         {
           "pos": 1,
@@ -10275,14 +10285,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 47,
+    "w:20261110T211034.000Z": 48,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1595:1933339767",
-      "t": "2026-11-11T03:01:26.737Z"
+      "hash": "1595:3717348733",
+      "t": "2026-11-11T03:16:05.265Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -12245,10 +12255,10 @@
       "th": 8,
       "given": 0,
       "received": 52,
-      "trophies": 257,
+      "trophies": 267,
       "profile": {
         "level": 42,
-        "trophies": 257,
+        "trophies": 267,
         "best": 293,
         "league": "Skeleton League 3",
         "warStars": 24,
