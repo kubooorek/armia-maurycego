@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T14:46:05.132Z",
+  "updated": "2026-11-11T15:01:25.374Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3890,7 +3890,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -10571,8 +10571,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:2355781247",
-      "t": "2026-11-11T14:46:01.598Z"
+      "hash": "1597:2617067831",
+      "t": "2026-11-11T15:01:22.627Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -12353,7 +12353,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
@@ -12369,20 +12369,15 @@
         ]
       },
       "rush": {
-        "pct": 23,
-        "troops": 2.6,
+        "pct": 21.8,
+        "troops": 1.3,
         "spells": 7.4,
-        "heroes": 51.4,
+        "heroes": 50,
         "top": [
           {
             "n": "Królowa Łuczniczek",
             "lvl": 8,
             "need": 30
-          },
-          {
-            "n": "Lawowy ogar",
-            "lvl": 1,
-            "need": 2
           },
           {
             "n": "Zaklęcie skoku",
@@ -12396,13 +12391,18 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 19,
+            "lvl": 20,
             "need": 30
           },
           {
             "n": "Książę Minionów",
             "lvl": 7,
             "need": 10
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 3,
+            "need": 4
           }
         ]
       },
