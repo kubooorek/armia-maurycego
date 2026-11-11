@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T00:46:01.577Z",
+  "updated": "2026-11-11T01:01:38.996Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -62,7 +62,7 @@
         {
           "pos": 9,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 10,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 39,
-      "pct": 54.6,
-      "attacks": 17,
+      "stars": 42,
+      "pct": 58.6,
+      "attacks": 18,
       "bases": [
         {
           "pos": 1,
@@ -880,6 +880,16 @@
         "stars": 3,
         "pct": 100,
         "order": 43
+      },
+      {
+        "by": "IJN Tosa",
+        "bpos": 9,
+        "th": 10,
+        "tpos": 9,
+        "tname": "tak",
+        "stars": 3,
+        "pct": 100,
+        "order": 44
       }
     ]
   },
@@ -4198,10 +4208,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 39,
+      "them": 42,
       "final": false,
       "pct": 82.36,
-      "themPct": 54.6,
+      "themPct": 58.6,
       "themBases": [
         {
           "pos": 1,
@@ -10235,14 +10245,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 43,
+    "w:20261110T211034.000Z": 44,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1594:4073815901",
-      "t": "2026-11-11T00:45:57.576Z"
+      "hash": "1594:448236947",
+      "t": "2026-11-11T01:01:34.320Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10300,7 +10310,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:45201219"
+    "hash": "484:3831827499"
   },
   "members": [
     {
