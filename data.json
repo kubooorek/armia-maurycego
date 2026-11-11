@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T17:46:05.048Z",
+  "updated": "2026-11-11T18:01:30.065Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -17,7 +17,7 @@
       "level": 4,
       "stars": 72,
       "pct": 97.28,
-      "attacks": 38,
+      "attacks": 39,
       "bases": [
         {
           "pos": 1,
@@ -553,6 +553,15 @@
             "tpos": 12,
             "tname": "♠DH3NVH3R♠",
             "seen": "2026-11-11T08:01:18.462Z"
+          },
+          {
+            "stars": 1,
+            "pct": 38,
+            "order": 78,
+            "target": "3. DRAZUU'2",
+            "tpos": 3,
+            "tname": "DRAZUU'2",
+            "seen": "2026-11-11T18:01:23.399Z"
           }
         ]
       },
@@ -4873,6 +4882,12 @@
               "pct": 97,
               "target": "12. ♠DH3NVH3R♠",
               "order": 60
+            },
+            {
+              "stars": 1,
+              "pct": 38,
+              "target": "3. DRAZUU'2",
+              "order": 78
             }
           ]
         },
@@ -8376,8 +8391,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "309|345742666|342055889|14450|412|65320|122825|0|69|107|12",
-      "last": "2026-11-11T17:45:59.845Z",
+      "sig": "339|345742666|342055889|14450|442|65320|122825|0|69|107|12",
+      "last": "2026-11-11T18:01:24.861Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -8386,8 +8401,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "68|412000901|421863404|12900|697|283555|414718|0|130|124|12",
-      "last": "2026-11-11T11:31:05.636Z",
+      "sig": "69|415255449|425570478|12900|697|283555|414718|0|134|124|12",
+      "last": "2026-11-11T18:01:24.861Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -8471,8 +8486,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "360|78833531|77304024|2400|779|14765|36586|0|6|59|9",
-      "last": "2026-11-11T17:45:59.845Z",
+      "sig": "360|79344063|77748298|2400|804|14765|36586|0|6|59|9",
+      "last": "2026-11-11T18:01:24.861Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -8511,8 +8526,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|27960063|27492184|0|0|0|400|0|14|34|8",
-      "last": "2026-11-11T09:15:52.787Z",
+      "sig": "0|28175563|27691184|0|0|0|400|0|14|34|8",
+      "last": "2026-11-11T18:01:24.861Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -8912,6 +8927,15 @@
           "cap": 0
         },
         {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "score": 212,
+          "stars": 19,
+          "don": 65,
+          "cg": 0,
+          "cap": 7640
+        },
+        {
           "name": "Cwel123",
           "tag": "#RPR0L809R",
           "score": 209,
@@ -8923,9 +8947,9 @@
         {
           "name": "oggsgdjdjbd",
           "tag": "#Q9CU9P908",
-          "score": 203,
+          "score": 206,
           "stars": 15,
-          "don": 289,
+          "don": 319,
           "cg": 0,
           "cap": 11955
         },
@@ -8937,15 +8961,6 @@
           "don": 282,
           "cg": 0,
           "cap": 8055
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "score": 172,
-          "stars": 15,
-          "don": 65,
-          "cg": 0,
-          "cap": 7640
         }
       ]
     }
@@ -9130,7 +9145,7 @@
       [
         20768,
         69,
-        412,
+        442,
         12
       ]
     ],
@@ -9181,7 +9196,7 @@
       ],
       [
         20768,
-        130,
+        134,
         697,
         12
       ]
@@ -9572,7 +9587,7 @@
       [
         20768,
         6,
-        779,
+        804,
         9
       ]
     ],
@@ -9706,32 +9721,6 @@
         9
       ]
     ],
-    "#GVG02VV98": [
-      [
-        20765,
-        0,
-        0,
-        8
-      ],
-      [
-        20766,
-        0,
-        0,
-        8
-      ],
-      [
-        20767,
-        0,
-        0,
-        9
-      ],
-      [
-        20768,
-        0,
-        0,
-        9
-      ]
-    ],
     "#R0VJLRGQ0": [
       [
         20765,
@@ -9756,6 +9745,32 @@
         14,
         0,
         8
+      ]
+    ],
+    "#GVG02VV98": [
+      [
+        20765,
+        0,
+        0,
+        8
+      ],
+      [
+        20766,
+        0,
+        0,
+        8
+      ],
+      [
+        20767,
+        0,
+        0,
+        9
+      ],
+      [
+        20768,
+        0,
+        0,
+        9
       ]
     ],
     "#R0VLRL292": [
@@ -10644,19 +10659,19 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 77,
+    "w:20261110T211034.000Z": 78,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1601:3918542509",
-      "t": "2026-11-11T17:45:59.845Z"
+      "hash": "1602:2114938459",
+      "t": "2026-11-11T18:01:24.861Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "785:3484469334",
-      "t": "2026-11-11T17:45:59.845Z"
+      "hash": "785:81116208",
+      "t": "2026-11-11T18:01:24.861Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11232,7 +11247,7 @@
       "tag": "#Q9CU9P908",
       "role": "member",
       "th": 12,
-      "given": 309,
+      "given": 339,
       "received": 40,
       "trophies": 311,
       "profile": {
@@ -11311,7 +11326,7 @@
       },
       "ach": {
         "cg": 14450,
-        "don": 412,
+        "don": 442,
         "capLoot": 65320,
         "gold": 345742666,
         "elixir": 342055889,
@@ -11416,7 +11431,7 @@
       "tag": "#LJYR92002",
       "role": "member",
       "th": 12,
-      "given": 68,
+      "given": 69,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -11424,7 +11439,7 @@
         "trophies": 0,
         "best": 2224,
         "league": "Wizard League 10",
-        "warStars": 130,
+        "warStars": 134,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 414718,
@@ -11435,12 +11450,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 52,
+            "level": 53,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 54,
+            "level": 55,
             "max": 110
           },
           {
@@ -11466,8 +11481,8 @@
         "cg": 12900,
         "don": 697,
         "capLoot": 283555,
-        "gold": 412000901,
-        "elixir": 421863404,
+        "gold": 415255449,
+        "elixir": 425570478,
         "capContrib": 414718,
         "wins": 0
       }
@@ -12501,7 +12516,7 @@
       "role": "member",
       "th": 9,
       "given": 360,
-      "received": 667,
+      "received": 698,
       "trophies": 320,
       "profile": {
         "level": 59,
@@ -12524,7 +12539,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 21,
+            "level": 22,
             "max": 110
           },
           {
@@ -12543,10 +12558,10 @@
       },
       "ach": {
         "cg": 2400,
-        "don": 779,
+        "don": 804,
         "capLoot": 14765,
-        "gold": 78833531,
-        "elixir": 77304024,
+        "gold": 79344063,
+        "elixir": 77748298,
         "capContrib": 36586,
         "wins": 0
       }
@@ -12839,6 +12854,88 @@
       }
     },
     {
+      "name": "Marsyllia",
+      "tag": "#R0VJLRGQ0",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 140,
+      "trophies": 66,
+      "profile": {
+        "level": 34,
+        "trophies": 66,
+        "best": 244,
+        "league": "Skeleton League 3",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 400,
+        "warPref": "in",
+        "bh": 3,
+        "bTrophies": 384,
+        "bLeague": "Wood League II",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 9,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 5,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 11.9,
+        "troops": 13.9,
+        "spells": 7.7,
+        "heroes": 10,
+        "top": [
+          {
+            "n": "Uzdrowicielka",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 2
+          },
+          {
+            "n": "Goblin",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Burzyciel",
+            "lvl": 3,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 3,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 0,
+        "capLoot": 0,
+        "gold": 28175563,
+        "elixir": 27691184,
+        "capContrib": 400,
+        "wins": 0
+      }
+    },
+    {
       "name": "Martini",
       "tag": "#GVG02VV98",
       "role": "member",
@@ -12917,88 +13014,6 @@
         "gold": 44686838,
         "elixir": 42233312,
         "capContrib": 6070,
-        "wins": 0
-      }
-    },
-    {
-      "name": "Marsyllia",
-      "tag": "#R0VJLRGQ0",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 140,
-      "trophies": 58,
-      "profile": {
-        "level": 34,
-        "trophies": 58,
-        "best": 244,
-        "league": "Skeleton League 3",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 400,
-        "warPref": "in",
-        "bh": 3,
-        "bTrophies": 384,
-        "bLeague": "Wood League II",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 9,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 11.9,
-        "troops": 13.9,
-        "spells": 7.7,
-        "heroes": 10,
-        "top": [
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Goblin",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Burzyciel",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 0,
-        "capLoot": 0,
-        "gold": 27960063,
-        "elixir": 27492184,
-        "capContrib": 400,
         "wins": 0
       }
     },
