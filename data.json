@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T05:01:34.988Z",
+  "updated": "2026-11-11T05:16:11.575Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -87,7 +87,7 @@
         {
           "pos": 14,
           "th": 9,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 15,
@@ -142,16 +142,16 @@
         {
           "pos": 25,
           "th": 7,
-          "best": 1
+          "best": 3
         }
       ]
     },
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 53,
-      "pct": 72.76,
-      "attacks": 28,
+      "stars": 57,
+      "pct": 75.64,
+      "attacks": 30,
       "bases": [
         {
           "pos": 1,
@@ -990,6 +990,26 @@
         "stars": 3,
         "pct": 100,
         "order": 54
+      },
+      {
+        "by": "IJN Tosa",
+        "bpos": 9,
+        "th": 10,
+        "tpos": 14,
+        "tname": "Brann",
+        "stars": 3,
+        "pct": 100,
+        "order": 55
+      },
+      {
+        "by": "IJN SORYU",
+        "bpos": 14,
+        "th": 9,
+        "tpos": 25,
+        "tname": "krupnik",
+        "stars": 3,
+        "pct": 100,
+        "order": 56
       }
     ]
   },
@@ -4308,10 +4328,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 53,
+      "them": 57,
       "final": false,
       "pct": 82.36,
-      "themPct": 72.76,
+      "themPct": 75.64,
       "themBases": [
         {
           "pos": 1,
@@ -8275,8 +8295,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|145105551|139535851|0|0|0|9510|0|0|50|11",
-      "last": "2026-11-10T20:31:18.819Z",
+      "sig": "0|146482455|140956923|0|0|0|9510|0|0|50|11",
+      "last": "2026-11-11T05:16:04.320Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -10345,19 +10365,19 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 54,
+    "w:20261110T211034.000Z": 56,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1596:2762947511",
-      "t": "2026-11-11T05:01:29.847Z"
+      "hash": "1596:1902618459",
+      "t": "2026-11-11T05:16:04.320Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "768:1131530383",
-      "t": "2026-11-11T05:01:29.847Z"
+      "hash": "768:3002599215",
+      "t": "2026-11-11T05:16:04.320Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10410,7 +10430,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:290727947"
+    "hash": "484:3069315975"
   },
   "members": [
     {
@@ -11272,10 +11292,10 @@
       "th": 11,
       "given": 20,
       "received": 132,
-      "trophies": 267,
+      "trophies": 297,
       "profile": {
         "level": 82,
-        "trophies": 267,
+        "trophies": 297,
         "best": 400,
         "league": "Archer League 8",
         "warStars": 43,
@@ -11549,26 +11569,26 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 13,
+            "level": 14,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 11,
+            "level": 12,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 48.4,
+        "pct": 46.9,
         "troops": 41.8,
         "spells": 35.3,
-        "heroes": 58,
+        "heroes": 55,
         "top": [
           {
             "n": "Minion",
@@ -11591,14 +11611,14 @@
             "need": 4
           },
           {
-            "n": "Król Barbarzyńców",
-            "lvl": 13,
-            "need": 40
-          },
-          {
             "n": "Wieprzowy jeździec",
             "lvl": 2,
             "need": 6
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 3
           }
         ]
       },
@@ -11606,8 +11626,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 145105551,
-        "elixir": 139535851,
+        "gold": 146482455,
+        "elixir": 140956923,
         "capContrib": 9510,
         "wins": 0
       }
