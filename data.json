@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T05:16:11.575Z",
+  "updated": "2026-11-11T05:31:23.348Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -117,7 +117,7 @@
         {
           "pos": 20,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 21,
@@ -132,7 +132,7 @@
         {
           "pos": 23,
           "th": 7,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 24,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 57,
-      "pct": 75.64,
-      "attacks": 30,
+      "stars": 63,
+      "pct": 83.64,
+      "attacks": 32,
       "bases": [
         {
           "pos": 1,
@@ -1010,6 +1010,26 @@
         "stars": 3,
         "pct": 100,
         "order": 56
+      },
+      {
+        "by": "ACE",
+        "bpos": 13,
+        "th": 9,
+        "tpos": 20,
+        "tname": "Rico",
+        "stars": 3,
+        "pct": 100,
+        "order": 57
+      },
+      {
+        "by": "ACE",
+        "bpos": 13,
+        "th": 9,
+        "tpos": 23,
+        "tname": "TwarógPółtlusty",
+        "stars": 3,
+        "pct": 100,
+        "order": 58
       }
     ]
   },
@@ -4328,10 +4348,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 57,
+      "them": 63,
       "final": false,
       "pct": 82.36,
-      "themPct": 75.64,
+      "themPct": 83.64,
       "themBases": [
         {
           "pos": 1,
@@ -10365,14 +10385,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 56,
+    "w:20261110T211034.000Z": 58,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1596:1902618459",
-      "t": "2026-11-11T05:16:04.320Z"
+      "hash": "1596:3591275789",
+      "t": "2026-11-11T05:31:19.218Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10430,7 +10450,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:3069315975"
+    "hash": "484:349948684"
   },
   "members": [
     {
@@ -11552,10 +11572,10 @@
       "th": 11,
       "given": 0,
       "received": 20,
-      "trophies": 241,
+      "trophies": 256,
       "profile": {
         "level": 50,
-        "trophies": 241,
+        "trophies": 256,
         "best": 275,
         "league": "Barbarian League 6",
         "warStars": 0,
