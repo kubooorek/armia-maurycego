@@ -3,7 +3,7 @@
 // Wymaga sekretu COC_TOKEN — klucza API z developer.clashofclans.com
 // utworzonego dla adresu IP 45.79.218.79 (serwer pośredniczący RoyaleAPI).
 
-import { writeFile, readFile } from "node:fs/promises";
+import { writeFile, readFile, mkdir, unlink, readdir } from "node:fs/promises";
 
 // Siatka bezpieczeństwa: nieoczekiwany błąd nie kończy się czerwonym statusem, tylko wpisem w logu
 process.on("unhandledRejection", e => { console.error("Nieoczekiwany błąd:", e); process.exit(0); });
@@ -1430,6 +1430,71 @@ if (BOT && srv && srv.discord && !firstRun && POSTY.rangiDiscord !== false) {
   } catch (e) { console.warn("Rangi Discord niedostępne:", e.message); }
 }
 
+/* ---------- Galeria: screeny z kanału #galeria na Discordzie trafiają na stronę ----------
+   Robot czyta ostatnie wiadomości z kanału, którego nazwa zawiera „galeria”, pobiera obrazki do img/galeria/
+   (linki z Discorda wygasają) i zapisuje listę w data.json -> galeria. Usunięta wiadomość = zdjęcie znika ze strony.
+   Wymaga: w Discord Developer Portal → Bot włączonego „Message Content Intent”. */
+let galeria = Array.isArray(old?.galeria) ? old.galeria : [];
+if (BOT && POSTY.galeria !== false) {
+  const DAPI = "https://discord.com/api/v10", H = { Authorization: `Bot ${BOT}` };
+  const call = async path => {
+    for (let i = 0; i < 4; i++) {
+      const r = await fetch(DAPI + path, { headers: H });
+      if (r.status === 429) { const j = await r.json().catch(() => ({})); await new Promise(res => setTimeout(res, (j.retry_after || 1) * 1000 + 200)); continue; }
+      return r;
+    }
+    return { ok: false, status: 429, json: async () => ({}) };
+  };
+  try {
+    await mkdir("img/galeria", { recursive: true });
+    await writeFile("img/galeria/.gitkeep", "");
+    const gs = await (await call("/users/@me/guilds")).json();
+    const g = Array.isArray(gs) && (gs.find(x => /armia/i.test(x.name)) || gs[0]);
+    const chans = g ? await (await call(`/guilds/${g.id}/channels`)).json() : [];
+    const ch = Array.isArray(chans) && chans.find(c => (c.type === 0 || c.type === 5) && /galeri/i.test(c.name));
+    if (!ch) console.log("Galeria: brak kanału #galeria na Discordzie.");
+    else {
+      const r = await call(`/channels/${ch.id}/messages?limit=100`);
+      const msgs = r.ok ? await r.json() : [];
+      if (!r.ok) console.warn("Galeria: brak dostępu do kanału", r.status);
+      if (Array.isArray(msgs) && msgs.length && msgs.every(m => !m.content && !(m.attachments || []).length)) console.warn("Galeria: wiadomości są puste — włącz „Message Content Intent” w Discord Developer Portal → Bot.");
+      const nazwa = {};   // id Discorda -> nick z gry
+      for (const [tag, id] of Object.entries(srv?.discord || {})) { const m = members.find(x => x.tag === tag); if (m) nazwa[typeof id === "object" ? id.id : id] = m.name; }
+      const czysc = t => (t || "").replace(/<[@#&!:a-z0-9_]+>/gi, "").replace(/https?:\/\/\S+/g, "").replace(/\s+/g, " ").trim().slice(0, 160);
+      const stare = new Map(galeria.map(x => [x.id, x]));
+      const nowa = [];
+      if (Array.isArray(msgs)) for (const m of msgs) {
+        if (m.author?.bot) continue;
+        for (const a of m.attachments || []) {
+          const ext = ((a.filename || "").split(".").pop() || "").toLowerCase();
+          if (!/^(png|jpe?g|webp|gif)$/.test(ext) && !/^image\//.test(a.content_type || "")) continue;
+          if (a.size > 8e6) continue;
+          if (nowa.length >= 60) break;
+          const e = /^(png|jpe?g|webp|gif)$/.test(ext) ? ext.replace("jpeg", "jpg") : "png";
+          const file = `img/galeria/${a.id}.${e}`;
+          let x = stare.get(a.id);
+          if (!x) {
+            try {
+              const img = await fetch(a.url);
+              if (!img.ok) continue;
+              await writeFile(file, Buffer.from(await img.arrayBuffer()));
+            } catch { continue; }
+          }
+          nowa.push({ id: a.id, file, autor: nazwa[m.author.id] || m.author.global_name || m.author.username || "Gracz",
+            t: m.timestamp, opis: czysc(m.content), w: a.width || null, h: a.height || null });
+        }
+      }
+      nowa.sort((a, b) => String(b.t).localeCompare(String(a.t)));
+      // sprzątanie: pliki zdjęć, których nie ma już na Discordzie
+      const zostaja = new Set(nowa.map(x => x.file.split("/").pop()));
+      for (const f of await readdir("img/galeria").catch(() => [])) if (f !== ".gitkeep" && !zostaja.has(f)) await unlink(`img/galeria/${f}`).catch(() => {});
+      const dodane = nowa.filter(x => !stare.has(x.id)).length, usuniete = galeria.filter(x => !nowa.some(y => y.id === x.id)).length;
+      if (dodane || usuniete) console.log(`Galeria: +${dodane} / -${usuniete} (razem ${nowa.length})`);
+      galeria = nowa;
+    }
+  } catch (e) { console.warn("Galeria niedostępna:", e.message); }
+}
+
 /* ---------- #kary: automatyczne ogłaszanie kar (te same zasady co zakładka „Kary” na stronie) ---------- */
 let karyPosted = old?.karyPosted && typeof old.karyPosted === "object" ? old.karyPosted : null;
 if (WEBHOOK_KARY && !firstRun && POSTY.kary !== false) {
@@ -1523,6 +1588,7 @@ const data = {
   rekrutacjaWeek,
   karyPosted,
   wymaganiaMsg,
+  galeria,
   members,
   wars
 };
