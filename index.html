@@ -33,8 +33,8 @@
 <script>document.documentElement.classList.add("booting");setTimeout(function(){document.documentElement.classList.remove("booting")},7000);</script>
 <script>/* Styl strony: "" = obecny, "epicki" = ogień i złoto, "fiolet" = fioletowy mrok, "dzien" = jasny dzień jak w grze, "zloto" = czarno-złoty. Test: ?styl=epicki / ?styl=wyloguj. Na stałe: wpisz nazwę w MOTYW. */
 var MOTYW="epicki";
-(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m==="goblin"){m="dzien";document.documentElement.classList.add("gb");}if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
-var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+One"};if(F[m]){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family="+F[m]+"&display=swap";document.head.appendChild(l);}}catch(e){}})();</script>
+(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m==="goblin"){m="dzien";document.documentElement.classList.add("gb");}var SL=false;if(m==="slonce"){m="epicki";SL=true;document.documentElement.classList.add("sl");var fs=document.createElement("style");var ff=function(n,f){return "@font-face{font-family:'"+n+"';src:url(img/styl/slonce-"+f+".woff2) format('woff2');font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}@font-face{font-family:'"+n+"';src:url(img/styl/slonce-"+f+"-ext.woff2) format('woff2');font-display:swap;unicode-range:U+0100-024F,U+1E00-1EFF}";};fs.textContent=ff("Lilita One","titan")+ff("SL Lucky","lucky")+ff("SL Brush","brush");document.head.appendChild(fs);}if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
+var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+One"};if(F[m]&&!SL){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family="+F[m]+"&display=swap";document.head.appendChild(l);}}catch(e){}})();</script>
 <style>
   :root{
     --bg:#0d0f14; --bg2:#141821; --card:#181d28; --card2:#1f2533;
@@ -1157,7 +1157,10 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   @media (max-width:1100px){.ep-ch{max-width:240px}.ep-chars{opacity:.55}}
   @media (max-width:760px){.ep-chars{display:none}.ep-art-img{width:84px}}
   /* ===== OGIEŃ 1:1 ===== */
-  html[data-motyw="epicki"] .lang-btn,html[data-motyw="epicki"] .srch-btn{display:none!important}
+  html[data-motyw="epicki"] .srch-btn{display:none!important}
+  html[data-motyw="epicki"] .lang-btn{display:inline-grid;place-items:center;height:36px;min-width:42px;padding:0 10px;border-radius:999px;background:rgba(40,12,6,.75);border:1.5px solid #c98a1c;color:#ffd977;font-weight:800;font-size:.78rem;letter-spacing:.06em;box-shadow:inset 0 1px 0 rgba(255,230,150,.15)}
+  html[data-motyw="epicki"] .lang-btn:hover{background:rgba(70,22,8,.85);border-color:#ffbe2e}
+  @media (max-width:760px){html[data-motyw="epicki"] .lang-btn{height:32px;min-width:36px;padding:0 8px;font-size:.72rem}}
   html[data-motyw="epicki"] .brand{font-size:0;gap:0}
   html[data-motyw="epicki"] .brand img{height:62px!important;margin:-4px 0 -18px!important;position:relative;z-index:2;filter:drop-shadow(0 4px 10px rgba(0,0,0,.6)) drop-shadow(0 0 12px rgba(255,140,30,.4))}
   html[data-motyw="epicki"] nav .wrap{max-width:1240px}
@@ -1577,6 +1580,84 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
 .gal-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.45);color:#fff;font-size:1.8rem;line-height:1;cursor:pointer}
 .gal-prev{left:10px}.gal-next{right:10px}.gal-nav[hidden]{display:none}
 @media (max-width:560px){.gal-grid,.gal-grid.gal-empty{grid-template-columns:1fr 1fr;gap:8px}.gal-kat{padding:13px}.gal-cap{padding:18px 8px 6px}.gal-cap small{display:none}.gal-nav{width:38px;height:38px;font-size:1.5rem}}
+
+/* ===================== SŁOŃCE (motyw "slonce": jak epicki + słoneczne tło i nowe panele) ===================== */
+html.sl body{background:#140f0a!important}
+html.sl body::before{background:#140f0a url(img/styl/slonce-tlo.jpg) center center/cover no-repeat!important}
+html.sl .page-head,html.sl .final{background:#2a1d10 url(img/styl/slonce-hero.jpg) center 38%/cover no-repeat!important;border-color:#b8861b!important}
+html.sl .page-head::before,html.sl .final::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,10,6,.15),rgba(15,10,6,.55));pointer-events:none}
+html.sl .page-head>*,html.sl .final>*{position:relative}
+html.sl #top.og-hero{background:#2a1d10 url(img/styl/slonce-hero.jpg) center 30%/cover no-repeat!important;height:auto!important;min-height:0!important;padding:clamp(18px,2.4vw,40px) 0 clamp(22px,3vw,48px)!important;display:block!important;border-bottom:2px solid #b8861b!important}
+html.sl #top.og-hero::before{background:linear-gradient(180deg,rgba(12,8,4,.1) 0%,transparent 30%,rgba(12,8,4,.25) 62%,rgba(16,11,6,.88) 100%)!important}
+html.sl:not(.sl-start) #top.og-hero{display:none!important}
+html.sl #top .wrap>*:not(.sl-box),html.sl #top>.ep-chars{display:none!important}
+html.sl #top .wrap{max-width:min(1280px,94vw)!important;padding:0!important;position:relative;z-index:1}
+html.sl .page-head h1::before{background:linear-gradient(180deg,rgba(32,26,20,.96),rgba(14,11,8,.96))!important;border:3px solid #c9961e!important;border-radius:0!important;clip-path:polygon(3% 0,97% 0,100% 50%,97% 100%,3% 100%,0 50%);box-shadow:none!important;transform:none!important}
+html.sl .page-head h1{padding:8px 46px 12px!important}
+html.sl .page-head .eyebrow{display:none!important}
+html.sl .page-head p,html.sl .page-head .sec-lead{text-shadow:0 2px 0 #000,0 0 12px rgba(0,0,0,.9)!important}
+html.sl :is(.panel,.ep-card,.news,.war,.kara,.table-box,.stat,.timer,.now-card,.rank-card,.fame-card,.req,.jstep,.calc-card,.htl-card,.sk-col,.live-war,.tile,.rec,section>.wrap>details,.faq details,.ep-strip){background:linear-gradient(180deg,rgba(34,29,24,.96),rgba(17,14,11,.96))!important;border-color:#a8781a!important}
+html.sl :is(.panel,.ep-card,.news,.war,.kara,.table-box,.rank-card,.ep-strip){box-shadow:inset 0 0 0 1px rgba(255,210,100,.07),0 10px 24px rgba(0,0,0,.45)!important}
+.sl-box{display:flex;flex-direction:column;gap:clamp(18px,2.4vw,34px)}
+.sl-top{display:flex;flex-direction:column;align-items:center;text-align:center}
+.sl-herb{width:clamp(110px,13vw,200px);height:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.55)) drop-shadow(0 0 22px rgba(255,200,60,.35));margin-bottom:-14px;position:relative;z-index:2}
+.sl-plate{position:relative;font-family:"SL Lucky","Lilita One",sans-serif;font-size:clamp(2.1rem,6.2vw,5.4rem);line-height:1;padding:.22em .5em .12em;background:linear-gradient(180deg,rgba(32,26,20,.96),rgba(14,11,8,.96));border:3px solid #c9961e;clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%);letter-spacing:.02em;white-space:nowrap;text-transform:uppercase}
+.sl-plate::before{content:"";position:absolute;inset:4px;clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%);border:1px solid rgba(255,210,90,.25);pointer-events:none}
+.sl-t1{color:#f4f1ea;text-shadow:0 3px 0 #000,0 0 10px rgba(0,0,0,.6)}
+.sl-t2{background:linear-gradient(180deg,#fff3b0,#ffd23a 45%,#f2a400 70%,#ffcf3e);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 #3a2000)}
+.sl-slogan{margin-top:10px;font-family:"SL Brush",sans-serif;font-style:italic;font-size:clamp(1.15rem,2.4vw,2.1rem);letter-spacing:.06em;color:#ffd23a;text-transform:uppercase;text-shadow:0 2px 0 #2a1600,0 0 14px rgba(0,0,0,.7);transform:rotate(-1.2deg)}
+.sl-grid{text-align:left;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(10px,1.2vw,18px)}
+.sl-o{grid-column:span 4}.sl-h{grid-column:span 2}.sl-th{grid-column:span 3}.sl-r{grid-column:span 3}
+.sl-of{grid-column:span 5}.sl-cta{grid-column:span 4}.sl-dc{grid-column:span 3}
+.sl-card{--cut:14px;position:relative;padding:2px;background:linear-gradient(160deg,#ffd862,#b47a12 45%,#ffd04a 70%,#8a5a0c);clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut));filter:drop-shadow(0 10px 22px rgba(0,0,0,.5))}
+.sl-in{position:relative;height:100%;padding:clamp(12px,1.2vw,18px) clamp(14px,1.4vw,22px);background:linear-gradient(180deg,rgba(34,29,24,.97),rgba(16,13,10,.97));clip-path:polygon(calc(var(--cut) - 1px) 0,100% 0,100% calc(100% - var(--cut) + 1px),calc(100% - var(--cut) + 1px) 100%,0 100%,0 calc(var(--cut) - 1px));color:#ece6dc;font-size:.92rem;line-height:1.5}
+.sl-in::after{content:"";position:absolute;left:18%;right:18%;bottom:6px;height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,#ffc93a,transparent);opacity:.7}
+.sl-in h3{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-family:"Lilita One",sans-serif;font-weight:400;font-size:clamp(1rem,1.25vw,1.3rem);letter-spacing:.03em;text-transform:uppercase;color:#ffc93a;text-shadow:0 2px 0 #000}
+.sl-in h3 .ic{width:26px;height:26px;color:#ffc93a;flex:none}
+.sl-in p{margin:0 0 8px}
+.sl-more{display:inline-block;margin-top:2px;font-weight:700;font-size:.86rem;color:#ffc93a}.sl-more:hover{color:#fff}
+.sl-h .sl-in,.sl-th .sl-in{display:flex;flex-direction:column;align-items:center;text-align:center}
+.sl-h h3,.sl-th h3{align-self:flex-start}
+.sl-herb2{width:min(120px,80%);height:auto;margin:auto;filter:drop-shadow(0 6px 14px rgba(0,0,0,.6))}
+.sl-lv{color:#cfc5b5;font-size:.78rem;margin-top:6px}
+.sl-big{font-family:"SL Lucky","Lilita One",sans-serif;font-size:clamp(3rem,5vw,4.6rem);line-height:1;margin:auto 0 0;background:linear-gradient(180deg,#fff,#e6e1d8 55%,#bdb6aa);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 #000)}
+.sl-big::after{content:"";display:block;height:6px;margin:4px auto 0;width:90%;background:linear-gradient(90deg,transparent,#ffc93a 15%,#ffd862 60%,transparent);transform:skewX(-20deg) rotate(-2deg);border-radius:4px}
+.sl-note{color:#cfc5b5;font-size:.8rem;margin:8px 0 auto}
+.sl-check{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:6px}
+.sl-check li{position:relative;padding-left:28px;font-weight:600}
+.sl-check li::before{content:"";position:absolute;left:0;top:.2em;width:18px;height:14px;background:#ffc93a;clip-path:polygon(0 55%,15% 40%,38% 62%,85% 0,100% 15%,38% 100%)}
+.sl-offer{display:grid;grid-template-columns:repeat(5,1fr);height:calc(100% - 40px);align-items:center}
+.sl-offer a{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-weight:700;font-size:.84rem;line-height:1.2;color:#fff;padding:6px 4px;border-right:1px solid rgba(255,200,90,.22)}
+.sl-offer a:last-child{border-right:0}.sl-offer a:hover{color:#ffc93a}
+.sl-offer .ic{width:34px;height:34px;color:#ffc93a;filter:drop-shadow(0 2px 0 #000)}
+.sl-cta .sl-in{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center}
+.sl-join{display:block;width:100%;max-width:420px;padding:clamp(12px,1.2vw,18px) 18px;border-radius:12px;font-family:"Lilita One",sans-serif;font-size:clamp(1.5rem,2.6vw,2.4rem);text-transform:uppercase;letter-spacing:.02em;color:#2a1600;background:linear-gradient(180deg,#fff2a0,#ffd23a 40%,#f2a400 75%,#ffc93a);border:2px solid #7a4a00;box-shadow:inset 0 2px 0 rgba(255,255,255,.7),inset 0 -4px 0 rgba(150,80,0,.45),0 5px 0 #4a2a00,0 0 26px rgba(255,190,40,.45);text-shadow:0 1px 0 rgba(255,255,255,.5);transition:transform .15s,filter .15s}
+.sl-join:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.sl-cta-sub{font-family:"SL Brush",sans-serif;font-style:italic;font-size:clamp(1rem,1.4vw,1.35rem);letter-spacing:.05em;color:#ffd23a;text-transform:uppercase}
+.sl-tag{background:none;border:1px dashed rgba(255,200,90,.5);color:#ffc93a;border-radius:8px;padding:3px 10px;font:600 .78rem ui-monospace,Menlo,monospace;cursor:pointer}
+.sl-dcl{display:flex;align-items:center;gap:14px;color:#fff}
+.sl-dcl svg{width:54px;height:54px;flex:none;color:#7f8cff;filter:drop-shadow(0 3px 0 #000)}
+.sl-dcl b{display:block;font-size:1.25rem}.sl-dcl small{display:block;color:#cfc5b5;font-size:.84rem;line-height:1.35}
+.sl-dcl:hover b{color:#ffc93a}
+html.sl #start .ep-dash.sl-dash{grid-template-columns:repeat(3,1fr)!important}
+@media (max-width:980px){
+  .sl-o{grid-column:span 6}.sl-h{grid-column:span 3}.sl-th{grid-column:span 3}.sl-r{grid-column:span 6}
+  .sl-of{grid-column:span 12}.sl-cta{grid-column:span 6}.sl-dc{grid-column:span 6}
+}
+@media (max-width:760px){
+  html.sl #top.og-hero{background-position:22% top!important;background-size:auto 520px!important;background-color:#1a130c!important;padding:14px 0 18px!important}
+  html.sl #top.og-hero::before{background:linear-gradient(180deg,transparent 0,transparent 200px,rgba(20,14,8,.7) 380px,#1a130c 520px)!important}
+  .sl-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .sl-grid>*{grid-column:span 2!important}
+  .sl-cta{order:-2}.sl-th{order:-1;grid-column:span 1!important}.sl-h{order:-1;grid-column:span 1!important}
+  .sl-plate{font-size:clamp(1.8rem,9.4vw,3rem);padding:.24em .55em .14em}
+  .sl-herb{width:104px;margin-bottom:-10px}
+  .sl-offer{grid-template-columns:repeat(5,1fr);height:auto}
+  .sl-offer a{font-size:.7rem;padding:4px 2px}.sl-offer .ic{width:26px;height:26px}
+  .sl-th h3,.sl-h h3{font-size:.86rem;gap:6px}.sl-th h3 .ic,.sl-h h3 .ic{width:20px;height:20px}
+  .sl-big{font-size:2.6rem}.sl-herb2{width:78px}
+  html.sl #start .ep-dash.sl-dash{grid-template-columns:1fr!important}
+}
 #glossCount{white-space:nowrap}
 body:has(.more-sheet:not([hidden])) .to-top{opacity:0!important;pointer-events:none!important}
 @media (max-width:420px){.mini-row.grp{font-size:.82rem}.mini-row.grp small{font-size:.7rem}.mini-row.grp>span:last-child{margin-left:6px}}
@@ -2560,7 +2641,7 @@ async function loadAuto(){
     const r = await fetch("data.json?v="+Date.now(), {signal:ctl.signal});
     if(!r.ok) return;
     const d = await r.json();
-    if (Array.isArray(d.penalties)) d.penalties = d.penalties.filter(p=>!KARY_ZWOLNIENI.includes(p.tag));
+    if (Array.isArray(d.penalties)) d.penalties = d.penalties.filter(p=>!KARY_ZWOLNIENI.includes(p.tag)&&!(p.type==="missed"&&/: [1-9]\d*\//.test(p.detail||"")));   // za 1/2 ataków nie ma kary
     // „Nowy” = dołączył w ciągu ostatnich 7 dni (z dziennika robota)
     const weekAgo = Date.now() - 7*864e5;
     const newNames = new Set((d.events||[]).filter(e=>e.type==="join" && new Date(e.t).getTime()>weekAgo).map(e=>e.name));
@@ -4848,6 +4929,38 @@ let saveLayoutState=()=>{};
         +`<a href="#historia"><svg class="og-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.6 4.5c2.1 0 3.6 1.2 4.4 2.6.8-1.4 2.3-2.6 4.4-2.6 3.6 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21Z"/></svg><span>Dziękujemy, że jesteście z nami!<small>ARMIA MAURYCEGO &lt;3</small></span></a>`;
       if(!strip.querySelector(".og-logo")){ const lg=document.createElement("img"); lg.className="og-logo herb-img"; lg.alt=""; const hh=$("#heroHerb"); if(hh&&hh.src) lg.src=hh.src; else if(hh) hh.addEventListener("load",()=>lg.src=hh.src); strip.appendChild(lg); }
     }
+/* ===== SŁOŃCE: strona główna według projektu (słoneczne tło, ciemne panele ze złotem) ===== */
+    if(document.documentElement.classList.contains("sl")){
+      const en=typeof LANG!=="undefined"&&LANG==="en", T=(pl,e)=>en?e:pl;
+      const GAME="https://link.clashofclans.com/pl?action=OpenClanProfile&tag=%232GQQ8RGRL", DC="https://discord.gg/7SquD7SF3";
+      const I=n=>`<svg class="ic" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+      const hero=document.querySelector("header.hero"), wrap=hero&&(hero.querySelector(".wrap")||hero);
+      if(hero&&!hero.querySelector(".sl-box")){
+        document.querySelectorAll(".ep-chars,.ep-art-img,.ep-ribbon,.ep-sub,.ep-kicker").forEach(x=>x.remove());
+        const hb=$("#heroHerb"), herb=()=>hb&&hb.src?hb.src:"icon-512.png";
+        const card=(cls,ico,title,body)=>`<div class="sl-card ${cls}"><div class="sl-in">${title?`<h3>${I(ico)}${title}</h3>`:""}${body}</div></div>`;
+        const lv=(AUTO&&AUTO.clanLevel)||"";
+        const box=document.createElement("div"); box.className="sl-box";
+        box.innerHTML=`<div class="sl-top"><img class="sl-herb herb-img" src="${herb()}" alt="${T("Herb klanu","Clan badge")}"><div class="sl-plate"><span class="sl-t1">Armia</span> <span class="sl-t2">Maurycego</span></div><div class="sl-slogan">${T("Rozwój • Wspólna gra • Dobra atmosfera","Growth • Teamwork • Good vibes")}</div></div>
+        <div class="sl-grid">`
+         +card("sl-o","users",T("O nas","About us"),`<p>${T("Jesteśmy ambitnym klanem w Clash of Clans, który stawia na rozwój, współpracę i dobrą atmosferę.","We're an ambitious Clash of Clans clan focused on growth, teamwork and a good atmosphere.")}</p><p>${T("Dołącz do nas i twórz z nami silną ekipę!","Join us and build a strong crew with us!")}</p><a class="sl-more" href="#klan">${T("Więcej o klanie","More about the clan")} ›</a>`)
+         +card("sl-h","shield",T("Nasz herb","Our badge"),`<img class="sl-herb2 herb-img" src="${herb()}" alt="">${lv?`<small class="sl-lv">${T("Poziom klanu","Clan level")} ${lv}</small>`:""}`)
+         +card("sl-th","trophy",T("Przyjmujemy od","We accept from"),`<div class="sl-big">TH8+</div><small class="sl-note">${T("Klan otwarty — wchodzisz od razu","Open clan — join instantly")}</small>`)
+         +card("sl-r","check",T("Nasze wymagania","Requirements"),`<ul class="sl-check"><li>${T("Aktywność w grze","Being active")}</li><li>${T("Rozwój swojej wioski","Growing your village")}</li><li>${T("Udział w wojnach i rajdach","Wars and raids")}</li><li>${T("Szacunek i dobra atmosfera","Respect and good vibes")}</li></ul><a class="sl-more" href="#wymagania">${T("Pełne wymagania","Full requirements")} ›</a>`)
+         +card("sl-of","gift",T("Nasza oferta","What we offer"),`<div class="sl-offer">${[["#wojny","swords",T("Wojny klanowe","Clan wars")],["#liga","trophy","CWL"],["#rajdy","castle",T("Rajdy Stolicy","Capital raids")],["#poradnik","users",T("Wspólne wsparcie","Helping each other")],["#osiagniecia","chart",T("Rozwój klanu","Clan growth")]].map(x=>`<a href="${x[0]}">${I(x[1])}<span>${x[2]}</span></a>`).join("")}</div>`)
+         +`<div class="sl-card sl-cta"><div class="sl-in"><a class="sl-join" href="${GAME}" target="_blank" rel="noopener">${T("Dołącz do nas!","Join us!")}</a><div class="sl-cta-sub">${T("Armia Maurycego — Twój nowy klan!","Armia Maurycego — your new clan!")}</div><button class="sl-tag" type="button" title="${T("Kopiuj tag","Copy tag")}">#2GQQ8RGRL</button></div></div>`
+         +card("sl-dc","chat",T("Kontakt","Contact"),`<a class="sl-dcl" href="${DC}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.6 9-.3 13.6.1 18.1a19.9 19.9 0 0 0 6 3l1.3-2.1a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4a12.6 12.6 0 0 1-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.6-13.7ZM8.3 15.3c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm7.4 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg><span><b>Discord</b><small>${T("Dołącz na naszym serwerze i bądź na bieżąco!","Join our server and stay up to date!")}</small></span></a>`)
+         +`</div>`;
+        wrap.appendChild(box);
+        if(hb&&!hb.src) hb.addEventListener("load",()=>box.querySelectorAll(".herb-img").forEach(x=>x.src=hb.src));
+        const tg=box.querySelector(".sl-tag"); tg.addEventListener("click",()=>{ try{ navigator.clipboard.writeText("#2GQQ8RGRL"); tg.textContent=T("Skopiowano ✓","Copied ✓"); setTimeout(()=>tg.textContent="#2GQQ8RGRL",1600); }catch(e){} });
+        // kafelki pod spodem: bez powtórek (O klanie / Wymagania / Rekrutacja są już wyżej)
+        document.querySelectorAll("#start .ep-dash .og-o,#start .ep-dash .og-r,#start .ep-dash .og-j").forEach(x=>x.remove());
+        const d=document.querySelector("#start .ep-dash"); if(d) d.classList.add("sl-dash");
+      }
+      document.documentElement.classList.add("sl-start");
+      addEventListener("am:page",e=>document.documentElement.classList.toggle("sl-start",!e.detail||e.detail==="start"));
+    }
     /* ===== DZIEŃ 1:1 według projektu ===== */
     if(ST&&ST.ep&&document.documentElement.dataset.motyw==="dzien"&&(typeof LANG==="undefined"||LANG!=="en")){
       const IMG=n=>`img/styl/dzien-${n}`, GAME="https://link.clashofclans.com/pl?action=OpenClanProfile&tag=%232GQQ8RGRL";
@@ -5002,8 +5115,8 @@ let saveLayoutState=()=>{};
 })();
 
 (function(){ let t=null; try{t=localStorage.getItem("am_motyw_test");}catch(e){} if(t===null) return;
-  const cur=document.documentElement.classList.contains("gb")?"goblin":(document.documentElement.dataset.motyw||""); const d=document.createElement("div"); d.className="mot-switch no-ico";
-  d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["goblin","Goblin"],["zloto","Złoto"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
+  const cur=document.documentElement.classList.contains("sl")?"slonce":document.documentElement.classList.contains("gb")?"goblin":(document.documentElement.dataset.motyw||""); const d=document.createElement("div"); d.className="mot-switch no-ico";
+  d.innerHTML=`<span>Styl (test):</span>${[["","Obecny"],["epicki","Ogień"],["fiolet","Fiolet"],["dzien","Dzień"],["goblin","Goblin"],["zloto","Złoto"],["slonce","Słońce"]].map(([k,l])=>`<a href="?styl=${k}" class="${k===cur?"on":""}">${l}</a>`).join("")}<button title="Zakończ test">✕</button>`;
   d.querySelector("button").onclick=()=>{ location.href=location.pathname+"?styl=wyloguj"; }; document.body.appendChild(d); })();
 applyLang();
 /* ===== Smaczki: liczniki, wjeżdżanie, iskry, „do góry” ===== */
@@ -5040,7 +5153,7 @@ addEventListener("click",e=>{ window.__subClick=!!(e.target.closest&&e.target.cl
 // "naglowki" = bez ogonków tylko w napisach czcionką z gry (Lilita One nie ma ą, ę, ś, ż…), reszta strony po polsku
 const BEZ_PL="naglowki";
 (function(){ if(!BEZ_PL) return;
-  const TYLKO_NAGL=BEZ_PL==="naglowki", gra=el=>/Lilita/i.test(getComputedStyle(el).fontFamily);
+  const TYLKO_NAGL=BEZ_PL==="naglowki", gra=el=>!document.documentElement.classList.contains("sl")&&/Lilita/i.test(getComputedStyle(el).fontFamily);
   const MAP={"ą":"a","ć":"c","ę":"e","ł":"l","ń":"n","ó":"o","ś":"s","ź":"z","ż":"z","Ą":"A","Ć":"C","Ę":"E","Ł":"L","Ń":"N","Ó":"O","Ś":"S","Ź":"Z","Ż":"Z"};
   const RE=/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, fix=t=>t.replace(RE,c=>MAP[c]);
   const SKIP="script,style,textarea,input,code,pre";
