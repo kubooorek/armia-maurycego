@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T10:45:57.724Z",
+  "updated": "2026-11-11T11:01:24.881Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -8237,8 +8237,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
-      "sig": "48|406144367|414658492|12900|677|283555|414718|0|130|124|12",
-      "last": "2026-11-10T13:31:19.268Z",
+      "sig": "68|407494135|416644271|12900|697|283555|414718|0|130|124|12",
+      "last": "2026-11-11T11:01:21.321Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#22R8PLCU8": {
@@ -8792,9 +8792,9 @@
         {
           "name": "MAQOS",
           "tag": "#LJYR92002",
-          "score": 170,
+          "score": 172,
           "stars": 15,
-          "don": 45,
+          "don": 65,
           "cg": 0,
           "cap": 7640
         }
@@ -9033,7 +9033,7 @@
       [
         20768,
         130,
-        677,
+        697,
         12
       ]
     ],
@@ -10499,13 +10499,13 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1599:1756183685",
-      "t": "2026-11-11T10:45:50.941Z"
+      "hash": "1599:2017470269",
+      "t": "2026-11-11T11:01:21.321Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "768:2439039368",
-      "t": "2026-11-11T10:45:50.941Z"
+      "hash": "768:3130810206",
+      "t": "2026-11-11T11:01:21.321Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11000,10 +11000,10 @@
         "warStars": 514,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 104841,
+        "capital": 105841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2362,
+        "bTrophies": 2386,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -11265,7 +11265,7 @@
       "tag": "#LJYR92002",
       "role": "member",
       "th": 12,
-      "given": 48,
+      "given": 68,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -11299,7 +11299,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 33,
+            "level": 34,
             "max": 95
           }
         ]
@@ -11313,10 +11313,10 @@
       },
       "ach": {
         "cg": 12900,
-        "don": 677,
+        "don": 697,
         "capLoot": 283555,
-        "gold": 406144367,
-        "elixir": 414658492,
+        "gold": 407494135,
+        "elixir": 416644271,
         "capContrib": 414718,
         "wins": 0
       }
@@ -12363,7 +12363,7 @@
         "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1454,
+        "bTrophies": 1465,
         "bLeague": "Stone League I",
         "heroes": [
           {
@@ -12759,11 +12759,11 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 100,
-      "trophies": 55,
+      "received": 120,
+      "trophies": 58,
       "profile": {
         "level": 34,
-        "trophies": 55,
+        "trophies": 58,
         "best": 244,
         "league": "Skeleton League 3",
         "warStars": 14,
