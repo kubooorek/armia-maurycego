@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T13:01:40.449Z",
+  "updated": "2026-11-11T13:45:58.773Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 66,
-      "pct": 90.36,
-      "attacks": 30,
+      "stars": 69,
+      "pct": 94.36,
+      "attacks": 31,
       "bases": [
         {
           "pos": 1,
@@ -276,7 +276,7 @@
         {
           "pos": 25,
           "th": 5,
-          "best": 0
+          "best": 3
         }
       ]
     },
@@ -710,6 +710,15 @@
             "tpos": 23,
             "tname": "Kyloooo",
             "seen": "2026-11-10T21:31:20.450Z"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 70,
+            "target": "25. dendie",
+            "tpos": 25,
+            "tname": "dendie",
+            "seen": "2026-11-11T13:45:53.011Z"
           }
         ]
       },
@@ -4455,10 +4464,10 @@
       "size": 25,
       "perMember": 2,
       "state": "inWar",
-      "us": 66,
+      "us": 69,
       "them": 74,
       "final": false,
-      "pct": 90.36,
+      "pct": 94.36,
       "themPct": 98.28,
       "themBases": [
         {
@@ -4584,7 +4593,7 @@
         {
           "pos": 25,
           "th": 5,
-          "best": 0
+          "best": 3
         }
       ],
       "members": [
@@ -4933,6 +4942,12 @@
               "pct": 100,
               "target": "23. Kyloooo",
               "order": 6
+            },
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "25. dendie",
+              "order": 70
             }
           ]
         },
@@ -8409,8 +8424,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "70|8891939|7985810|0|111|5370|9617|0|3|31|7",
-      "last": "2026-11-11T12:45:53.519Z",
+      "sig": "70|9182053|8226713|0|111|5370|9617|0|6|31|7",
+      "last": "2026-11-11T13:45:54.303Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -9891,7 +9906,7 @@
       ],
       [
         20768,
-        3,
+        6,
         111,
         7
       ]
@@ -10520,19 +10535,19 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 69,
+    "w:20261110T211034.000Z": 70,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:352150457",
-      "t": "2026-11-11T13:01:38.097Z"
+      "hash": "1594:1872296518",
+      "t": "2026-11-11T13:45:54.303Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "785:3470783358",
-      "t": "2026-11-11T12:45:53.519Z"
+      "hash": "785:3248480048",
+      "t": "2026-11-11T13:45:54.303Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10585,7 +10600,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:2283030002"
+    "hash": "484:725153141"
   },
   "members": [
     {
@@ -12291,10 +12306,10 @@
       "th": 10,
       "given": 31,
       "received": 248,
-      "trophies": 101,
+      "trophies": 116,
       "profile": {
         "level": 56,
-        "trophies": 101,
+        "trophies": 116,
         "best": 386,
         "league": "Barbarian League 4",
         "warStars": 16,
@@ -12659,10 +12674,10 @@
       "th": 9,
       "given": 2,
       "received": 0,
-      "trophies": 99,
+      "trophies": 139,
       "profile": {
         "level": 52,
-        "trophies": 99,
+        "trophies": 139,
         "best": 242,
         "league": "Skeleton League 3",
         "warStars": 0,
@@ -13486,7 +13501,7 @@
         "trophies": 249,
         "best": 249,
         "league": "Skeleton League 1",
-        "warStars": 3,
+        "warStars": 6,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 9617,
@@ -13524,8 +13539,8 @@
         "cg": 0,
         "don": 111,
         "capLoot": 5370,
-        "gold": 8891939,
-        "elixir": 7985810,
+        "gold": 9182053,
+        "elixir": 8226713,
         "capContrib": 9617,
         "wins": 0
       }
