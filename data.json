@@ -1,12 +1,549 @@
 {
-  "updated": "2026-11-11T23:15:52.322Z",
+  "updated": "2026-11-11T23:31:12.773Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
   "capitalLeague": "Silver League III",
   "warWinStreak": 0,
   "warWins": 13,
-  "currentWar": null,
+  "currentWar": {
+    "state": "preparation",
+    "size": 30,
+    "perMember": 2,
+    "start": "20261112T222253.000Z",
+    "end": "20261113T222253.000Z",
+    "us": {
+      "name": "ARMIA MAURYCEGO",
+      "level": 4,
+      "stars": 0,
+      "pct": 0,
+      "attacks": 0,
+      "bases": [
+        {
+          "pos": 1,
+          "th": 15,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 4,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 7,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 13,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 14,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 15,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 16,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 17,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 18,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 19,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 20,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 21,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 22,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 23,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 24,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 25,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 26,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 27,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 28,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 29,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 30,
+          "th": 7,
+          "best": 0
+        }
+      ]
+    },
+    "them": {
+      "name": "MANUSCRIPTS",
+      "level": 4,
+      "stars": 0,
+      "pct": 0,
+      "attacks": 0,
+      "bases": [
+        {
+          "pos": 1,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 4,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 7,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 11,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 13,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 14,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 15,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 16,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 17,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 18,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 19,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 20,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 21,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 22,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 23,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 24,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 25,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 26,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 27,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 28,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 29,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 30,
+          "th": 8,
+          "best": 0
+        }
+      ]
+    },
+    "members": [
+      {
+        "name": "KUBOOOREK",
+        "tag": "#VP9PLGLV",
+        "pos": 1,
+        "th": 15,
+        "attacks": []
+      },
+      {
+        "name": "To ja",
+        "tag": "#2JGYURUQJ",
+        "pos": 2,
+        "th": 13,
+        "attacks": []
+      },
+      {
+        "name": "monte",
+        "tag": "#QYJUV90JY",
+        "pos": 3,
+        "th": 13,
+        "attacks": []
+      },
+      {
+        "name": "Albaroon.2",
+        "tag": "#GYUJR2URJ",
+        "pos": 4,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "MAQOS",
+        "tag": "#LJYR92002",
+        "pos": 5,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "oggsgdjdjbd",
+        "tag": "#Q9CU9P908",
+        "pos": 6,
+        "th": 12,
+        "attacks": []
+      },
+      {
+        "name": "Toster290",
+        "tag": "#GJJ90QGVQ",
+        "pos": 7,
+        "th": 13,
+        "attacks": []
+      },
+      {
+        "name": "VipeR",
+        "tag": "#22R8PLCU8",
+        "pos": 8,
+        "th": 11,
+        "attacks": []
+      },
+      {
+        "name": "Cwel123",
+        "tag": "#RPR0L809R",
+        "pos": 9,
+        "th": 11,
+        "attacks": []
+      },
+      {
+        "name": "TTomson",
+        "tag": "#R0V8QGLJQ",
+        "pos": 10,
+        "th": 11,
+        "attacks": []
+      },
+      {
+        "name": "Kojak",
+        "tag": "#G8VGC2VRL",
+        "pos": 11,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "vvd",
+        "tag": "#GQULCR98R",
+        "pos": 12,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "zuzia",
+        "tag": "#R8V9U9VLJ",
+        "pos": 13,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "♡karo♡lina♡",
+        "tag": "#GVGRVCQJR",
+        "pos": 14,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "tak",
+        "tag": "#Y02PYY922",
+        "pos": 15,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Belaska",
+        "tag": "#GU0R2J8R0",
+        "pos": 16,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Brann",
+        "tag": "#LC8VRR9R2",
+        "pos": 17,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "KuN",
+        "tag": "#YLLQL2VUP",
+        "pos": 18,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "wiktor",
+        "tag": "#QGPC2228Q",
+        "pos": 19,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "SZAR3",
+        "tag": "#RYLR2C92V",
+        "pos": 20,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "erykos",
+        "tag": "#R9GPGL0QJ",
+        "pos": 21,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "TwojaSiora",
+        "tag": "#GQR98J880",
+        "pos": 22,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Andrzej",
+        "tag": "#R0VLRL292",
+        "pos": 23,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Barnes",
+        "tag": "#LQVRCRUYR",
+        "pos": 24,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "Mimbosz",
+        "tag": "#RY0QPVCCY",
+        "pos": 25,
+        "th": 10,
+        "attacks": []
+      },
+      {
+        "name": "Riczard",
+        "tag": "#R2PCVYQG2",
+        "pos": 26,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "smouki",
+        "tag": "#R9L08VVCY",
+        "pos": 27,
+        "th": 9,
+        "attacks": []
+      },
+      {
+        "name": "Rico",
+        "tag": "#R92C0U8UU",
+        "pos": 28,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "threeten",
+        "tag": "#R8RVQVPCC",
+        "pos": 29,
+        "th": 8,
+        "attacks": []
+      },
+      {
+        "name": "TwarógPółtlusty",
+        "tag": "#R9GUJ0ULV",
+        "pos": 30,
+        "th": 7,
+        "attacks": []
+      }
+    ],
+    "defs": []
+  },
   "cwl": {
     "season": "2026-11-01",
     "state": "ended",
@@ -9761,14 +10298,18 @@
       "r1",
       "summary"
     ],
-    "dm:w:20261110T211034.000Z": []
+    "dm:w:20261110T211034.000Z": [],
+    "w:20261112T222253.000Z": [
+      "prep"
+    ]
   },
   "oneShots": [
     "discord-dm-2026-11",
     "cmds-v1"
   ],
   "feed": {
-    "c:20261108T191646.000Z:kingslayers": 0
+    "c:20261108T191646.000Z:kingslayers": 0,
+    "w:20261112T222253.000Z": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -9780,6 +10321,11 @@
       "id": "1569480094655971493",
       "hash": "854:3542134483",
       "t": "2026-11-11T23:01:24.164Z"
+    },
+    "war:w:20261112T222253.000Z": {
+      "id": "1570219352353935381",
+      "hash": "1410:4168031643",
+      "t": "2026-11-11T23:31:05.276Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -9865,7 +10411,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "432:3392136836"
+    "hash": "462:2204237576"
   },
   "galeria": [
     {
@@ -12810,17 +13356,11 @@
         ]
       },
       "rush": {
-        "pct": 3.1,
+        "pct": 0,
         "troops": 0,
-        "spells": 14.3,
+        "spells": 0,
         "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 2,
-            "need": 3
-          }
-        ]
+        "top": []
       },
       "ach": {
         "cg": 0,
