@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T18:45:59.696Z",
+  "updated": "2026-11-11T19:01:31.535Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -17,7 +17,7 @@
       "level": 4,
       "stars": 72,
       "pct": 97.28,
-      "attacks": 39,
+      "attacks": 40,
       "bases": [
         {
           "pos": 1,
@@ -605,6 +605,15 @@
             "tpos": 14,
             "tname": "IJN SORYU",
             "seen": "2026-11-10T21:31:20.450Z"
+          },
+          {
+            "stars": 1,
+            "pct": 47,
+            "order": 79,
+            "target": "3. DRAZUU'2",
+            "tpos": 3,
+            "tname": "DRAZUU'2",
+            "seen": "2026-11-11T19:01:22.588Z"
           }
         ]
       },
@@ -4922,6 +4931,12 @@
               "pct": 100,
               "target": "14. IJN SORYU",
               "order": 9
+            },
+            {
+              "stars": 1,
+              "pct": 47,
+              "target": "3. DRAZUU'2",
+              "order": 79
             }
           ]
         },
@@ -8416,8 +8431,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LC8VRR9R2": {
-      "sig": "0|465880156|512046185|53920|23588|84375|216205|0|2067|102|9",
-      "last": "2026-11-10T21:31:22.310Z",
+      "sig": "0|465905156|512131836|53920|23588|84375|216205|0|2067|102|9",
+      "last": "2026-11-11T19:01:24.444Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
@@ -8486,8 +8501,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "360|79344063|77748298|2400|804|14765|36586|0|6|59|9",
-      "last": "2026-11-11T18:01:24.861Z",
+      "sig": "360|79744063|78148298|2400|804|14765|36586|0|6|60|9",
+      "last": "2026-11-11T19:01:24.444Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -8506,8 +8521,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|36844829|35673610|0|76|12040|16881|0|12|47|9",
-      "last": "2026-11-11T18:45:56.259Z",
+      "sig": "3|40793449|40233021|0|76|12040|16881|0|12|48|9",
+      "last": "2026-11-11T19:01:24.444Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -8561,8 +8576,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
-      "sig": "0|6043508|6128447|0|0|0|1550|0|3|28|7",
-      "last": "2026-11-11T12:15:53.882Z",
+      "sig": "0|6043508|6128447|0|0|0|1550|0|3|29|7",
+      "last": "2026-11-11T19:01:24.444Z",
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
@@ -8591,8 +8606,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "20|5747920|4937500|0|20|0|2400|0|3|27|9",
-      "last": "2026-11-11T17:45:59.845Z",
+      "sig": "20|5837920|5042500|0|20|0|2400|0|3|27|9",
+      "last": "2026-11-11T19:01:24.444Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -9799,6 +9814,32 @@
         9
       ]
     ],
+    "#GQR98J880": [
+      [
+        20765,
+        0,
+        72,
+        9
+      ],
+      [
+        20766,
+        0,
+        72,
+        9
+      ],
+      [
+        20767,
+        0,
+        72,
+        9
+      ],
+      [
+        20768,
+        0,
+        72,
+        9
+      ]
+    ],
     "#GV0P9JL8Q": [
       [
         20765,
@@ -9849,32 +9890,6 @@
         21,
         40,
         8
-      ]
-    ],
-    "#GQR98J880": [
-      [
-        20765,
-        0,
-        72,
-        9
-      ],
-      [
-        20766,
-        0,
-        72,
-        9
-      ],
-      [
-        20767,
-        0,
-        72,
-        9
-      ],
-      [
-        20768,
-        0,
-        72,
-        9
       ]
     ],
     "#RYUV9V9RC": [
@@ -10659,19 +10674,19 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 78,
+    "w:20261110T211034.000Z": 79,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1603:3540027567",
-      "t": "2026-11-11T18:45:56.259Z"
+      "hash": "1604:4049451148",
+      "t": "2026-11-11T19:01:24.444Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "785:4082979692",
-      "t": "2026-11-11T18:45:56.259Z"
+      "hash": "785:2008278106",
+      "t": "2026-11-11T19:01:24.444Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11777,8 +11792,8 @@
         "cg": 53920,
         "don": 23588,
         "capLoot": 84375,
-        "gold": 465880156,
-        "elixir": 512046185,
+        "gold": 465905156,
+        "elixir": 512131836,
         "capContrib": 216205,
         "wins": 0
       }
@@ -12114,8 +12129,8 @@
         ]
       },
       "rush": {
-        "pct": 25.6,
-        "troops": 36.7,
+        "pct": 25,
+        "troops": 35.4,
         "spells": 25.8,
         "heroes": 12.9,
         "top": [
@@ -12126,11 +12141,6 @@
           },
           {
             "n": "P.E.K.K.A",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Walkiria",
             "lvl": 1,
             "need": 4
           },
@@ -12146,6 +12156,11 @@
           },
           {
             "n": "Barbarzyńca",
+            "lvl": 3,
+            "need": 6
+          },
+          {
+            "n": "Goblin",
             "lvl": 3,
             "need": 6
           }
@@ -12355,7 +12370,7 @@
         "capital": 0,
         "warPref": "in",
         "bh": 3,
-        "bTrophies": 619,
+        "bTrophies": 636,
         "bLeague": "Clay League IV",
         "heroes": [
           {
@@ -12519,7 +12534,7 @@
       "received": 698,
       "trophies": 320,
       "profile": {
-        "level": 59,
+        "level": 60,
         "trophies": 320,
         "best": 349,
         "league": "Skeleton League 3",
@@ -12560,8 +12575,8 @@
         "cg": 2400,
         "don": 804,
         "capLoot": 14765,
-        "gold": 79344063,
-        "elixir": 77748298,
+        "gold": 79744063,
+        "elixir": 78148298,
         "capContrib": 36586,
         "wins": 0
       }
@@ -12733,7 +12748,7 @@
       "received": 138,
       "trophies": 205,
       "profile": {
-        "level": 47,
+        "level": 48,
         "trophies": 205,
         "best": 300,
         "league": "Skeleton League 3",
@@ -12785,8 +12800,8 @@
         "cg": 0,
         "don": 76,
         "capLoot": 12040,
-        "gold": 36844829,
-        "elixir": 35673610,
+        "gold": 40793449,
+        "elixir": 40233021,
         "capContrib": 16881,
         "wins": 0
       }
@@ -13100,6 +13115,93 @@
       }
     },
     {
+      "name": "TwojaSiora",
+      "tag": "#GQR98J880",
+      "role": "member",
+      "th": 9,
+      "given": 76,
+      "received": 235,
+      "trophies": 12,
+      "profile": {
+        "level": 38,
+        "trophies": 12,
+        "best": 240,
+        "league": "Skeleton League 3",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 100,
+        "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1206,
+        "bLeague": "Stone League III",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 4,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 7,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 1,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 40.8,
+        "troops": 19.2,
+        "spells": 61.9,
+        "heroes": 63.3,
+        "top": [
+          {
+            "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Zaklęcie szału",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 4,
+            "need": 20
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 72,
+        "capLoot": 0,
+        "gold": 46682179,
+        "elixir": 42819003,
+        "capContrib": 100,
+        "wins": 0
+      }
+    },
+    {
       "name": "CJ Alabama",
       "tag": "#GV0P9JL8Q",
       "role": "member",
@@ -13209,93 +13311,6 @@
         "gold": 8897088,
         "elixir": 9468071,
         "capContrib": 34234,
-        "wins": 0
-      }
-    },
-    {
-      "name": "TwojaSiora",
-      "tag": "#GQR98J880",
-      "role": "member",
-      "th": 9,
-      "given": 76,
-      "received": 235,
-      "trophies": 0,
-      "profile": {
-        "level": 38,
-        "trophies": 0,
-        "best": 240,
-        "league": "Skeleton League 3",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 100,
-        "warPref": "in",
-        "bh": 4,
-        "bTrophies": 1206,
-        "bLeague": "Stone League III",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 4,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 7,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 1,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 40.8,
-        "troops": 19.2,
-        "spells": 61.9,
-        "heroes": 63.3,
-        "top": [
-          {
-            "n": "Zaklęcie leczenia",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 1,
-            "need": 5
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 4,
-            "need": 20
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 72,
-        "capLoot": 0,
-        "gold": 46682179,
-        "elixir": 42819003,
-        "capContrib": 100,
         "wins": 0
       }
     },
@@ -13447,8 +13462,8 @@
         "cg": 0,
         "don": 20,
         "capLoot": 0,
-        "gold": 5747920,
-        "elixir": 4937500,
+        "gold": 5837920,
+        "elixir": 5042500,
         "capContrib": 2400,
         "wins": 0
       }
@@ -13642,20 +13657,15 @@
         ]
       },
       "rush": {
-        "pct": 6.3,
+        "pct": 3.1,
         "troops": 0,
-        "spells": 28.6,
+        "spells": 14.3,
         "heroes": 0,
         "top": [
           {
             "n": "Zaklęcie leczenia",
             "lvl": 2,
             "need": 3
-          },
-          {
-            "n": "Zaklęcie błyskawicy",
-            "lvl": 3,
-            "need": 4
           }
         ]
       },
@@ -13678,7 +13688,7 @@
       "received": 15,
       "trophies": 0,
       "profile": {
-        "level": 28,
+        "level": 29,
         "trophies": 0,
         "best": 68,
         "league": "Skeleton League 1",
