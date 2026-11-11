@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T12:15:58.630Z",
+  "updated": "2026-11-11T12:31:13.095Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -8244,8 +8244,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "1605|525684964|541098917|42500|94018|246500|457297|0|1228|152|15",
-      "last": "2026-11-11T12:15:53.882Z",
+      "sig": "1636|532213394|547019126|42500|94113|246500|457297|0|1228|152|15",
+      "last": "2026-11-11T12:31:09.540Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -8329,8 +8329,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|110514668|94089395|5100|336|7810|34127|0|16|56|10",
-      "last": "2026-11-11T12:15:53.882Z",
+      "sig": "31|110923473|94572823|5100|336|7810|34127|0|16|56|10",
+      "last": "2026-11-11T12:31:09.540Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -8783,9 +8783,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 329,
+          "score": 338,
           "stars": 21,
-          "don": 1185,
+          "don": 1280,
           "cg": 0,
           "cap": 0
         },
@@ -8878,7 +8878,7 @@
       [
         20768,
         1228,
-        94018,
+        94113,
         15
       ]
     ],
@@ -10526,13 +10526,13 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:954140453",
-      "t": "2026-11-11T12:15:53.882Z"
+      "hash": "1597:3743236061",
+      "t": "2026-11-11T12:31:09.540Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "768:1630070372",
-      "t": "2026-11-11T12:15:53.882Z"
+      "hash": "785:2691806210",
+      "t": "2026-11-11T12:31:09.540Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10664,7 +10664,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 1605,
+      "given": 1636,
       "received": 274,
       "trophies": 35,
       "profile": {
@@ -10683,36 +10683,36 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 42,
+            "level": 43,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 55,
+            "level": 56,
             "max": 110
           },
           {
             "name": "Grand Warden",
-            "level": 31,
+            "level": 32,
             "max": 85
           },
           {
             "name": "Royal Champion",
-            "level": 22,
+            "level": 23,
             "max": 55
           },
           {
             "name": "Minion Prince",
-            "level": 45,
+            "level": 46,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 36.8,
+        "pct": 36.1,
         "troops": 26.2,
         "spells": 42.9,
-        "heroes": 41.9,
+        "heroes": 40.6,
         "top": [
           {
             "n": "Górnik",
@@ -10748,10 +10748,10 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 94018,
+        "don": 94113,
         "capLoot": 246500,
-        "gold": 525684964,
-        "elixir": 541098917,
+        "gold": 532213394,
+        "elixir": 547019126,
         "capContrib": 457297,
         "wins": 0
       }
@@ -12290,11 +12290,11 @@
       "role": "member",
       "th": 10,
       "given": 31,
-      "received": 217,
-      "trophies": 74,
+      "received": 248,
+      "trophies": 101,
       "profile": {
         "level": 56,
-        "trophies": 74,
+        "trophies": 101,
         "best": 386,
         "league": "Barbarian League 4",
         "warStars": 16,
@@ -12303,7 +12303,7 @@
         "capital": 34127,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1636,
+        "bTrophies": 1657,
         "bLeague": "Copper League IV",
         "heroes": [
           {
@@ -12318,16 +12318,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 6,
+            "level": 7,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 23.6,
+        "pct": 23,
         "troops": 2.6,
         "spells": 7.4,
-        "heroes": 52.9,
+        "heroes": 51.4,
         "top": [
           {
             "n": "Królowa Łuczniczek",
@@ -12350,14 +12350,14 @@
             "need": 2
           },
           {
-            "n": "Książę Minionów",
-            "lvl": 6,
-            "need": 10
-          },
-          {
             "n": "Król Barbarzyńców",
             "lvl": 19,
             "need": 30
+          },
+          {
+            "n": "Książę Minionów",
+            "lvl": 7,
+            "need": 10
           }
         ]
       },
@@ -12365,8 +12365,8 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 7810,
-        "gold": 110514668,
-        "elixir": 94089395,
+        "gold": 110923473,
+        "elixir": 94572823,
         "capContrib": 34127,
         "wins": 0
       }
