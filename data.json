@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T20:01:24.820Z",
+  "updated": "2026-11-11T20:16:06.874Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10665,7 +10665,8 @@
       "prep",
       "start",
       "free12",
-      "r4"
+      "r4",
+      "r1"
     ],
     "dm:w:20261110T211034.000Z": []
   },
@@ -10680,13 +10681,13 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1604:1367662897",
-      "t": "2026-11-11T20:01:21.875Z"
+      "hash": "1601:1735544607",
+      "t": "2026-11-11T20:16:01.127Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "785:3408994812",
-      "t": "2026-11-11T19:46:01.829Z"
+      "hash": "802:1633390506",
+      "t": "2026-11-11T20:16:01.127Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11276,8 +11277,8 @@
         "capital": 126775,
         "warPref": "in",
         "bh": 9,
-        "bTrophies": 2426,
-        "bLeague": "Brass League I",
+        "bTrophies": 2378,
+        "bLeague": "Brass League II",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12774,7 +12775,7 @@
         "capital": 16881,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1274,
+        "bTrophies": 1285,
         "bLeague": "Stone League III",
         "heroes": [
           {
