@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T00:31:14.645Z",
+  "updated": "2026-11-11T00:46:01.577Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -57,7 +57,7 @@
         {
           "pos": 8,
           "th": 10,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 9,
@@ -87,7 +87,7 @@
         {
           "pos": 14,
           "th": 9,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 15,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 35,
-      "pct": 47.48,
-      "attacks": 15,
+      "stars": 39,
+      "pct": 54.6,
+      "attacks": 17,
       "bases": [
         {
           "pos": 1,
@@ -860,6 +860,26 @@
         "stars": 3,
         "pct": 100,
         "order": 41
+      },
+      {
+        "by": "IJN SORYU",
+        "bpos": 14,
+        "th": 9,
+        "tpos": 14,
+        "tname": "Brann",
+        "stars": 1,
+        "pct": 78,
+        "order": 42
+      },
+      {
+        "by": "IJN Kaga",
+        "bpos": 8,
+        "th": 10,
+        "tpos": 8,
+        "tname": "zuzia",
+        "stars": 3,
+        "pct": 100,
+        "order": 43
       }
     ]
   },
@@ -4178,10 +4198,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 60,
-      "them": 35,
+      "them": 39,
       "final": false,
       "pct": 82.36,
-      "themPct": 47.48,
+      "themPct": 54.6,
       "themBases": [
         {
           "pos": 1,
@@ -10215,14 +10235,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 41,
+    "w:20261110T211034.000Z": 43,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1594:3884906423",
-      "t": "2026-11-11T00:31:11.031Z"
+      "hash": "1594:4073815901",
+      "t": "2026-11-11T00:45:57.576Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10280,7 +10300,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:1561580487"
+    "hash": "484:45201219"
   },
   "members": [
     {
@@ -12304,7 +12324,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 17,
+            "level": 19,
             "max": 110
           },
           {
