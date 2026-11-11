@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T15:01:25.374Z",
+  "updated": "2026-11-11T15:15:58.406Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10571,8 +10571,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:2617067831",
-      "t": "2026-11-11T15:01:22.627Z"
+      "hash": "1597:3643350463",
+      "t": "2026-11-11T15:15:54.350Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10825,12 +10825,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 58,
+            "level": 59,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 56,
+            "level": 57,
             "max": 110
           },
           {
