@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T15:45:59.399Z",
+  "updated": "2026-11-11T16:01:30.517Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3890,7 +3890,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -8454,8 +8454,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "70|9430170|8540690|0|111|5370|9617|0|6|31|7",
-      "last": "2026-11-11T14:31:19.842Z",
+      "sig": "70|9875440|8874103|0|111|5370|9617|0|6|31|7",
+      "last": "2026-11-11T16:01:26.620Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -10571,13 +10571,13 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:4286982906",
-      "t": "2026-11-11T15:45:55.675Z"
+      "hash": "1597:3297445265",
+      "t": "2026-11-11T16:01:26.620Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "785:905898538",
-      "t": "2026-11-11T15:45:55.675Z"
+      "hash": "785:3654343808",
+      "t": "2026-11-11T16:01:26.620Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12491,7 +12491,7 @@
         "capital": 32450,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1359,
+        "bTrophies": 1377,
         "bLeague": "Stone League II",
         "heroes": [
           {
@@ -12778,7 +12778,7 @@
         "capital": 6070,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1050,
+        "bTrophies": 1036,
         "bLeague": "Stone League V",
         "heroes": [
           {
@@ -13569,8 +13569,8 @@
         "cg": 0,
         "don": 111,
         "capLoot": 5370,
-        "gold": 9430170,
-        "elixir": 8540690,
+        "gold": 9875440,
+        "elixir": 8874103,
         "capContrib": 9617,
         "wins": 0
       }
