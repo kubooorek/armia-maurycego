@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T07:31:10.744Z",
+  "updated": "2026-11-11T07:45:56.253Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10401,8 +10401,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:3523995056",
-      "t": "2026-11-11T07:31:07.503Z"
+      "hash": "1597:2264059123",
+      "t": "2026-11-11T07:45:54.414Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10711,7 +10711,7 @@
         "capital": 44832,
         "warPref": "in",
         "bh": 9,
-        "bTrophies": 2118,
+        "bTrophies": 2149,
         "bLeague": "Brass League III",
         "heroes": [
           {
