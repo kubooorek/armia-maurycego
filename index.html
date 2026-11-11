@@ -1545,6 +1545,14 @@ var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+
   .og-motto{white-space:nowrap}
   .og-motto i{width:40px!important}
 }
+/* poprawki z przeglądu mobilnego */
+.mini-row.grp>span:last-child{white-space:nowrap;flex-shrink:0;margin-left:10px}
+.mini-row.grp>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.panel-head{flex-wrap:wrap;gap:8px}
+.bonus-n{white-space:nowrap}
+.strat-top .chip{white-space:nowrap;display:inline-block;margin-top:4px}
+#glossCount{white-space:nowrap}
+@media (max-width:420px){.mini-row.grp{font-size:.82rem}.mini-row.grp small{font-size:.7rem}.mini-row.grp>span:last-child{margin-left:6px}}
 </style>
 </head>
 <body>
@@ -2947,7 +2955,7 @@ $("#cwlTop").innerHTML = CWL.top.length
 (function(){
   const c=AUTO&&AUTO.cwl; if(!c||!c.standings||!c.standings.length) return;
   const md=i=>i<3?["🥇","🥈","🥉"][i]:`${i+1}.`;
-  $("#cwlGroup").innerHTML=c.standings.map((r,i)=>`<div class="mini-row grp${r.tag==="#2GQQ8RGRL"?" me":""}"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${esc(r.name)}</span><span>⭐ ${r.stars} <small style="color:var(--muted)">· ${fmt(r.pct)}% · ${r.wins} W</small></span></div>`).join("");
+  $("#cwlGroup").innerHTML=c.standings.map((r,i)=>`<div class="mini-row grp${r.tag==="#2GQQ8RGRL"?" me":""}"><span><em class="medal" style="font-style:normal;margin-right:6px">${md(i)}</em>${r.tag==="#2GQQ8RGRL"?"Armia Maurycego":esc(r.name)}</span><span>⭐ ${r.stars} <small style="color:var(--muted)">· ${fmt(r.pct)}% · ${r.wins} W</small></span></div>`).join("");
   $("#cwlGroupWrap").hidden=false;
 })();
 
@@ -3118,7 +3126,7 @@ function attacksHtml(cw){
 (function(){
   const d=AUTO&&AUTO.discord; if(!d||d.members==null) return;
   const el=$("#dcLive");
-  el.innerHTML=`${d.icon?`<img src="${d.icon}" alt="">`:""}<div><b>${esc(d.name||"Discord klanu")}</b><span><span class="on">${fmt(d.online||0)} online</span> · ${fmt(d.members)} członków</span></div>`;
+  el.innerHTML=`<img src="${d.icon||"icon-192.png"}" alt="" onerror="this.onerror=null;this.src='icon-192.png'"><div><b>${esc(d.name||"Discord klanu")}</b><span><span class="on">${fmt(d.online||0)} online</span> · ${fmt(d.members)} członków</span></div>`;
   el.hidden=false;
 })();
 
@@ -4942,17 +4950,19 @@ applyLang();
 addEventListener("click",e=>{ window.__subClick=!!(e.target.closest&&e.target.closest(".subnav a")); },true);
 (function(){ const j=document.getElementById("cwlJump"), r=document.getElementById("cwlRounds"); if(!j||!r) return; const chk=()=>{ j.hidden=!(r.textContent.trim().length>0); }; chk(); new MutationObserver(chk).observe(r,{childList:true,subtree:true}); })();
 /* ===== Bez polskich znaków (BEZ_PL=false przywraca ą, ę, ł itd.) ===== */
-const BEZ_PL=false;
+// "naglowki" = bez ogonków tylko w napisach czcionką z gry (Lilita One nie ma ą, ę, ś, ż…), reszta strony po polsku
+const BEZ_PL="naglowki";
 (function(){ if(!BEZ_PL) return;
+  const TYLKO_NAGL=BEZ_PL==="naglowki", gra=el=>/Lilita/i.test(getComputedStyle(el).fontFamily);
   const MAP={"ą":"a","ć":"c","ę":"e","ł":"l","ń":"n","ó":"o","ś":"s","ź":"z","ż":"z","Ą":"A","Ć":"C","Ę":"E","Ł":"L","Ń":"N","Ó":"O","Ś":"S","Ź":"Z","Ż":"Z"};
   const RE=/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, fix=t=>t.replace(RE,c=>MAP[c]);
   const SKIP="script,style,textarea,input,code,pre";
-  const doNode=n=>{ if(n.nodeType===3){ const p=n.parentElement; if(p&&!p.closest(SKIP)&&RE.test(n.nodeValue)){ RE.lastIndex=0; n.nodeValue=fix(n.nodeValue); } RE.lastIndex=0; return; }
+  const doNode=n=>{ if(n.nodeType===3){ const p=n.parentElement; if(p&&!p.closest(SKIP)&&RE.test(n.nodeValue)&&(RE.lastIndex=0,!TYLKO_NAGL||gra(p))){ RE.lastIndex=0; n.nodeValue=fix(n.nodeValue); } RE.lastIndex=0; return; }
     if(n.nodeType!==1||n.closest(SKIP)) return;
-    ["placeholder","title","aria-label","alt"].forEach(a=>{ const v=n.getAttribute&&n.getAttribute(a); if(v&&RE.test(v)){ RE.lastIndex=0; n.setAttribute(a,fix(v)); } RE.lastIndex=0; });
+    if(!TYLKO_NAGL) ["placeholder","title","aria-label","alt"].forEach(a=>{ const v=n.getAttribute&&n.getAttribute(a); if(v&&RE.test(v)){ RE.lastIndex=0; n.setAttribute(a,fix(v)); } RE.lastIndex=0; });
     const w=document.createTreeWalker(n,NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT); let x; const list=[]; while(x=w.nextNode()) list.push(x);
-    list.forEach(y=>{ if(y.nodeType===3) doNode(y); else ["placeholder","title","aria-label","alt"].forEach(a=>{ const v=y.getAttribute(a); if(v&&RE.test(v)){ RE.lastIndex=0; y.setAttribute(a,fix(v)); } RE.lastIndex=0; }); }); };
-  document.title=fix(document.title); doNode(document.body);
+    list.forEach(y=>{ if(y.nodeType===3) doNode(y); else if(!TYLKO_NAGL) ["placeholder","title","aria-label","alt"].forEach(a=>{ const v=y.getAttribute(a); if(v&&RE.test(v)){ RE.lastIndex=0; y.setAttribute(a,fix(v)); } RE.lastIndex=0; }); }); };
+  if(!TYLKO_NAGL) document.title=fix(document.title); doNode(document.body);
   new MutationObserver(ms=>ms.forEach(m=>{ if(m.type==="characterData") doNode(m.target); else m.addedNodes.forEach(doNode); })).observe(document.body,{childList:true,subtree:true,characterData:true});
 })();
 /* ===== Ikony zamiast emoji (jednolity wygląd na każdym telefonie) ===== */
