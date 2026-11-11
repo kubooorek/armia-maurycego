@@ -1715,6 +1715,99 @@ html.sl .sl-in h3{background:linear-gradient(180deg,#3a2f22,#1a140e)!important;b
 html.sl .sl-in::after{height:4px;left:12%;right:12%;bottom:5px;background:linear-gradient(90deg,transparent,#ffb81e 30%,#ffe27a 50%,#ffb81e 70%,transparent);opacity:1;filter:blur(.3px) drop-shadow(0 0 6px rgba(255,180,30,.8))}
 html.sl .sl-join{border:3px solid #6a3800!important;box-shadow:inset 0 3px 0 rgba(255,255,255,.75),inset 0 -6px 0 rgba(160,80,0,.55),0 0 0 3px #2a1600,0 6px 0 #2a1600,0 0 30px rgba(255,190,40,.6)!important;-webkit-text-stroke:0;text-shadow:0 2px 0 rgba(255,240,180,.8)}
 @media (max-width:760px){ html.sl .sl-herbw{margin-bottom:-6px} html.sl .sl-herb{width:110px!important} }
+
+/* --- Słońce v4: strona główna na komputerze 1:1 z projektem (pozycje liczone od szerokości ekranu, projekt 1672 px) --- */
+@media (min-width:1180px){
+  html.sl{--u:calc(100vw / 1672)}
+  html.sl.sl-start #ticker{display:none!important}
+  html.sl #top.og-hero{position:relative!important;height:calc(var(--u) * 846)!important;padding:0!important;background:#2a1d10 url(img/styl/slonce-hero.jpg) 0 calc(var(--u) * -70)/100vw auto no-repeat!important;border-bottom:0!important}
+  html.sl #top.og-hero::before{background:linear-gradient(180deg,transparent 88%,rgba(16,11,6,.9))!important}
+  html.sl #top .wrap{position:static!important;max-width:none!important;padding:0!important}
+  html.sl .sl-box{position:absolute;inset:0;display:block}
+  html.sl .sl-top{position:absolute;inset:0;display:block}
+  html.sl .sl-herbw{position:absolute;left:calc(var(--u)*736);top:calc(var(--u)*14);width:calc(var(--u)*200);margin:0;z-index:3}
+  html.sl .sl-herb{width:100%!important}
+  html.sl .sl-herbw::before{width:170%}
+  html.sl .sl-pframe{position:absolute;left:calc(var(--u)*405);top:calc(var(--u)*225);width:calc(var(--u)*870);height:calc(var(--u)*145);padding:calc(var(--u)*4);z-index:2}
+  html.sl .sl-plate{height:100%;display:flex;flex-direction:column;justify-content:center;padding:0!important;font-size:calc(var(--u)*90)!important}
+  html.sl .sl-plate .sl-slogan{font-size:calc(var(--u)*34)!important;margin-top:calc(var(--u)*4)!important;font-style:normal;letter-spacing:.05em;word-spacing:.2em}
+  html.sl .sl-grid{position:absolute;inset:0;display:block;font-size:calc(var(--u)*17)}
+  html.sl .sl-card{position:absolute;--cut:calc(var(--u)*16);padding:calc(var(--u)*3)!important}
+  html.sl .sl-card,html.sl .sl-in{clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut))!important}
+  html.sl .sl-o{left:calc(var(--u)*178);top:calc(var(--u)*395);width:calc(var(--u)*384);height:calc(var(--u)*200)}
+  html.sl .sl-h{left:calc(var(--u)*585);top:calc(var(--u)*395);width:calc(var(--u)*227);height:calc(var(--u)*200)}
+  html.sl .sl-th{left:calc(var(--u)*835);top:calc(var(--u)*395);width:calc(var(--u)*280);height:calc(var(--u)*200)}
+  html.sl .sl-r{left:calc(var(--u)*1137);top:calc(var(--u)*395);width:calc(var(--u)*360);height:calc(var(--u)*200)}
+  html.sl .sl-of{left:calc(var(--u)*62);top:calc(var(--u)*612);width:calc(var(--u)*518);height:calc(var(--u)*175)}
+  html.sl .sl-cta{left:calc(var(--u)*605);top:calc(var(--u)*612);width:calc(var(--u)*500);height:calc(var(--u)*175)}
+  html.sl .sl-dc{left:calc(var(--u)*1135);top:calc(var(--u)*617);width:calc(var(--u)*362);height:calc(var(--u)*170)}
+  html.sl .sl-in{padding:0 calc(var(--u)*20) calc(var(--u)*12)!important;font-size:calc(var(--u)*17)!important;line-height:1.35;overflow:hidden}
+  html.sl .sl-in p{margin:0 0 calc(var(--u)*8)}
+  html.sl .sl-in h3{font-size:calc(var(--u)*21)!important;margin:0 calc(var(--u)*-20) calc(var(--u)*10)!important;padding:calc(var(--u)*10) calc(var(--u)*20) calc(var(--u)*8)!important;gap:calc(var(--u)*12)!important}
+  html.sl .sl-in h3 .ic{width:calc(var(--u)*30)!important;height:calc(var(--u)*30)!important}
+  html.sl .sl-in::after{height:calc(var(--u)*3);bottom:calc(var(--u)*5)}
+  html.sl .sl-more{font-size:calc(var(--u)*15)}
+  html.sl .sl-o .sl-more{display:none}
+  html.sl .sl-herb2{width:calc(var(--u)*105)!important;margin:calc(var(--u)*2) auto 0}
+  html.sl .sl-lv,html.sl .sl-note{display:none}
+  html.sl .sl-big{font-size:calc(var(--u)*82)!important;margin:auto 0!important}
+  html.sl .sl-big::after{height:calc(var(--u)*6)}
+  html.sl .sl-check{gap:calc(var(--u)*6);margin:0}
+  html.sl .sl-check li{padding-left:calc(var(--u)*30)}
+  html.sl .sl-check li::before{width:calc(var(--u)*20);height:calc(var(--u)*16)}
+  html.sl .sl-r .sl-more{display:none}
+  html.sl .sl-offer{height:calc(100% - var(--u)*62)}
+  html.sl .sl-offer a{font-size:calc(var(--u)*18);gap:calc(var(--u)*4);padding:calc(var(--u)*4) calc(var(--u)*2)}
+  html.sl .sl-offer .ic{width:calc(var(--u)*40);height:calc(var(--u)*40)}
+  html.sl .sl-cta .sl-in{padding:calc(var(--u)*14) calc(var(--u)*24)!important;gap:calc(var(--u)*8)}
+  html.sl .sl-join{max-width:none;padding:calc(var(--u)*18) 0;font-size:calc(var(--u)*44)!important;border-radius:calc(var(--u)*14)}
+  html.sl .sl-cta-sub{font-size:calc(var(--u)*22)}
+  html.sl .sl-tag{display:none}
+  html.sl .sl-dcl{gap:calc(var(--u)*16);padding-left:calc(var(--u)*30)}
+  html.sl .sl-dcl svg{width:calc(var(--u)*58);height:calc(var(--u)*58)}
+  html.sl .sl-dcl b{font-size:calc(var(--u)*26)}
+  html.sl .sl-dcl small{font-size:calc(var(--u)*15)}
+  html.sl .sl-in h3 .ic,html.sl .sl-offer .ic{stroke-width:1.4}
+  html.sl #start{padding-top:calc(var(--u)*20)!important}
+}
+/* napis obok herbu w pasku */
+html.sl .sl-brand{display:none}
+@media (min-width:1800px){
+  html.sl .sl-brand{display:block;position:absolute;left:150px;top:50%;transform:translateY(-50%);font-family:"SL Lucky","Lilita One",sans-serif;font-size:1.45rem;line-height:.95;text-transform:uppercase;color:#fff;text-shadow:0 2px 0 #000;pointer-events:none}
+  html.sl .sl-brand b{display:block;font-weight:400;color:#ffc93a}
+}
+
+/* --- Słońce: górny pasek jak w projekcie --- */
+html.sl nav{background:linear-gradient(180deg,#26211b,#13100c 70%,#0c0a08)!important;border-bottom:2px solid #a8781a!important;box-shadow:0 3px 0 rgba(0,0,0,.6),0 6px 20px rgba(0,0,0,.5)!important}
+html.sl .nav-links a{color:#f1ebe0!important;background:linear-gradient(180deg,#2e2821,#17130f)!important;border:1px solid rgba(201,150,30,.45)!important;font-weight:600!important}
+html.sl .nav-links a .ic{color:#ffc93a!important}
+html.sl .sl-brand,html.sl .sl-badge{display:none}
+@media (min-width:1180px){
+  html.sl nav .wrap{max-width:none!important;padding:0 18px!important;min-height:72px}
+  html.sl nav .brand{display:flex!important;align-items:center;gap:12px;flex:none}
+  html.sl .brand img{height:64px!important;margin:0!important;filter:drop-shadow(0 3px 8px rgba(0,0,0,.6)) drop-shadow(0 0 10px rgba(255,190,40,.4))!important}
+  html.sl .sl-brand{display:block!important;position:static!important;transform:none!important;font-family:"SL Lucky","Lilita One",sans-serif;font-size:1.32rem;line-height:.95;text-transform:uppercase;color:#fff;text-shadow:0 2px 0 #000;padding-right:22px;margin-right:6px;border-right:3px solid #c9961e}
+  html.sl .sl-brand b{display:block;font-weight:400;color:#ffc93a}
+  html.sl .nav-links{gap:8px!important}
+  html.sl .nav-right .og-cta{display:none!important}
+  html.sl .sl-badge{display:flex!important;align-items:center;gap:8px;margin-left:10px;padding:6px 16px 6px 10px;background:linear-gradient(180deg,#2e2821,#13100c);border:2px solid #c9961e;clip-path:polygon(12px 0,100% 0,100% 100%,0 100%,0 12px);font-family:"SL Brush",sans-serif;font-size:1.05rem;line-height:1;letter-spacing:.04em;text-transform:uppercase;color:#ffc93a;text-shadow:0 2px 0 #000;transform:rotate(-2deg)}
+  html.sl .sl-badge img{width:36px;height:auto}
+  html.sl .lang-btn,html.sl .nav-right .user-btn{transform:scale(.9)}
+}
+@media (min-width:1180px) and (max-width:1560px){ html.sl .sl-badge{display:none!important} html.sl .nav-links a{padding:7px 10px!important;font-size:.78rem!important} }
+
+/* --- Słońce: góra strony na komputerze = projekt 1:1 --- */
+.sl-proj{display:none}
+@media (min-width:1180px){
+  html.sl.sl-start #top.og-hero{height:calc(var(--u) * 941)!important;background:#2a1d10 url(img/styl/slonce-projekt.jpg) 0 0/100vw auto no-repeat!important}
+  html.sl.sl-start #top.og-hero::before{display:none!important}
+  html.sl.sl-start .sl-box{display:none!important}
+  html.sl .sl-proj{display:block;position:absolute;inset:0;z-index:5}
+  html.sl .sl-proj a{position:absolute;border-radius:calc(var(--u)*14);transition:box-shadow .15s,background .15s}
+  html.sl .sl-proj a:hover{background:rgba(255,220,120,.07);box-shadow:0 0 0 2px rgba(255,210,90,.75),0 0 22px rgba(255,190,40,.45)}
+  html.sl.sl-start nav{position:fixed!important;left:0;right:0;top:0;transition:transform .25s ease}
+  html.sl.sl-start.sl-navhid nav{transform:translateY(-110%)}
+}
 #glossCount{white-space:nowrap}
 body:has(.more-sheet:not([hidden])) .to-top{opacity:0!important;pointer-events:none!important}
 @media (max-width:420px){.mini-row.grp{font-size:.82rem}.mini-row.grp small{font-size:.7rem}.mini-row.grp>span:last-child{margin-left:6px}}
@@ -5014,6 +5107,21 @@ let saveLayoutState=()=>{};
         // kafelki pod spodem: bez powtórek (O klanie / Wymagania / Rekrutacja są już wyżej)
         document.querySelectorAll("#start .ep-dash .og-o,#start .ep-dash .og-r,#start .ep-dash .og-j").forEach(x=>x.remove());
         const d=document.querySelector("#start .ep-dash"); if(d) d.classList.add("sl-dash");
+      }
+      const bra=document.querySelector("nav .brand"); if(bra&&!bra.querySelector(".sl-brand")){ const br=document.createElement("span"); br.className="sl-brand"; br.innerHTML="Armia<b>Maurycego</b>"; bra.appendChild(br); }
+      const nrr=document.querySelector(".nav-right"); if(nrr&&!nrr.querySelector(".sl-badge")){ const bd=document.createElement("div"); bd.className="sl-badge"; bd.innerHTML=`<img class="herb-img" src="${($("#heroHerb")||{}).src||"icon-192.png"}" alt=""><span>${T("Razem<br>jesteśmy silniejsi!","Together<br>we are stronger!")}</span>`; nrr.appendChild(bd); }
+      // komputer: góra strony = projekt 1:1 (obrazek) z klikalnymi polami
+      if(hero&&!hero.querySelector(".sl-proj")){
+        const GAMEL="https://link.clashofclans.com/pl?action=OpenClanProfile&tag=%232GQQ8RGRL", DCL="https://discord.gg/7SquD7SF3";
+        const H=[["#top",110,0,480,95,"Armia Maurycego"],["#start",530,22,675,75,"Strona"],["#klan",680,22,830,75,"O klanie"],["#wymagania",840,22,1010,75,"Wymagania"],["#wojny",1020,22,1150,75,"Oferta"],[DCL,1165,22,1310,75,"Kontakt"],
+          ["#klan",178,490,562,690,"O nas"],["#historia",585,490,812,690,"Nasz herb"],["#wymagania",835,490,1115,690,"Przyjmujemy od TH8+"],["#wymagania",1137,490,1497,690,"Nasze wymagania"],
+          ["#wojny",92,770,190,868,"Wojny klanowe"],["#liga",190,770,268,868,"CWL"],["#rajdy",268,770,366,868,"Najazdy"],["#poradnik",366,770,466,868,"Wspólne wsparcie"],["#osiagniecia",466,770,572,868,"Rozwój klanu"],
+          [GAMEL,640,722,1082,832,"Dołącz do nas!"],[DCL,1135,715,1497,880,"Discord"]];
+        const pj=document.createElement("div"); pj.className="sl-proj";
+        pj.innerHTML=H.map(([h,x0,y0,x1,y1,t])=>`<a href="${h}"${/^http/.test(h)?' target="_blank" rel="noopener"':""} aria-label="${t}" title="${t}" style="left:calc(var(--u)*${x0});top:calc(var(--u)*${y0});width:calc(var(--u)*${x1-x0});height:calc(var(--u)*${y1-y0})"></a>`).join("");
+        hero.appendChild(pj);
+        const navT=()=>{ const top=document.documentElement.classList.contains("sl-start")&&scrollY<hero.offsetHeight-80; document.documentElement.classList.toggle("sl-navhid",top); };
+        addEventListener("scroll",navT,{passive:true}); addEventListener("am:page",()=>setTimeout(navT,30)); navT();
       }
       document.documentElement.classList.add("sl-start");
       addEventListener("am:page",e=>document.documentElement.classList.toggle("sl-start",!e.detail||e.detail==="start"));
