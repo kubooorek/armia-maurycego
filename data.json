@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T09:45:59.828Z",
+  "updated": "2026-11-11T10:01:22.609Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -37,7 +37,7 @@
         {
           "pos": 4,
           "th": 12,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 5,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 64,
-      "pct": 84.68,
-      "attacks": 33,
+      "stars": 67,
+      "pct": 88.68,
+      "attacks": 34,
       "bases": [
         {
           "pos": 1,
@@ -1050,6 +1050,16 @@
         "stars": 3,
         "pct": 100,
         "order": 59
+      },
+      {
+        "by": "♋JHOEKER♋",
+        "bpos": 1,
+        "th": 14,
+        "tpos": 4,
+        "tname": "oggsgdjdjbd",
+        "stars": 3,
+        "pct": 100,
+        "order": 61
       }
     ]
   },
@@ -4368,10 +4378,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 62,
-      "them": 64,
+      "them": 67,
       "final": false,
       "pct": 86.24,
-      "themPct": 84.68,
+      "themPct": 88.68,
       "themBases": [
         {
           "pos": 1,
@@ -8242,8 +8252,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "334|78833531|77304024|2400|779|14765|35286|0|6|59|9",
-      "last": "2026-11-11T08:01:19.640Z",
+      "sig": "334|78833531|77304024|2400|779|14765|36586|0|6|59|9",
+      "last": "2026-11-11T10:01:17.386Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -10413,19 +10423,19 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 60,
+    "w:20261110T211034.000Z": 61,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1600:417874691",
-      "t": "2026-11-11T09:45:56.728Z"
+      "hash": "1600:1996064482",
+      "t": "2026-11-11T10:01:17.386Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "768:3771919113",
-      "t": "2026-11-11T09:45:56.728Z"
+      "hash": "768:339817493",
+      "t": "2026-11-11T10:01:17.386Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10478,7 +10488,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:6011117"
+    "hash": "484:2089952138"
   },
   "members": [
     {
@@ -11020,7 +11030,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 35,
+            "level": 36,
             "max": 110
           },
           {
@@ -11041,10 +11051,10 @@
         ]
       },
       "rush": {
-        "pct": 40.2,
+        "pct": 39.9,
         "troops": 29,
         "spells": 27.1,
-        "heroes": 54.7,
+        "heroes": 54,
         "top": [
           {
             "n": "Książę Minionów",
@@ -12280,11 +12290,11 @@
         "warStars": 6,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 35286,
+        "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1364,
-        "bLeague": "Stone League II",
+        "bTrophies": 1435,
+        "bLeague": "Stone League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12316,7 +12326,7 @@
         "capLoot": 14765,
         "gold": 78833531,
         "elixir": 77304024,
-        "capContrib": 35286,
+        "capContrib": 36586,
         "wins": 0
       }
     },
@@ -12774,7 +12784,7 @@
         "capital": 250,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1399,
+        "bTrophies": 1376,
         "bLeague": "Stone League II",
         "heroes": [
           {
@@ -13369,7 +13379,7 @@
         "capital": 9617,
         "warPref": "in",
         "bh": 3,
-        "bTrophies": 810,
+        "bTrophies": 859,
         "bLeague": "Clay League II",
         "heroes": [
           {
