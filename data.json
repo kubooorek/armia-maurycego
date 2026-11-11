@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T08:31:11.382Z",
+  "updated": "2026-11-11T08:46:01.465Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10418,8 +10418,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1600:2896799418",
-      "t": "2026-11-11T08:31:07.808Z"
+      "hash": "1600:3279145277",
+      "t": "2026-11-11T08:45:59.432Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -11024,7 +11024,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
@@ -11040,10 +11040,10 @@
         ]
       },
       "rush": {
-        "pct": 40.7,
+        "pct": 40.4,
         "troops": 29.3,
         "spells": 27.1,
-        "heroes": 55.3,
+        "heroes": 54.7,
         "top": [
           {
             "n": "Książę Minionów",
@@ -12282,8 +12282,8 @@
         "capital": 35286,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1236,
-        "bLeague": "Stone League III",
+        "bTrophies": 1307,
+        "bLeague": "Stone League II",
         "heroes": [
           {
             "name": "Barbarian King",
