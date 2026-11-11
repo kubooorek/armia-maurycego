@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T16:01:30.517Z",
+  "updated": "2026-11-11T16:15:52.917Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10571,8 +10571,8 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1597:3297445265",
-      "t": "2026-11-11T16:01:26.620Z"
+      "hash": "1598:659680006",
+      "t": "2026-11-11T16:15:51.960Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -12152,7 +12152,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 3,
+            "level": 4,
             "max": 95
           }
         ]
@@ -12942,7 +12942,7 @@
         "capital": 250,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1388,
+        "bTrophies": 1374,
         "bLeague": "Stone League II",
         "heroes": [
           {
@@ -13383,7 +13383,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 17,
+            "level": 18,
             "max": 110
           },
           {
