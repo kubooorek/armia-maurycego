@@ -4942,7 +4942,7 @@ applyLang();
 addEventListener("click",e=>{ window.__subClick=!!(e.target.closest&&e.target.closest(".subnav a")); },true);
 (function(){ const j=document.getElementById("cwlJump"), r=document.getElementById("cwlRounds"); if(!j||!r) return; const chk=()=>{ j.hidden=!(r.textContent.trim().length>0); }; chk(); new MutationObserver(chk).observe(r,{childList:true,subtree:true}); })();
 /* ===== Bez polskich znaków (BEZ_PL=false przywraca ą, ę, ł itd.) ===== */
-const BEZ_PL=true;
+const BEZ_PL=false;
 (function(){ if(!BEZ_PL) return;
   const MAP={"ą":"a","ć":"c","ę":"e","ł":"l","ń":"n","ó":"o","ś":"s","ź":"z","ż":"z","Ą":"A","Ć":"C","Ę":"E","Ł":"L","Ń":"N","Ó":"O","Ś":"S","Ź":"Z","Ż":"Z"};
   const RE=/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, fix=t=>t.replace(RE,c=>MAP[c]);
