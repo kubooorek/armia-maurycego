@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T23:31:12.773Z",
+  "updated": "2026-11-11T23:46:01.522Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3266,7 +3266,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -10324,8 +10324,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1410:4168031643",
-      "t": "2026-11-11T23:31:05.276Z"
+      "hash": "1410:2859132097",
+      "t": "2026-11-11T23:45:58.477Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
