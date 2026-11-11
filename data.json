@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T10:01:22.609Z",
+  "updated": "2026-11-11T10:15:59.050Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -107,7 +107,7 @@
         {
           "pos": 18,
           "th": 10,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 19,
@@ -149,9 +149,9 @@
     "them": {
       "name": "kalmado team",
       "level": 3,
-      "stars": 67,
-      "pct": 88.68,
-      "attacks": 34,
+      "stars": 69,
+      "pct": 92.56,
+      "attacks": 35,
       "bases": [
         {
           "pos": 1,
@@ -1060,6 +1060,16 @@
         "stars": 3,
         "pct": 100,
         "order": 61
+      },
+      {
+        "by": "Left Lens",
+        "bpos": 18,
+        "th": 8,
+        "tpos": 18,
+        "tname": "Mimbosz",
+        "stars": 2,
+        "pct": 97,
+        "order": 62
       }
     ]
   },
@@ -4378,10 +4388,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 62,
-      "them": 67,
+      "them": 69,
       "final": false,
       "pct": 86.24,
-      "themPct": 88.68,
+      "themPct": 92.56,
       "themBases": [
         {
           "pos": 1,
@@ -10423,14 +10433,14 @@
     "cmds-v1"
   ],
   "feed": {
-    "w:20261110T211034.000Z": 61,
+    "w:20261110T211034.000Z": 62,
     "c:20261108T191646.000Z:kingslayers": 0
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1600:1996064482",
-      "t": "2026-11-11T10:01:17.386Z"
+      "hash": "1601:3140252579",
+      "t": "2026-11-11T10:15:54.698Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
@@ -10488,7 +10498,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:2089952138"
+    "hash": "484:3479246152"
   },
   "members": [
     {
@@ -12293,7 +12303,7 @@
         "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1435,
+        "bTrophies": 1429,
         "bLeague": "Stone League I",
         "heroes": [
           {
