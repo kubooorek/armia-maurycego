@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-11T21:01:29.328Z",
+  "updated": "2026-11-11T21:16:10.397Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
   "capitalLeague": "Silver League III",
-  "warWinStreak": 11,
+  "warWinStreak": 0,
   "warWins": 13,
   "currentWar": {
-    "state": "inWar",
+    "state": "warEnded",
     "size": 25,
     "perMember": 2,
     "start": "20261110T211034.000Z",
@@ -3954,7 +3954,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -4545,10 +4545,10 @@
       "enemy": "kalmado team",
       "size": 25,
       "perMember": 2,
-      "state": "inWar",
+      "state": "warEnded",
       "us": 72,
       "them": 74,
-      "final": false,
+      "final": true,
       "pct": 97.28,
       "themPct": 98.28,
       "themBases": [
@@ -8257,6 +8257,72 @@
   },
   "penalties": [
     {
+      "id": "20261110T211034.000Z:#R2UJV2VJR:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 1/2",
+      "tag": "#R2UJV2VJR",
+      "name": "krupnik",
+      "war": "20261110T211034.000Z",
+      "end": "20261111T211034.000Z",
+      "enemy": "kalmado team",
+      "t": "2026-11-11T21:15:54.226Z"
+    },
+    {
+      "id": "20261110T211034.000Z:#RYUV9V9RC:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#RYUV9V9RC",
+      "name": "samurai024",
+      "war": "20261110T211034.000Z",
+      "end": "20261111T211034.000Z",
+      "enemy": "kalmado team",
+      "t": "2026-11-11T21:15:54.226Z"
+    },
+    {
+      "id": "20261110T211034.000Z:#R92C0U8UU:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#R92C0U8UU",
+      "name": "Rico",
+      "war": "20261110T211034.000Z",
+      "end": "20261111T211034.000Z",
+      "enemy": "kalmado team",
+      "t": "2026-11-11T21:15:54.226Z"
+    },
+    {
+      "id": "20261110T211034.000Z:#R2PCVYQG2:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 1/2",
+      "tag": "#R2PCVYQG2",
+      "name": "Riczard",
+      "war": "20261110T211034.000Z",
+      "end": "20261111T211034.000Z",
+      "enemy": "kalmado team",
+      "t": "2026-11-11T21:15:54.226Z"
+    },
+    {
+      "id": "20261110T211034.000Z:#YLLQL2VUP:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 1/2",
+      "tag": "#YLLQL2VUP",
+      "name": "KuN",
+      "war": "20261110T211034.000Z",
+      "end": "20261111T211034.000Z",
+      "enemy": "kalmado team",
+      "t": "2026-11-11T21:15:54.226Z"
+    },
+    {
+      "id": "20261110T211034.000Z:#R8V9U9VLJ:missed",
+      "type": "missed",
+      "detail": "wykorzystane ataki: 0/2",
+      "tag": "#R8V9U9VLJ",
+      "name": "zuzia",
+      "war": "20261110T211034.000Z",
+      "end": "20261111T211034.000Z",
+      "enemy": "kalmado team",
+      "t": "2026-11-11T21:15:54.226Z"
+    },
+    {
       "id": "20261110T211034.000Z:#GJJ90QGVQ:steal",
       "type": "steal",
       "detail": "nr 6, zanim VipeR zaatakował(a) swój numer",
@@ -8611,8 +8677,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "121|629837679|627250206|25150|1585|636760|742040|0|85|130|13",
-      "last": "2026-11-11T14:46:01.598Z",
+      "sig": "121|632633699|630627470|25150|1585|636760|742040|0|85|130|13",
+      "last": "2026-11-11T21:15:54.873Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -10666,7 +10732,8 @@
       "start",
       "free12",
       "r4",
-      "r1"
+      "r1",
+      "summary"
     ],
     "dm:w:20261110T211034.000Z": []
   },
@@ -10681,13 +10748,13 @@
   "boards": {
     "war:w:20261110T211034.000Z": {
       "id": "1569806929197273259",
-      "hash": "1600:1394960398",
-      "t": "2026-11-11T21:01:25.299Z"
+      "hash": "1432:3011787690",
+      "t": "2026-11-11T21:15:54.873Z"
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "802:3381617884",
-      "t": "2026-11-11T21:01:25.299Z"
+      "hash": "802:119069136",
+      "t": "2026-11-11T21:15:54.873Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10736,11 +10803,41 @@
       "name": "To ja",
       "war": "20261110T211034.000Z",
       "t": "2026-11-10T22:51:27.917Z"
+    },
+    "20261110T211034.000Z:#R2UJV2VJR:missed": {
+      "name": "krupnik",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-11T21:15:54.873Z"
+    },
+    "20261110T211034.000Z:#RYUV9V9RC:missed": {
+      "name": "samurai024",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-11T21:15:54.873Z"
+    },
+    "20261110T211034.000Z:#R92C0U8UU:missed": {
+      "name": "Rico",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-11T21:15:54.873Z"
+    },
+    "20261110T211034.000Z:#R2PCVYQG2:missed": {
+      "name": "Riczard",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-11T21:15:54.873Z"
+    },
+    "20261110T211034.000Z:#YLLQL2VUP:missed": {
+      "name": "KuN",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-11T21:15:54.873Z"
+    },
+    "20261110T211034.000Z:#R8V9U9VLJ:missed": {
+      "name": "zuzia",
+      "war": "20261110T211034.000Z",
+      "t": "2026-11-11T21:15:54.873Z"
     }
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "484:1147040141"
+    "hash": "444:1751649029"
   },
   "members": [
     {
@@ -11024,7 +11121,7 @@
       "rush": {
         "pct": 39.1,
         "troops": 15.9,
-        "spells": 10.3,
+        "spells": 11.4,
         "heroes": 65.7,
         "top": [
           {
@@ -11589,8 +11686,8 @@
         "cg": 25150,
         "don": 1585,
         "capLoot": 636760,
-        "gold": 629837679,
-        "elixir": 627250206,
+        "gold": 632633699,
+        "elixir": 630627470,
         "capContrib": 742040,
         "wins": 0
       }
@@ -12324,7 +12421,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 4,
+            "level": 5,
             "max": 95
           }
         ]
@@ -13935,6 +14032,21 @@
     }
   ],
   "wars": [
+    {
+      "date": "2026-11-11",
+      "enemy": "kalmado team",
+      "size": 25,
+      "xp": 159,
+      "result": "lose",
+      "us": {
+        "stars": 72,
+        "pct": 97.28
+      },
+      "them": {
+        "stars": 74,
+        "pct": 98.28
+      }
+    },
     {
       "date": "2026-11-01",
       "enemy": "بچهای لارج",
