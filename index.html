@@ -33,7 +33,7 @@
 <script>document.documentElement.classList.add("booting");setTimeout(function(){document.documentElement.classList.remove("booting")},7000);</script>
 <script>/* Styl strony: "" = obecny, "epicki" = ogień i złoto, "fiolet" = fioletowy mrok, "dzien" = jasny dzień jak w grze, "zloto" = czarno-złoty. Test: ?styl=epicki / ?styl=wyloguj. Na stałe: wpisz nazwę w MOTYW. */
 var MOTYW="epicki";
-(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m==="goblin"){m="dzien";document.documentElement.classList.add("gb");}var SL=false;if(m==="slonce"){m="epicki";SL=true;document.documentElement.classList.add("sl");var fs=document.createElement("style");var ff=function(n,f){return "@font-face{font-family:'"+n+"';src:url(img/styl/slonce-"+f+".woff2) format('woff2');font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}@font-face{font-family:'"+n+"';src:url(img/styl/slonce-"+f+"-ext.woff2) format('woff2');font-display:swap;unicode-range:U+0100-024F,U+1E00-1EFF}";};fs.textContent=ff("Lilita One","titan")+ff("SL Lucky","lucky")+ff("SL Brush","brush");document.head.appendChild(fs);}if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
+(function(){try{var q=new URLSearchParams(location.search).get("styl");if(q==="wyloguj"){localStorage.removeItem("am_motyw_test");}else if(q!==null){localStorage.setItem("am_motyw_test",q);}var t=localStorage.getItem("am_motyw_test");var m=t!==null?t:MOTYW;if(m==="goblin"){m="dzien";document.documentElement.classList.add("gb");}var SL=false;if(m==="slonce"){m="epicki";SL=true;document.documentElement.classList.add("sl");var fs=document.createElement("style");var ff=function(n,f){return "@font-face{font-family:'"+n+"';src:url(img/styl/slonce-"+f+".woff2) format('woff2');font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}@font-face{font-family:'"+n+"';src:url(img/styl/slonce-"+f+"-ext.woff2) format('woff2');font-display:swap;unicode-range:U+0100-024F,U+1E00-1EFF}";};fs.textContent=ff("Lilita One","titan")+ff("SL Lucky","lucky")+ff("SL Brush","brush");document.head.appendChild(fs);var bl=document.createElement("link");bl.rel="stylesheet";bl.href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&display=swap";document.head.appendChild(bl);}if(m){document.documentElement.dataset.motyw=m;if(/^(epicki|fiolet|dzien|zloto)$/.test(m))document.documentElement.classList.add("styl-ep");}
 var F={epicki:"Lilita+One",fiolet:"Lilita+One",dzien:"Lilita+One",zloto:"Lilita+One"};if(F[m]&&!SL){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family="+F[m]+"&display=swap";document.head.appendChild(l);}}catch(e){}})();</script>
 <style>
   :root{
@@ -1598,6 +1598,12 @@ html.sl .page-head .eyebrow{display:none!important}
 html.sl .page-head p,html.sl .page-head .sec-lead{text-shadow:0 2px 0 #000,0 0 12px rgba(0,0,0,.9)!important}
 html.sl :is(.panel,.ep-card,.news,.war,.kara,.table-box,.stat,.timer,.now-card,.rank-card,.fame-card,.req,.jstep,.calc-card,.htl-card,.sk-col,.live-war,.tile,.rec,section>.wrap>details,.faq details,.ep-strip){background:linear-gradient(180deg,rgba(34,29,24,.96),rgba(17,14,11,.96))!important;border-color:#a8781a!important}
 html.sl :is(.panel,.ep-card,.news,.war,.kara,.table-box,.rank-card,.ep-strip){box-shadow:inset 0 0 0 1px rgba(255,210,100,.07),0 10px 24px rgba(0,0,0,.45)!important}
+.sl-cta .sl-in,.sl-h .sl-in,.sl-th .sl-in{container-type:inline-size}
+.sl-join{white-space:nowrap;font-size:clamp(1.1rem,10.5cqi,2.4rem)!important}
+.sl-h h3,.sl-th h3{white-space:nowrap;font-size:clamp(.78rem,8.6cqi,1.3rem)!important;gap:6px!important}
+.sl-th h3{font-size:clamp(.78rem,7.4cqi,1.3rem)!important}
+.sl-h h3 .ic,.sl-th h3 .ic{width:1.15em!important;height:1.15em!important}
+html.sl #top .wrap{max-width:min(1440px,94vw)!important}
 .sl-box{display:flex;flex-direction:column;gap:clamp(18px,2.4vw,34px)}
 .sl-top{display:flex;flex-direction:column;align-items:center;text-align:center}
 .sl-herb{width:clamp(110px,13vw,200px);height:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.55)) drop-shadow(0 0 22px rgba(255,200,60,.35));margin-bottom:-14px;position:relative;z-index:2}
@@ -1658,6 +1664,57 @@ html.sl #start .ep-dash.sl-dash{grid-template-columns:repeat(3,1fr)!important}
   .sl-big{font-size:2.6rem}.sl-herb2{width:78px}
   html.sl #start .ep-dash.sl-dash{grid-template-columns:1fr!important}
 }
+
+/* --- Słońce v2: bliżej projektu --- */
+html.sl .sl-box{gap:clamp(14px,1.6vw,24px)}
+html.sl .sl-herb{width:clamp(110px,11.5vw,200px);margin-bottom:-16px;filter:drop-shadow(0 0 0 #000) drop-shadow(0 8px 18px rgba(0,0,0,.6)) drop-shadow(0 0 26px rgba(255,200,40,.55))}
+html.sl .sl-plate{white-space:normal;text-align:center;padding:.42em .9em .32em;font-size:clamp(2.1rem,5.4vw,4.8rem);clip-path:polygon(3% 8%,8% 0,92% 0,97% 8%,100% 50%,97% 92%,92% 100%,8% 100%,3% 92%,0 50%);background:linear-gradient(180deg,rgba(40,34,28,.97),rgba(14,11,8,.97) 60%,rgba(28,22,16,.97));border:0;box-shadow:inset 0 0 0 3px #c9961e}
+html.sl .sl-plate::before{inset:0;border:3px solid #c9961e;clip-path:inherit}
+html.sl .sl-title{white-space:nowrap;text-transform:uppercase;line-height:1}
+html.sl .sl-plate .sl-slogan{margin:.18em 0 0;font-size:.3em;transform:none;letter-spacing:.07em}
+html.sl .sl-grid{font-family:"Barlow Condensed",Inter,sans-serif}
+html.sl .sl-in{font-size:1.06rem;line-height:1.4;padding-top:0}
+html.sl .sl-in h3{font-family:"Barlow Condensed",sans-serif!important;font-weight:800!important;letter-spacing:.04em!important;font-size:clamp(1.05rem,1.45vw,1.5rem)!important;margin:0 calc(-1 * clamp(14px,1.4vw,22px)) 12px!important;padding:10px clamp(14px,1.4vw,22px) 8px!important;background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(60,48,32,.55) 70%,rgba(0,0,0,.2));border-bottom:2px solid rgba(201,150,30,.7);text-shadow:0 2px 0 #000}
+html.sl .sl-in h3 .ic,html.sl .sl-offer .ic{fill:rgba(255,201,58,.9);stroke:#6a4200;stroke-width:1.6;filter:drop-shadow(0 2px 0 #000)}
+html.sl .sl-in h3 .ic{width:1.45em!important;height:1.45em!important}
+html.sl .ic:has(use[href="#i-check"]),html.sl .ic:has(use[href="#i-chart"]),html.sl .ic:has(use[href="#i-swords"]){fill:none!important;stroke:#ffc93a!important;stroke-width:2.4!important}
+html.sl .sl-in h3{white-space:nowrap}
+html.sl .sl-h h3,html.sl .sl-th h3{align-self:stretch!important}
+html.sl .sl-offer a{font-size:1rem;font-weight:700}
+html.sl .sl-offer .ic{width:40px;height:40px}
+html.sl .sl-check li{font-weight:600}
+html.sl .sl-more{font-size:1rem}
+html.sl .sl-dcl b{font-size:1.5rem}.sl-dcl small{font-size:1rem}
+html.sl .sl-note,html.sl .sl-lv{font-size:.95rem}
+html.sl .sl-h .sl-in,html.sl .sl-th .sl-in{padding-bottom:16px}
+/* nawigacja jak w projekcie: ciemne zakładki, aktywna złota */
+html.sl .nav-links a{background:linear-gradient(180deg,rgba(40,34,28,.9),rgba(16,13,10,.9));border:1px solid rgba(201,150,30,.35);border-radius:0!important;clip-path:polygon(9px 0,100% 0,calc(100% - 9px) 100%,0 100%);padding:8px 18px!important;margin:0 -2px}
+html.sl .lay-pages .nav-links a.on{background:linear-gradient(180deg,#ffe066,#ffc21e 55%,#e89a00)!important;color:#2a1600!important;box-shadow:none!important}
+html.sl .lay-pages .nav-links a.on .ic{color:#2a1600!important}
+@media (max-width:760px){
+  html.sl .sl-herb{width:110px;margin-bottom:-8px}
+  html.sl .sl-plate{padding-top:.5em}
+  html.sl .sl-plate{font-size:clamp(1.7rem,8.8vw,2.8rem)}
+  html.sl .sl-plate .sl-slogan{font-size:.36em}
+  html.sl .sl-in h3{font-size:1.1rem!important}
+}
+
+/* --- Słońce v3: grubsze, „3D” złote ramki jak w projekcie --- */
+html.sl .sl-herbw{position:relative;z-index:2;display:grid;place-items:center;margin-bottom:-18px}
+html.sl .sl-herbw::before{content:"";position:absolute;width:190%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,214,90,.55),rgba(255,170,40,.18) 38%,transparent 65%);z-index:-1}
+html.sl .sl-herbw::after{content:"";position:absolute;width:150%;aspect-ratio:1;z-index:-1;background:repeating-conic-gradient(from 0deg,rgba(255,220,120,.28) 0 6deg,transparent 6deg 18deg);-webkit-mask:radial-gradient(circle,#000 20%,transparent 68%);mask:radial-gradient(circle,#000 20%,transparent 68%)}
+html.sl .sl-herb{margin-bottom:0!important;width:clamp(120px,12.5vw,215px)!important}
+html.sl .sl-pframe{position:relative;padding:5px;background:linear-gradient(180deg,#fff0a8,#e2a82a 28%,#8a5608 52%,#f2c043 78%,#6a3e04);clip-path:polygon(2.6% 10%,7% 0,93% 0,97.4% 10%,100% 50%,97.4% 90%,93% 100%,7% 100%,2.6% 90%,0 50%);filter:drop-shadow(0 12px 22px rgba(0,0,0,.6))}
+html.sl .sl-plate{clip-path:polygon(2.6% 10%,7% 0,93% 0,97.4% 10%,100% 50%,97.4% 90%,93% 100%,7% 100%,2.6% 90%,0 50%)!important;box-shadow:none!important;background:radial-gradient(ellipse at 50% 0%,rgba(90,70,40,.55),transparent 60%),linear-gradient(180deg,#2c241b,#120e0a 65%,#221a12)!important}
+html.sl .sl-plate::before{display:none}
+html.sl .sl-t1{color:#fbf8f0;-webkit-text-stroke:2px #15100a;paint-order:stroke fill;text-shadow:0 4px 0 #6b6458,0 6px 0 #15100a,0 10px 18px rgba(0,0,0,.6)}
+html.sl .sl-t2{-webkit-text-stroke:2px #2a1600;paint-order:stroke fill;filter:drop-shadow(0 4px 0 #8a4c00) drop-shadow(0 2px 0 #2a1600) drop-shadow(0 8px 14px rgba(0,0,0,.55))}
+html.sl .sl-card{--cut:16px;padding:4px!important;background:linear-gradient(180deg,#fff0a8,#e2a82a 22%,#8a5608 50%,#f0bc3c 80%,#6a3e04)!important;filter:drop-shadow(0 0 1px #000) drop-shadow(0 12px 20px rgba(0,0,0,.55)) drop-shadow(0 0 14px rgba(255,170,40,.28))!important}
+html.sl .sl-in{background:radial-gradient(ellipse at 50% -20%,rgba(120,95,60,.35),transparent 55%),linear-gradient(180deg,#2a231b,#14100c 55%,#1c1610)!important;clip-path:polygon(calc(var(--cut) - 2px) 0,100% 0,100% calc(100% - var(--cut) + 2px),calc(100% - var(--cut) + 2px) 100%,0 100%,0 calc(var(--cut) - 2px))!important}
+html.sl .sl-in h3{background:linear-gradient(180deg,#3a2f22,#1a140e)!important;border-bottom:3px solid transparent!important;border-image:linear-gradient(90deg,#8a5608,#ffd862 30%,#e2a82a 70%,#8a5608) 1!important;clip-path:polygon(0 0,100% 0,calc(100% - 22px) 100%,0 100%);margin-right:0!important;box-shadow:inset 0 1px 0 rgba(255,220,140,.18)}
+html.sl .sl-in::after{height:4px;left:12%;right:12%;bottom:5px;background:linear-gradient(90deg,transparent,#ffb81e 30%,#ffe27a 50%,#ffb81e 70%,transparent);opacity:1;filter:blur(.3px) drop-shadow(0 0 6px rgba(255,180,30,.8))}
+html.sl .sl-join{border:3px solid #6a3800!important;box-shadow:inset 0 3px 0 rgba(255,255,255,.75),inset 0 -6px 0 rgba(160,80,0,.55),0 0 0 3px #2a1600,0 6px 0 #2a1600,0 0 30px rgba(255,190,40,.6)!important;-webkit-text-stroke:0;text-shadow:0 2px 0 rgba(255,240,180,.8)}
+@media (max-width:760px){ html.sl .sl-herbw{margin-bottom:-6px} html.sl .sl-herb{width:110px!important} }
 #glossCount{white-space:nowrap}
 body:has(.more-sheet:not([hidden])) .to-top{opacity:0!important;pointer-events:none!important}
 @media (max-width:420px){.mini-row.grp{font-size:.82rem}.mini-row.grp small{font-size:.7rem}.mini-row.grp>span:last-child{margin-left:6px}}
@@ -4941,7 +4998,7 @@ let saveLayoutState=()=>{};
         const card=(cls,ico,title,body)=>`<div class="sl-card ${cls}"><div class="sl-in">${title?`<h3>${I(ico)}${title}</h3>`:""}${body}</div></div>`;
         const lv=(AUTO&&AUTO.clanLevel)||"";
         const box=document.createElement("div"); box.className="sl-box";
-        box.innerHTML=`<div class="sl-top"><img class="sl-herb herb-img" src="${herb()}" alt="${T("Herb klanu","Clan badge")}"><div class="sl-plate"><span class="sl-t1">Armia</span> <span class="sl-t2">Maurycego</span></div><div class="sl-slogan">${T("Rozwój • Wspólna gra • Dobra atmosfera","Growth • Teamwork • Good vibes")}</div></div>
+        box.innerHTML=`<div class="sl-top"><div class="sl-herbw"><img class="sl-herb herb-img" src="${herb()}" alt="${T("Herb klanu","Clan badge")}"></div><div class="sl-pframe"><div class="sl-plate"><div class="sl-title"><span class="sl-t1">Armia</span> <span class="sl-t2">Maurycego</span></div><div class="sl-slogan">${T("Rozwój • Wspólna gra • Dobra atmosfera","Growth • Teamwork • Good vibes")}</div></div></div></div>
         <div class="sl-grid">`
          +card("sl-o","users",T("O nas","About us"),`<p>${T("Jesteśmy ambitnym klanem w Clash of Clans, który stawia na rozwój, współpracę i dobrą atmosferę.","We're an ambitious Clash of Clans clan focused on growth, teamwork and a good atmosphere.")}</p><p>${T("Dołącz do nas i twórz z nami silną ekipę!","Join us and build a strong crew with us!")}</p><a class="sl-more" href="#klan">${T("Więcej o klanie","More about the clan")} ›</a>`)
          +card("sl-h","shield",T("Nasz herb","Our badge"),`<img class="sl-herb2 herb-img" src="${herb()}" alt="">${lv?`<small class="sl-lv">${T("Poziom klanu","Clan level")} ${lv}</small>`:""}`)
