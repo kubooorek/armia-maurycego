@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T13:01:28.132Z",
+  "updated": "2026-11-12T13:16:03.958Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3266,7 +3266,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -7835,8 +7835,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|110991473|94640823|5100|336|7810|34127|0|16|57|10",
-      "last": "2026-11-12T05:01:28.322Z",
+      "sig": "31|113622565|96423540|5100|336|7810|34127|0|16|57|10",
+      "last": "2026-11-12T13:15:59.666Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -8976,38 +8976,6 @@
         8
       ]
     ],
-    "#YLLQL2VUP": [
-      [
-        20765,
-        41,
-        180,
-        9
-      ],
-      [
-        20766,
-        41,
-        180,
-        9
-      ],
-      [
-        20767,
-        44,
-        180,
-        9
-      ],
-      [
-        20768,
-        44,
-        180,
-        9
-      ],
-      [
-        20769,
-        44,
-        180,
-        9
-      ]
-    ],
     "#GQULCR98R": [
       [
         20765,
@@ -9038,6 +9006,38 @@
         16,
         336,
         10
+      ]
+    ],
+    "#YLLQL2VUP": [
+      [
+        20765,
+        41,
+        180,
+        9
+      ],
+      [
+        20766,
+        41,
+        180,
+        9
+      ],
+      [
+        20767,
+        44,
+        180,
+        9
+      ],
+      [
+        20768,
+        44,
+        180,
+        9
+      ],
+      [
+        20769,
+        44,
+        180,
+        9
       ]
     ],
     "#R8V9U9VLJ": [
@@ -10328,13 +10328,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "888:3448677568",
-      "t": "2026-11-12T13:01:23.502Z"
+      "hash": "888:1996844530",
+      "t": "2026-11-12T13:15:59.666Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1417:134069786",
-      "t": "2026-11-12T13:01:23.502Z"
+      "hash": "1417:3918802077",
+      "t": "2026-11-12T13:15:59.666Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11223,7 +11223,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 39,
+            "level": 40,
             "max": 110
           },
           {
@@ -11239,10 +11239,10 @@
         ]
       },
       "rush": {
-        "pct": 29.8,
+        "pct": 29.6,
         "troops": 19,
         "spells": 32.9,
-        "heroes": 36.7,
+        "heroes": 36.2,
         "top": [
           {
             "n": "Lodowy golem",
@@ -11982,78 +11982,16 @@
       }
     },
     {
-      "name": "KuN",
-      "tag": "#YLLQL2VUP",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 93,
-      "trophies": 197,
-      "profile": {
-        "level": 47,
-        "trophies": 197,
-        "best": 348,
-        "league": "Barbarian League 4",
-        "warStars": 44,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 53482,
-        "warPref": "in",
-        "bh": 3,
-        "bTrophies": 341,
-        "bLeague": "Wood League II",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 23,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 13,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 6,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.5,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 10600,
-        "don": 180,
-        "capLoot": 32075,
-        "gold": 39256977,
-        "elixir": 38016890,
-        "capContrib": 53482,
-        "wins": 0
-      }
-    },
-    {
       "name": "vvd",
       "tag": "#GQULCR98R",
       "role": "member",
       "th": 10,
       "given": 31,
       "received": 248,
-      "trophies": 167,
+      "trophies": 207,
       "profile": {
         "level": 57,
-        "trophies": 116,
+        "trophies": 207,
         "best": 386,
         "league": "Barbarian League 4",
         "warStars": 16,
@@ -12124,9 +12062,71 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 7810,
-        "gold": 110991473,
-        "elixir": 94640823,
+        "gold": 113622565,
+        "elixir": 96423540,
         "capContrib": 34127,
+        "wins": 0
+      }
+    },
+    {
+      "name": "KuN",
+      "tag": "#YLLQL2VUP",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 93,
+      "trophies": 197,
+      "profile": {
+        "level": 47,
+        "trophies": 197,
+        "best": 348,
+        "league": "Barbarian League 4",
+        "warStars": 44,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 53482,
+        "warPref": "in",
+        "bh": 3,
+        "bTrophies": 341,
+        "bLeague": "Wood League II",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 23,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 13,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 6,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.5,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 10600,
+        "don": 180,
+        "capLoot": 32075,
+        "gold": 39256977,
+        "elixir": 38016890,
+        "capContrib": 53482,
         "wins": 0
       }
     },
@@ -12539,20 +12539,20 @@
         ]
       },
       "rush": {
-        "pct": 2.9,
-        "troops": 5.4,
+        "pct": 1.9,
+        "troops": 3.6,
         "spells": 0,
         "heroes": 0,
         "top": [
           {
-            "n": "Minion",
-            "lvl": 2,
-            "need": 4
-          },
-          {
             "n": "Walkiria",
             "lvl": 1,
             "need": 2
+          },
+          {
+            "n": "Minion",
+            "lvl": 3,
+            "need": 4
           }
         ]
       },
