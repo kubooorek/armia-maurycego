@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T14:15:59.037Z",
+  "updated": "2026-11-12T14:31:18.588Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3262,7 +3262,7 @@
       }
     ]
   },
-  "visits": 133,
+  "visits": 136,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -7850,8 +7850,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
-      "sig": "0|76367386|74112937|0|68|0|3870|0|0|44|8",
-      "last": "2026-11-09T17:31:29.416Z",
+      "sig": "0|77943256|74816241|0|68|0|3870|0|0|44|8",
+      "last": "2026-11-12T14:31:13.041Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
@@ -10328,13 +10328,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "922:2403683849",
-      "t": "2026-11-12T14:15:54.961Z"
+      "hash": "905:1479286798",
+      "t": "2026-11-12T14:31:13.041Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1418:1997765081",
-      "t": "2026-11-12T14:15:54.961Z"
+      "hash": "1418:2336901537",
+      "t": "2026-11-12T14:31:13.041Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12000,8 +12000,8 @@
         "capital": 34127,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1657,
-        "bLeague": "Copper League IV",
+        "bTrophies": 1718,
+        "bLeague": "Copper League III",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -13216,8 +13216,8 @@
         "cg": 0,
         "don": 68,
         "capLoot": 0,
-        "gold": 76367386,
-        "elixir": 74112937,
+        "gold": 77943256,
+        "elixir": 74816241,
         "capContrib": 3870,
         "wins": 0
       }
