@@ -1808,6 +1808,13 @@ html.sl .sl-brand,html.sl .sl-badge{display:none}
   html.sl.sl-start nav{position:fixed!important;left:0;right:0;top:0;transition:transform .25s ease}
   html.sl.sl-start.sl-navhid nav{transform:translateY(-110%)}
 }
+
+/* projekt w naturalnej wielkości (ostry, oddala się razem ze stroną), boki wypełnione rozmytym tłem */
+@media (min-width:1180px){
+  html.sl{--u:calc(min(100vw,1672px) / 1672)}
+  html.sl.sl-start #top.og-hero{background:url(img/styl/slonce-projekt.jpg) center top/calc(var(--u)*1672) auto no-repeat,#1a130c url(img/styl/slonce-tlo.jpg) center/cover no-repeat!important}
+  html.sl .sl-proj{left:50%!important;right:auto!important;width:calc(var(--u)*1672);transform:translateX(-50%)}
+}
 #glossCount{white-space:nowrap}
 body:has(.more-sheet:not([hidden])) .to-top{opacity:0!important;pointer-events:none!important}
 @media (max-width:420px){.mini-row.grp{font-size:.82rem}.mini-row.grp small{font-size:.7rem}.mini-row.grp>span:last-child{margin-left:6px}}
