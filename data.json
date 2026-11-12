@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T00:31:17.439Z",
+  "updated": "2026-11-12T01:31:13.995Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10332,8 +10332,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1411:1588191066",
-      "t": "2026-11-12T00:31:14.083Z"
+      "hash": "1411:3211604983",
+      "t": "2026-11-12T01:31:10.690Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11047,10 +11047,10 @@
       "th": 11,
       "given": 288,
       "received": 364,
-      "trophies": 53,
+      "trophies": 81,
       "profile": {
         "level": 107,
-        "trophies": 53,
+        "trophies": 81,
         "best": 2156,
         "league": "Wizard League 10",
         "warStars": 249,
@@ -12610,8 +12610,8 @@
         ]
       },
       "rush": {
-        "pct": 11.9,
-        "troops": 13.9,
+        "pct": 10.2,
+        "troops": 11.1,
         "spells": 7.7,
         "heroes": 10,
         "top": [
@@ -12622,11 +12622,6 @@
           },
           {
             "n": "Minion",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 2
           },
@@ -12644,6 +12639,11 @@
             "n": "Zaklęcie szału",
             "lvl": 3,
             "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 9,
+            "need": 10
           }
         ]
       },
