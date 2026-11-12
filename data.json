@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T01:45:57.926Z",
+  "updated": "2026-11-12T02:01:30.440Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10332,8 +10332,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1412:1192352314",
-      "t": "2026-11-12T01:45:55.271Z"
+      "hash": "1412:2866511613",
+      "t": "2026-11-12T02:01:27.474Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10669,10 +10669,10 @@
       "th": 13,
       "given": 0,
       "received": 0,
-      "trophies": 256,
+      "trophies": 281,
       "profile": {
         "level": 90,
-        "trophies": 256,
+        "trophies": 281,
         "best": 348,
         "league": "Wizard League 11",
         "warStars": 55,
@@ -13028,10 +13028,10 @@
       "th": 8,
       "given": 46,
       "received": 20,
-      "trophies": 95,
+      "trophies": 116,
       "profile": {
         "level": 37,
-        "trophies": 95,
+        "trophies": 116,
         "best": 278,
         "league": "Skeleton League 2",
         "warStars": 0,
