@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T06:45:54.633Z",
+  "updated": "2026-11-12T07:31:13.403Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10332,8 +10332,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1415:1519845025",
-      "t": "2026-11-12T06:45:49.656Z"
+      "hash": "1415:1527504325",
+      "t": "2026-11-12T07:31:07.021Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12235,7 +12235,7 @@
         "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1466,
+        "bTrophies": 1474,
         "bLeague": "Stone League I",
         "heroes": [
           {
