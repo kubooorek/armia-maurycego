@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T19:31:58.100Z",
+  "updated": "2026-11-12T19:46:02.150Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -388,7 +388,7 @@
         "attacks": []
       },
       {
-        "name": "Cwel123",
+        "name": "HuangShunxiong",
         "tag": "#RPR0L809R",
         "pos": 9,
         "th": 11,
@@ -7789,8 +7789,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "50|591750097|548601588|10100|294|35350|95286|0|43|83|11",
-      "last": "2026-11-12T15:45:58.769Z",
+      "sig": "50|592317950|549052421|10100|294|35350|98886|0|43|83|11",
+      "last": "2026-11-12T19:45:56.304Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -8316,7 +8316,7 @@
           "cap": 7640
         },
         {
-          "name": "Cwel123",
+          "name": "HuangShunxiong",
           "tag": "#RPR0L809R",
           "score": 212,
           "stars": 19,
@@ -10353,13 +10353,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "966:3228950703",
-      "t": "2026-11-12T19:31:50.404Z"
+      "hash": "973:4239989140",
+      "t": "2026-11-12T19:45:56.304Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1421:248641243",
-      "t": "2026-11-12T19:31:50.404Z"
+      "hash": "1428:3308857015",
+      "t": "2026-11-12T19:45:56.304Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10555,12 +10555,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 43,
+            "level": 44,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 56,
+            "level": 57,
             "max": 110
           },
           {
@@ -10575,16 +10575,16 @@
           },
           {
             "name": "Minion Prince",
-            "level": 46,
+            "level": 47,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 35.8,
+        "pct": 35.3,
         "troops": 26.2,
         "spells": 42.9,
-        "heroes": 40,
+        "heroes": 39.2,
         "top": [
           {
             "n": "Górnik",
@@ -11239,7 +11239,7 @@
         "capital": 742040,
         "warPref": "in",
         "bh": 8,
-        "bTrophies": 2645,
+        "bTrophies": 2680,
         "bLeague": "Iron League III",
         "heroes": [
           {
@@ -11313,7 +11313,7 @@
       }
     },
     {
-      "name": "Cwel123",
+      "name": "HuangShunxiong",
       "tag": "#RPR0L809R",
       "role": "admin",
       "th": 11,
@@ -11328,10 +11328,10 @@
         "warStars": 43,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 95286,
+        "capital": 98886,
         "warPref": "in",
         "bh": 7,
-        "bTrophies": 2236,
+        "bTrophies": 2229,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -11398,9 +11398,9 @@
         "cg": 10100,
         "don": 294,
         "capLoot": 35350,
-        "gold": 591750097,
-        "elixir": 548601588,
-        "capContrib": 95286,
+        "gold": 592317950,
+        "elixir": 549052421,
+        "capContrib": 98886,
         "wins": 0
       }
     },
@@ -12868,7 +12868,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 5,
+            "level": 6,
             "max": 110
           },
           {
@@ -12884,10 +12884,10 @@
         ]
       },
       "rush": {
-        "pct": 56.9,
+        "pct": 56.3,
         "troops": 28.6,
         "spells": 63,
-        "heroes": 80,
+        "heroes": 78.6,
         "top": [
           {
             "n": "Książę Minionów",
@@ -12898,11 +12898,6 @@
             "n": "Zaklęcie leczenia",
             "lvl": 1,
             "need": 6
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 5,
-            "need": 30
           },
           {
             "n": "Minion",
@@ -12918,6 +12913,11 @@
             "n": "Zaklęcie szału",
             "lvl": 1,
             "need": 5
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 6,
+            "need": 30
           }
         ]
       },
@@ -13387,7 +13387,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 11,
+            "level": 12,
             "max": 110
           },
           {
