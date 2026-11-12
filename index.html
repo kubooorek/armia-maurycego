@@ -1901,6 +1901,15 @@ html.sl .sl-o .sl-in h3,html.sl .sl-r .sl-in h3,html.sl .sl-of .sl-in h3,html.sl
 @media (min-width:1180px) and (max-width:1499px){ html.sl .sl-badge{display:none!important} html.sl nav .wrap{padding:0 calc(var(--u)*40)!important} }
 @media (min-width:1180px) and (max-width:1380px){ html.sl .sl-brand{display:block!important} }
 @media (min-width:1500px){ html.sl .sl-badge{font-size:calc(var(--u)*19)!important;padding:calc(var(--u)*8) calc(var(--u)*18) calc(var(--u)*8) calc(var(--u)*10)!important;margin-left:calc(var(--u)*6)!important} html.sl .sl-badge img{width:calc(var(--u)*48)!important} html.sl nav .wrap{padding:0 calc(var(--u)*40)!important} html.sl .sl-nav>a,html.sl .sl-ddb{padding:0 calc(var(--u)*20)} }
+/* podzakładki bez paska: widać scenerię, same przyciski */
+html .subnav,html[data-motyw] .subnav{position:relative!important;top:auto!important;background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border:0!important;box-shadow:none!important}
+html .subnav a:not(.on){background:rgba(15,8,5,.72)!important;border:1px solid rgba(201,150,30,.4)!important;box-shadow:0 3px 10px rgba(0,0,0,.35)}
+/* górny pasek przezroczysty (widać scenerię), ciemnieje dopiero po przewinięciu */
+html nav{transition:background .25s,box-shadow .25s,border-color .25s}
+html:not(.nav-solid) nav,html[data-motyw]:not(.nav-solid) nav{background:transparent!important;border-bottom-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html:not(.nav-solid) nav .nav-links a,html:not(.nav-solid) nav .sl-brand{text-shadow:0 2px 4px #000,0 0 10px rgba(0,0,0,.8)}
+html:not(.nav-solid) nav .nav-links a .ic{filter:drop-shadow(0 1px 2px #000)}
+html:not(.nav-solid) .ticker{background:rgba(10,4,3,.45)!important;backdrop-filter:blur(3px)}
 #glossCount{white-space:nowrap}
 body:has(.more-sheet:not([hidden])) .to-top{opacity:0!important;pointer-events:none!important}
 @media (max-width:420px){.mini-row.grp{font-size:.82rem}.mini-row.grp small{font-size:.7rem}.mini-row.grp>span:last-child{margin-left:6px}}
@@ -2693,6 +2702,7 @@ const KARY_ZWOLNIENI = [
   "#LC8VRR9R2", // Brann
   "#LQVRCRUYR", // Barnes
   "#G8VGC2VRL", // Kojak
+  "#R92C0U8UU", // Rico (konto Leadera)
 ];
 const KARY_ANULOWANE = [
   {name:"Cwel123", date:"2026-11-10"},  // decyzja zarządu
@@ -5457,5 +5467,6 @@ const BEZ_PL="naglowki";
 })();
 } // koniec boot()
 </script>
+<script>(function(){var f=function(){document.documentElement.classList.toggle("nav-solid",scrollY>30)};addEventListener("scroll",f,{passive:true});addEventListener("hashchange",function(){setTimeout(f,60)});f();})();</script>
 </body>
 </html>
