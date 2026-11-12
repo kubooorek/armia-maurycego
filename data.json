@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T22:01:34.127Z",
+  "updated": "2026-11-12T22:31:14.602Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -7,7 +7,7 @@
   "warWinStreak": 0,
   "warWins": 13,
   "currentWar": {
-    "state": "preparation",
+    "state": "inWar",
     "size": 30,
     "perMember": 2,
     "start": "20261112T222253.000Z",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 0,
-      "pct": 0,
-      "attacks": 0,
+      "stars": 3,
+      "pct": 3.33,
+      "attacks": 1,
       "bases": [
         {
           "pos": 1,
@@ -112,12 +112,12 @@
         {
           "pos": 19,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 20,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 21,
@@ -126,13 +126,13 @@
         },
         {
           "pos": 22,
-          "th": 9,
-          "best": 0
+          "th": 10,
+          "best": 3
         },
         {
           "pos": 23,
           "th": 9,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 24,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 0,
-      "pct": 0,
-      "attacks": 0,
+      "stars": 10,
+      "pct": 12.63,
+      "attacks": 4,
       "bases": [
         {
           "pos": 1,
@@ -226,7 +226,7 @@
         {
           "pos": 10,
           "th": 10,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 11,
@@ -295,12 +295,12 @@
         },
         {
           "pos": 24,
-          "th": 8,
+          "th": 9,
           "best": 0
         },
         {
           "pos": 25,
-          "th": 8,
+          "th": 9,
           "best": 0
         },
         {
@@ -392,7 +392,17 @@
         "tag": "#RPR0L809R",
         "pos": 9,
         "th": 11,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 1,
+            "target": "10. ⚓searyc⚓",
+            "tpos": 10,
+            "tname": "⚓searyc⚓",
+            "seen": "2026-11-12T22:31:04.467Z"
+          }
+        ]
       },
       {
         "name": "TTomson",
@@ -482,7 +492,7 @@
         "name": "TwojaSiora",
         "tag": "#GQR98J880",
         "pos": 22,
-        "th": 9,
+        "th": 10,
         "attacks": []
       },
       {
@@ -542,7 +552,48 @@
         "attacks": []
       }
     ],
-    "defs": []
+    "defs": [
+      {
+        "by": "tuccs",
+        "bpos": 16,
+        "th": 9,
+        "tpos": 19,
+        "tname": "wiktor",
+        "stars": 3,
+        "pct": 100,
+        "order": 2
+      },
+      {
+        "by": "tuccs",
+        "bpos": 16,
+        "th": 9,
+        "tpos": 20,
+        "tname": "SZAR3",
+        "stars": 3,
+        "pct": 100,
+        "order": 3
+      },
+      {
+        "by": "Bachi",
+        "bpos": 25,
+        "th": 9,
+        "tpos": 23,
+        "tname": "Andrzej",
+        "stars": 1,
+        "pct": 79,
+        "order": 4
+      },
+      {
+        "by": "densyo03",
+        "bpos": 20,
+        "th": 9,
+        "tpos": 22,
+        "tname": "TwojaSiora",
+        "stars": 3,
+        "pct": 100,
+        "order": 5
+      }
+    ]
   },
   "cwl": {
     "season": "2026-11-01",
@@ -3854,6 +3905,390 @@
     }
   ],
   "warArchive": [
+    {
+      "start": "20261112T222253.000Z",
+      "end": "20261113T222253.000Z",
+      "enemy": "MANUSCRIPTS",
+      "size": 30,
+      "perMember": 2,
+      "state": "inWar",
+      "us": 3,
+      "them": 10,
+      "final": false,
+      "pct": 3.33,
+      "themPct": 12.63,
+      "themBases": [
+        {
+          "pos": 1,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 2,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 3,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 4,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 5,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 6,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 7,
+          "th": 12,
+          "best": 0
+        },
+        {
+          "pos": 8,
+          "th": 13,
+          "best": 0
+        },
+        {
+          "pos": 9,
+          "th": 11,
+          "best": 0
+        },
+        {
+          "pos": 10,
+          "th": 10,
+          "best": 3
+        },
+        {
+          "pos": 11,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 12,
+          "th": 10,
+          "best": 0
+        },
+        {
+          "pos": 13,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 14,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 15,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 16,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 17,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 18,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 19,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 20,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 21,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 22,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 23,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 24,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 25,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 26,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 27,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 28,
+          "th": 9,
+          "best": 0
+        },
+        {
+          "pos": 29,
+          "th": 8,
+          "best": 0
+        },
+        {
+          "pos": 30,
+          "th": 8,
+          "best": 0
+        }
+      ],
+      "members": [
+        {
+          "name": "KUBOOOREK",
+          "tag": "#VP9PLGLV",
+          "pos": 1,
+          "th": 15,
+          "attacks": []
+        },
+        {
+          "name": "To ja",
+          "tag": "#2JGYURUQJ",
+          "pos": 2,
+          "th": 13,
+          "attacks": []
+        },
+        {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "pos": 3,
+          "th": 13,
+          "attacks": []
+        },
+        {
+          "name": "Albaroon.2",
+          "tag": "#GYUJR2URJ",
+          "pos": 4,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "MAQOS",
+          "tag": "#LJYR92002",
+          "pos": 5,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "oggsgdjdjbd",
+          "tag": "#Q9CU9P908",
+          "pos": 6,
+          "th": 12,
+          "attacks": []
+        },
+        {
+          "name": "Toster290",
+          "tag": "#GJJ90QGVQ",
+          "pos": 7,
+          "th": 13,
+          "attacks": []
+        },
+        {
+          "name": "VipeR",
+          "tag": "#22R8PLCU8",
+          "pos": 8,
+          "th": 11,
+          "attacks": []
+        },
+        {
+          "name": "HuangShunxiong",
+          "tag": "#RPR0L809R",
+          "pos": 9,
+          "th": 11,
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "10. ⚓searyc⚓",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "name": "TTomson",
+          "tag": "#R0V8QGLJQ",
+          "pos": 10,
+          "th": 11,
+          "attacks": []
+        },
+        {
+          "name": "Kojak",
+          "tag": "#G8VGC2VRL",
+          "pos": 11,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "pos": 12,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "zuzia",
+          "tag": "#R8V9U9VLJ",
+          "pos": 13,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "♡karo♡lina♡",
+          "tag": "#GVGRVCQJR",
+          "pos": 14,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "tak",
+          "tag": "#Y02PYY922",
+          "pos": 15,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "Belaska",
+          "tag": "#GU0R2J8R0",
+          "pos": 16,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "Brann",
+          "tag": "#LC8VRR9R2",
+          "pos": 17,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "KuN",
+          "tag": "#YLLQL2VUP",
+          "pos": 18,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "wiktor",
+          "tag": "#QGPC2228Q",
+          "pos": 19,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "SZAR3",
+          "tag": "#RYLR2C92V",
+          "pos": 20,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "erykos",
+          "tag": "#R9GPGL0QJ",
+          "pos": 21,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "TwojaSiora",
+          "tag": "#GQR98J880",
+          "pos": 22,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "Andrzej",
+          "tag": "#R0VLRL292",
+          "pos": 23,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "pos": 24,
+          "th": 8,
+          "attacks": []
+        },
+        {
+          "name": "Mimbosz",
+          "tag": "#RY0QPVCCY",
+          "pos": 25,
+          "th": 10,
+          "attacks": []
+        },
+        {
+          "name": "Riczard",
+          "tag": "#R2PCVYQG2",
+          "pos": 26,
+          "th": 8,
+          "attacks": []
+        },
+        {
+          "name": "smouki",
+          "tag": "#R9L08VVCY",
+          "pos": 27,
+          "th": 9,
+          "attacks": []
+        },
+        {
+          "name": "Rico",
+          "tag": "#R92C0U8UU",
+          "pos": 28,
+          "th": 8,
+          "attacks": []
+        },
+        {
+          "name": "threeten",
+          "tag": "#R8RVQVPCC",
+          "pos": 29,
+          "th": 8,
+          "attacks": []
+        },
+        {
+          "name": "TwarógPółtlusty",
+          "tag": "#R9GUJ0ULV",
+          "pos": 30,
+          "th": 7,
+          "attacks": []
+        }
+      ]
+    },
     {
       "start": "20261110T211034.000Z",
       "end": "20261111T211034.000Z",
@@ -7588,6 +8023,17 @@
   },
   "penalties": [
     {
+      "id": "20261112T222253.000Z:#RPR0L809R:own",
+      "type": "own",
+      "detail": "nr 10 zamiast nr 9",
+      "tag": "#RPR0L809R",
+      "name": "HuangShunxiong",
+      "war": "20261112T222253.000Z",
+      "end": "20261113T222253.000Z",
+      "enemy": "MANUSCRIPTS",
+      "t": "2026-11-12T22:31:04.974Z"
+    },
+    {
       "id": "20261110T211034.000Z:#RYUV9V9RC:missed",
       "type": "missed",
       "detail": "wykorzystane ataki: 0/2",
@@ -7764,8 +8210,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "57|912050567|949973372|13725|50984|70605|105841|0|514|149|13",
-      "last": "2026-11-12T12:45:57.194Z",
+      "sig": "79|912050567|949973372|13725|51004|70605|105841|0|514|149|13",
+      "last": "2026-11-12T22:31:05.942Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -7789,8 +8235,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RPR0L809R": {
-      "sig": "50|595215828|552297667|10100|294|35350|98886|0|43|83|11",
-      "last": "2026-11-12T20:15:54.658Z",
+      "sig": "50|595304828|552386667|10100|294|35350|98886|0|46|83|11",
+      "last": "2026-11-12T22:31:05.942Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GJJ90QGVQ": {
@@ -8319,7 +8765,7 @@
           "name": "HuangShunxiong",
           "tag": "#RPR0L809R",
           "score": 212,
-          "stars": 19,
+          "stars": 22,
           "don": 55,
           "cg": 0,
           "cap": 8030
@@ -8535,7 +8981,7 @@
       [
         20769,
         514,
-        50984,
+        51004,
         13
       ]
     ],
@@ -8694,7 +9140,7 @@
       ],
       [
         20769,
-        43,
+        46,
         294,
         11
       ]
@@ -10334,7 +10780,8 @@
     ],
     "dm:w:20261110T211034.000Z": [],
     "w:20261112T222253.000Z": [
-      "prep"
+      "prep",
+      "start"
     ]
   },
   "oneShots": [
@@ -10343,7 +10790,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 0
+    "w:20261112T222253.000Z": 5
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -10353,13 +10800,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "990:810643583",
-      "t": "2026-11-12T22:01:30.214Z"
+      "hash": "990:3279620341",
+      "t": "2026-11-12T22:31:05.942Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1425:3238465001",
-      "t": "2026-11-12T22:01:30.214Z"
+      "hash": "1830:3222481088",
+      "t": "2026-11-12T22:31:05.942Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10442,11 +10889,16 @@
       "name": "zuzia",
       "war": "20261110T211034.000Z",
       "t": "2026-11-11T21:15:54.873Z"
+    },
+    "20261112T222253.000Z:#RPR0L809R:own": {
+      "name": "HuangShunxiong",
+      "war": "20261112T222253.000Z",
+      "t": "2026-11-12T22:31:05.942Z"
     }
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "462:2069610440"
+    "hash": "464:679246696"
   },
   "galeria": [
     {
@@ -10888,7 +11340,7 @@
       "tag": "#8UCPRGC8",
       "role": "member",
       "th": 13,
-      "given": 57,
+      "given": 79,
       "received": 0,
       "trophies": 0,
       "profile": {
@@ -10902,7 +11354,7 @@
         "capital": 105841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2368,
+        "bTrophies": 2356,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -10967,7 +11419,7 @@
       },
       "ach": {
         "cg": 13725,
-        "don": 50984,
+        "don": 51004,
         "capLoot": 70605,
         "gold": 912050567,
         "elixir": 949973372,
@@ -11226,7 +11678,7 @@
       "role": "admin",
       "th": 13,
       "given": 126,
-      "received": 405,
+      "received": 407,
       "trophies": 387,
       "profile": {
         "level": 131,
@@ -11265,8 +11717,8 @@
         ]
       },
       "rush": {
-        "pct": 29.1,
-        "troops": 17.6,
+        "pct": 28.9,
+        "troops": 17,
         "spells": 32.9,
         "heroes": 36.2,
         "top": [
@@ -11325,7 +11777,7 @@
         "trophies": 297,
         "best": 400,
         "league": "Archer League 8",
-        "warStars": 43,
+        "warStars": 46,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 98886,
@@ -11398,8 +11850,8 @@
         "cg": 10100,
         "don": 294,
         "capLoot": 35350,
-        "gold": 595215828,
-        "elixir": 552297667,
+        "gold": 595304828,
+        "elixir": 552386667,
         "capContrib": 98886,
         "wins": 0
       }
@@ -13420,7 +13872,7 @@
       "role": "member",
       "th": 7,
       "given": 70,
-      "received": 60,
+      "received": 80,
       "trophies": 249,
       "profile": {
         "level": 32,
