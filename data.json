@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T14:31:18.588Z",
+  "updated": "2026-11-12T14:46:06.127Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3262,7 +3262,7 @@
       }
     ]
   },
-  "visits": 136,
+  "visits": 137,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -3449,6 +3449,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-12T14:45:59.145Z",
+      "type": "th",
+      "name": "my name billa",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-12T07:45:59.037Z",
       "type": "th",
@@ -3843,12 +3850,6 @@
       "t": "2026-10-31T19:01:17.190Z",
       "type": "leave",
       "name": "Fox"
-    },
-    {
-      "t": "2026-10-31T18:45:45.826Z",
-      "type": "promote",
-      "name": "tak",
-      "role": "coLeader"
     }
   ],
   "warArchive": [
@@ -7092,7 +7093,7 @@
     {
       "d": "2026-11-12",
       "members": 45,
-      "avgTh": 9.6,
+      "avgTh": 9.7,
       "level": 4,
       "wins": 13,
       "points": 22600
@@ -7850,8 +7851,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
-      "sig": "0|77943256|74816241|0|68|0|3870|0|0|44|8",
-      "last": "2026-11-12T14:31:13.041Z",
+      "sig": "0|80987647|78048737|0|68|0|3870|0|0|44|9",
+      "last": "2026-11-12T14:46:00.087Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
@@ -7955,13 +7956,13 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|148272630|142627411|0|0|0|9510|0|0|51|11",
-      "last": "2026-11-12T04:45:51.762Z",
+      "sig": "0|149087673|143472358|0|0|0|9510|0|0|51|11",
+      "last": "2026-11-12T14:46:00.087Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "20|7363015|6655881|0|20|0|2400|0|3|28|9",
-      "last": "2026-11-12T11:46:02.830Z",
+      "sig": "20|7363015|6655881|0|20|0|4350|0|3|28|9",
+      "last": "2026-11-12T14:46:00.087Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -9549,7 +9550,7 @@
         20769,
         0,
         68,
-        8
+        9
       ]
     ],
     "#LYUQYCU9G": [
@@ -10328,13 +10329,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "905:1479286798",
-      "t": "2026-11-12T14:31:13.041Z"
+      "hash": "905:2982520374",
+      "t": "2026-11-12T14:46:00.087Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1418:2336901537",
-      "t": "2026-11-12T14:31:13.041Z"
+      "hash": "1418:2255560601",
+      "t": "2026-11-12T14:46:00.087Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10420,7 +10421,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "462:2204237576"
+    "hash": "462:1962540263"
   },
   "galeria": [
     {
@@ -11627,8 +11628,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 148272630,
-        "elixir": 142627411,
+        "gold": 149087673,
+        "elixir": 143472358,
         "capContrib": 9510,
         "wins": 0
       }
@@ -12000,7 +12001,7 @@
         "capital": 34127,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1718,
+        "bTrophies": 1715,
         "bLeague": "Copper League III",
         "heroes": [
           {
@@ -12523,7 +12524,7 @@
         "capital": 16881,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1285,
+        "bTrophies": 1298,
         "bLeague": "Stone League III",
         "heroes": [
           {
@@ -13105,7 +13106,7 @@
         "warStars": 3,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 2400,
+        "capital": 4350,
         "warPref": "in",
         "bh": 4,
         "bTrophies": 1107,
@@ -13167,7 +13168,7 @@
         "capLoot": 0,
         "gold": 7363015,
         "elixir": 6655881,
-        "capContrib": 2400,
+        "capContrib": 4350,
         "wins": 0
       }
     },
@@ -13175,7 +13176,7 @@
       "name": "my name billa",
       "tag": "#GQ2QUJRGU",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 0,
       "received": 0,
       "trophies": 0,
@@ -13183,7 +13184,7 @@
         "level": 44,
         "trophies": 0,
         "best": 296,
-        "league": "Skeleton League 2",
+        "league": "Skeleton League 3",
         "warStars": 0,
         "attackWins": 0,
         "defenseWins": 0,
@@ -13206,18 +13207,24 @@
         ]
       },
       "rush": {
-        "pct": 0,
+        "pct": 1.9,
         "troops": 0,
         "spells": 0,
-        "heroes": 0,
-        "top": []
+        "heroes": 6.7,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 18,
+            "need": 20
+          }
+        ]
       },
       "ach": {
         "cg": 0,
         "don": 68,
         "capLoot": 0,
-        "gold": 77943256,
-        "elixir": 74816241,
+        "gold": 80987647,
+        "elixir": 78048737,
         "capContrib": 3870,
         "wins": 0
       }
