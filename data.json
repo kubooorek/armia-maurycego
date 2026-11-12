@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T18:01:25.890Z",
+  "updated": "2026-11-12T18:15:59.337Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3262,11 +3262,11 @@
       }
     ]
   },
-  "visits": 139,
+  "visits": 140,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -10323,8 +10323,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1420:4141545794",
-      "t": "2026-11-12T18:01:21.619Z"
+      "hash": "1420:4060204858",
+      "t": "2026-11-12T18:15:56.127Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12669,7 +12669,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 10,
+            "level": 11,
             "max": 110
           },
           {
