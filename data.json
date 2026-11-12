@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T15:01:34.078Z",
+  "updated": "2026-11-12T15:15:58.228Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3262,7 +3262,7 @@
       }
     ]
   },
-  "visits": 137,
+  "visits": 139,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -7590,17 +7590,6 @@
       "t": "2026-11-11T21:15:54.226Z"
     },
     {
-      "id": "20261110T211034.000Z:#R92C0U8UU:missed",
-      "type": "missed",
-      "detail": "wykorzystane ataki: 0/2",
-      "tag": "#R92C0U8UU",
-      "name": "Rico",
-      "war": "20261110T211034.000Z",
-      "end": "20261111T211034.000Z",
-      "enemy": "kalmado team",
-      "t": "2026-11-11T21:15:54.226Z"
-    },
-    {
       "id": "20261110T211034.000Z:#R8V9U9VLJ:missed",
       "type": "missed",
       "detail": "wykorzystane ataki: 0/2",
@@ -7856,8 +7845,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "360|80144063|78548298|2400|804|14765|36586|0|6|60|10",
-      "last": "2026-11-11T19:31:09.724Z",
+      "sig": "360|80144063|78548298|2400|804|14765|36586|0|6|61|10",
+      "last": "2026-11-12T15:15:52.252Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -10329,13 +10318,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "905:2982520374",
-      "t": "2026-11-12T14:46:00.087Z"
+      "hash": "905:1120083674",
+      "t": "2026-11-12T15:15:52.252Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1418:3929719900",
-      "t": "2026-11-12T15:01:30.423Z"
+      "hash": "1418:1477707187",
+      "t": "2026-11-12T15:15:52.252Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10399,7 +10388,8 @@
     "20261110T211034.000Z:#R92C0U8UU:missed": {
       "name": "Rico",
       "war": "20261110T211034.000Z",
-      "t": "2026-11-11T21:15:54.873Z"
+      "t": "2026-11-11T21:15:54.873Z",
+      "anul": true
     },
     "20261110T211034.000Z:#R2PCVYQG2:missed": {
       "name": "Riczard",
@@ -12227,7 +12217,7 @@
       "received": 763,
       "trophies": 320,
       "profile": {
-        "level": 60,
+        "level": 61,
         "trophies": 320,
         "best": 349,
         "league": "Skeleton League 3",
@@ -12247,7 +12237,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 23,
+            "level": 24,
             "max": 110
           },
           {
@@ -12258,14 +12248,14 @@
         ]
       },
       "rush": {
-        "pct": 5.6,
+        "pct": 5.1,
         "troops": 0,
         "spells": 0,
-        "heroes": 14.3,
+        "heroes": 12.9,
         "top": [
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 23,
+            "lvl": 24,
             "need": 30
           },
           {
