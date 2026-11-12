@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T08:01:32.047Z",
+  "updated": "2026-11-12T08:16:05.645Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7830,8 +7830,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QGPC2228Q": {
-      "sig": "0|52644577|49818201|750|0|14130|17129|0|14|59|9",
-      "last": "2026-11-11T10:45:50.941Z",
+      "sig": "0|53688577|50907201|750|0|14130|17129|0|14|59|9",
+      "last": "2026-11-12T08:16:01.057Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
@@ -8880,6 +8880,38 @@
         11
       ]
     ],
+    "#QGPC2228Q": [
+      [
+        20765,
+        14,
+        0,
+        9
+      ],
+      [
+        20766,
+        14,
+        0,
+        9
+      ],
+      [
+        20767,
+        14,
+        0,
+        9
+      ],
+      [
+        20768,
+        14,
+        0,
+        9
+      ],
+      [
+        20769,
+        14,
+        0,
+        9
+      ]
+    ],
     "#RY0QPVCCY": [
       [
         20765,
@@ -8942,38 +8974,6 @@
         2465,
         11803,
         8
-      ]
-    ],
-    "#QGPC2228Q": [
-      [
-        20765,
-        14,
-        0,
-        9
-      ],
-      [
-        20766,
-        14,
-        0,
-        9
-      ],
-      [
-        20767,
-        14,
-        0,
-        9
-      ],
-      [
-        20768,
-        14,
-        0,
-        9
-      ],
-      [
-        20769,
-        14,
-        0,
-        9
       ]
     ],
     "#YLLQL2VUP": [
@@ -10328,13 +10328,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "871:1291627581",
-      "t": "2026-11-12T08:01:24.870Z"
+      "hash": "871:1312625725",
+      "t": "2026-11-12T08:16:01.057Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1416:4107766973",
-      "t": "2026-11-12T08:01:24.870Z"
+      "hash": "1416:4026426037",
+      "t": "2026-11-12T08:16:01.057Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10670,7 +10670,7 @@
       "th": 13,
       "given": 0,
       "received": 0,
-      "trophies": 281,
+      "trophies": 321,
       "profile": {
         "level": 90,
         "trophies": 281,
@@ -10687,12 +10687,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
@@ -10707,25 +10707,25 @@
           },
           {
             "name": "Minion Prince",
-            "level": 18,
+            "level": 19,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 39.1,
-        "troops": 15.9,
+        "pct": 38.6,
+        "troops": 16.9,
         "spells": 11.4,
-        "heroes": 65.7,
+        "heroes": 64.3,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 18,
+            "lvl": 19,
             "need": 65
           },
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 18,
+            "lvl": 19,
             "need": 65
           },
           {
@@ -10739,12 +10739,12 @@
             "need": 3
           },
           {
-            "n": "Wielki Strażnik",
-            "lvl": 18,
-            "need": 40
+            "n": "Kamienny Miażdżyciel",
+            "lvl": 1,
+            "need": 3
           },
           {
-            "n": "Książę Minionów",
+            "n": "Wielki Strażnik",
             "lvl": 18,
             "need": 40
           }
@@ -11782,6 +11782,68 @@
       }
     },
     {
+      "name": "wiktor",
+      "tag": "#QGPC2228Q",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 70,
+      "profile": {
+        "level": 59,
+        "trophies": 70,
+        "best": 787,
+        "league": "Barbarian League 5",
+        "warStars": 14,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 17129,
+        "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1690,
+        "bLeague": "Copper League IV",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 21,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 12,
+            "max": 110
+          },
+          {
+            "name": "Minion Prince",
+            "level": 4,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0.9,
+        "troops": 0,
+        "spells": 4.3,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 2
+          }
+        ]
+      },
+      "ach": {
+        "cg": 750,
+        "don": 0,
+        "capLoot": 14130,
+        "gold": 53688577,
+        "elixir": 50907201,
+        "capContrib": 17129,
+        "wins": 0
+      }
+    },
+    {
       "name": "Mimbosz",
       "tag": "#RY0QPVCCY",
       "role": "member",
@@ -11916,68 +11978,6 @@
         "gold": 399970027,
         "elixir": 464605748,
         "capContrib": 234074,
-        "wins": 0
-      }
-    },
-    {
-      "name": "wiktor",
-      "tag": "#QGPC2228Q",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 59,
-        "trophies": 0,
-        "best": 787,
-        "league": "Barbarian League 5",
-        "warStars": 14,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 17129,
-        "warPref": "in",
-        "bh": 5,
-        "bTrophies": 1690,
-        "bLeague": "Copper League IV",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 21,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 12,
-            "max": 110
-          },
-          {
-            "name": "Minion Prince",
-            "level": 4,
-            "max": 95
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0.9,
-        "troops": 0,
-        "spells": 4.3,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
-          }
-        ]
-      },
-      "ach": {
-        "cg": 750,
-        "don": 0,
-        "capLoot": 14130,
-        "gold": 52644577,
-        "elixir": 49818201,
-        "capContrib": 17129,
         "wins": 0
       }
     },
