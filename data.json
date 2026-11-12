@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T06:15:59.770Z",
+  "updated": "2026-11-12T06:31:14.921Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10332,8 +10332,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1415:3632721282",
-      "t": "2026-11-12T06:15:56.837Z"
+      "hash": "1415:3971857738",
+      "t": "2026-11-12T06:31:12.406Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12004,17 +12004,17 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 12,
+            "level": 13,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 5,
+            "level": 6,
             "max": 95
           }
         ]
@@ -12302,7 +12302,7 @@
         "capital": 25739,
         "warPref": "in",
         "bh": 5,
-        "bTrophies": 1482,
+        "bTrophies": 1480,
         "bLeague": "Stone League I",
         "heroes": [
           {
