@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T21:15:57.640Z",
+  "updated": "2026-11-12T21:31:26.315Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3266,7 +3266,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 7,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -10358,8 +10358,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1428:2312979351",
-      "t": "2026-11-12T21:15:52.714Z"
+      "hash": "1425:2635661572",
+      "t": "2026-11-12T21:31:23.222Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11239,7 +11239,7 @@
         "capital": 742040,
         "warPref": "in",
         "bh": 8,
-        "bTrophies": 2680,
+        "bTrophies": 2666,
         "bLeague": "Iron League III",
         "heroes": [
           {
@@ -11903,7 +11903,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 16,
+            "level": 17,
             "max": 95
           }
         ]
