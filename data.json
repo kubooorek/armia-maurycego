@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-12T19:16:09.647Z",
+  "updated": "2026-11-12T19:31:58.100Z",
   "clanLevel": 4,
-  "memberCount": 45,
+  "memberCount": 46,
   "cwlLeague": "Silver League I",
   "capitalLeague": "Silver League III",
   "warWinStreak": 0,
@@ -3266,7 +3266,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -3449,6 +3449,12 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-12T19:31:49.536Z",
+      "type": "join",
+      "name": "☆SPAJRO☆",
+      "th": 8
+    },
     {
       "t": "2026-11-12T14:45:59.145Z",
       "type": "th",
@@ -3845,11 +3851,6 @@
       "type": "join",
       "name": "Nateq",
       "th": 7
-    },
-    {
-      "t": "2026-10-31T19:01:17.190Z",
-      "type": "leave",
-      "name": "Fox"
     }
   ],
   "warArchive": [
@@ -7092,8 +7093,8 @@
     },
     {
       "d": "2026-11-12",
-      "members": 45,
-      "avgTh": 9.7,
+      "members": 46,
+      "avgTh": 9.6,
       "level": 4,
       "wins": 13,
       "points": 22600
@@ -7332,6 +7333,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 400
+      },
+      "#RL0LYUP0J": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 450
       }
     }
   },
@@ -7526,6 +7532,9 @@
     },
     "#2JGYURUQJ": {
       "d": "2026-11-07T19:01:29.049Z"
+    },
+    "#RL0LYUP0J": {
+      "d": "2026-11-12T19:31:50.404Z"
     }
   },
   "records": {
@@ -7958,6 +7967,11 @@
       "sig": "126|648479813|646224112|25150|1590|636760|742040|0|85|131|13",
       "last": "2026-11-12T19:16:04.974Z",
       "since": "2026-11-07T19:01:29.050Z"
+    },
+    "#RL0LYUP0J": {
+      "sig": "0|19483339|18584090|0|222|0|450|0|0|39|8",
+      "last": "2026-11-12T19:31:50.404Z",
+      "since": "2026-11-12T19:31:50.404Z"
     }
   },
   "clanGames": null,
@@ -8263,6 +8277,13 @@
         "cg": 25150,
         "capLoot": 632135,
         "joined": "2026-11-07T19:01:29.050Z"
+      },
+      "#RL0LYUP0J": {
+        "warStars": 0,
+        "don": 222,
+        "cg": 0,
+        "capLoot": 0,
+        "joined": "2026-11-12T19:31:50.404Z"
       }
     }
   },
@@ -9606,6 +9627,14 @@
         8
       ]
     ],
+    "#RL0LYUP0J": [
+      [
+        20769,
+        0,
+        222,
+        8
+      ]
+    ],
     "#R9GUJ0ULV": [
       [
         20765,
@@ -10190,6 +10219,12 @@
         "don": 0,
         "cg": 0,
         "capLoot": 0
+      },
+      "#RL0LYUP0J": {
+        "warStars": 0,
+        "don": 222,
+        "cg": 0,
+        "capLoot": 0
       }
     }
   },
@@ -10318,13 +10353,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "956:257925024",
-      "t": "2026-11-12T19:16:04.974Z"
+      "hash": "966:3228950703",
+      "t": "2026-11-12T19:31:50.404Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1420:1615851445",
-      "t": "2026-11-12T19:16:04.974Z"
+      "hash": "1421:248641243",
+      "t": "2026-11-12T19:31:50.404Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10411,7 +10446,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "462:1962540263"
+    "hash": "462:2069610440"
   },
   "galeria": [
     {
@@ -10801,8 +10836,8 @@
         ]
       },
       "rush": {
-        "pct": 74.3,
-        "troops": 58.6,
+        "pct": 74.2,
+        "troops": 58.2,
         "spells": 52.9,
         "heroes": 91,
         "top": [
@@ -11230,8 +11265,8 @@
         ]
       },
       "rush": {
-        "pct": 29.6,
-        "troops": 19,
+        "pct": 29.3,
+        "troops": 18.3,
         "spells": 32.9,
         "heroes": 36.2,
         "top": [
@@ -13325,6 +13360,57 @@
         "gold": 27392649,
         "elixir": 25694905,
         "capContrib": 13328,
+        "wins": 0
+      }
+    },
+    {
+      "name": "☆SPAJRO☆",
+      "tag": "#RL0LYUP0J",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 292,
+      "profile": {
+        "level": 39,
+        "trophies": 292,
+        "best": 292,
+        "league": "Skeleton League 1",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 450,
+        "warPref": "in",
+        "bh": 5,
+        "bTrophies": 1195,
+        "bLeague": "Stone League IV",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 11,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 7,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 222,
+        "capLoot": 0,
+        "gold": 19483339,
+        "elixir": 18584090,
+        "capContrib": 450,
         "wins": 0
       }
     },
