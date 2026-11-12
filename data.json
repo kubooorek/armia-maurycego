@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T10:01:26.392Z",
+  "updated": "2026-11-12T10:15:57.443Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10333,8 +10333,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1417:4291998816",
-      "t": "2026-11-12T10:01:23.113Z"
+      "hash": "1417:4210657880",
+      "t": "2026-11-12T10:15:53.813Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10779,7 +10779,7 @@
         "capital": 53355,
         "warPref": "in",
         "bh": 7,
-        "bTrophies": 1934,
+        "bTrophies": 1984,
         "bLeague": "Copper League I",
         "heroes": [
           {
@@ -11788,10 +11788,10 @@
       "th": 9,
       "given": 0,
       "received": 0,
-      "trophies": 70,
+      "trophies": 100,
       "profile": {
         "level": 59,
-        "trophies": 70,
+        "trophies": 100,
         "best": 787,
         "league": "Barbarian League 5",
         "warStars": 14,
