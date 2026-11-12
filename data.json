@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T09:01:31.063Z",
+  "updated": "2026-11-12T09:15:59.492Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7845,8 +7845,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
-      "sig": "21|131305476|116640467|3000|47|0|0|0|0|46|10",
-      "last": "2026-11-12T06:45:49.656Z",
+      "sig": "21|132202938|117325281|3000|47|0|0|0|0|46|10",
+      "last": "2026-11-12T09:15:51.819Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQ2QUJRGU": {
@@ -10328,13 +10328,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "853:1644635976",
-      "t": "2026-11-12T09:01:26.309Z"
+      "hash": "853:2207988540",
+      "t": "2026-11-12T09:15:51.819Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1416:1234519491",
-      "t": "2026-11-12T09:01:26.309Z"
+      "hash": "1416:3077474074",
+      "t": "2026-11-12T09:15:51.819Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12124,8 +12124,8 @@
         "cg": 3000,
         "don": 47,
         "capLoot": 0,
-        "gold": 131305476,
-        "elixir": 116640467,
+        "gold": 132202938,
+        "elixir": 117325281,
         "capContrib": 0,
         "wins": 0
       }
@@ -12236,8 +12236,8 @@
         "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1524,
-        "bLeague": "Copper League V",
+        "bTrophies": 1617,
+        "bLeague": "Copper League IV",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12308,12 +12308,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 22,
+            "level": 23,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 13,
+            "level": 14,
             "max": 110
           },
           {
@@ -12365,7 +12365,7 @@
         "capital": 32450,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1391,
+        "bTrophies": 1399,
         "bLeague": "Stone League II",
         "heroes": [
           {
@@ -12539,8 +12539,8 @@
         ]
       },
       "rush": {
-        "pct": 3.8,
-        "troops": 7.1,
+        "pct": 2.9,
+        "troops": 5.4,
         "spells": 0,
         "heroes": 0,
         "top": [
@@ -12553,11 +12553,6 @@
             "n": "Walkiria",
             "lvl": 1,
             "need": 2
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 3,
-            "need": 4
           }
         ]
       },
