@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T04:01:24.172Z",
+  "updated": "2026-11-12T04:15:59.144Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -10332,8 +10332,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1413:1793706922",
-      "t": "2026-11-12T04:01:20.870Z"
+      "hash": "1414:2269513792",
+      "t": "2026-11-12T04:15:55.930Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11171,7 +11171,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 34,
+            "level": 35,
             "max": 95
           }
         ]
@@ -12357,10 +12357,10 @@
       "th": 9,
       "given": 20,
       "received": 52,
-      "trophies": 279,
+      "trophies": 288,
       "profile": {
         "level": 52,
-        "trophies": 279,
+        "trophies": 288,
         "best": 390,
         "league": "Skeleton League 3",
         "warStars": 7,
