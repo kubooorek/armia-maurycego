@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T07:31:13.403Z",
+  "updated": "2026-11-12T07:46:06.190Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3450,6 +3450,13 @@
   ],
   "events": [
     {
+      "t": "2026-11-12T07:45:59.037Z",
+      "type": "th",
+      "name": "TwojaSiora",
+      "from": 9,
+      "to": 10
+    },
+    {
       "t": "2026-11-11T19:31:08.743Z",
       "type": "th",
       "name": "♡karo♡lina♡",
@@ -3842,12 +3849,6 @@
       "type": "promote",
       "name": "tak",
       "role": "coLeader"
-    },
-    {
-      "t": "2026-10-31T15:01:14.413Z",
-      "type": "join",
-      "name": "CJ Alabama",
-      "th": 8
     }
   ],
   "warArchive": [
@@ -7924,8 +7925,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQR98J880": {
-      "sig": "76|47424279|43566289|0|72|0|100|0|0|38|9",
-      "last": "2026-11-11T19:46:01.829Z",
+      "sig": "76|47424279|43566289|0|72|0|100|0|0|38|10",
+      "last": "2026-11-12T07:46:00.062Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R2UJV2VJR": {
@@ -9388,7 +9389,7 @@
         20769,
         0,
         72,
-        9
+        10
       ]
     ],
     "#GV0P9JL8Q": [
@@ -10327,13 +10328,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "853:2420566658",
-      "t": "2026-11-12T06:45:49.656Z"
+      "hash": "853:2963784240",
+      "t": "2026-11-12T07:46:00.062Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1415:1527504325",
-      "t": "2026-11-12T07:31:07.021Z"
+      "hash": "1415:1446163389",
+      "t": "2026-11-12T07:46:00.062Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12235,8 +12236,8 @@
         "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1474,
-        "bLeague": "Stone League I",
+        "bTrophies": 1524,
+        "bLeague": "Copper League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12825,7 +12826,7 @@
       "name": "TwojaSiora",
       "tag": "#GQR98J880",
       "role": "member",
-      "th": 9,
+      "th": 10,
       "given": 76,
       "received": 235,
       "trophies": 12,
@@ -12845,12 +12846,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 4,
+            "level": 5,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 7,
+            "level": 8,
             "max": 110
           },
           {
@@ -12861,13 +12862,33 @@
         ]
       },
       "rush": {
-        "pct": 40.8,
-        "troops": 19.2,
-        "spells": 61.9,
-        "heroes": 63.3,
+        "pct": 57.5,
+        "troops": 28.6,
+        "spells": 66.7,
+        "heroes": 80,
         "top": [
           {
+            "n": "Książę Minionów",
+            "lvl": 1,
+            "need": 10
+          },
+          {
             "n": "Zaklęcie leczenia",
+            "lvl": 1,
+            "need": 6
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 5,
+            "need": 30
+          },
+          {
+            "n": "Minion",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Wieprzowy jeździec",
             "lvl": 1,
             "need": 5
           },
@@ -12875,26 +12896,6 @@
             "n": "Zaklęcie szału",
             "lvl": 1,
             "need": 5
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 4,
-            "need": 20
-          },
-          {
-            "n": "Minion",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Wieprzowy jeździec",
-            "lvl": 1,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie skoku",
-            "lvl": 1,
-            "need": 2
           }
         ]
       },
