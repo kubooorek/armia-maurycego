@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T14:46:06.127Z",
+  "updated": "2026-11-12T15:01:34.078Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3266,7 +3266,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -10334,8 +10334,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1418:2255560601",
-      "t": "2026-11-12T14:46:00.087Z"
+      "hash": "1418:3929719900",
+      "t": "2026-11-12T15:01:30.423Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10637,7 +10637,7 @@
           },
           {
             "name": "Grand Warden",
-            "level": 24,
+            "level": 25,
             "max": 85
           },
           {
@@ -12483,7 +12483,7 @@
           },
           {
             "name": "Archer Queen",
-            "level": 3,
+            "level": 4,
             "max": 110
           }
         ]
@@ -12524,7 +12524,7 @@
         "capital": 16881,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1298,
+        "bTrophies": 1287,
         "bLeague": "Stone League III",
         "heroes": [
           {
@@ -12755,7 +12755,7 @@
         "capital": 250,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1357,
+        "bTrophies": 1329,
         "bLeague": "Stone League II",
         "heroes": [
           {
@@ -13125,8 +13125,8 @@
         ]
       },
       "rush": {
-        "pct": 56.4,
-        "troops": 44.2,
+        "pct": 56.3,
+        "troops": 44.4,
         "spells": 47.4,
         "heroes": 83.3,
         "top": [
