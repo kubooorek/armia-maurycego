@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T22:31:14.602Z",
+  "updated": "2026-11-12T22:46:01.634Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 3,
-      "pct": 3.33,
-      "attacks": 1,
+      "stars": 14,
+      "pct": 18.6,
+      "attacks": 6,
       "bases": [
         {
           "pos": 1,
@@ -97,7 +97,7 @@
         {
           "pos": 16,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 17,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 10,
-      "pct": 12.63,
-      "attacks": 4,
+      "stars": 13,
+      "pct": 15.97,
+      "attacks": 5,
       "bases": [
         {
           "pos": 1,
@@ -186,12 +186,12 @@
         {
           "pos": 2,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 3,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 4,
@@ -291,7 +291,7 @@
         {
           "pos": 23,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 24,
@@ -301,12 +301,12 @@
         {
           "pos": 25,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 26,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 27,
@@ -343,7 +343,26 @@
         "tag": "#2JGYURUQJ",
         "pos": 2,
         "th": 13,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 70,
+            "order": 6,
+            "target": "3. blink",
+            "tpos": 3,
+            "tname": "blink",
+            "seen": "2026-11-12T22:45:51.674Z"
+          },
+          {
+            "stars": 1,
+            "pct": 88,
+            "order": 9,
+            "target": "2. ding",
+            "tpos": 2,
+            "tname": "ding",
+            "seen": "2026-11-12T22:45:51.674Z"
+          }
+        ]
       },
       {
         "name": "monte",
@@ -493,7 +512,17 @@
         "tag": "#GQR98J880",
         "pos": 22,
         "th": 10,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 11,
+            "target": "23. srmnto",
+            "tpos": 23,
+            "tname": "srmnto",
+            "seen": "2026-11-12T22:45:51.674Z"
+          }
+        ]
       },
       {
         "name": "Andrzej",
@@ -507,7 +536,26 @@
         "tag": "#LQVRCRUYR",
         "pos": 24,
         "th": 8,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 8,
+            "target": "25. Bachi",
+            "tpos": 25,
+            "tname": "Bachi",
+            "seen": "2026-11-12T22:45:51.674Z"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 10,
+            "target": "26. ma ano ulam",
+            "tpos": 26,
+            "tname": "ma ano ulam",
+            "seen": "2026-11-12T22:45:51.674Z"
+          }
+        ]
       },
       {
         "name": "Mimbosz",
@@ -592,6 +640,16 @@
         "stars": 3,
         "pct": 100,
         "order": 5
+      },
+      {
+        "by": "ildi",
+        "bpos": 15,
+        "th": 9,
+        "tpos": 16,
+        "tname": "Belaska",
+        "stars": 3,
+        "pct": 100,
+        "order": 7
       }
     ]
   },
@@ -3317,7 +3375,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -3912,11 +3970,11 @@
       "size": 30,
       "perMember": 2,
       "state": "inWar",
-      "us": 3,
-      "them": 10,
+      "us": 14,
+      "them": 13,
       "final": false,
-      "pct": 3.33,
-      "themPct": 12.63,
+      "pct": 18.6,
+      "themPct": 15.97,
       "themBases": [
         {
           "pos": 1,
@@ -3926,12 +3984,12 @@
         {
           "pos": 2,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 3,
           "th": 13,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 4,
@@ -4031,7 +4089,7 @@
         {
           "pos": 23,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 24,
@@ -4041,12 +4099,12 @@
         {
           "pos": 25,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 26,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 27,
@@ -4082,7 +4140,20 @@
           "tag": "#2JGYURUQJ",
           "pos": 2,
           "th": 13,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 70,
+              "target": "3. blink",
+              "order": 6
+            },
+            {
+              "stars": 1,
+              "pct": 88,
+              "target": "2. ding",
+              "order": 9
+            }
+          ]
         },
         {
           "name": "monte",
@@ -4229,7 +4300,14 @@
           "tag": "#GQR98J880",
           "pos": 22,
           "th": 10,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "23. srmnto",
+              "order": 11
+            }
+          ]
         },
         {
           "name": "Andrzej",
@@ -4243,7 +4321,20 @@
           "tag": "#LQVRCRUYR",
           "pos": 24,
           "th": 8,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "25. Bachi",
+              "order": 8
+            },
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "26. ma ano ulam",
+              "order": 10
+            }
+          ]
         },
         {
           "name": "Mimbosz",
@@ -8023,6 +8114,28 @@
   },
   "penalties": [
     {
+      "id": "20261112T222253.000Z:#GQR98J880:own",
+      "type": "own",
+      "detail": "nr 23 zamiast nr 22",
+      "tag": "#GQR98J880",
+      "name": "TwojaSiora",
+      "war": "20261112T222253.000Z",
+      "end": "20261113T222253.000Z",
+      "enemy": "MANUSCRIPTS",
+      "t": "2026-11-12T22:45:52.169Z"
+    },
+    {
+      "id": "20261112T222253.000Z:#2JGYURUQJ:own",
+      "type": "own",
+      "detail": "nr 3 zamiast nr 2",
+      "tag": "#2JGYURUQJ",
+      "name": "To ja",
+      "war": "20261112T222253.000Z",
+      "end": "20261113T222253.000Z",
+      "enemy": "MANUSCRIPTS",
+      "t": "2026-11-12T22:45:52.169Z"
+    },
+    {
       "id": "20261112T222253.000Z:#RPR0L809R:own",
       "type": "own",
       "detail": "nr 10 zamiast nr 9",
@@ -8195,8 +8308,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "1696|536852251|550965785|42500|94143|246500|460897|0|1228|152|15",
-      "last": "2026-11-12T21:45:55.993Z",
+      "sig": "1747|536852251|550965785|42500|94143|246500|460897|0|1228|152|15",
+      "last": "2026-11-12T22:45:52.954Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -8260,8 +8373,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
-      "sig": "0|399970027|464605748|59470|11803|136585|234074|0|2465|87|8",
-      "last": "2026-11-10T21:31:22.310Z",
+      "sig": "0|400081027|464716748|59470|11803|136585|234074|0|2471|87|8",
+      "last": "2026-11-12T22:45:52.954Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
@@ -8360,8 +8473,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GUJ0ULV": {
-      "sig": "70|10365999|9402359|0|111|5370|9817|0|6|32|7",
-      "last": "2026-11-12T21:01:19.418Z",
+      "sig": "70|10365999|9402359|0|111|5370|10817|0|6|32|7",
+      "last": "2026-11-12T22:45:52.954Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYUV9V9RC": {
@@ -8410,8 +8523,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "126|652954877|650245194|25150|1590|636760|742040|0|85|131|13",
-      "last": "2026-11-12T21:15:52.714Z",
+      "sig": "126|653123677|650413994|25150|1590|636760|742040|0|87|131|13",
+      "last": "2026-11-12T22:45:52.954Z",
       "since": "2026-11-07T19:01:29.050Z"
     },
     "#RL0LYUP0J": {
@@ -8780,13 +8893,13 @@
           "cap": 11955
         },
         {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "score": 184,
-          "stars": 14,
-          "don": 282,
+          "name": "Barnes",
+          "tag": "#LQVRCRUYR",
+          "score": 200,
+          "stars": 20,
+          "don": 0,
           "cg": 0,
-          "cap": 8055
+          "cap": 0
         }
       ]
     }
@@ -9108,7 +9221,7 @@
       ],
       [
         20769,
-        85,
+        87,
         1590,
         13
       ]
@@ -9428,7 +9541,7 @@
       ],
       [
         20769,
-        2465,
+        2471,
         11803,
         8
       ]
@@ -10790,7 +10903,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 5
+    "w:20261112T222253.000Z": 11
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -10800,13 +10913,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "990:3279620341",
-      "t": "2026-11-12T22:31:05.942Z"
+      "hash": "973:827398967",
+      "t": "2026-11-12T22:45:52.954Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1830:3222481088",
-      "t": "2026-11-12T22:31:05.942Z"
+      "hash": "1826:2075471091",
+      "t": "2026-11-12T22:45:52.954Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -10894,11 +11007,21 @@
       "name": "HuangShunxiong",
       "war": "20261112T222253.000Z",
       "t": "2026-11-12T22:31:05.942Z"
+    },
+    "20261112T222253.000Z:#GQR98J880:own": {
+      "name": "TwojaSiora",
+      "war": "20261112T222253.000Z",
+      "t": "2026-11-12T22:45:52.954Z"
+    },
+    "20261112T222253.000Z:#2JGYURUQJ:own": {
+      "name": "To ja",
+      "war": "20261112T222253.000Z",
+      "t": "2026-11-12T22:45:52.954Z"
     }
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "464:679246696"
+    "hash": "465:955293005"
   },
   "galeria": [
     {
@@ -10988,7 +11111,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 1696,
+      "given": 1747,
       "received": 277,
       "trophies": 51,
       "profile": {
@@ -11354,7 +11477,7 @@
         "capital": 105841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2356,
+        "bTrophies": 2373,
         "bLeague": "Brass League II",
         "heroes": [
           {
@@ -11685,7 +11808,7 @@
         "trophies": 387,
         "best": 2562,
         "league": "Archer League 9",
-        "warStars": 85,
+        "warStars": 87,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 742040,
@@ -11717,8 +11840,8 @@
         ]
       },
       "rush": {
-        "pct": 28.9,
-        "troops": 17,
+        "pct": 28.6,
+        "troops": 16.3,
         "spells": 32.9,
         "heroes": 36.2,
         "top": [
@@ -11758,8 +11881,8 @@
         "cg": 25150,
         "don": 1590,
         "capLoot": 636760,
-        "gold": 652954877,
-        "elixir": 650245194,
+        "gold": 653123677,
+        "elixir": 650413994,
         "capContrib": 742040,
         "wins": 0
       }
@@ -12414,14 +12537,14 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 206,
+      "received": 231,
       "trophies": 0,
       "profile": {
         "level": 87,
         "trophies": 0,
         "best": 2650,
         "league": "Barbarian League 5",
-        "warStars": 2465,
+        "warStars": 2471,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 234074,
@@ -12453,8 +12576,8 @@
         "cg": 59470,
         "don": 11803,
         "capLoot": 136585,
-        "gold": 399970027,
-        "elixir": 464605748,
+        "gold": 400081027,
+        "elixir": 464716748,
         "capContrib": 234074,
         "wins": 0
       }
@@ -13302,7 +13425,7 @@
       "role": "member",
       "th": 10,
       "given": 76,
-      "received": 235,
+      "received": 261,
       "trophies": 12,
       "profile": {
         "level": 39,
@@ -13885,7 +14008,7 @@
         "capital": 10817,
         "warPref": "in",
         "bh": 3,
-        "bTrophies": 856,
+        "bTrophies": 854,
         "bLeague": "Clay League II",
         "heroes": [
           {
@@ -13908,7 +14031,7 @@
         "capLoot": 5370,
         "gold": 10365999,
         "elixir": 9402359,
-        "capContrib": 9817,
+        "capContrib": 10817,
         "wins": 0
       }
     },
