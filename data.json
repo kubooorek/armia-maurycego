@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T23:01:28.473Z",
+  "updated": "2026-11-12T23:15:55.742Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 26,
-      "pct": 31.93,
-      "attacks": 10,
+      "stars": 29,
+      "pct": 35.27,
+      "attacks": 11,
       "bases": [
         {
           "pos": 1,
@@ -42,7 +42,7 @@
         {
           "pos": 5,
           "th": 12,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 6,
@@ -87,7 +87,7 @@
         {
           "pos": 14,
           "th": 10,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 15,
@@ -132,7 +132,7 @@
         {
           "pos": 23,
           "th": 9,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 24,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 19,
-      "pct": 22.63,
-      "attacks": 7,
+      "stars": 26,
+      "pct": 29.6,
+      "attacks": 10,
       "bases": [
         {
           "pos": 1,
@@ -236,7 +236,7 @@
         {
           "pos": 12,
           "th": 10,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 13,
@@ -445,7 +445,17 @@
         "tag": "#G8VGC2VRL",
         "pos": 11,
         "th": 10,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 19,
+            "target": "12. MAX POWER",
+            "tpos": 12,
+            "tname": "MAX POWER",
+            "seen": "2026-11-12T23:15:47.636Z"
+          }
+        ]
       },
       {
         "name": "vvd",
@@ -710,6 +720,36 @@
         "stars": 3,
         "pct": 100,
         "order": 13
+      },
+      {
+        "by": "Yhonabebz",
+        "bpos": 14,
+        "th": 9,
+        "tpos": 23,
+        "tname": "Andrzej",
+        "stars": 3,
+        "pct": 100,
+        "order": 18
+      },
+      {
+        "by": "Yhonabebz",
+        "bpos": 14,
+        "th": 9,
+        "tpos": 14,
+        "tname": "♡karo♡lina♡",
+        "stars": 2,
+        "pct": 88,
+        "order": 20
+      },
+      {
+        "by": "PrinCe❤️",
+        "bpos": 5,
+        "th": 12,
+        "tpos": 5,
+        "tname": "MAQOS",
+        "stars": 3,
+        "pct": 100,
+        "order": 21
       }
     ]
   },
@@ -3435,7 +3475,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -4030,11 +4070,11 @@
       "size": 30,
       "perMember": 2,
       "state": "inWar",
-      "us": 26,
-      "them": 19,
+      "us": 29,
+      "them": 26,
       "final": false,
-      "pct": 31.93,
-      "themPct": 22.63,
+      "pct": 35.27,
+      "themPct": 29.6,
       "themBases": [
         {
           "pos": 1,
@@ -4094,7 +4134,7 @@
         {
           "pos": 12,
           "th": 10,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 13,
@@ -4290,7 +4330,14 @@
           "tag": "#G8VGC2VRL",
           "pos": 11,
           "th": 10,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "12. MAX POWER",
+              "order": 19
+            }
+          ]
         },
         {
           "name": "vvd",
@@ -8396,8 +8443,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "1927|536852251|550965785|42500|94338|246500|460897|0|1228|152|15",
-      "last": "2026-11-12T23:01:21.890Z",
+      "sig": "1983|536852251|550965785|42500|94393|246500|460897|0|1228|152|15",
+      "last": "2026-11-12T23:15:49.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -8456,8 +8503,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#G8VGC2VRL": {
-      "sig": "25|151564730|141208688|7600|634|13415|38536|0|40|60|10",
-      "last": "2026-11-12T17:31:16.637Z",
+      "sig": "25|151649730|141293688|7600|634|13415|38536|0|43|60|10",
+      "last": "2026-11-12T23:15:49.553Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LQVRCRUYR": {
@@ -8947,9 +8994,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 361,
+          "score": 366,
           "stars": 21,
-          "don": 1505,
+          "don": 1560,
           "cg": 0,
           "cap": 0
         },
@@ -9066,7 +9113,7 @@
       [
         20770,
         1228,
-        94338,
+        94393,
         15
       ]
     ],
@@ -9597,7 +9644,7 @@
       ],
       [
         20770,
-        40,
+        43,
         634,
         10
       ]
@@ -11273,7 +11320,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 17
+    "w:20261112T222253.000Z": 21
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11283,13 +11330,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "939:2725366415",
-      "t": "2026-11-12T23:01:21.890Z"
+      "hash": "939:1284303845",
+      "t": "2026-11-12T23:15:49.553Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1822:3617563469",
-      "t": "2026-11-12T23:01:21.890Z"
+      "hash": "1821:1639634572",
+      "t": "2026-11-12T23:15:49.553Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11391,7 +11438,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:871431464"
+    "hash": "465:1583801615"
   },
   "galeria": [
     {
@@ -11481,7 +11528,7 @@
       "tag": "#LUGR0YQY0",
       "role": "member",
       "th": 15,
-      "given": 1927,
+      "given": 1983,
       "received": 277,
       "trophies": 51,
       "profile": {
@@ -11565,7 +11612,7 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 94338,
+        "don": 94393,
         "capLoot": 246500,
         "gold": 536852251,
         "elixir": 550965785,
@@ -12411,7 +12458,7 @@
       "role": "member",
       "th": 9,
       "given": 0,
-      "received": 245,
+      "received": 275,
       "trophies": 0,
       "profile": {
         "level": 102,
@@ -12617,7 +12664,7 @@
         "trophies": 178,
         "best": 696,
         "league": "Barbarian League 6",
-        "warStars": 40,
+        "warStars": 43,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 38536,
@@ -12654,8 +12701,8 @@
         "cg": 7600,
         "don": 634,
         "capLoot": 13415,
-        "gold": 151564730,
-        "elixir": 141208688,
+        "gold": 151649730,
+        "elixir": 141293688,
         "capContrib": 38536,
         "wins": 0
       }
@@ -13493,7 +13540,7 @@
       "role": "member",
       "th": 8,
       "given": 0,
-      "received": 140,
+      "received": 166,
       "trophies": 226,
       "profile": {
         "level": 39,
