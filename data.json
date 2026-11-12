@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T00:01:28.367Z",
+  "updated": "2026-11-12T00:31:17.439Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -3266,7 +3266,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 16
   },
   "raids": [
@@ -10332,8 +10332,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1410:2853787580",
-      "t": "2026-11-12T00:01:25.624Z"
+      "hash": "1411:1588191066",
+      "t": "2026-11-12T00:31:14.083Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -13128,8 +13128,8 @@
         ]
       },
       "rush": {
-        "pct": 57.4,
-        "troops": 46.2,
+        "pct": 56.4,
+        "troops": 44.2,
         "spells": 47.4,
         "heroes": 83.3,
         "top": [
@@ -13159,7 +13159,7 @@
             "need": 4
           },
           {
-            "n": "Uzdrowicielka",
+            "n": "P.E.K.K.A",
             "lvl": 1,
             "need": 3
           }
