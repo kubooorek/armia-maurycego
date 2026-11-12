@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T17:01:43.247Z",
+  "updated": "2026-11-12T17:16:08.607Z",
   "clanLevel": 4,
   "memberCount": 45,
   "cwlLeague": "Silver League I",
@@ -7885,8 +7885,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|28175563|27691184|0|0|0|400|0|14|35|8",
-      "last": "2026-11-12T17:01:37.399Z",
+      "sig": "0|28947913|28166258|0|0|0|400|0|14|35|8",
+      "last": "2026-11-12T17:16:01.708Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -7955,8 +7955,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "126|642903078|639447235|25150|1590|636760|742040|0|85|130|13",
-      "last": "2026-11-12T14:15:54.961Z",
+      "sig": "126|643380781|639793082|25150|1590|636760|742040|0|85|130|13",
+      "last": "2026-11-12T17:16:01.708Z",
       "since": "2026-11-07T19:01:29.050Z"
     }
   },
@@ -9190,38 +9190,6 @@
         8
       ]
     ],
-    "#R92C0U8UU": [
-      [
-        20765,
-        15,
-        30,
-        7
-      ],
-      [
-        20766,
-        15,
-        30,
-        8
-      ],
-      [
-        20767,
-        15,
-        30,
-        8
-      ],
-      [
-        20768,
-        15,
-        30,
-        8
-      ],
-      [
-        20769,
-        15,
-        30,
-        8
-      ]
-    ],
     "#R9GPGL0QJ": [
       [
         20765,
@@ -9252,6 +9220,38 @@
         12,
         76,
         9
+      ]
+    ],
+    "#R92C0U8UU": [
+      [
+        20765,
+        15,
+        30,
+        7
+      ],
+      [
+        20766,
+        15,
+        30,
+        8
+      ],
+      [
+        20767,
+        15,
+        30,
+        8
+      ],
+      [
+        20768,
+        15,
+        30,
+        8
+      ],
+      [
+        20769,
+        15,
+        30,
+        8
       ]
     ],
     "#R0VJLRGQ0": [
@@ -10318,13 +10318,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "939:1319789971",
-      "t": "2026-11-12T17:01:37.399Z"
+      "hash": "939:1817943409",
+      "t": "2026-11-12T17:16:01.708Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1419:647860506",
-      "t": "2026-11-12T17:01:37.399Z"
+      "hash": "1419:566519570",
+      "t": "2026-11-12T17:16:01.708Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11192,7 +11192,7 @@
       "th": 13,
       "given": 126,
       "received": 405,
-      "trophies": 357,
+      "trophies": 387,
       "profile": {
         "level": 130,
         "trophies": 357,
@@ -11271,8 +11271,8 @@
         "cg": 25150,
         "don": 1590,
         "capLoot": 636760,
-        "gold": 642903078,
-        "elixir": 639447235,
+        "gold": 643380781,
+        "elixir": 639793082,
         "capContrib": 742040,
         "wins": 0
       }
@@ -12227,8 +12227,8 @@
         "capital": 36586,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1617,
-        "bLeague": "Copper League IV",
+        "bTrophies": 1582,
+        "bLeague": "Copper League V",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -12451,6 +12451,63 @@
       }
     },
     {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 9,
+      "given": 3,
+      "received": 138,
+      "trophies": 245,
+      "profile": {
+        "level": 48,
+        "trophies": 245,
+        "best": 300,
+        "league": "Skeleton League 3",
+        "warStars": 12,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16881,
+        "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1287,
+        "bLeague": "Stone League III",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 1,
+        "troops": 1.8,
+        "spells": 0,
+        "heroes": 0,
+        "top": [
+          {
+            "n": "Minion",
+            "lvl": 3,
+            "need": 4
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 76,
+        "capLoot": 12040,
+        "gold": 47537740,
+        "elixir": 47470582,
+        "capContrib": 16881,
+        "wins": 0
+      }
+    },
+    {
       "name": "Rico",
       "tag": "#R92C0U8UU",
       "role": "member",
@@ -12498,68 +12555,6 @@
         "gold": 17012074,
         "elixir": 16027232,
         "capContrib": 15905,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 9,
-      "given": 3,
-      "received": 138,
-      "trophies": 205,
-      "profile": {
-        "level": 48,
-        "trophies": 205,
-        "best": 300,
-        "league": "Skeleton League 3",
-        "warStars": 12,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16881,
-        "warPref": "in",
-        "bh": 4,
-        "bTrophies": 1287,
-        "bLeague": "Stone League III",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 1.9,
-        "troops": 3.6,
-        "spells": 0,
-        "heroes": 0,
-        "top": [
-          {
-            "n": "Walkiria",
-            "lvl": 1,
-            "need": 2
-          },
-          {
-            "n": "Minion",
-            "lvl": 3,
-            "need": 4
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 76,
-        "capLoot": 12040,
-        "gold": 47537740,
-        "elixir": 47470582,
-        "capContrib": 16881,
         "wins": 0
       }
     },
@@ -12639,8 +12634,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 28175563,
-        "elixir": 27691184,
+        "gold": 28947913,
+        "elixir": 28166258,
         "capContrib": 400,
         "wins": 0
       }
