@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T10:01:21.020Z",
+  "updated": "2026-11-13T10:15:59.319Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -8901,8 +8901,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LUGR0YQY0": {
-      "sig": "2068|536852251|550965785|42500|94393|246500|460897|0|1228|152|15",
-      "last": "2026-11-13T10:01:16.065Z",
+      "sig": "2068|541789809|555332243|42500|94448|246500|460897|0|1228|152|15",
+      "last": "2026-11-13T10:15:55.838Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GYUJR2URJ": {
@@ -9452,9 +9452,9 @@
         {
           "name": "Baku",
           "tag": "#LUGR0YQY0",
-          "score": 366,
+          "score": 372,
           "stars": 21,
-          "don": 1560,
+          "don": 1615,
           "cg": 0,
           "cap": 0
         },
@@ -9571,7 +9571,7 @@
       [
         20770,
         1228,
-        94393,
+        94448,
         15
       ]
     ],
@@ -11796,13 +11796,13 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1811:4129273217",
-      "t": "2026-11-13T10:01:16.065Z"
+      "hash": "1811:1021271391",
+      "t": "2026-11-13T10:15:55.838Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "791:3407384284",
-      "t": "2026-11-13T10:01:16.065Z"
+      "hash": "791:4092832315",
+      "t": "2026-11-13T10:15:55.838Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12048,12 +12048,12 @@
           },
           {
             "name": "Grand Warden",
-            "level": 33,
+            "level": 34,
             "max": 85
           },
           {
             "name": "Royal Champion",
-            "level": 24,
+            "level": 25,
             "max": 55
           },
           {
@@ -12064,10 +12064,10 @@
         ]
       },
       "rush": {
-        "pct": 35.3,
-        "troops": 26.2,
+        "pct": 34.9,
+        "troops": 25.8,
         "spells": 42.9,
-        "heroes": 39.2,
+        "heroes": 38.6,
         "top": [
           {
             "n": "Górnik",
@@ -12103,10 +12103,10 @@
       },
       "ach": {
         "cg": 42500,
-        "don": 94393,
+        "don": 94448,
         "capLoot": 246500,
-        "gold": 536852251,
-        "elixir": 550965785,
+        "gold": 541789809,
+        "elixir": 555332243,
         "capContrib": 460897,
         "wins": 0
       }
@@ -12385,8 +12385,8 @@
         "capital": 105841,
         "warPref": "out",
         "bh": 7,
-        "bTrophies": 2373,
-        "bLeague": "Brass League II",
+        "bTrophies": 2433,
+        "bLeague": "Brass League I",
         "heroes": [
           {
             "name": "Barbarian King",
@@ -13149,10 +13149,10 @@
       "th": 10,
       "given": 25,
       "received": 124,
-      "trophies": 178,
+      "trophies": 205,
       "profile": {
         "level": 60,
-        "trophies": 178,
+        "trophies": 205,
         "best": 696,
         "league": "Barbarian League 6",
         "warStars": 43,
@@ -14859,8 +14859,8 @@
         "capital": 900,
         "warPref": "in",
         "bh": 5,
-        "bTrophies": 1291,
-        "bLeague": "Stone League III",
+        "bTrophies": 1344,
+        "bLeague": "Stone League II",
         "heroes": [
           {
             "name": "Barbarian King",
