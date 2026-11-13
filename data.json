@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-13T19:01:41.040Z",
+  "updated": "2026-11-13T19:16:15.153Z",
   "clanLevel": 4,
-  "memberCount": 46,
+  "memberCount": 47,
   "cwlLeague": "Silver League I",
   "capitalLeague": "Silver League III",
   "warWinStreak": 0,
   "warWins": 13,
-  "clanPoints": 22600,
+  "clanPoints": 23100,
   "afkWarned": {
     "#LYUQYCU9G": {
       "last": "2026-11-07T19:01:29.050Z",
@@ -4128,10 +4128,10 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 120147,
-      "raids": 8,
-      "attacks": 99,
-      "districts": 29,
+      "loot": 123821,
+      "raids": 9,
+      "attacks": 102,
+      "districts": 31,
       "medals": 0,
       "members": [
         {
@@ -4182,6 +4182,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 7692
+        },
+        {
+          "name": "erykos",
+          "tag": "#R9GPGL0QJ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 7356
         },
         {
           "name": "oggsgdjdjbd",
@@ -4247,13 +4254,6 @@
           "loot": 4212
         },
         {
-          "name": "erykos",
-          "tag": "#R9GPGL0QJ",
-          "attacks": 3,
-          "limit": 6,
-          "loot": 3682
-        },
-        {
           "name": "Rico",
           "tag": "#R92C0U8UU",
           "attacks": 2,
@@ -4282,6 +4282,12 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-13T19:16:02.519Z",
+      "type": "join",
+      "name": "patryksi",
+      "th": 12
+    },
     {
       "t": "2026-11-13T18:31:16.269Z",
       "type": "th",
@@ -4678,13 +4684,6 @@
       "name": "krupnik",
       "from": 4,
       "to": 5
-    },
-    {
-      "t": "2026-11-01T09:01:12.690Z",
-      "type": "th",
-      "name": "TwojaSiora",
-      "from": 5,
-      "to": 6
     }
   ],
   "warArchive": [
@@ -8621,11 +8620,11 @@
     },
     {
       "d": "2026-11-13",
-      "members": 46,
+      "members": 47,
       "avgTh": 9.7,
       "level": 4,
       "wins": 13,
-      "points": 22600
+      "points": 23100
     }
   ],
   "weekBase": {
@@ -8866,6 +8865,11 @@
         "given": 0,
         "warStars": 0,
         "capital": 450
+      },
+      "#GJ8C08PQY": {
+        "given": 0,
+        "warStars": 0,
+        "capital": 8400
       }
     }
   },
@@ -9063,6 +9067,9 @@
     },
     "#RL0LYUP0J": {
       "d": "2026-11-12T19:31:50.404Z"
+    },
+    "#GJ8C08PQY": {
+      "d": "2026-11-13T19:16:03.272Z"
     }
   },
   "records": {
@@ -9490,8 +9497,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9GPGL0QJ": {
-      "sig": "3|48569506|48293358|0|76|15560|16881|0|17|49|9",
-      "last": "2026-11-13T15:38:42.660Z",
+      "sig": "3|48569506|48293358|0|76|18685|16881|0|17|49|9",
+      "last": "2026-11-13T19:16:03.272Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVG02VV98": {
@@ -9588,6 +9595,11 @@
       "sig": "26|20876004|19915596|0|247|7875|9205|0|0|41|8",
       "last": "2026-11-13T18:01:34.475Z",
       "since": "2026-11-12T19:31:50.404Z"
+    },
+    "#GJ8C08PQY": {
+      "sig": "0|439236245|415352323|1800|60|0|8400|0|0|97|12",
+      "last": "2026-11-13T19:16:03.272Z",
+      "since": "2026-11-13T19:16:03.272Z"
     }
   },
   "clanGames": null,
@@ -9900,6 +9912,13 @@
         "cg": 0,
         "capLoot": 0,
         "joined": "2026-11-12T19:31:50.404Z"
+      },
+      "#GJ8C08PQY": {
+        "warStars": 0,
+        "don": 60,
+        "cg": 1800,
+        "capLoot": 0,
+        "joined": "2026-11-13T19:16:03.272Z"
       }
     }
   },
@@ -10379,6 +10398,14 @@
         49,
         296,
         11
+      ]
+    ],
+    "#GJ8C08PQY": [
+      [
+        20770,
+        0,
+        60,
+        12
       ]
     ],
     "#Y02PYY922": [
@@ -12117,6 +12144,12 @@
         "don": 0,
         "cg": 0,
         "capLoot": 0
+      },
+      "#GJ8C08PQY": {
+        "warStars": 0,
+        "don": 60,
+        "cg": 1800,
+        "capLoot": 0
       }
     }
   },
@@ -12261,18 +12294,18 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "802:3701891612",
-      "t": "2026-11-13T19:01:34.076Z"
+      "hash": "829:4066542476",
+      "t": "2026-11-13T19:16:03.272Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1812:3480702982",
-      "t": "2026-11-13T19:01:34.076Z"
+      "hash": "1812:3523257422",
+      "t": "2026-11-13T19:16:03.272Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "763:4196217916",
-      "t": "2026-11-13T19:01:34.076Z"
+      "hash": "760:2872220793",
+      "t": "2026-11-13T19:16:03.272Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12399,7 +12432,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:4179485997"
+    "hash": "465:706964589"
   },
   "galeria": [
     {
@@ -13374,6 +13407,99 @@
       }
     },
     {
+      "name": "patryksi",
+      "tag": "#GJ8C08PQY",
+      "role": "member",
+      "th": 12,
+      "given": 0,
+      "received": 0,
+      "trophies": 27,
+      "profile": {
+        "level": 97,
+        "trophies": 27,
+        "best": 246,
+        "league": "Archer League 8",
+        "leagueId": 105000008,
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 8400,
+        "warPref": "in",
+        "bh": 8,
+        "bTrophies": 2431,
+        "bLeague": "Brass League I",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 35,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 40,
+            "max": 110
+          },
+          {
+            "name": "Grand Warden",
+            "level": 15,
+            "max": 85
+          },
+          {
+            "name": "Minion Prince",
+            "level": 5,
+            "max": 95
+          }
+        ]
+      },
+      "rush": {
+        "pct": 30.5,
+        "troops": 23.2,
+        "spells": 30.5,
+        "heroes": 36.7,
+        "top": [
+          {
+            "n": "Książę Minionów",
+            "lvl": 5,
+            "need": 30
+          },
+          {
+            "n": "Mały smok",
+            "lvl": 1,
+            "need": 5
+          },
+          {
+            "n": "Lawowy ogar",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie szkieletów",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie nietoperzy",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Walkiria",
+            "lvl": 2,
+            "need": 6
+          }
+        ]
+      },
+      "ach": {
+        "cg": 1800,
+        "don": 60,
+        "capLoot": 0,
+        "gold": 439236245,
+        "elixir": 415352323,
+        "capContrib": 8400,
+        "wins": 0
+      }
+    },
+    {
       "name": "tak",
       "tag": "#Y02PYY922",
       "role": "coLeader",
@@ -13714,12 +13840,12 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 32,
+            "level": 33,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 32,
+            "level": 33,
             "max": 110
           },
           {
@@ -13729,20 +13855,20 @@
           },
           {
             "name": "Minion Prince",
-            "level": 3,
+            "level": 4,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 34.4,
+        "pct": 33.2,
         "troops": 28.6,
         "spells": 49,
-        "heroes": 33,
+        "heroes": 30,
         "top": [
           {
             "n": "Książę Minionów",
-            "lvl": 3,
+            "lvl": 4,
             "need": 20
           },
           {
@@ -14468,7 +14594,7 @@
       "ach": {
         "cg": 0,
         "don": 76,
-        "capLoot": 15560,
+        "capLoot": 18685,
         "gold": 48569506,
         "elixir": 48293358,
         "capContrib": 16881,
