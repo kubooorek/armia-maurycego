@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T11:46:00.980Z",
+  "updated": "2026-11-13T12:01:27.136Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 75,
-      "pct": 90.23,
-      "attacks": 33,
+      "stars": 79,
+      "pct": 91.87,
+      "attacks": 35,
       "bases": [
         {
           "pos": 1,
@@ -201,12 +201,12 @@
         {
           "pos": 5,
           "th": 12,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 6,
           "th": 13,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 7,
@@ -379,7 +379,26 @@
         "tag": "#QYJUV90JY",
         "pos": 3,
         "th": 13,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 72,
+            "target": "5. PrinCe❤️",
+            "tpos": 5,
+            "tname": "PrinCe❤️",
+            "seen": "2026-11-13T12:01:18.156Z"
+          },
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 73,
+            "target": "6. fury",
+            "tpos": 6,
+            "tname": "fury",
+            "seen": "2026-11-13T12:01:18.156Z"
+          }
+        ]
       },
       {
         "name": "Albaroon.2",
@@ -3967,7 +3986,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 2,
+    "online": 3,
     "members": 16
   },
   "raids": [
@@ -3975,10 +3994,10 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 43544,
+      "loot": 45661,
       "raids": 3,
-      "attacks": 34,
-      "districts": 10,
+      "attacks": 37,
+      "districts": 11,
       "medals": 0,
       "members": [
         {
@@ -4017,18 +4036,18 @@
           "loot": 5534
         },
         {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 4212
+        },
+        {
           "name": "Toster290",
           "tag": "#GJJ90QGVQ",
           "attacks": 2,
           "limit": 6,
           "loot": 2464
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "attacks": 3,
-          "limit": 6,
-          "loot": 2095
         }
       ]
     },
@@ -4458,10 +4477,10 @@
       "size": 30,
       "perMember": 2,
       "state": "inWar",
-      "us": 75,
+      "us": 79,
       "them": 89,
       "final": false,
-      "pct": 90.23,
+      "pct": 91.87,
       "themPct": 98.57,
       "themBases": [
         {
@@ -4487,12 +4506,12 @@
         {
           "pos": 5,
           "th": 12,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 6,
           "th": 13,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 7,
@@ -4655,7 +4674,20 @@
           "tag": "#QYJUV90JY",
           "pos": 3,
           "th": 13,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "5. PrinCe❤️",
+              "order": 72
+            },
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "6. fury",
+              "order": 73
+            }
+          ]
         },
         {
           "name": "Albaroon.2",
@@ -9090,8 +9122,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|234878781|228959415|2900|20|25530|44832|0|55|91|13",
-      "last": "2026-11-13T11:45:54.337Z",
+      "sig": "0|235113781|229194415|2900|20|27485|51994|0|61|91|13",
+      "last": "2026-11-13T12:01:19.517Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -9185,8 +9217,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|29451671|28781833|0|0|0|400|0|14|35|9",
-      "last": "2026-11-13T11:45:54.337Z",
+      "sig": "0|32225813|31023223|0|0|0|400|0|14|35|9",
+      "last": "2026-11-13T12:01:19.517Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -9250,8 +9282,8 @@
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "20|9325954|7972526|0|20|0|4350|0|5|29|9",
-      "last": "2026-11-13T04:15:49.869Z",
+      "sig": "20|9325954|7972526|0|20|0|4350|0|5|30|9",
+      "last": "2026-11-13T12:01:19.517Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -9607,6 +9639,15 @@
           "cap": 8030
         },
         {
+          "name": "monte",
+          "tag": "#QYJUV90JY",
+          "score": 223,
+          "stars": 21,
+          "don": 0,
+          "cg": 0,
+          "cap": 6250
+        },
+        {
           "name": "MAQOS",
           "tag": "#LJYR92002",
           "score": 212,
@@ -9623,15 +9664,6 @@
           "don": 349,
           "cg": 0,
           "cap": 11955
-        },
-        {
-          "name": "Barnes",
-          "tag": "#LQVRCRUYR",
-          "score": 200,
-          "stars": 20,
-          "don": 0,
-          "cg": 0,
-          "cap": 0
         }
       ]
     }
@@ -9785,7 +9817,7 @@
       ],
       [
         20770,
-        55,
+        61,
         20,
         13
       ]
@@ -11921,7 +11953,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 71
+    "w:20261112T222253.000Z": 73
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11931,18 +11963,18 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "836:465506434",
-      "t": "2026-11-13T11:45:54.337Z"
+      "hash": "836:2862936408",
+      "t": "2026-11-13T12:01:19.517Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1812:3943393154",
-      "t": "2026-11-13T11:45:54.337Z"
+      "hash": "1809:1727194150",
+      "t": "2026-11-13T12:01:19.517Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "830:4010278578",
-      "t": "2026-11-13T11:45:54.337Z"
+      "hash": "817:2098063925",
+      "t": "2026-11-13T12:01:19.517Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12069,7 +12101,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:879879562"
+    "hash": "465:3097677710"
   },
   "galeria": [
     {
@@ -12325,10 +12357,10 @@
         "trophies": 321,
         "best": 348,
         "league": "Wizard League 11",
-        "warStars": 55,
+        "warStars": 61,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 44832,
+        "capital": 51994,
         "warPref": "in",
         "bh": 9,
         "bTrophies": 2149,
@@ -12402,10 +12434,10 @@
       "ach": {
         "cg": 2900,
         "don": 20,
-        "capLoot": 25530,
-        "gold": 234878781,
-        "elixir": 228959415,
-        "capContrib": 44832,
+        "capLoot": 27485,
+        "gold": 235113781,
+        "elixir": 229194415,
+        "capContrib": 51994,
         "wins": 0
       }
     },
@@ -12821,7 +12853,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 35,
+            "level": 36,
             "max": 95
           }
         ]
@@ -14286,8 +14318,8 @@
         "cg": 0,
         "don": 0,
         "capLoot": 0,
-        "gold": 29451671,
-        "elixir": 28781833,
+        "gold": 32225813,
+        "elixir": 31023223,
         "capContrib": 400,
         "wins": 0
       }
@@ -14799,7 +14831,7 @@
       "received": 0,
       "trophies": 0,
       "profile": {
-        "level": 29,
+        "level": 30,
         "trophies": 0,
         "best": 0,
         "league": "Skeleton League 2",
