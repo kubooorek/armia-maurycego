@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T11:16:05.511Z",
+  "updated": "2026-11-13T11:31:08.886Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3948,7 +3948,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 2,
     "members": 16
   },
   "raids": [
@@ -3956,12 +3956,19 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 39049,
+      "loot": 41449,
       "raids": 3,
-      "attacks": 30,
+      "attacks": 31,
       "districts": 9,
       "medals": 0,
       "members": [
+        {
+          "name": "♡karo♡lina♡",
+          "tag": "#GVGRVCQJR",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 9312
+        },
         {
           "name": "MrDefPL",
           "tag": "#8UCPRGC8",
@@ -3982,13 +3989,6 @@
           "attacks": 5,
           "limit": 6,
           "loot": 7141
-        },
-        {
-          "name": "♡karo♡lina♡",
-          "tag": "#GVGRVCQJR",
-          "attacks": 5,
-          "limit": 6,
-          "loot": 6912
         },
         {
           "name": "To ja",
@@ -9106,8 +9106,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GVGRVCQJR": {
-      "sig": "465|91413521|90190837|2400|905|21455|36586|0|12|61|10",
-      "last": "2026-11-13T11:15:58.039Z",
+      "sig": "465|91413521|90190837|2400|905|23855|47548|0|12|61|10",
+      "last": "2026-11-13T11:31:05.002Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R9QQPG9JP": {
@@ -11897,13 +11897,13 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1816:1691255893",
-      "t": "2026-11-13T11:15:58.039Z"
+      "hash": "1817:2285568623",
+      "t": "2026-11-13T11:31:05.002Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "842:1704908829",
-      "t": "2026-11-13T11:15:58.039Z"
+      "hash": "823:3815084094",
+      "t": "2026-11-13T11:31:05.002Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -13843,7 +13843,7 @@
         "warStars": 12,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 36586,
+        "capital": 47548,
         "warPref": "in",
         "bh": 6,
         "bTrophies": 1595,
@@ -13887,10 +13887,10 @@
       "ach": {
         "cg": 2400,
         "don": 905,
-        "capLoot": 21455,
+        "capLoot": 23855,
         "gold": 91413521,
         "elixir": 90190837,
-        "capContrib": 36586,
+        "capContrib": 47548,
         "wins": 0
       }
     },
