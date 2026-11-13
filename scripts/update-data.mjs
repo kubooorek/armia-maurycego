@@ -91,6 +91,7 @@ for (const m of members) {
     level: p.expLevel,
     trophies: p.trophies, best: p.bestTrophies,
     league: p.leagueTier?.name ?? p.league?.name ?? null,
+    leagueId: p.leagueTier?.id ?? p.league?.id ?? null,
     warStars: p.warStars,
     attackWins: p.attackWins, defenseWins: p.defenseWins,
     capital: p.clanCapitalContributions ?? 0,
@@ -519,6 +520,7 @@ for (const m of members) {
   else if (prev.sig !== sig) activity[m.tag] = { ...prev, sig, last: nowIso };
 }
 activity = Object.fromEntries(Object.entries(activity).filter(([t]) => members.some(m => m.tag === t)));
+const afkWarned = old?.afkWarned && typeof old.afkWarned === "object" ? { ...old.afkWarned } : {};
 
 /* ---------- Gry Klanowe (22.–28. dnia miesiąca, 08:00 UTC) ---------- */
 const nowD = new Date();
@@ -1233,6 +1235,54 @@ if (!firstRun) {
     }
   }
 
+  // --- 6c) Ruchy graczy jak w ClashPerk: liga, Baza Budowniczego, Liga Legend, Gry Klanowe, nieaktywność ---
+  if (Array.isArray(old?.members) && POSTY.ruchyGraczy !== false) {
+    const byTag = Object.fromEntries(old.members.map(m => [m.tag, m]));
+    const kartaGracza = (m, opis, kolor, url) => postEmbed({ title: `${m.name} (${m.tag})`, url: SITE + "#gracz-" + m.tag.replace("#", ""),
+      description: opis, color: kolor, footer: { text: clan.name, icon_url: clan.badgeUrls?.small || undefined }, timestamp: new Date().toISOString() }, url);
+    for (const m of members) {
+      const o = byTag[m.tag]; if (!o?.profile || !m.profile) continue;
+      const P = m.profile, OP = o.profile;
+      // 1) awans w lidze (tylko w górę, żeby nie spamować spadkami po obronach)
+      if (WEBHOOK_RUCHY && P.leagueId && OP.leagueId && P.leagueId > OP.leagueId && P.league && P.league !== OP.league)
+        await kartaGracza(m, `🏆 Awans do ligi **${LIGA(P.league)}**\n-# ${LIGA(OP.league)} ➜ ${LIGA(P.league)} · ${nf(P.trophies)} 🏆`, 0x57c84d, WEBHOOK_RUCHY);
+      // 3) Baza Budowniczego
+      if (WEBHOOK_RUCHY && P.bh && OP.bh && P.bh > OP.bh)
+        await kartaGracza(m, `🔨 Ulepszył(a) Bazę Budowniczego na **BH${P.bh}**`, 0x29c4e6, WEBHOOK_RUCHY);
+      // 4) Liga Legend: każda zmiana pucharów = atak albo obrona
+      const legenda = /legend/i.test(P.league || "") && /legend/i.test(OP.league || "");
+      if (WEBHOOK_STATY && legenda && P.trophies != null && OP.trophies != null && P.trophies !== OP.trophies) {
+        const d = P.trophies - OP.trophies, plus = d > 0;
+        await kartaGracza(m, `${plus ? "⚔️ Atak" : "🛡️ Obrona"} w Lidze Legend: **${plus ? "+" : ""}${d}** 🏆\n-# Teraz: **${nf(P.trophies)}** 🏆`, plus ? 0x57c84d : 0xe5484d, WEBHOOK_STATY);
+      }
+    }
+    // 6) Gry Klanowe: kto zrobił normę (1000) i maksimum (4000)
+    if (WEBHOOK_STATY && clanGames?.state === "ongoing" && old?.clanGames?.key === clanGames.key) {
+      for (const [tag, p2] of Object.entries(clanGames.points || {})) {
+        const by = old.clanGames.points?.[tag]?.pts ?? 0, teraz = p2.pts ?? 0, m = members.find(x => x.tag === tag); if (!m) continue;
+        if (by < 4000 && teraz >= 4000) await kartaGracza(m, `🎯 **Maksimum w Grach Klanowych!** 4000 pkt 🔥`, 0xf5b72a, WEBHOOK_STATY);
+        else if (by < 1000 && teraz >= 1000) await kartaGracza(m, `🎯 Zrobił(a) normę w Grach Klanowych: **${nf(teraz)} pkt** ✅`, 0x57c84d, WEBHOOK_STATY);
+      }
+    }
+  }
+  // 7) nieaktywność: ostrzeżenie po 5 dniach, informacja po 7 dniach (zasada: 7 dni AFK = kick)
+  const WEBHOOK_AFK = WEBHOOK_KARY || WEBHOOK_RUCHY;
+  if (WEBHOOK_AFK && POSTY.afk !== false) {
+    const ZW = new Set(karyZw || []), pierwszy = old && old.afkWarned === undefined, lista = [];
+    for (const m of members) {
+      const a = activity[m.tag]; if (!a?.last || !a?.since) continue;
+      const dni = (Date.now() - Date.parse(a.last)) / 864e5, sledzony = (Date.now() - Date.parse(a.since)) / 864e5;
+      if (sledzony < 5 || ZW.has(m.tag) || m.role === "leader") continue;
+      const w = afkWarned[m.tag] || {};
+      if (w.last && w.last !== a.last) { delete afkWarned[m.tag]; continue; }     // wrócił do gry
+      if (pierwszy) { if (dni >= 5) { lista.push(`**${m.name}** (TH${m.th}) · ${Math.floor(dni)} dni`); afkWarned[m.tag] = { last: a.last, d5: true, d7: dni >= 7 }; } continue; }
+      if (dni >= 7 && !w.d7) { await post(`💤 **${m.name}** (TH${m.th}) jest nieaktywny/a od **${Math.floor(dni)} dni** — zgodnie z zasadą 7 dni AFK do decyzji zarządu.`, WEBHOOK_AFK); afkWarned[m.tag] = { ...w, last: a.last, d5: true, d7: true }; }
+      else if (dni >= 5 && !w.d5) { await post(`⏰ **${m.name}** (TH${m.th}) nie był/a aktywny/a od **${Math.floor(dni)} dni**. Za 2 dni minie limit 7 dni AFK.`, WEBHOOK_AFK); afkWarned[m.tag] = { ...w, last: a.last, d5: true }; }
+    }
+    if (pierwszy && lista.length) await post(`💤 **Nieaktywni od 5+ dni** (zasada: 7 dni AFK = kick):\n${lista.map(x => `> ${x}`).join("\n")}`, WEBHOOK_AFK);
+    for (const t of Object.keys(afkWarned)) if (!members.some(m => m.tag === t)) delete afkWarned[t];
+  }
+
   // --- 7) Nicki, ranga w dół, udział w wojnach (#ruchy-w-klanie) ---
   if (WEBHOOK_RUCHY && Array.isArray(old?.members)) {
     const RNd = { leader: "Wodza", coLeader: "Współlidera", admin: "Starszego", member: "Członka" };
@@ -1604,6 +1654,7 @@ const data = {
   warWinStreak: clan.warWinStreak,
   warWins: clan.warWins ?? null,
   clanPoints: clan.clanPoints ?? null,
+  afkWarned,
   currentWar,
   cwl,
   visits,
