@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T06:46:01.018Z",
+  "updated": "2026-11-13T07:01:32.055Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3808,7 +3808,7 @@
       }
     ]
   },
-  "visits": 140,
+  "visits": 141,
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
@@ -3995,6 +3995,13 @@
     }
   ],
   "events": [
+    {
+      "t": "2026-11-13T07:01:22.563Z",
+      "type": "th",
+      "name": "Marsyllia",
+      "from": 8,
+      "to": 9
+    },
     {
       "t": "2026-11-12T19:31:49.536Z",
       "type": "join",
@@ -4391,12 +4398,6 @@
       "name": "Nateq",
       "from": 7,
       "to": 8
-    },
-    {
-      "t": "2026-10-31T20:30:59.320Z",
-      "type": "join",
-      "name": "Nateq",
-      "th": 7
     }
   ],
   "warArchive": [
@@ -8174,7 +8175,7 @@
     {
       "d": "2026-11-13",
       "members": 46,
-      "avgTh": 9.6,
+      "avgTh": 9.7,
       "level": 4,
       "wins": 13,
       "points": 22600
@@ -9029,8 +9030,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R0VJLRGQ0": {
-      "sig": "0|28947913|28166258|0|0|0|400|0|14|35|8",
-      "last": "2026-11-12T17:16:01.708Z",
+      "sig": "0|28947913|28166258|0|0|0|400|0|14|35|9",
+      "last": "2026-11-13T07:01:23.434Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
@@ -10619,7 +10620,7 @@
         20770,
         14,
         0,
-        8
+        9
       ]
     ],
     "#GVG02VV98": [
@@ -11771,13 +11772,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "870:522674296",
-      "t": "2026-11-13T06:31:03.528Z"
+      "hash": "870:681038204",
+      "t": "2026-11-13T07:01:23.434Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1822:1420336541",
-      "t": "2026-11-13T06:45:55.605Z"
+      "hash": "1822:1550716026",
+      "t": "2026-11-13T07:01:23.434Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11889,7 +11890,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:748954602"
+    "hash": "465:3004458411"
   },
   "galeria": [
     {
@@ -14034,7 +14035,7 @@
       "name": "Marsyllia",
       "tag": "#R0VJLRGQ0",
       "role": "member",
-      "th": 8,
+      "th": 9,
       "given": 0,
       "received": 140,
       "trophies": 66,
@@ -14065,35 +14066,40 @@
         ]
       },
       "rush": {
-        "pct": 8.5,
-        "troops": 8.3,
-        "spells": 7.7,
-        "heroes": 10,
+        "pct": 31.3,
+        "troops": 24.5,
+        "spells": 17.6,
+        "heroes": 50,
         "top": [
           {
             "n": "Minion",
+            "lvl": 1,
+            "need": 4
+          },
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 9,
+            "need": 20
+          },
+          {
+            "n": "Wieprzowy jeździec",
+            "lvl": 2,
+            "need": 4
+          },
+          {
+            "n": "Zaklęcie trucizny",
             "lvl": 1,
             "need": 2
           },
           {
             "n": "Goblin",
             "lvl": 3,
-            "need": 4
+            "need": 5
           },
           {
             "n": "Burzyciel",
             "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Zaklęcie szału",
-            "lvl": 3,
-            "need": 4
-          },
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 9,
-            "need": 10
+            "need": 5
           }
         ]
       },
@@ -14316,8 +14322,8 @@
         ]
       },
       "rush": {
-        "pct": 56.3,
-        "troops": 28.6,
+        "pct": 55.6,
+        "troops": 27,
         "spells": 63,
         "heroes": 78.6,
         "top": [
