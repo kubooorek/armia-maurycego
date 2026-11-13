@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T23:45:53.175Z",
+  "updated": "2026-11-13T00:01:41.392Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -147,7 +147,7 @@
         {
           "pos": 26,
           "th": 8,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 27,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 34,
-      "pct": 38.53,
-      "attacks": 13,
+      "stars": 37,
+      "pct": 41.87,
+      "attacks": 14,
       "bases": [
         {
           "pos": 1,
@@ -790,6 +790,16 @@
         "stars": 2,
         "pct": 68,
         "order": 25
+      },
+      {
+        "by": "ma ano ulam",
+        "bpos": 26,
+        "th": 8,
+        "tpos": 26,
+        "tname": "Riczard",
+        "stars": 3,
+        "pct": 100,
+        "order": 26
       }
     ]
   },
@@ -4111,10 +4121,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 32,
-      "them": 34,
+      "them": 37,
       "final": false,
       "pct": 38.6,
-      "themPct": 38.53,
+      "themPct": 41.87,
       "themBases": [
         {
           "pos": 1,
@@ -7806,6 +7816,14 @@
       "level": 4,
       "wins": 13,
       "points": 22600
+    },
+    {
+      "d": "2026-11-13",
+      "members": 46,
+      "avgTh": 9.6,
+      "level": 4,
+      "wins": 13,
+      "points": 22600
     }
   ],
   "weekBase": {
@@ -11367,7 +11385,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 25
+    "w:20261112T222253.000Z": 26
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11382,8 +11400,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1820:488005404",
-      "t": "2026-11-12T23:45:47.833Z"
+      "hash": "1820:2643225948",
+      "t": "2026-11-13T00:01:35.222Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11485,7 +11503,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:675615338"
+    "hash": "465:2759556359"
   },
   "galeria": [
     {
