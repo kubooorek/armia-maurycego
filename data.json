@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T07:01:32.055Z",
+  "updated": "2026-11-13T07:16:01.881Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3817,6 +3817,17 @@
   },
   "raids": [
     {
+      "state": "ongoing",
+      "start": "20261113T070000.000Z",
+      "end": "20261116T070000.000Z",
+      "loot": 0,
+      "raids": 0,
+      "attacks": 0,
+      "districts": 0,
+      "medals": 0,
+      "members": []
+    },
+    {
       "state": "ended",
       "start": "20261106T070000.000Z",
       "end": "20261109T070000.000Z",
@@ -3825,172 +3836,6 @@
       "attacks": 129,
       "districts": 34,
       "medals": 63,
-      "members": [
-        {
-          "name": "Cwel123",
-          "tag": "#RPR0L809R",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8711
-        },
-        {
-          "name": "KuN",
-          "tag": "#YLLQL2VUP",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8450
-        },
-        {
-          "name": "oggsgdjdjbd",
-          "tag": "#Q9CU9P908",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8389
-        },
-        {
-          "name": "Albaroon.2",
-          "tag": "#GYUJR2URJ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8358
-        },
-        {
-          "name": "KUBOOOREK",
-          "tag": "#VP9PLGLV",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8223
-        },
-        {
-          "name": "vvd",
-          "tag": "#GQULCR98R",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 8107
-        },
-        {
-          "name": "MAQOS",
-          "tag": "#LJYR92002",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7928
-        },
-        {
-          "name": "SHA☆ZAM!",
-          "tag": "#GVGRVCQJR",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7277
-        },
-        {
-          "name": "SZAR3",
-          "tag": "#RYLR2C92V",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7085
-        },
-        {
-          "name": "Rico",
-          "tag": "#R92C0U8UU",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 7035
-        },
-        {
-          "name": "VipeR",
-          "tag": "#22R8PLCU8",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6824
-        },
-        {
-          "name": "Riczard",
-          "tag": "#R2PCVYQG2",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6691
-        },
-        {
-          "name": "Belaska",
-          "tag": "#GU0R2J8R0",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6565
-        },
-        {
-          "name": "MrDefPL",
-          "tag": "#8UCPRGC8",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6511
-        },
-        {
-          "name": "Toster290",
-          "tag": "#GJJ90QGVQ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 6104
-        },
-        {
-          "name": "TwarógPółtlusty",
-          "tag": "#R9GUJ0ULV",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 5667
-        },
-        {
-          "name": "erykos",
-          "tag": "#R9GPGL0QJ",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 4783
-        },
-        {
-          "name": "To ja",
-          "tag": "#2JGYURUQJ",
-          "attacks": 4,
-          "limit": 5,
-          "loot": 4625
-        },
-        {
-          "name": "Kojak",
-          "tag": "#G8VGC2VRL",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 4351
-        },
-        {
-          "name": "CJ Alabama",
-          "tag": "#GV0P9JL8Q",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 4131
-        },
-        {
-          "name": "Darui",
-          "tag": "#LUQJC2JGY",
-          "attacks": 5,
-          "limit": 5,
-          "loot": 3320
-        },
-        {
-          "name": "monte",
-          "tag": "#QYJUV90JY",
-          "attacks": 6,
-          "limit": 6,
-          "loot": 2734
-        }
-      ]
-    },
-    {
-      "state": "ended",
-      "start": "20261030T070000.000Z",
-      "end": "20261102T070000.000Z",
-      "loot": 133828,
-      "raids": 11,
-      "attacks": 118,
-      "districts": 33,
-      "medals": 67,
       "members": []
     }
   ],
@@ -11754,6 +11599,9 @@
     "w:20261112T222253.000Z": [
       "prep",
       "start"
+    ],
+    "raid:20261113T070000.000Z": [
+      "start"
     ]
   },
   "oneShots": [
@@ -11777,8 +11625,13 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1822:1550716026",
-      "t": "2026-11-13T07:01:23.434Z"
+      "hash": "1822:1593270466",
+      "t": "2026-11-13T07:15:55.443Z"
+    },
+    "raid:20261113T070000.000Z": {
+      "id": "1570698723959513213",
+      "hash": "681:2795392757",
+      "t": "2026-11-13T07:15:55.443Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
