@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T08:31:14.909Z",
+  "updated": "2026-11-13T08:46:03.052Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 59,
-      "pct": 70.9,
-      "attacks": 25,
+      "stars": 60,
+      "pct": 71.4,
+      "attacks": 26,
       "bases": [
         {
           "pos": 1,
@@ -286,7 +286,7 @@
         {
           "pos": 22,
           "th": 9,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 23,
@@ -625,7 +625,17 @@
         "tag": "#RYLR2C92V",
         "pos": 20,
         "th": 9,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 3,
+            "pct": 100,
+            "order": 60,
+            "target": "22. leng ok",
+            "tpos": 22,
+            "tname": "leng ok",
+            "seen": "2026-11-13T08:45:52.281Z"
+          }
+        ]
       },
       {
         "name": "erykos",
@@ -4306,10 +4316,10 @@
       "size": 30,
       "perMember": 2,
       "state": "inWar",
-      "us": 59,
+      "us": 60,
       "them": 87,
       "final": false,
-      "pct": 70.9,
+      "pct": 71.4,
       "themPct": 96.67,
       "themBases": [
         {
@@ -4420,7 +4430,7 @@
         {
           "pos": 22,
           "th": 9,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 23,
@@ -4710,7 +4720,14 @@
           "tag": "#RYLR2C92V",
           "pos": 20,
           "th": 9,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 3,
+              "pct": 100,
+              "target": "22. leng ok",
+              "order": 60
+            }
+          ]
         },
         {
           "name": "erykos",
@@ -8586,6 +8603,17 @@
   },
   "penalties": [
     {
+      "id": "20261112T222253.000Z:#RYLR2C92V:own",
+      "type": "own",
+      "detail": "nr 22 zamiast nr 20",
+      "tag": "#RYLR2C92V",
+      "name": "SZAR3",
+      "war": "20261112T222253.000Z",
+      "end": "20261113T222253.000Z",
+      "enemy": "MANUSCRIPTS",
+      "t": "2026-11-13T08:45:52.772Z"
+    },
+    {
       "id": "20261112T222253.000Z:#GVGRVCQJR:own",
       "type": "own",
       "detail": "nr 15 zamiast nr 14",
@@ -8823,8 +8851,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#Q9CU9P908": {
-      "sig": "372|349511912|345404727|14450|472|65320|126775|0|69|108|12",
-      "last": "2026-11-12T22:01:30.214Z",
+      "sig": "372|349511912|345404727|14450|472|65320|128425|0|69|108|12",
+      "last": "2026-11-13T08:45:53.930Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
@@ -8903,8 +8931,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
-      "sig": "20|71838794|69426945|10050|88|24505|32450|0|7|53|9",
-      "last": "2026-11-12T15:45:58.769Z",
+      "sig": "20|71898794|69486945|10050|88|24505|32450|0|10|53|9",
+      "last": "2026-11-13T08:45:53.930Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8V9U9VLJ": {
@@ -8998,8 +9026,8 @@
       "since": "2026-10-29T23:31:02.288Z"
     },
     "#GV0P9JL8Q": {
-      "sig": "0|37698025|35603900|800|89|11020|25466|0|2|51|9",
-      "last": "2026-11-08T10:46:04.615Z",
+      "sig": "0|37698025|35603900|800|89|11020|25466|0|2|52|9",
+      "last": "2026-11-13T08:45:53.930Z",
       "since": "2026-10-31T15:01:15.244Z"
     },
     "#LYUQYCU9G": {
@@ -9028,8 +9056,8 @@
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
-      "sig": "134|658842827|656036779|25150|1598|642210|742040|0|87|131|13",
-      "last": "2026-11-13T08:31:07.618Z",
+      "sig": "165|660087700|657229889|25150|1628|642210|742040|0|87|131|13",
+      "last": "2026-11-13T08:45:53.930Z",
       "since": "2026-11-07T19:01:29.050Z"
     },
     "#RL0LYUP0J": {
@@ -9787,7 +9815,7 @@
       [
         20770,
         87,
-        1598,
+        1628,
         13
       ]
     ],
@@ -10394,8 +10422,46 @@
       ],
       [
         20770,
-        7,
+        10,
         88,
+        9
+      ]
+    ],
+    "#R9GPGL0QJ": [
+      [
+        20765,
+        6,
+        76,
+        8
+      ],
+      [
+        20766,
+        6,
+        76,
+        8
+      ],
+      [
+        20767,
+        12,
+        76,
+        8
+      ],
+      [
+        20768,
+        12,
+        76,
+        9
+      ],
+      [
+        20769,
+        12,
+        76,
+        9
+      ],
+      [
+        20770,
+        17,
+        76,
         9
       ]
     ],
@@ -10435,44 +10501,6 @@
         30,
         175,
         8
-      ]
-    ],
-    "#R9GPGL0QJ": [
-      [
-        20765,
-        6,
-        76,
-        8
-      ],
-      [
-        20766,
-        6,
-        76,
-        8
-      ],
-      [
-        20767,
-        12,
-        76,
-        8
-      ],
-      [
-        20768,
-        12,
-        76,
-        9
-      ],
-      [
-        20769,
-        12,
-        76,
-        9
-      ],
-      [
-        20770,
-        17,
-        76,
-        9
       ]
     ],
     "#R92C0U8UU": [
@@ -11693,7 +11721,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 59
+    "w:20261112T222253.000Z": 60
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11703,18 +11731,18 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "887:4259864927",
-      "t": "2026-11-13T08:31:07.618Z"
+      "hash": "870:414969981",
+      "t": "2026-11-13T08:45:53.930Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1816:1214008632",
-      "t": "2026-11-13T08:31:07.618Z"
+      "hash": "1814:3779274524",
+      "t": "2026-11-13T08:45:53.930Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "731:3773220397",
-      "t": "2026-11-13T08:31:07.618Z"
+      "hash": "731:868353595",
+      "t": "2026-11-13T08:45:53.930Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11827,11 +11855,16 @@
       "name": "♡karo♡lina♡",
       "war": "20261112T222253.000Z",
       "t": "2026-11-13T07:31:10.856Z"
+    },
+    "20261112T222253.000Z:#RYLR2C92V:own": {
+      "name": "SZAR3",
+      "war": "20261112T222253.000Z",
+      "t": "2026-11-13T08:45:53.930Z"
     }
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:3839734418"
+    "hash": "465:1005238696"
   },
   "galeria": [
     {
@@ -12376,7 +12409,7 @@
         "warStars": 69,
         "attackWins": 0,
         "defenseWins": 0,
-        "capital": 126775,
+        "capital": 128425,
         "warPref": "in",
         "bh": 9,
         "bTrophies": 2382,
@@ -12448,7 +12481,7 @@
         "capLoot": 65320,
         "gold": 349511912,
         "elixir": 345404727,
-        "capContrib": 126775,
+        "capContrib": 128425,
         "wins": 0
       }
     },
@@ -12610,7 +12643,7 @@
       "tag": "#2JGYURUQJ",
       "role": "admin",
       "th": 13,
-      "given": 134,
+      "given": 165,
       "received": 407,
       "trophies": 387,
       "profile": {
@@ -12689,10 +12722,10 @@
       },
       "ach": {
         "cg": 25150,
-        "don": 1598,
+        "don": 1628,
         "capLoot": 642210,
-        "gold": 658842827,
-        "elixir": 656036779,
+        "gold": 660087700,
+        "elixir": 657229889,
         "capContrib": 742040,
         "wins": 0
       }
@@ -13763,14 +13796,14 @@
       "role": "member",
       "th": 9,
       "given": 20,
-      "received": 52,
+      "received": 83,
       "trophies": 288,
       "profile": {
         "level": 53,
         "trophies": 288,
         "best": 390,
         "league": "Skeleton League 3",
-        "warStars": 7,
+        "warStars": 10,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 32450,
@@ -13813,9 +13846,60 @@
         "cg": 10050,
         "don": 88,
         "capLoot": 24505,
-        "gold": 71838794,
-        "elixir": 69426945,
+        "gold": 71898794,
+        "elixir": 69486945,
         "capContrib": 32450,
+        "wins": 0
+      }
+    },
+    {
+      "name": "erykos",
+      "tag": "#R9GPGL0QJ",
+      "role": "member",
+      "th": 9,
+      "given": 3,
+      "received": 164,
+      "trophies": 268,
+      "profile": {
+        "level": 49,
+        "trophies": 268,
+        "best": 300,
+        "league": "Skeleton League 3",
+        "warStars": 17,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 16881,
+        "warPref": "in",
+        "bh": 4,
+        "bTrophies": 1287,
+        "bLeague": "Stone League III",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 20,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 0,
+        "don": 76,
+        "capLoot": 12040,
+        "gold": 48569506,
+        "elixir": 48293358,
+        "capContrib": 16881,
         "wins": 0
       }
     },
@@ -13867,57 +13951,6 @@
         "gold": 28628726,
         "elixir": 26657282,
         "capContrib": 43065,
-        "wins": 0
-      }
-    },
-    {
-      "name": "erykos",
-      "tag": "#R9GPGL0QJ",
-      "role": "member",
-      "th": 9,
-      "given": 3,
-      "received": 164,
-      "trophies": 245,
-      "profile": {
-        "level": 49,
-        "trophies": 245,
-        "best": 300,
-        "league": "Skeleton League 3",
-        "warStars": 17,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 16881,
-        "warPref": "in",
-        "bh": 4,
-        "bTrophies": 1287,
-        "bLeague": "Stone League III",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 20,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 0,
-        "don": 76,
-        "capLoot": 12040,
-        "gold": 48569506,
-        "elixir": 48293358,
-        "capContrib": 16881,
         "wins": 0
       }
     },
@@ -14319,7 +14352,7 @@
       "received": 31,
       "trophies": 0,
       "profile": {
-        "level": 51,
+        "level": 52,
         "trophies": 0,
         "best": 240,
         "league": "Skeleton League 3",
