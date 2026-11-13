@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T02:46:09.221Z",
+  "updated": "2026-11-13T03:02:16.552Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -122,7 +122,7 @@
         {
           "pos": 21,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 22,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 75,
-      "pct": 84.07,
-      "attacks": 29,
+      "stars": 78,
+      "pct": 87.4,
+      "attacks": 30,
       "bases": [
         {
           "pos": 1,
@@ -969,6 +969,16 @@
         "stars": 3,
         "pct": 100,
         "order": 43
+      },
+      {
+        "by": "fool",
+        "bpos": 13,
+        "th": 9,
+        "tpos": 21,
+        "tname": "erykos",
+        "stars": 3,
+        "pct": 100,
+        "order": 44
       }
     ]
   },
@@ -4290,10 +4300,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 35,
-      "them": 75,
+      "them": 78,
       "final": false,
       "pct": 44.1,
-      "themPct": 84.07,
+      "themPct": 87.4,
       "themBases": [
         {
           "pos": 1,
@@ -11567,7 +11577,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 43
+    "w:20261112T222253.000Z": 44
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11582,8 +11592,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1825:899385587",
-      "t": "2026-11-13T02:46:03.987Z"
+      "hash": "1825:1764214846",
+      "t": "2026-11-13T03:02:09.486Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11685,7 +11695,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:49268432"
+    "hash": "465:2133209453"
   },
   "galeria": [
     {
