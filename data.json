@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T04:01:28.644Z",
+  "updated": "2026-11-13T04:15:56.550Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 35,
-      "pct": 44.1,
-      "attacks": 14,
+      "stars": 37,
+      "pct": 47.23,
+      "attacks": 15,
       "bases": [
         {
           "pos": 1,
@@ -137,7 +137,7 @@
         {
           "pos": 24,
           "th": 8,
-          "best": 1
+          "best": 3
         },
         {
           "pos": 25,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 78,
-      "pct": 87.4,
-      "attacks": 30,
+      "stars": 80,
+      "pct": 89.03,
+      "attacks": 31,
       "bases": [
         {
           "pos": 1,
@@ -316,7 +316,7 @@
         {
           "pos": 28,
           "th": 9,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 29,
@@ -645,7 +645,17 @@
         "tag": "#R9L08VVCY",
         "pos": 27,
         "th": 9,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 2,
+            "pct": 94,
+            "order": 46,
+            "target": "28. Ayush",
+            "tpos": 28,
+            "tname": "Ayush",
+            "seen": "2026-11-13T04:15:48.646Z"
+          }
+        ]
       },
       {
         "name": "Rico",
@@ -979,6 +989,16 @@
         "stars": 3,
         "pct": 100,
         "order": 44
+      },
+      {
+        "by": "Maxrill",
+        "bpos": 18,
+        "th": 9,
+        "tpos": 24,
+        "tname": "Barnes",
+        "stars": 3,
+        "pct": 100,
+        "order": 45
       }
     ]
   },
@@ -4299,11 +4319,11 @@
       "size": 30,
       "perMember": 2,
       "state": "inWar",
-      "us": 35,
-      "them": 78,
+      "us": 37,
+      "them": 80,
       "final": false,
-      "pct": 44.1,
-      "themPct": 87.4,
+      "pct": 47.23,
+      "themPct": 89.03,
       "themBases": [
         {
           "pos": 1,
@@ -4443,7 +4463,7 @@
         {
           "pos": 28,
           "th": 9,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 29,
@@ -4732,7 +4752,14 @@
           "tag": "#R9L08VVCY",
           "pos": 27,
           "th": 9,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 2,
+              "pct": 94,
+              "target": "28. Ayush",
+              "order": 46
+            }
+          ]
         },
         {
           "name": "Rico",
@@ -8506,6 +8533,17 @@
   },
   "penalties": [
     {
+      "id": "20261112T222253.000Z:#R9L08VVCY:own",
+      "type": "own",
+      "detail": "nr 28 zamiast nr 27",
+      "tag": "#R9L08VVCY",
+      "name": "smouki",
+      "war": "20261112T222253.000Z",
+      "end": "20261113T222253.000Z",
+      "enemy": "MANUSCRIPTS",
+      "t": "2026-11-13T04:15:49.081Z"
+    },
+    {
       "id": "20261112T222253.000Z:#GQR98J880:own",
       "type": "own",
       "detail": "nr 23 zamiast nr 22",
@@ -8750,8 +8788,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#QYJUV90JY": {
-      "sig": "0|234878781|228959415|2900|20|23720|44832|0|55|90|13",
-      "last": "2026-11-12T08:31:15.298Z",
+      "sig": "0|234878781|228959415|2900|20|23720|44832|0|55|91|13",
+      "last": "2026-11-13T04:15:49.869Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GU0R2J8R0": {
@@ -8905,13 +8943,13 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|149087673|143472358|0|0|0|9510|0|0|51|11",
-      "last": "2026-11-12T14:46:00.087Z",
+      "sig": "0|149087673|143472358|0|0|0|9510|0|0|52|11",
+      "last": "2026-11-13T04:15:49.869Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
-      "sig": "20|9274954|7921526|0|20|0|4350|0|3|29|9",
-      "last": "2026-11-12T20:31:05.438Z",
+      "sig": "20|9325954|7972526|0|20|0|4350|0|5|29|9",
+      "last": "2026-11-13T04:15:49.869Z",
       "since": "2026-11-07T07:46:03.401Z"
     },
     "#2JGYURUQJ": {
@@ -10737,7 +10775,7 @@
       ],
       [
         20770,
-        3,
+        5,
         20,
         9
       ]
@@ -11577,7 +11615,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 44
+    "w:20261112T222253.000Z": 46
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11587,13 +11625,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "922:3600258104",
-      "t": "2026-11-13T02:31:24.350Z"
+      "hash": "922:2086757198",
+      "t": "2026-11-13T04:15:49.869Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1826:142044512",
-      "t": "2026-11-13T04:01:25.163Z"
+      "hash": "1826:3353095514",
+      "t": "2026-11-13T04:15:49.869Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11691,11 +11729,16 @@
       "name": "To ja",
       "war": "20261112T222253.000Z",
       "t": "2026-11-12T22:45:52.954Z"
+    },
+    "20261112T222253.000Z:#R9L08VVCY:own": {
+      "name": "smouki",
+      "war": "20261112T222253.000Z",
+      "t": "2026-11-13T04:15:49.869Z"
     }
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:2133209453"
+    "hash": "465:4186604152"
   },
   "galeria": [
     {
@@ -11947,7 +11990,7 @@
       "received": 0,
       "trophies": 321,
       "profile": {
-        "level": 90,
+        "level": 91,
         "trophies": 321,
         "best": 348,
         "league": "Wizard League 11",
@@ -12830,7 +12873,7 @@
       "received": 20,
       "trophies": 256,
       "profile": {
-        "level": 51,
+        "level": 52,
         "trophies": 256,
         "best": 275,
         "league": "Barbarian League 6",
@@ -12861,8 +12904,8 @@
         ]
       },
       "rush": {
-        "pct": 46.5,
-        "troops": 40.5,
+        "pct": 46,
+        "troops": 39.2,
         "spells": 35.3,
         "heroes": 55,
         "top": [
@@ -12887,12 +12930,12 @@
             "need": 4
           },
           {
-            "n": "Wieprzowy jeździec",
-            "lvl": 2,
-            "need": 6
+            "n": "Zaklęcie skoku",
+            "lvl": 1,
+            "need": 3
           },
           {
-            "n": "Zaklęcie skoku",
+            "n": "Zaklęcie klonowania",
             "lvl": 1,
             "need": 3
           }
@@ -14424,7 +14467,7 @@
         "trophies": 0,
         "best": 0,
         "league": "Skeleton League 2",
-        "warStars": 3,
+        "warStars": 5,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 4350,
@@ -14487,8 +14530,8 @@
         "cg": 0,
         "don": 20,
         "capLoot": 0,
-        "gold": 9274954,
-        "elixir": 7921526,
+        "gold": 9325954,
+        "elixir": 7972526,
         "capContrib": 4350,
         "wins": 0
       }
