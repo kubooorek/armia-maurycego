@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T02:31:30.116Z",
+  "updated": "2026-11-13T02:46:09.221Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -82,7 +82,7 @@
         {
           "pos": 13,
           "th": 10,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 14,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 72,
-      "pct": 80.73,
-      "attacks": 28,
+      "stars": 75,
+      "pct": 84.07,
+      "attacks": 29,
       "bases": [
         {
           "pos": 1,
@@ -959,6 +959,16 @@
         "stars": 1,
         "pct": 51,
         "order": 41
+      },
+      {
+        "by": "fool",
+        "bpos": 13,
+        "th": 9,
+        "tpos": 13,
+        "tname": "zuzia",
+        "stars": 3,
+        "pct": 100,
+        "order": 43
       }
     ]
   },
@@ -4280,10 +4290,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 35,
-      "them": 72,
+      "them": 75,
       "final": false,
       "pct": 44.1,
-      "themPct": 80.73,
+      "themPct": 84.07,
       "themBases": [
         {
           "pos": 1,
@@ -11557,7 +11567,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 42
+    "w:20261112T222253.000Z": 43
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11572,8 +11582,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1825:1118104471",
-      "t": "2026-11-13T02:31:24.350Z"
+      "hash": "1825:899385587",
+      "t": "2026-11-13T02:46:03.987Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11675,7 +11685,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:2260294707"
+    "hash": "465:49268432"
   },
   "galeria": [
     {
@@ -14286,7 +14296,7 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 18,
+            "level": 19,
             "max": 110
           },
           {
@@ -14297,14 +14307,14 @@
         ]
       },
       "rush": {
-        "pct": 1.9,
+        "pct": 1,
         "troops": 0,
         "spells": 0,
-        "heroes": 6.7,
+        "heroes": 3.3,
         "top": [
           {
             "n": "Król Barbarzyńców",
-            "lvl": 18,
+            "lvl": 19,
             "need": 20
           }
         ]
