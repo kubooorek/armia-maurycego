@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T01:16:01.845Z",
+  "updated": "2026-11-13T01:31:43.628Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -27,7 +27,7 @@
         {
           "pos": 2,
           "th": 13,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 3,
@@ -37,7 +37,7 @@
         {
           "pos": 4,
           "th": 12,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 5,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 48,
-      "pct": 54.23,
-      "attacks": 18,
+      "stars": 54,
+      "pct": 60.9,
+      "attacks": 20,
       "bases": [
         {
           "pos": 1,
@@ -850,6 +850,26 @@
         "stars": 3,
         "pct": 100,
         "order": 31
+      },
+      {
+        "by": "fury",
+        "bpos": 6,
+        "th": 13,
+        "tpos": 2,
+        "tname": "To ja",
+        "stars": 3,
+        "pct": 100,
+        "order": 32
+      },
+      {
+        "by": "fury",
+        "bpos": 6,
+        "th": 13,
+        "tpos": 4,
+        "tname": "Albaroon.2",
+        "stars": 3,
+        "pct": 100,
+        "order": 33
       }
     ]
   },
@@ -4171,10 +4191,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 33,
-      "them": 48,
+      "them": 54,
       "final": false,
       "pct": 41.27,
-      "themPct": 54.23,
+      "themPct": 60.9,
       "themBases": [
         {
           "pos": 1,
@@ -11442,7 +11462,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 31
+    "w:20261112T222253.000Z": 33
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11457,8 +11477,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1823:152186101",
-      "t": "2026-11-13T01:15:56.400Z"
+      "hash": "1824:2285746721",
+      "t": "2026-11-13T01:31:39.570Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11560,7 +11580,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:2994131816"
+    "hash": "465:274764525"
   },
   "galeria": [
     {
@@ -13730,22 +13750,17 @@
           },
           {
             "name": "Archer Queen",
-            "level": 5,
+            "level": 6,
             "max": 110
           }
         ]
       },
       "rush": {
-        "pct": 10.2,
-        "troops": 11.1,
+        "pct": 8.5,
+        "troops": 8.3,
         "spells": 7.7,
         "heroes": 10,
         "top": [
-          {
-            "n": "Uzdrowicielka",
-            "lvl": 1,
-            "need": 2
-          },
           {
             "n": "Minion",
             "lvl": 1,
