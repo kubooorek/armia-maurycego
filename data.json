@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T14:31:18.888Z",
+  "updated": "2026-11-13T14:46:06.448Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3995,7 +3995,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 5,
     "members": 16
   },
   "raids": [
@@ -4003,9 +4003,9 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 53802,
+      "loot": 57367,
       "raids": 4,
-      "attacks": 44,
+      "attacks": 47,
       "districts": 13,
       "medals": 0,
       "members": [
@@ -4057,6 +4057,13 @@
           "attacks": 6,
           "limit": 6,
           "loot": 4212
+        },
+        {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": 3,
+          "limit": 5,
+          "loot": 3565
         },
         {
           "name": "Toster290",
@@ -9179,8 +9186,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|114807633|97394879|5100|336|7810|34127|0|17|57|10",
-      "last": "2026-11-13T01:01:23.675Z",
+      "sig": "31|114807633|97394879|5100|336|11375|34127|0|17|57|10",
+      "last": "2026-11-13T14:45:59.221Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -11985,18 +11992,18 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "836:1244079618",
-      "t": "2026-11-13T14:15:58.211Z"
+      "hash": "836:1727967624",
+      "t": "2026-11-13T14:45:59.221Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1806:2724129436",
-      "t": "2026-11-13T14:31:15.485Z"
+      "hash": "1806:4216220388",
+      "t": "2026-11-13T14:45:59.221Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "798:89517610",
-      "t": "2026-11-13T14:01:28.825Z"
+      "hash": "804:158584465",
+      "t": "2026-11-13T14:45:59.221Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -13708,30 +13715,30 @@
         "heroes": [
           {
             "name": "Barbarian King",
-            "level": 20,
+            "level": 21,
             "max": 110
           },
           {
             "name": "Archer Queen",
-            "level": 8,
+            "level": 9,
             "max": 110
           },
           {
             "name": "Minion Prince",
-            "level": 7,
+            "level": 8,
             "max": 95
           }
         ]
       },
       "rush": {
-        "pct": 21.8,
+        "pct": 20.1,
         "troops": 1.3,
         "spells": 7.4,
-        "heroes": 50,
+        "heroes": 45.7,
         "top": [
           {
             "n": "Królowa Łuczniczek",
-            "lvl": 8,
+            "lvl": 9,
             "need": 30
           },
           {
@@ -13746,25 +13753,25 @@
           },
           {
             "n": "Król Barbarzyńców",
-            "lvl": 20,
+            "lvl": 21,
             "need": 30
-          },
-          {
-            "n": "Książę Minionów",
-            "lvl": 7,
-            "need": 10
           },
           {
             "n": "Walkiria",
             "lvl": 3,
             "need": 4
+          },
+          {
+            "n": "Książę Minionów",
+            "lvl": 8,
+            "need": 10
           }
         ]
       },
       "ach": {
         "cg": 5100,
         "don": 336,
-        "capLoot": 7810,
+        "capLoot": 11375,
         "gold": 114807633,
         "elixir": 97394879,
         "capContrib": 34127,
@@ -14380,7 +14387,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 2,
+            "level": 3,
             "max": 95
           }
         ]
