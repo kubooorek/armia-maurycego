@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T00:31:02.654Z",
+  "updated": "2026-11-13T00:45:58.298Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -142,7 +142,7 @@
         {
           "pos": 25,
           "th": 10,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 26,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 37,
-      "pct": 41.87,
-      "attacks": 14,
+      "stars": 40,
+      "pct": 45.2,
+      "attacks": 15,
       "bases": [
         {
           "pos": 1,
@@ -800,6 +800,16 @@
         "stars": 3,
         "pct": 100,
         "order": 26
+      },
+      {
+        "by": "srmnto",
+        "bpos": 23,
+        "th": 9,
+        "tpos": 25,
+        "tname": "Mimbosz",
+        "stars": 3,
+        "pct": 100,
+        "order": 27
       }
     ]
   },
@@ -3525,7 +3535,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 4,
+    "online": 3,
     "members": 16
   },
   "raids": [
@@ -4121,10 +4131,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 32,
-      "them": 37,
+      "them": 40,
       "final": false,
       "pct": 38.6,
-      "themPct": 41.87,
+      "themPct": 45.2,
       "themBases": [
         {
           "pos": 1,
@@ -11385,7 +11395,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 26
+    "w:20261112T222253.000Z": 27
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11400,8 +11410,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1820:1101504856",
-      "t": "2026-11-13T00:30:59.967Z"
+      "hash": "1821:632052059",
+      "t": "2026-11-13T00:45:53.436Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11503,7 +11513,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:2759556359"
+    "hash": "465:2251215343"
   },
   "galeria": [
     {
