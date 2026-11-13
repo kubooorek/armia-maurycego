@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T21:31:24.641Z",
+  "updated": "2026-11-13T21:40:35.033Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -4157,7 +4157,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 6,
+    "online": 5,
     "members": 15
   },
   "raids": [
@@ -12365,8 +12365,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1814:1037711005",
-      "t": "2026-11-13T21:31:18.555Z"
+      "hash": "1814:1542688602",
+      "t": "2026-11-13T21:40:31.468Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
@@ -14542,7 +14542,7 @@
         "capital": 27037,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1287,
+        "bTrophies": 1290,
         "bLeague": "Stone League III",
         "heroes": [
           {
