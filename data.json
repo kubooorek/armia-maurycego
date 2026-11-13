@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T18:01:39.937Z",
+  "updated": "2026-11-13T18:16:11.172Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -4087,10 +4087,10 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 102491,
-      "raids": 7,
-      "attacks": 84,
-      "districts": 25,
+      "loot": 110649,
+      "raids": 8,
+      "attacks": 93,
+      "districts": 27,
       "medals": 0,
       "members": [
         {
@@ -4178,6 +4178,13 @@
           "loot": 5534
         },
         {
+          "name": "threeten",
+          "tag": "#R8RVQVPCC",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 5033
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "attacks": 6,
@@ -4190,6 +4197,13 @@
           "attacks": 3,
           "limit": 6,
           "loot": 3682
+        },
+        {
+          "name": "KuN",
+          "tag": "#YLLQL2VUP",
+          "attacks": 3,
+          "limit": 6,
+          "loot": 3125
         },
         {
           "name": "Rico",
@@ -9299,8 +9313,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#8UCPRGC8": {
-      "sig": "144|912625952|950546411|13725|51039|79110|105841|0|514|149|13",
-      "last": "2026-11-13T08:01:38.166Z",
+      "sig": "144|913512426|952596707|13725|51039|79110|105841|0|514|149|13",
+      "last": "2026-11-13T18:16:03.734Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#LJYR92002": {
@@ -9354,8 +9368,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#YLLQL2VUP": {
-      "sig": "0|42554960|41125925|10600|180|32075|56682|0|46|48|9",
-      "last": "2026-11-13T13:46:05.209Z",
+      "sig": "0|42554960|41125925|10600|180|35065|56682|0|46|48|9",
+      "last": "2026-11-13T18:16:03.734Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RY0QPVCCY": {
@@ -9434,8 +9448,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#R8RVQVPCC": {
-      "sig": "0|8897088|9468071|300|40|24805|34234|0|21|36|8",
-      "last": "2026-11-10T21:31:22.310Z",
+      "sig": "0|9721088|10292071|300|40|29550|40517|0|21|36|8",
+      "last": "2026-11-13T18:16:03.734Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GLV9998PC": {
@@ -10984,6 +10998,44 @@
         8
       ]
     ],
+    "#R8RVQVPCC": [
+      [
+        20765,
+        15,
+        40,
+        8
+      ],
+      [
+        20766,
+        15,
+        40,
+        8
+      ],
+      [
+        20767,
+        21,
+        40,
+        8
+      ],
+      [
+        20768,
+        21,
+        40,
+        8
+      ],
+      [
+        20769,
+        21,
+        40,
+        8
+      ],
+      [
+        20770,
+        21,
+        40,
+        8
+      ]
+    ],
     "#R0VJLRGQ0": [
       [
         20765,
@@ -11172,44 +11224,6 @@
         2,
         89,
         9
-      ]
-    ],
-    "#R8RVQVPCC": [
-      [
-        20765,
-        15,
-        40,
-        8
-      ],
-      [
-        20766,
-        15,
-        40,
-        8
-      ],
-      [
-        20767,
-        21,
-        40,
-        8
-      ],
-      [
-        20768,
-        21,
-        40,
-        8
-      ],
-      [
-        20769,
-        21,
-        40,
-        8
-      ],
-      [
-        20770,
-        21,
-        40,
-        8
       ]
     ],
     "#GQ2QUJRGU": [
@@ -12175,18 +12189,18 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "819:1626738216",
-      "t": "2026-11-13T18:01:34.475Z"
+      "hash": "802:1008405188",
+      "t": "2026-11-13T18:16:03.734Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1808:4001924215",
-      "t": "2026-11-13T18:01:34.475Z"
+      "hash": "1808:2526588607",
+      "t": "2026-11-13T18:16:03.734Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "772:212258997",
-      "t": "2026-11-13T18:01:34.475Z"
+      "hash": "768:2831881363",
+      "t": "2026-11-13T18:16:03.734Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -12836,8 +12850,8 @@
         "cg": 13725,
         "don": 51039,
         "capLoot": 79110,
-        "gold": 912625952,
-        "elixir": 950546411,
+        "gold": 913512426,
+        "elixir": 952596707,
         "capContrib": 105841,
         "wins": 0
       }
@@ -13713,7 +13727,7 @@
           },
           {
             "name": "Minion Prince",
-            "level": 5,
+            "level": 6,
             "max": 95
           }
         ]
@@ -14021,7 +14035,7 @@
       "ach": {
         "cg": 10600,
         "don": 180,
-        "capLoot": 32075,
+        "capLoot": 35065,
         "gold": 42554960,
         "elixir": 41125925,
         "capContrib": 56682,
@@ -14047,7 +14061,7 @@
         "capital": 0,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 636,
+        "bTrophies": 635,
         "bLeague": "Clay League IV",
         "heroes": [
           {
@@ -14465,6 +14479,57 @@
       }
     },
     {
+      "name": "threeten",
+      "tag": "#R8RVQVPCC",
+      "role": "member",
+      "th": 8,
+      "given": 0,
+      "received": 0,
+      "trophies": 80,
+      "profile": {
+        "level": 36,
+        "trophies": 80,
+        "best": 240,
+        "league": "Skeleton League 3",
+        "warStars": 21,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 40517,
+        "warPref": "in",
+        "bh": 2,
+        "bTrophies": 40,
+        "bLeague": "Wood League V",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 11,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 4,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 0,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 0,
+        "top": []
+      },
+      "ach": {
+        "cg": 300,
+        "don": 40,
+        "capLoot": 29550,
+        "gold": 9721088,
+        "elixir": 10292071,
+        "capContrib": 40517,
+        "wins": 0
+      }
+    },
+    {
       "name": "Marsyllia",
       "tag": "#R0VJLRGQ0",
       "role": "member",
@@ -14861,57 +14926,6 @@
         "gold": 37698025,
         "elixir": 35603900,
         "capContrib": 25466,
-        "wins": 0
-      }
-    },
-    {
-      "name": "threeten",
-      "tag": "#R8RVQVPCC",
-      "role": "member",
-      "th": 8,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 36,
-        "trophies": 0,
-        "best": 240,
-        "league": "Skeleton League 3",
-        "warStars": 21,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 34234,
-        "warPref": "in",
-        "bh": 2,
-        "bTrophies": 40,
-        "bLeague": "Wood League V",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 11,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 4,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 0,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 0,
-        "top": []
-      },
-      "ach": {
-        "cg": 300,
-        "don": 40,
-        "capLoot": 24805,
-        "gold": 8897088,
-        "elixir": 9468071,
-        "capContrib": 34234,
         "wins": 0
       }
     },
