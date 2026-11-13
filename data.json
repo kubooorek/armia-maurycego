@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T10:15:59.319Z",
+  "updated": "2026-11-13T10:31:08.925Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -176,7 +176,7 @@
       "level": 4,
       "stars": 88,
       "pct": 98.2,
-      "attacks": 35,
+      "attacks": 36,
       "bases": [
         {
           "pos": 1,
@@ -1164,6 +1164,16 @@
         "stars": 1,
         "pct": 46,
         "order": 62
+      },
+      {
+        "by": "Maxrill",
+        "bpos": 18,
+        "th": 9,
+        "tpos": 15,
+        "tname": "tak",
+        "stars": 2,
+        "pct": 84,
+        "order": 64
       }
     ]
   },
@@ -11769,7 +11779,8 @@
     "dm:w:20261110T211034.000Z": [],
     "w:20261112T222253.000Z": [
       "prep",
-      "start"
+      "start",
+      "free12"
     ],
     "raid:20261113T070000.000Z": [
       "start"
@@ -11781,7 +11792,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 63
+    "w:20261112T222253.000Z": 64
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11796,8 +11807,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1811:1021271391",
-      "t": "2026-11-13T10:15:55.838Z"
+      "hash": "1811:3959538968",
+      "t": "2026-11-13T10:31:02.897Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
@@ -14340,7 +14351,7 @@
         "capital": 100,
         "warPref": "in",
         "bh": 4,
-        "bTrophies": 1206,
+        "bTrophies": 1208,
         "bLeague": "Stone League III",
         "heroes": [
           {
@@ -14859,8 +14870,8 @@
         "capital": 900,
         "warPref": "in",
         "bh": 5,
-        "bTrophies": 1344,
-        "bLeague": "Stone League II",
+        "bTrophies": 1425,
+        "bLeague": "Stone League I",
         "heroes": [
           {
             "name": "Barbarian King",
