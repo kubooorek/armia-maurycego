@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T19:31:23.626Z",
+  "updated": "2026-11-13T19:46:13.301Z",
   "clanLevel": 4,
   "memberCount": 47,
   "cwlLeague": "Silver League I",
@@ -30,7 +30,7 @@
       "level": 4,
       "stars": 89,
       "pct": 98.93,
-      "attacks": 48,
+      "attacks": 50,
       "bases": [
         {
           "pos": 1,
@@ -453,7 +453,26 @@
         "tag": "#LJYR92002",
         "pos": 5,
         "th": 12,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 0,
+            "pct": 46,
+            "order": 88,
+            "target": "3. blink",
+            "tpos": 3,
+            "tname": "blink",
+            "seen": "2026-11-13T19:46:03.396Z"
+          },
+          {
+            "stars": 2,
+            "pct": 52,
+            "order": 89,
+            "target": "6. fury",
+            "tpos": 6,
+            "tname": "fury",
+            "seen": "2026-11-13T19:46:03.396Z"
+          }
+        ]
       },
       {
         "name": "oggsgdjdjbd",
@@ -4137,9 +4156,9 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 123821,
+      "loot": 125176,
       "raids": 9,
-      "attacks": 102,
+      "attacks": 105,
       "districts": 31,
       "medals": 0,
       "members": [
@@ -4214,6 +4233,13 @@
           "loot": 7038
         },
         {
+          "name": "TTomson",
+          "tag": "#R0V8QGLJQ",
+          "attacks": 6,
+          "limit": 6,
+          "loot": 6940
+        },
+        {
           "name": "vvd",
           "tag": "#GQULCR98R",
           "attacks": 6,
@@ -4233,13 +4259,6 @@
           "attacks": 6,
           "limit": 6,
           "loot": 5841
-        },
-        {
-          "name": "TTomson",
-          "tag": "#R0V8QGLJQ",
-          "attacks": 3,
-          "limit": 6,
-          "loot": 5585
         },
         {
           "name": "To ja",
@@ -4946,7 +4965,20 @@
           "tag": "#LJYR92002",
           "pos": 5,
           "th": 12,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 0,
+              "pct": 46,
+              "target": "3. blink",
+              "order": 88
+            },
+            {
+              "stars": 2,
+              "pct": 52,
+              "target": "6. fury",
+              "order": 89
+            }
+          ]
         },
         {
           "name": "oggsgdjdjbd",
@@ -9592,8 +9624,8 @@
       "since": "2026-11-04T09:15:54.703Z"
     },
     "#R0V8QGLJQ": {
-      "sig": "0|157153366|151053422|0|0|5420|21265|0|0|53|11",
-      "last": "2026-11-13T19:31:18.226Z",
+      "sig": "0|158930939|152466994|0|0|6775|21265|0|0|53|11",
+      "last": "2026-11-13T19:46:05.233Z",
       "since": "2026-11-06T07:31:14.715Z"
     },
     "#R9L08VVCY": {
@@ -12299,7 +12331,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 87
+    "w:20261112T222253.000Z": 89
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -12309,18 +12341,18 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "829:1933877048",
-      "t": "2026-11-13T19:31:18.226Z"
+      "hash": "829:388264808",
+      "t": "2026-11-13T19:46:05.233Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1814:3326391101",
-      "t": "2026-11-13T19:31:18.226Z"
+      "hash": "1817:330306332",
+      "t": "2026-11-13T19:46:05.233Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "760:2872220793",
-      "t": "2026-11-13T19:16:03.272Z"
+      "hash": "745:850905281",
+      "t": "2026-11-13T19:46:05.233Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -13186,7 +13218,7 @@
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 414718,
-        "warPref": "in",
+        "warPref": "out",
         "bh": 6,
         "bTrophies": 1938,
         "bLeague": "Copper League I",
@@ -13715,21 +13747,26 @@
           },
           {
             "name": "Archer Queen",
-            "level": 19,
+            "level": 20,
             "max": 110
           },
           {
             "name": "Minion Prince",
             "level": 13,
             "max": 95
+          },
+          {
+            "name": "Grand Warden",
+            "level": 1,
+            "max": 85
           }
         ]
       },
       "rush": {
-        "pct": 45.1,
+        "pct": 44.6,
         "troops": 39.2,
         "spells": 32.4,
-        "heroes": 54,
+        "heroes": 53,
         "top": [
           {
             "n": "Minion",
@@ -13766,9 +13803,9 @@
       "ach": {
         "cg": 0,
         "don": 0,
-        "capLoot": 5420,
-        "gold": 157153366,
-        "elixir": 151053422,
+        "capLoot": 6775,
+        "gold": 158930939,
+        "elixir": 152466994,
         "capContrib": 21265,
         "wins": 0
       }
