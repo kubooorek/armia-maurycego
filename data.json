@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T01:45:56.465Z",
+  "updated": "2026-11-13T02:01:31.992Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -62,7 +62,7 @@
         {
           "pos": 9,
           "th": 11,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 10,
@@ -87,7 +87,7 @@
         {
           "pos": 14,
           "th": 10,
-          "best": 2
+          "best": 3
         },
         {
           "pos": 15,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 66,
-      "pct": 74.23,
-      "attacks": 24,
+      "stars": 68,
+      "pct": 75.7,
+      "attacks": 26,
       "bases": [
         {
           "pos": 1,
@@ -910,6 +910,26 @@
         "stars": 3,
         "pct": 100,
         "order": 37
+      },
+      {
+        "by": "blink",
+        "bpos": 3,
+        "th": 13,
+        "tpos": 9,
+        "tname": "HuangShunxiong",
+        "stars": 3,
+        "pct": 100,
+        "order": 38
+      },
+      {
+        "by": "funky",
+        "bpos": 4,
+        "th": 13,
+        "tpos": 14,
+        "tname": "♡karo♡lina♡",
+        "stars": 3,
+        "pct": 100,
+        "order": 39
       }
     ]
   },
@@ -4231,10 +4251,10 @@
       "perMember": 2,
       "state": "inWar",
       "us": 33,
-      "them": 66,
+      "them": 68,
       "final": false,
       "pct": 41.27,
-      "themPct": 74.23,
+      "themPct": 75.7,
       "themBases": [
         {
           "pos": 1,
@@ -10553,6 +10573,44 @@
         8
       ]
     ],
+    "#GQ2QUJRGU": [
+      [
+        20765,
+        0,
+        68,
+        8
+      ],
+      [
+        20766,
+        0,
+        68,
+        8
+      ],
+      [
+        20767,
+        0,
+        68,
+        8
+      ],
+      [
+        20768,
+        0,
+        68,
+        8
+      ],
+      [
+        20769,
+        0,
+        68,
+        9
+      ],
+      [
+        20770,
+        0,
+        68,
+        9
+      ]
+    ],
     "#RYUV9V9RC": [
       [
         20765,
@@ -10626,44 +10684,6 @@
         20770,
         3,
         20,
-        9
-      ]
-    ],
-    "#GQ2QUJRGU": [
-      [
-        20765,
-        0,
-        68,
-        8
-      ],
-      [
-        20766,
-        0,
-        68,
-        8
-      ],
-      [
-        20767,
-        0,
-        68,
-        8
-      ],
-      [
-        20768,
-        0,
-        68,
-        8
-      ],
-      [
-        20769,
-        0,
-        68,
-        9
-      ],
-      [
-        20770,
-        0,
-        68,
         9
       ]
     ],
@@ -11502,7 +11522,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 37
+    "w:20261112T222253.000Z": 39
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11517,8 +11537,8 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1824:608683001",
-      "t": "2026-11-13T01:45:50.827Z"
+      "hash": "1824:1632367959",
+      "t": "2026-11-13T02:01:26.321Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11620,7 +11640,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:1723279276"
+    "hash": "465:3112573290"
   },
   "galeria": [
     {
@@ -14208,6 +14228,63 @@
       }
     },
     {
+      "name": "my name billa",
+      "tag": "#GQ2QUJRGU",
+      "role": "member",
+      "th": 9,
+      "given": 0,
+      "received": 0,
+      "trophies": 0,
+      "profile": {
+        "level": 44,
+        "trophies": 0,
+        "best": 296,
+        "league": "Skeleton League 3",
+        "warStars": 0,
+        "attackWins": 0,
+        "defenseWins": 0,
+        "capital": 3870,
+        "warPref": "in",
+        "bh": 3,
+        "bTrophies": 234,
+        "bLeague": "Wood League III",
+        "heroes": [
+          {
+            "name": "Barbarian King",
+            "level": 18,
+            "max": 110
+          },
+          {
+            "name": "Archer Queen",
+            "level": 10,
+            "max": 110
+          }
+        ]
+      },
+      "rush": {
+        "pct": 1.9,
+        "troops": 0,
+        "spells": 0,
+        "heroes": 6.7,
+        "top": [
+          {
+            "n": "Król Barbarzyńców",
+            "lvl": 18,
+            "need": 20
+          }
+        ]
+      },
+      "ach": {
+        "cg": 0,
+        "don": 68,
+        "capLoot": 0,
+        "gold": 80987647,
+        "elixir": 78048737,
+        "capContrib": 3870,
+        "wins": 0
+      }
+    },
+    {
       "name": "samurai024",
       "tag": "#RYUV9V9RC",
       "role": "member",
@@ -14358,63 +14435,6 @@
         "gold": 9274954,
         "elixir": 7921526,
         "capContrib": 4350,
-        "wins": 0
-      }
-    },
-    {
-      "name": "my name billa",
-      "tag": "#GQ2QUJRGU",
-      "role": "member",
-      "th": 9,
-      "given": 0,
-      "received": 0,
-      "trophies": 0,
-      "profile": {
-        "level": 44,
-        "trophies": 0,
-        "best": 296,
-        "league": "Skeleton League 3",
-        "warStars": 0,
-        "attackWins": 0,
-        "defenseWins": 0,
-        "capital": 3870,
-        "warPref": "in",
-        "bh": 3,
-        "bTrophies": 234,
-        "bLeague": "Wood League III",
-        "heroes": [
-          {
-            "name": "Barbarian King",
-            "level": 18,
-            "max": 110
-          },
-          {
-            "name": "Archer Queen",
-            "level": 10,
-            "max": 110
-          }
-        ]
-      },
-      "rush": {
-        "pct": 1.9,
-        "troops": 0,
-        "spells": 0,
-        "heroes": 6.7,
-        "top": [
-          {
-            "n": "Król Barbarzyńców",
-            "lvl": 18,
-            "need": 20
-          }
-        ]
-      },
-      "ach": {
-        "cg": 0,
-        "don": 68,
-        "capLoot": 0,
-        "gold": 80987647,
-        "elixir": 78048737,
-        "capContrib": 3870,
         "wins": 0
       }
     },
