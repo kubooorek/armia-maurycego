@@ -751,9 +751,21 @@ const WEBHOOK_RAJDY = process.env.DISCORD_WEBHOOK_RAJDY || "";         // #rajdy
 const WEBHOOK_POWITANIA = process.env.DISCORD_WEBHOOK_POWITANIA || WEBHOOK_INFO; // #powitania: nowi gracze
 const WEBHOOK_REKRUTACJA = process.env.DISCORD_WEBHOOK_REKRUTACJA || "";  // #rekrutacja: post co tydzień
 const WEBHOOK_WYMAGANIA = process.env.DISCORD_WEBHOOK_WYMAGANIA || "";
-const WEBHOOK_KARY = process.env.DISCORD_WEBHOOK_KARY || "";              // #kary: kary za łamanie zasad wojen (jak zakładka Kary na stronie)    // #wymagania-klanu: jedna wiadomość, aktualizowana
+const WEBHOOK_KARY = process.env.DISCORD_WEBHOOK_KARY || "";
+const WEBHOOK_STATY = process.env.DISCORD_WEBHOOK_STATYSTYKI || WEBHOOK_INFO;   // #statystyki-klanu: awanse klanu, ligi, serie (karty)              // #kary: kary za łamanie zasad wojen (jak zakładka Kary na stronie)    // #wymagania-klanu: jedna wiadomość, aktualizowana
 let notified = old?.notified && typeof old.notified === "object" ? old.notified : {};
 const SITE = "https://kubooorek.github.io/armia-maurycego/";
+async function postEmbed(embed, url = WEBHOOK) {
+  if (!url) return false;
+  try {
+    const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: "Armia Maurycego", avatar_url: SITE + "icon-512.png", embeds: [embed], allowed_mentions: { parse: [] } }) });
+    if (!r.ok) console.warn("Webhook (karta):", r.status, await r.text());
+    await new Promise(res => setTimeout(res, 1200));
+    return r.ok;
+  } catch (e) { console.warn("Webhook niedostępny:", e.message); return false; }
+}
+
 async function post(content, url = WEBHOOK, ping = false, embed = false) {
   if (!url) return false;
   try {
@@ -1162,28 +1174,63 @@ if (!firstRun) {
     ]), WEBHOOK);
   }
 
-  // --- 6) Osiągnięcia klanu (#ogłoszenia) ---
-  if (WEBHOOK_INFO && POSTY.osiagniecia !== false && old) {
+  // --- 6) Osiągnięcia i statystyki klanu (#statystyki-klanu) — karty jak w ClashPerk, tylko po polsku ---
+  if (WEBHOOK_STATY && POSTY.osiagniecia !== false && old) {
     const TIER = ["Unranked", "Bronze", "Silver", "Gold", "Crystal", "Master", "Champion"];
     const rank = n => { if (!n) return -1; const t = TIER.findIndex(x => n.startsWith(x)); const r = { I: 3, II: 2, III: 1 }[(n.split(" ").pop() || "")] || 0; return t * 10 + r; };
+    const herb = clan.badgeUrls?.large || clan.badgeUrls?.medium || (SITE + "icon-512.png");
+    const karta = (opis, kolor, stopka) => postEmbed({
+      author: { name: `${clan.name} (${TAG})`, icon_url: clan.badgeUrls?.small || undefined, url: SITE },
+      description: opis, color: kolor, thumbnail: { url: herb },
+      footer: stopka ? { text: stopka } : undefined, timestamp: new Date().toISOString()
+    }, WEBHOOK_STATY);
+    const ZIEL = 0x57c84d, CZER = 0xe5484d, ZLOTO = 0xf5b72a, NIEB = 0x29c4e6;
+    if (process.env.DISCORD_WEBHOOK_STATYSTYKI && !oneShots.includes("staty-start-v1")) {   // jednorazowa karta na start kanału
+      const ok = await karta(`## 📊 Statystyki klanu\n> 🛡️ Poziom klanu: **${clan.clanLevel}**\n> ⚔️ Liga CWL: **${LIGA(clan.warLeague?.name)}**\n> 🏰 Liga Stolicy: **${LIGA(clan.capitalLeague?.name)}**\n> 🏆 Wygrane wojny: **${clan.warWins ?? "?"}**\n> 👥 Gracze: **${members.length}/50**\n\nTutaj bot będzie wrzucał awanse klanu, ligi i serie zwycięstw.`, NIEB);
+      if (ok) oneShots.push("staty-start-v1");
+    }
     if (old.clanLevel != null && clan.clanLevel > old.clanLevel)
-      await post(`🎉 **Klan awansował na poziom ${clan.clanLevel}!** Dzięki za każdą wojnę, Grę Klanową i rajd. Lecimy dalej! 🛡️`, WEBHOOK_INFO);
+      await karta(`## 🛡️ Awans klanu!\nKlan wbił **poziom ${clan.clanLevel}**.\nDzięki za każdą wojnę, Grę Klanową i rajd — lecimy dalej! 🔥`, NIEB, `Poziom ${old.clanLevel} ➜ ${clan.clanLevel}`);
     const nowCwl = clan.warLeague?.name ?? null;
-    if (old.cwlLeague && nowCwl && old.cwlLeague !== nowCwl)
-      await post(rank(nowCwl) > rank(old.cwlLeague)
-        ? `🏆 **Awans w Lidze Wojen Klanów!** ${LIGA(old.cwlLeague)} ➜ **${LIGA(nowCwl)}**. Brawo wszyscy! 🔥`
-        : `📉 Liga Wojen Klanów: ${LIGA(old.cwlLeague)} ➜ **${LIGA(nowCwl)}**. Odbijemy się w następnym sezonie! 💪`, WEBHOOK_INFO);
+    if (old.cwlLeague && nowCwl && old.cwlLeague !== nowCwl) {
+      const up = rank(nowCwl) > rank(old.cwlLeague);
+      await karta(up ? `## 🏆 Awans w Lidze Wojen Klanów!\nWchodzimy do **${LIGA(nowCwl)}**. Brawo wszyscy! ⚔️`
+                     : `## 📉 Spadek w Lidze Wojen Klanów\nW następnym sezonie gramy w **${LIGA(nowCwl)}**. Odbijemy się! 💪`, up ? ZIEL : CZER, `${LIGA(old.cwlLeague)} ➜ ${LIGA(nowCwl)}`);
+    }
     const nowCap = clan.capitalLeague?.name ?? null;
-    if (old.capitalLeague && nowCap && old.capitalLeague !== nowCap)
-      await post(rank(nowCap) > rank(old.capitalLeague)
-        ? `🏰 **Awans Stolicy Klanu!** ${LIGA(old.capitalLeague)} ➜ **${LIGA(nowCap)}**. Dzięki za rajdy! 💰`
-        : `🏰 Liga Stolicy: ${LIGA(old.capitalLeague)} ➜ **${LIGA(nowCap)}**. W ten weekend odrabiamy! 💪`, WEBHOOK_INFO);
+    if (old.capitalLeague && nowCap && old.capitalLeague !== nowCap) {
+      const up = rank(nowCap) > rank(old.capitalLeague);
+      await karta(up ? `## 🏰 Awans Stolicy Klanu!\nLiga Stolicy: **${LIGA(nowCap)}**. Dzięki za rajdy! 💰`
+                     : `## 🏰 Spadek Stolicy Klanu\nLiga Stolicy: **${LIGA(nowCap)}**. W ten weekend odrabiamy! 💪`, up ? ZIEL : CZER, `${LIGA(old.capitalLeague)} ➜ ${LIGA(nowCap)}`);
+    }
     const ws = clan.warWinStreak ?? 0;
     if (old.warWinStreak != null && ws > old.warWinStreak && ws >= 3)
-      await post(`🔥 **Seria ${ws} ${plural(ws, "wygranej wojny", "wygranych wojen", "wygranych wojen")} z rzędu!** Nie zwalniamy! ⚔️`, WEBHOOK_INFO);
+      await karta(`## 🔥 Seria zwycięstw!\n**${ws} ${plural(ws, "wygrana wojna", "wygrane wojny", "wygranych wojen")} z rzędu.** Nie zwalniamy! ⚔️`, ZLOTO);
     const ww = clan.warWins ?? null;
     if (old.warWins != null && ww != null && Math.floor(ww / 10) > Math.floor(old.warWins / 10))
-      await post(`🏅 **${Math.floor(ww / 10) * 10} wygranych wojen** na koncie klanu! Kolejna dziesiątka zaliczona 💪`, WEBHOOK_INFO);
+      await karta(`## 🏅 ${Math.floor(ww / 10) * 10} wygranych wojen!\nKolejna dziesiątka na koncie klanu 💪`, ZLOTO, `Wygrane wojny: ${ww}`);
+    const pts = clan.clanPoints ?? null;
+    if (old.clanPoints != null && pts != null && Math.floor(pts / 5000) > Math.floor(old.clanPoints / 5000))
+      await karta(`## 🏆 ${nf(Math.floor(pts / 5000) * 5000)} pucharów klanu!\nRazem pchamy klan w górę rankingu 📈`, ZLOTO, `Punkty klanu: ${nf(pts)}`);
+    const ile = members.length;
+    if (old.memberCount != null && ile >= 50 && old.memberCount < 50)
+      await karta(`## 👥 Klan pełny — 50/50!\nWszystkie miejsca zajęte. Witamy nowych! 🛡️`, NIEB);
+  }
+
+  // --- 6b) Wpłaty Złota Stolicy (#rajdy-stolica, inaczej #statystyki-klanu) — karta na każdą wpłatę ---
+  const WEBHOOK_ZLOTO = WEBHOOK_RAJDY || WEBHOOK_STATY;
+  if (WEBHOOK_ZLOTO && POSTY.zlotoStolicy !== false && Array.isArray(old?.members)) {
+    const przed = Object.fromEntries(old.members.map(m => [m.tag, m.profile?.capital]));
+    const wplaty = members.map(m => ({ m, d: (m.profile?.capital ?? 0) - (przed[m.tag] ?? m.profile?.capital ?? 0) })).filter(x => x.d > 0).sort((a, b) => b.d - a.d);
+    if (wplaty.length > 6) {   // dużo naraz (np. po przerwie) — jedna zbiorcza karta zamiast spamu
+      await postEmbed({ author: { name: `${clan.name} (${TAG})`, icon_url: clan.badgeUrls?.small || undefined },
+        title: "🪙 Wpłaty Złota Stolicy", color: 0xf5b72a, timestamp: new Date().toISOString(),
+        description: wplaty.slice(0, 25).map(x => `**${x.m.name}** · ${nf(x.d)}`).join("\n") + `\n\nRazem: **${nf(wplaty.reduce((a, x) => a + x.d, 0))}**` }, WEBHOOK_ZLOTO);
+    } else for (const { m, d } of wplaty) {
+      await postEmbed({ title: `${m.name} (${m.tag})`, url: SITE + "#gracz-" + m.tag.replace("#", ""),
+        description: `🪙 Wpłacił(a) **${nf(d)}** Złota Stolicy`, color: 0x57c84d,
+        footer: { text: clan.name, icon_url: clan.badgeUrls?.small || undefined }, timestamp: new Date().toISOString() }, WEBHOOK_ZLOTO);
+    }
   }
 
   // --- 7) Nicki, ranga w dół, udział w wojnach (#ruchy-w-klanie) ---
@@ -1556,6 +1603,7 @@ const data = {
   capitalLeague: clan.capitalLeague?.name ?? null,
   warWinStreak: clan.warWinStreak,
   warWins: clan.warWins ?? null,
+  clanPoints: clan.clanPoints ?? null,
   currentWar,
   cwl,
   visits,
