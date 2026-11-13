@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T14:46:06.448Z",
+  "updated": "2026-11-13T15:01:29.652Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -3995,7 +3995,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 5,
+    "online": 6,
     "members": 16
   },
   "raids": [
@@ -4003,10 +4003,10 @@
       "state": "ongoing",
       "start": "20261113T070000.000Z",
       "end": "20261116T070000.000Z",
-      "loot": 57367,
+      "loot": 58028,
       "raids": 4,
-      "attacks": 47,
-      "districts": 13,
+      "attacks": 48,
+      "districts": 14,
       "medals": 0,
       "members": [
         {
@@ -4052,18 +4052,18 @@
           "loot": 5534
         },
         {
+          "name": "vvd",
+          "tag": "#GQULCR98R",
+          "attacks": 4,
+          "limit": 6,
+          "loot": 4226
+        },
+        {
           "name": "monte",
           "tag": "#QYJUV90JY",
           "attacks": 6,
           "limit": 6,
           "loot": 4212
-        },
-        {
-          "name": "vvd",
-          "tag": "#GQULCR98R",
-          "attacks": 3,
-          "limit": 5,
-          "loot": 3565
         },
         {
           "name": "Toster290",
@@ -9186,8 +9186,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|114807633|97394879|5100|336|11375|34127|0|17|57|10",
-      "last": "2026-11-13T14:45:59.221Z",
+      "sig": "31|114807633|97394879|5100|336|11865|34127|0|17|57|10",
+      "last": "2026-11-13T15:01:25.845Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -11997,13 +11997,13 @@
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1806:4216220388",
-      "t": "2026-11-13T14:45:59.221Z"
+      "hash": "1806:3246751041",
+      "t": "2026-11-13T15:01:25.845Z"
     },
     "raid:20261113T070000.000Z": {
       "id": "1570698723959513213",
-      "hash": "804:158584465",
-      "t": "2026-11-13T14:45:59.221Z"
+      "hash": "804:663469515",
+      "t": "2026-11-13T15:01:25.845Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -13771,7 +13771,7 @@
       "ach": {
         "cg": 5100,
         "don": 336,
-        "capLoot": 11375,
+        "capLoot": 11865,
         "gold": 114807633,
         "elixir": 97394879,
         "capContrib": 34127,
@@ -14459,7 +14459,7 @@
         "capital": 250,
         "warPref": "in",
         "bh": 6,
-        "bTrophies": 1345,
+        "bTrophies": 1328,
         "bLeague": "Stone League II",
         "heroes": [
           {
