@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T00:45:58.298Z",
+  "updated": "2026-11-13T01:01:29.812Z",
   "clanLevel": 4,
   "memberCount": 46,
   "cwlLeague": "Silver League I",
@@ -15,9 +15,9 @@
     "us": {
       "name": "ARMIA MAURYCEGO",
       "level": 4,
-      "stars": 32,
-      "pct": 38.6,
-      "attacks": 12,
+      "stars": 33,
+      "pct": 41.27,
+      "attacks": 13,
       "bases": [
         {
           "pos": 1,
@@ -107,7 +107,7 @@
         {
           "pos": 18,
           "th": 9,
-          "best": 0
+          "best": 2
         },
         {
           "pos": 19,
@@ -152,7 +152,7 @@
         {
           "pos": 27,
           "th": 9,
-          "best": 0
+          "best": 3
         },
         {
           "pos": 28,
@@ -174,9 +174,9 @@
     "them": {
       "name": "MANUSCRIPTS",
       "level": 4,
-      "stars": 40,
-      "pct": 45.2,
-      "attacks": 15,
+      "stars": 45,
+      "pct": 50.9,
+      "attacks": 17,
       "bases": [
         {
           "pos": 1,
@@ -241,7 +241,7 @@
         {
           "pos": 13,
           "th": 9,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 14,
@@ -462,7 +462,17 @@
         "tag": "#GQULCR98R",
         "pos": 12,
         "th": 10,
-        "attacks": []
+        "attacks": [
+          {
+            "stars": 1,
+            "pct": 80,
+            "order": 29,
+            "target": "13. fool",
+            "tpos": 13,
+            "tname": "fool",
+            "seen": "2026-11-13T01:01:21.783Z"
+          }
+        ]
       },
       {
         "name": "zuzia",
@@ -810,6 +820,26 @@
         "stars": 3,
         "pct": 100,
         "order": 27
+      },
+      {
+        "by": "Kartik",
+        "bpos": 19,
+        "th": 9,
+        "tpos": 27,
+        "tname": "smouki",
+        "stars": 3,
+        "pct": 100,
+        "order": 28
+      },
+      {
+        "by": "Kartik",
+        "bpos": 19,
+        "th": 9,
+        "tpos": 18,
+        "tname": "KuN",
+        "stars": 2,
+        "pct": 71,
+        "order": 30
       }
     ]
   },
@@ -3535,7 +3565,7 @@
   "discord": {
     "name": "ARMIA MAURYCEGO",
     "icon": "https://cdn.discordapp.com/icons/1564012202053074964/8433e35c8f55dac324fb9b6892640ac9.png?size=128",
-    "online": 3,
+    "online": 4,
     "members": 16
   },
   "raids": [
@@ -4130,11 +4160,11 @@
       "size": 30,
       "perMember": 2,
       "state": "inWar",
-      "us": 32,
-      "them": 40,
+      "us": 33,
+      "them": 45,
       "final": false,
-      "pct": 38.6,
-      "themPct": 45.2,
+      "pct": 41.27,
+      "themPct": 50.9,
       "themBases": [
         {
           "pos": 1,
@@ -4199,7 +4229,7 @@
         {
           "pos": 13,
           "th": 9,
-          "best": 0
+          "best": 1
         },
         {
           "pos": 14,
@@ -4404,7 +4434,14 @@
           "tag": "#GQULCR98R",
           "pos": 12,
           "th": 10,
-          "attacks": []
+          "attacks": [
+            {
+              "stars": 1,
+              "pct": 80,
+              "target": "13. fool",
+              "order": 29
+            }
+          ]
         },
         {
           "name": "zuzia",
@@ -8603,8 +8640,8 @@
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#GQULCR98R": {
-      "sig": "31|114767433|97348163|5100|336|7810|34127|0|16|57|10",
-      "last": "2026-11-12T20:45:53.953Z",
+      "sig": "31|114807633|97394879|5100|336|7810|34127|0|17|57|10",
+      "last": "2026-11-13T01:01:23.675Z",
       "since": "2026-10-29T22:15:49.037Z"
     },
     "#RYLR2C92V": {
@@ -9909,7 +9946,7 @@
       ],
       [
         20770,
-        16,
+        17,
         336,
         10
       ]
@@ -11395,7 +11432,7 @@
   ],
   "feed": {
     "c:20261108T191646.000Z:kingslayers": 0,
-    "w:20261112T222253.000Z": 27
+    "w:20261112T222253.000Z": 30
   },
   "boards": {
     "war:w:20261110T211034.000Z": {
@@ -11405,13 +11442,13 @@
     },
     "aktywnosc": {
       "id": "1569480094655971493",
-      "hash": "922:1783516868",
-      "t": "2026-11-13T00:16:08.139Z"
+      "hash": "922:3250436612",
+      "t": "2026-11-13T01:01:23.675Z"
     },
     "war:w:20261112T222253.000Z": {
       "id": "1570219352353935381",
-      "hash": "1821:632052059",
-      "t": "2026-11-13T00:45:53.436Z"
+      "hash": "1823:1433513976",
+      "t": "2026-11-13T01:01:23.675Z"
     }
   },
   "rekrutacjaWeek": "2026-46",
@@ -11513,7 +11550,7 @@
   },
   "wymaganiaMsg": {
     "id": "1569476036620455956",
-    "hash": "465:2251215343"
+    "hash": "465:910190795"
   },
   "galeria": [
     {
@@ -13087,7 +13124,7 @@
         "trophies": 207,
         "best": 386,
         "league": "Barbarian League 4",
-        "warStars": 16,
+        "warStars": 17,
         "attackWins": 0,
         "defenseWins": 0,
         "capital": 34127,
@@ -13155,8 +13192,8 @@
         "cg": 5100,
         "don": 336,
         "capLoot": 7810,
-        "gold": 114767433,
-        "elixir": 97348163,
+        "gold": 114807633,
+        "elixir": 97394879,
         "capContrib": 34127,
         "wins": 0
       }
