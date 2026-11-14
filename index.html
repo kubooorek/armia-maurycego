@@ -3424,7 +3424,7 @@ function attacksHtml(cw){
       <div class="lw-side r"><b><bdi>${esc(cw.them.name)}</bdi></b><span>${pc(cw.them.pct)}% zniszczeń · ⚔️ ${cw.them.attacks}/${total}</span></div>
     </div>
     <div class="lw-bar"><u style="width:${cw.us.stars/sumStars*100}%"></u><s style="width:${cw.them.stars/sumStars*100}%"></s></div>
-    ${cw.state!=="warEnded"?predHtml(cw):""}
+    ${""/* szansa na wygraną usunięta */}
     ${cw.state==="inWar"?`<div class="lw-left">Pozostałe ataki (${missing.reduce((a,m)=>a+m.left,0)}):</div>
     <div class="lw-chips">${missing.length?missing.map(m=>`<span>${esc(m.n)}<b>×${m.left}</b></span>`).join(""):`<span class="all">Wszyscy zaatakowali ✓</span>`}</div>`:""}
     ${cw.state!=="preparation"?attacksHtml(cw):""}
@@ -5468,5 +5468,73 @@ const BEZ_PL="naglowki";
 } // koniec boot()
 </script>
 <script>(function(){var f=function(){document.documentElement.classList.toggle("nav-solid",scrollY>30)};addEventListener("scroll",f,{passive:true});addEventListener("hashchange",function(){setTimeout(f,60)});f();})();</script>
+<script>
+/* ===== Efekty świąteczne — włączają się same co roku =====
+   Halloween 24.10–1.11 · Boże Narodzenie 6.12–6.01 (śnieg) · Sylwester/Nowy Rok 31.12–1.01 (fajerwerki)
+   Walentynki 13–15.02 · Wielkanoc (od Wielkiego Piątku do Lanego Poniedziałku) · 1 Kwietnia (żarty)
+   Podgląd: ?swieto=halloween | swieta | sylwester | walentynki | wielkanoc · wyłączenie: przycisk w rogu */
+(function(){
+  try{
+  const qs=new URLSearchParams(location.search).get("swieto");
+  const d=new Date(), y=d.getFullYear(), md=(d.getMonth()+1)*100+d.getDate();
+  const easter=(Y)=>{const a=Y%19,b=Math.floor(Y/100),c=Y%100,dd=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-dd-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(Y,mo-1,da);};
+  const E=easter(y), dE=Math.round((new Date(y,d.getMonth(),d.getDate())-E)/864e5);
+  let sw=qs||null;
+  if(!sw){
+    if(md>=1024&&md<=1101) sw="halloween";
+    else if(md===1231||md===101) sw="sylwester";
+    else if(md>=1206||md<=106) sw="swieta";
+    else if(md>=213&&md<=215) sw="walentynki";
+    else if(dE>=-2&&dE<=1) sw="wielkanoc";
+  }
+  if(!sw) return;
+  const en=(localStorage.getItem("am_lang")||"")==="en";
+  const CFG={
+    halloween:{em:["🦇","🎃","👻","🕸️","🦇"],n:26,txt:en?"🎃 Happy Halloween!":"🎃 Wesołego Halloween!",tint:"rgba(255,110,0,.06)",fall:1},
+    swieta:{snow:1,em:["❄️","❄","🎁","⭐"],n:70,txt:en?"🎄 Merry Christmas!":"🎄 Wesołych Świąt!"},
+    sylwester:{fw:1,em:["✨","🎉","🥂"],n:16,txt:en?"🎆 Happy New Year!":"🎆 Szczęśliwego Nowego Roku!"},
+    walentynki:{em:["💛","❤️","💖","💘"],n:24,txt:en?"💘 Happy Valentine's Day!":"💘 Szczęśliwych Walentynek!",up:1},
+    wielkanoc:{em:["🥚","🐣","🐰","🌷","🥚"],n:24,txt:en?"🐣 Happy Easter!":"🐣 Wesołych Świąt Wielkanocnych!",fall:1}
+  }[sw]; if(!CFG) return;
+  const off=localStorage.getItem("am_swieto_off")===sw+y;
+  const css=document.createElement("style");
+  css.textContent=`#swFx{position:fixed;inset:0;pointer-events:none;z-index:250}
+  #swBtn{position:fixed;left:12px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:260;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:1.5px solid #c9961e;background:rgba(20,12,6,.88);color:#ffd977;font:700 .8rem/1 Inter,system-ui,sans-serif;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.45)}
+  #swBtn small{opacity:.7;font-weight:600}
+  @media (max-width:760px){#swBtn{bottom:calc(76px + env(safe-area-inset-bottom));font-size:.72rem;padding:7px 11px}}
+  #swTint{position:fixed;inset:0;pointer-events:none;z-index:249;background:${CFG.tint||"transparent"}}`;
+  document.head.appendChild(css);
+  const btn=document.createElement("button"); btn.id="swBtn"; btn.type="button";
+  const setBtn=o=>btn.innerHTML=`${CFG.txt} <small>${o?(en?"· effects off":"· efekty wył."):(en?"· turn off":"· wyłącz")}</small>`;
+  let on=!off; setBtn(!on);
+  const go=()=>document.body.appendChild(btn); document.body?go():addEventListener("DOMContentLoaded",go);
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let cv,ctx,P=[],raf,W,H,dpr;
+  const size=()=>{dpr=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);};
+  const R=(a,b)=>a+Math.random()*(b-a);
+  const make=(init)=>{ const mob=W<760;
+    if(CFG.snow&&Math.random()<.82) return {t:"s",x:R(0,W),y:init?R(0,H):-10,r:R(1,mob?2.6:3.4),vy:R(.4,1.2),vx:R(-.3,.3),ph:R(0,6)};
+    return {t:"e",e:CFG.em[Math.floor(Math.random()*CFG.em.length)],x:R(0,W),y:init?R(0,H):(CFG.up?H+30:-30),s:R(mob?14:16,mob?22:28),vy:CFG.up?-R(.4,1):R(.5,1.3),vx:R(-.4,.4),rot:R(0,6),vr:R(-.02,.02),ph:R(0,6),a:R(.55,.9)}; };
+  let fw=[],tick=0;
+  const boom=()=>{const x=R(W*.15,W*.85),y=R(H*.12,H*.45),hue=R(0,360);for(let i=0;i<46;i++){const a=i/46*Math.PI*2,v=R(1.5,4);fw.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,h:hue+R(-20,20)});}};
+  const frame=()=>{ ctx.clearRect(0,0,W,H); tick++;
+    for(const p of P){ p.ph+=.02; p.x+=p.vx+Math.sin(p.ph)*.35; p.y+=p.vy;
+      if(p.t==="s"){ ctx.globalAlpha=.85; ctx.fillStyle="#fff"; ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,7); ctx.fill(); }
+      else { p.rot+=p.vr; ctx.save(); ctx.globalAlpha=p.a; ctx.translate(p.x,p.y); ctx.rotate(p.rot); ctx.font=`${p.s}px "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif`; ctx.textAlign="center"; ctx.fillText(p.e,0,0); ctx.restore(); }
+      if(p.y>H+40||p.y<-50||p.x<-50||p.x>W+50) Object.assign(p,make(false)); }
+    if(CFG.fw){ if(tick%70===0) boom(); ctx.globalCompositeOperation="lighter";
+      fw=fw.filter(f=>(f.l-=.016)>0); for(const f of fw){ f.x+=f.vx; f.y+=f.vy; f.vy+=.04; f.vx*=.985; ctx.globalAlpha=f.l; ctx.fillStyle=`hsl(${f.h},100%,62%)`; ctx.beginPath(); ctx.arc(f.x,f.y,2.2,0,7); ctx.fill(); }
+      ctx.globalCompositeOperation="source-over"; }
+    ctx.globalAlpha=1; raf=requestAnimationFrame(frame); };
+  let tint;
+  const start=()=>{ if(reduce||cv) return; cv=document.createElement("canvas"); cv.id="swFx"; cv.setAttribute("aria-hidden","true"); document.body.appendChild(cv); ctx=cv.getContext("2d"); size(); addEventListener("resize",size);
+    const n=Math.round(CFG.n*(W<760?.55:1)); P=Array.from({length:n},()=>make(true)); if(CFG.tint){tint=document.createElement("div");tint.id="swTint";document.body.appendChild(tint);} frame(); };
+  const stop=()=>{ cancelAnimationFrame(raf); cv&&cv.remove(); cv=null; tint&&tint.remove(); tint=null; P=[]; fw=[]; };
+  document.addEventListener("visibilitychange",()=>{ if(!cv) return; if(document.hidden) cancelAnimationFrame(raf); else frame(); });
+  btn.addEventListener("click",()=>{ on=!on; try{ on?localStorage.removeItem("am_swieto_off"):localStorage.setItem("am_swieto_off",sw+y);}catch(e){} on?start():stop(); setBtn(!on); });
+  const init=()=>{ if(on) start(); }; document.body?init():addEventListener("DOMContentLoaded",init);
+  }catch(e){ console.warn("efekty świąteczne:",e); }
+})();
+</script>
 </body>
 </html>
