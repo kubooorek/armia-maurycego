@@ -45,4 +45,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data.json
           if [ -d img/galeria ]; then git add -A img/galeria; fi
-          git diff --cached --quiet || (git commit -m "Aktualizacja danych klanu" && git push)
+          git diff --cached --quiet || git commit -m "Aktualizacja danych klanu"
+          for i in 1 2 3; do git push && break; git pull --rebase -X theirs origin main || git rebase --abort; sleep 3; done
