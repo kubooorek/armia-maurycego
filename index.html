@@ -2978,16 +2978,16 @@ $("#statDays").textContent = Math.max(1, Math.floor((Date.now()-new Date(FOUNDED
    Jeśli serwis licznika nie odpowie, w kafelku zostaje „TH8+”. */
 (async function visits(){
   const BASE = `https://api.counterapi.dev/v2/${COUNTER.workspace}/${COUNTER.name}`;
-  const today = new Date().toISOString().slice(0,10);
+  // liczy każdą przeglądarkę tylko RAZ (pierwsze wejście), kolejne wejścia już nie
   let counted = false;
-  try { counted = localStorage.getItem("am_visit2") === today; } catch(e){}
+  try { counted = !!(localStorage.getItem("am_visit_once") || localStorage.getItem("am_visit2")); } catch(e){}
   try {
     const res = await fetch(counted ? BASE : BASE + "/up");
     if (!res.ok) throw 0;
     const d = (await res.json()).data || {};
     const n = Number(d.up_count) - Number(d.down_count || 0);
     if (!Number.isFinite(n)) throw 0;
-    try { localStorage.setItem("am_visit2", today); } catch(e){}
+    try { localStorage.setItem("am_visit_once", "1"); } catch(e){}
     $("#statVisits").textContent = fmt(n);
     $("#statVisitsLabel").textContent = "Odwiedzin strony";
     $("#footVisits").textContent = ` · 👁 ${fmt(n)} odwiedzin`;
