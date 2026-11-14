@@ -127,7 +127,7 @@ const wars = (warlog.items || [])
 /* ---------- Bieżąca wojna ---------- */
 // Bazy jednej strony: pozycja na mapie, TH i ile gwiazdek już z niej zdjęto (do prognozy wojny)
 const basesOf = side => (side?.members || []).slice().sort((a, b) => a.mapPosition - b.mapPosition)
-  .map(m => ({ pos: m.mapPosition, th: m.townhallLevel, best: m.bestOpponentAttack?.stars ?? 0 }));
+  .map(m => ({ pos: m.mapPosition, th: m.townhallLevel, best: m.bestOpponentAttack?.stars ?? 0, tag: m.tag }));
 // ataki przeciwnika na nasze bazy (do relacji na żywo na Discordzie)
 function defsOf(enemy, ourByTag) {
   return (enemy.members || []).flatMap(om => (om.attacks || []).map(a => {
@@ -334,35 +334,48 @@ let penalties = (Array.isArray(old?.penalties) ? old.penalties : []).filter(p =>
 const addPen = p => { if (karyZw.includes(p.tag)) return; if (p.type === "missed" && optedOut(p.war, p.end, p.tag)) return; if ((p.type === "own" || p.type === "steal") && swapped(p.war, p.tag)) return; if (!penalties.some(x => x.id === p.id)) penalties.unshift({ ...p, t: new Date().toISOString() }); };
 const WOLNE_PO_H = 12;   // po tylu godzinach od startu bitwy można atakować cudze numery bez kary
 const stampMs = t => t ? Date.parse(`${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)}T${t.slice(9,11)}:${t.slice(11,13)}:${t.slice(13,15)}Z`) : 0;
-if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
-  const W = currentWar, byPos = Object.fromEntries(W.members.map(m => [m.pos, m]));
+// Zasada celu: do 12.11.2026 pierwszy atak na SWÓJ numer, od wojny z MANUSCRIPTS (12.11.2026) „bijemy -1”:
+// pierwszy atak na numer o jeden niżej (nr+1), ostatni numer bije swój.
+const MINUS1_OD = "20261112T000000.000Z";
+const celOf = (W, pos) => (W.start >= MINUS1_OD) ? (pos < (W.size || W.members.length) ? pos + 1 : pos) : pos;
+function sprawdzWojne(W, dodaj) {
   const tp = a => parseInt(a.target, 10);
   const firstOrder = m => m.attacks.length ? Math.min(...m.attacks.map(a => a.order ?? 999)) : Infinity;
-  const base = m => ({ tag: m.tag, name: m.name, war: W.start, end: W.end, enemy: W.them.name });
-  // Zasada klanu: po 12 h od startu bitwy wolno bić cudze numery (kto nie zaatakował swojego do 12 h, ten może być bity)
+  const base = m => ({ tag: m.tag, name: m.name, war: W.start, end: W.end, enemy: W.them?.name ?? W.enemy });
   const free = stampMs(W.start) + WOLNE_PO_H * 36e5;
   const late = a => a && a.seen && Date.parse(a.seen) >= free;
+  const minus1 = W.start >= MINUS1_OD;
+  for (const m of W.members) {
+    const atts = m.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    const cel = celOf(W, m.pos);
+    // 1) pierwszy atak nie na swój cel (wyjątek: ktoś wcześniej zrobił już 3★ na tej bazie)
+    const celZrobiony = atts[0] && W.members.some(o => o.attacks.some(x => tp(x) === cel && x.stars === 3 && (x.order ?? 0) < (atts[0].order ?? 0)));
+    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== cel && !celZrobiony && !late(atts[0]))
+      dodaj({ id: `${W.start}:${m.tag}:own`, type: "own", detail: `nr ${tp(atts[0])} zamiast nr ${cel}${minus1 ? " (bijemy -1)" : ""}`, ...base(m) });
+    // 2) drugi atak na bazę, która jest celem kogoś, kto jeszcze nie zaatakował (podkradanie)
+    const a2 = atts[1];
+    if (a2 && a2.order != null && tp(a2) && tp(a2) !== cel && !late(a2)) {
+      const owner = W.members.find(o => o.tag !== m.tag && celOf(W, o.pos) === tp(a2) && firstOrder(o) > a2.order);
+      if (owner) dodaj({ id: `${W.start}:${m.tag}:steal`, type: "steal", detail: `nr ${tp(a2)}, zanim ${owner.name} zaatakował(a) swój cel`, ...base(m) });
+    }
+  }
+}
+if (currentWar && currentWar.state !== "preparation" && currentWar.perMember === 2) {
+  const W = currentWar;
+  const free = stampMs(W.start) + WOLNE_PO_H * 36e5, late = a => a && a.seen && Date.parse(a.seen) >= free;
   penalties = penalties.filter(p => {
     if (p.war !== W.start || (p.type !== "own" && p.type !== "steal")) return true;
     const mm = W.members.find(x => x.tag === p.tag); if (!mm) return true;
     const at = mm.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0))[p.type === "own" ? 0 : 1];
     return !late(at);
   });
-  for (const m of W.members) {
-    const atts = m.attacks.slice().sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
-    // 1) pierwszy atak nie na swój numer
-    // wyjątek: ktoś wcześniej zrobił już 3★ na jego numerze — wtedy nie miał czego bić
-    const mirrorTaken = atts[0] && W.members.some(o => o.attacks.some(x => tp(x) === m.pos && x.stars === 3 && (x.order ?? 0) < (atts[0].order ?? 0)));
-    if (atts[0] && tp(atts[0]) && m.pos && tp(atts[0]) !== m.pos && !mirrorTaken && !late(atts[0]))
-      addPen({ id: `${W.start}:${m.tag}:own`, type: "own", detail: `nr ${tp(atts[0])} zamiast nr ${m.pos}`, ...base(m) });
-    // 2) drugi atak na numer kogoś, kto jeszcze nie zaatakował (podkradanie ataku)
-    const a2 = atts[1];
-    if (a2 && a2.order != null && tp(a2) && tp(a2) !== m.pos && !late(a2)) {
-      const owner = byPos[tp(a2)];
-      if (owner && owner.tag !== m.tag && firstOrder(owner) > a2.order)
-        addPen({ id: `${W.start}:${m.tag}:steal`, type: "steal", detail: `nr ${tp(a2)}, zanim ${owner.name} zaatakował(a) swój numer`, ...base(m) });
-    }
-  }
+  sprawdzWojne(W, addPen);
+}
+// wojny „-1” już zakończone: zostają tylko kary, które wynikają z zasady -1 (stare naliczone „na swój numer” znikają)
+for (const x of warArchive) {
+  if (!(x.start >= MINUS1_OD) || x.perMember !== 2 || x.cwl || (currentWar && x.start === currentWar.start) || !Array.isArray(x.members)) continue;
+  const ok = new Set(); sprawdzWojne(x, p => ok.add(p.id));
+  penalties = penalties.filter(p => p.war !== x.start || (p.type !== "own" && p.type !== "steal") || ok.has(p.id));
 }
 // 3) opuszczone ataki — tylko z wojen, których koniec robot widział (pewny komplet ataków), z ostatnich 7 dni
 for (const x of warArchive) {
@@ -882,7 +895,7 @@ if ((WEBHOOK || WEBHOOK_INFO || WEBHOOK_RUCHY || WEBHOOK_WOJNY || WEBHOOK_POWITA
     if (w.state === "inWar") {
       const left = (parseT(w.end) - Date.now()) / 3600e3;
       const missing = w.members.filter(m => m.attacks.length < w.perMember).map(m => `${m.name}${w.perMember - m.attacks.length > 1 ? ` ×${w.perMember - m.attacks.length}` : ""}`);
-      if (sinceStart < 6 && POSTY.startBitwy) await once("start", `⚔️ **${w.label}** — dzień bitwy ruszył! Przeciwnik: **${w.them.name}**. Pierwszy atak na swój numer! ${SITE}`);
+      if (sinceStart < 6 && POSTY.startBitwy) await once("start", `⚔️ **${w.label}** — dzień bitwy ruszył! Przeciwnik: **${w.them.name}**. Bijemy **-1**: pierwszy atak na numer o jeden niżej (ostatni bije swój)! ${SITE}`);
       // Zasada 12 h (zwykłe wojny): numery graczy, którzy jeszcze nie zaatakowali, są wolne
       if (POSTY.wolneNumery && w.perMember === 2 && sinceStart >= 12 && left > 0.5) {
         const free = w.members.filter(m => m.attacks.length === 0 && m.pos).map(m => m.pos).sort((a, b) => a - b);
@@ -1597,9 +1610,9 @@ if (BOT && POSTY.galeria !== false) {
 /* ---------- #kary: automatyczne ogłaszanie kar (te same zasady co zakładka „Kary” na stronie) ---------- */
 let karyPosted = old?.karyPosted && typeof old.karyPosted === "object" ? old.karyPosted : null;
 if (WEBHOOK_KARY && !firstRun && POSTY.kary !== false) {
-  const REASON = { own: p => `pierwszy atak nie na swój numer (${p.detail})`, steal: p => `drugi atak na cudzy numer (${p.detail})`, missed: p => `opuszczony atak (${p.detail})` };
-  const RULE = { own: "Pierwszy atak zawsze na swój numer. Cudze numery są wolne dopiero po 12 h od startu bitwy.",
-                 steal: "Drugim atakiem czekamy albo poprawiamy bazy bez 3★. Cudze numery są wolne dopiero po 12 h od startu bitwy.",
+  const REASON = { own: p => `pierwszy atak nie na swój cel (${p.detail})`, steal: p => `drugi atak na cudzy cel (${p.detail})`, missed: p => `opuszczony atak (${p.detail})` };
+  const RULE = { own: "Bijemy -1: pierwszy atak na numer o jeden niżej od swojego (ostatni bije swój). Cudze cele są wolne dopiero po 12 h od startu bitwy.",
+                 steal: "Drugim atakiem czekamy albo poprawiamy bazy bez 3★. Cudze cele są wolne dopiero po 12 h od startu bitwy.",
                  missed: "Każdy w składzie wykorzystuje oba ataki. Nie możesz grać? Wypisz się w Moim panelu na stronie." };
   const anul = p => karyAnul.some(a => a.name === p.name && (a.date === plDay(stampMs(p.war)) || a.date === plDay(stampMs(p.end || p.war))));
   const aktualne = penalties.filter(p => REASON[p.type] && !anul(p));
@@ -1645,6 +1658,22 @@ const requests = srv ? { optouts: srv.optouts || [], cwl: srv.cwl || null } : (o
 notified = Object.fromEntries(Object.entries(notified).slice(-40));
 
 /* ---------- Zapis ---------- */
+/* ---------- Rush % przeciwnika (zwiad): profile graczy z wojny w przygotowaniach / trwającej, z pamięcią na 24 h ---------- */
+const rush = {};
+const rushOld = old?.rush && typeof old.rush === "object" ? old.rush : {};
+for (const m of members) if (m.rush?.pct != null) rush[m.tag] = { r: m.rush.pct, th: m.th, t: new Date().toISOString() };
+{
+  const wojny = [currentWar, ...((cwl?.wars) || [])].filter(w => w && (w.state === "preparation" || w.state === "inWar"));
+  for (const w of wojny) for (const b of (w.them?.bases || [])) {
+    if (!b.tag || rush[b.tag]) continue;
+    const o = rushOld[b.tag];
+    if (o && o.th === b.th && Date.now() - Date.parse(o.t) < 24 * 3600e3) { rush[b.tag] = o; continue; }
+    const p = await safe(`Rush ${b.tag}`, () => api(`/players/${enc(b.tag)}`));
+    const rr = p ? rushOf(p, p.townHallLevel) : null;
+    if (rr) rush[b.tag] = { r: rr.pct, th: p.townHallLevel, t: new Date().toISOString() };
+  }
+}
+
 const data = {
   updated: new Date().toISOString(),
   clanLevel: clan.clanLevel,
@@ -1654,6 +1683,7 @@ const data = {
   warWinStreak: clan.warWinStreak,
   warWins: clan.warWins ?? null,
   clanPoints: clan.clanPoints ?? null,
+  rush,
   afkWarned,
   currentWar,
   cwl,
