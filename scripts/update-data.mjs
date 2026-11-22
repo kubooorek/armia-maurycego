@@ -109,7 +109,12 @@ for (const m of members) {
     gold: A["Gold Grab"] ?? null,           // złoto zrabowane w atakach
     elixir: A["Elixir Escapade"] ?? null,
     capContrib: A["Most Valuable Clanmate"] ?? null,
-    wins: p.attackWins ?? null
+    wins: p.attackWins ?? null,
+    // szerszy ślad aktywności: wszystkie osiągnięcia, poziomy wojsk/czarów/bohaterów/sprzętu, baza budowniczego
+    all: (p.achievements || []).reduce((s, a) => s + (a.value || 0), 0),
+    lvl: [...(p.troops || []), ...(p.spells || []), ...(p.heroes || []), ...(p.heroEquipment || [])].reduce((s, u) => s + (u.level || 0), 0),
+    bb: `${p.builderHallLevel ?? 0}/${p.builderBaseTrophies ?? 0}/${p.bestBuilderBaseTrophies ?? 0}`,
+    tr: `${p.trophies ?? 0}/${p.defenseWins ?? 0}/${p.donationsReceived ?? 0}`
   };
 }
 
@@ -527,7 +532,7 @@ const nowIso = new Date().toISOString();
 let activity = old?.activity && typeof old.activity === "object" ? old.activity : {};
 for (const m of members) {
   const a = m.ach || {};
-  const sig = [m.given, a.gold, a.elixir, a.cg, a.don, a.capLoot, a.capContrib, a.wins, m.profile?.warStars, m.profile?.level, m.th].join("|");
+  const sig = [m.given, a.gold, a.elixir, a.cg, a.don, a.capLoot, a.capContrib, a.wins, m.profile?.warStars, m.profile?.level, m.th, a.all, a.lvl, a.bb, a.tr].join("|");
   const prev = activity[m.tag];
   if (!prev) activity[m.tag] = { sig, last: nowIso, since: nowIso };
   else if (prev.sig !== sig) activity[m.tag] = { ...prev, sig, last: nowIso };
@@ -566,7 +571,7 @@ const MVP_START = "2026-11";   // pierwszy miesiąc liczony przez robota (MVP za
 const MIES = ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
 const MIES_D = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
 const plural = (n, a, b, c) => n === 1 ? a : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? b : c;
-const nf = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+const nf = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0");   // twarda spacja — liczba nie łamie się w linii
 // kary anulowane / ręczne wpisane w index.html
 let karyAnul = [], karyRecz = [], mvpRecz = [], mvpBez = [];
 try {
@@ -1269,11 +1274,11 @@ if (!firstRun) {
         await kartaGracza(m, `${plus ? "⚔️ Atak" : "🛡️ Obrona"} w Lidze Legend: **${plus ? "+" : ""}${d}** 🏆\n-# Teraz: **${nf(P.trophies)}** 🏆`, plus ? 0x57c84d : 0xe5484d, WEBHOOK_STATY);
       }
     }
-    // 6) Gry Klanowe: kto zrobił normę (1000) i maksimum (4000)
+    // 6) Gry Klanowe: kto zrobił normę (1000) i maksimum (10 000)
     if (WEBHOOK_STATY && clanGames?.state === "ongoing" && old?.clanGames?.key === clanGames.key) {
       for (const [tag, p2] of Object.entries(clanGames.points || {})) {
         const by = old.clanGames.points?.[tag]?.pts ?? 0, teraz = p2.pts ?? 0, m = members.find(x => x.tag === tag); if (!m) continue;
-        if (by < 4000 && teraz >= 4000) await kartaGracza(m, `🎯 **Maksimum w Grach Klanowych!** 4000 pkt 🔥`, 0xf5b72a, WEBHOOK_STATY);
+        if (by < 10000 && teraz >= 10000) await kartaGracza(m, `🎯 **Maksimum w Grach Klanowych!** 10\u00a0000 pkt 🔥`, 0xf5b72a, WEBHOOK_STATY);
         else if (by < 1000 && teraz >= 1000) await kartaGracza(m, `🎯 Zrobił(a) normę w Grach Klanowych: **${nf(teraz)} pkt** ✅`, 0x57c84d, WEBHOOK_STATY);
       }
     }
@@ -1289,8 +1294,8 @@ if (!firstRun) {
       const w = afkWarned[m.tag] || {};
       if (w.last && w.last !== a.last) { delete afkWarned[m.tag]; continue; }     // wrócił do gry
       if (pierwszy) { if (dni >= 5) { lista.push(`**${m.name}** (TH${m.th}) · ${Math.floor(dni)} dni`); afkWarned[m.tag] = { last: a.last, d5: true, d7: dni >= 7 }; } continue; }
-      if (dni >= 7 && !w.d7) { await post(`💤 **${m.name}** (TH${m.th}) jest nieaktywny/a od **${Math.floor(dni)} dni** — zgodnie z zasadą 7 dni AFK do decyzji zarządu.`, WEBHOOK_AFK); afkWarned[m.tag] = { ...w, last: a.last, d5: true, d7: true }; }
-      else if (dni >= 5 && !w.d5) { await post(`⏰ **${m.name}** (TH${m.th}) nie był/a aktywny/a od **${Math.floor(dni)} dni**. Za 2 dni minie limit 7 dni AFK.`, WEBHOOK_AFK); afkWarned[m.tag] = { ...w, last: a.last, d5: true }; }
+      if (dni >= 7 && !w.d7) { await post(`💤 **${m.name}** (TH${m.th}) nic nie zrobił/a w grze od **${Math.floor(dni)} dni** (brak ataków, donacji, ulepszeń, Gier i rajdów). Samo wejście do gry API nie widać — sprawdź w grze „Grano…”. Zasada 7 dni AFK: do decyzji zarządu.`, WEBHOOK_AFK); afkWarned[m.tag] = { ...w, last: a.last, d5: true, d7: true }; }
+      else if (dni >= 5 && !w.d5) { await post(`⏰ **${m.name}** (TH${m.th}) nic nie zrobił/a w grze od **${Math.floor(dni)} dni** (brak ataków, donacji, ulepszeń, Gier i rajdów). Za 2 dni minie limit 7 dni AFK.`, WEBHOOK_AFK); afkWarned[m.tag] = { ...w, last: a.last, d5: true }; }
     }
     if (pierwszy && lista.length) await post(`💤 **Nieaktywni od 5+ dni** (zasada: 7 dni AFK = kick):\n${lista.map(x => `> ${x}`).join("\n")}`, WEBHOOK_AFK);
     for (const t of Object.keys(afkWarned)) if (!members.some(m => m.tag === t)) delete afkWarned[t];
